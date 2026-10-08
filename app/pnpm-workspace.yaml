@@ -1,0 +1,16 @@
+packages:
+  - "."
+
+overrides:
+  rollup: npm:@rollup/wasm-node@4.64.0
+
+onlyBuiltDependencies:
+  - esbuild
+  - electron
+
+allowBuilds:
+  electron: set this to true or false
+  esbuild: set this to true or false
+  onnxruntime-node: set this to true or false
+  protobufjs: set this to true or false
+  workerd: set this to true or false

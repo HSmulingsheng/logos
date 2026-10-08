@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- 古希腊语字体：Gentium Plus（SIL OFL）本地内置，缺失时回退系统衬线 ---- */
+@font-face {
+  font-family: 'Gentium Plus';
+  src: url('/fonts/GentiumPlus-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gentium Plus';
+  src: url('/fonts/GentiumPlus-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gentium Plus';
+  src: url('/fonts/GentiumPlus-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: theme('fontFamily.ui');
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(1100px 600px at 12% -8%, #e8f4ff 0%, transparent 58%),
+    radial-gradient(900px 520px at 96% 4%, #fdf3e7 0%, transparent 52%),
+    linear-gradient(180deg, #fbfaf7 0%, #f5f3ee 100%);
+  background-attachment: fixed;
+  color: theme('colors.ink.900');
+}
+
+.dark body {
+  background: linear-gradient(180deg, #131820 0%, #1b2129 100%);
+  color: theme('colors.ink.100');
+}
+
+.greek {
+  font-family: theme('fontFamily.greek');
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  font-variant-ligatures: common-ligatures;
+}
+
+@layer components {
+  .card-surface {
+    @apply rounded-2xl border border-white/70 bg-white/80 shadow-[0_2px_16px_rgba(30,37,48,.06)] backdrop-blur;
+  }
+  .dark .card-surface {
+    @apply border-white/10 bg-white/[.04] shadow-none;
+  }
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition
+           active:scale-[.98] disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply btn bg-aegean-600 text-white shadow-sm hover:bg-aegean-700;
+  }
+  .btn-ghost {
+    @apply btn border border-ink-200 bg-white/70 text-ink-700 hover:bg-white;
+  }
+  .dark .btn-ghost {
+    @apply border-white/10 bg-white/5 text-ink-200 hover:bg-white/10;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-ink-200/80 bg-white/70 px-2.5 py-0.5 text-xs text-ink-600;
+  }
+  .dark .chip {
+    @apply border-white/10 bg-white/5 text-ink-300;
+  }
+  .skeleton {
+    @apply animate-pulse rounded-lg bg-ink-100;
+  }
+  .dark .skeleton {
+    @apply bg-white/10;
+  }
+}
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(100,116,139,.28); border-radius: 8px; border: 3px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* 例句里的命中词高亮 */
+.hit {
+  @apply rounded bg-aegean-100/80 px-1 font-medium text-aegean-900;
+  box-decoration-break: clone;
+}
+.dark .hit {
+  @apply bg-aegean-900/60 text-aegean-100;
+}
+
+/* 音波动画 */
+@keyframes wave {
+  0%, 100% { transform: scaleY(.35); }
+  50% { transform: scaleY(1); }
+}
+.wave-bar { animation: wave .9s ease-in-out infinite; transform-origin: center; }

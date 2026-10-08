@@ -1,0 +1,66 @@
+# ---- 依赖与构建产物（可重新生成，不入库）
+node_modules/
+.pnpm-store/
+app/dist/
+app/release/
+.build/
+deploy/
+*.zip
+
+# ---- 由 npm 包同步过来的运行时（scripts/sync-*.mjs 会复制）
+# 体积大且能从依赖里取回，所以不入库
+app/public/espeak/
+app/public/ort/
+
+# ---- 生成的数据（由 tools/*.py 产出）
+app/public/data/
+app/public/audio-tts/
+app/public/audio/
+
+# ---- 体积很大的模型与语料
+# 神经语音模型可从 HuggingFace 取（scripts/sync-neural.mjs 负责切分）
+# 语料由 tools/fetch_perseus.py 等脚本下载
+app/public/mms-grc/
+语料调研/
+
+# ---- 工具链运行时（uv/cloudflared 等，体积大且可重新下载）
+.tools/
+
+# ---- 来自原 Anki 牌组的内容（版权未确认，不随仓库分发）
+# 别人要复现需自备同名牌组；详见 README「数据与模型需要自己准备」。
+# ⚠️ .gitignore 不支持行尾注释——注释必须独占一行，否则整行都会被当成模式。
+data/greek.json
+data/lessons.json
+data/audio/
+
+# ---- 私有内容
+# Anki 原始备份，含牌组全文，**不要公开**
+_ankibak/
+
+# ---- 开发时的临时目录
+.electron-cache/
+.electron-userdata/
+.cache/
+
+# ---- 数据流水线的中间产物（跑到一半的批次文件）
+data/zh_out*
+data/zh_batches*
+data/ex_tr_out*
+data/ex_tr_batches*
+data/missing_audio_ids.json
+
+# ---- Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# ---- 根目录指向 release/ 的软链（release/ 不入库，留着会是死链）
+/逻各斯.app
+
+# ---- 系统与编辑器
+.DS_Store
+Thumbs.db
+:memory:.ses
+*.log
+.idea/
+.vscode/
