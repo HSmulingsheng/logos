@@ -152,6 +152,19 @@ node app/scripts/sync-neural.mjs                                 # 切分成 ≤
 规则实现见 `app/src/lib/greekInput.ts`，验收见 `app/scripts/translit-test.ts`（169 项断言，
 其中 143 项是拿 macOS 的 `kCFStringTransformLatinGreek` 当基准生成的）。
 
+### 单词发音的两种来路
+
+| 场景 | 词音来源 |
+|---|---|
+| **本地/桌面版**（`--audio mixed`） | 牌组原录音优先，缺的用 TTS 补齐 |
+| **公开发布**（`--audio tts`） | 全部用自生成音频 |
+
+公开发布**故意不用牌组原录音**——那份录音的版权状况未确认（同 `NOTICE.md` 里的说明）。
+自生成音频原本是 eSpeak-NG 合成的机械音，现已改为**用神经模型重新生成**
+（`tools/gen_word_audio.py`，15,686 个词约 35 分钟，音质接近真人）。
+
+> 例外：字符 `ἒ` 不在神经模型的词表里，该词保留 eSpeak 版本。
+
 ### 例句发音
 
 **所有例句都能读**——词条详情里的新约与古典语料例句、语法闯关里的教材例句、
