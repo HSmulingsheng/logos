@@ -191,8 +191,6 @@ export interface Settings {
   /** 练习模式开关 */
   quizChoice: boolean
   quizSpell: boolean
-  /** 一组新词学完后是否询问「要不要拼写这一组」 */
-  spellPrompt: boolean
   /** 例句朗读语速（eSpeak rate）：120 偏慢，168 接近自然 */
   speechRate: number
   /** 例句朗读音色（eSpeak voice 变体） */
@@ -219,7 +217,6 @@ export type SessionStepKind =
   | 'spell'      // 拼写
   | 'audio'      // 听音辨义
   | 'recall'     // 看义回想词形（自评）
-  | 'offer'      // 一组新词学完后的岔路口：要不要拼写这一组
 
 export interface SessionStep {
   kind: SessionStepKind
@@ -229,6 +226,4 @@ export interface SessionStep {
   phase: 'new' | 'review'
   /** 名词性：同一词的多步（学习 + 测试） */
   groupId: number
-  /** 仅 'offer' 步骤使用：这一组新词的 id，选中拼写后据此插入题目 */
-  batch?: number[]
 }

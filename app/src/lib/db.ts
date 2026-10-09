@@ -105,7 +105,6 @@ export const DEFAULT_SETTINGS: Settings = {
   showExamples: true,
   quizChoice: true,
   quizSpell: true,
-  spellPrompt: true,
   speechRate: 168,
   speechVoice: 'grc',
   speechEngine: 'neural',

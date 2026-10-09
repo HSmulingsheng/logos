@@ -111,6 +111,11 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
           <Row label="听音辨词" hint="播放发音，选出对应词形（无录音的词会跳过）">
             <Toggle on={settings.quizAudio} onChange={(v) => set({ quizAudio: v })} />
           </Row>
+          <div className="card-surface mb-3 p-3.5 text-[11px] leading-relaxed text-ink-500">
+            <div className="mb-1 font-medium text-ink-600 dark:text-ink-300">出题方式（参照「不背单词」）</div>
+            <p>每个词要**连续答对 4 次**才算学会；错一次就清零重新累计，
+              每次重新出现的间隔逐次拉长。全部词都通过后，才统一进入拼写。</p>
+          </div>
           <Row label="希腊语输入方案" hint="作答时可直接用拉丁键盘输入，实时转写成希腊语，无需安装希腊语输入法">
             <select
               value={settings.inputScheme}
@@ -136,9 +141,6 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
               {' '}<span className="greek">tōi</span> → <span className="greek">τῳ</span>
             </p>
           </div>
-          <Row label="一组学完后询问拼写" hint="每学完 5 个新词，先问一次「要不要把这组拼一遍」">
-            <Toggle on={settings.spellPrompt} onChange={(v) => set({ spellPrompt: v })} />
-          </Row>
           <Row label="例句朗读引擎" hint="轻量用内置 eSpeak（瞬时、音色机械）；高清用神经语音（需一次性下载约 128MB，音质接近真人）">
             <EnginePicker />
           </Row>

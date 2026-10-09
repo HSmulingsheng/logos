@@ -33,24 +33,59 @@ export interface QueueResult {
 }
 
 /**
- * 新词学完后的测验题型。
- * 注意：新词学习本身已经是「四选一」，所以后续测验优先用拼写/听音，
- * 只有在两者都关掉时才退回选义，避免连着做两次同型题。
+ * 「连续答对」的目标次数。
+ *
+ * 照搬「不背单词」的核心机制（其依据是《学习这回事》里的「单人纸牌游戏法」）：
+ * 一个词必须**连续答对 4 次**才算学会；中间错一次，「连对」清零重新累计；
+ * 而且每次重新出现的间隔逐次拉长（瞬间记忆 → 短期 → 长期）。
  */
-function pickKind(w: Word, settings: Settings): SessionStepKind {
-  const modes: SessionStepKind[] = []
-  if (settings.quizSpell) modes.push('spell')
-  if (settings.quizAudio && w.au) modes.push('audio')
-  if (!modes.length && settings.quizChoice) modes.push('choice')
-  if (!modes.length) return 'choice'
-  return modes[w.i % modes.length]
+export const RECOGNIZE_TARGET = 4
+
+/** 参与「连对计数」的题型。拼写不参与——拼写是辨识全部通过之后的收尾环节。 */
+export const RECOGNIZE_KINDS: SessionStepKind[] = ['learn', 'review', 'choice', 'audio', 'recall']
+
+/**
+ * 重新排队时出什么题：四选一与翻卡自评交替。
+ * 「不背单词」用的正是这两种题型。
+ */
+function requeueKind(streak: number): SessionStepKind {
+  return streak % 2 === 0 ? 'review' : 'choice'
 }
 
 /**
- * 组卷：
- *  - 复习队列：已到期的旧卡（优先）
- *  - 新词队列：尚未建卡的词，按所选词书的课次顺序（或词频）
- *  - 编排：新词每 5 个一组「先学后测」，复习穿插其间（不背单词式的节奏）
+ * 一次辨识作答后，决定这个词的下一个题目插到哪儿。
+ *
+ * 返回 null 表示已经连对够了，不必再排。
+ * `rest` 是当前步骤**之后**的队列，用来定位拼写区的位置——
+ * 所有重排的题目都必须插在拼写区**之前**，这样「全部辨识通过后才拼写」才成立。
+ */
+export function planRequeue(
+  step: SessionStep,
+  streak: number,
+  rest: SessionStep[],
+): { step: SessionStep; offset: number } | null {
+  if (streak >= RECOGNIZE_TARGET) return null
+  const spellAt = rest.findIndex((s) => s.kind === 'spell')
+  const limit = spellAt < 0 ? rest.length : spellAt
+  // 间隔逐次拉长：连对越多，下次出现得越晚
+  const gap = Math.max(1, (streak + 1) * 3)
+  return {
+    step: { ...step, kind: requeueKind(streak) },
+    offset: Math.min(limit, gap),
+  }
+}
+
+/**
+ * 组卷。
+ *
+ * 编排照「不背单词」的流程：
+ *   1. 新词首次：给词选义（`learn`）
+ *   2. 复习首次：翻卡自评（`review`）
+ *   3. **全部辨识通过后**才进入拼写
+ *
+ * 但每个词要连对 4 次才算通过，答错还要重来——这没法在组卷时算出来，
+ * 所以第 2 轮之后由 `planRequeue` 在作答时**动态插入**，并始终插在拼写区之前。
+ * 因此这里只需铺好「首次」和「拼写」两段，中间留空给动态插入。
  */
 export function buildQueue(ctx: QueueContext): QueueResult {
   const now = ctx.now ?? new Date()
@@ -71,7 +106,7 @@ export function buildQueue(ctx: QueueContext): QueueResult {
     }
   }
   if (settings.orderMode === 'frequency') {
-    candidates.sort((a, b) => (b.fq ?? 0) - (a.fq ?? 0))  // 出现次数越多越靠前
+    candidates.sort((a, b) => (b.fq ?? 0) - (a.fq ?? 0))
   }
   let newWords = candidates.slice(0, newBudget)
 
@@ -88,38 +123,25 @@ export function buildQueue(ctx: QueueContext): QueueResult {
   }
   reviewCards = reviewCards.slice(0, reviewBudget)
 
-  // ---- 编排
   const steps: SessionStep[] = []
-  const reviewsPerGap = Math.ceil(reviewCards.length / Math.max(1, Math.ceil(newWords.length / 5) + 1))
-  let ri = 0
-  const CHUNK = 5
-  for (let i = 0; i < newWords.length; i += CHUNK) {
-    const chunk = newWords.slice(i, i + CHUNK)
-    for (const w of chunk) {
-      steps.push({ kind: 'learn', wordId: w.i, lesson: w.ls ?? activeLessons[0], phase: 'new', groupId: w.i })
-    }
-    // 一组学完先给一次选择：要不要把这一组拼写一遍（拼写是最能巩固词形的题型）
-    if (settings.spellPrompt && settings.quizSpell) {
-      steps.push({
-        kind: 'offer',
-        wordId: chunk[0].i,
-        lesson: chunk[0].ls ?? activeLessons[0],
-        phase: 'new',
-        groupId: chunk[0].i,
-        batch: chunk.map((w) => w.i),
-      })
-    }
-    for (const w of chunk) {
-      steps.push({ kind: pickKind(w, settings), wordId: w.i, lesson: w.ls ?? activeLessons[0], phase: 'new', groupId: w.i })
-    }
-    for (let k = 0; k < reviewsPerGap && ri < reviewCards.length; k++, ri++) {
-      const c = reviewCards[ri]
-      steps.push({ kind: 'review', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
-    }
+  const lessonOf = (w: Word) => w.ls ?? activeLessons[0]
+
+  // 1) 新词首次曝光：给词选义
+  for (const w of newWords) {
+    steps.push({ kind: 'learn', wordId: w.i, lesson: lessonOf(w), phase: 'new', groupId: w.i })
   }
-  for (; ri < reviewCards.length; ri++) {
-    const c = reviewCards[ri]
+  // 2) 复习首次曝光：翻卡自评
+  for (const c of reviewCards) {
     steps.push({ kind: 'review', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
+  }
+  // 3) 拼写收尾：只有全部辨识通过（队列走到这里）才会轮到
+  if (settings.quizSpell) {
+    for (const w of newWords) {
+      steps.push({ kind: 'spell', wordId: w.i, lesson: lessonOf(w), phase: 'new', groupId: w.i })
+    }
+    for (const c of reviewCards) {
+      steps.push({ kind: 'spell', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
+    }
   }
 
   return { steps, newCount: newWords.length, reviewCount: reviewCards.length }

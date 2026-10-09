@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Word } from '../types'
 import { useStore } from '../store/useStore'
 import { getWord, loadIndex, type IndexEntry } from '../lib/data'
+import { GreekInput } from '../components/GreekInput'
+import type { InputScheme } from '../lib/greekInput'
 import { Icon, Sheet, LevelTag, Empty } from '../components/ui'
 import { SpeakButton, WordDetail } from '../components/WordDetail'
 import { playAudio } from '../lib/audio'
@@ -19,7 +21,8 @@ function fold(s: string): string {
 }
 
 export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
-  const { cards, toggleFav, lessons, lessonWords, ensureLesson } = useStore()
+  const { cards, toggleFav, lessons, lessonWords, ensureLesson, settings } = useStore()
+  const scheme = settings.inputScheme as InputScheme
   const [index, setIndex] = useState<IndexEntry[] | null>(null)
   const [q, setQ] = useState('')
   const [filter, setFilter] = useState<Filter>('all')
@@ -77,11 +80,14 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
 
       <div className="relative mb-3">
         <Icon.Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400" />
-        <input
+        {/* 支持拉丁键盘转写：打 logos 出 λογος；中文直接输入不受影响 */}
+        <GreekInput
           className="w-full rounded-xl border border-ink-200 bg-white/80 py-2.5 pl-10 pr-3 text-sm outline-none transition focus:border-aegean-400 focus:ring-4 focus:ring-aegean-100 dark:border-white/10 dark:bg-white/5"
-          placeholder="搜索希腊语（可忽略重音）或中文释义…"
+          placeholder="搜索希腊语（可直接打拉丁字母）或中文释义…"
           value={q}
-          onChange={(e) => { setQ(e.target.value); setFilter('all') }}
+          onChange={(g) => { setQ(g); setFilter('all') }}
+          scheme={scheme}
+          autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false}
         />
       </div>
 

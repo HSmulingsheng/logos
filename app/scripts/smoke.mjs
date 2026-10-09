@@ -88,13 +88,6 @@ async function headerKind() {
 
 for (let i = 0; i < Number(maxSteps); i++) {
   await page.waitForTimeout(320)
-  // 「一组新词学完」的岔路口要先处理：它没有 <header>，也不是已知题型，
-  // 不先跳过的话循环会直接结束。岔路口本身由 offer-test.mjs 专门覆盖。
-  if (await page.locator('[data-testid=study] >> text=拼写这一组').count()) {
-    await page.keyboard.press('2')
-    await page.waitForTimeout(900)
-    continue
-  }
   const head = await headerKind()
   if (!head) break
   const kind = ['新词学习', '复习', '选义', '拼写', '听音辨词', '回想'].find((k) => head.includes(k))
@@ -135,9 +128,9 @@ for (let i = 0; i < Number(maxSteps); i++) {
   }
 
   // ---- 复习：翻卡后四档自评（用数字键，顺带验证快捷键）
-  const revealBtn = page.locator('[data-testid=study] >> text=显示答案')
-  if (await revealBtn.count()) {
-    await revealBtn.first().click()
+  const flipHint = page.locator('[data-testid=study] >> text=显示答案')
+  if (await flipHint.count()) {
+    await page.keyboard.press('Space')     // 空格翻面（提示文字本身不可点）
     await page.waitForTimeout(600)
     if (!seen[`shot:${kind}-revealed`]) {
       seen[`shot:${kind}-revealed`] = 1

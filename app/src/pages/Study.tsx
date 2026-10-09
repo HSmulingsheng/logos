@@ -39,7 +39,6 @@ const KIND_LABEL: Record<SessionStep['kind'], string> = {
   spell: '拼写',
   audio: '听音辨词',
   recall: '回想',
-  offer: '选择',
 }
 
 const RATING_KEY: Record<number, string> = { 1: '忘记', 2: '模糊', 3: '记得', 4: '熟练' }
@@ -67,7 +66,7 @@ function Kbd({ children }: { children: React.ReactNode }) {
 }
 
 export function Study({ onExit }: { onExit: () => void }) {
-  const { queue, cursor, startSession, submit, advance, insertAfter, settings, lessonWords, ensureLesson, suspend } = useStore()
+  const { queue, cursor, startSession, submit, advance, settings, lessonWords, ensureLesson, suspend } = useStore()
   const [revealed, setRevealed] = useState(false)
   const [answered, setAnswered] = useState<null | { picked: number | null; ok: boolean }>(null)
   const [typed, setTyped] = useState('')
@@ -102,7 +101,6 @@ export function Study({ onExit }: { onExit: () => void }) {
   useEffect(() => {
     dbg('effect', JSON.stringify({ stepKey, wi: word?.i, sw: step?.wordId, auto: settings.autoPlay, done: playedFor.current === stepKey }))
     if (!settings.autoPlay || !word || !step || !stepKey) return
-    if (step.kind === 'offer') return          // 岔路口页面不用发音
     if (word.i !== step.wordId) return
     if (playedFor.current === stepKey) return
     playedFor.current = stepKey
@@ -197,21 +195,6 @@ export function Study({ onExit }: { onExit: () => void }) {
     const onKey = (e: KeyboardEvent) => {
       if (!step) return
       // 岔路口：1 = 拼写这一组，2 / Enter = 跳过
-      if (step.kind === 'offer') {
-        if (e.metaKey || e.ctrlKey || e.altKey) return
-        if (e.key === '1') {
-          e.preventDefault()
-          const byId = new Map<number, Word>()
-          for (const arr of lessonWords.values()) for (const w of arr) byId.set(w.i, w)
-          insertAfter((step.batch ?? []).map((id) => ({
-            kind: 'spell' as const, wordId: id, lesson: step.lesson, phase: 'new' as const, groupId: id,
-          })))
-          advance()
-          return
-        }
-        if (e.key === '2' || e.key === 'Enter') { e.preventDefault(); advance(); return }
-        return
-      }
       const tag = (e.target as HTMLElement)?.tagName
       const inInput = tag === 'INPUT' || tag === 'TEXTAREA'
 
@@ -268,7 +251,7 @@ export function Study({ onExit }: { onExit: () => void }) {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [step, stepKey, isChoiceStep, isFlipStep, revealed, answered, options, insertAfter, lessonWords, advance,
+  }, [step, stepKey, isChoiceStep, isFlipStep, revealed, answered, options, lessonWords, advance,
       spellResult, answerChoice, gradeAndNext, submitSpell, next, replay]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---------------------------------------------------------------- 结束页
@@ -291,54 +274,6 @@ export function Study({ onExit }: { onExit: () => void }) {
             </div>
           </div>
           <button className="btn-primary w-full" onClick={onExit}>返回首页（Esc）</button>
-        </div>
-      </div>
-    )
-  }
-
-  // ---- 「这一组学完了，要不要拼写一遍」岔路口
-  if (step.kind === 'offer') {
-    const byId = new Map<number, Word>()
-    for (const arr of lessonWords.values()) for (const w of arr) byId.set(w.i, w)
-    const batch = (step.batch ?? []).map((id) => byId.get(id)).filter(Boolean) as Word[]
-    const glossOf = (w: Word) => (w.z.length ? w.z[0] : w.s[0] ?? '')
-
-    const chooseSpell = () => {
-      const steps: SessionStep[] = (step.batch ?? []).map((id) => ({
-        kind: 'spell' as const, wordId: id, lesson: step.lesson, phase: 'new' as const, groupId: id,
-      }))
-      insertAfter(steps)
-      advance()
-    }
-    const skip = () => advance()
-
-    return (
-      <div data-testid="study" className="fixed inset-0 z-40 flex items-center justify-center bg-ink-50/95 p-5 backdrop-blur dark:bg-ink-950/95">
-        <div className="card-surface w-full max-w-md animate-pop p-6">
-          <div className="mb-1 text-center text-3xl">✍️</div>
-          <h2 className="mb-1 text-center text-lg font-semibold">这一组 {batch.length} 个词学完了</h2>
-          <p className="mb-4 text-center text-sm text-ink-500">
-            拼写是最能把词形记牢的一步，要不要现在把这几个词拼一遍？
-          </p>
-
-          <div className="mb-5 space-y-1.5">
-            {batch.map((w) => (
-              <div key={w.i} className="flex items-baseline gap-3 rounded-xl bg-ink-50/80 px-3.5 py-2 dark:bg-white/5">
-                <span className="greek text-lg">{w.e || w.w}</span>
-                <span className="min-w-0 flex-1 truncate text-xs text-ink-500">{glossOf(w)}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid gap-2">
-            <button className="btn-primary w-full !py-3" onClick={chooseSpell}>
-              拼写这一组（{batch.length} 题）
-            </button>
-            <button className="btn-ghost w-full" onClick={skip}>直接做测验</button>
-          </div>
-          <p className="mt-3 text-center text-[11px] text-ink-400">
-            <Kbd>1</Kbd> 拼写 · <Kbd>2</Kbd> 或 <Kbd>Enter</Kbd> 跳过
-          </p>
         </div>
       </div>
     )

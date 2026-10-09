@@ -6,7 +6,9 @@ import type {
 import * as db from '../lib/db'
 import { loadLessonWords, loadManifest } from '../lib/data'
 import { applyRating, newCardRecord, type Grade } from '../lib/srs'
-import { buildQueue, emptyDay, todayKey, type QueueResult } from '../lib/session'
+import {
+  buildQueue, emptyDay, planRequeue, todayKey, RECOGNIZE_KINDS, type QueueResult,
+} from '../lib/session'
 import type { SessionStep } from '../types'
 
 interface State {
@@ -22,6 +24,8 @@ interface State {
   /** 当前会话 */
   queue: SessionStep[]
   cursor: number
+  /** 会话内每个词的「连续答对」次数（辨识阶段）；达到 RECOGNIZE_TARGET 即出队 */
+  recognize: Record<number, number>
   sessionStats: { new: number; review: number; right: number; wrong: number; startedAt: number }
 
   init: () => Promise<void>
@@ -29,8 +33,6 @@ interface State {
   ensureLesson: (order: number) => Promise<void>
   startSession: (only?: number[]) => Promise<void>
   advance: () => void
-  /** 在当前步骤之后插入若干步骤（用于「这一组要不要拼写」选择「要」） */
-  insertAfter: (steps: SessionStep[]) => void
   submit: (step: SessionStep, grade: Grade, ms: number, correct?: boolean) => Promise<void>
   toggleFav: (id: number) => Promise<void>
   suspend: (id: number, on: boolean) => Promise<void>
@@ -54,6 +56,7 @@ export const useStore = create<State>((set, get) => ({
   lessons: [],
   queue: [],
   cursor: 0,
+  recognize: {},
   sessionStats: { new: 0, review: 0, right: 0, wrong: 0, startedAt: Date.now() },
 
   async init() {
@@ -116,17 +119,13 @@ export const useStore = create<State>((set, get) => ({
     set({
       queue: q.steps,
       cursor: 0,
+      recognize: {},
       sessionStats: {
         new: q.newCount, review: q.reviewCount, right: 0, wrong: 0, startedAt: Date.now(),
       },
     })
   },
 
-  insertAfter(steps) {
-    if (!steps.length) return
-    const { queue, cursor } = get()
-    set({ queue: [...queue.slice(0, cursor + 1), ...steps, ...queue.slice(cursor + 1)] })
-  },
   advance() {
     set({ cursor: get().cursor + 1 })
   },
@@ -178,6 +177,24 @@ export const useStore = create<State>((set, get) => ({
         wrong: get().sessionStats.wrong + (correct === false ? 1 : 0),
       },
     })
+
+    // 「连续答对 N 次才算学会」：答错清零、答对累加，未达标就重新排队。
+    // 新排的题目插在拼写区之前，保证「全部辨识通过后才拼写」。
+    if (RECOGNIZE_KINDS.includes(step.kind)) {
+      const { recognize, queue, cursor } = get()
+      const prev = recognize[step.wordId] ?? 0
+      const streak = correct === false ? 0 : prev + 1
+      const nextRec = { ...recognize }
+      const plan = planRequeue(step, streak, queue.slice(cursor + 1))
+      if (plan) {
+        nextRec[step.wordId] = streak
+        const at = cursor + 1 + plan.offset
+        set({ recognize: nextRec, queue: [...queue.slice(0, at), plan.step, ...queue.slice(at)] })
+      } else {
+        delete nextRec[step.wordId]          // 已连对达标，出队
+        set({ recognize: nextRec })
+      }
+    }
     void isNewIntro
     await Promise.all([db.putCard(out.card), db.addLog(log), db.putDay(day)])
   },

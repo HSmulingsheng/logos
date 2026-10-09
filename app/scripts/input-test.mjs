@@ -29,40 +29,66 @@ const check = (name, ok, detail = '') => {
 await page.goto(url, { waitUntil: 'networkidle', timeout: 120000 })
 await page.waitForTimeout(2200)
 
-// 走到拼写步骤：用键盘逐题推进（与 offer-test 相同、已跑通的流程）
+// 走到拼写步骤：用键盘把辨识循环走完（每个词要连对 4 次）
 const input = () => page.locator('[data-testid=study] input[placeholder^="在此输入"]')
 const S = () => page.locator('[data-testid=study]').innerText()
+
+// 把「每日新词」临时设为 1、复习上限设 0：
+// 这样辨识循环只有 1 个词 × 连对 4 次，测试快速且稳定，
+// 也正好验证「全部辨识通过后才拼写」——单个词也要走满 4 次。
+await page.evaluate(async () => {
+  const req = indexedDB.open('greek-vocab', 1)
+  const db = await new Promise((res, rej) => { req.onsuccess = () => res(req.result); req.onerror = () => rej(req.error) })
+  const tx = db.transaction('kv', 'readwrite')
+  const store = tx.objectStore('kv')
+  const cur = await new Promise((res) => { const g = store.get('settings'); g.onsuccess = () => res(g.result) })
+  const next = { ...(cur || {}), dailyNew: 1, dailyReviewLimit: 0, activeLessons: [1], quizSpell: true }
+  await new Promise((res) => { const q = store.put(next, 'settings'); q.onsuccess = () => res() })
+  // ⚠️ 必须等事务真正提交再关库，否则写入会被丢弃（曾因此让 dailyNew 设置不生效）
+  await new Promise((res) => { tx.oncomplete = () => res() })
+  db.close()
+})
+await page.reload({ waitUntil: 'networkidle' })
+await page.waitForTimeout(2200)
 
 await page.locator('main button:has-text("开始学习")').first().click()
 await page.waitForTimeout(2500)
 
 let clicked = false
-for (let k = 0; k < 90 && !clicked; k++) {
-  const t = await S()
-  if (t.includes('这一组')) {
-    // 岔路口：选「拼写这一组」，然后**立刻跳出循环**，
-    // 否则下一轮会把刚插入的拼写题也自动填掉，就测不到了
-    const offer = page.locator('[data-testid=study] button').filter({ hasText: /拼写/ })
-    if (await offer.count()) {
-      await offer.first().click()
-      clicked = true
-      break
-    }
-  }
-  if (await input().count()) { await input().fill('λάθος'); await page.keyboard.press('Enter') }
-  else if (/显示答案/.test(t)) await page.keyboard.press('Space')
-  else if (/1–4 选择/.test(t) && !/答对了|正确答案|再记一下/.test(t)) await page.keyboard.press('1')
-  else await page.keyboard.press('Enter')
-  await page.waitForTimeout(480)
-}
+// 拼写只在「全部词连对 4 次」之后出现，所以要先把辨识循环走完。
+// 关键：**必须答对才能收敛**——随机选的话，连对 4 次的期望轮数是指数级的。
+// 做法是记住正确答案：答错时应用会把正确项标绿，据此把它记下来，下次直接选它。
+const known = new Set()
+const gloss = (t) => t.replace(/^\s*\d+\s*/, '').trim()
+let revealedFlip = false
 
-// 等拼写输入框出现（中间可能还夹着别的题型）
-for (let k = 0; k < 40; k++) {
-  if (await input().count()) break
+for (let k = 0; k < 300 && !clicked; k++) {
+  if (await input().count()) { clicked = true; break }
   const t = await S()
-  if (/1–4 选择/.test(t) && !/答对了|正确答案|再记一下/.test(t)) await page.keyboard.press('1')
-  else await page.keyboard.press('Enter')
-  await page.waitForTimeout(450)
+
+  if (revealedFlip) {
+    await page.keyboard.press('3')          // 翻卡：3 = 记得（算答对）
+    revealedFlip = false
+  } else if (/显示答案/.test(t)) {
+    await page.keyboard.press('Space')      // 空格翻面
+    revealedFlip = true
+  } else if (/1–4 选择/.test(t) && !/答对了|正确答案|再记一下/.test(t)) {
+    const btns = page.locator('[data-testid=study] .grid button')
+    const n = await btns.count()
+    let hit = -1
+    for (let i = 0; i < n; i++) {
+      if (known.has(gloss(await btns.nth(i).innerText()))) { hit = i; break }
+    }
+    await btns.nth(hit >= 0 ? hit : 0).click()
+    await page.waitForTimeout(260)
+    // 作答后正确项会带 laurel 边框，把它记下来供后续使用
+    const ok = page.locator('[data-testid=study] .grid button.border-laurel-400')
+    if (await ok.count()) known.add(gloss(await ok.first().innerText()))
+    await page.keyboard.press('Enter')
+  } else {
+    await page.keyboard.press('Enter')      // 已作答的选择题：回车继续
+  }
+  await page.waitForTimeout(400)
 }
 
 check('到达拼写输入步骤', (await input().count()) > 0)
