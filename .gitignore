@@ -38,6 +38,8 @@ data/audio/
 _ankibak/
 
 # ---- 开发时的临时目录
+.wrangler-*/
+.wrangler/
 .electron-cache/
 .electron-userdata/
 .cache/
