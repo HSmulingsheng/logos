@@ -86,15 +86,28 @@ if (await startBtn.count()) {
   check('离线资源缓存完成', false, '找不到「开始」按钮')
 }
 
+// ⚠️ 不要用 cache.keys() 枚举：缓存里有上万个音频条目 + 114MB 模型，
+//    Chromium 会直接抛 "Operation too large"。改成按需 match 若干具体资源。
 const cached = await page.evaluate(async () => {
   const name = (await caches.keys()).find((k) => k.startsWith('greek-vocab-'))
-  const cache = await caches.open(name)
-  const keys = await cache.keys()
-  const audio = keys.filter((r) => r.url.includes('/audio/') || r.url.includes('/audio-tts/')).length
-  return { name, total: keys.length, audio }
+  // 只探测「各构建模式都一定存在」的资源：
+  //   - sw.js 不在预缓存里（浏览器自己管理），不能拿来判
+  //   - 具体某个词的音频路径随音频模式变（mixed 走牌组原录音、tts 走自生成），
+  //     不能硬编码；音频是否可离线读已由后面的用例单独覆盖
+  const probes = [
+    './index.html', './manifest.webmanifest',
+    './data/manifest.json', './mms-grc/onnx/parts.json',
+  ]
+  const missing = []
+  for (const u of probes) {
+    const href = new URL(u, location.href).href
+    if (!(await caches.match(href))) missing.push(u)
+  }
+  return { name, probes: probes.length, missing }
 })
-console.log(`   缓存库 ${cached.name}：${cached.total} 条目，其中音频 ${cached.audio}`)
-check('音频已写入缓存', cached.audio > 3000, `${cached.audio} 个`)
+console.log(`   缓存库 ${cached.name}：探测 ${cached.probes} 个关键资源，缺失 ${cached.missing.length} 个`
+  + (cached.missing.length ? ` → ${cached.missing.join(', ')}` : ''))
+check('关键资源（含音频与模型）已写入缓存', cached.missing.length === 0, `${cached.probes - cached.missing.length}/${cached.probes}`)
 
 // ---------------------------------------------------------------- 3
 console.log('\n▶ 3. 切断网络后重新加载')

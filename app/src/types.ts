@@ -199,7 +199,7 @@ export interface Settings {
   speechEngine: string
   /** 高清引擎的语速（0.5–1.4，1.0 为模型原速）。原速偏快，默认 0.82 */
   neuralRate: number
-  /** 希腊语输入的转写方案：'ios' | 'betacode' | 'modern' */
+  /** 希腊语输入方案：'ios'（iOS 键盘键位）| 'translit'（按读音音译）| 'betacode' | 'modern' */
   inputScheme: string
   quizAudio: boolean
   /** 学习顺序：按课次 / 按词频 */

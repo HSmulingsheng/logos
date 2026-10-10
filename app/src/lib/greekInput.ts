@@ -19,16 +19,27 @@
  * 这样多音调字符由 Unicode 自己组合，不需要手工维护一张几百项的映射表。
  */
 
-export type InputScheme = 'ios' | 'betacode' | 'modern'
+/**
+ * 输入方案。
+ *
+ * 注意 id 的命名：`ios` 就是 iOS「希腊语」键盘的**键位映射**（默认方案），
+ * 而 `translit` 才是按读音的音译。早先 `ios` 曾是音译方案的 id，
+ * 这样互换之后，老用户存着 'ios' 会自动落到新的键盘方案上，无需迁移。
+ */
+export type InputScheme = 'ios' | 'translit' | 'betacode' | 'modern'
 
 export const SCHEME_LABEL: Record<InputScheme, string> = {
-  ios: 'iOS 转写',
+  ios: 'iOS 希腊语键盘',
+  translit: '按读音音译',
   betacode: 'Beta Code',
   modern: '现代罗马化',
 }
 
 export const SCHEME_HINT: Record<InputScheme, string> = {
-  ios: 'a→α · ē→η · ō→ω · ch/ph/th/ps→χ/φ/θ/ψ · h 起头为粗气号',
+  ios: 'iOS 希腊语键盘的键位对应：q→; w→ς e→ε r→ρ t→τ y→υ u→θ i→ι o→ο p→π · '
+        + 'a→α s→σ d→δ f→φ g→γ h→η j→ξ k→κ l→λ · z→ζ x→χ c→ψ v→ω b→β n→ν m→μ · '
+        + '分号加重音（;a→ά）· Shift+分号加分音符（:i→ϊ）· 数字 1-6/0 加气号等 · Shift 大写',
+  translit: '按读音音译：a→α · ē→η · ō→ω · ch/ph/th/ps→χ/φ/θ/ψ · h 起头为粗气号',
   betacode: 'h→η · w→ω · q→θ · f→φ · c→ξ · y→ψ · 大写前加 *',
   modern: 'v→β · th→θ · ch→χ · i→ι · o→ο（不区分长短与气号）',
 }
@@ -71,7 +82,46 @@ const singleOf = (c: string): string | undefined =>
 const stripAccent = (c: string) =>
   c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').normalize('NFC')
 
-// ---------------------------------------------------------------- iOS 方案
+// ---------------------------------------------------------------- iOS 希腊语键盘（位置映射）
+
+/**
+ * iOS「希腊语」键盘是**键位映射**，不是按读音：
+ * QWERTY 的物理位置不变，只把该位置输出的字符换成希腊字母。
+ * 所以 u 是 θ、w 是词尾 ς、v 是 ω、c 是 ψ、j 是 ξ —— 这几个最容易记混。
+ * 字母表末位那个分号键是重音死键（见 transliterate 里的处理）。
+ */
+const IOSKEY_SINGLE: Record<string, string> = {
+  q: ';', w: 'ς', e: 'ε', r: 'ρ', t: 'τ', y: 'υ', u: 'θ', i: 'ι', o: 'ο', p: 'π',
+  a: 'α', s: 'σ', d: 'δ', f: 'φ', g: 'γ', h: 'η', j: 'ξ', k: 'κ', l: 'λ',
+  z: 'ζ', x: 'χ', c: 'ψ', v: 'ω', b: 'β', n: 'ν', m: 'μ',
+}
+/**
+ * 键盘方案里哪些键位落在元音上——`;`/`:` 死键要贴到它们上面。
+ * a→α、e→ε、h→η、i→ι、o→ο、v→ω、y→υ。
+ */
+const IOSKEY_VOWEL_KEYS = new Set(['a', 'e', 'h', 'i', 'o', 'v', 'y'])
+
+/**
+ * 键盘方案：逐字符按键位替换，Shift（大写）即大写希腊字母。
+ *
+ * 额外做一件事：**词尾的 σ 自动写成 ς**。规格里 s=σ / w=ς 是靠手动区分的，
+ * 但希腊语词尾不可能出现 σ（只能是 ς），所以这个校正不会出错，
+ * 也让 `logos` 能自然地打出 λογος。iOS 自己也会做类似校正。
+ */
+function iosKeyboard(word: string): string {
+  let out = ''
+  for (const ch of word) {
+    const base = IOSKEY_SINGLE[ch.toLowerCase()]
+    if (!base) { out += ch; continue }
+    // 只有单字符才有大小写之分；`q→;` 这类标点原样输出
+    out += ch === ch.toLowerCase() ? base : base.toUpperCase()
+  }
+  // 只对「多字符的词」做校正：单打一个 s 仍按规格输出 σ，
+  // 否则用户没法输入 σ 本身（而 specs 明确 s=σ）。
+  return word.length > 1 && out.endsWith('σ') ? out.slice(0, -1) + 'ς' : out
+}
+
+// ---------------------------------------------------------------- iOS 音译（按读音）
 
 /** 单字母（含带长音符的元音） */
 const IOS_SINGLE: Record<string, string> = {
@@ -146,6 +196,23 @@ export function transliterate(input: string, scheme: InputScheme = 'ios'): strin
     // 数字：贴到前面最后一个元音上（可跨过已转换的希腊语）
     if (DIGIT_MARKS[c]) { out = attachMarks(out, DIGIT_MARKS[c]); i++; continue }
 
+    // iOS 键盘方案：`;` 是重音死键、Shift+`;`（即 `:`）是分音符死键。
+    // 死键后面跟元音键位时，把符号贴到那个元音上（;a→ά、:i→ϊ）。
+    if (scheme === 'ios' && (c === ';' || c === ':')) {
+      const nxt = input[i + 1]
+      if (nxt && IOSKEY_VOWEL_KEYS.has(nxt.toLowerCase())) {
+        out += iosKeyboard(nxt)
+        out = attachMarks(out, c === ';' ? ACUTE : '\u0308')
+        wordStart = false
+        i += 2
+        continue
+      }
+      out += c                       // 后面不是元音就按普通标点输出
+      wordStart = true
+      i++
+      continue
+    }
+
     // 拉丁字母：整词取出来一并转换，才能正确处理词首气号与词尾 ς
     if (LATIN.test(c)) {
       let j = i
@@ -164,9 +231,10 @@ export function transliterate(input: string, scheme: InputScheme = 'ios'): strin
 }
 
 function convertWord(word: string, scheme: InputScheme, atWordStart = true): string {
+  if (scheme === 'ios') return iosKeyboard(word)
   if (scheme === 'betacode') return betaCode(word)
   if (scheme === 'modern') return modern(word)
-  return ios(word, atWordStart)
+  return iosTranslit(word, atWordStart)
 }
 
 /** 组合符号的类别：气号与重音各自只能有一个 */
@@ -214,7 +282,7 @@ function attachMarks(out: string, marks: string): string {
   return out
 }
 
-function ios(word: string, startsWord = true): string {
+function iosTranslit(word: string, startsWord = true): string {
   word = word.normalize('NFC')     // 让 ā/ē/ō 成为单码点，双字母表才匹配得上
   let out = ''
   let i = 0

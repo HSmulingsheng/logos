@@ -34,7 +34,7 @@ await page.addInitScript(() => {
   }
   const co = URL.createObjectURL.bind(URL)
   URL.createObjectURL = (x) => { if (x instanceof Blob) window.__blobs.push(x); return co(x) }
-  localStorage.setItem('greek-welcomed', '1')
+  localStorage.setItem('greek-welcomed-v2', '1')
 })
 
 const results = []

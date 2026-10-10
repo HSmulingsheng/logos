@@ -123,7 +123,7 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
               className="rounded-lg border border-ink-200 bg-white/80 px-2 py-1.5 text-xs outline-none dark:border-white/10 dark:bg-white/5"
               aria-label="希腊语输入方案"
             >
-              {(['ios', 'betacode', 'modern'] as InputScheme[]).map((v) => (
+              {(['ios', 'translit', 'betacode', 'modern'] as InputScheme[]).map((v) => (
                 <option key={v} value={v}>{SCHEME_LABEL[v]}</option>
               ))}
             </select>

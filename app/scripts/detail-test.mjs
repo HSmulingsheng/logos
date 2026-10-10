@@ -23,7 +23,7 @@ await page.addInitScript(() => {
   window.__plays = 0
   const o = HTMLMediaElement.prototype.play
   HTMLMediaElement.prototype.play = function (...a) { window.__plays++; return o.apply(this, a) }
-  localStorage.setItem('greek-welcomed', '1')
+  localStorage.setItem('greek-welcomed-v2', '1')
 })
 
 const plays = () => page.evaluate(() => window.__plays)

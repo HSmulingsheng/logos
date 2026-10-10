@@ -18,7 +18,7 @@ const page = await browser.newPage({ viewport: { width: 430, height: 932 }, devi
 const errors = []
 page.on('pageerror', (e) => errors.push(e.message))
 page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
-await page.addInitScript(() => localStorage.setItem('greek-welcomed', '1'))
+await page.addInitScript(() => localStorage.setItem('greek-welcomed-v2', '1'))
 
 const results = []
 const check = (name, ok, detail = '') => {
@@ -111,35 +111,33 @@ for (const [key, want] of typing) {
 }
 check('逐字符打字正确转写', typedOk, `logos → ${await box.inputValue()}`)
 
-// 双字母：清空后打 th / ch / ps
+// 键位映射：u 是 θ、c 是 ψ（不是按读音的 th / ps）
 await box.fill('')
-for (const key of 'theos') await box.type(key, { delay: 60 })
+for (const key of 'urv') await box.type(key, { delay: 60 })
 await page.waitForTimeout(300)
-check('双字母 th → θ', (await box.inputValue()).startsWith('θε'), await box.inputValue())
+check('键位 u → θ', (await box.inputValue()) === 'θρω', await box.inputValue())
 
 await box.fill('')
-for (const key of 'psyche') await box.type(key, { delay: 60 })
+for (const key of 'cy') await box.type(key, { delay: 60 })
 await page.waitForTimeout(300)
-check('双字母 ps → ψ', (await box.inputValue()).startsWith('ψ'), await box.inputValue())
+check('键位 c → ψ', (await box.inputValue()) === 'ψυ', await box.inputValue())
 
-// 数字变音符号
+// 数字变音符号（单调键盘打不出气号，靠数字补）
 await box.fill('')
 for (const key of 'logos1') await box.type(key, { delay: 60 })
 await page.waitForTimeout(300)
 check('数字 1 → 重音', (await box.inputValue()) === 'λογός', await box.inputValue())
 
 await box.fill('')
-for (const key of 'hēme1ra') await box.type(key, { delay: 60 })
+for (const key of 'a5nurvpos') await box.type(key, { delay: 55 })
 await page.waitForTimeout(300)
-const hemera = await box.inputValue()
-check('h+长音符+数字', hemera === 'ἡμέρα', hemera)
+check('数字 5 → 柔气号', (await box.inputValue()) === 'ἀνθρωπος', await box.inputValue())
 
-// 词首元音自动柔气号
+// 分号是重音死键（规格：; → ΄，再按元音）
 await box.fill('')
-for (const key of 'anthropos') await box.type(key, { delay: 50 })
+for (const key of ';a') await box.type(key, { delay: 80 })
 await page.waitForTimeout(300)
-// 注意：o→ο、ō→ω，所以 anthropos 得到 ἀνθροπος 才对（要 ω 得打 anthrōpos）
-check('词首元音自动柔气号', (await box.inputValue()) === 'ἀνθροπος', await box.inputValue())
+check('分号死键 ;a → ά', (await box.inputValue()) === 'ά', await box.inputValue())
 
 // 退格
 await box.fill('')

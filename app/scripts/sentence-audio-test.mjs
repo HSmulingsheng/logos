@@ -39,7 +39,7 @@ await page.addInitScript(() => {
     if (obj instanceof Blob) window.__blobs.push(obj)
     return orig(obj)
   }
-  localStorage.setItem('greek-welcomed', '1')
+  localStorage.setItem('greek-welcomed-v2', '1')
 })
 
 const results = []
