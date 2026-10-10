@@ -336,6 +336,10 @@ export function Study({ onExit }: { onExit: () => void }) {
                 {word.pz && <span className="chip">{word.pz}</span>}
                 {word.g && <span className="chip">{word.g}</span>}
               </div>
+              {/* 音标放在词头下。这里是 `learn` 区，拼写步骤另有渲染分支，不会走到这 */}
+              {word.ipa && (
+                <div className="ipa mt-2 text-sm text-aegean-600 dark:text-aegean-400">[{word.ipa}]</div>
+              )}
 
               <div className="mt-5">
                 <ChoiceList options={options} picked={answered?.picked ?? null}
@@ -369,6 +373,9 @@ export function Study({ onExit }: { onExit: () => void }) {
                 <SpeakButton word={word} size="lg" />
                 {word.pz && <span className="chip">{word.pz}</span>}
               </div>
+              {word.ipa && (
+                <div className="ipa mt-2 text-sm text-aegean-600 dark:text-aegean-400">[{word.ipa}]</div>
+              )}
               {revealed ? (
                 <div className="mt-5 animate-fade-up border-t border-ink-100 pt-4 text-left dark:border-white/10">
                   <WordDetail word={word} />

@@ -15,6 +15,8 @@ export interface Word {
   w: string
   /** 带重音/长音标记的增强形式 */
   e?: string
+  /** 国际音标（古典阿提卡重建 Probert 2010；不含方括号，音节用 . 分隔） */
+  ipa?: string
   /** 英文义项 */
   s: string[]
   /** 中文义项 */
@@ -105,7 +107,11 @@ export interface LessonData {
 }
 
 /** 检索索引条目: [id, 词形, 归一键, 课号, 首义] */
-export type IndexEntry = [number, string, string, number, string]
+/**
+ * 轻量检索索引：[id, 词形, 折叠词形（去变音，供搜索）, 课程 order, 中文释义摘要, 国际音标]
+ * 最后两项是后加的，字段顺序不能变——索引是数组而非对象，就是为了省体积。
+ */
+export type IndexEntry = [number, string, string, number, string, string]
 
 export interface NtVerse {
   b: string

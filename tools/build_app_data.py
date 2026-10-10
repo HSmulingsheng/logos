@@ -25,6 +25,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
+# shrink_word 是模块级函数，取不到 main() 里的局部量，所以走全局（同 AUDIO_MODE 的做法）
+IPA: dict[str, str] = {}
+
+
 def fold_key(s: str) -> str:
     """检索键：NFC → 去变音符号 → 小写 → 词尾 ς 折成 σ。
     必须与前端 lib/data.ts 的 fold 保持一致，否则希腊语搜索会全部落空。"""
@@ -61,6 +65,7 @@ def shrink_word(r: dict, zh: list[str], ex: list, forms: list, ex_tr: dict | Non
         "i": r["id"],
         "w": r["word"],
         "e": r["enhanced"] if r["enhanced"] != r["word"] else "",
+        "ipa": IPA.get(str(r["id"]), ""),
         "s": r["senses"],
         "z": zh,
         "p": r["pos"],
@@ -125,6 +130,13 @@ def main() -> int:
     # 课程的中文名按**实际内容**命名：1–7 按新约词频递降、27/28/30 是纯新约、
     # 29/31 完全不含新约、8–26 是无区分特征的长尾（直接编号）。见 data/lesson-names.json
     lesson_zh = json.load(open(DATA / "lesson-names.json", encoding="utf-8"))
+    # 国际音标（由 tools/build_ipa.py 用 CLTK 的 Probert 古典阿提卡重建生成）；
+    # 文件缺失时只是不显示音标，不影响构建
+    ipa_path = DATA / "ipa.json"
+    global IPA
+    IPA = json.load(open(ipa_path, encoding="utf-8")) if ipa_path.exists() else {}
+    if IPA:
+        print(f"已载入国际音标 {len(IPA)} 条")
     zh_path = DATA / "zh.json"
     zh = json.load(open(zh_path, encoding="utf-8")) if zh_path.exists() else {}
     if zh:
@@ -216,7 +228,8 @@ def main() -> int:
         if o is None:
             continue
         z = zh.get(str(r["id"])) or r["senses"][:1]
-        idx.append([r["id"], r["word"], fold_key(r["word"]), o, (z[0] if z else "")[:40]])
+        idx.append([r["id"], r["word"], fold_key(r["word"]), o,
+                    (z[0] if z else "")[:40], IPA.get(str(r["id"]), "")])
     (out / "index.json").write_text(
         json.dumps(idx, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 

@@ -56,6 +56,12 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
+/* 国际音标：Gentium Plus 是为语言学研究设计的，IPA 覆盖远好于普通正文字体 */
+.ipa {
+  font-family: theme('fontFamily.greek');
+  font-feature-settings: 'kern' 1;
+}
+
 @layer components {
   .card-surface {
     @apply rounded-2xl border border-white/70 bg-white/80 shadow-[0_2px_16px_rgba(30,37,48,.06)] backdrop-blur;

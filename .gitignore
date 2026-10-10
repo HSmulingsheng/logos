@@ -54,6 +54,9 @@ data/missing_audio_ids.json
 # ---- 音频生成的断点续传状态（工作产物）
 data/tts-neural-progress*.json
 
+# ---- CLTK 的数据目录（build_ipa.py 需要重定向 HOME 才能写）
+.cltk-home/
+
 # ---- Python
 __pycache__/
 *.py[cod]

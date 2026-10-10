@@ -136,6 +136,35 @@ node app/scripts/sync-neural.mjs                                 # 切分成 ≤
 动态插入队列——并且**始终插在拼写区之前**，这样第 5 条才成立。
 逻辑自检见 `app/scripts/session-test.ts`（10 项断言，含该不变式）。
 
+### 国际音标（IPA）
+
+每个词都注有国际音标，**古典阿提卡（Attic）重建**，用 CLTK 的
+`cltk.phonology.grc.transcription.Transcriber("Attic", "Probert")` 生成——
+重建方案出自 **Probert (2010)**, *A Companion to the Ancient Greek Language*。
+
+```
+λόγος      [ló.gos]          Ζεύς       [zdéws]        ← ζ = [zd]
+ἄνθρωπος   [ɑ́n.tʰrɔː.pos]    πρᾶγμα     [prɑ̂ŋ.mɑ]      ← γ 在 μ 前 → [ŋ]
+ἡμέρα      [hɛː.mé.rɑ]       ψυχή       [psy.kʰɛ́ː]     ← υ = [y]、χ = [kʰ]
+```
+
+几个特征：气号 → h（`ὁ [ho]`）、高调用声调符号标在元音上、音节用 `.` 分隔、
+连读音变（r 清化 / s 浊化 / 鼻音同化）已处理。
+
+- 生成：`HOME=$PWD/.cltk-home tools/venvs/grc-ipa/bin/python tools/build_ipa.py`
+  → `data/ipa.json`（**100% 覆盖**，15,686 词）
+  （CLTK 会在 `$HOME` 下建数据目录，所以必须重定向 HOME）
+- 字段：`lesson-*.json` 的 `ipa`、`index.json` 第 6 项
+- `build_app_data.py` 只**读取** `ipa.json`，所以重建数据不需要装 CLTK
+- 展示：词条详情、词典列表、学习卡（**拼写步骤除外**——那题就是考拼写，
+  给音标等于给答案）
+- 字体：Gentium Plus（SIL，为语言学研究设计）已内置，IPA 覆盖完整
+- 验收：`app/scripts/ipa-test.mjs`（17 项，含 10 项音值特征断言，
+  防止换实现后音值悄悄退化）
+
+> 词条里有些是「介词 + 格标注」的写法（`ἐπί [+acc]`），方括号是语法说明不是词的一部分，
+> `build_ipa.py` 会先剥掉再转写。
+
 ### 希腊语输入：拉丁键盘直接转写
 
 **默认方案是 iOS「希腊语」键盘的键位映射**——QWERTY 的物理位置不变，

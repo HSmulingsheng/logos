@@ -72,6 +72,16 @@ export function WordDetail({ word, compact = false }: { word: Word; compact?: bo
 
   return (
     <div className="space-y-4 text-left">
+      {/* 国际音标（古典阿提卡重建，Probert 2010）：音节用 . 分隔，声调符号标高调位置 */}
+      {word.ipa && (
+        <div className="flex items-baseline gap-2">
+          <span className="shrink-0 text-xs font-semibold text-ink-400">发音</span>
+          <span className="ipa text-[17px] leading-relaxed text-aegean-700 dark:text-aegean-300">
+            [{word.ipa}]
+          </span>
+        </div>
+      )}
+
       {/* 释义：中文为主，英文并列保留 */}
       <div>
         <div className="mb-1.5 flex flex-wrap items-center gap-2">

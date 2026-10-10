@@ -31,14 +31,14 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
   useEffect(() => {
     void loadIndex().then((raw) => {
       // 数据侧的键已折叠过；这里再折一次作为保险，避免两边规范化不一致导致搜索落空
-      setIndex(raw.map((e) => [e[0], e[1], fold(e[1]), e[3], e[4]] as IndexEntry))
+      setIndex(raw.map((e) => [e[0], e[1], fold(e[1]), e[3], e[4], e[5] ?? ''] as IndexEntry))
     })
   }, [])
 
   const results = useMemo(() => {
     if (filter !== 'all') {
       const now = Date.now()
-      const out: { id: number; word: string; lesson: number; gloss: string }[] = []
+      const out: { id: number; word: string; lesson: number; gloss: string; ipa: string }[] = []
       for (const c of cards.values()) {
         let hit = false
         if (filter === 'fav') hit = !!c.fav
@@ -47,20 +47,20 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
         else if (filter === 'new') hit = c.state === 0
         if (!hit) continue
         const found = index?.find((e) => e[0] === c.id)
-        out.push({ id: c.id, word: found?.[1] ?? `#${c.id}`, lesson: c.lesson, gloss: found?.[4] ?? '' })
+        out.push({ id: c.id, word: found?.[1] ?? `#${c.id}`, lesson: c.lesson, gloss: found?.[4] ?? '', ipa: found?.[5] ?? '' })
         if (out.length > 300) break
       }
       return out
     }
     if (!index) return []
     const s = q.trim()
-    if (!s) return index.slice(0, 120).map((e) => ({ id: e[0], word: e[1], lesson: e[3], gloss: e[4] }))
+    if (!s) return index.slice(0, 120).map((e) => ({ id: e[0], word: e[1], lesson: e[3], gloss: e[4], ipa: e[5] }))
     const folded = fold(s)
     const lower = s.toLowerCase()
     const out = []
-    for (const [id, word, key, lesson, gloss] of index) {
+    for (const [id, word, key, lesson, gloss, ipa] of index) {
       if (key.includes(folded) || gloss.toLowerCase().includes(lower)) {
-        out.push({ id, word, lesson, gloss })
+        out.push({ id, word, lesson, gloss, ipa })
         if (out.length >= 120) break
       }
     }
@@ -121,6 +121,8 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
                     <span className="greek text-lg">{r.word}</span>
                     <LevelTag level={levelOf(r.lesson)} />
                   </div>
+                  {/* 国际音标（古典阿提卡重建）：音节用 . 分隔 */}
+                  {r.ipa && <div className="ipa truncate text-[11px] text-aegean-600 dark:text-aegean-400">[{r.ipa}]</div>}
                   <p className="truncate text-xs text-ink-500">{r.gloss}</p>
                 </div>
                 {c?.fav ? <Icon.StarFill className="h-4 w-4 text-amber-400" /> : null}
