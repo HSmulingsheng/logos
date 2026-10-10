@@ -1,0 +1,541 @@
+{
+ "version": 1,
+ "source": "Anki「Ancient Greek Vocab」+ MorphGNT/SBLGNT + 和合本(CUV)",
+ "totalWords": 15686,
+ "totalWithExamples": 14128,
+ "totalWithAudio": 15686,
+ "totalWithZh": 15686,
+ "levels": [
+  "A2",
+  "B1",
+  "B2",
+  "C1",
+  "C2"
+ ],
+ "lessons": [
+  {
+   "order": 1,
+   "seq": 1,
+   "level": "A2",
+   "title": "Core words",
+   "titleZh": "新约核心词",
+   "file": "lesson-01.json",
+   "count": 405,
+   "withExamples": 372,
+   "withAudio": 405,
+   "withZh": 405
+  },
+  {
+   "order": 2,
+   "seq": 2,
+   "level": "A2",
+   "title": "NT 90%",
+   "titleZh": "新约高频词",
+   "file": "lesson-02.json",
+   "count": 420,
+   "withExamples": 393,
+   "withAudio": 420,
+   "withZh": 420
+  },
+  {
+   "order": 3,
+   "seq": 3,
+   "level": "A2",
+   "title": "Gain of Function",
+   "titleZh": "新约常用词",
+   "file": "lesson-03.json",
+   "count": 432,
+   "withExamples": 387,
+   "withAudio": 432,
+   "withZh": 432
+  },
+  {
+   "order": 4,
+   "seq": 4,
+   "level": "A2",
+   "title": "NT readings",
+   "titleZh": "新约中频词",
+   "file": "lesson-04.json",
+   "count": 460,
+   "withExamples": 400,
+   "withAudio": 460,
+   "withZh": 460
+  },
+  {
+   "order": 5,
+   "seq": 5,
+   "level": "B1",
+   "title": "Great leap",
+   "titleZh": "新约进阶词",
+   "file": "lesson-05.json",
+   "count": 441,
+   "withExamples": 416,
+   "withAudio": 441,
+   "withZh": 441
+  },
+  {
+   "order": 6,
+   "seq": 6,
+   "level": "B1",
+   "title": "NT to 97%",
+   "titleZh": "新约次常用词",
+   "file": "lesson-06.json",
+   "count": 421,
+   "withExamples": 404,
+   "withAudio": 421,
+   "withZh": 421
+  },
+  {
+   "order": 7,
+   "seq": 7,
+   "level": "B1",
+   "title": "Attic prose to 90%",
+   "titleZh": "古典散文入门",
+   "file": "lesson-07.json",
+   "count": 432,
+   "withExamples": 412,
+   "withAudio": 432,
+   "withZh": 432
+  },
+  {
+   "order": 8,
+   "seq": 8,
+   "level": "B1",
+   "title": "Widen vocabulary",
+   "titleZh": "低频词",
+   "file": "lesson-08.json",
+   "count": 451,
+   "withExamples": 431,
+   "withAudio": 451,
+   "withZh": 451
+  },
+  {
+   "order": 9,
+   "seq": 9,
+   "level": "B1",
+   "title": "Rhetors",
+   "titleZh": "低频词",
+   "file": "lesson-09.json",
+   "count": 461,
+   "withExamples": 444,
+   "withAudio": 461,
+   "withZh": 461
+  },
+  {
+   "order": 10,
+   "seq": 10,
+   "level": "B1",
+   "title": "Lysias to 96%",
+   "titleZh": "低频词",
+   "file": "lesson-10.json",
+   "count": 399,
+   "withExamples": 374,
+   "withAudio": 399,
+   "withZh": 399
+  },
+  {
+   "order": 11,
+   "seq": 11,
+   "level": "B2",
+   "title": "Read histories",
+   "titleZh": "低频词",
+   "file": "lesson-11.json",
+   "count": 478,
+   "withExamples": 451,
+   "withAudio": 478,
+   "withZh": 478
+  },
+  {
+   "order": 12,
+   "seq": 12,
+   "level": "B2",
+   "title": "Attic Prose to 95%",
+   "titleZh": "低频词",
+   "file": "lesson-12.json",
+   "count": 479,
+   "withExamples": 453,
+   "withAudio": 479,
+   "withZh": 479
+  },
+  {
+   "order": 13,
+   "seq": 13,
+   "level": "B2",
+   "title": "Heroes",
+   "titleZh": "低频词",
+   "file": "lesson-13.json",
+   "count": 454,
+   "withExamples": 429,
+   "withAudio": 454,
+   "withZh": 454
+  },
+  {
+   "order": 14,
+   "seq": 14,
+   "level": "B2",
+   "title": "Plato and Thucydides",
+   "titleZh": "低频词",
+   "file": "lesson-14.json",
+   "count": 471,
+   "withExamples": 436,
+   "withAudio": 471,
+   "withZh": 471
+  },
+  {
+   "order": 15,
+   "seq": 15,
+   "level": "B2",
+   "title": "Full Greek corpus to 95%",
+   "titleZh": "低频词",
+   "file": "lesson-15.json",
+   "count": 440,
+   "withExamples": 392,
+   "withAudio": 440,
+   "withZh": 440
+  },
+  {
+   "order": 16,
+   "seq": 16,
+   "level": "B2",
+   "title": "Speak as philosophers",
+   "titleZh": "低频词",
+   "file": "lesson-16.json",
+   "count": 387,
+   "withExamples": 366,
+   "withAudio": 387,
+   "withZh": 387
+  },
+  {
+   "order": 17,
+   "seq": 17,
+   "level": "B2",
+   "title": "The rest is poetry",
+   "titleZh": "低频词",
+   "file": "lesson-17.json",
+   "count": 389,
+   "withExamples": 353,
+   "withAudio": 389,
+   "withZh": 389
+  },
+  {
+   "order": 18,
+   "seq": 18,
+   "level": "B2",
+   "title": "A day at the theater",
+   "titleZh": "低频词",
+   "file": "lesson-18.json",
+   "count": 341,
+   "withExamples": 320,
+   "withAudio": 341,
+   "withZh": 341
+  },
+  {
+   "order": 19,
+   "seq": 19,
+   "level": "B2",
+   "title": "Philosophical musings",
+   "titleZh": "低频词",
+   "file": "lesson-19.json",
+   "count": 445,
+   "withExamples": 402,
+   "withAudio": 445,
+   "withZh": 445
+  },
+  {
+   "order": 20,
+   "seq": 20,
+   "level": "C1",
+   "title": "Follow the inscription",
+   "titleZh": "低频词",
+   "file": "lesson-20.json",
+   "count": 414,
+   "withExamples": 379,
+   "withAudio": 414,
+   "withZh": 414
+  },
+  {
+   "order": 21,
+   "seq": 21,
+   "level": "C1",
+   "title": "Scriptorium",
+   "titleZh": "低频词",
+   "file": "lesson-21.json",
+   "count": 900,
+   "withExamples": 827,
+   "withAudio": 900,
+   "withZh": 900
+  },
+  {
+   "order": 23,
+   "seq": 22,
+   "level": "C1",
+   "title": "Voice of the siren",
+   "titleZh": "低频词",
+   "file": "lesson-23.json",
+   "count": 920,
+   "withExamples": 852,
+   "withAudio": 920,
+   "withZh": 920
+  },
+  {
+   "order": 24,
+   "seq": 23,
+   "level": "C1",
+   "title": "Xenophon 98%",
+   "titleZh": "低频词",
+   "file": "lesson-24.json",
+   "count": 465,
+   "withExamples": 419,
+   "withAudio": 465,
+   "withZh": 465
+  },
+  {
+   "order": 25,
+   "seq": 24,
+   "level": "C1",
+   "title": "For the Glory",
+   "titleZh": "低频词",
+   "file": "lesson-25.json",
+   "count": 473,
+   "withExamples": 443,
+   "withAudio": 473,
+   "withZh": 473
+  },
+  {
+   "order": 26,
+   "seq": 25,
+   "level": "C1",
+   "title": "Theater to 94%",
+   "titleZh": "低频词",
+   "file": "lesson-26.json",
+   "count": 402,
+   "withExamples": 370,
+   "withAudio": 402,
+   "withZh": 402
+  },
+  {
+   "order": 27,
+   "seq": 26,
+   "level": "C1",
+   "title": "NT fuller coverage",
+   "titleZh": "新约补充词",
+   "file": "lesson-27.json",
+   "count": 184,
+   "withExamples": 176,
+   "withAudio": 184,
+   "withZh": 184
+  },
+  {
+   "order": 28,
+   "seq": 27,
+   "level": "C1",
+   "title": "NT hapax legomena",
+   "titleZh": "新约罕见词",
+   "file": "lesson-28.json",
+   "count": 532,
+   "withExamples": 531,
+   "withAudio": 532,
+   "withZh": 532
+  },
+  {
+   "order": 29,
+   "seq": 28,
+   "level": "C2",
+   "title": "Light at the end",
+   "titleZh": "古典诗歌词",
+   "file": "lesson-29.json",
+   "count": 676,
+   "withExamples": 616,
+   "withAudio": 676,
+   "withZh": 676
+  },
+  {
+   "order": 30,
+   "seq": 29,
+   "level": "C2",
+   "title": "NT Proper words",
+   "titleZh": "新约专名词",
+   "file": "lesson-30.json",
+   "count": 640,
+   "withExamples": 581,
+   "withAudio": 640,
+   "withZh": 640
+  },
+  {
+   "order": 31,
+   "seq": 30,
+   "level": "C2",
+   "title": "New Beginnings",
+   "titleZh": "诗歌体与异体词",
+   "file": "lesson-31.json",
+   "count": 1874,
+   "withExamples": 1299,
+   "withAudio": 1874,
+   "withZh": 1874
+  }
+ ],
+ "books": [
+  {
+   "zh": "马太福音",
+   "en": "Matthew",
+   "file": "nt-01.json",
+   "count": 1068
+  },
+  {
+   "zh": "马可福音",
+   "en": "Mark",
+   "file": "nt-02.json",
+   "count": 673
+  },
+  {
+   "zh": "路加福音",
+   "en": "Luke",
+   "file": "nt-03.json",
+   "count": 1149
+  },
+  {
+   "zh": "约翰福音",
+   "en": "John",
+   "file": "nt-04.json",
+   "count": 866
+  },
+  {
+   "zh": "使徒行传",
+   "en": "Acts",
+   "file": "nt-05.json",
+   "count": 1002
+  },
+  {
+   "zh": "罗马书",
+   "en": "Romans",
+   "file": "nt-06.json",
+   "count": 430
+  },
+  {
+   "zh": "哥林多前书",
+   "en": "1 Corinthians",
+   "file": "nt-07.json",
+   "count": 437
+  },
+  {
+   "zh": "哥林多后书",
+   "en": "2 Corinthians",
+   "file": "nt-08.json",
+   "count": 256
+  },
+  {
+   "zh": "加拉太书",
+   "en": "Galatians",
+   "file": "nt-09.json",
+   "count": 149
+  },
+  {
+   "zh": "以弗所书",
+   "en": "Ephesians",
+   "file": "nt-10.json",
+   "count": 155
+  },
+  {
+   "zh": "腓立比书",
+   "en": "Philippians",
+   "file": "nt-11.json",
+   "count": 104
+  },
+  {
+   "zh": "歌罗西书",
+   "en": "Colossians",
+   "file": "nt-12.json",
+   "count": 95
+  },
+  {
+   "zh": "帖撒罗尼迦前书",
+   "en": "1 Thessalonians",
+   "file": "nt-13.json",
+   "count": 89
+  },
+  {
+   "zh": "帖撒罗尼迦后书",
+   "en": "2 Thessalonians",
+   "file": "nt-14.json",
+   "count": 47
+  },
+  {
+   "zh": "提摩太前书",
+   "en": "1 Timothy",
+   "file": "nt-15.json",
+   "count": 113
+  },
+  {
+   "zh": "提摩太后书",
+   "en": "2 Timothy",
+   "file": "nt-16.json",
+   "count": 83
+  },
+  {
+   "zh": "提多书",
+   "en": "Titus",
+   "file": "nt-17.json",
+   "count": 46
+  },
+  {
+   "zh": "腓利门书",
+   "en": "Philemon",
+   "file": "nt-18.json",
+   "count": 25
+  },
+  {
+   "zh": "希伯来书",
+   "en": "Hebrews",
+   "file": "nt-19.json",
+   "count": 303
+  },
+  {
+   "zh": "雅各书",
+   "en": "James",
+   "file": "nt-20.json",
+   "count": 108
+  },
+  {
+   "zh": "彼得前书",
+   "en": "1 Peter",
+   "file": "nt-21.json",
+   "count": 105
+  },
+  {
+   "zh": "彼得后书",
+   "en": "2 Peter",
+   "file": "nt-22.json",
+   "count": 61
+  },
+  {
+   "zh": "约翰一书",
+   "en": "1 John",
+   "file": "nt-23.json",
+   "count": 105
+  },
+  {
+   "zh": "约翰二书",
+   "en": "2 John",
+   "file": "nt-24.json",
+   "count": 13
+  },
+  {
+   "zh": "约翰三书",
+   "en": "3 John",
+   "file": "nt-25.json",
+   "count": 15
+  },
+  {
+   "zh": "犹大书",
+   "en": "Jude",
+   "file": "nt-26.json",
+   "count": 25
+  },
+  {
+   "zh": "启示录",
+   "en": "Revelation",
+   "file": "nt-27.json",
+   "count": 405
+  }
+ ]
+}
