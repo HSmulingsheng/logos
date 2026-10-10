@@ -24,6 +24,12 @@ export interface QueueContext {
   now?: Date
   /** 若指定，则只学这些词的 id（用于「专项复习」） */
   only?: number[]
+  /**
+   * 只学哪一部分。
+   * 'new' 只出新词、'review' 只出复习、'all'（默认）两者都出。
+   * 首页的「开始学习 / 开始复习」两个按钮就靠它分开。
+   */
+  mode?: 'all' | 'new' | 'review'
 }
 
 export interface QueueResult {
@@ -115,6 +121,9 @@ export function buildQueue(ctx: QueueContext): QueueResult {
   let reviewCards = [...cards.values()]
     .filter((c) => c.state !== State.New && !c.suspended && c.due <= now.getTime())
     .sort((a, b) => a.due - b.due)
+
+  if (ctx.mode === 'new') reviewCards = []
+  else if (ctx.mode === 'review') newWords = []
 
   if (ctx.only) {
     const set = new Set(ctx.only)

@@ -1,4 +1,5 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useStore } from '../store/useStore'
 import { Icon, LevelTag, Ring, Section } from '../components/ui'
 import { streakOf, todayKey } from '../lib/session'
@@ -12,6 +13,8 @@ export function Home({
   embedded?: boolean
 }) {
   const { cards, today, settings, days, lessons, lessonWords, ensureLesson, startSession } = useStore()
+  /** 「新词前提醒未复习」的岔路口；null 表示不弹 */
+  const [askReview, setAskReview] = useState<number | null>(null)
 
   useEffect(() => {
     for (const o of settings.activeLessons) void ensureLesson(o)
@@ -70,6 +73,13 @@ export function Home({
     return '晚上好'
   })()
 
+  const beginReview = () => { void startSession({ mode: 'review' }).then(onStudy) }
+  const beginNew = () => {
+    // 每次都提醒一次：有未复习的词就先让用户选，没有则直接开始
+    if (overview.reviewTarget > 0) setAskReview(overview.reviewTarget)
+    else void startSession({ mode: 'new' }).then(onStudy)
+  }
+
   return (
     <div className="animate-fade-up">
       <header className={`flex items-start justify-between ${embedded ? 'mb-4' : 'mb-5'}`}>
@@ -114,13 +124,27 @@ export function Home({
                 </p>
               )}
             </div>
-            <button
-              className="btn-primary mt-4 w-full !py-3"
-              disabled={overview.newTarget + overview.reviewTarget === 0}
-              onClick={() => { void startSession().then(onStudy) }}
-            >
-              {overview.newTarget + overview.reviewTarget === 0 ? '今日任务已完成' : '开始学习'}
-            </button>
+            {/* 两个按钮各自对应「新词」与「复习」的标识色；
+                .btn 基类自带 justify-center，文字本就居中 */}
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              <button
+                className="btn w-full !py-3 bg-laurel-500 text-white shadow-sm hover:bg-laurel-600"
+                disabled={overview.newTarget === 0}
+                onClick={beginNew}
+              >
+                开始学习
+              </button>
+              <button
+                className="btn w-full !py-3 bg-aegean-500 text-white shadow-sm hover:bg-aegean-600"
+                disabled={overview.reviewTarget === 0}
+                onClick={beginReview}
+              >
+                开始复习
+              </button>
+            </div>
+            {overview.newTarget === 0 && overview.reviewTarget === 0 && (
+              <p className="mt-2 text-center text-[11px] text-ink-400">今日任务已完成</p>
+            )}
           </div>
         </div>
       </div>
@@ -166,6 +190,37 @@ export function Home({
         </div>
       </Section>
 
+      {/* 学新词前的岔路口：有未复习的词就先问一句（每次都会问） */}
+      {askReview !== null && createPortal(
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-5">
+          <div className="absolute inset-0 bg-ink-950/45 backdrop-blur-sm"
+            onClick={() => setAskReview(null)} />
+          <div className="card-surface animate-pop relative z-10 w-full max-w-sm p-6">
+            <div className="mb-1 text-center text-3xl">📌</div>
+            <h3 className="mb-1 text-center text-lg font-semibold">
+              还有 {askReview} 个词没复习
+            </h3>
+            <p className="mb-5 text-center text-sm text-ink-500">
+              先复习能防止遗忘，也可以继续学新词、之后再补。
+            </p>
+            <div className="grid gap-2">
+              <button
+                className="btn w-full !py-3 bg-aegean-500 text-white shadow-sm hover:bg-aegean-600"
+                onClick={() => { setAskReview(null); void startSession({ mode: 'review' }).then(onStudy) }}
+              >
+                先复习（{askReview} 个）
+              </button>
+              <button
+                className="btn w-full !py-3 bg-laurel-500 text-white shadow-sm hover:bg-laurel-600"
+                onClick={() => { setAskReview(null); void startSession({ mode: 'new' }).then(onStudy) }}
+              >
+                继续学新词
+              </button>
+            </div>
+          </div>
+        </div>,
+        document.body,
+      )}
     </div>
   )
 }

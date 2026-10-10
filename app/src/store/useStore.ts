@@ -31,7 +31,11 @@ interface State {
   init: () => Promise<void>
   saveSettings: (patch: Partial<Settings>) => Promise<void>
   ensureLesson: (order: number) => Promise<void>
-  startSession: (only?: number[]) => Promise<void>
+  /**
+   * 开始一次学习。
+   * `mode` 决定只出新词、只出复习还是两者都出；`only` 进一步限定到具体词条。
+   */
+  startSession: (opts?: { only?: number[]; mode?: 'all' | 'new' | 'review' }) => Promise<void>
   advance: () => void
   submit: (step: SessionStep, grade: Grade, ms: number, correct?: boolean) => Promise<void>
   toggleFav: (id: number) => Promise<void>
@@ -113,9 +117,11 @@ export const useStore = create<State>((set, get) => ({
     set({ lessonWords: next })
   },
 
-  async startSession(only) {
+  async startSession(opts) {
     const { settings, cards, lessonWords, today } = get()
-    const q: QueueResult = buildQueue({ cards, lessonWords, settings, today, only })
+    const q: QueueResult = buildQueue({
+      cards, lessonWords, settings, today, only: opts?.only, mode: opts?.mode,
+    })
     set({
       queue: q.steps,
       cursor: 0,
