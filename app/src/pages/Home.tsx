@@ -5,12 +5,10 @@ import { streakOf, todayKey } from '../lib/session'
 import { State } from '../lib/srs'
 
 export function Home({
-  onStudy, onReader, onGoBooks, onGoStats, embedded = false,
+  onStudy, onGoBooks, embedded = false,
 }: {
   onStudy: () => void
-  onReader: () => void
   onGoBooks: (sub: 'books' | 'browse') => void
-  onGoStats: () => void
   embedded?: boolean
 }) {
   const { cards, today, settings, days, lessons, lessonWords, ensureLesson, startSession } = useStore()
@@ -127,24 +125,6 @@ export function Home({
         </div>
       </div>
 
-      {/* 数据速览（点进「我的 → 学习统计」） */}
-      <Section title="数据速览" action={
-        <button className="text-xs text-aegean-600 hover:underline" onClick={onGoStats}>全部统计</button>
-      }>
-        <div className="grid grid-cols-3 gap-3">
-          {[
-            { label: '已学词', value: overview.totalIntroduced, tone: 'text-aegean-600' },
-            { label: '已掌握', value: overview.mastered, tone: 'text-laurel-600' },
-            { label: '难词', value: overview.leech, tone: 'text-wine-500' },
-          ].map((s) => (
-            <button key={s.label} onClick={onGoStats} className="card-surface p-3.5 text-center transition hover:bg-white dark:hover:bg-white/[.07]">
-              <div className={`text-2xl font-semibold ${s.tone}`}>{s.value}</div>
-              <div className="text-[11px] text-ink-400">{s.label}</div>
-            </button>
-          ))}
-        </div>
-      </Section>
-
       {/* 当前词书 */}
       <Section
         title="当前词书"
@@ -167,7 +147,8 @@ export function Home({
                   return (
                     <span key={o} className="flex items-center gap-1.5 text-sm">
                       <LevelTag level={l.level} />
-                      <span className="font-medium">{String(o).padStart(2, '0')} {l.title}</span>
+                      {/* 与 Books 页一致：显示中文名与连续的 seq 编号，英文名只在词书页作副标题 */}
+                      <span className="font-medium">{String(l.seq ?? l.order).padStart(2, '0')} {l.titleZh || l.title}</span>
                     </span>
                   )
                 })}
@@ -185,29 +166,6 @@ export function Home({
         </div>
       </Section>
 
-      {/* 快捷入口 */}
-      <Section title="继续">
-        <div className="grid grid-cols-2 gap-3">
-          <button className="card-surface flex items-center gap-3 p-4 text-left transition hover:bg-white" onClick={onReader}>
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-aegean-50 text-aegean-600 dark:bg-aegean-900/40 dark:text-aegean-300">
-              <Icon.Book className="h-5 w-5" />
-            </div>
-            <div>
-              <div className="text-sm font-medium">读新约</div>
-              <div className="text-[11px] text-ink-400">中希对照 · 逐节点查</div>
-            </div>
-          </button>
-          <button className="card-surface flex items-center gap-3 p-4 text-left transition hover:bg-white" onClick={() => { void useStore.getState().startSession([...cards.keys()].slice(0, 20)).then(onStudy) }}>
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-laurel-50 text-laurel-600 dark:bg-laurel-950/40 dark:text-laurel-300">
-              <Icon.Cards className="h-5 w-5" />
-            </div>
-            <div>
-              <div className="text-sm font-medium">专项复习</div>
-              <div className="text-[11px] text-ink-400">只练已学过的词</div>
-            </div>
-          </button>
-        </div>
-      </Section>
     </div>
   )
 }

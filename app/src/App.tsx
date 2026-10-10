@@ -94,7 +94,6 @@ export default function App() {
             setView={setLearnView}
             onStudy={() => setOverlay('study')}
             onReader={(bookIdx, chapter) => { setReaderAt({ bookIdx, chapter }); setOverlay('reader') }}
-            onGoStats={() => { setMineView('stats'); setTab('mine') }}
             resetAt={resetAt}
           />
         )}

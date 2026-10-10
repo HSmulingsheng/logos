@@ -10,13 +10,12 @@ export type LearnView = 'vocab' | 'grammar' | 'reading' | 'listening'
 
 /** 「学习」页：单词 / 语法 / 阅读 / 听力 四个板块 */
 export function Learn({
-  view, setView, onStudy, onReader, onGoStats, resetAt,
+  view, setView, onStudy, onReader, resetAt,
 }: {
   view: LearnView
   setView: (v: LearnView) => void
   onStudy: () => void
   onReader: (bookIdx?: number, chapter?: number) => void
-  onGoStats: () => void
   resetAt: number
 }) {
   // 「词书 / 词典」原本是底部一个独立菜单，现在并入「单词」板块。
@@ -51,13 +50,7 @@ export function Learn({
         ]}
       />
       {view === 'vocab' && (
-        <Home
-          onStudy={onStudy}
-          onReader={() => onReader()}
-          onGoBooks={setSub}
-          onGoStats={onGoStats}
-          embedded
-        />
+        <Home onStudy={onStudy} onGoBooks={setSub} embedded />
       )}
       {view === 'grammar' && <Grammar />}
       {view === 'reading' && <Reading onOpen={(b, c) => onReader(b, c)} />}
