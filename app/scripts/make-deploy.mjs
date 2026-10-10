@@ -54,8 +54,14 @@ run(NODE, [join(APP, 'scripts/build-sw.mjs')])
 
 // ---------------------------------------------------------------- 3. 拷出站点（剔除原牌组录音）
 console.log('▶ 3/6 拷出站点目录（不含原牌组录音）')
-rmSync(DEPLOY, { recursive: true, force: true })
+// ⚠️ 只清内容、**保留 .git**：deploy/ 里常驻一个用于发布 gh-pages 的仓库，
+//    整个目录删掉会连它一起删；那样下一次 git 会向上找到源码仓库，
+//    提交就误入主仓库了（这个坑真踩过一次）。
 mkdirSync(DEPLOY, { recursive: true })
+for (const name of readdirSync(DEPLOY)) {
+  if (name === '.git') continue
+  rmSync(join(DEPLOY, name), { recursive: true, force: true })
+}
 run('rsync', ['-a', '--exclude', '/audio/', `${DIST}/`, `${DEPLOY}/`])
 
 // 部署平台的配套文件
