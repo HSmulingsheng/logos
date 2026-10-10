@@ -15,9 +15,11 @@ MMS 是为整句朗读训练的，喂孤立单词时时长预测器会给出过�
   2. 用**官方 tokenizer**。自己手写的那版把词尾 ς 归一成 σ，
      但词表里 ς(token 23) 与 σ(token 56) 是两个不同符号，念出来是错的。
   3. 每个词**多次采样**，取时长最接近目标的那次（避开离群值）。
-  4. 仍偏离目标时做**保音高时长拉伸**（librosa），把语速拉回自然区间。
-  5. 目标时长：该词若有牌组原录音，就用原录音的**实际发声时长**（最忠实）；
-     没有的按音节数估算。
+  4. 倍率**夹在安全区间 [0.55, 1.30]**。
+  5. **不做任何保音高拉伸**：相位声码器作用在 0.1 秒级短片段上会留下明显痕迹。
+     所谓「上一版」的教训——为了对齐圣经朗读的慢速，倍率低到 0.20，
+     32% 的词被拉长 2 倍以上，声音彻底失真。
+     想听慢一点应当交给播放端的 playbackRate + preservesPitch。
 
 用法：
     tools/venvs/mms-tts/bin/python tools/gen_word_audio.py --limit 30   # 试跑
@@ -50,10 +52,13 @@ PROGRESS = ROOT / "data/tts-neural-progress.json"
 
 SR = 16000
 SEED = 20261010
-RATE_MIN = 0.10          # speaking_rate 下限（越小越慢）
-RATE_MAX = 1.60
-STRETCH_TOL = 0.12       # 偏离目标超过 12% 才拉伸
-MAX_STRETCH = 2.0        # 拉伸上限，超过这个倍数人工痕迹明显
+# speaking_rate 的**安全区间**。VITS 靠时长预测器给出每个音素的帧数，
+# 倍率越低等于把单个音素拉得越长；低到 0.2 那种程度，共振峰会糊掉、
+# 听起来像拖长的怪声（上一版有 32% 的词落在这个区间，是"完全不能用"的主因）。
+# 0.55 ≈ 最多放慢 1.8 倍，仍在模型舒适区内。
+RATE_MIN = 0.55
+RATE_MAX = 1.30
+SAMPLES = 3              # 每词采样次数，取最接近目标的一次（避开随机时长预测的离群值）
 
 
 # ---------------------------------------------------------------- 目标时长
@@ -74,13 +79,15 @@ def syllables(text: str) -> int:
     return max(1, n)
 
 
-def target_seconds(text: str, orig: Path | None) -> float:
-    """优先用牌组原录音的实际发声时长做目标；没有则按音节估算。"""
-    if orig and orig.exists():
-        d = speech_seconds(decode(orig))
-        if d > 0.15:
-            return float(min(1.9, max(0.30, d)))
-    return float(min(1.6, max(0.36, 0.40 + 0.22 * (syllables(text) - 1))))
+def target_seconds(text: str, orig: Path | None = None) -> float:
+    """
+    目标时长：按音节估算的**温和教学节奏**（约 0.38s / 音节）。
+
+    ⚠️ 曾经拿牌组原录音的发声时长当目标，那套录音是圣经朗读、本身很慢
+    （单音节词也要 0.4~0.5s），逼得模型把短词拉长 3~5 倍，声音就废了。
+    现在改用偏自然的节奏，宁可稍快也不失真。
+    """
+    return float(min(1.6, max(0.32, 0.38 + 0.22 * (syllables(text) - 1))))
 
 
 # ---------------------------------------------------------------- 音频工具
@@ -144,7 +151,6 @@ def main() -> int:
     import torch
     warnings.filterwarnings("ignore")
     from transformers import AutoTokenizer, VitsModel
-    import librosa
 
     tok = AutoTokenizer.from_pretrained(str(MODEL_DIR))
     model = VitsModel.from_pretrained(str(MODEL_DIR))
@@ -184,7 +190,6 @@ def main() -> int:
 
     ok = skipped = failed = 0
     ratios: list[float] = []
-    stretched = 0
     t0 = time.time()
     for n, (wid, fname) in enumerate(targets, 1):
         text = text_of[wid]
@@ -192,17 +197,15 @@ def main() -> int:
             skipped += 1
             continue
         try:
-            tgt = target_seconds(text, orig_of.get(wid))
+            tgt = target_seconds(text)
 
-            # 「不背单词」式的时长控制：
             # 关键在 transformers 的 VitsModel.forward ——
             #     length_scale = 1.0 / self.speaking_rate
             #     duration = ceil(exp(log_duration) * ... * length_scale)
-            # 它读的是**实例属性** self.speaking_rate，改 config.speaking_rate 没有任何效果
-            # （这一点极易踩坑）。所以先以 1.0 测一次自然时长，反推该词需要的倍率，
-            # 再按该倍率正式生成——这是模型原生的放慢方式，不会产生拉伸痕迹。
-            # ⚠️ 比对的是「发声时长」而不是「总时长」——模型输出首尾带不少静音，
-            #    拿总长去比会系统性地短一截（实测差 2~3 倍，是本次最大的坑）。
+            # 它读的是**实例属性** self.speaking_rate，改 config.speaking_rate 完全没有效果
+            # （这点极易踩坑）。所以先以 1.0 测自然时长，反推倍率，再**夹到安全区间**后正式生成。
+            # ⚠️ 比对的是「裁剪静音后的发声时长」而不是总时长——模型输出首尾带不少静音，
+            #    拿总长去比会系统性短一截。
             model.speaking_rate = 1.0
             torch.manual_seed(SEED)
             with torch.no_grad():
@@ -210,19 +213,24 @@ def main() -> int:
             d1 = speech_seconds(trim(probe))
             rate = min(RATE_MAX, max(RATE_MIN, d1 / tgt)) if d1 > 0 else 1.0
 
+            # 多次采样，取发声时长最接近目标的一次。
+            # 时长预测器带随机噪声，同一词每次结果能差一倍（καί 实测 0.13/0.21/0.54s），
+            # 采样几次再挑能显著减少"偶尔特别短"的情况。
             model.speaking_rate = rate
-            torch.manual_seed(SEED)
-            with torch.no_grad():
-                wav = model(**tok(text, return_tensors="pt")).waveform.numpy().ravel()
-            wav = trim(wav)
-            dur = speech_seconds(wav)
+            best, best_err = None, None
+            for k in range(SAMPLES):
+                torch.manual_seed(SEED + k)
+                with torch.no_grad():
+                    cand = model(**tok(text, return_tensors="pt")).waveform.numpy().ravel()
+                cand = trim(cand)
+                err = abs(speech_seconds(cand) - tgt)
+                if best is None or err < best_err:
+                    best, best_err = cand, err
+            wav = best
 
-            # 极短的词受倍率下限所限仍可能偏短，做一次**轻微**保音高拉伸补齐
-            if dur > 0 and abs(dur - tgt) / tgt > STRETCH_TOL:
-                factor = min(MAX_STRETCH, tgt / dur)
-                if abs(factor - 1.0) > 0.02:
-                    wav = librosa.effects.time_stretch(wav.astype(np.float32), rate=1.0 / factor)
-                    stretched += 1
+            # 这里**故意不做任何保音高拉伸**。曾经用 librosa 的相位声码器补足时长，
+            # 但那种处理作用在 0.1 秒级的短片段上会留下明显痕迹；
+            # 想让用户听慢一点，交给播放端的 playbackRate + preservesPitch 更干净。
 
             if wav.size < SR * 0.05:
                 skipped += 1
@@ -243,7 +251,7 @@ def main() -> int:
             med = float(np.median(ratios)) if ratios else 0
             left = (len(targets) - n) / rate / 60 if rate else 0
             print(f"  {n}/{len(targets)}  成功 {ok} 跳过 {skipped} 失败 {failed}"
-                  f"  时长比中位 {med:.2f}x  拉伸 {stretched}  {rate:.1f} 词/秒"
+                  f"  时长比中位 {med:.2f}x  {rate:.1f} 词/秒"
                   f"  剩余 {left:.1f} 分钟", flush=True)
             if not a.report:
                 json.dump(sorted(done | {k for k, _ in targets[:n]}),
@@ -253,7 +261,7 @@ def main() -> int:
         print(f"\n时长比（实际/目标）: 中位 {np.median(ratios):.2f}x · "
               f"10% 分位 {np.percentile(ratios, 10):.2f}x · "
               f"90% 分位 {np.percentile(ratios, 90):.2f}x")
-    print(f"完成：成功 {ok} · 跳过 {skipped} · 失败 {failed} · 拉伸 {stretched}")
+    print(f"完成：成功 {ok} · 跳过 {skipped} · 失败 {failed} ")
     return 0
 
 

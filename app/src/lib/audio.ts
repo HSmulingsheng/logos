@@ -1,5 +1,6 @@
 /** 发音播放：优先卡片自带音频；缺失时用 eSpeak 实时合成，再兜底系统语音 */
 import { audioUrl } from './data'
+import { getNeuralRate } from './neuralTts'
 import { speakText } from './tts'
 
 let current: HTMLAudioElement | null = null
