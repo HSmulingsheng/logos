@@ -35,7 +35,11 @@ async function goReading(p) {
 const browser = await chromium.launch({
   executablePath: EDGE, headless: true, args: ['--no-sandbox', '--disable-gpu'],
 })
-const page = await browser.newPage({ viewport: { width: 430, height: 932 }, deviceScaleFactor: 2 })
+// serviceWorkers:'block' 是必需的：应用注册了 Service Worker 缓存 data/*.json，
+// 而 Playwright 的 route **不会拦截 SW 发出的请求**，不禁用的话拦截形同虚设。
+const page = await browser.newPage({
+  viewport: { width: 430, height: 932 }, deviceScaleFactor: 2, serviceWorkers: 'block',
+})
 const errors = []
 page.on('pageerror', (e) => errors.push(e.message))
 page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
@@ -78,6 +82,25 @@ await page.route('**/chat/completions', async (route) => {
       choices: [{ message: { content: JSON.stringify({ zh: texts.map((t, i) => `【模拟译文${i + 1}】${String(t).slice(0, 8)}`) }) } }],
     }),
   })
+})
+
+// ---------------------------------------------------------------- 造一个「缺中文译文」的语料
+//
+// ⚠️ 内置的古典文本已经 100% 有中文译文，所以「AI 翻译本章」按钮按设计不会出现。
+// 要测这个功能，必须让某一章真的缺译文——这里拦截数据请求，把第一章首段的中文抹掉。
+await page.route('**/data/reading/tlg*.json', async (route) => {
+  const res = await route.fetch()
+  let body
+  try {
+    const j = await res.json()
+    const ch = j.chapters?.[0]
+    if (ch?.paras?.[0]) {
+      delete ch.paras[0].zh
+      if (ch.paras[1]) delete ch.paras[1].zh
+    }
+    body = JSON.stringify(j)
+  } catch { body = await res.text() }
+  await route.fulfill({ status: 200, contentType: 'application/json', body })
 })
 
 // ---------------------------------------------------------------- 预置设置
@@ -166,9 +189,21 @@ check('刷新后没有重新请求', after === before, `${before} → ${after} �
 // ---------------------------------------------------------------- 错误路径
 // 用户一定会遇到 Key 填错、限流、模型乱输出，这里逐条验证提示是否可操作。
 console.log('\n▶ 错误路径')
-const page2 = await browser.newPage({ viewport: { width: 430, height: 932 } })
+const page2 = await browser.newPage({ viewport: { width: 430, height: 932 }, serviceWorkers: 'block' })
 let mockMode2 = 'badkey'   // 必须在 route 注册前声明，否则处理器里是 TDZ 错误
 page2.on('pageerror', (e) => errors.push('p2: ' + e.message))
+// 与主场景一样，必须让某一章真的缺译文，否则按钮按设计不出现
+await page2.route('**/data/reading/tlg*.json', async (route) => {
+  const res = await route.fetch()
+  let body
+  try {
+    const j = await res.json()
+    const ch = j.chapters?.[0]
+    if (ch?.paras?.[0]) delete ch.paras[0].zh
+    body = JSON.stringify(j)
+  } catch { body = await res.text() }
+  await route.fulfill({ status: 200, contentType: 'application/json', body })
+})
 await page2.addInitScript(() => localStorage.setItem('greek-welcomed-v2', '1'))
 await page2.route('**/chat/completions', (route) => {
   const map = {

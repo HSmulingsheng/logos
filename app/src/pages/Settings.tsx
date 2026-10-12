@@ -179,6 +179,28 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
               {VOICE_OPTIONS.map((v) => <option key={v.value} value={v.value}>{v.label}</option>)}
             </select>
           </Row>
+          <Row
+            label="音高重音"
+            hint="eSpeak 只标重音位置、不产生调型（acute 与 circumflex 的输出逐字符相同）。开启后用 TD-PSOLA 在波形上补出阿提卡调型——界面标了重音符号，发音才真的体现出来"
+          >
+            <Toggle on={settings.prosodyAccent} onChange={(v) => set({ prosodyAccent: v })} />
+          </Row>
+          {settings.prosodyAccent && (
+            <Row label="重音幅度" hint="调型起伏的大小。觉得机械感重就调小，听不出重音就调大——用耳朵定">
+              <div className="flex items-center gap-2">
+                <input
+                  type="range" min={0} max={200} step={10}
+                  value={Math.round(settings.prosodyAmp * 100)}
+                  onChange={(e) => set({ prosodyAmp: Number(e.target.value) / 100 })}
+                  className="w-28 accent-aegean-500"
+                  aria-label="音高重音幅度"
+                />
+                <span className="w-14 text-right text-xs tabular-nums text-ink-400">
+                  {settings.prosodyAmp === 0 ? '关闭' : `${Math.round(settings.prosodyAmp * 100)}%`}
+                </span>
+              </div>
+            </Row>
+          )}
           <Row label="例句朗读语速" hint="例句发音在浏览器里实时合成，觉得快慢不合适可以在这里调">
             <div className="flex items-center gap-2">
               <input

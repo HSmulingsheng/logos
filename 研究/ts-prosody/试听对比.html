@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8">
+<title>逻各斯 · 音高重音改造试听</title>
+<style>
+ body{font:15px/1.7 -apple-system,"PingFang SC",sans-serif;max-width:900px;margin:0 auto;padding:28px 20px 80px;background:#f7f8fa;color:#1e2530}
+ h1{font-size:21px;margin:0 0 6px}
+ .lead{color:#64748b;font-size:13px;margin-bottom:22px}
+ .warn{background:#fff7ed;border-left:3px solid #f59e0b;padding:12px 14px;border-radius:8px;font-size:13px;margin-bottom:22px}
+ table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+ th,td{padding:11px 12px;text-align:left;border-bottom:1px solid #eceef2;font-size:13px;vertical-align:top}
+ th{background:#f2f4f7;font-size:12px;color:#4e5b70;font-weight:600}
+ tr:last-child td{border-bottom:none}
+ .g{font-family:"Gentium Plus",serif;font-size:21px;line-height:1.35}
+ audio{width:100%;max-width:210px;height:32px}
+ .note{color:#8494aa;font-size:11.5px}
+ .hz{font-variant-numeric:tabular-nums;color:#64748b;font-size:11.5px;white-space:nowrap}
+ code{background:#f2f4f7;padding:1px 5px;border-radius:4px;font-size:11.5px}
+</style></head><body>
+<h1>音高重音改造 · A/B 试听</h1>
+<p class="lead">eSpeak 的 grc 语音<strong>完全没有实现古希腊语的音高重音</strong>：<span class="g">φῶς</span> 与 <span class="g">φώς</span> 的输出逐字符相同，整词 F0 差 0.1 Hz。这里用 TD-PSOLA 在波形上补出阿提卡调型。</p>
+<div class="warn"><b>请按这个顺序听：</b>先比 <b>①原始</b> 与 <b>②恒等</b>（两者应当几乎听不出差别，说明 PSOLA 本身没引入明显损失）；
+<b>再比 ②恒等 与 ③改造后</b>——这一对的差别才是重音改造带来的。<br>
+直接比 ① 与 ③ 会把「重新合成的固有损失」误当成改进。</div>
+<table>
+<thead><tr><th style="width:26%">词／句</th><th style="width:25%">① 原始 eSpeak</th><th style="width:25%">② 恒等 PSOLA</th><th style="width:24%">③ 音高重音改造后</th></tr></thead>
+<tbody>
+<tr>
+  <td><div class="g">φώς</div><div class="note">尖音（acute）——高调应在音节末</div>
+      <div class="hz">ˈɔ:acute</div></td>
+  <td><audio controls preload="none" src="min01_phos_acute_1orig.wav"></audio><div class="hz">F0 中位 95 Hz</div></td>
+  <td><audio controls preload="none" src="min01_phos_acute_2ident.wav"></audio><div class="hz">F0 中位 91 Hz</div></td>
+  <td><audio controls preload="none" src="min01_phos_acute_3fixed.wav"></audio><div class="hz">F0 中位 101 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">φῶς</div><div class="note">曲折号（circumflex）——峰在音节中部后下降</div>
+      <div class="hz">ˈɔ:circumflex</div></td>
+  <td><audio controls preload="none" src="min02_phos_circ_1orig.wav"></audio><div class="hz">F0 中位 96 Hz</div></td>
+  <td><audio controls preload="none" src="min02_phos_circ_2ident.wav"></audio><div class="hz">F0 中位 94 Hz</div></td>
+  <td><audio controls preload="none" src="min02_phos_circ_3fixed.wav"></audio><div class="hz">F0 中位 106 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">πώς</div><div class="note">尖音</div>
+      <div class="hz">ˈɔ:acute</div></td>
+  <td><audio controls preload="none" src="min03_pos_acute_1orig.wav"></audio><div class="hz">F0 中位 89 Hz</div></td>
+  <td><audio controls preload="none" src="min03_pos_acute_2ident.wav"></audio><div class="hz">F0 中位 89 Hz</div></td>
+  <td><audio controls preload="none" src="min03_pos_acute_3fixed.wav"></audio><div class="hz">F0 中位 97 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">πῶς</div><div class="note">曲折号</div>
+      <div class="hz">ˈɔ:circumflex</div></td>
+  <td><audio controls preload="none" src="min04_pos_circ_1orig.wav"></audio><div class="hz">F0 中位 92 Hz</div></td>
+  <td><audio controls preload="none" src="min04_pos_circ_2ident.wav"></audio><div class="hz">F0 中位 92 Hz</div></td>
+  <td><audio controls preload="none" src="min04_pos_circ_3fixed.wav"></audio><div class="hz">F0 中位 114 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">τίς</div><div class="note">疑问词「谁」——带重音</div>
+      <div class="hz">ˈi:acute</div></td>
+  <td><audio controls preload="none" src="min05_tis_acute_1orig.wav"></audio><div class="hz">F0 中位 92 Hz</div></td>
+  <td><audio controls preload="none" src="min05_tis_acute_2ident.wav"></audio><div class="hz">F0 中位 92 Hz</div></td>
+  <td><audio controls preload="none" src="min05_tis_acute_3fixed.wav"></audio><div class="hz">F0 中位 105 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">τις</div><div class="note">不定代词「某个」——**不带**重音</div>
+      <div class="hz">ˈi:none</div></td>
+  <td><audio controls preload="none" src="min06_tis_none_1orig.wav"></audio><div class="hz">F0 中位 90 Hz</div></td>
+  <td><audio controls preload="none" src="min06_tis_none_2ident.wav"></audio><div class="hz">F0 中位 90 Hz</div></td>
+  <td><audio controls preload="none" src="min06_tis_none_3fixed.wav"></audio><div class="hz">F0 中位 87 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">ἄνθρωπος</div><div class="note">三音节，重音在倒数第三</div>
+      <div class="hz">ˈa:acute ɔ:none ˌo:secondary</div></td>
+  <td><audio controls preload="none" src="min07_anthropos_1orig.wav"></audio><div class="hz">F0 中位 81 Hz</div></td>
+  <td><audio controls preload="none" src="min07_anthropos_2ident.wav"></audio><div class="hz">F0 中位 81 Hz</div></td>
+  <td><audio controls preload="none" src="min07_anthropos_3fixed.wav"></audio><div class="hz">F0 中位 83 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">λόγος</div><div class="note">两音节</div>
+      <div class="hz">ˈo:acute o:none</div></td>
+  <td><audio controls preload="none" src="min08_logos_1orig.wav"></audio><div class="hz">F0 中位 86 Hz</div></td>
+  <td><audio controls preload="none" src="min08_logos_2ident.wav"></audio><div class="hz">F0 中位 99 Hz</div></td>
+  <td><audio controls preload="none" src="min08_logos_3fixed.wav"></audio><div class="hz">F0 中位 90 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">εἰμί</div><div class="note">尖音</div>
+      <div class="hz">e:none ˈi:acute</div></td>
+  <td><audio controls preload="none" src="min09_eimi_acute_1orig.wav"></audio><div class="hz">F0 中位 100 Hz</div></td>
+  <td><audio controls preload="none" src="min09_eimi_acute_2ident.wav"></audio><div class="hz">F0 中位 100 Hz</div></td>
+  <td><audio controls preload="none" src="min09_eimi_acute_3fixed.wav"></audio><div class="hz">F0 中位 99 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">εἶμι</div><div class="note">曲折号（与上一词仅重音不同）</div>
+      <div class="hz">ˈe:circumflex i:none</div></td>
+  <td><audio controls preload="none" src="min10_eimi_circ_1orig.wav"></audio><div class="hz">F0 中位 84 Hz</div></td>
+  <td><audio controls preload="none" src="min10_eimi_circ_2ident.wav"></audio><div class="hz">F0 中位 84 Hz</div></td>
+  <td><audio controls preload="none" src="min10_eimi_circ_3fixed.wav"></audio><div class="hz">F0 中位 79 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">ἐν ἀρχῇ ἦν ὁ λόγος</div><div class="note">整句</div>
+      <div class="hz">ˈe:none a:none ˈɛɪ:circumflex ˈɛ:circumflex o:none ˈo:acute o:none</div></td>
+  <td><audio controls preload="none" src="sen01_archi_1orig.wav"></audio><div class="hz">F0 中位 107 Hz</div></td>
+  <td><audio controls preload="none" src="sen01_archi_2ident.wav"></audio><div class="hz">F0 中位 107 Hz</div></td>
+  <td><audio controls preload="none" src="sen01_archi_3fixed.wav"></audio><div class="hz">F0 中位 105 Hz</div></td>
+</tr>
+<tr>
+  <td><div class="g">μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος</div><div class="note">荷马《伊利亚特》首行</div>
+      <div class="hz">ˈɛ:circumflex i:none ˈa:circumflex e:none ˌe:secondary e:none ˈa:grave ˌɛ:secondary ɛ:none i:none ˈa:acute e:none ˌɔ:secondary ˌa:secondary i:none ˈɛ:circumflex o:none</div></td>
+  <td><audio controls preload="none" src="sen02_homer_1orig.wav"></audio><div class="hz">F0 中位 107 Hz</div></td>
+  <td><audio controls preload="none" src="sen02_homer_2ident.wav"></audio><div class="hz">F0 中位 107 Hz</div></td>
+  <td><audio controls preload="none" src="sen02_homer_3fixed.wav"></audio><div class="hz">F0 中位 105 Hz</div></td>
+</tr>
+</tbody></table>
+<p class="lead" style="margin-top:22px">幅度可在 App 的「我的 → 例句朗读 → 重音幅度」里调。
+本页用的是默认幅度 <code>1.0</code>（约 +6.4 半音）。</p>
+</body></html>

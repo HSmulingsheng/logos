@@ -8,10 +8,17 @@
  * 授权：eSpeak-NG 是 GPL-3.0，随应用分发会把整体置于 GPL-3.0（见项目根 LICENSE）。
  */
 import { USE_TTS } from './flags'
+import { planAccent, type EspeakEvent } from './prosody'
+import { pitchMarks, pitchTrack, tdPsola } from './psola'
 import { synthNeural, neuralStatus, neuralProgress, onNeuralStatus, getNeuralRate, warmupNeural } from './neuralTts'
 
 type Worker = {
-  synthesize: (text: string, cb: (data: Int16Array) => boolean) => void
+  /**
+   * 第二个参数是 eSpeak 的**事件数组**（实测确认）：`phoneme` 事件带 `audio_position`
+   * （该音素的起始毫秒）与 `id`（音素符号），`word` 事件带 `text_position`/`word_length`。
+   * 这是做韵律改造的前提；回调**必须返回 false**，返回 true 会让它只吐 100ms 就中止。
+   */
+  synthesize: (text: string, cb: (data: Int16Array, ev?: EspeakEvent[] | EspeakEvent) => boolean) => void
   set_voice: (v: string) => void
   set_rate: (r: number) => void
   set_pitch: (p: number) => void
@@ -181,10 +188,53 @@ export function normalizeForSpeech(input: string): string {
 }
 
 /** 合成一段古希腊语，返回可直接播放的 blob URL；失败返回 null */
+/**
+ * 给 eSpeak 的输出补音高重音。
+ *
+ * 为什么必须在这里做：eSpeak 是共振峰合成器，**只标重音位置、不产生调型**——
+ * φῶς(circumflex) 与 φώς(acute) 的输出逐字符相同，整词 F0 差 0.1 Hz。
+ * 界面是标重音符号的，标了却念不出来，对学习者是最实质的缺陷。
+ * 调型只能在波形上后处理：TD-PSOLA 在基音周期尺度搬运波形，
+ * 每个周期内部（= 共振峰 = 元音音值）原样保留，所以不会破坏阿提卡音值。
+ *
+ * 任何一步失败都**原样返回**，绝不因为韵律改造而让朗读不出声。
+ */
+function applyProsody(
+  pcm: Int16Array, sr: number, events: EspeakEvent[], text: string, amp: number,
+): Int16Array {
+  try {
+    if (!events.length) return pcm
+    const x = new Float32Array(pcm.length)
+    for (let i = 0; i < pcm.length; i++) x[i] = pcm[i] / 32768
+    const dur = pcm.length / sr
+
+    // 基准基频取该句 F0 的中位数（eSpeak 的 pitch=50 大致落在 86~110Hz）
+    const { f0 } = pitchTrack(x, sr)
+    const voiced = f0.filter((v) => v > 0).sort((a, b) => a - b)
+    if (!voiced.length) return pcm
+    const base = voiced[voiced.length >> 1]
+
+    const plan = planAccent(events, text, dur, base, amp)
+    if (plan.points.length < 3) return pcm
+    const { marks } = pitchMarks(x, sr)
+    if (marks.length < 3) return pcm
+
+    const y = tdPsola(x, sr, plan.points, { marks })
+    const out = new Int16Array(y.length)
+    for (let i = 0; i < y.length; i++) {
+      out[i] = Math.max(-32768, Math.min(32767, Math.round(y[i] * 32768)))
+    }
+    return out
+  } catch (e) {
+    console.warn('[tts] 韵律改造失败，回退原始音频', e)
+    return pcm
+  }
+}
+
 export async function synthesize(text: string): Promise<string | null> {
   const t = normalizeForSpeech(text)
   if (!t) return null
-  const key = `${voice}|${rate}|${t}`
+  const key = `${voice}|${rate}|${prosodyOn ? prosodyAmp : 'off'}|${t}`
   const hit = cache.get(key)
   if (hit) return hit
 
@@ -192,9 +242,16 @@ export async function synthesize(text: string): Promise<string | null> {
 
   try {
     const parts: Int16Array[] = []
-    // 注意：回调必须返回 false，返回 true 会让 eSpeak 只吐 100ms 就中止
-    worker.synthesize(t, (data) => {
+    const events: EspeakEvent[] = []
+    // 注意：回调必须返回 false，返回 true 会让 eSpeak 只吐 100ms 就中止。
+    // 第二个参数是**事件数组**，带每个音素的起止毫秒与词的文本位置——
+    // 这是能做韵律改造的前提。
+    worker.synthesize(t, (data, ev) => {
       if (data && data.length) parts.push(data)
+      if (ev) {
+        if (Array.isArray(ev)) events.push(...(ev as EspeakEvent[]))
+        else events.push(ev as EspeakEvent)
+      }
       return false
     })
     if (!parts.length) return null
@@ -205,7 +262,8 @@ export async function synthesize(text: string): Promise<string | null> {
     let off = 0
     for (const p of parts) { merged.set(p, off); off += p.length }
 
-    const url = URL.createObjectURL(pcmToWav(merged, samplerate))
+    const shaped = prosodyOn ? applyProsody(merged, samplerate, events, t, prosodyAmp) : merged
+    const url = URL.createObjectURL(pcmToWav(shaped, samplerate))
     if (cache.size >= CACHE_MAX) {
       const first = cache.keys().next().value
       if (first !== undefined) {
@@ -229,6 +287,15 @@ export async function synthesize(text: string): Promise<string | null> {
  * 无论选哪个，失败都会自动回退，用户不会「点不动」。
  */
 let engine: 'espeak' | 'neural' = 'espeak'
+// ── 音高重音（eSpeak 完全没有实现，这里给它补上）
+// 放在模块顶层：synthesize() 里要用，不能藏在函数作用域里
+let prosodyOn = true
+let prosodyAmp = 1
+export function setProsody(on: boolean, amp: number) {
+  prosodyOn = on
+  prosodyAmp = Math.max(0, Math.min(2, amp))
+}
+
 export function setSpeechEngine(e: string) { engine = e === 'neural' ? 'neural' : 'espeak' }
 export function getSpeechEngine() { return engine }
 

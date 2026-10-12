@@ -215,6 +215,15 @@ export interface Settings {
   /** 已激活的多本词书（课号） */
   activeLessons: number[]
 
+  /**
+   * 例句朗读时给 eSpeak 补上音高重音（阿提卡重建的调型）。
+   * eSpeak 完全没实现音高重音——acute 与 circumflex 的输出逐字符相同，
+   * 而界面是标重音符号的。开启后「标了却念不出来」的问题才解决。
+   */
+  prosodyAccent: boolean
+  /** 音高重音的幅度倍率（1.0 为默认）。用耳朵定，介意机械感就调小 */
+  prosodyAmp: number
+
   // ---- AI 翻译（自带 Key）----
   // 只存在本机 IndexedDB，**从不上传**；浏览器直连服务商，
   // 所以必须选支持 CORS 的服务商（见 lib/aiTranslate.ts 的说明）。

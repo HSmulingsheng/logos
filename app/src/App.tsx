@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactElement } from 'react'
 import { useStore } from './store/useStore'
 import { Icon, Ring } from './components/ui'
 import { Welcome } from './components/Welcome'
-import { setSpeechRate, setSpeechVoice, setSpeechEngine, warmupNeural } from './lib/tts'
+import { setProsody, setSpeechRate, setSpeechVoice, setSpeechEngine, warmupNeural } from './lib/tts'
 import { setNeuralRate } from './lib/neuralTts'
 import { Learn, type LearnView } from './pages/Learn'
 import { Mine, type MineView } from './pages/Mine'
@@ -24,6 +24,9 @@ export default function App() {
   useEffect(() => { setSpeechVoice(settings.speechVoice) }, [settings.speechVoice])
   useEffect(() => { setSpeechEngine(settings.speechEngine) }, [settings.speechEngine])
   useEffect(() => { setNeuralRate(settings.neuralRate) }, [settings.neuralRate])
+  useEffect(() => {
+    setProsody(settings.prosodyAccent, settings.prosodyAmp)
+  }, [settings.prosodyAccent, settings.prosodyAmp])
 
   // 选高清引擎时提前把模型加载好：会话创建要 ~1 秒，
   // 放在用户点击之前做完，点击时就能直接推理
