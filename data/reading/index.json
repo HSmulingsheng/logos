@@ -11,7 +11,7 @@
   "paras": 798,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 523
+  "zhParas": 605
  },
  {
   "id": "tlg0012/tlg002",
@@ -25,7 +25,7 @@
   "paras": 616,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 471
+  "zhParas": 566
  },
  {
   "id": "tlg0011/tlg004",
@@ -39,7 +39,7 @@
   "paras": 81,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 71
+  "zhParas": 81
  },
  {
   "id": "tlg0011/tlg002",
@@ -67,7 +67,7 @@
   "paras": 77,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 31
+  "zhParas": 77
  },
  {
   "id": "tlg0016/tlg001",
@@ -81,7 +81,7 @@
   "paras": 4344,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 1802
+  "zhParas": 2797
  },
  {
   "id": "tlg0003/tlg001",
@@ -95,7 +95,7 @@
   "paras": 3588,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 1582
+  "zhParas": 2428
  },
  {
   "id": "tlg0032/tlg006",
@@ -109,7 +109,7 @@
   "paras": 1469,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 605
+  "zhParas": 899
  },
  {
   "id": "tlg0032/tlg001",
@@ -123,7 +123,7 @@
   "paras": 1146,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 416
+  "zhParas": 595
  },
  {
   "id": "tlg0059/tlg002",
@@ -151,7 +151,7 @@
   "paras": 233,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 0
+  "zhParas": 120
  },
  {
   "id": "tlg0059/tlg003",
@@ -179,7 +179,7 @@
   "paras": 149,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 45
+  "zhParas": 99
  },
  {
   "id": "tlg0086/tlg010",
@@ -193,7 +193,7 @@
   "paras": 256,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0",
-  "zhParas": 226
+  "zhParas": 243
  },
  {
   "id": "tlg0557/tlg002",
