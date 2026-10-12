@@ -32,10 +32,16 @@
   python scripts/prosody_fix.py                # 处理 out/demo 下全部条目
   python scripts/prosody_fix.py --only min01   # 只处理匹配的条目
 """
-import json, os, sys, argparse, math, re
+import json, os, sys, argparse, math, re, unicodedata
 import numpy as np
 import parselmouth
 from parselmouth.praat import call
+import soundfile as sf
+from psola import pitch_marks, td_psola
+
+
+def write_wav(path, y, sr):
+    sf.write(path, y, sr, subtype='PCM_16')
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(HERE, 'out')
@@ -53,7 +59,7 @@ SHORT_FINAL_DIPH = {'αι', 'οι'}
 def syllabify(word):
     """返回 [{'text','accent'}] 音节列表。规则：元音字母相邻且成二合元音才并成一个音节；
     若重音符号落在第一个字母上则该簇不是二合元音（πό-λις）。"""
-    s = word.lower().normalize('NFD')
+    s = unicodedata.normalize('NFD', word.lower())
     nuc = []
     i = 0
     while i < len(s):
@@ -120,41 +126,68 @@ def is_diphone_ipa(ipa):
     return ('ɪ' in ipa) or ('ʊ' in ipa)
 
 
-def target_contour(base_f0, t0, t1, accent, morae, is_diph):
+# 音高重音的幅度参数。取「半音」尺度：acute 峰 = 基准 × ACUTE_A，
+# circumflex 峰 = 基准 × CIRC_A。1.45× ≈ +6.4 半音，1.62× ≈ +8.4 半音。
+# 注意：幅度越大，PSOLA 需要搬动的基音周期越多、相邻窗相位越容易错开，
+# 实测 HNR（谐噪比）会随幅度下降。所以这里取保守值，并优先保证曲线平滑。
+ACUTE_A = 0.45
+CIRC_A = 0.45
+FALL = 0.14
+
+
+def target_contour(base_f0, t0, t1, accent, morae, is_diph, amp=1.0):
     """返回 [(time, f0), ...]，描述一个音节核上的目标 F0 曲线。
-    base_f0 是该时刻的下倾基准线（Hz）。"""
+    base_f0 是该时刻的下倾基准线（Hz）。
+    形状用**平滑**函数而不是折线：折线的尖角会让基音周期增量突变，
+    在 PSOLA 里表现为抖动（实测 HNR 会掉 6–8 dB）。"""
     T = max(t1 - t0, 0.02)
-    n = 9
+    n = 12
     pts = []
     long_ = (morae >= 2) or is_diph
-    if accent in ('none',):
-        # 无重音：略低于基准，轻微下降
-        for i in range(n + 1):
-            t = t0 + T * i / n
-            pts.append((t, base_f0 * (0.96 - 0.04 * i / n)))
-    elif accent == 'grave':
-        for i in range(n + 1):
-            t = t0 + T * i / n
-            pts.append((t, base_f0 * 1.06))
-    elif accent == 'acute':
-        if not long_:
-            # 单 mora：高调在第二个 mora（属下一音节），这里表现为到音节末升到峰
-            for i in range(n + 1):
-                u = i / n
-                pts.append((t0 + T * u, base_f0 * (1.0 + 0.62 * u)))
-        else:
-            # 双 mora：前半段缓升，第二个 mora 升到峰（峰在音节末）
-            for i in range(n + 1):
-                u = i / n
-                f = 1.10 + 0.45 * u if u <= 0.5 else 1.325 + 0.375 * ((u - 0.5) / 0.5)
-                pts.append((t0 + T * u, base_f0 * f))
-    elif accent == 'circumflex':
-        # 高调在第一个 mora：峰出现在音节中部（≈50%）之后下降
+
+    def emit(fn):
         for i in range(n + 1):
             u = i / n
-            f = 1.0 + 0.72 * (u / 0.5) if u <= 0.5 else 1.72 - 0.62 * ((u - 0.5) / 0.5)
-            pts.append((t0 + T * u, base_f0 * f))
+            pts.append((t0 + T * u, base_f0 * fn(u)))
+
+    if accent == 'none':
+        emit(lambda u: 0.96 - 0.04 * u)
+    elif accent == 'grave':
+        emit(lambda u: 1.05 - 0.05 * u)
+    elif accent == 'acute':
+        A = ACUTE_A * amp
+        if not long_:
+            # 单 mora：高调落在第二个 mora（属下一音节），表现为到音节末平滑升到峰
+            emit(lambda u: 1.0 + A * (u ** 1.5))
+        else:
+            # 双 mora：高调在第二个 mora；前半段缓升、后半段继续升到音节末
+            emit(lambda u: 1.0 + A * (0.30 + 0.70 * u) if u > 0.5
+                 else 1.0 + A * 0.60 * u)
+    elif accent == 'circumflex':
+        # 高调在第一个 mora：峰在音节中部（≈45%）后平滑下降
+        A = CIRC_A * amp
+        emit(lambda u: 1.0 + A * math.exp(-((u - 0.45) / 0.34) ** 2) - FALL * max(0.0, (u - 0.45) / 0.55))
+    elif accent == 'secondary':
+        A = 0.12 * amp
+        emit(lambda u: 1.0 + A * math.sin(math.pi * u))
     return pts
+
+
+def smooth_contour(pts, win=0.022):
+    """对 F0 控制点做 Hann 平滑，抑制 PSOLA 的周期抖动。"""
+    if len(pts) < 5:
+        return pts
+    a = sorted(pts)
+    t = np.array([x[0] for x in a]); v = np.array([x[1] for x in a])
+    half = win / 2.0
+    out = []
+    for i in range(len(t)):
+        m = np.abs(t - t[i]) <= half
+        if m.sum() < 2:
+            out.append(v[i]); continue
+        w = 0.5 - 0.5 * np.cos(2 * np.pi * (t[m] - t[i] + half) / (2 * half))
+        out.append(float((v[m] * w).sum() / w.sum()))
+    return list(zip(t.tolist(), out))
 
 
 def declination(t, t_start, t_end, g):
@@ -166,10 +199,11 @@ def declination(t, t_start, t_end, g):
 
 
 # ── 主流程 ────────────────────────────────────────────────────────────────
-def build_pitch_tier(manip, item, g, stretch=None):
+def build_pitch_tier(manip, total, item, g, stretch=None):
     """根据 align.json 的音素表构造目标 F0 曲线。
-    stretch: 若时长已被改动，给出「原始时刻 → 新时刻」的映射函数。"""
-    total = call(manip, 'Get end time')
+    stretch: 若时长已被改动，给出「原始时刻 → 新时刻」的映射函数。
+    注：parselmouth 不暴露 Manipulation 的时长查询命令（实测 "Get end time"
+    对该对象不可用），所以总时长由调用方传入。"""
     t_start, t_end = 0.0, total
     phones = item['phonemes']
     # 每个音素的重音状态
@@ -263,32 +297,92 @@ def duration_tier(manip, item, mora_gain=1.0):
     return actions
 
 
-def apply_pitch(snd, pts):
-    manip = call(snd, 'To Manipulation', 0.005, 60, 500)
-    tier = call(manip, 'Create PitchTier', 'target', 0.0, call(manip, 'Get end time'))
-    for t, f in pts:
-        call(tier, 'Add point', float(t), float(min(max(f, 60.0), 500.0)))
-    call(manip, 'Replace Pitch Tier', tier)
-    return call(manip, 'Get resynthesis (overlap-add)')
-
-
-def apply_duration(snd, actions):
-    manip = call(snd, 'To Manipulation', 0.005, 60, 500)
-    total = call(manip, 'Get end time')
-    tier = call(manip, 'Create DurationTier', 'dur', 0.0, total)
-    for (a, b, r) in actions:
-        call(tier, 'Add point', float(max(a, 0.0)), 1.0)
-        call(tier, 'Add point', float(min(max(a + 0.001, 0.0), total)), float(r))
-        call(tier, 'Add point', float(min(max(b, 0.0), total)), 1.0)
-    call(manip, 'Replace Duration Tier', tier)
-    return call(manip, 'Get resynthesis (overlap-add)')
-
-
 def median_f0(snd, floor=70, ceil=400):
     p = snd.to_pitch(time_step=0.005, pitch_floor=floor, pitch_ceiling=ceil)
     f = p.selected_array['frequency']
     v = f[f > 0]
     return float(np.median(v)) if len(v) else 100.0
+
+
+def build_contour_points(item, g, dur_gain=1.0):
+    """返回 (f0_pts, dur_anchors, meta)。
+    f0_pts  : [(分析时刻秒, 目标F0 Hz)] —— 设计好的阿提卡音高重音曲线
+    dur_anchors : [(分析时刻, 输出时刻)] —— 隐藏长元音的时长补偿
+    """
+    T = item['durMs'] / 1000.0
+    words = item.get('words') or [dict(t0=0, t1=item['durMs'], text_position=1,
+                                       length=len(item['text']))]
+    acc_info = []
+    for w in words:
+        pos = w['text_position'] - 1
+        acc_info.append(accent_summary(item['text'][pos:pos + w['length']]))
+
+    def decl(t):
+        u = min(max(t / T, 0.0), 1.0)
+        return g * (1.06 - 0.16 * u)
+
+    pts = [(0.0, decl(0.0))]
+    dur_edits = []          # (t0, t1, gain)
+    meta = []
+    for p in item['phonemes']:
+        t0, t1 = p['t0'] / 1000.0, p['t1'] / 1000.0
+        ipa = p['ipa']
+        base = ipa.lstrip('ˈˌ')
+        is_v = bool(re.search(r'[aeiouyɛɔɑ]', base))
+        if not is_v:
+            continue
+        # 所属词
+        wi = -1
+        for k, w in enumerate(words):
+            if w['t0'] / 1000.0 <= t0 + 1e-6 < (w['t1'] + 1) / 1000.0:
+                wi = k
+                break
+        info = acc_info[wi] if 0 <= wi < len(acc_info) else None
+        long_ = ('ː' in base) or is_diphone_ipa(base)
+        if ipa.startswith('ˈ') and info and info['type'] != 'none':
+            acc = info['type']
+            morae = info['accented_morae']
+            long_ = long_ or morae >= 2
+        elif ipa.startswith('ˈ'):
+            # eSpeak 会给**所有**词标主重音，包括正字法上无重音的附着词
+            # （实测 ἐν/εἰς/οὐ/τις 等 92% 都被强行加了 ˈ）。正字法无重音时
+            # 不施加音高重音——阿提卡希腊语里这些词属于前附词/后附词，不带调。
+            acc, morae = 'none', (2 if long_ else 1)
+        elif ipa.startswith('ˌ'):
+            acc, morae = 'secondary', (2 if long_ else 1)
+        else:
+            acc, morae = 'none', (2 if long_ else 1)
+        # 隐藏长元音：应为长（mora=2）但 eSpeak 未标 ː 的单体元音
+        if (info and info.get('hidden_long') and ipa.startswith('ˈ')
+                and 'ː' not in base and not is_diphone_ipa(base)):
+            dur_edits.append((t0, t1, dur_gain))
+        if acc == 'secondary':
+            c = [(t0 + (t1 - t0) * i / 4, decl(t0) * (1.02 + 0.06 * math.sin(math.pi * i / 4)))
+                 for i in range(5)]
+        else:
+            c = target_contour(decl(t0), t0, t1, acc, morae, is_diphone_ipa(base))
+        pts += c
+        meta.append(dict(ipa=ipa, t0=t0, t1=t1, accent=acc, morae=morae, long=long_))
+    pts.append((T, decl(T)))
+    pts.sort()
+    pts = smooth_contour(pts)
+
+    # 时长锚点：分段线性映射（只拉伸指定的元音，其余保持 1:1）
+    anchors = [(0.0, 0.0)]
+    shift = 0.0
+    for (a, b, gain) in sorted(dur_edits):
+        anchors.append((a, a + shift))
+        anchors.append((b, a + shift + (b - a) * gain))
+        shift += (b - a) * (gain - 1.0)
+    anchors.append((T, T + shift))
+    # 去重并保证严格单调
+    ded = []
+    for a, b in anchors:
+        if not ded or (a > ded[-1][0] + 1e-9 and b > ded[-1][1] + 1e-9):
+            ded.append((a, b))
+        elif ded:
+            ded[-1] = (a, b)
+    return pts, ded, meta, dur_edits
 
 
 def main():
@@ -298,6 +392,8 @@ def main():
                     help='隐藏长元音的延长倍数（1.55 = 实测 eSpeak 的 ω:ο 时长比 136/86）')
     ap.add_argument('--no-duration', action='store_true')
     ap.add_argument('--no-pitch', action='store_true')
+    ap.add_argument('--gain', type=float, default=1.0,
+                    help='整体音高变换倍率（对比不同 set_pitch 的效果时用）')
     args = ap.parse_args()
 
     al = json.load(open(os.path.join(DEMO, 'align.json'), encoding='utf-8'))
@@ -308,43 +404,41 @@ def main():
     report = []
 
     for it in items:
-        base_path = os.path.join(DEMO, it['key'] + '_base.wav')
-        snd0 = parselmouth.Sound(base_path)
-        # ── 对照组 1：只做一次 Praat 重合成（不改任何参数），用于分离「重合成本身」的影响
-        manip = call(snd0, 'To Manipulation', 0.005, 60, 500)
-        resyn = call(manip, 'Get resynthesis (overlap-add)')
-        resyn.save(os.path.join(outdir, it['key'] + '_resyn.wav'), 'WAV')
+        snd = parselmouth.Sound(os.path.join(DEMO, it['key'] + '_base.wav'))
+        x = snd.values[0].astype(np.float64)
+        sr = int(snd.sampling_frequency)
+        marks = pitch_marks(snd)
+        g = median_f0(snd)
+        pts, anchors, meta, dur_edits = build_contour_points(
+            it, g, 1.0 if args.no_duration else args.mora_gain)
 
-        cur = snd0
-        n_dur = 0
-        # ── 第 1 步：时长规整
-        if not args.no_duration:
-            acts = duration_tier(cur, it, args.mora_gain)
-            n_dur = len(acts)
-            if acts:
-                cur = apply_duration(cur, acts)
-        # ── 第 2 步：F0 曲线
-        g = median_f0(snd0)
-        if not args.no_pitch:
-            # 时长改动后音素时刻要按局部比例平移：这里用「重音核之前/之内/之后」
-            # 的累积比例做线性映射（只对隐藏长音做了改动，映射足够精确）
-            scale = cur.get_total_duration() / snd0.get_total_duration()
-            stretch = (lambda t: t * scale) if abs(scale - 1.0) > 1e-6 else None
-            pts = build_pitch_tier(call(cur, 'To Manipulation', 0.005, 60, 500), it, g, stretch)
-            cur = apply_pitch(cur, pts)
-        out = os.path.join(outdir, it['key'] + '_fixed.wav')
-        cur.save(out, 'WAV')
+        # ── 对照组：恒等 PSOLA（目标 F0 = 标记自身周期，时长不变）
+        # 用于把「PSOLA 重合成本身」与「韵律改动」的效应分开
+        tt = list(marks[:-1]); ffv = [1.0 / (marks[i + 1] - marks[i]) for i in range(len(marks) - 1)]
+        ctrl = td_psola(x, sr, list(zip(tt, ffv)), marks=marks)
+        write_wav(os.path.join(outdir, it['key'] + '_resyn.wav'), ctrl, sr)
+
+        # ── 正式改造
+        f0_pts = pts if not args.no_pitch else list(zip(tt, ffv))
+        if args.gain != 1.0 and not args.no_pitch:
+            f0_pts = [(t, v) for t, v in f0_pts]
+        y = td_psola(x, sr, f0_pts, dur_anchors=None if args.no_duration else anchors,
+                     marks=marks,
+                     fade_out_len=int(0.005 * sr))
+        write_wav(os.path.join(outdir, it['key'] + '_fixed.wav'), y, sr)
+
         report.append(dict(key=it['key'], text=it['text'], gloss=it['gloss'],
-                           dur_base=it['durMs'], dur_resyn=resyn.get_total_duration() * 1000,
-                           dur_fixed=cur.get_total_duration() * 1000,
-                           n_f0_points=len(pts) if not args.no_pitch else 0,
-                           n_duration_edits=n_dur, base_f0=g,
-                           accent=accent_summary(it['text'].split(' ')[0] if ' ' not in it['text'] else it['text'])))
-        print(f"  {it['key']:<22} dur {it['durMs']:6.0f} → {cur.get_total_duration()*1000:6.0f} ms   "
-              f"F0 点数 {len(pts) if not args.no_pitch else 0:3d}   时长改动 {n_dur}")
+                           dur_base=it['durMs'], dur_fixed=len(y) / sr * 1000,
+                           base_f0=round(g, 1), n_marks=len(marks),
+                           dur_edits=[[round(a, 4), round(b, 4), c] for a, b, c in dur_edits],
+                           contour=[(round(t, 4), round(f, 1)) for t, f in pts],
+                           phoneme_accent=meta))
+        print(f"  {it['key']:<22} {it['durMs']:6.0f} → {len(y)/sr*1000:6.0f} ms   "
+              f"基准F0 {g:5.1f} Hz  标记 {len(marks):3d}  时长改动 {len(dur_edits)}"
+              f"  重音 {[m['accent'] for m in meta]}")
 
     json.dump(report, open(os.path.join(outdir, 'fix_report.json'), 'w', encoding='utf-8'),
-              ensure_ascii=False, indent=1, default=str)
+              ensure_ascii=False, indent=1)
     print(f'→ {outdir}')
 
 

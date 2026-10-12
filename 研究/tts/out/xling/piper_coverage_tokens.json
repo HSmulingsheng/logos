@@ -1,0 +1,2041 @@
+{
+ "n_voices": 176,
+ "target": [
+  "a",
+  "aː",
+  "e",
+  "eː",
+  "i",
+  "iː",
+  "o",
+  "oː",
+  "u",
+  "uː",
+  "y",
+  "yː",
+  "ɛ",
+  "ɛː",
+  "ɔ",
+  "ɔː",
+  "p",
+  "pʰ",
+  "b",
+  "t",
+  "tʰ",
+  "d",
+  "k",
+  "kʰ",
+  "g",
+  "ɡ",
+  "m",
+  "n",
+  "ŋ",
+  "r",
+  "r̥",
+  "l",
+  "s",
+  "z",
+  "h",
+  "f",
+  "θ",
+  "x",
+  "v",
+  "ð",
+  "ɣ",
+  "w",
+  "j",
+  "aɪ",
+  "aʊ",
+  "eʊ",
+  "oɪ",
+  "ɔɪ",
+  "uɪ",
+  "yi",
+  "ˈ",
+  "ˌ",
+  "ː",
+  "ʰ"
+ ],
+ "rows": [
+  {
+   "key": "ar_JO-kareem-low",
+   "espeak": "ar",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ar_JO-kareem-medium",
+   "espeak": "ar",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "bg_BG-dimitar-medium",
+   "espeak": "bg",
+   "n_tokens": 162,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "bn_BD-google-medium",
+   "espeak": "bn",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ca_ES-upc_ona-medium",
+   "espeak": "ca",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "ca_ES-upc_ona-x_low",
+   "espeak": "ca",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "ca_ES-upc_pau-x_low",
+   "espeak": "ca",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "cs_CZ-jirka-low",
+   "espeak": "cs",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "cs_CZ-jirka-medium",
+   "espeak": "cs",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "cs_CZ-kasandra-medium",
+   "espeak": "cs",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "cy_GB-bu_tts-medium",
+   "espeak": "cy",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "cy_GB-gwryw_gogleddol-medium",
+   "espeak": "cy",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "da_DK-talesyntese-medium",
+   "espeak": "da",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "de_DE-eva_k-x_low",
+   "espeak": "de",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "de_DE-karlsson-low",
+   "espeak": "de",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "de_DE-kerstin-low",
+   "espeak": "de",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "de_DE-mls-medium",
+   "espeak": "de",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "de_DE-pavoque-low",
+   "espeak": "de",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "de_DE-ramona-low",
+   "espeak": "de",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "de_DE-thorsten-high",
+   "espeak": "de",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "de_DE-thorsten-low",
+   "espeak": "de",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "de_DE-thorsten-medium",
+   "espeak": "de",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "de_DE-thorsten_emotional-medium",
+   "espeak": "de",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "el_GR-joy-medium",
+   "espeak": "el",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "el_GR-rapunzelina-low",
+   "espeak": "el",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "el_GR-rapunzelina-medium",
+   "espeak": "el",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-alan-low",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_GB-alan-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-alba-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-aru-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-cori-high",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-cori-medium",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-jenny_dioco-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-northern_english_male-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-semaine-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_GB-southern_english_female-low",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_GB-vctk-medium",
+   "espeak": "en-gb-x-rp",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-amy-low",
+   "espeak": "en-us",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_US-amy-medium",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-arctic-medium",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-bryce-medium",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-danny-low",
+   "espeak": "en-us",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_US-hfc_female-medium",
+   "espeak": "en-us",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-hfc_male-medium",
+   "espeak": "en-us",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-joe-medium",
+   "espeak": "en-us",
+   "n_tokens": 151,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-john-medium",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-kathleen-low",
+   "espeak": "en-us",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_US-kristin-medium",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-kusal-medium",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-l2arctic-medium",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-lessac-high",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-lessac-low",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-lessac-medium",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-libritts-high",
+   "espeak": "en-us",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_US-libritts_r-medium",
+   "espeak": "en-us",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-ljspeech-high",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-ljspeech-medium",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-mike-medium",
+   "espeak": "en-us",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-norman-medium",
+   "espeak": "en",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-reza_ibrahim-medium",
+   "espeak": "en-us",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-ryan-high",
+   "espeak": "en-us",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_US-ryan-low",
+   "espeak": "en-us",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "en_US-ryan-medium",
+   "espeak": "en-us",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "en_US-sam-medium",
+   "espeak": "en-us",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "es_AR-daniela-high",
+   "espeak": "es-419",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "es_ES-carlfm-x_low",
+   "espeak": "es",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "es_ES-davefx-medium",
+   "espeak": "es",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "es_ES-mls_9972-low",
+   "espeak": "es",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "es_ES-sharvard-medium",
+   "espeak": "es",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "es_MX-ald-medium",
+   "espeak": "es-419",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "es_MX-ald-x_low",
+   "espeak": "es-419",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "es_MX-claude-high",
+   "espeak": "es-419",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "et_EE-news-medium",
+   "espeak": "et",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "eu_ES-antton-medium",
+   "espeak": "eu",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "eu_ES-maider-medium",
+   "espeak": "eu",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fa_IR-amir-medium",
+   "espeak": "fa",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fa_IR-ganji-medium",
+   "espeak": "fa",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fa_IR-ganji_adabi-medium",
+   "espeak": "fa",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fa_IR-gyro-medium",
+   "espeak": "fa",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fa_IR-reza_ibrahim-medium",
+   "espeak": "fa",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fi_FI-harri-low",
+   "espeak": "fi",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "fi_FI-harri-medium",
+   "espeak": "fi",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "fr_FR-gilles-low",
+   "espeak": "fr",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "fr_FR-mls-medium",
+   "espeak": "fr",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fr_FR-mls_1840-low",
+   "espeak": "fr",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "fr_FR-siwis-low",
+   "espeak": "fr",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "fr_FR-siwis-medium",
+   "espeak": "fr",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "fr_FR-tom-medium",
+   "espeak": "fr",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "fr_FR-upmc-medium",
+   "espeak": "fr",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "he_IL-saspeech-medium",
+   "espeak": "he",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hi_IN-pratham-medium",
+   "espeak": "hi",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hi_IN-priyamvada-medium",
+   "espeak": "hi",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hi_IN-rohan-medium",
+   "espeak": "hi",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hu_HU-anna-medium",
+   "espeak": "hu",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hu_HU-berta-medium",
+   "espeak": "hu",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hu_HU-imre-medium",
+   "espeak": "hu",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "hy_AM-gor-medium",
+   "espeak": "hy",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "id_ID-news_tts-medium",
+   "espeak": "id",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "is_IS-bui-medium",
+   "espeak": "is",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "is_IS-salka-medium",
+   "espeak": "is",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "is_IS-steinn-medium",
+   "espeak": "is",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "is_IS-ugla-medium",
+   "espeak": "is",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "it_IT-paola-medium",
+   "espeak": "it",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "it_IT-riccardo-x_low",
+   "espeak": "it",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "it_IT-serena-high",
+   "espeak": "it",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "it_IT-serena-medium",
+   "espeak": "it",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ja_JP-hi_fi_captain-medium",
+   "espeak": "ja",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ka_GE-natia-medium",
+   "espeak": "ka",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "kk_KZ-iseke-x_low",
+   "espeak": "kk",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "kk_KZ-issai-high",
+   "espeak": "kk",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "kk_KZ-raya-x_low",
+   "espeak": "kk",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "ko_KR-kss-medium",
+   "espeak": "ko",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ku_TR-berfin_renas-medium",
+   "espeak": "ku",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "lb_LU-marylux-medium",
+   "espeak": "lb",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "lt_LT-reginute1-medium",
+   "espeak": "lt",
+   "n_tokens": 167,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "lv_LV-aivars-medium",
+   "espeak": "lv",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ml_IN-arjun-medium",
+   "espeak": "ml",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ml_IN-meera-medium",
+   "espeak": "ml",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "mr_IN-google-medium",
+   "espeak": "mr",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ne_NP-chitwan-medium",
+   "espeak": "ne",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ne_NP-google-medium",
+   "espeak": "ne",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "ne_NP-google-x_low",
+   "espeak": "ne",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "nl_BE-nathalie-medium",
+   "espeak": "nl",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "nl_BE-nathalie-x_low",
+   "espeak": "nl",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "nl_BE-rdh-medium",
+   "espeak": "nl",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "nl_BE-rdh-x_low",
+   "espeak": "nl",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "nl_NL-alex-medium",
+   "espeak": "nl",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "nl_NL-mls-medium",
+   "espeak": "nl",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "nl_NL-mls_5809-low",
+   "espeak": "nl",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "nl_NL-mls_7432-low",
+   "espeak": "nl",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "nl_NL-pim-medium",
+   "espeak": "nl",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "nl_NL-ronnie-medium",
+   "espeak": "nl",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "no_NO-nvcc-medium",
+   "espeak": "nb",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "no_NO-talesyntese-medium",
+   "espeak": "nb",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "pl_PL-bass-high",
+   "espeak": "pl",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "pl_PL-darkman-medium",
+   "espeak": "pl",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "pl_PL-gosia-medium",
+   "espeak": "pl",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "pl_PL-mc_speech-medium",
+   "espeak": "pl",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "pl_PL-mls_6892-low",
+   "espeak": "pl",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "pt_BR-cadu-medium",
+   "espeak": "pt-br",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "pt_BR-edresson-low",
+   "espeak": "pt-br",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "pt_BR-faber-medium",
+   "espeak": "pt-br",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "pt_BR-jeff-medium",
+   "espeak": "pt-br",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "pt_PT-tugão-medium",
+   "espeak": "pt",
+   "n_tokens": 159,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ro_RO-mihai-medium",
+   "espeak": "ro",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "ru_RU-denis-medium",
+   "espeak": "ru",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "ru_RU-dmitri-medium",
+   "espeak": "ru",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "ru_RU-irina-medium",
+   "espeak": "ru",
+   "n_tokens": 151,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "ru_RU-ruslan-medium",
+   "espeak": "ru",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "sk_SK-lili-medium",
+   "espeak": "sk",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "sl_SI-artur-medium",
+   "espeak": "sl",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "sq_AL-edon-medium",
+   "espeak": "sq",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "sr_RS-serbski_institut-medium",
+   "espeak": "sr",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "sv_SE-alma-medium",
+   "espeak": "sv",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "sv_SE-lisa-medium",
+   "espeak": "sv",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "sv_SE-nst-medium",
+   "espeak": "sv",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "sw_CD-lanfrica-medium",
+   "espeak": "sw",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "te_IN-maya-medium",
+   "espeak": "te",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "te_IN-padmavathi-medium",
+   "espeak": "te",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "te_IN-venkatesh-medium",
+   "espeak": "te",
+   "n_tokens": 157,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "th_TH-tsync2-medium",
+   "espeak": "th",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "tr_TR-dfki-medium",
+   "espeak": "tr",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "uk_UA-lada-x_low",
+   "espeak": "uk",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "uk_UA-mykyta-high",
+   "espeak": "uk",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "uk_UA-oleksa-high",
+   "espeak": "uk",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "uk_UA-tetiana-high",
+   "espeak": "uk",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "uk_UA-ukrainian_tts-medium",
+   "espeak": "uk",
+   "n_tokens": 49,
+   "covered": 0,
+   "missing": [
+    "a",
+    "aː",
+    "e",
+    "eː",
+    "i",
+    "iː",
+    "o",
+    "oː",
+    "u",
+    "uː",
+    "y",
+    "yː",
+    "ɛ",
+    "ɛː",
+    "ɔ",
+    "ɔː",
+    "p",
+    "pʰ",
+    "b",
+    "t",
+    "tʰ",
+    "d",
+    "k",
+    "kʰ",
+    "g",
+    "ɡ",
+    "m",
+    "n",
+    "ŋ",
+    "r",
+    "r̥",
+    "l",
+    "s",
+    "z",
+    "h",
+    "f",
+    "θ",
+    "x",
+    "v",
+    "ð",
+    "ɣ",
+    "w",
+    "j",
+    "aɪ",
+    "aʊ",
+    "eʊ",
+    "oɪ",
+    "ɔɪ",
+    "uɪ",
+    "yi",
+    "ˈ",
+    "ˌ",
+    "ː",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "ur_PK-aegis_female-medium",
+   "espeak": "ur",
+   "n_tokens": 166,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "ur_PK-fasih-medium",
+   "espeak": "ur",
+   "n_tokens": 161,
+   "covered": 53,
+   "missing": [
+    "r̥"
+   ]
+  },
+  {
+   "key": "vi_VN-25hours_single-low",
+   "espeak": "vi",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "vi_VN-vais1000-medium",
+   "espeak": "vi",
+   "n_tokens": 154,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "vi_VN-vivos-x_low",
+   "espeak": "vi",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "zh_CN-chaowen-medium",
+   "espeak": "zh",
+   "n_tokens": 85,
+   "covered": 25,
+   "missing": [
+    "aː",
+    "eː",
+    "iː",
+    "oː",
+    "uː",
+    "yː",
+    "ɛ",
+    "ɛː",
+    "ɔ",
+    "ɔː",
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "ɡ",
+    "ŋ",
+    "r̥",
+    "θ",
+    "ð",
+    "ɣ",
+    "aɪ",
+    "aʊ",
+    "eʊ",
+    "oɪ",
+    "ɔɪ",
+    "uɪ",
+    "ˈ",
+    "ˌ",
+    "ː",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "zh_CN-huayan-medium",
+   "espeak": "cmn",
+   "n_tokens": 152,
+   "covered": 52,
+   "missing": [
+    "g",
+    "r̥"
+   ]
+  },
+  {
+   "key": "zh_CN-huayan-x_low",
+   "espeak": "cmn",
+   "n_tokens": 130,
+   "covered": 48,
+   "missing": [
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "g",
+    "r̥",
+    "ʰ"
+   ]
+  },
+  {
+   "key": "zh_CN-xiao_ya-medium",
+   "espeak": "zh",
+   "n_tokens": 85,
+   "covered": 25,
+   "missing": [
+    "aː",
+    "eː",
+    "iː",
+    "oː",
+    "uː",
+    "yː",
+    "ɛ",
+    "ɛː",
+    "ɔ",
+    "ɔː",
+    "pʰ",
+    "tʰ",
+    "kʰ",
+    "ɡ",
+    "ŋ",
+    "r̥",
+    "θ",
+    "ð",
+    "ɣ",
+    "aɪ",
+    "aʊ",
+    "eʊ",
+    "oɪ",
+    "ɔɪ",
+    "uɪ",
+    "ˈ",
+    "ˌ",
+    "ː",
+    "ʰ"
+   ]
+  }
+ ],
+ "fully_covered": 0,
+ "risk": {
+  "pʰ": "送气清塞音：日耳曼/罗曼语系普遍**没有独立的送气音位**（英语德语是同位异音），token 存在不等于模型学过音位对立",
+  "tʰ": "同上",
+  "kʰ": "同上",
+  "r̥": "清化颤音：几乎没有任何现代语言有这个音位",
+  "yː": "长圆唇前高元音：德语有 yː，罗曼语系没有",
+  "ɛː": "德语有，意大利语没有",
+  "ɔː": "英语有，多数语言没有",
+  "eː": "德语/意大利语有",
+  "oː": "德语有",
+  "aː": "德语/意大利语有",
+  "iː": "德语/意大利语有",
+  "uː": "德语/意大利语有",
+  "ŋ": "普遍有"
+ }
+}

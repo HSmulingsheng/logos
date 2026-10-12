@@ -1,0 +1,37 @@
+[
+ {
+  "amp": 0.15,
+  "min_pair_dist_hz": 7.1109595508477,
+  "hnr_loss_db": -1.9578438372900704,
+  "hnr_loss_worst": -4.2803391460893785,
+  "peak_ratio": 1.15
+ },
+ {
+  "amp": 0.25,
+  "min_pair_dist_hz": 11.449982478285524,
+  "hnr_loss_db": -2.903254113785464,
+  "hnr_loss_worst": -5.7866567875383605,
+  "peak_ratio": 1.25
+ },
+ {
+  "amp": 0.35,
+  "min_pair_dist_hz": 13.326804745564118,
+  "hnr_loss_db": -3.3695143256159326,
+  "hnr_loss_worst": -5.618553252515383,
+  "peak_ratio": 1.35
+ },
+ {
+  "amp": 0.45,
+  "min_pair_dist_hz": 18.950875763157008,
+  "hnr_loss_db": -4.120812912481086,
+  "hnr_loss_worst": -8.504019602588983,
+  "peak_ratio": 1.45
+ },
+ {
+  "amp": 0.6,
+  "min_pair_dist_hz": 28.943207602480634,
+  "hnr_loss_db": -4.389472794044925,
+  "hnr_loss_worst": -8.944697623650702,
+  "peak_ratio": 1.6
+ }
+]

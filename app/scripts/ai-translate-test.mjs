@@ -42,7 +42,18 @@ page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
 
 // ---------------------------------------------------------------- 模拟服务商
 const requests = []
+/** 由测试切换：'ok' 正常返回，其余模拟各类失败 */
+let mockMode = 'ok'
 await page.route('**/chat/completions', async (route) => {
+  if (mockMode === 'badkey') {
+    return route.fulfill({ status: 401, contentType: 'application/json', body: JSON.stringify({ error: { message: 'invalid api key' } }) })
+  }
+  if (mockMode === 'ratelimit') {
+    return route.fulfill({ status: 429, contentType: 'application/json', body: JSON.stringify({ error: { message: 'rate limited' } }) })
+  }
+  if (mockMode === 'garbage') {
+    return route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ choices: [{ message: { content: '抱歉，我不能…' } }] }) })
+  }
   const req = route.request()
   let texts = []
   try {
@@ -129,7 +140,8 @@ check('请求地址指向 DeepSeek', r0?.url.startsWith('https://api.deepseek.co
 check('带上了 Bearer 鉴权头', r0?.auth === 'Bearer sk-test-key-123', r0?.auth ? '已带' : '未带')
 check('模型名用了默认值', r0?.model === 'deepseek-chat', r0?.model)
 check('系统提示词说明了古希腊语→中文', /古希腊语/.test(r0?.system || '') && /中文/.test(r0?.system || ''))
-check('提示词里带了真实希腊语原文', /Θουκυδίδης|ξυνέγραψε|τὸν πόλεμον/.test(r0?.first || ''), (r0?.first || '').slice(0, 40))
+// 不断言具体是哪位作者——作品列表顺序会变；只要求确实是古希腊语
+check('提示词里带了真实希腊语原文', /[\u0370-\u03ff\u1f00-\u1fff]{3,}/.test(r0?.first || ''), (r0?.first || '').slice(0, 34))
 check('按每批 ≤8 段切分', requests.every((r) => r.n <= 8), `最大 ${Math.max(...requests.map((r) => r.n))} 段/次`)
 
 const bodyText = await page.locator('body').innerText()
@@ -150,6 +162,69 @@ const after = requests.length
 const t2 = await page.locator('body').innerText()
 check('刷新后译文仍在（读自本机缓存）', /【模拟译文1】/.test(t2))
 check('刷新后没有重新请求', after === before, `${before} → ${after} 次`)
+
+// ---------------------------------------------------------------- 错误路径
+// 用户一定会遇到 Key 填错、限流、模型乱输出，这里逐条验证提示是否可操作。
+console.log('\n▶ 错误路径')
+const page2 = await browser.newPage({ viewport: { width: 430, height: 932 } })
+let mockMode2 = 'badkey'   // 必须在 route 注册前声明，否则处理器里是 TDZ 错误
+page2.on('pageerror', (e) => errors.push('p2: ' + e.message))
+await page2.addInitScript(() => localStorage.setItem('greek-welcomed-v2', '1'))
+await page2.route('**/chat/completions', (route) => {
+  const map = {
+    badkey: { status: 401, body: { error: { message: 'invalid api key' } } },
+    ratelimit: { status: 429, body: { error: { message: 'rate limited' } } },
+    garbage: { status: 200, body: { choices: [{ message: { content: '抱歉，我不能…' } }] } },
+  }
+  const m = map[mockMode2] || map.badkey
+  return route.fulfill({ status: m.status, contentType: 'application/json', body: JSON.stringify(m.body) })
+})
+async function tryTranslate() {
+  // 每轮都重载：上一轮停在阅读器里，体裁切换条已经不可见了
+  await page2.reload({ waitUntil: 'domcontentloaded' })
+  await page2.waitForTimeout(2600)
+  try { await goReading(page2) } catch (e) {
+    const t = await page2.locator('body').innerText().catch(() => '(取不到)')
+    console.log('   ⚠️ 导航失败，当前页面：', t.replace(/\n+/g, ' | ').slice(0, 140))
+    throw e
+  }
+  await page2.locator('main button:has-text("修昔底德")').first().click()
+  await page2.waitForTimeout(1500)
+  await page2.locator('main button:has-text("1")').first().click()
+  await page2.waitForTimeout(2000)
+  const b = page2.locator('button:has-text("AI 翻译本章")').first()
+  if (!(await b.count())) return ''
+  await b.click()
+  for (let i = 0; i < 20; i++) {
+    await page2.waitForTimeout(500)
+    if (!/翻译中/.test(await b.innerText().catch(() => ''))) break
+  }
+  await page2.waitForTimeout(600)
+  return await page2.locator('body').innerText()
+}
+await page2.goto(url, { waitUntil: 'domcontentloaded', timeout: 120000 })
+await page2.waitForTimeout(2500)
+await page2.evaluate(async () => {
+  const req = indexedDB.open('greek-vocab', 1)
+  const db = await new Promise((res, rej) => { req.onsuccess = () => res(req.result); req.onerror = () => rej(req.error) })
+  const cur = await new Promise((res) => { const t = db.transaction('kv').objectStore('kv').get('settings'); t.onsuccess = () => res(t.result || {}) })
+  const tx = db.transaction('kv', 'readwrite')
+  tx.objectStore('kv').put({ ...cur, aiProvider: 'deepseek', aiKey: 'sk-wrong', aiModel: '', aiBaseUrl: '' }, 'settings')
+  await new Promise((res) => { tx.oncomplete = () => res() }); db.close()
+})
+await page2.reload({ waitUntil: 'domcontentloaded' }); await page2.waitForTimeout(2800)
+
+const tBad = await tryTranslate()
+check('Key 无效时提示可操作', /Key 无效|没有权限/.test(tBad), (tBad.match(/[^\n]*Key 无效[^\n]*/) || [''])[0].slice(0, 40))
+check('Key 无效时给出补救建议', /服务商后台|确认 Key/.test(tBad))
+
+mockMode2 = 'ratelimit'
+const tRate = await tryTranslate()
+check('限流时提示额度问题', /限流|余额不足/.test(tRate))
+
+mockMode2 = 'garbage'
+const tGar = await tryTranslate()
+check('模型乱输出时提示 JSON 问题', /不是合法 JSON|结构不对/.test(tGar))
 
 check('无控制台错误', errors.length === 0, errors.slice(0, 2).join(' | '))
 

@@ -1,0 +1,42 @@
+{
+ "Bühne": {
+  "note": "ü=[yː]",
+  "ipa": "b_ˈyː_n_ə"
+ },
+ "viel": {
+  "note": "ie=[iː]",
+  "ipa": "f_ˈiː_l"
+ },
+ "spät": {
+  "note": "ä=[ɛː]",
+  "ipa": "ʃ_p_ˈɛː_t"
+ },
+ "Beet": {
+  "note": "ee=[eː]",
+  "ipa": "b_ˈeː_t"
+ },
+ "Sonne": {
+  "note": "o=[ɔ]",
+  "ipa": "z_ˈɔ_n_ə"
+ },
+ "Boot": {
+  "note": "oo=[oː]",
+  "ipa": "b_ˈoː_t"
+ },
+ "gut": {
+  "note": "u=[uː]",
+  "ipa": "ɡ_ˈuː_t"
+ },
+ "Vater": {
+  "note": "a=[a]",
+  "ipa": "f_ˈɑː_t_ɜ"
+ },
+ "hübsch": {
+  "note": "ü=[y]",
+  "ipa": "h_ˈʏ_p_ʃ"
+ },
+ "bitte": {
+  "note": "i=[ɪ]",
+  "ipa": "b_ˈɪ_t_ə"
+ }
+}

@@ -190,6 +190,44 @@ tools/merge_reading_zh.py          汇总 → merged.json，注入阅读数据
 会话引擎的 `startSession({ mode })` 支持 `'all' | 'new' | 'review'`，
 `buildQueue` 据此只铺对应那一段队列。
 
+### AI 翻译：古典文本的中文怎么办
+
+古典文本（荷马、柏拉图、修昔底德……）的中文译文**在版权期内**，没有可自由分发的来源，
+所以内置译文只能陆续人工补齐。缺的部分可以在阅读页**用你自己的 API Key 现场翻译**
+（「我的 → AI 翻译」里配置）。
+
+**为什么必须是「自带 Key」**：这是个纯静态站，没有后端。而古希腊语→中文的
+**机器翻译模型不存在**——HuggingFace 上 20 个 "ancient greek" 模型全是 BERT 编码器；
+`opus-mt-grc-*`、NLLB 的 `grc_Grek` 都没有（详见 `tools/mt_experiment.py` 的实验记录）。
+大语言模型是唯一可行的方案，自带 Key 则是唯一既不产生服务器成本、
+又不把 Key 写进公开代码的做法。
+
+**支持哪些服务商**——静态站在浏览器里直接调 API，**服务商必须允许跨源请求（CORS）**。
+实测（带 `Origin: https://hsmulingsheng.github.io`）：
+
+| 服务商 | CORS | 能否直连 |
+|---|---|---|
+| DeepSeek | 回显本站源 | ✅ 默认 |
+| 智谱 GLM | 允许 | ✅ |
+| 阿里通义 | `*` | ✅ |
+| OpenAI | 无 CORS 头 | ❌ 需自建代理 |
+| Anthropic | 403 | ❌ 需自建代理 |
+
+**实现要点**
+- `src/lib/aiTranslate.ts`：服务商注册表、提示词、JSON 解析、本机缓存
+- 提示词要求输出 `{"zh": [...]}`（`json_object` 模式要求顶层是对象）；
+  服务商不支持该参数时自动去掉重试一次
+- 每批 ≤8 段：段落多时模型容易漏条或截断
+- 译文缓存在本机 IndexedDB（键含原文哈希 + 模型名），重复阅读不再花额度
+- 错误提示都带补救建议（Key 无效 / 限流 / 返回不是 JSON），不丢已翻好的部分
+- **CSP 调整**：`connect-src` 由 `'self'` 放宽为 `'self' https:`。
+  这是必然代价——用户指定的端点无法写进静态白名单。
+  脚本仍受 `script-src 'self'` 约束、表单被 `form-action 'none'` 锁死。
+
+验收：`app/scripts/ai-translate-test.mjs`（**19 项**，含 4 条错误路径）。
+测试用 route 拦截模拟服务商，但**请求本身是真的**，所以能验证 URL、鉴权头、
+提示词内容、JSON 解析、渲染、缓存——当初正是这个测试抓到 CSP 把请求全拦了。
+
 ### 国际音标（IPA）
 
 每个词都注有国际音标，**古典阿提卡（Attic）重建**，用 CLTK 的

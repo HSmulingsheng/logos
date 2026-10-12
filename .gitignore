@@ -81,3 +81,7 @@ Thumbs.db
 # 翻译批次是派生文件，可由阅读数据重新切出；只跟踪译文产出
 data/zh_reading/batches/
 data/zh_reading/tmp/
+
+# ---- 研究用的独立 venv 与试验音频（体积大，不入库）
+研究/tts/venv/
+**/venv/
