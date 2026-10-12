@@ -80,7 +80,12 @@ for (const g of GENRES) {
     await page.locator('button', { hasText: new RegExp(`^${g.tab}$`) }).first().click()
     await page.waitForTimeout(1200)
     await g.open()
-    await page.waitForTimeout(3000)
+    // 线上比本地慢得多：新约阅读器要拉语料，实测约 10 秒才出正文。
+    // 固定等待会误判成「进不去」，这里轮询到出现 greek 段落为止。
+    await page.waitForFunction(
+      () => [...document.querySelectorAll('p.greek')].some((p) => p.textContent.trim().length > 15),
+      null, { timeout: 45000 },
+    ).catch(() => {})
   } catch (e) {
     check(`${g.name} 能进入正文`, false, String(e).split('\n')[0].slice(0, 70))
     continue
