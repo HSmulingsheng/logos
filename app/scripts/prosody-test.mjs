@@ -110,7 +110,32 @@ async function analyzeLastBlob() {
   })
 }
 
+
 /** 进到古典阅读的一章，点第一个朗读按钮 */
+/**
+ * 点击朗读按钮，直到抓到一段音频。
+ *
+ * ⚠️ 不能「先预热一次丢掉再点第二次」：第二次会命中 TTS 的内存缓存，
+ * 直接返回旧的 blob URL，`createObjectURL` 不会再被调用，于是抓不到新音频。
+ * 所以改成**反复点击直到抓到**——重试本身就把冷启动（加载 24MB WASM）消化掉了。
+ */
+async function clickUntilBlob(maxTries = 3) {
+  for (let t = 0; t < maxTries; t++) {
+    await page.evaluate(() => { (window.__blobs || []).length = 0 })
+    await page.locator('main button[aria-label="朗读"]').first().click()
+    for (let i = 0; i < 160; i++) {
+      await page.waitForTimeout(250)
+      // @ts-ignore
+      if (await page.evaluate(() => (window.__blobs || []).length > 0)) return true
+    }
+    // 可能上一次还在播，先停掉再重试
+    await page.locator('main button[aria-label="朗读"]').first().click().catch(() => {})
+    await page.waitForTimeout(600)
+  }
+  return false
+}
+
+/** 进到古典阅读的一章，朗读并分析 */
 async function speakOneSentence() {
   await page.locator('nav button:has-text("学习")').first().click()
   await page.waitForTimeout(900)
@@ -122,12 +147,7 @@ async function speakOneSentence() {
   await page.waitForTimeout(1500)
   await page.locator('main button:has-text("1")').first().click()
   await page.waitForTimeout(2000)
-  await page.evaluate(() => { (window.__blobs || []).length = 0 })
-  // 段落右上角的朗读按钮
-  const btns = page.locator('main button[aria-label*="朗读"], main button[title*="朗读"], main button[aria-label*="发音"]')
-  console.log('   朗读按钮数:', await btns.count())
-  await btns.first().click()
-  await page.waitForTimeout(5000)
+  await clickUntilBlob()
   return await analyzeLastBlob()
 }
 

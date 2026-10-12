@@ -104,20 +104,37 @@ await page.waitForTimeout(2800)
 // 用真实阅读页面点朗读按钮，文本固定（同一段），所以差异只可能来自开关。
 console.log('▶ 开关对比：同一段文本，还原古音 关 vs 开')
 
+
+/**
+ * 点击朗读按钮，直到抓到一段音频。
+ *
+ * ⚠️ 不能「先预热一次丢掉再点第二次」：第二次会命中 TTS 的内存缓存，
+ * 直接返回旧的 blob URL，`createObjectURL` 不会再被调用，于是抓不到新音频。
+ * 所以改成**反复点击直到抓到**——重试本身就把冷启动（加载 24MB WASM）消化掉了。
+ */
+async function clickUntilBlob(maxTries = 3) {
+  for (let t = 0; t < maxTries; t++) {
+    await page.evaluate(() => { (window.__blobs || []).length = 0 })
+    await page.locator('main button[aria-label="朗读"]').first().click()
+    for (let i = 0; i < 160; i++) {
+      await page.waitForTimeout(250)
+      // @ts-ignore
+      if (await page.evaluate(() => (window.__blobs || []).length > 0)) return true
+    }
+    // 可能上一次还在播，先停掉再重试
+    await page.locator('main button[aria-label="朗读"]').first().click().catch(() => {})
+    await page.waitForTimeout(600)
+  }
+  return false
+}
+
 async function speakChapter() {
   await page.locator('nav button:has-text("学习")').first().click(); await page.waitForTimeout(900)
   await page.locator('main button:has-text("阅读")').first().click(); await page.waitForTimeout(1200)
   await page.locator('main button:has-text("历史")').first().click(); await page.waitForTimeout(1200)
   await page.locator('main button').filter({ hasText: /修昔底德/ }).first().click(); await page.waitForTimeout(1500)
   await page.locator('main button:has-text("1")').first().click(); await page.waitForTimeout(2000)
-  await page.evaluate(() => { (window.__blobs || []).length = 0 })
-  await page.locator('main button[aria-label="朗读"]').first().click()
-  for (let i = 0; i < 80; i++) {
-    await page.waitForTimeout(200)
-    // @ts-ignore
-    if (await page.evaluate(() => (window.__blobs || []).length > 0)) break
-  }
-  // 等音频解码可用
+  await clickUntilBlob()
   await page.waitForTimeout(800)
   return await page.evaluate(async () => {
     const list = window.__blobs || []
