@@ -71,6 +71,30 @@ eSpeak-NG 采用 **GPL-3.0**。把 GPL 程序随应用一起分发，会使**整
 已随仓库提供：SBLGNT 新约（`corpus_nt.json`）、Smyth 语法（`smyth.json`，公有领域）、
 SBLGNT / GLAUx 例句（`examples*.json`）。
 
+## 词典释义：Liddell-Scott-Jones，CC BY-SA 4.0
+
+单词详情页的**英文释义**取自
+**Liddell-Scott-Jones, *A Greek-English Lexicon***（9th ed.），
+数字版来自 **[Perseus Digital Library](https://www.perseus.tufts.edu/)** 的
+[`PerseusDL/lexica`](https://github.com/PerseusDL/lexica) 仓库。
+
+* **许可**：CC BY-SA 4.0（署名 + **相同方式共享**）；
+* **要求的署名语句**（Perseus 的规定，原样保留）：
+
+  > Text provided under a CC BY-SA license by Perseus Digital Library,
+  > http://www.perseus.tufts.edu, with funding from The National Endowment
+  > for the Humanities. Data accessed from https://github.com/PerseusDL/lexica/
+  > [2026-10-12].
+
+* **应用内的署名**：每个词条的释义上方都标出「Liddell-Scott-Jones《希腊语英语词典》· Perseus · CC BY-SA 4.0」；
+* **相同方式共享**：再分发释义（含改写版）需沿用 CC BY-SA 4.0；
+* **覆盖率**：牌组 15,288 个词条中 14,781 个能匹配到 LSJ 词条（96.7%）；
+  匹配不上的（多为代词变格表、`-νυμι` 等异体、短语与专名）**回退到牌组原有释义**。
+
+抽取流程见 `tools/build_lsj.py`（Beta Code 转换、剔除引文与希腊语例词、
+义项编号保留等细节都写在那个文件的注释里）。LSJ 正文是 **Beta Code**，
+`tools/beta_code.py` 负责转成希腊语 Unicode。
+
 ## 内容与数据的授权（与应用代码分开）
 
 | 内容 | 来源 | 许可 |
@@ -79,13 +103,14 @@ SBLGNT / GLAUx 例句（`examples*.json`）。
 | 和合本中文译文 | eBible.org `cmu-cuv`（USFX） | 公有领域 |
 | 古典语料例句 | GLAUx v2.1（Keersmaekers） | Zenodo 记录 CC BY 4.0；逐文本以 CC BY-SA 为主 |
 | 参考语法与教材例句 | Smyth, *A Greek Grammar for Colleges*（American Book Co., 1920） | **公有领域**；TEI 数字版取自 [neelsmith/smyth](https://github.com/neelsmith/smyth) |
-| Beta Code → Unicode | [beta-code](https://github.com/perseids-tools/beta-code-py)（perseids-tools） | MIT |
+| 词典释义（英文） | Liddell-Scott-Jones, *A Greek-English Lexicon*（Perseus `PerseusDL/lexica`） | **CC BY-SA 4.0（署名 + 相同方式共享）** |
 | 字体 | Gentium（SIL） | SIL Open Font License 1.1 |
 | 调度算法 | [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) | MIT |
 | 语音引擎（轻量） | eSpeak-NG | **GPL-3.0**（见上） |
 | 语音模型（高清） | Meta MMS-TTS `facebook/mms-tts-grc` | **CC-BY-NC 4.0（非商用）** |
 | ONNX 推理运行时 | onnxruntime-web（微软） | MIT |
 | 古典阅读文本 | Perseus Digital Library `canonical-greekLit` | **CC BY-SA 4.0（署名 + 相同方式共享）** |
+| Beta Code → Unicode | 自行实现（`tools/beta_code.py`），映射规则依 TLG/Perseus 公开标准 | 随本应用 |
 | 词表与英文释义 | 原 Anki 共享牌组 | **授权状态未确认** |
 
 「词表与英文释义」一条请在公开分发前自行确认，详见 [`DEPLOY.md`](DEPLOY.md)。

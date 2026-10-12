@@ -164,21 +164,78 @@ def align_by_ratio(g_blocks: list[tuple[str, str]],
 
 
 def prose_paras(el: ET.Element) -> list[tuple[str, str]]:
-    """散文段落：取 chapter 一层；没有则取本 div 内的 p。"""
+    """
+    散文段落：逐 <p> 成段。
+
+    ⚠️ 曾经「没有子 div 时把本 div 内所有 <p> 并成一段」，于是色诺芬的
+    《希腊史》《远征记》被压成 38 / 51 段——单段最长 25,005 字符，
+    阅读时是一堵墙、翻译也没法处理。TEI 里其实有 1,149 个 <p>。
+    """
+    def ps_of(node: ET.Element) -> list[str]:
+        return [t for t in (text_of(p).strip() for p in node.iter(f"{NS}p")) if t]
+
     subs = [c for c in el if c.tag == f"{NS}div"]
     if subs:
-        out = []
+        out: list[tuple[str, str]] = []
         for c in subs:
             num = c.get("n") or ""
-            t = " ".join(text_of(p) for p in c.iter(f"{NS}p")) or text_of(c)
-            if t.strip():
-                out.append((num, t.strip()))
+            ps = ps_of(c)
+            if len(ps) <= 1:
+                t = (ps[0] if ps else text_of(c)).strip()
+                if t:
+                    out.append((num, t))
+            else:
+                # 子 div 里还有多个 <p>：逐个成段，编号带上序号以免键冲突
+                for j, t in enumerate(ps, 1):
+                    out.append((f"{num}.{j}" if num else str(j), t))
         return out
-    ps = [text_of(p) for p in el.iter(f"{NS}p")]
+    ps = ps_of(el)
     if ps:
-        return [("", " ".join(x for x in ps if x).strip())]
-    return [("", text_of(el))]
+        return [(str(i), t) for i, t in enumerate(ps, 1)]
+    t = text_of(el).strip()
+    return [("", t)] if t else []
 
+
+
+def split_long_paras(paras: list[dict], limit: int = 1800) -> list[dict]:
+    """
+    把超长段落按句子边界切开。
+
+    Perseus 的 TEI 偶尔整节只用一个 <p> 包住（《尼各马可伦理学》最长的有 9,341 字符），
+    界面上是一堵墙，翻译时也超出单次处理的合适尺度。按句子切既好读又好译。
+    希腊语与英译各自按自己的句子边界切，再按累计长度比例配对。
+    """
+    out: list[dict] = []
+    for p in paras:
+        g, e = p.get("g") or "", p.get("e") or ""
+        if len(g) <= limit:
+            out.append(p)
+            continue
+
+        def sentences(t: str) -> list[str]:
+            # 在句末标点（. ; · ! ?）后切，保留标点
+            parts = re.split(r"(?<=[.;·!?])\s+", t)
+            chunks: list[str] = []
+            for part in parts:
+                if chunks and len(chunks[-1]) + len(part) <= limit:
+                    chunks[-1] += " " + part
+                else:
+                    chunks.append(part)
+            return [c for c in chunks if c.strip()]
+
+        gs = sentences(g)
+        es = sentences(e) if e else []
+        if len(gs) <= 1:
+            out.append(p)
+            continue
+        if len(es) == len(gs):
+            out.extend({"g": a, "e": b} for a, b in zip(gs, es, strict=False))
+        elif es:
+            out.extend(align_by_ratio([(str(i), a) for i, a in enumerate(gs)],
+                                      [(str(i), b) for i, b in enumerate(es)]))
+        else:
+            out.extend({"g": a, "e": ""} for a in gs)
+    return out
 
 def build(work_id: str, info: dict) -> dict | None:
     grc_path = SRC / info["grc"]
@@ -228,11 +285,15 @@ def build(work_id: str, info: dict) -> dict | None:
             gp = prose_paras(c)
             ep = prose_paras(eng) if eng is not None else []
             e_by = {a: b for a, b in ep}
-            # 段落数一致时按序对齐，否则按下标
             if len(gp) == len(ep) and gp:
                 paras = [{"g": g, "e": e} for (_, g), (_, e) in zip(gp, ep, strict=False)]
+            elif ep and len(gp) != len(ep):
+                # 两边切段方式不同（如希英版本段落划分不一致）时按累计长度比例对齐；
+                # 只按编号查会大量落空
+                paras = align_by_ratio(gp, ep)
             else:
                 paras = [{"g": g, "e": e_by.get(num, "")} for num, g in gp]
+        paras = split_long_paras(paras)
         gtext = " ".join(p["g"] for p in paras)
         if len(gtext) < 20:
             continue

@@ -1,0 +1,866 @@
+[
+ {
+  "k": "67b0acbe3486f945",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐνίοτε δὲ καὶ ὁ ζευγηλάτης τὸν λῃστήν· εἶτα παρὰ τοὺς βοῦς ζεύξας ὀπίσω τὼ χεῖρε δεδεμένον ἐλαύνει. μετὰ τοῦτο Μυσὸς εἰσῆλθεν ἐν ἑκατέρᾳ τῇ χειρὶ ἔχων πέλτην, καὶ τοτὲ μὲν ὡς δύο ἀντιταττομένων μιμούμενος ὠρχεῖτο, τοτὲ δὲ ὡς πρὸς ἕνα ἐχρῆτο ταῖς πέλταις, τοτὲ δʼ ἐδινεῖτο καὶ ἐξεκυβίστα ἔχων τὰς πέλτας, ὥστε ὄψιν καλὴν φαίνεσθαι.",
+  "e": "After this a Mysian came in carrying a light shield in each hand, and at one moment in his dance he would go through a pantomime as though two men were arrayed against him, again he would use his shields as though against one antagonist, and again he would whirl and throw somersaults while holding the shields in his hands, so that the spectacle was a fine one."
+ },
+ {
+  "k": "b6a4a343cbf89166",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τέλος δὲ τὸ περσικὸν ὠρχεῖτο κρούων τὰς πέλτας καὶ ὤκλαζε καὶ ἐξανίστατο· καὶ ταῦτα πάντα ἐν ῥυθμῷ ἐποίει πρὸς τὸν αὐλόν.",
+  "e": "Lastly, he danced the Persian dance, clashing his shields together and crouching down and then rising up again; and all this he did, keeping time to the music of the flute."
+ },
+ {
+  "k": "1aad5f38056f6b07",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπὶ δὲ τούτῳ ἐπιόντες οἱ Μαντινεῖς καὶ ἄλλοι τινὲς τῶν Ἀρκάδων ἀναστάντες ἐξοπλισάμενοι ὡς ἐδύναντο κάλλιστα ᾖσάν τε ἐν ῥυθμῷ πρὸς τὸν ἐνόπλιον ῥυθμὸν αὐλούμενοι καὶ ἐπαιάνισαν καὶ ὠρχήσαντο ὥσπερ ἐν ταῖς πρὸς τοὺς θεοὺς προσόδοις. ὁρῶντες δὲ οἱ Παφλαγόνες δεινὰ ἐποιοῦντο πάσας τὰς ὀρχήσεις ἐν ὅπλοις εἶναι.",
+  "e": "After him the Mantineans and some of the other Arcadians arose, arrayed in the finest arms and accoutrements they could command, and marched in time to the accompaniment of a flute playing the martial rhythm and sang the paean and danced, just as the Arcadians do in their festal processions in honour of the gods. And the Paphlagonians, as they looked on, thought it most strange that all the dances were under arms."
+ },
+ {
+  "k": "0416c393dfa0ca3b",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπὶ τούτοις ὁρῶν ὁ Μυσὸς ἐκπεπληγμένους αὐτούς, πείσας τῶν Ἀρκάδων τινὰ πεπαμένον ὀρχηστρίδα εἰσάγει σκευάσας ὡς ἐδύνατο κάλλιστα καὶ ἀσπίδα δοὺς κούφην αὐτῇ. ἡ δὲ ὠρχήσατο πυρρίχην ἐλαφρῶς.",
+  "e": "Thereupon the Mysian, seeing how astounded they were, persuaded one of the Arcadians who had a dancing girl to let him bring her in, after dressing her up in the finest way he could and giving her a light shield."
+ },
+ {
+  "k": "61ce28925fb8923d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐνταῦθα κρότος ἦν πολύς, καὶ οἱ Παφλαγόνες ἤροντο εἰ καὶ γυναῖκες συνεμάχοντο αὐτοῖς. οἱ δʼ ἔλεγον ὅτι αὗται καὶ αἱ τρεψάμεναι εἶεν βασιλέα ἐκ τοῦ στρατοπέδου. τῇ μὲν νυκτὶ ταύτῃ τοῦτο τὸ τέλος ἐγένετο.",
+  "e": "And she danced the Pyrrhic with grace. Then there was great applause, and the Paphlagonians asked whether women also fought by their side. And the Greeks replied that these women were precisely the ones who put the King to flight from his camp. Such was the end of that evening."
+ },
+ {
+  "k": "ea781b82b973370f",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τῇ δὲ ὑστεραίᾳ προσῆγον αὐτοὺς εἰς τὸ στράτευμα· καὶ ἔδοξε τοῖς στρατιώταις μήτε ἀδικεῖν Παφλαγόνας μήτε ἀδικεῖσθαι. μετὰ τοῦτο οἱ μὲν πρέσβεις ᾤχοντο· οἱ δὲ Ἕλληνες, ἐπειδὴ πλοῖα ἱκανὰ ἐδόκει παρεῖναι, ἀναβάντες ἔπλεον ἡμέραν καὶ νύκτα πνεύματι καλῷ ἐν ἀριστερᾷ ἔχοντες τὴν Παφλαγονίαν.",
+  "e": "On the next day they introduced the ambassadors to the army, and the soldiers passed a resolution to do the Paphlagonians no wrong and to suffer no wrong at their hands. After this the ambassadors departed, and the Greeks, inasmuch as it seemed that vessels enough were at hand, embarked and sailed for a day and a night with a fair wind, keeping Paphlagonia on the left."
+ },
+ {
+  "k": "2765569f6f9e8054",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τῇ δʼ ἄλλῃ ἀφικνοῦνται εἰς Σινώπην καὶ ὡρμίσαντο εἰς Ἁρμήνην τῆς Σινώπης. Σινωπεῖς δὲ οἰκοῦσι μὲν ἐν τῇ Παφλαγονικῇ, Μιλησίων δὲ ἄποικοί εἰσιν. οὗτοι δὲ ξένια πέμπουσι τοῖς Ἕλλησιν ἀλφίτων μεδίμνους τρισχιλίους, οἴνου δὲ κεράμια χίλια καὶ πεντακόσια. καὶ Χειρίσοφος ἐνταῦθα ἦλθε τριήρη ἔχων.",
+  "e": "On the second day they reached Sinope, and came to anchor at Harmene, in the territory of Sinope. The Sinopeans dwell, indeed, in Paphlagonia, but are colonists of the Milesians. And they sent to the Greeks, as gifts of hospitality, three thousand medimni of barley meal and fifteen hundred jars of wine."
+ },
+ {
+  "k": "6b45a8ed3362e52d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ οἱ μὲν στρατιῶται προσεδόκων ἄγοντά τι σφίσιν ἥκειν· ὁ δʼ ἦγε μὲν οὐδέν, ἀπήγγελλε δὲ ὅτι ἐπαινοίη αὐτοὺς καὶ Ἀναξίβιος ὁ ναύαρχος καὶ οἱ ἄλλοι, καὶ ὅτι ὑπισχνεῖτο Ἀναξίβιος, εἰ ἀφίκοιντο ἔξω τοῦ Πόντου, μισθοφορὰν αὐτοῖς ἔσεσθαι.",
+  "e": "Here Cheirisophus also came, with a man-of-war. And the soldiers expected that he had brought them something; in fact, however, he brought nothing, save the report that the admiral Anaxibius and the others commended them, and that Anaxibius promised that if they got outside the Euxine, they should have regular pay."
+ },
+ {
+  "k": "5f458b9890cce694",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ἐν ταύτῃ τῇ Ἁρμήνῃ ἔμειναν οἱ στρατιῶται ἡμέρας πέντε. ὡς δὲ τῆς Ἑλλάδος ἐδόκουν ἐγγὺς γίγνεσθαι, ἤδη μᾶλλον ἢ πρόσθεν εἰσῄει αὐτοὺς ὅπως ἂν καὶ ἔχοντές τι οἴκαδε ἀφίκωνται.",
+  "e": "Here at Harmene the troops remained for five days.By this time, since it seemed that they were getting near Greece, the question came into their minds more than before how they might reach home with a little something in hand."
+ },
+ {
+  "k": "b073fb89f8d67af4",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἡγήσαντο οὖν, εἰ ἕνα ἕλοιντο ἄρχοντα, μᾶλλον ἂν ἢ πολυαρχίας οὔσης δύνασθαι τὸν ἕνα χρῆσθαι τῷ στρατεύματι καὶ νυκτὸς καὶ ἡμέρας, καὶ εἴ τι δέοι λανθάνειν, μᾶλλον ἂν κρύπτεσθαι, καὶ εἴ τι αὖ δέοι φθάνειν, ἧττον ἂν ὑστερίζειν· οὐ γὰρ ἂν λόγων δεῖν πρὸς ἀλλήλους, ἀλλὰ τὸ δόξαν τῷ ἑνὶ περαίνεσθαι ἄν· τὸν δʼ ἔμπροσθεν χρόνον ἐκ τῆς νικώσης ἔπραττον πάντα οἱ στρατηγοί.",
+  "e": "They came to the conclusion, therefore, that if they should choose one commander, that one man would be able to handle the army better, whether by night or day, than a number of commanders—that if there should be need of concealment, he would be better able to keep matters secret, or again, if there should be need of getting ahead of an adversary, he would be less likely to be too late; for, thought the soldiers, there would be no need of conferences of generals with one another, but the plan resolved upon by the one man would be carried through, whereas in the past the generals had acted in all matters in accordance with a majority vote."
+ },
+ {
+  "k": "7e2038fee7ac0088",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὡς δὲ ταῦτα διενοοῦντο, ἐτράποντο ἐπὶ τὸν Ξενοφῶντα· καὶ οἱ λοχαγοὶ ἔλεγον προσιόντες αὐτῷ ὅτι ἡ στρατιὰ οὕτω γιγνώσκει, καὶ εὔνοιαν ἐνδεικνύμενος ἕκαστος ἔπειθεν αὐτὸν ὑποστῆναι τὴν ἀρχήν.",
+  "e": "As they thought over these things they turned to Xenophon; the captains came to him and said that this was the opinion of the army, and each one of them, with manifestations of good will, urged him to undertake the command."
+ },
+ {
+  "k": "9c620320a6792172",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὁ δὲ Ξενοφῶν τῇ μὲν ἐβούλετο ταῦτα, νομίζων καὶ τὴν τιμὴν μείζω οὕτως ἑαυτῷ γίγνεσθαι πρὸς τοὺς φίλους καὶ εἰς τὴν πόλιν τοὔνομα μεῖζον ἀφίξεσθαι αὑτοῦ, τυχὸν δὲ καὶ ἀγαθοῦ τινος ἂν αἴτιος τῇ στρατιᾷ γενέσθαι.",
+  "e": "As for Xenophon, he was inclined on some accounts to accept the command, for he thought that if he did so the greater would be the honour he would enjoy among his friends and the greater his name when it should reach his city, while, furthermore, it might chance that he could be the means of accomplishing some good thing for the army."
+ },
+ {
+  "k": "15f707ceb9405475",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τὰ μὲν δὴ τοιαῦτα ἐνθυμήματα ἐπῇρεν αὐτὸν ἐπιθυμεῖν αὐτοκράτορα γενέσθαι ἄρχοντα. ὁπότε δʼ αὖ ἐνθυμοῖτο ὅτι ἄδηλον μὲν παντὶ ἀνθρώπῳ ὅπῃ τὸ μέλλον ἕξει, διὰ τοῦτο δὲ καὶ κίνδυνος εἴη καὶ τὴν προειργασμένην δόξαν ἀποβαλεῖν, ἠπορεῖτο.",
+  "e": "Such considerations, then, roused in him an earnest desire to become sole commander. On the other hand, when he reflected that no man can see clearly how the future will turn out and that for this reason there was danger that he might even lose the reputation he had already won, he was doubtful."
+ },
+ {
+  "k": "3eb0b202aa87a30d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "διαπορουμένῳ δὲ αὐτῷ διακρῖναι ἔδοξε κράτιστον εἶναι τοῖς θεοῖς ἀνακοινῶσαι· καὶ παραστησάμενος δύο ἱερεῖα ἐθύετο τῷ Διὶ τῷ βασιλεῖ, ὅσπερ αὐτῷ μαντευτὸς ἦν ἐκ Δελφῶν· καὶ τὸ ὄναρ δὴ ἀπὸ τούτου τοῦ θεοῦ ἐνόμιζεν ἑορακέναι ὃ εἶδεν ὅτε ἤρχετο ἐπὶ τὸ συνεπιμελεῖσθαι τῆς στρατιᾶς καθίστασθαι.",
+  "e": "Quite unable as he was to decide the question, it seemed best to him to consult the gods; and he accordingly brought two victims to the altar and proceeded to offer sacrifice to King Zeus, the very god that the oracle at Delphi had prescribed for him; and it was likewise from this god, as he believed, that the dream came which he had at the time when he took the first steps toward assuming a share in the charge of the army."
+ },
+ {
+  "k": "af6a0780e8c3e2bd",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὅτε ἐξ Ἐφέσου ὡρμᾶτο Κύρῳ συσταθησόμενος, αἰετὸν ἀνεμιμνῄσκετο ἑαυτῷ δεξιὸν φθεγγόμενον, καθήμενον μέντοι, ὅνπερ ὁ μάντις προπέμπων αὐτὸν ἔλεγεν ὅτι μέγας μὲν οἰωνὸς εἴη καὶ οὐκ ἰδιωτικός, καὶ ἔνδοξος, ἐπίπονος μέντοι· τὰ γὰρ ὄρνεα μάλιστα ἐπιτίθεσθαι τῷ αἰετῷ καθημένῳ· οὐ μέντοι χρηματιστικὸν εἶναι τὸν οἰωνόν· τὸν γὰρ αἰετὸν πετόμενον μᾶλλον λαμβάνειν τὰ ἐπιτήδεια.",
+  "e": "Moreover, he recalled that when he was setting out from Ephesus to be introduced to Cyrus, an eagle screamed upon his right; it was sitting, however, and the soothsayer who was conducting him said that while the omen was one suited to the great rather than to an ordinary person, and while it betokened glory, it nevertheless portended suffering, for the reason that other birds are most apt to attack the eagle when it is sitting; still, he said, the omen did not betoken gain, for it is rather while the eagle is on the wing that it gets its food."
+ },
+ {
+  "k": "4fee58e920a70b74",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οὕτω δὴ θυομένῳ αὐτῷ διαφανῶς ὁ θεὸς σημαίνει μήτε προσδεῖσθαι τῆς ἀρχῆς μήτε εἰ αἱροῖντο ἀποδέχεσθαι. τοῦτο μὲν δὴ οὕτως ἐγένετο.",
+  "e": "So it was, then, that Xenophon made sacrifice, and the god signified to him quite clearly that he should neither strive for the command nor accept it in case he should be chosen. Such was the issue of this matter."
+ },
+ {
+  "k": "b20455fa3f565514",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἡ δὲ στρατιὰ συνῆλθε, καὶ πάντες ἔλεγον ἕνα αἱρεῖσθαι· καὶ ἐπεὶ τοῦτο ἔδοξε, προυβάλλοντο αὐτόν. ἐπεὶ δὲ ἐδόκει δῆλον εἶναι ὅτι αἱρήσονται αὐτόν, εἴ τις ἐπιψηφίζοι, ἀνέστη καὶ ἔλεξε τάδε.",
+  "e": "Then the army came together, and all the speakers urged that a single commander be chosen; when this had been resolved upon, they proceeded to nominate Xenophon. And when it seemed clear that they would elect him as soon as the question should be put to vote, he arose and spoke as follows:"
+ },
+ {
+  "k": "d5362aba842377f6",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐγώ, ὦ ἄνδρες, ἥδομαι μὲν ὑφʼ ὑμῶν τιμώμενος, εἴπερ ἄνθρωπός εἰμι, καὶ χάριν ἔχω καὶ εὔχομαι δοῦναί μοι τοὺς θεοὺς αἴτιόν τινος ὑμῖν ἀγαθοῦ γενέσθαι· τὸ μέντοι ἐμὲ προκριθῆναι ὑφʼ ὑμῶν ἄρχοντα Λακεδαιμονίου ἀνδρὸς παρόντος οὔτε ὑμῖν μοι δοκεῖ συμφέρον εἶναι, ἀλλʼ ἧττον ἂν διὰ τοῦτο τυγχάνειν, εἴ τι δέοισθε παρʼ αὐτῶν· ἐμοί τε αὖ οὐ πάνυ τι νομίζω ἀσφαλὲς εἶναι τοῦτο.",
+  "e": "I am happy, soldiers, since I am a human being, to be honoured by you, and I am grateful also, and I pray that the gods may grant me opportunity to be the means of bringing you some benefit; still, I think that for me to be preferred by you as commander when a Lacedaemonian is at hand, is not expedient for you,—for you would be less likely on this account to obtain any favour you might desire from the Lacedaemonians—and for myself, on the other hand, I believe it is not altogether safe."
+ },
+ {
+  "k": "0a514fcaa047d385",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὁρῶ γὰρ ὅτι καὶ τῇ πατρίδι μου οὐ πρόσθεν ἐπαύσαντο πολεμοῦντες πρὶν ἐποίησαν πᾶσαν τὴν πόλιν ὁμολογεῖν Λακεδαιμονίους καὶ αὐτῶν ἡγεμόνας εἶναι.",
+  "e": "For I see that the Lacedaemonians did not cease waging war upon my native state until they had made all her citizens acknowledge that the Lacedaemonians were their leaders also."
+ },
+ {
+  "k": "e7e38f4136923ff4",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ τοῦτο ὡμολόγησαν, εὐθὺς ἐπαύσαντο πολεμοῦντες καὶ οὐκέτι πέρα ἐπολιόρκησαν τὴν πόλιν. εἰ οὖν ταῦτα ὁρῶν ἐγὼ δοκοίην ὅπου δυναίμην ἐνταῦθʼ ἄκυρον ποιεῖν τὸ ἐκείνων ἀξίωμα, ἐκεῖνο ἐννοῶ μὴ λίαν ἂν ταχὺ σωφρονισθείην.",
+  "e": "But just as soon as this acknowledgment had been made, they straightway ceased waging war and no longer continued to besiege the city. Now if I, being aware of these things, should seem to be trying to make their authority null and void wherever I could, I suspect that I might very speedily be brought back to reason on that point."
+ },
+ {
+  "k": "b49279969616b66b",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὃ δὲ ὑμεῖς ἐννοεῖτε, ὅτι ἧττον ἂν στάσις εἴη ἑνὸς ἄρχοντος ἢ πολλῶν, εὖ ἴστε ὅτι ἄλλον μὲν ἑλόμενοι οὐχ εὑρήσετε ἐμὲ στασιάζοντα· νομίζω γὰρ ὅστις ἐν πολέμῳ ὢν στασιάζει πρὸς ἄρχοντα, τοῦτον πρὸς τὴν ἑαυτοῦ σωτηρίαν στασιάζειν· ἐὰν δὲ ἐμὲ ἕλησθε, οὐκ ἂν θαυμάσαιμι εἴ τινα εὕροιτε καὶ ὑμῖν καὶ ἐμοὶ ἀχθόμενον.",
+  "e": "As to your own thought, that there would be less factiousness with one commander than with many, be well assured that if you choose another, you will not find me acting factiously,—for I believe that when a man engaged in war factiously opposes a commander, that man is factiously opposing his own safety; but if you choose me, I should not be surprised if you should find some one else feeling angry both with you and with myself."
+ },
+ {
+  "k": "35035e8f030367d7",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ ταῦτα εἶπε, πολὺ πλείονες ἀνίσταντο λέγοντες ὡς δέοι αὐτὸν ἄρχειν. Ἀγασίας δὲ Στυμφάλιος εἶπεν ὅτι γελοῖον εἴη, εἰ οὕτως ἔχοι· ἢ ὀργιοῦνται Λακεδαιμόνιοι καὶ ἐὰν σύνδειπνοι συνελθόντες μὴ Λακεδαιμόνιον συμποσίαρχον αἱρῶνται; ἐπεὶ εἰ οὕτω γε τοῦτο ἔχει, ἔφη, οὐδὲ λοχαγεῖν ἡμῖν ἔξεστιν, ὡς ἔοικεν, ὅτι Ἀρκάδες ἐσμέν. ἐνταῦθα δὴ ὡς εὖ εἰπόντος τοῦ Ἀγασίου ἀνεθορύβησαν.",
+  "e": "When he had thus spoken, a much larger number of people arose, saying that he ought to be commander. And Agasias the Stymphalian said that it was ridiculous if the situation was as Xenophon described it. Will the Lacedaemonians also be angry, he said, if guests at dinner come together and fail to choose a Lacedaemonian as master of the feast? For if the matter stands in that way, we are not free even to be captains, it would seem, because we are Arcadians. Thereupon the soldiers raised a shout, saying that Agasias was quite right."
+ },
+ {
+  "k": "1bfb8fd60114d5d3",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὁ Ξενοφῶν ἐπεὶ ἑώρα πλείονος ἐνδέον, παρελθὼν εἶπεν· ἀλλʼ, ὦ ἄνδρες, ἔφη, ὡς πάνυ εἰδῆτε, ὀμνύω ὑμῖν θεοὺς πάντας καὶ πάσας, ἦ μὴν ἐγώ, ἐπεὶ τὴν ὑμετέραν γνώμην ᾐσθανόμην, ἐθυόμην εἰ βέλτιον εἴη ὑμῖν τε ἐμοὶ ἐπιτρέψαι ταύτην τὴν ἀρχὴν καὶ ἐμοὶ ὑποστῆναι· καί μοι οἱ θεοὶ οὕτως ἐν τοῖς ἱεροῖς ἐσήμηναν ὥστε καὶ ἰδιώτην ἂν γνῶναι ὅτι τῆς μοναρχίας ἀπέχεσθαί με δεῖ.",
+  "e": "Then Xenophon, seeing that something more was needed, came forward and spoke again: Well, soldiers, he said, that you may understand the matter fully I swear to you by all the gods and goddesses that in very truth, so soon as I became aware of your intention, I offered sacrifices to learn whether it was best for you to entrust to me this command and for me to undertake it; and the gods gave me such signs in the sacrifices that even a layman could perceive that I must withhold myself from accepting the sole command."
+ },
+ {
+  "k": "96750edc88f249bc",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οὕτω δὴ Χειρίσοφον αἱροῦνται. Χειρίσοφος δʼ ἐπεὶ ᾑρέθη, παρελθὼν εἶπεν· ἀλλʼ, ὦ ἄνδρες, τοῦτο μὲν ἴστε, ὅτι οὐδʼ ἂν ἔγωγε ἐστασίαζον, εἰ ἄλλον εἵλεσθε· Ξενοφῶντα μέντοι, ἔφη, ὠνήσατε οὐχ ἑλόμενοι· ὡς καὶ νῦν Δέξιππος ἤδη διέβαλλεν αὐτὸν πρὸς Ἀναξίβιον ὅ τι ἐδύνατο καὶ μάλα ἐμοῦ αὐτὸν σιγάζοντος. ὁ δʼ ἔφη νομίζειν αὐτὸν Τιμασίωνι μᾶλλον ἄρχειν συνεθελῆσαι Δαρδανεῖ ὄντι τοῦ Κλεάρχου στρατεύματος ἢ ἑαυτῷ Λάκωνι ὄντι.",
+  "e": "Under these circumstances, then, they chose Cheirisophus. And after being chosen Cheirisophus came forward and spoke as follows: Well, soldiers, be sure of this, that I also should not have acted factiously if you had chosen another; as for Xenophon, however, he continued, you did him a kindness by not choosing him; for even now Dexippus has already been falsely accusing him, as far as he could, to Anaxibius, even though I tried hard to silence him. He said he believed that Xenophon would rather share the command of Clearchus’ army with Timasion, a Dardanian, than with himself, a Laconian."
+ },
+ {
+  "k": "c3ff50076e9c9c82",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ μέντοι ἐμὲ εἵλεσθε, ἔφη, καὶ ἐγὼ πειράσομαι ὅ τι ἂν δύνωμαι ὑμᾶς ἀγαθὸν ποιεῖν. καὶ ὑμεῖς οὕτω παρασκευάζεσθε ὡς αὔριον, ἐὰν πλοῦς ᾖ, ἀναξόμενοι· ὁ δὲ πλοῦς ἔσται εἰς Ἡράκλειαν· ἅπαντας οὖν δεῖ ἐκεῖσε πειρᾶσθαι κατασχεῖν· τὰ δʼ ἄλλα, ἐπειδὰν ἐκεῖσε ἔλθωμεν, βουλευσόμεθα.",
+  "e": "However, Cheirisophus went on, since you have chosen me, I shall endeavour to render you whatever service I can. And do you make your preparations to put to sea to-morrow if it be sailing weather. The voyage will be to Heracleia; every one of us, therefore, must try to come to land there; and we shall take counsel about our further doings when we have arrived there."
+ },
+ {
+  "k": "811bffa3872fa4d8",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐντεῦθεν τῇ ὑστεραίᾳ ἀναγόμενοι πνεύματι ἔπλεον καλῷ ἡμέρας δύο παρὰ γῆν. καὶ παραπλέοντες ἐθεώρουν τήν τε Ἰασονίαν ἀκτήν, ἔνθα ἡ Ἀργὼ λέγεται ὁρμίσασθαι, καὶ τῶν ποταμῶν τὰ στόματα, πρῶτον μὲν τοῦ Θερμώδοντος, ἔπειτα δὲ τοῦ Ἴριος, ἔπειτα δὲ τοῦ Ἅλυος, μετὰ τοῦτον τοῦ Παρθενίου· τοῦτον δὲ παραπλεύσαντες ἀφίκοντο εἰς Ἡράκλειαν πόλιν Ἑλληνίδα Μεγαρέων ἄποικον, οὖσαν δʼ ἐν τῇ Μαριανδυνῶν χώρᾳ.",
+  "e": "On the next day they set sail from Sinope and voyaged for two days with a fair wind along the coast. And coursing along, [they saw Jason’s Cape, where the Argo is said to have come to anchor, and the mouths of the rivers, first the Thermodon, then the Iris, third the Halys, and after that the Parthenius; and after they had passed this river]they arrived at Heracleia, a Greek city and a colony of the Megarians, situated in the territory of the Mariandynians."
+ },
+ {
+  "k": "c42fddcab8db778a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὡρμίσαντο παρὰ τῇ Ἀχερουσιάδι Χερρονήσῳ, ἔνθα λέγεται ὁ Ἡρακλῆς ἐπὶ τὸν Κέρβερον κύνα καταβῆναι ᾗ νῦν τὰ σημεῖα δεικνύασι τῆς καταβάσεως τὸ βάθος πλέον ἢ ἐπὶ δύο στάδια.",
+  "e": "And they came to anchor alongside the Acherusian Chersonese, where Heracles is said to have descended to Hades after the dog Cerberus, at a spot where they now show the marks of his descent, reaching to a depth of more than two stadia."
+ },
+ {
+  "k": "6ef7cffaa453da1b",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐνταῦθα τοῖς Ἕλλησιν οἱ Ἡρακλεῶται ξένια πέμπουσιν ἀλφίτων μεδίμνους τρισχιλίους καὶ οἴνου κεράμια δισχίλια καὶ βοῦς εἴκοσι καὶ οἶς ἑκατόν. ἐνταῦθα διὰ τοῦ πεδίου ῥεῖ ποταμὸς Λύκος ὄνομα, εὖρος ὡς δύο πλέθρων.",
+  "e": "Here the Heracleots sent to the Greeks, as gifts of hospitality, three thousand medimni of barley meal, two thousand jars of wine, twenty cattle, and a hundred sheep. And in this place there flows through the plain a river named the Lycus, about two plethra in width."
+ },
+ {
+  "k": "c0fa7569cece2594",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ δὲ στρατιῶται συλλεγέντες ἐβουλεύοντο τὴν λοιπὴν πορείαν πότερον κατὰ γῆν ἢ κατὰ θάλατταν χρὴ πορευθῆναι ἐκ τοῦ Πόντου. ἀναστὰς δὲ Λύκων Ἀχαιὸς εἶπε· θαυμάζω μέν, ὦ ἄνδρες, τῶν στρατηγῶν ὅτι οὐ πειρῶνται ἡμῖν ἐκπορίζειν σιτηρέσιον· τὺ μὲν γὰρ ξένια οὐ μὴ γένηται τῇ στρατιᾷ τριῶν ἡμερῶν σιτία· ὁπόθεν δʼ ἐπισιτισάμενοι πορευσόμεθα οὐκ ἔστιν, ἔφη. ἐμοὶ οὖν δοκεῖ αἰτεῖν τοὺς Ἡρακλεώτας μὴ ἔλαττον ἢ τρισχιλίους κυζικηνούς·",
+  "e": "Then the soldiers gathered together and proceeded to take counsel about the remainder of the journey, that is, whether they had better go on from the Euxine by land or by sea. And Lycon the Achaean rose and said: I am astonished, soldiers, that the generals do not endeavour to supply us with money to buy provisions; for our gifts of hospitality will not make three days’ rations for the army; and there is no place, said he, from which we can procure provisions before beginning our journey. I move, therefore, that we demand of the Heracleots not less than three thousand Cyzicenes—"
+ },
+ {
+  "k": "af5fcaac82ee2e85",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἄλλος δʼ εἶπε μὴ ἔλαττον ἢ μυρίους· καὶ ἑλομένους πρέσβεις αὐτίκα μάλα ἡμῶν καθημένων πέμπειν πρὸς τὴν πόλιν, καὶ εἰδέναι ὅ τι ἂν ἀπαγγέλλωσι, καὶ πρὸς ταῦτα βουλεύεσθαι.",
+  "e": "another man said, not less than ten thousand—and that we choose ambassadors this very moment, while we are in session here, send them to the city, hear whatever report they may bring back, and take counsel in the light of that."
+ },
+ {
+  "k": "be5d9eff4101c5e8",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐντεῦθεν προυβάλλοντο πρέσβεις πρῶτον μὲν Χειρίσοφον, ὅτι ἄρχων ᾕρητο· ἔστι δʼ οἳ καὶ Ξενοφῶντα. οἱ δὲ ἰσχυρῶς ἀπεμάχοντο· ἀμφοῖν γὰρ ταὐτὰ ἐδόκει μὴ ἀναγκάζειν πόλιν Ἑλληνίδα καὶ φιλίαν ὅ τι μὴ αὐτοὶ ἐθέλοντες διδοῖεν.",
+  "e": "Thereupon they went to nominating ambassadors, first Cheirisophus, because he had been chosen commander, and some nominated Xenophon also. Both men, however, offered vigorous resistance; for both held the same view—that they ought not to coerce a friendly city of Greeks into giving what they did not offer of their own accord."
+ },
+ {
+  "k": "5c3f76b0e104c39a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δʼ οὗτοι ἐδόκουν ἀπρόθυμοι εἶναι, πέμπουσι Λύκωνα Ἀχαιὸν καὶ Καλλίμαχον Παρράσιον καὶ Ἀγασίαν Στυμφάλιον. οὗτοι ἐλθόντες ἔλεγον τὰ δεδογμένα· τὸν δὲ Λύκωνα ἔφασαν καὶ ἐπαπειλεῖν, εἰ μὴ ποιήσοιεν ταῦτα.",
+  "e": "As these two seemed disinclined to act, they sent Lycon the Achaean, Callimachus the Parrhasian, and Agasias the Stymphalian. These men went and put before the Heracleots the resolutions adopted by the army; and Lycon, so the report ran, even added threats, in case they should refuse compliance."
+ },
+ {
+  "k": "02a576e89b3f6e39",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἀκούσαντες δʼ οἱ Ἡρακλεῶται βουλεύσεσθαι ἔφασαν· καὶ εὐθὺς τά τε χρήματα ἐκ τῶν ἀγρῶν συνῆγον καὶ τὴν ἀγορὰν εἴσω ἀνεσκεύασαν, καὶ αἱ πύλαι ἐκέκλειντο καὶ ἐπὶ τῶν τειχῶν ὅπλα ἐφαίνετο.",
+  "e": "After hearing the ambassadors, the Heracleots said that they would consider the matter; and immediately they set about gathering their property from the country and moved the market within the walls; meanwhile the gates had been closed and arms were to be seen upon the walls."
+ },
+ {
+  "k": "756c551f008e6598",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐκ τούτου οἱ ταράξαντες ταῦτα τοὺς στρατηγοὺς ᾐτιῶντο διαφθείρειν τὴν πρᾶξιν· καὶ συνίσταντο οἱ Ἀρκάδες καὶ οἱ Ἀχαιοί· προειστήκει δὲ μάλιστα αὐτῶν Καλλίμαχός τε ὁ Παρράσιος καὶ Λύκων ὁ Ἀχαιός.",
+  "e": "Thereupon those who had brought about this agitation accused the generals of spoiling their undertaking; and the Arcadians and Achaeans proceeded to band themselves together, under the leadership particularly of Callimachus the Parrhasian and Lycon the Achaean."
+ },
+ {
+  "k": "ea425d5b781c3383",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ δὲ λόγοι ἦσαν αὐτοῖς ὡς αἰσχρὸν εἴη ἄρχειν Ἀθηναῖον Πελοποννησίων καὶ Λακεδαιμόνιον, μηδεμίαν δύναμιν παρεχόμενον εἰς τὴν στρατιάν, καὶ τοὺς μὲν πόνους σφᾶς ἔχειν, τὰ δὲ κέρδη ἄλλους, καὶ ταῦτα τὴν σωτηρίαν σφῶν κατειργασμένων· εἶναι γὰρ τοὺς κατειργασμένους Ἀρκάδας καὶ Ἀχαιούς, τὸ δʼ ἄλλο στράτευμα οὐδὲν εἶναι (καὶ ἦν δὲ τῇ ἀληθείᾳ ὑπὲρ ἥμισυ τοῦ στρατεύματος Ἀρκάδες καὶ Ἀχαιοί)·",
+  "e": "Their words were to this effect, that it was shameful that Peloponnesians should be under the command of an Athenian and a Lacedaemonian who contributed no troops to the army, and that the hardships should fall to themselves and the gains to others, all despite the fact that the preservation of the army was their achievement; for it was, they said, the Arcadians and Achaeans who had achieved this result, and the rest of the army amounted to nothing (in truth more than half the army did consist of Arcadians and Achaeans);"
+ },
+ {
+  "k": "43fe6e7027c4c3f7",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "εἰ οὖν σωφρονοῖεν, αὐτοὶ συστάντες καὶ στρατηγοὺς ἑλόμενοι ἑαυτῶν καθʼ ἑαυτοὺς ἂν τὴν πορείαν ποιοῖντο καὶ πειρῷντο ἀγαθόν τι λαμβάνειν.",
+  "e": "if they were wise, therefore, they would band together by themselves, choose generals from their own number, make the journey by themselves, and try to get a little good out of it."
+ },
+ {
+  "k": "2ab3f28bea0f5dac",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταῦτʼ ἔδοξε· καὶ ἀπολιπόντες Χειρίσοφον εἴ τινες ἦσαν παρʼ αὐτῷ Ἀρκάδες ἢ Ἀχαιοὶ καὶ Ξενοφῶντα συνέστησαν καὶ στρατηγοὺς αἱροῦνται ἑαυτῶν δέκα· τούτους δὲ ἐψηφίσαντο ἐκ τῆς νικώσης ὅ τι δοκοίη τοῦτο ποιεῖν. ἡ μὲν οὖν τοῦ παντὸς ἀρχὴ Χειρισόφῳ ἐνταῦθα κατελύθη ἡμέρᾳ ἕκτῃ ἢ ἑβδόμῃ ἀφʼ ἧς ᾑρέθη.",
+  "e": "This course was resolved upon, and whatever Arcadians or Achaeans there were with Cheirisophus and Xenophon left these commanders and joined forces, and they chose ten generals from their own number, decreeing that these ten were to do whatever might be decided upon by vote of the majority. So it was that the supreme command of Cheirisophus came to an end then and there, on the sixth or seventh day from the day of his election."
+ },
+ {
+  "k": "6fffec235fb83542",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Ξενοφῶν μέντοι ἐβούλετο κοινῇ μετʼ αὐτῶν τὴν πορείαν ποιεῖσθαι, νομίζων οὕτως ἀσφαλεστέραν εἶναι ἢ ἰδίᾳ ἕκαστον στέλλεσθαι· ἀλλὰ Νέων ἔπειθεν αὐτὸν καθʼ αὑτὸν πορεύεσθαι, ἀκούσας τοῦ Χειρισόφου ὅτι Κλέανδρος ὁ ἐν Βυζαντίῳ ἁρμοστὴς φαίη τριήρεις ἔχων ἥξειν εἰς Κάλπης λιμένα·",
+  "e": "Xenophon, however, was desirous of making the journey in company with Cheirisophus, believing that this was a safer plan than for each of them to proceed independently; but Neon urged him to go by himself, for he had heard from Cheirisophus that Cleander, the Lacedaemonian governor at Byzantium, had said he was coming to Calpe Harbour with triremes;"
+ },
+ {
+  "k": "a80448d4fef271bf",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὅπως οὖν μηδεὶς μετάσχοι, ἀλλʼ αὐτοὶ καὶ οἱ αὐτῶν στρατιῶται ἐκπλεύσειαν ἐπὶ τῶν τριήρων, διὰ ταῦτα συνεβούλευε. καὶ Χειρίσοφος, ἅμα μὲν ἀθυμῶν τοῖς γεγενημένοις, ἅμα δὲ μισῶν ἐκ τούτου τὸ στράτευμα, ἐπιτρέπει αὐτῷ ποιεῖν ὅ τι βούλεται.",
+  "e": "it was Neon’s purpose, then, that no one else should get a share in this opportunity, but that he himself and Cheirisophus and their soldiers should sail away upon the triremes, and this was the reason for his advice to Xenophon. As for Cheirisophus, he was so despondent over what had happened and, besides, felt such hatred toward the army for its action, that he allowed Neon to do whatever he chose."
+ },
+ {
+  "k": "73d1d626ac48398a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Ξενοφῶν δὲ ἔτι μὲν ἐπεχείρησεν ἀπαλλαγεὶς τῆς στρατιᾶς ἐκπλεῦσαι· θυομένῳ δὲ αὐτῷ τῷ ἡγεμόνι Ἡρακλεῖ καὶ κοινουμένῳ, πότερα λῷον καὶ ἄμεινον εἴη στρατεύεσθαι ἔχοντι τοὺς παραμείναντας τῶν στρατιωτῶν ἢ ἀπαλλάττεσθαι, ἐσήμηνεν ὁ θεὸς τοῖς ἱεροῖς συστρατεύεσθαι.",
+  "e": "For a time, indeed, Xenophon did try to get clear of the army and sail away home; but when he sacrificed to Heracles the Leader, consulting him as to whether it was better and more proper for him to continue the journey with such of the soldiers as had remained with him, or to be rid of them, the god indicated to him by the sacrifices that he should stay with them."
+ },
+ {
+  "k": "2761cf3710460a88",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οὕτω γίγνεται τὸ στράτευμα τρίχα, Ἀρκάδες μὲν καὶ Ἀχαιοὶ πλείους ἢ τετρακισχίλιοι, ὁπλῖται πάντες, Χειρισόφῳ δʼ ὁπλῖται μὲν εἰς τετρακοσίους καὶ χιλίους, πελτασταὶ δὲ εἰς ἑπτακοσίους, οἱ Κλεάρχου Θρᾷκες, Ξενοφῶντι δὲ ὁπλῖται μὲν εἰς ἑπτακοσίους καὶ χιλίους, πελτασταὶ δὲ εἰς τριακοσίους· ἱππικὸν δὲ μόνος οὗτος εἶχεν, ἀμφὶ τετταράκοντα ἱππέας.",
+  "e": "Thus the army was split into three parts: first, the Arcadians and Achaeans, more than four thousand in number, all hoplites; secondly, Cheirisophus’ troops, to the number of fourteen hundred hoplites and seven hundred peltasts, the latter being Clearchus’ Thracians; and thirdly, Xenophon’s force, numbering seventeen hundred hoplites and three hundred peltasts; Xenophon alone, however, had horsemen, to the number of about forty."
+ },
+ {
+  "k": "3c1ddda836a5bbe0",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ οἱ μὲν Ἀρκάδες διαπραξάμενοι πλοῖα παρὰ τῶν Ἡρακλεωτῶν πρῶτοι πλέουσιν, ὅπως ἐξαίφνης ἐπιπεσόντες τοῖς Βιθυνοῖς λάβοιεν ὅτι πλεῖστα· καὶ ἀποβαίνουσιν εἰς Κάλπης λιμένα κατὰ μέσον πως τῆς Θρᾴκης.",
+  "e": "The Arcadians, managing to obtain ships from the Heracleots, set sail first, with the intention of making an unexpected descent upon the Bithynians and thus securing the greatest possible amount of booty; and they disembarked at Calpe Harbour, about midway of the Thracian coast."
+ },
+ {
+  "k": "04267ba1c2d2d51c",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Χειρίσοφος δʼ εὐθὺς ἀπὸ τῆς πόλεως τῶν Ἡρακλεωτῶν ἀρξάμενος πεζῇ ἐπορεύετο διὰ τῆς χώρας· ἐπεὶ δὲ εἰς τὴν Θρᾴκην ἐνέβαλε, παρὰ τὴν θάλατταν ᾔει·",
+  "e": "But Cheirisophus went by land from the very beginning of his journey from the city of the Heracleots, travelling across country; when, however, he had entered Thrace, he proceeded along the coast, for the reason that he was ill."
+ },
+ {
+  "k": "f491fd6c35a300e2",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ γὰρ ἠσθένει. Ξενοφῶν δὲ πλοῖα λαβὼν ἀποβαίνει ἐπὶ τὰ ὅρια τῆς Θρᾴκης καὶ τῆς Ἡρακλεώτιδος καὶ διὰ μεσογείας ἐπορεύετο.",
+  "e": "Xenophon, finally, took ships, disembarked at the boundaries separating Thrace and the territory of Heracleia, and pursued his way through the back country."
+ },
+ {
+  "k": "5bcf3e98929d49b7",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἔπραξαν δʼ αὐτῶν ἕκαστοι τάδε. οἱ μὲν Ἀρκάδες ὡς ἀπέβησαν νυκτὸς εἰς Κάλπης λιμένα, πορεύονται εἰς τὰς πρώτας κώμας, στάδια ἀπὸ θαλάττης ὡς τριάκοντα.",
+  "e": "The fortunes of the several divisions were as follows. The Arcadians after disembarking by night at Calpe Harbour proceeded to the first villages, about thirty stadia from the sea."
+ },
+ {
+  "k": "31e4e34592ae0eed",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ φῶς ἐγένετο, ἦγεν ἕκαστος ὁ στρατηγὸς τὸν αὑτοῦ λόχον ἐπὶ κώμην· ὁποία δὲ μείζων ἐδόκει εἶναι, σύνδυο λόχους ἦγον οἱ στρατηγοί.",
+  "e": "When daylight came, each general led his own company against a village, except that where a village seemed unusually large, the generals combined two companies for the attack upon it."
+ },
+ {
+  "k": "d16ad6ebd00fb65c",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "συνεβάλλοντο δὲ καὶ λόφον εἰς ὃν δέοι πάντας ἁλίζεσθαι· καὶ ἅτε ἐξαίφνης ἐπιπεσόντες ἀνδράποδά τε πολλὰ ἔλαβον καὶ πρόβατα πολλὰ περιεβάλλοντο.",
+  "e": "They also fixed upon a hill as the place where all the troops were afterwards to gather; and since their onset was unexpected, they took many captives and were in a fair way to secure a large number of sheep."
+ },
+ {
+  "k": "c5301852e5eb6957",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ δὲ Θρᾷκες ἡθροίζοντο οἱ διαφεύγοντες· πολλοὶ δὲ διέφευγον πελτασταὶ ὄντες ὁπλίτας ἐξ αὐτῶν τῶν χειρῶν. ἐπεὶ δὲ συνελέγησαν, πρῶτον μὲν τῷ Σμίκρητος λόχῳ ἑνὸς τῶν Ἀρκάδων στρατηγῶν ἀπιόντι ἤδη εἰς τὸ συγκείμενον καὶ πολλὰ χρήματα ἄγοντι ἐπιτίθενται.",
+  "e": "The Thracians who escaped them, however, began to gather—and many had escaped, inasmuch as they were light troops as against hoplites, from the very hands of the Arcadians. When they had come together in a body, they first attacked the company under Smicres, one of the Arcadian generals, as it was already withdrawing to the appointed place with a great quantity of booty."
+ },
+ {
+  "k": "ddf1fcd829fd8d5a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ τέως μὲν ἐμάχοντο ἅμα πορευόμενοι οἱ Ἕλληνες, ἐπὶ δὲ διαβάσει χαράδρας τρέπονται αὐτούς, καὶ αὐτόν τε τὸν Σμίκρητα ἀποκτιννύασι καὶ τοὺς ἄλλους πάντας· ἄλλου δὲ λόχου τῶν δέκα στρατηγῶν τοῦ Ἡγησάνδρου ὀκτὼ μόνους ἔλιπον· καὶ αὐτὸς Ἡγήσανδρος ἐσώθη.",
+  "e": "For a while the Greeks fought as they marched, but at the crossing of a gorge the Thracians put them to rout, and they killed not only Smicres himself, but the rest of the company to a man; in another of the companies belonging to the ten generals, the one commanded by Hegesander, they left only eight men alive, Hegesander himself being one of them."
+ },
+ {
+  "k": "d6480791b7088f28",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ οἱ ἄλλοι δὲ λόχοι συνῆλθον οἱ μὲν σὺν πράγμασιν οἱ δὲ ἄνευ πραγμάτων· οἱ δὲ Θρᾷκες ἐπεὶ ηὐτύχησαν τοῦτο τὸ εὐτύχημα, συνεβόων τε ἀλλήλους καὶ συνελέγοντο ἐρρωμένως τῆς νυκτός. καὶ ἅμα ἡμέρᾳ κύκλῳ περὶ τὸν λόφον ἔνθα οἱ Ἕλληνες ἐστρατοπεδεύοντο ἐτάττοντο καὶ ἱππεῖς πολλοὶ καὶ πελτασταί, καὶ ἀεὶ πλέονες συνέρρεον· καὶ προσέβαλλον πρὸς τοὺς ὁπλίτας ἀσφαλῶς·",
+  "e": "The other companies succeeded in getting together, some of them with difficulty, other without any difficulty; but the Thracians, having gained this success, kept shouting to one another and collecting their forces energetically during the night. At daybreak they proceeded to form their lines all round the hill where the Greeks were encamping, their troops consisting of horsemen in large numbers and peltasts, while still more were continually streaming together;"
+ },
+ {
+  "k": "66855d2b284a4427",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ μὲν γὰρ Ἕλληνες οὔτε τοξότην εἶχον οὔτε ἀκοντιστὴν οὔτε ἱππέα· οἱ δὲ προσθέοντες καὶ προσελαύνοντες ἠκόντιζον· ὁπότε δὲ αὐτοῖς ἐπίοιεν, ῥᾳδίως ἀπέφευγον· ἄλλοι δὲ ἄλλῃ ἐπετίθεντο.",
+  "e": "and they made attacks upon the hoplites without danger to themselves, inasmuch as the Greeks had neither bowman nor javelin-thrower nor horseman; so they would come running or riding up and throw their javelins, and when the Greeks charged upon them, they would easily get away;"
+ },
+ {
+  "k": "2a3d4f21aa8a8022",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ τῶν μὲν πολλοὶ ἐτιτρώσκοντο, τῶν δὲ οὐδείς· ὥστε κινηθῆναι οὐκ ἐδύναντο ἐκ τοῦ χωρίου, ἀλλὰ τελευτῶντες καὶ ἀπὸ τοῦ ὕδατος εἶργον αὐτοὺς οἱ Θρᾷκες.",
+  "e": "and different parties kept attacking at different points. Hence on the one side many were being wounded, on the other side not a man; the result was, that the Greeks were not able to stir from the spot, and at last the Thracians were even cutting them off from their water supply."
+ },
+ {
+  "k": "6bf92868f4d6a3f9",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ ἀπορία πολλὴ ἦν, διελέγοντο περὶ σπονδῶν· καὶ τὰ μὲν ἄλλα ὡμολόγητο αὐτοῖς, ὁμήρους δὲ οὐκ ἐδίδοσαν οἱ Θρᾷκες αἰτούντων τῶν Ἑλλήνων, ἀλλʼ ἐν τούτῳ ἴσχετο. τὰ μὲν δὴ τῶν Ἀρκάδων οὕτως εἶχε.",
+  "e": "When their embarrassment became serious, they opened negotiations for a truce; and on every other point an agreement had been reached, but the Thracians refused to give the hostages which the Greeks demanded, and in this particular there was a hitch. Such, then, was the situation of the Arcadians."
+ },
+ {
+  "k": "cca8a8d69189d85a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Χειρίσοφος δὲ ἀσφαλῶς πορευόμενος παρὰ θάλατταν ἀφικνεῖται εἰς Κάλπης λιμένα. Ξενοφῶντι δὲ διὰ τῆς μεσογείας πορευομένῳ οἱ ἱππεῖς καταθέοντες ἐντυγχάνουσι πρεσβύταις πορευομένοις ποι. καὶ ἐπεὶ ἤχθησαν παρὰ Ξενοφῶντα, ἐρωτᾷ αὐτοὺς εἴ που ᾔσθηνται ἄλλου στρατεύματος ὄντος Ἑλληνικοῦ.",
+  "e": "As to Cheirisophus, he pursued his march in safety along the coast and arrived at Calpe Harbour.Xenophon, lastly, was proceeding through the back country when his horsemen, riding on in advance, chanced upon some old men who were journeying somewhere or other. When they were brought to Xenophon, he asked them whether they had heard of another army anywhere, a Greek army."
+ },
+ {
+  "k": "e8e9183237174f9e",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ δὲ ἔλεγον πάντα τὰ γεγενημένα, καὶ νῦν ὅτι πολιορκοῦνται ἐπὶ λόφου, οἱ δὲ Θρᾷκες πάντες περικεκυκλωμένοι εἶεν αὐτούς. ἐνταῦθα τοὺς μὲν ἀνθρώπους τούτους ἐφύλαττεν ἰσχυρῶς, ὅπως ἡγεμόνες εἶεν ὅποι δέοι· σκοποὺς δὲ καταστήσας συνέλεξε τοὺς στρατιώτας καὶ ἔλεξεν·",
+  "e": "And they told him all that had happened, adding that at present the Greeks were being besieged upon a hill, with the Thracians in full force completely surrounding them. Then Xenophon kept these men under strict guard, in order that they might serve as guides wherever he might need to go; and after stationing watchers he called the troops together and spoke as follows:"
+ },
+ {
+  "k": "a603243967edc966",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἄνδρες στρατιῶται, τῶν Ἀρκάδων οἱ μὲν τεθνᾶσιν, οἱ δὲ λοιποὶ ἐπὶ λόφου τινὸς πολιορκοῦνται. νομίζω δʼ ἔγωγε, εἰ ἐκεῖνοι ἀπολοῦνται, οὐδʼ ἡμῖν εἶναι οὐδεμίαν σωτηρίαν, οὕτω μὲν πολλῶν ὄντων τῶν πολεμίων, οὕτω δὲ τεθαρρηκότων.",
+  "e": "Fellow soldiers, some of the Arcadians have been killed and the remainder of them are being besieged upon a certain hill. Now it is my own belief that if they are to perish, there is no salvation for us either, the enemy being so numerous and made so confident by their success."
+ },
+ {
+  "k": "3f587802f89da9c1",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "κράτιστον οὖν ἡμῖν ὡς τάχιστα βοηθεῖν τοῖς ἀνδράσιν, ὅπως εἰ ἔτι εἰσὶ σῷοι, σὺν ἐκείνοις μαχώμεθα καὶ μὴ μόνοι λειφθέντες μόνοι καὶ κινδυνεύωμεν.",
+  "e": "Therefore it is best for us to go to the rescue of these men with all speed, so that if they are still alive, we may have their aid in the fighting, instead of being left alone and alone facing the danger."
+ },
+ {
+  "k": "8769a924bad6a91b",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἡμεῖς γὰρ ἀποδραίημεν ἂν οὐδαμοῖ ἐνθένδε· πολλὴ μὲν γάρ, ἔφη, εἰς Ἡράκλειαν πάλιν ἀπιέναι, πολλὴ δὲ εἰς Χρυσόπολιν διελθεῖν· οἱ δὲ πολέμιοι πλησίον· εἰς Κάλπης δὲ λιμένα, ἔνθα Χειρίσοφον εἰκάζομεν εἶναι, εἰ σέσωσται, ἐλαχίστη ὁδός. ἀλλὰ δὴ ἐκεῖ μὲν οὔτε πλοῖά ἐστιν οἷς ἀποπλευσούμεθα, μένουσι δὲ αὐτοῦ οὐδὲ μιᾶς ἡμέρας ἔστι τὰ ἐπιτήδεια.",
+  "e": "For there is no place to which we can ourselves steal away from here; for to go back to Heracleia, he said, is a long journey, and it is a long journey through to Chrysopolis, and meanwhile the enemy are close at hand; to Calpe Harbour, where we presume Cheirisophus is, in case he has come through safely, is the shortest distance. But firstly, mark you, having arrived there we have neither ships wherein to sail away nor provisions for so much as a single day if we remain in the place;"
+ },
+ {
+  "k": "22b7f5466787e586",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τῶν δὲ πολιορκουμένων ἀπολομένων σὺν τοῖς Χειρισόφου μόνοις κάκιόν ἐστι διακινδυνεύειν ἢ τῶνδε σωθέντων πάντας εἰς ταὐτὸν ἐλθόντας κοινῇ τῆς σωτηρίας ἔχεσθαι. ἀλλὰ χρὴ παρασκευασαμένους τὴν γνώμην πορεύεσθαι ὡς νῦν ἢ εὐκλεῶς τελευτῆσαι ἔστιν ἢ κάλλιστον ἔργον ἐργάσασθαι Ἕλληνας τοσούτους σώσαντας.",
+  "e": "and secondly, it is worse to have the blockaded force destroyed and take our chances in company with Cheirisophus’ troops only, than to have these men saved and then unite all our forces and together strive for deliverance. We must set forth, then, prepared in our minds for either meeting to-day a glorious death or accomplishing a most noble deed in saving so many Greeks."
+ },
+ {
+  "k": "33aadfd21d9db3f9",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὁ θεὸς ἴσως ἄγει οὕτως, ὃς τοὺς μεγαληγορήσαντας ὡς πλέον φρονοῦντας ταπεινῶσαι βούλεται, ἡμᾶς δὲ τοὺς ἀπὸ τῶν θεῶν ἀρχομένους ἐντιμοτέρους ἐκείνων καταστῆσαι. ἀλλʼ ἕπεσθαι χρὴ καὶ προσέχειν τὸν νοῦν, ὡς ἂν τὸ παραγγελλόμενον δύνησθε ποιεῖν.",
+  "e": "And it may be that the god is guiding events in this way, he who wills that those who talked boastfully, as though possessed of superior wisdom, should be brought low, and that we, who always begin with the gods, should be set in a place of higher honour than those boasters. And now you must keep in line and on the alert, so that you can carry out the orders that are given."
+ },
+ {
+  "k": "1cb0fcf8798b2f46",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "νῦν μὲν οὖν στρατοπεδευσώμεθα προελθόντες ὅσον ἂν δοκῇ καιρὸς εἶναι εἰς τὸ δειπνοποιεῖσθαι· ἕως δʼ ἂν πορευώμεθα, Τιμασίων ἔχων τοὺς ἱππέας προελαυνέτω ἐφορῶν ἡμᾶς καὶ σκοπείτω τὰ ἔμπροσθεν, ὡς μηδὲν ἡμᾶς λάθῃ.",
+  "e": "For the present, then, let us go forward as far as may seem consistent with our time for dining, and then encamp; and so long as we are on the march, let Timasion with the cavalry ride on in advance, keeping us in sight, and spy out what is ahead, in order that nothing may escape our attention."
+ },
+ {
+  "k": "436cfdf84d008991",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταῦτʼ εἰπὼν ἡγεῖτο. παρέπεμψε δὲ καὶ τῶν γυμνήτων ἀνθρώπους εὐζώνους εἰς τὰ πλάγια καὶ εἰς τὰ ἄκρα, ὅπως εἴ πού τί ποθεν καθορῷεν, σημαίνοιεν· ἐκέλευε δὲ καίειν ἅπαντα ὅτῳ ἐντυγχάνοιεν καυσίμῳ.",
+  "e": "With these words he proceeded to lead the way. Furthermore, he sent out on the flanks and to the neighbouring heights some of the more active of the light-armed troops in order that they might signal to the army in case they should sight anything anywhere from any point of observation; and he directed them to burn everything they found that could be burned."
+ },
+ {
+  "k": "8dc7371e18e060c3",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ δὲ ἱππεῖς σπειρόμενοι ἐφʼ ὅσον καλῶς εἶχεν ἔκαιον, καὶ οἱ πελτασταὶ ἐπιπαριόντες κατὰ τὰ ἄκρα ἔκαιον πάντα ὅσα καύσιμα ἑώρων, καὶ ἡ στρατιὰ δέ, εἴ τινι παραλειπομένῳ ἐντυγχάνοιεν· ὥστε πᾶσα ἡ χώρα αἴθεσθαι ἐδόκει καὶ τὸ στράτευμα πολὺ εἶναι.",
+  "e": "So the horsemen, scattering as widely as was proper, went to burning, the peltasts, making their way along the heights abreast of the main army, burned all they saw which was combustible, and the main army likewise burned anything they found that had been passed over; the result was, that the whole country seemed to be ablaze and the army seemed to be a large one."
+ },
+ {
+  "k": "2fe4afa00555983d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ ὥρα ἦν, κατεστρατοπεδεύσαντο ἐπὶ λόφον ἐκβάντες, καὶ τά τε τῶν πολεμίων πυρὰ ἑώρων, ἀπεῖχον δὲ ὡς τετταράκοντα σταδίους, καὶ αὐτοὶ ὡς ἐδύναντο πλεῖστα πυρὰ ἔκαιον.",
+  "e": "When the time had come, they ascended a hill and encamped; from there they could see the campfires of the enemy, distant about forty stadia, and they kindled as many fires themselves as they could."
+ },
+ {
+  "k": "9f880c9dfd572730",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ ἐδείπνησαν τάχιστα, παρηγγέλθη τὰ πυρὰ κατασβεννύναι πάντα. καὶ τὴν μὲν νύκτα φυλακὰς ποιησάμενοι ἐκάθευδον· ἅμα δὲ τῇ ἡμέρᾳ προσευξάμενοι τοῖς θεοῖς, συνταξάμενοι ὡς εἰς μάχην ἐπορεύοντο ᾗ ἐδύναντο τάχιστα.",
+  "e": "Immediately after they had dined, however, the order was given to extinguish every one of the fires. Then, after stationing guards, they slept the night through; and at daybreak they offered prayer to the gods, formed their lines for battle, and set forth at the fastest possible pace."
+ },
+ {
+  "k": "b158616c66cbada6",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Τιμασίων δὲ καὶ οἱ ἱππεῖς ἔχοντες τοὺς ἡγεμόνας καὶ προελαύνοντες ἐλάνθανον αὑτοὺς ἐπὶ τῷ λόφῳ γενόμενοι ἔνθα ἐπολιορκοῦντο οἱ Ἕλληνες. καὶ οὐχ ὁρῶσιν οὔτε φίλιον στράτευμα οὔτε πολέμιον (καὶ ταῦτα ἀπαγγέλλουσι πρὸς τὸν Ξενοφῶντα καὶ τὸ στράτευμα), γρᾴδια δὲ καὶ γερόντια καὶ πρόβατα ὀλίγα καὶ βοῦς καταλελειμμένους.",
+  "e": "And Timasion and the horsemen, riding on ahead with the guides, found themselves without knowing it upon the hill where the Greeks had been besieged. They could see no army, however, either friendly or hostile (and this fact they reported back to Xenophon and the main body), but only some wretched old men and women and a few sheep and cattle that had been left behind."
+ },
+ {
+  "k": "9ab2b2dba2270d03",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ τὸ μὲν πρῶτον θαῦμα ἦν τί εἴη τὸ γεγενημένον, ἔπειτα δὲ καὶ τῶν καταλελειμμένων ἐπυνθάνοντο ὅτι οἱ μὲν Θρᾷκες ἀφʼ ἑσπέρας ᾤχοντο ἀπιόντες, καὶ τοὺς Ἕλληνας δʼ ἔφασαν οἴχεσθαι· ὅποι δέ, οὐκ εἰδέναι.",
+  "e": "At first they could only wonder what the thing was that had happened, but afterwards they managed to find out from the people who had been left behind that the Thracians had disappeared immediately after nightfall, and the Greeks also, they said, had gone; but whither, they did not know."
+ },
+ {
+  "k": "c80bd27973197471",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταῦτα ἀκούσαντες οἱ ἀμφὶ Ξενοφῶντα, ἐπεὶ ἠρίστησαν, συσκευασάμενοι ἐπορεύοντο, βουλόμενοι ὡς τάχιστα συμμεῖξαι τοῖς ἄλλοις εἰς Κάλπης λιμένα. καὶ πορευόμενοι ἑώρων τὸν στίβον τῶν Ἀρκάδων καὶ Ἀχαιῶν κατὰ τὴν ἐπὶ Κάλπης ὁδόν. ἐπεὶ δὲ ἀφίκοντο εἰς τὸ αὐτό, ἄσμενοί τε εἶδον ἀλλήλους καὶ ἠσπάζοντο ὥσπερ ἀδελφούς.",
+  "e": "Upon hearing this report Xenophon and his men packed up, as soon as they had breakfasted, and set forth, wishing as speedily as possible to join their comrades at Calpe Harbour. As they proceeded, they could see the track of the Arcadians and Achaeans along the road leading towards Calpe. When the two detachments came together, the men were delighted to see one another, and greeted one another like brothers."
+ },
+ {
+  "k": "4297326505dfe8c1",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ἐπυνθάνοντο οἱ Ἀρκάδες τῶν περὶ Ξενοφῶντα τί τὰ πυρὰ κατασβέσειαν· ἡμεῖς μὲν γάρ, ἔφασαν, ᾤμεθα ὑμᾶς τὸ μὲν πρῶτον, ἐπειδὴ τὰ πυρὰ οὐχ ἑωρῶμεν, τῆς νυκτὸς ἥξειν ἐπὶ τοὺς πολεμίους· καὶ οἱ πολέμιοι δέ, ὥς γε ἡμῖν ἐδόκουν, τοῦτο δείσαντες ἀπῆλθον· σχεδὸν γὰρ ἀμφὶ τοῦτον τὸν χρόνον ἀπῇσαν.",
+  "e": "And the Arcadians inquired of Xenophon’s troops why they had put out their fires; for we imagined at first, they said, when we could no longer see your fires, that you meant to come against the enemy during the night; and the enemy likewise, so at least it seemed to us, feared this, and on that account departed; for it was at about that time that they went away."
+ },
+ {
+  "k": "c0482b8110efafc1",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ οὐκ ἀφίκεσθε, ὁ δὲ χρόνος ἐξῆκεν, ᾠόμεθα ὑμᾶς πυθομένους τὰ παρʼ ἡμῖν φοβηθέντας οἴχεσθαι ἀποδράντας ἐπὶ θάλατταν· καὶ ἐδόκει ἡμῖν μὴ ἀπολείπεσθαι ὑμῶν. οὕτως οὖν καὶ ἡμεῖς δεῦρο ἐπορεύθημεν.",
+  "e": "But when you failed to arrive, although the requisite time had passed, we supposed that you had learned of our situation and, seized with fear, had stealthily made off toward the sea; and we thought it best not to be left behind. That was the reason, then, why we also proceeded hither."
+ },
+ {
+  "k": "5109e47cc6b4a07d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταύτην μὲν οὖν τὴν ἡμέραν αὐτοῦ ηὐλίζοντο ἐπὶ τοῦ αἰγιαλοῦ πρὸς τῷ λιμένι. τὸ δὲ χωρίον τοῦτο ὃ καλεῖται Κάλπης λιμὴν ἔστι μὲν ἐν τῇ Θρᾴκῃ τῇ ἐν τῇ Ἀσίᾳ· ἀρξαμένη δὲ ἡ Θρᾴκη αὕτη ἐστὶν ἀπὸ τοῦ στόματος τοῦ Πόντου μέχρι Ἡρακλείας ἐπὶ δεξιὰ εἰς τὸν Πόντον εἰσπλέοντι.",
+  "e": "During that day they bivouacked where they were, upon the beach by the harbour. Now this place which is called Calpe Harbour is situated in Thrace-in-Asia; and this portion of Thrace begins at the mouth of the Euxine and extends as far as Heracleia, being on the right as one sails into the Euxine."
+ },
+ {
+  "k": "7e613d24ac24e9d5",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ τριήρει μέν ἐστιν εἰς Ἡράκλειαν ἐκ Βυζαντίου κώπαις ἡμέρας μακρᾶς πλοῦς· ἐν δὲ τῷ μέσῳ ἄλλη μὲν πόλις οὐδεμία οὔτε φιλία οὔτε Ἑλληνίς, ἀλλὰ Θρᾷκες Βιθυνοί· καὶ οὓς ἂν λάβωσι τῶν Ἑλλήνων ἐκπίπτοντας ἢ ἄλλως πως δεινὰ ὑβρίζειν λέγονται τοὺς Ἕλληνας.",
+  "e": "It is a long day’s journey for a trireme to row from Byzantium to Heracleia, and between the two places there is no other city, either friendly or Greek, only Bithynian Thracians; and they are said to abuse outrageously any Greeks they may find shipwrecked or may capture in any other way."
+ },
+ {
+  "k": "dfac3224e4c139b8",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὁ δὲ Κάλπης λιμὴν ἐν μέσῳ μὲν κεῖται ἑκατέρωθεν πλεόντων ἐξ Ἡρακλείας καὶ Βυζαντίου, ἔστι δʼ ἐν τῇ θαλάττῃ προκείμενον χωρίον, τὸ μὲν εἰς τὴν θάλατταν καθῆκον αὐτοῦ πέτρα ἀπορρώξ, ὕψος ὅπῃ ἐλάχιστον οὐ μεῖον εἴκοσιν ὀργυιῶν, ὁ δὲ αὐχὴν ὁ εἰς τὴν γῆν ἀνήκων τοῦ χωρίου μάλιστα τεττάρων πλέθρων τὸ εὖρος· τὸ δʼ ἐντὸς τοῦ αὐχένος χωρίον ἱκανὸν μυρίοις ἀνθρώποις οἰκῆσαι.",
+  "e": "As for Calpe Harbour, it lies midway of the voyage between Heracleia and Byzantium and is a bit of land jutting out into the sea, the part of it which extends seaward being a precipitous mass of rock, not less than twenty fathoms high at its lowest point, and the isthmus which connects this head with the mainland being about four plethra in width; and the space to the seaward of the isthmus is large enough for ten thousand people to dwell in."
+ },
+ {
+  "k": "cc730a9ef05e47c5",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "λιμὴν δʼ ὑπʼ αὐτῇ τῇ πέτρᾳ τὸ πρὸς ἑσπέραν αἰγιαλὸν ἔχων. κρήνη δὲ ἡδέος ὕδατος καὶ ἄφθονος ῥέουσα ἐπʼ αὐτῇ τῇ θαλάττῃ ὑπὸ τῇ ἐπικρατείᾳ τοῦ χωρίου. ξύλα δὲ πολλὰ μὲν καὶ ἄλλα, πάνυ δὲ πολλὰ καὶ καλὰ ναυπηγήσιμα ἐπʼ αὐτῇ τῇ θαλάττῃ.",
+  "e": "At the very foot of the rock there is a harbour whose beach faces toward the west, and an abundantly flowing spring of fresh water close to the shore of the sea and commanded by the headland. There is also a great deal of timber of various sorts, but an especially large amount of fine ship-timber, on the very shore of the sea."
+ },
+ {
+  "k": "f82236e9fa234132",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τὸ δὲ ὄρος εἰς μεσόγειαν μὲν ἀνήκει ὅσον ἐπὶ εἴκοσι σταδίους, καὶ τοῦτο γεῶδες καὶ ἄλιθον· τὸ δὲ παρὰ θάλατταν πλέον ἢ ἐπὶ εἴκοσι σταδίους δασὺ πολλοῖς καὶ παντοδαποῖς καὶ μεγάλοις ξύλοις.",
+  "e": "The ridge extends back into the interior for about twenty stadia, and this stretch is deep-soiled and free from stones, while the land bordering the coast is thickly covered for a distance of more than twenty stadia with an abundance of heavy timber of all sorts."
+ },
+ {
+  "k": "9db92d0145e4bd35",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἡ δὲ ἄλλη χώρα καλὴ καὶ πολλή, καὶ κῶμαι ἐν αὐτῇ εἰσι πολλαὶ καὶ οἰκούμεναι· φέρει γὰρ ἡ γῆ καὶ κριθὰς καὶ πυροὺς καὶ ὄσπρια πάντα καὶ μελίνας καὶ σήσαμα καὶ σῦκα ἀρκοῦντα καὶ ἀμπέλους πολλὰς καὶ ἡδυοίνους καὶ τἆλλα πάντα πλὴν ἐλαῶν.",
+  "e": "The rest of the region is fair and extensive, and contains many inhabited villages; for the land produces barley, wheat, beans of all kinds, millet and sesame, a sufficient quantity of figs, an abundance of grapes which yield a good sweet wine, and in fact everything except olives."
+ },
+ {
+  "k": "508c2044f9b3e3c1",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἡ μὲν χώρα ἦν τοιαύτη. ἐσκήνουν δʼ ἐν τῷ αἰγιαλῷ πρὸς τῇ θαλάττῃ· εἰς δὲ τὸ πόλισμα ἂν γενόμενον οὐκ ἐβούλοντο στρατοπεδεύεσθαι, ἀλλὰ ἐδόκει καὶ τὸ ἐλθεῖν ἐνταῦθα ἐξ ἐπιβουλῆς εἶναι, βουλομένων τινῶν κατοικίσαι πόλιν.",
+  "e": "Such was the country thereabouts. The men took up quarters on the beach by the sea, refusing to encamp on the spot which might become a city; indeed, the fact of their coming to this place at all seemed to them the result of scheming on the part of some people who wished to found a city."
+ },
+ {
+  "k": "fb6bda9c5288928f",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τῶν γὰρ στρατιωτῶν οἱ πλεῖστοι ἦσαν οὐ σπάνει βίου ἐκπεπλευκότες ἐπὶ ταύτην τὴν μισθοφοράν, ἀλλὰ τὴν Κύρου ἀρετὴν ἀκούοντες, οἱ μὲν καὶ ἄνδρας ἄγοντες, οἱ δὲ καὶ προσανηλωκότες χρήματα, καὶ τούτων ἕτεροι ἀποδεδρακότες πατέρας καὶ μητέρας, οἱ δὲ καὶ τέκνα καταλιπόντες ὡς χρήματʼ αὐτοῖς κτησάμενοι ἥξοντες πάλιν, ἀκούοντες καὶ τοὺς ἄλλους τοὺς παρὰ Κύρῳ πολλὰ καὶ ἀγαθὰ πράττειν. τοιοῦτοι ὄντες ἐπόθουν εἰς τὴν Ἑλλάδα σῴζεσθαι.",
+  "e": "For most of the soldiers had sailed away from Greece to undertake this service for pay, not because their means were scanty, but because they knew by report of the noble character of Cyrus; some brought other men with them, some had even spent money of their own on the enterprise, while still another class had abandoned fathers and mothers, or had left children behind with the idea of getting money to bring back to them, all because they heard that the other people who served with Cyrus enjoyed abundant good fortune. Being men of this sort, therefore, they longed to return in safety to Greece."
+ },
+ {
+  "k": "279a0d2c488da4ce",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπειδὴ δὲ ὑστέρα ἡμέρα ἐγένετο τῆς εἰς ταὐτὸν συνόδου, ἐπʼ ἐξόδῳ ἐθύετο Ξενοφῶν· ἀνάγκη γὰρ ἦν ἐπὶ τὰ ἐπιτήδεια ἐξάγειν· ἐπενόει δὲ καὶ τοὺς νεκροὺς θάπτειν. ἐπεὶ δὲ τὰ ἱερὰ καλὰ ἐγένετο, εἵποντο καὶ οἱ Ἀρκάδες, καὶ τοὺς μὲν νεκροὺς τοὺς πλείστους ἔνθαπερ ἔπεσον ἑκάστους ἔθαψαν· ἤδη γὰρ ἦσαν πεμπταῖοι καὶ οὐχ οἷόν τε ἀναιρεῖν ἔτι ἦν· ἐνίους δὲ τοὺς ἐκ τῶν ὁδῶν συνενεγκόντες ἔθαψαν ἐκ τῶν ὑπαρχόντων ὡς ἐδύναντο κάλλιστα· οὓς δὲ μὴ ηὕρισκον, κενοτάφιον αὐτοῖς ἐποίησαν μέγα, καὶ στεφάνους ἐπέθεσαν.",
+  "e": "On the day after the reunion of the three divisions Xenophon offered sacrifice with a view to an expedition; for it was necessary to go out after provisions and, besides, he intended to bury the Arcadian dead. When the sacrifices proved favourable, the Arcadians also followed with the rest, and they buried the greater part of the dead just where they each had fallen; for they had already lain unburied five days, and it was not now possible to carry away the bodies; some that lay upon the roads, however, they did gather together and honour with as fine a burial as their means allowed, while for those they could not find, they erected a great cenotaph, and placed wreaths upon it."
+ },
+ {
+  "k": "7fc7c7459e1c085a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταῦτα δὲ ποιήσαντες ἀνεχώρησαν ἐπὶ τὸ στρατόπεδον. καὶ τότε μὲν δειπνήσαντες ἐκοιμήθησαν. τῇ δὲ ὑστεραίᾳ συνῆλθον οἱ στρατιῶται πάντες· συνῆγε δὲ μάλιστα Ἀγασίας τε ὁ Στυμφάλιος λοχαγὸς καὶ Ἱερώνυμος Ἠλεῖος λοχαγὸς καὶ ἄλλοι οἱ πρεσβύτατοι τῶν Ἀρκάδων.",
+  "e": "After doing all this they returned to their camp, and then took dinner and went to bed. On the following day all the soldiers held a meeting, the chief movers in the matter being Agasias the Stymphalian, a captain, Hieronymus the Elean, also a captain, and some others from among the eldest of the Arcadians."
+ },
+ {
+  "k": "3b0c6ecba1ecc172",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ δόγμα ἐποιήσαντο, ἐάν τις τοῦ λοιποῦ μνησθῇ δίχα τὸ στράτευμα ποιεῖν, θανάτῳ αὐτὸν ζημιοῦσθαι, καὶ κατὰ χώραν ἀπιέναι ᾗπερ πρόσθεν εἶχε τὸ στράτευμα καὶ ἄρχειν τοὺς πρόσθεν στρατηγούς. καὶ Χειρίσοφος μὲν ἤδη ἐτετελευτήκει φάρμακον πιὼν πυρέττων· τὰ δʼ ἐκείνου Νέων Ἀσιναῖος παρέλαβε.",
+  "e": "They passed a resolution that if any man from this time forth should suggest dividing the army, he should be punished with death, and further, that the army should return to the same organization which formerly obtained, and that the former generals should resume command. Now by this time Cheirisophus had died, from the effects of a medicine which he took for a fever; and his command passed to Neon the Asinaean."
+ },
+ {
+  "k": "dc443aabbb6ae754",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "μετὰ δὲ ταῦτα ἀναστὰς εἶπε Ξενοφῶν· ὦ ἄνδρες στρατιῶται, τὴν μὲν πορείαν, ὡς ἔοικε, δῆλον ὅτι πεζῇ ποιητέον· οὐ γὰρ ἔστι πλοῖα· ἀνάγκη δὲ πορεύεσθαι ἤδη· οὐ γὰρ ἔστι μένουσι τὰ ἐπιτήδεια. ἡμεῖς οὖν, ἔφη, θυσόμεθα· ὑμᾶς δὲ δεῖ παρασκευάζεσθαι ὡς μαχουμένους εἴ ποτε καὶ ἄλλοτε· οἱ γὰρ πολέμιοι ἀνατεθαρρήκασιν.",
+  "e": "After this Xenophon rose and said: Fellow soldiers, our journey, it seems, must be made by land, for we have no ships; and we must set out at once, for we have no provisions if we remain here. We, then, he continued, will sacrifice, and you must prepare yourselves to fight if ever you did; for the enemy have renewed their courage."
+ },
+ {
+  "k": "42028925b664513e",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐκ τούτου ἐθύοντο οἱ στρατηγοί, μάντις δὲ παρῆν Ἀρηξίων Ἀρκάς· ὁ δὲ Σιλανὸς ὁ Ἀμπρακιώτης ἤδη ἀπεδεδράκει πλοῖον μισθωσάμενος ἐξ Ἡρακλείας. θυομένοις δὲ ἐπὶ τῇ ἀφόδῳ οὐκ ἐγίγνετο τὰ ἱερά.",
+  "e": "Thereupon the generals proceeded to sacrifice, the soothsayer who was present being Arexion the Arcadian; for Silanus the Ambraciot had by this time stolen away, on a vessel which he hired at Heracleia. When they sacrificed, however, with a view to their departure, the victims would not prove favourable,"
+ },
+ {
+  "k": "c02e048e84a6bb05",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταύτην μὲν οὖν τὴν ἡμέραν ἐπαύσαντο. καί τινες ἐτόλμων λέγειν ὡς ὁ Ξενοφῶν βουλόμενος τὸ χωρίον οἰκίσαι πέπεικε τὸν μάντιν λέγειν ὡς τὰ ἱερὰ οὐ γίγνεται ἐπὶ ἀφόδῳ.",
+  "e": "and they accordingly ceased their offerings for that day. Now some people had the effrontery to say that Xenophon, in his desire to found a city at this spot, had induced the soothsayer to declare that the sacrifices were not favourable for departure."
+ },
+ {
+  "k": "a36352c725b0323f",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐντεῦθεν κηρύξας τῇ αὔριον παρεῖναι ἐπὶ τὴν θυσίαν τὸν βουλόμενον, καὶ μάντις εἴ τις εἴη, παραγγείλας παρεῖναι ὡς συνθεασόμενον τὰ ἱερά, ἔθυε· καὶ ἐνταῦθα παρῆσαν πολλοί.",
+  "e": "Consequently he made public proclamation that on the morrow any one who so chose might be present at the sacrifice, and if a man were a soothsayer, he sent him word to be at hand to participate in the inspection of the victims; so he made the offering in the immediate presence of many witnesses."
+ },
+ {
+  "k": "8456f3e93f429cd0",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "θυομένῳ δὲ πάλιν εἰς τρὶς ἐπὶ τῇ ἀφόδῳ οὐκ ἐγίγνετο τὰ ἱερά. ἐκ τούτου χαλεπῶς εἶχον οἱ στρατιῶται· καὶ γὰρ τὰ ἐπιτήδεια ἐπέλιπεν ἃ ἔχοντες ἦλθον, καὶ ἀγορὰ οὐδεμία πω παρῆν.",
+  "e": "But though he sacrificed a second and a third time with a view to departure, the victims would not prove favourable. At that the soldiers were angry, for the provisions they brought with them had given out and there was not yet any market at hand."
+ },
+ {
+  "k": "fa47788eea4515a0",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐκ τούτου ξυνελθόντων εἶπε πάλιν Ξενοφῶν· ὦ ἄνδρες, ἐπὶ μὲν τῇ πορείᾳ, ὡς ὁρᾶτε, τὰ ἱερὰ οὔπω γίγνεται· τῶν δʼ ἐπιτηδείων ὁρῶ ὑμᾶς δεομένους· ἀνάγκη οὖν μοι δοκεῖ εἶναι θύεσθαι περὶ αὐτοῦ τούτου.",
+  "e": "Therefore they held a meeting and Xenophon addressed them again. Soldiers, he said, as for setting out upon our journey, the sacrifices, as you see, do not yet prove favourable for that; but I am aware that you are in need of provisions; hence it seems to me that we must sacrifice in regard to this latter point alone. Then some one rose and said:"
+ },
+ {
+  "k": "b1b3b040969508c7",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἀναστάς τις εἶπε· καὶ εἰκότως ἄρα ἡμῖν οὐ γίγνεται τὰ ἱερά· ὡς γὰρ ἐγὼ ἀπὸ τοῦ αὐτομάτου χθὲς ἥκοντος πλοίου ἤκουσά τινος ὅτι Κλέανδρος ὁ ἐκ Βυζαντίου ἁρμοστὴς μέλλει ἥξειν πλοῖα καὶ τριήρεις ἔχων.",
+  "e": "There appears to be good reason why our sacrifices are not favourable; for as I heard from a man who chanced to arrive here yesterday on a ship, Cleander, the Lacedaemonian governor at Byzantium, is to come here with merchant vessels and men-of-war."
+ },
+ {
+  "k": "4c180f799e89ee75",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐκ τούτου δὲ ἀναμένειν μὲν πᾶσιν ἐδόκει· ἐπὶ δὲ τὰ ἐπιτήδεια ἀνάγκη ἦν ἐξιέναι. καὶ ἐπὶ τούτῳ πάλιν ἐθύετο εἰς τρίς, καὶ οὐκ ἐγίγνετο τὰ ἱερά. καὶ ἤδη καὶ ἐπὶ σκηνὴν ἰόντες τὴν Ξενοφῶντος ἔλεγον ὅτι οὐκ ἔχοιεν τὰ ἐπιτήδεια. ὁ δʼ οὐκ ἂν ἔφη ἐξαγαγεῖν μὴ γιγνομένων τῶν ἱερῶν.",
+  "e": "At that news all deemed it best to stay, but it was still necessary to go out after provisions. With this object in view Xenophon again sacrificed, going as far as three offerings, and the victims continued unfavourable. By this time people were even coming to Xenophon’s tent and declaring that they had no provisions, but he said that he would not lead forth unless the sacrifices turned out favourable."
+ },
+ {
+  "k": "08a9d672d0ec72f2",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ πάλιν τῇ ὑστεραίᾳ ἐθύετο, καὶ σχεδόν τι πᾶσα ἡ στρατιὰ διὰ τὸ μέλειν ἅπασιν ἐκυκλοῦντο περὶ τὰ ἱερά· τὰ δὲ θύματα ἐπελελοίπει. οἱ δὲ στρατηγοὶ ἐξῆγον μὲν οὔ, συνεκάλεσαν δέ.",
+  "e": "On the next day he undertook to sacrifice again, and pretty nearly the entire army—for it was a matter of concern to every man—gathered about the place of sacrifice; but the victims had given out. Then the generals, while refusing to lead the men forth, called them together in assembly;"
+ },
+ {
+  "k": "846b42be4b7723cf",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "εἶπεν οὖν Ξενοφῶν· ἴσως οἱ πολέμιοι συνειλεγμένοι εἰσὶ καὶ ἀνάγκη μάχεσθαι· εἰ οὖν καταλιπόντες τὰ σκεύη ἐν τῷ ἐρυμνῷ χωρίῳ ὡς εἰς μάχην παρεσκευασμένοι ἴοιμεν, ἴσως ἂν τὰ ἱερὰ προχωροίη ἡμῖν.",
+  "e": "and Xenophon said: It may be that the enemy are gathered together and that we must fight; if, then, we should leave our baggage in the strong place and set out prepared for battle, perhaps our sacrifices would be successful."
+ },
+ {
+  "k": "037436210b84e56d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἀκούσαντες δʼ οἱ στρατιῶται ἀνέκραγον, ὡς οὐδὲν δέον εἰς τὸ χωρίον ἄγειν, ἀλλὰ θύεσθαι ὡς τάχιστα. καὶ πρόβατα μὲν οὐκέτι ἦν, βοῦς δὲ ὑπὸ ἁμάξης πριάμενοι ἐθύοντο· καὶ Ξενοφῶν Κλεάνορος ἐδεήθη τοῦ Ἀρκάδος προθυμεῖσθαι, εἴ τι ἐν τούτῳ εἴη. ἀλλʼ οὐδʼ ὣς ἐγένοντο.",
+  "e": "Upon hearing this, however, the soldiers cried out that it was not at all necessary to enter the place, but, rather, to offer sacrifice with all speed. Now they no longer had any sheep, but they bought a bullock that was yoked to a wagon and proceeded to sacrifice; and Xenophon requested Cleanor the Arcadian to give special attention to see if there was anything auspicious in this offering. But not even so did the omens prove favourable."
+ },
+ {
+  "k": "b21cff73620198e9",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Νέων δὲ ἦν μὲν στρατηγὸς κατὰ τὸ Χειρισόφου μέρος, ἐπεὶ δὲ ἑώρα τοὺς ἀνθρώπους ὡς εἶχον δεινῶς τῇ ἐνδείᾳ, βουλόμενος αὐτοῖς χαρίζεσθαι, εὑρών τινα ἄνθρωπον Ἡρακλεώτην, ὃς ἔφη κώμας ἐγγὺς εἰδέναι ὅθεν εἴη λαβεῖν τὰ ἐπιτήδεια, ἐκήρυξε τὸν βουλόμενον ἰέναι ἐπὶ τὰ ἐπιτήδεια, ὡς ἡγεμόνος ἐσομένου. ἐξέρχονται δὴ σὺν δορατίοις καὶ ἀσκοῖς καὶ θυλάκοις καὶ ἄλλοις ἀγγείοις εἰς δισχιλίους ἀνθρώπους.",
+  "e": "Now Neon was general in place of Cheirisophus, and when he saw in what a terrible condition the soldiers were from want, he was desirous of doing them a kindness; so having found a certain Heracleot who claimed to know of villages near at hand from which it was possible to get provisions, he made proclamation that all who so wished were to go after provisions and that he would be their leader. There set out accordingly, with poles, wine-skins, bags, and other vessels, about two thousand men."
+ },
+ {
+  "k": "607476574feca3b1",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπειδὴ δὲ ἦσαν ἐν ταῖς κώμαις καὶ διεσπείροντο ὡς ἐπὶ τὸ λαμβάνειν, ἐπιπίπτουσιν αὐτοῖς οἱ Φαρναβάζου ἱππεῖς πρῶτοι· βεβοηθηκότες γὰρ ἦσαν τοῖς Βιθυνοῖς, βουλόμενοι σὺν τοῖς Βιθυνοῖς, εἰ δύναιντο, ἀποκωλῦσαι τοὺς Ἕλληνας μὴ ἐλθεῖν εἰς τὴν Φρυγίαν· οὗτοι οἱ ἱππεῖς ἀποκτείνουσι τῶν ἀνδρῶν οὐ μεῖον πεντακοσίους· οἱ δὲ λοιποὶ ἐπὶ τὸ ὄρος ἀνέφυγον.",
+  "e": "But when they had reached the villages and were scattering here and there for the purpose of securing plunder, they were attacked first of all by the horsemen of Pharnabazus; for they had come to the aid of the Bithynians, desiring in company with the Bithynians to prevent the Greeks, if they could, from entering Phrygia; these horsemen killed no fewer than five hundred of the soldiers, the rest fleeing for refuge to the heights."
+ },
+ {
+  "k": "c87452aad99f2a79",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐκ τούτου ἀπαγγέλλει τις ταῦτα τῶν ἀποφευγόντων εἰς τὸ στρατόπεδον. καὶ ὁ Ξενοφῶν, ἐπεὶ οὐκ ἐγεγένητο τὰ ἱερὰ ταύτῃ τῇ ἡμέρᾳ, λαβὼν βοῦν ὑπὸ ἁμάξης (οὐ γὰρ ἦν ἄλλα ἱερεῖα), σφαγιασάμενος ἐβοήθει καὶ οἱ ἄλλοι οἱ μέχρι τριάκοντα ἐτῶν ἅπαντες.",
+  "e": "After this one of the men who escaped brought back word to the camp of what had happened. And Xenophon, inasmuch as the sacrifices had not proved favourable on that day, took a bullock that was yoked to a wagon,—for there were no other sacrificial animals,—offered it up, and set out to the rescue, as did all the rest who were under thirty years of age, to the last man."
+ },
+ {
+  "k": "5f480203682b07c2",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ἀναλαβόντες τοὺς λοιποὺς ἄνδρας εἰς τὸ στρατόπεδον ἀφικνοῦνται. καὶ ἤδη μὲν ἀμφὶ ἡλίου δυσμὰς ἦν καὶ οἱ Ἕλληνες μάλʼ ἀθύμως ἔχοντες ἐδειπνοποιοῦντο, καὶ ἐξαπίνης διὰ τῶν λασίων τῶν Βιθυνῶν τινες ἐπιγενόμενοι τοῖς προφύλαξι τοὺς μὲν κατέκαινον τοὺς δὲ ἐδίωξαν μέχρι εἰς τὸ στρατόπεδον.",
+  "e": "And they picked up the survivors and returned to the camp. By this time it was about sunset, and the Greeks were making preparations for dinner in a state of great despondency when suddenly through the thickets some of the Bithynians burst upon the outposts, killing some of them and pursuing the rest up to the camp."
+ },
+ {
+  "k": "f47d02561392d37b",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ κραυγῆς γενομένης εἰς τὰ ὅπλα πάντες ἔδραμον οἱ Ἕλληνες· καὶ διώκειν μὲν καὶ κινεῖν τὸ στρατόπεδον νυκτὸς οὐκ ἀσφαλὲς ἐδόκει εἶναι· δασέα γὰρ ἦν τὰ χωρία· ἐν δὲ τοῖς ὅπλοις ἐνυκτέρευον φυλαττόμενοι ἱκανοῖς φύλαξι.",
+  "e": "An outcry was raised, and all the Greeks ran to their arms; still, it did not seem safe to undertake a pursuit or to move the camp during the night, seeing that the region was thickly overgrown; so they spent the night under arms, keeping plenty of sentinels on watch."
+ },
+ {
+  "k": "cb487084b77482fc",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τὴν μὲν νύκτα οὕτω διήγαγον· ἅμα δὲ τῇ ἡμέρᾳ οἱ στρατηγοὶ εἰς τὸ ἐρυμνὸν χωρίον ἡγοῦντο· οἱ δὲ εἵποντο ἀναλαβόντες τὰ ὅπλα καὶ τὰ σκεύη. πρὶν δὲ ἀρίστου ὥραν εἶναι ἀπετάφρευον ᾗ ἡ εἴσοδος ἦν εἰς τὸ χωρίον, καὶ ἀπεσταύρωσαν ἅπαν, καταλιπόντες τρεῖς πύλας. καὶ πλοῖον ἐξ Ἡρακλείας ἧκεν ἄλφιτα ἄγον καὶ ἱερεῖα καὶ οἶνον.",
+  "e": "In this way they got through the night, but at daybreak the generals led the way to the strong place and the men followed, taking up their arms and baggage. Before breakfast time came, they proceeded to dig a trench across the way of approach to the place, and they backed it along its entire length with a palisade, leaving three gates. And now a vessel arrived from Heracleia, bringing barley meal, sacrificial victims, and wine."
+ },
+ {
+  "k": "680f28f98c36769e",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "πρῲ δʼ ἀναστὰς Ξενοφῶν ἐθύετο ἐπʼ ἐξόδῳ, καὶ γίγνεται τὰ ἱερὰ ἐπὶ τοῦ πρώτου ἱερείου. καὶ ἤδη τέλος ἐχόντων τῶν ἱερῶν ὁρᾷ αἰετὸν αἴσιον ὁ μάντις Ἀρηξίων Παρράσιος, καὶ ἡγεῖσθαι κελεύει τὸν Ξενοφῶντα.",
+  "e": "Xenophon arose early and sacrificed with a view to an expedition, and with the first offering the omens turned out favourable. Furthermore, just as the rites were nearing the end, the soothsayer, Arexion the Parrhasian, caught sight of an eagle in an auspicious quarter, and bade Xenophon lead on."
+ },
+ {
+  "k": "bb60b3268a657e10",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ διαβάντες τὴν τάφρον τὰ ὅπλα τίθενται, καὶ ἐκήρυξαν ἀριστήσαντας ἐξιέναι τοὺς στρατιώτας σὺν τοῖς ὅπλοις, τὸν δὲ ὄχλον καὶ τὰ ἀνδράποδα αὐτοῦ καταλιπεῖν.",
+  "e": "So they crossed the trench and grounded arms; then they made proclamation that after taking breakfast the troops were to march out under arms, while the camp-followers and captives were to be left behind where they were."
+ },
+ {
+  "k": "c1034bbb24d88f6d",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οἱ μὲν δὴ ἄλλοι πάντες ἐξῇσαν, Νέων δὲ οὔ· ἐδόκει γὰρ κάλλιστον εἶναι τοῦτον φύλακα καταλιπεῖν τῶν ἐπὶ στρατοπέδου. ἐπεὶ δʼ οἱ λοχαγοὶ καὶ οἱ στρατιῶται ἀπέλειπον αὐτόν, αἰσχυνόμενοι μὴ ἐφέπεσθαι τῶν ἄλλων ἐξιόντων, κατέλιπον αὐτοῦ τοὺς ὑπὲρ πέντε καὶ τετταράκοντα ἔτη. καὶ οὗτοι μὲν ἔμενον, οἱ δʼ ἄλλοι ἐπορεύοντο.",
+  "e": "All the rest, then, proceeded to set forth, save only Neon; for it seemed best to leave him behind to keep guard over what was in the camp. But when his captains and soldiers began to abandon him, being ashamed not to follow along when the others were setting out, the generals left behind at the camp everybody who was over forty-five years of age. So these remained and the rest took up the march."
+ },
+ {
+  "k": "54afc928ce2fa362",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "πρὶν δὲ πεντεκαίδεκα στάδια διεληλυθέναι ἐνέτυχον ἤδη νεκροῖς· καὶ τὴν οὐρὰν τοῦ κέρατος ποιησάμενοι κατὰ τοὺς πρώτους φανέντας νεκροὺς ἔθαπτον πάντας ὁπόσους ἐπελάμβανε τὸ κέρας.",
+  "e": "Before they had gone fifteen stadia they began to meet with dead bodies; and marching on until they had brought the rear of their column to a point opposite the first bodies which appeared, they proceeded to bury all that the column covered."
+ },
+ {
+  "k": "3832670c3f516582",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ τοὺς πρώτους ἔθαψαν, προαγαγόντες καὶ τὴν οὐρὰν αὖθις ποιησάμενοι κατὰ τοὺς πρώτους τῶν ἀτάφων ἔθαπτον τὸν αὐτὸν τρόπον ὁπόσους ἐπελάμβανεν ἡ στρατιά. ἐπεὶ δὲ εἰς τὴν ὁδὸν ἧκον τὴν ἐκ τῶν κωμῶν, ἔνθα ἔκειντο ἁθρόοι, συνενεγκόντες αὐτοὺς ἔθαψαν.",
+  "e": "As soon as they had buried this first group, they marched forward and again brought the rear of the column into line with the first of the bodies which lay farther on, and then in the same way they buried all that the army covered. When, however, they had reached the road leading out of the villages, where the dead lay thick, they gathered them all together for burial."
+ },
+ {
+  "k": "97322077d2fac2c9",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἤδη δὲ πέρα μεσούσης τῆς ἡμέρας προάγοντες τὸ στράτευμα ἔξω τῶν κωμῶν ἐλάμβανον τὰ ἐπιτήδεια ὅ τι τις ὁρῴη ἐντὸς τῆς φάλαγγος, καὶ ἐξαίφνης ὁρῶσι τοὺς πολεμίους ὑπερβάλλοντας κατὰ λόφους τινὰς ἐκ τοῦ ἐναντίου, τεταγμένους ἐπὶ φάλαγγος ἱππέας τε πολλοὺς καὶ πεζούς· καὶ γὰρ Σπιθριδάτης καὶ Ῥαθίνης ἧκον παρὰ Φαρναβάζου ἔχοντες τὴν δύναμιν.",
+  "e": "It was now past midday, and, still leading the army forward, they were engaged in getting provisions outside the villages—anything there was to be seen within the limits of their line—when suddenly they caught sight of the enemy passing over some hills which lay opposite them, his force consisting of horsemen in large numbers and foot soldiers, all in battle formation; in fact, it was Spithridates and Rhathines, who had been sent out with their army by Pharnabazus."
+ },
+ {
+  "k": "963e03b2543239fc",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ κατεῖδον τοὺς Ἕλληνας οἱ πολέμιοι, ἔστησαν ἀπέχοντες αὐτῶν ὅσον πεντεκαίδεκα σταδίους. ἐκ τούτου εὐθὺς ὁ Ἀρηξίων ὁ μάντις τῶν Ἑλλήνων σφαγιάζεται, καὶ ἐγένετο ἐπὶ τοῦ πρώτου καλὰ τὰ σφάγια.",
+  "e": "As soon as the enemy sighted the Greeks, they came to a halt, at a distance from the Greeks of about fifteen stadia. Hereupon Arexion, the soothsayer of the Greeks, immediately offered sacrifice, and at the first victim the omens proved favourable. Then Xenophon said:"
+ },
+ {
+  "k": "04a54c62391b08e7",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἔνθα δὴ Ξενοφῶν λέγει· δοκεῖ μοι, ὦ ἄνδρες στρατηγοί, ἐπιτάξασθαι τῇ φάλαγγι λόχους φύλακας ἵνʼ ἄν που δέῃ ὦσιν οἱ ἐπιβοηθήσοντες τῇ φάλαγγι καὶ οἱ πολέμιοι τεταραγμένοι ἐμπίπτωσιν εἰς τεταγμένους καὶ ἀκεραίους. συνεδόκει ταῦτα πᾶσιν.",
+  "e": "It seems to me, fellow generals, that we should station reserve companies behind our phalanx, so that we may have men to come to the aid of the phalanx if aid is needed at any point, and that the enemy, after they have fallen into disorder, may come upon troops that are in good order and fresh. All shared this opinion."
+ },
+ {
+  "k": "b6011ad0f5d2e309",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὑμεῖς μὲν τοίνυν, ἔφη, προηγεῖσθε τὴν πρὸς τοὺς ἐναντίους, ὡς μὴ ἑστήκωμεν, ἐπεὶ ὤφθημεν καὶ εἴδομεν τοὺς πολεμίους· ἐγὼ δὲ ἥξω τοὺς τελευταίους λόχους καταχωρίσας ᾗπερ ὑμῖν δοκεῖ.",
+  "e": "Well, then, said Xenophon, do you lead on toward our adversaries, in order that we may not be standing still now that we have been seen by the enemy and have seen them; and I will come along after arranging the hindmost companies in the way you have decided upon."
+ },
+ {
+  "k": "348423d320fe7927",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐκ τούτου οἱ μὲν ἥσυχοι προῆγον, ὁ δὲ τρεῖς ἀφελὼν τὰς τελευταίας τάξεις ἀνὰ διακοσίους ἄνδρας τὴν μὲν ἐπὶ τὸ δεξιὸν ἐπέτρεψεν ἐφέπεσθαι ἀπολιπόντας ὡς πλέθρον· Σαμόλας Ἀχαιὸς ταύτης ἦρχε τῆς τάξεως· τὴν δʼ ἐπὶ τῷ μέσῳ ἐχώρισεν ἕπεσθαι· Πυρρίας Ἀρκὰς ταύτης ἦρχε· τὴν δὲ μίαν ἐπὶ τῷ εὐωνύμῳ· Φρασίας Ἀθηναῖος ταύτῃ ἐφειστήκει.",
+  "e": "So while the others led on quietly, he detached the three hindmost battalions, consisting of two hundred men each, and turned the first one to the right with orders to follow after the phalanx at a distance of about a plethrum; this battalion was commanded by Samolas the Achaean; the second battalion he posted at the centre, to follow on in the same way; this one was under the command of Pyrrhias the Arcadian; and the last one he stationed upon the left, Phrasias the Athenian being in command of it."
+ },
+ {
+  "k": "06e6f9e224a2867f",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "προϊόντες δέ, ἐπεὶ ἐγένοντο οἱ ἡγούμενοι ἐπὶ νάπει μεγάλῳ καὶ δυσπόρῳ, ἔστησαν ἀγνοοῦντες εἰ διαβατέον εἴη τὸ νάπος. καὶ παρεγγυῶσι στρατηγοὺς καὶ λοχαγοὺς παριέναι ἐπὶ τὸ ἡγούμενον.",
+  "e": "Now when, as they advanced, the men who were in the lead reached a large ravine, difficult to pass, they halted, in doubt as to whether they ought to cross the ravine; and they passed along word for generals and captains to come up to the front."
+ },
+ {
+  "k": "e30be79640ae1261",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὁ Ξενοφῶν θαυμάσας ὅ τι τὸ ἴσχον εἴη τὴν πορείαν καὶ ταχὺ ἀκούων τὴν παρεγγύην, ἐλαύνει ᾗ τάχιστα. ἐπεὶ δὲ συνῆλθον, λέγει Σοφαίνετος πρεσβύτατος ὢν τῶν στρατηγῶν ὅτι βουλῆς οὐκ ἄξιον εἴη εἰ διαβατέον ἐστὶ τοιοῦτον νάπος.",
+  "e": "Then Xenophon, wondering what it was that was holding up the march and speedily hearing the summons, rode forward in all haste. As soon as the officers had come together, Sophaenetus, who was the eldest of the generals, said that it was not a question worth considering whether they ought to cross such a ravine as that."
+ },
+ {
+  "k": "c8143a801d360f64",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὁ Ξενοφῶν σπουδῇ ὑπολαβὼν ἔλεξεν· ἀλλʼ ἴστε μέν με, ὦ ἄνδρες, οὐδένα πω κίνδυνον προξενήσαντα ὑμῖν ἐθελούσιον· οὐ γὰρ δόξης ὁρῶ δεομένους ὑμᾶς εἰς ἀνδρειότητα, ἀλλὰ σωτηρίας.",
+  "e": "Xenophon rejoined, with much earnestness: Well, gentlemen, you know that I have never yet introduced you to any danger that was a matter of choice; for as I see the situation, you do not stand in need of reputation for bravery, but of a safe return."
+ },
+ {
+  "k": "f56090267dc658fc",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "νῦν δὲ οὕτως ἔχει· ἀμαχεὶ μὲν ἐνθένδε οὐκ ἔστιν ἀπελθεῖν· ἢν γὰρ μὴ ἡμεῖς ἴωμεν ἐπὶ τοὺς πολεμίους, οὗτοι ἡμῖν ὁπόταν ἀπίωμεν ἕψονται καὶ ἐπιπεσοῦνται.",
+  "e": "But the conditions at this moment are these: there is no possibility of our getting away from here without a battle; for if we do not advance upon the enemy ourselves, they will follow us when we undertake to retire and fall upon us."
+ },
+ {
+  "k": "de3c5c19a4df98c3",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὁρᾶτε δὴ πότερον κρεῖττον ἰέναι ἐπὶ τοὺς ἄνδρας προβαλλομένους τὰ ὅπλα ἢ μεταβαλλομένους ὄπισθεν ἡμῶν ἐπιόντας τοὺς πολεμίους θεᾶσθαι.",
+  "e": "Consider, then, whether it is better to go forward against these men with arms advanced, or with arms reversed to behold the enemy coming upon us from behind."
+ },
+ {
+  "k": "6ba3248a2509c815",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἴστε μέντοι ὅτι τὸ μὲν ἀπιέναι ἀπὸ πολεμίων οὐδενὶ καλῷ ἔοικε, τὸ δὲ ἐφέπεσθαι καὶ τοῖς κακίοσι θάρρος ἐμποιεῖ. ἐγὼ γοῦν ἥδιον ἂν σὺν ἡμίσεσιν ἐπιοίην ἢ σὺν διπλασίοις ἀποχωροίην. καὶ τούτους οἶδʼ ὅτι ἐπιόντων μὲν ἡμῶν οὐδʼ ὑμεῖς ἐλπίζετε δέξεσθαι ἡμᾶς, ἀπιόντων δὲ πάντες ἐπιστάμεθα ὅτι τολμήσουσιν ἐφέπεσθαι.",
+  "e": "Yet you know that to retire before an enemy does not beseem any man of honour, while to be in pursuit creates courage even in cowards. For my part, at any rate, I should rather advance to the attack with half as many men than to retreat with twice as many. And as to those troops yonder, I know that if we advance upon them, you do not yourselves expect them to await our attack, while if we retire, we all know that they will have the courage to pursue us."
+ },
+ {
+  "k": "aa30745d6ec9a73e",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "τὸ δὲ διαβάντας ὄπισθεν νάπος χαλεπὸν ποιήσασθαι μέλλοντας μάχεσθαι ἆρʼ οὐχὶ καὶ ἁρπάσαι ἄξιον; τοῖς μὲν γὰρ πολεμίοις ἐγὼ βουλοίμην ἂν εὔπορα πάντα φαίνεσθαι ὥστε ἀποχωρεῖν· ἡμᾶς δὲ καὶ ἀπὸ τοῦ χωρίου δεῖ διδάσκεσθαι ὅτι οὐκ ἔστι μὴ νικῶσι σωτηρία.",
+  "e": "Again, to cross a difficult ravine and get it in your rear when you are about to fight, is not that an opportunity really worth seizing? For it is to the enemy that I should myself wish to have all roads seem easy—for their retreat; as for ourselves, we ought to learn from the very ground before us that there is no safety for us except in victory."
+ },
+ {
+  "k": "39098cb89dee0cad",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "θαυμάζω δʼ ἔγωγε καὶ τὸ νάπος τοῦτο εἴ τις μᾶλλον φοβερὸν νομίζει εἶναι τῶν ἄλλων ὧν διαπεπορεύμεθα χωρίων. πῶς γὰρ διαβατὸν τὸ πεδίον, εἰ μὴ νικήσομεν τοὺς ἱππέας; πῶς δὲ ἃ διεληλύθαμεν ὄρη, ἢν πελτασταὶ τοσοίδε ἐφέπωνται;",
+  "e": "I do wonder, however, that any one regards this particular ravine as more dreadful than the rest of the country we have just marched through. For how is that plain to be recrossed unless we are victorious over the enemy’s horsemen? how the mountains which we have passed through, if such a throng of peltasts are to be following at our heels?"
+ },
+ {
+  "k": "2b8a689cf5a2cbd4",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἢν δὲ δὴ καὶ σωθῶμεν ἐπὶ θάλατταν, πόσον τι νάπος ὁ Πόντος; ἔνθα οὔτε πλοῖα ἔστι τὰ ἀπάξοντα οὔτε σῖτος ᾧ θρεψόμεθα μένοντες, δεήσει δέ, ἢν θᾶττον ἐκεῖ γενώμεθα, θᾶττον πάλιν ἐξιέναι ἐπὶ τὰ ἐπιτήδεια.",
+  "e": "Again, if we do reach the sea in safety, what a great ravine, one may say, is the Euxine! where we have neither ships to take us away nor food to subsist upon if we remain, while the sooner we reach there, the sooner we shall have to be off again in quest of provisions."
+ },
+ {
+  "k": "10fc3e7a51bbfcc9",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οὐκοῦν νῦν κρεῖττον ἠριστηκότας μάχεσθαι ἢ αὔριον ἀναρίστους. ἄνδρες, τά τε ἱερὰ ἡμῖν καλὰ οἵ τε οἰωνοὶ αἴσιοι τά τε σφάγια κάλλιστα· ἴωμεν ἐπὶ τοὺς ἄνδρας. οὐ δεῖ ἔτι τούτους, ἐπεὶ ἡμᾶς πάντως εἶδον, ἡδέως δειπνῆσαι οὐδʼ ὅπου ἂν θέλωσι σκηνῆσαι.",
+  "e": "Well, then, it is better to fight to-day, with our breakfast already eaten, than to-morrow breakfastless. Gentlemen, our sacrificial victims were favourable, the bird-omens auspicious, the omens of the sacrifice most favourable; let us advance upon the enemy. These fellows, now that they have seen us at all, must not again get a pleasant dinner or encamp wherever they please."
+ },
+ {
+  "k": "643bcc01f3636d3e",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐντεῦθεν οἱ λοχαγοὶ ἡγεῖσθαι ἐκέλευον, καὶ οὐδεὶς ἀντέλεγε. καὶ ὃς ἡγεῖτο, παραγγείλας διαβαίνειν ᾗ ἕκαστος ἐτύγχανε τοῦ νάπους ὤν· θᾶττον γὰρ ἁθρόον ἐδόκει ἂν οὕτω πέραν γενέσθαι τὸ στράτευμα ἢ εἰ κατὰ τὴν γέφυραν ἣ ἐπὶ τῷ νάπει ἦν ἐξεμηρύοντο.",
+  "e": "After that the captains bade him lead on, and no one spoke in opposition. So he led the way, after giving orders that every man should cross at whatever point along the ravine he chanced to be; for it seemed that in this way the army would get together on the further side more quickly than if they defiled along the bridge which was over the ravine."
+ },
+ {
+  "k": "d4110830386cf85a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ διέβησαν, παριὼν παρὰ τὴν φάλαγγα ἔλεγεν· ἄνδρες, ἀναμιμνῄσκεσθε ὅσας δὴ μάχας σὺν τοῖς θεοῖς ὁμόσε ἰόντες νενικήκατε καὶ οἷα πάσχουσιν οἱ πολεμίους φεύγοντες, καὶ τοῦτο ἐννοήσατε ὅτι ἐπὶ ταῖς θύραις τῆς Ἑλλάδος ἐσμέν.",
+  "e": "When they had crossed, he went along the lines and said: Soldiers, remember how many battles you have won, with the help of the gods, by coming to close quarters, remember what a fate they suffer who flee from the enemy, and bethink you of this, that we are at the doors of Greece."
+ },
+ {
+  "k": "476e4be645ee18c9",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἀλλʼ ἕπεσθε ἡγεμόνι τῷ Ἡρακλεῖ καὶ ἀλλήλους παρακαλεῖτε ὀνομαστί. ἡδύ τοι ἀνδρεῖόν τι καὶ καλὸν νῦν εἰπόντα καὶ ποιήσαντα μνήμην ἐν οἷς ἐθέλει παρέχειν ἑαυτοῦ.",
+  "e": "Follow Heracles the Leader and summon one another on, calling each man by name. It will surely be sweet, through some manly and noble thing which one may say or do to-day, to keep himself in remembrance among those whom he wishes to remember him."
+ },
+ {
+  "k": "8e940508ea5f6439",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ταῦτα παρελαύνων ἔλεγε καὶ ἅμα ὑφηγεῖτο ἐπὶ φάλαγγος, καὶ τοὺς πελταστὰς ἑκατέρωθεν ποιησάμενοι ἐπορεύοντο ἐπὶ τοὺς πολεμίους. παρήγγελτο δὲ τὰ μὲν δόρατα ἐπὶ τὸν δεξιὸν ὦμον ἔχειν, ἕως σημαίνοι τῇ σάλπιγγι· ἔπειτα δὲ εἰς προσβολὴν καθέντας ἕπεσθαι βάδην καὶ μηδένα δρόμῳ διώκειν. ἐκ τούτου σύνθημα παρῄει Ζεὺς σωτήρ, Ἡρακλῆς ἡγεμών. οἱ δὲ πολέμιοι ὑπέμενον, νομίζοντες καλὸν ἔχειν τὸ χωρίον.",
+  "e": "Thus he spoke as he rode along, while at the same time he began to lead the troops on slowly in line of battle; and after they had got the peltasts into position on either flank, they took up the march against the enemy. The orders had been to keep their spears on the right shoulder until a signal should be given with the trumpet; then, lowering them for the attack, to follow on slowly, nobody to break into a run. And now the watchword was passed along, Zeus Saviour, Heracles Leader. Meanwhile the enemy were standing their ground, thinking that the position they held was a good one."
+ },
+ {
+  "k": "1ab1747f83a3d39a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δʼ ἐπλησίαζον, ἀλαλάξαντες οἱ Ἕλληνες πελτασταὶ ἔθεον ἐπὶ τοὺς πολεμίους πρίν τινα κελεύειν· οἱ δὲ πολέμιοι ἀντίοι ὥρμησαν, οἵ θʼ ἱππεῖς καὶ τὸ στῖφος τῶν Βιθυνῶν· καὶ τρέπονται τοὺς πελταστάς.",
+  "e": "When the Greeks were drawing near, the peltasts raised the battle-cry and proceeded to charge upon the enemy without waiting for any order; and the enemy rushed forward to meet them, both the horsemen and the mass of the Bithynians, and they put the peltasts to rout."
+ },
+ {
+  "k": "e2aa82cecc4bf578",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἀλλʼ ἐπεὶ ὑπηντίαζεν ἡ φάλαγξ τῶν ὁπλιτῶν ταχὺ πορευομένη καὶ ἅμα ἡ σάλπιγξ ἐφθέγξατο καὶ ἐπαιάνιζον καὶ μετὰ ταῦτα ἠλάλαζον καὶ ἅμα τὰ δόρατα καθίεσαν, ἐνταῦθα οὐκέτι ἐδέξαντο οἱ πολέμιοι, ἀλλὰ ἔφευγον.",
+  "e": "But when the phalanx of the hoplites kept moving on to meet them, marching rapidly, and at the same time the trumpet sounded, and they struck up the paean and after that raised the battle-cry, and at the same moment couched their spears, then the enemy no longer awaited the attack, but took to flight."
+ },
+ {
+  "k": "b3a1663537bf1c8a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ Τιμασίων μὲν ἔχων τοὺς ἱππέας ἐφείπετο, καὶ ἀπεκτίννυσαν ὅσουσπερ ἐδύναντο ὡς ὀλίγοι ὄντες. τῶν δὲ πολεμίων τὸ μὲν εὐώνυμον εὐθὺς διεσπάρη, καθʼ ὃ οἱ Ἕλληνες ἱππεῖς ἦσαν, τὸ δὲ δεξιὸν ἅτε οὐ σφόδρα διωκόμενον ἐπὶ λόφου συνέστη.",
+  "e": "Timasion and the cavalry pursued, and killed as many as they could, considering their own small numbers. Now the left wing of the enemy, opposite which the Greek cavalry were stationed, was dispersed at once, but the right, since it was not vigorously pursued, got together upon a hill."
+ },
+ {
+  "k": "e6d9e480a185f984",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ εἶδον οἱ Ἕλληνες ὑπομένοντας αὐτούς, ἐδόκει ῥᾷστόν τε καὶ ἀκινδυνότατον εἶναι ἰέναι ἤδη ἐπʼ αὐτούς. παιανίσαντες οὖν εὐθὺς ἐπέκειντο· οἱ δʼ οὐχ ὑπέμειναν. καὶ ἐνταῦθα οἱ πελτασταὶ ἐδίωκον μέχρι τὸ δεξιὸν διεσπάρη· ἀπέθανον δὲ ὀλίγοι· τὸ γὰρ ἱππικὸν φόβον παρεῖχε τὸ τῶν πολεμίων πολὺ ὄν.",
+  "e": "As soon as the Greeks saw that they were standing their ground there, they deemed it the easiest and safest course to charge upon them immediately. They accordingly struck up the paean and moved upon them at once; and they stood no longer. Thereupon the peltasts pursued until the right wing was dispersed; but few of the enemy, however, were killed, for his cavalry, numerous as they were, inspired fear."
+ },
+ {
+  "k": "9417c73ab2d822ea",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπεὶ δὲ εἶδον οἱ Ἕλληνες τό τε Φαρναβάζου ἱππικὸν ἔτι συνεστηκὸς καὶ τοὺς Βιθυνοὺς ἱππέας πρὸς τοῦτο συναθροιζομένους καὶ ἀπὸ λόφου τινὸς καταθεωμένους τὰ γιγνόμενα, ἀπειρήκεσαν μέν, ὅμως δὲ ἐδόκει καὶ ἐπὶ τούτους ἰτέον εἶναι οὕτως ὅπως δύναιντο, ὡς μὴ τεθαρρηκότες ἀναπαύσαιντο.",
+  "e": "But when the Greeks saw the cavalry of Pharnabazus standing with ranks still unbroken, and the Bithynian horsemen gathering together to join this force and looking down from a hill at what was going on, although they were tired they nevertheless thought that they must make as stout an attack as they could upon these troops also, so that they should not be able to regain courage and get rested. Accordingly, they formed their lines and set forth."
+ },
+ {
+  "k": "8d72c1a934074a4a",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "συνταξάμενοι δὴ πορεύονται. ἐντεῦθεν οἱ πολέμιοι ἱππεῖς φεύγουσι κατὰ τοῦ πρανοῦς ὁμοίως ὥσπερ ὑπὸ ἱππέων διωκόμενοι· νάπος γὰρ αὐτοὺς ὑπεδέχετο, ὃ οὐκ ᾔδεσαν οἱ Ἕλληνες, ἀλλὰ προαπετράποντο διώκοντες· ὀψὲ γὰρ ἦν.",
+  "e": "Thereupon the enemy’s horsemen fled down the slope just as if they were being pursued by horsemen; for a ravine was waiting to receive them, although the Greeks were not aware of the fact and hence turned aside from their pursuit before reaching it; for it was now late in the day."
+ },
+ {
+  "k": "faa14533b68eeb2f",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐπανελθόντες δὲ ἔνθα ἡ πρώτη συμβολὴ ἐγένετο, στησάμενοι τρόπαιον ἀπῇσαν ἐπὶ θάλατταν περὶ ἡλίου δυσμάς· στάδιοι δʼ ἦσαν ὡς ἑξήκοντα ἐπὶ τὸ στρατόπεδον.",
+  "e": "So after returning to the spot where the first encounter took place and erecting a trophy, they set out on their way back to the sea at about sunset; and the distance to the camp was about sixty stadia."
+ },
+ {
+  "k": "322fd77d9ce3d837",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐντεῦθεν οἱ μὲν πολέμιοι εἶχον ἀμφὶ τὰ ἑαυτῶν καὶ ἀπήγοντο καὶ τοὺς οἰκέτας καὶ τὰ χρήματα ὅποι ἐδύναντο προσωτάτω· οἱ δὲ Ἕλληνες προσέμενον μὲν Κλέανδρον καὶ τὰς τριήρεις καὶ τὰ πλοῖα ὡς ἥξοντα, ἐξιόντες δʼ ἑκάστης ἡμέρας σὺν τοῖς ὑποζυγίοις καὶ τοῖς ἀνδραπόδοις ἐφέροντο ἀδεῶς πυροὺς καὶ κριθάς, οἶνον, ὄσπρια, μελίνας, σῦκα· ἅπαντα γὰρ ἀγαθὰ εἶχεν ἡ χώρα πλὴν ἐλαίου.",
+  "e": "After this the enemy occupied themselves with their own concerns, especially removing their slaves and property to the remotest point they could; meanwhile the Greeks were waiting for Cleander and the triremes and ships which were, presumably, coming, but every day they set forth with their baggage animals and slaves and fearlessly carried off wheat and barley, wine, beans, millet, and figs; for the country had all manner of good things, except olive oil."
+ },
+ {
+  "k": "ca8b7aa841e0fb32",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὁπότε μὲν καταμένοι τὸ στράτευμα ἀναπαυόμενον, ἐξῆν ἐπὶ λείαν ἰέναι, καὶ ἐλάμβανον οἱ ἐξιόντες· ὁπότε δὲ ἐξίοι πᾶν τὸ στράτευμα, εἴ τις χωρὶς ἀπελθὼν λάβοι τι, δημόσιον ἔδοξεν εἶναι.",
+  "e": "Whenever the army remained in camp and rested, individuals were permitted to go out after plunder, and in that case kept what they got; but whenever the entire army set out, if an individual went off by himself and got anything, it was decreed to be public property."
+ },
+ {
+  "k": "5fd99a52c11468b1",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἤδη δὲ ἦν πάντων ἀφθονία· καὶ γὰρ ἀγοραὶ πάντοθεν ἀφικνοῦντο ἐκ τῶν Ἑλληνίδων πόλεων καὶ οἱ παραπλέοντες ἄσμενοι κατῆγον, ἀκούοντες ὡς οἰκίζοιτο πόλις καὶ λιμὴν εἴη.",
+  "e": "And by this time there was an abundance of everything, for market products came in from the Greek cities on all sides, and people coasting past were glad to put in, since they heard that a city was being founded and that there was a harbour."
+ },
+ {
+  "k": "64141b4aecf2496c",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἔπεμπον δὲ καὶ οἱ πολέμιοι ἤδη οἳ πλησίον ᾤκουν πρὸς Ξενοφῶντα, ἀκούοντες ὅτι οὗτος πολίζει τὸ χωρίον, ἐρωτῶντες ὅ τι δέοι ποιοῦντας φίλους εἶναι. ὁ δʼ ἀπεδείκνυεν αὐτοὺς τοῖς στρατιώταις.",
+  "e": "Even the hostile peoples who dwelt near by began now to send envoys to Xenophon—for they heard that he was the man who was making a city of the place—to ask what they must do in order to be his friends; and Xenophon would always show these envoys to the soldiers."
+ },
+ {
+  "k": "a31c4d1d6feaafe8",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "κἀν τούτῳ Κλέανδρος ἀφικνεῖται δύο τριήρεις ἔχων, πλοῖον δʼ οὐδέν. ἐτύγχανε δὲ τὸ στράτευμα ἔξω ὂν ὅτε ἀφίκετο καὶ ἐπὶ λείαν τινὲς οἰχόμενοι ἄλλοι εἰς τὸ ὄρος εἰλήφεσαν πρόβατα πολλά· ὀκνοῦντες δὲ μὴ ἀφαιρεθεῖεν τῷ Δεξίππῳ λέγουσιν, ὃς ἀπέδρα τὴν πεντηκόντορον ἔχων ἐκ Τραπεζοῦντος, καὶ κελεύουσι διασώσαντα αὐτοῖς τὰ πρόβατα τὰ μὲν αὐτὸν λαβεῖν, τὰ δὲ σφίσιν ἀποδοῦναι.",
+  "e": "Meanwhile Cleander arrived with two triremes, but not a single merchant ship. It so chanced that the army was out foraging when he arrived, while certain individuals had gone in quest of plunder to a different place in the mountains and had secured a large number of sheep; so fearing that they might be deprived of them, they told their story to Dexippus, the man who slipped away from Trapezus with the fifty-oared warship, and urged him to save their sheep for them, with the understanding that he was to get some of the sheep himself and give the rest back to them."
+ },
+ {
+  "k": "f4e2a44de99e796c",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "εὐθὺς δʼ ἐκεῖνος ἀπελαύνει τοὺς περιεστῶτας τῶν στρατιωτῶν καὶ λέγοντας ὅτι δημόσια εἴη, καὶ τῷ Κλεάνδρῳ λέγει ἐλθὼν ὅτι ἁρπάζειν ἐπιχειροῦσιν. ὁ δὲ κελεύει τὸν ἁρπάζοντα ἄγειν πρὸς αὑτόν.",
+  "e": "So he immediately proceeded to drive away the soldiers who were standing about and declaring that the animals were public property, and then he went and told Cleander that they were attempting robbery. Cleander directed him to bring the robber before him."
+ },
+ {
+  "k": "ffd366fc104fdc41",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "καὶ ὁ μὲν λαβὼν ἦγέ τινα· περιτυχὼν δʼ Ἀγασίας ἀφαιρεῖται· καὶ γὰρ ἦν αὐτῷ ὁ ἀγόμενος λοχίτης. οἱ δʼ ἄλλοι οἱ παρόντες τῶν στρατιωτῶν ἐπιχειροῦσι βάλλειν τὸν Δέξιππον, ἀνακαλοῦντες τὸν προδότην. ἔδεισαν δὲ καὶ τῶν τριηριτῶν πολλοὶ καὶ ἔφευγον εἰς τὴν θάλατταν, καὶ Κλέανδρος δʼ ἔφευγε.",
+  "e": "So he seized a man and tried to take him to Cleander, but Agasias, happening to meet them, rescued the man, for he was one of his company. Then the other soldiers who were at hand set to work to stone Dexippus, calling him The traitor. And many of the sailors from the triremes got frightened and began to flee toward the sea, and Cleander also fled."
+ },
+ {
+  "k": "3322f0d694d10a44",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "Ξενοφῶν δὲ καὶ οἱ ἄλλοι στρατηγοὶ κατεκώλυόν τε καὶ τῷ Κλεάνδρῳ ἔλεγον ὅτι οὐδὲν εἴη πρᾶγμα, ἀλλὰ τὸ δόγμα αἴτιον εἴη τὸ τοῦ στρατεύματος ταῦτα γενέσθαι.",
+  "e": "Xenophon, however, and the other generals tried to hold them back, and told Cleander that nothing was the matter, but that the resolution of the army was the reason for this incident taking place."
+ },
+ {
+  "k": "fea4e692377fe75f",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὁ δὲ Κλέανδρος ὑπὸ τοῦ Δεξίππου τε ἀνερεθιζόμενος καὶ αὐτὸς ἀχθεσθεὶς ὅτι ἐφοβήθη, ἀποπλευσεῖσθαι ἔφη καὶ κηρύξειν μηδεμίαν πόλιν δέχεσθαι αὐτούς, ὡς πολεμίους. ἦρχον δὲ τότε πάντων τῶν Ἑλλήνων οἱ Λακεδαιμόνιοι.",
+  "e": "But Cleander, goaded on by Dexippus and angered on his own account also because he had been frightened, declared that he would sail away and issue a proclamation forbidding any city to receive them, on the ground that they were enemies. And at this time the Lacedaemonians held the hegemony over all the Greeks."
+ },
+ {
+  "k": "fa6e92d7f589d217",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐνταῦθα πονηρὸν ἐδόκει τὸ πρᾶγμα εἶναι τοῖς Ἕλλησιν, καὶ ἐδέοντο μὴ ποιεῖν ταῦτα. ὁ δʼ οὐκ ἂν ἄλλως ἔφη γενέσθαι, εἰ μή τις ἐκδώσει τὸν ἄρξαντα βάλλειν καὶ τὸν ἀφελόμενον.",
+  "e": "Upon this the affair seemed to the Greeks a bad business, and they begged Cleander not to carry out his intention. He replied that no other course would be taken unless they should deliver up the man who began the stoning and the one who rescued Dexippus’ prisoner."
+ },
+ {
+  "k": "881229d9761a5efc",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἦν δὲ ὃν ἐξῄτει Ἀγασίας διὰ τέλους φίλος τῷ Ξενοφῶντι· ἐξ οὗ καὶ διέβαλλεν αὐτὸν ὁ Δέξιππος. καὶ ἐντεῦθεν ἐπειδὴ ἀπορία ἦν, συνήγαγον τὸ στράτευμα οἱ ἄρχοντες· καὶ ἔνιοι μὲν αὐτῶν παρʼ ὀλίγον ἐποιοῦντο τὸν Κλέανδρον, τῷ δὲ Ξενοφῶντι οὐκ ἐδόκει φαῦλον εἶναι, ἀλλʼ ἀναστὰς ἔλεξεν·",
+  "e": "Now Agasias, whom he thus demanded, had been a friend of Xenophon’s all through—which was the very reason why Dexippus was slandering him.After that the commanders, perplexed as they were, called a meeting of the army; and while some of them made light of Cleander, Xenophon thought that it was no trifling matter, and he arose and said:"
+ },
+ {
+  "k": "2d79c0e2177d0885",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ὦ ἄνδρες στρατιῶται, ἐμοὶ δὲ οὐδὲν φαῦλον δοκεῖ εἶναι τὸ πρᾶγμα, εἰ ἡμῖν οὕτως ἔχων τὴν γνώμην Κλέανδρος ἄπεισιν ὥσπερ λέγει. εἰσὶ μὲν γὰρ ἐγγὺς αἱ Ἑλληνίδες πόλεις· τῆς δὲ Ἑλλάδος Λακεδαιμόνιοι προεστήκασιν· ἱκανοὶ δέ εἰσι καὶ εἷς ἕκαστος Λακεδαιμονίων ἐν ταῖς πόλεσιν ὅ τι βούλονται διαπράττεσθαι.",
+  "e": "Fellow soldiers, it seems to me it is no trifling matter if Cleander is to go away with such an intention toward us as he has expressed. For the Greek cities are close by, the Lacedaemonians stand as the leaders of Greece, and they are able, nay, any single Lacedaemonian is able, to accomplish in the cities whatever he pleases."
+ },
+ {
+  "k": "17637f721edb8b22",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "εἰ οὖν οὗτος πρῶτον μὲν ἡμᾶς Βυζαντίου ἀποκλείσει, ἔπειτα δὲ τοῖς ἄλλοις ἁρμοσταῖς παραγγελεῖ εἰς τὰς πόλεις μὴ δέχεσθαι ὡς ἀπιστοῦντας Λακεδαιμονίοις καὶ ἀνόμους ὄντας, ἔτι δὲ πρὸς Ἀναξίβιον τὸν ναύαρχον οὗτος ὁ λόγος περὶ ἡμῶν ἥξει, χαλεπὸν ἔσται καὶ μένειν καὶ ἀποπλεῖν· καὶ γὰρ ἐν τῇ γῇ ἄρχουσι Λακεδαιμόνιοι καὶ ἐν τῇ θαλάττῃ τὸν νῦν χρόνον.",
+  "e": "Hence if this man shall begin by shutting us out of Byzantium, and then shall send word to the other governors not to receive us into their cities, on the ground that we are disobedient to the Lacedaemonians and lawless, and if, further, this report about us shall reach Anaxibius, the Lacedaemonian admiral, it will be difficult for us either to remain or to sail away; for at present the Lacedaemonians are supreme both on land and sea."
+ },
+ {
+  "k": "6dcc0c4209be38cb",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "οὔκουν δεῖ οὔτε ἑνὸς ἀνδρὸς ἕνεκα οὔτε δυοῖν ἡμᾶς τοὺς ἄλλους τῆς Ἑλλάδος ἀπέχεσθαι, ἀλλὰ πειστέον ὅ τι ἂν κελεύωσι· καὶ γὰρ αἱ πόλεις ἡμῶν ὅθεν ἐσμὲν πείθονται αὐτοῖς.",
+  "e": "Now the rest of us must not be kept away from Greece for the sake of one or two men, but we must obey whatever order the Lacedaemonians may give us; for the cities from which we come likewise obey them."
+ },
+ {
+  "k": "227f9faf31c0a66e",
+  "ctx": "色诺芬《远征记》· 卷 6",
+  "g": "ἐγὼ μὲν οὖν (καὶ γὰρ ἀκούω Δέξιππον λέγειν πρὸς Κλέανδρον ὡς οὐκ ἂν ἐποίησεν Ἀγασίας ταῦτα, εἰ μὴ ἐγὼ αὐτὸν ἐκέλευσα), ἐγὼ μὲν οὖν ἀπολύω καὶ ὑμᾶς τῆς αἰτίας καὶ Ἀγασίαν, ἂν αὐτὸς Ἀγασίας φήσῃ ἐμέ τι τούτων αἴτιον εἶναι, καὶ καταδικάζω ἐμαυτοῦ, εἰ ἐγὼ πετροβολίας ἢ ἄλλου τινὸς βιαίου ἐξάρχω, τῆς ἐσχάτης δίκης ἄξιος εἶναι, καὶ ὑφέξω τὴν δίκην.",
+  "e": "For my own part, therefore,—for I hear that Dexippus is saying to Cleander that Agasias would not have done what he did if I had not given him the order,—for my own part, I say, I relieve both you and Agasias of the accusation if Agasias himself shall say that I was in any way responsible for this occurrence, and I pass judgment against myself, if I have taken the lead in stone-throwing or any other sort of violence, that I deserve to suffer the uttermost penalty, and I shall submit to the penalty."
+ }
+]

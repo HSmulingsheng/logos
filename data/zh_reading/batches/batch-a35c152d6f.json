@@ -1,0 +1,824 @@
+[
+ {
+  "k": "c0356132f4dbab86",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ τοῖσι ἐσελθεῖν γὰρ ἡδονὴν εἰ μέλλοιεν ἀκούσεσθαι τοῦ ἀρίστου ἀνθρώπων ἀοιδοῦ, ἀναχωρῆσαι ἐκ τῆς πρύμνης ἐς μέσην νέα. τὸν δὲ ἐνδύντα τε πᾶσαν τὴν σκευὴν καὶ λαβόντα τὴν κιθάρην, στάντα ἐν τοῖσι ἑδωλίοισι διεξελθεῖν νόμον τὸν ὄρθιον, τελευτῶντος δὲ τοῦ νόμου ῥῖψαί μιν ἐς τὴν θάλασσαν ἑωυτὸν ὡς εἶχε σὺν τῇ σκευῇ πάσῃ.",
+  "e": "Abandoned to this extremity, Arion asked that, since they had made up their minds, they would let him stand on the half-deck in all his regalia and sing; and he promised that after he had sung he would do himself in. The men, pleased at the thought of hearing the best singer in the world, drew away toward the waist of the vessel from the stern. Arion, putting on all his regalia and taking his lyre, stood up on the half-deck and sang the “Stirring Song,” and when the song was finished he threw himself into the sea, as he was with all his regalia."
+ },
+ {
+  "k": "26b315b6e6867e79",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ τοὺς μὲν ἀποπλέειν ἐς Κόρινθον, τὸν δὲ δελφῖνα λέγουσι ὑπολαβόντα ἐξενεῖκαι ἐπὶ Ταίναρον. ἀποβάντα δέ αὐτὸν χωρέειν ἐς Κόρινθον σὺν τῇ σκευῇ, καὶ ἀπικόμενον ἀπηγέεσθαι πᾶν τὸ γεγονός.",
+  "e": ""
+ },
+ {
+  "k": "7391658c479d9c66",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Περίανδρον δὲ ὑπὸ ἀπιστίης Ἀρίονα μὲν ἐν φυλακῇ ἔχειν οὐδαμῇ μετιέντα, ἀνακῶς δὲ ἔχειν τῶν πορθμέων. ὡς δὲ ἄρα παρεῖναι αὐτούς, κληθέντας ἱστορέεσθαι εἴ τι λέγοιεν περὶ Ἀρίονος. φαμένων δὲ ἐκείνων ὡς εἴη τε σῶς περὶ Ἰταλίην καί μιν εὖ πρήσσοντα λίποιεν ἐν Τάραντι, ἐπιφανῆναί σφι τὸν Ἀρίονα ὥσπερ ἔχων ἐξεπήδησε· καὶ τοὺς ἐκπλαγέντας οὐκ ἔχειν ἔτι ἐλεγχομένους ἀρνέεσθαι.",
+  "e": "So the crew sailed away to Corinth [22.9083,37.9083] (Perseus) Corinth ; but a dolphin (so the story goes) took Arion on his back and bore him to Taenarus. Landing there, he went to Corinth [22.9083,37.9083] (Perseus) Corinth in his regalia, and when he arrived, he related all that had happened. Periander, skeptical, kept him in confinement, letting him go nowhere, and waited for the sailors. When they arrived, they were summoned and asked what news they brought of Arion. While they were saying that he was safe in Italy [12.833,42.833] (nation), Europe Italy and that they had left him flourishing at Taranto [17.216,40.466] (inhabited place), Taranto, Apulia, Italy, Europe Tarentum , Arion appeared before them, just as he was when he jumped from the ship; astonished, they could no longer deny what was proved against them."
+ },
+ {
+  "k": "0b50f0e811d9baf2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα μέν νυν Κορίνθιοί τε καὶ Λέσβιοι λέγουσι, καὶ Ἀρίονος ἐστὶ ἀνάθημα χάλκεον οὐ μέγα ἐπὶ Ταινάρῳ, ἐπὶ δελφῖνος ἐπὲων ἄνθρωπος.",
+  "e": ""
+ },
+ {
+  "k": "6f80662fd978d5d6",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Ἀλυάττης δὲ ὁ Λυδὸς τὸν πρὸς Μιλησίους πόλεμον διενείκας μετέπειτα τελευτᾷ, βασιλεύσας ἔτεα ἑπτὰ καὶ πεντήκοντα.",
+  "e": ""
+ },
+ {
+  "k": "70c2e59850940ed9",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀνέθηκε δὲ ἐκφυγὼν τὴν νοῦσον δεύτερος οὗτος τῆς οἰκίης ταύτης ἐς Δελφοὺς κρητῆρά τε ἀργύρεον μέγαν καὶ ὑποκρητηρίδιον σιδήρεον κολλητόν, θέης ἄξιον διὰ πάντων τῶν ἐν Δελφοῖσι ἀναθημάτων, Γλαύκου τοῦ Χίου ποίημα, ὃς μοῦνος δὴ πάντων ἀνθρώπων σιδήρου κόλλησιν ἐξεῦρε.",
+  "e": "This is what the Corinthians and Lesbians say, and there is a little bronze memorial of Arion on Taenarus, the figure of a man riding upon a dolphin. Alyattes the Lydian, his war with the Milesians finished, died after a reign of fifty-seven years."
+ },
+ {
+  "k": "aa97a24b0b95652c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τελευτήσαντος δὲ Ἀλυάττεω ἐξεδέξατο τὴν βασιληίην Κροῖσος ὁ Ἀλυάττεω, ἐτέων ἐὼν ἡλικίην πέντε καὶ τριήκοντα· ὃς δὴ Ἑλλήνων πρώτοισι ἐπεθήκατο Ἐφεσίοισι.",
+  "e": "He was the second of his family to make an offering to Delphi [22.5167,38.4917] (Perseus) Delphi (after recovering from his illness) of a great silver bowl on a stand of welded iron. Among all the offerings at Delphi [22.5167,38.4917] (Perseus) Delphi , this is the most worth seeing, and is the work of Glaucus the Chian, the only one of all men who discovered how to weld iron."
+ },
+ {
+  "k": "e88177985888e57c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔνθα δὴ οἱ Ἐφέσιοι πολιορκεόμενοι ὑπʼ αὐτοῦ ἀνέθεσαν τὴν πόλιν τῇ Ἀρτέμιδι, ἐξάψαντες ἐκ τοῦ νηοῦ σχοινίον ἐς τὸ τεῖχος. ἔστι δὲ μεταξὺ τῆς τε παλαιῆς πόλιος, ἣ τότε ἐπολιορκέετο, καὶ τοῦ νηοῦ ἑπτὰ στάδιοι.",
+  "e": "After the death of Alyattes, his son Croesus, then thirty-five years of age, came to the throne. The first Greeks whom he attacked were the Ephesians."
+ },
+ {
+  "k": "c9dc39745d40fb24",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πρώτοισι μὲν δὴ τούτοισι ἐπεχείρησε ὁ Κροῖσος, μετὰ δὲ ἐν μέρεϊ ἑκάστοισι Ἰώνων τε καὶ Αἰολέων, ἄλλοισι ἄλλας αἰτίας ἐπιφέρων, τῶν μὲν ἐδύνατο μέζονας παρευρίσκειν, μέζονα ἐπαιτιώμενος, τοῖσι δὲ αὐτῶν καὶ φαῦλα ἐπιφέρων.",
+  "e": "These, besieged by him, dedicated their city to Artemis; they did this by attaching a rope to the city wall from the temple of the goddess, which stood seven stades away from the ancient city which was then besieged."
+ },
+ {
+  "k": "a5af9bd30534892d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ἄρα οἱ ἐν τῇ Ἀσίῃ Ἕλληνες κατεστράφατο ἐς φόρου ἀπαγωγήν, τὸ ἐνθεῦτεν ἐπενόεε νέας ποιησάμενος ἐπιχειρέειν τοῖσι νησιώτῃσι.",
+  "e": "These were the first whom Croesus attacked; afterwards he made war on the Ionian and Aeolian cities in turn, upon different pretexts: he found graver charges where he could, but sometimes alleged very petty grounds of offense."
+ },
+ {
+  "k": "e3247443eb25cc15",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐόντων δέ οἱ πάντων ἑτοίμων ἐς τὴν ναυπηγίην, οἳ μὲν Βίαντα λέγουσι τὸν Πριηνέα ἀπικόμενον ἐς Σάρδις, οἳ δὲ Πιττακὸν τὸν Μυτιληναῖον, εἰρομένου Κροίσου εἴ τι εἴη νεώτερον περὶ τὴν Ἑλλάδα, εἰπόντα τάδε καταπαῦσαι τὴν ναυπηγίην·",
+  "e": "Then, when he had subjugated all the Asiatic Greeks of the mainland and made them tributary to him, he planned to build ships and attack the islanders;"
+ },
+ {
+  "k": "2146fe8ee7ab0c36",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὦ βασιλεῦ, νησιῶται ἵππον συνωνέονται μυρίην, ἐς Σάρδις τε καὶ ἐπὶ σὲ ἐν νόῳ ἔχοντες στρατεύεσθαι. Κροῖσον δὲ ἐλπίσαντα λέγειν ἐκεῖνον ἀληθέα εἰπεῖν αἲ γὰρ τοῦτο θεοὶ ποιήσειαν ἐπὶ νόον νησιώτῃσι, ἐλθεῖν ἐπὶ Λυδῶν παῖδας σὺν ἵπποισι.",
+  "e": "but when his preparations for shipbuilding were underway, either Bias of Priene [27.2833,37.6333] (Perseus) Priene or Pittacus of Mytilene [26.55,39.1] (Perseus) Mytilene (the story is told of both) came to Sardis [28.0167,38.475] (Perseus) Sardis and, asked by Croesus for news about Greece [22,39] (nation), Europe Hellas , put an end to the shipbuilding by giving the following answer:"
+ },
+ {
+  "k": "0543a669bb180746",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὸν δὲ ὑπολαβόντα φάναι ὦ βασιλεῦ, προθύμως μοι φαίνεαι εὔξασθαι νησιώτας ἱππευομένους λαβεῖν ἐν ἠπείρῳ, οἰκότα ἐλπίζων. νησιώτας δὲ τί δοκέεις εὔχεσθαι ἄλλο ἤ, ἐπείτε τάχιστα ἐπύθοντό σε μέλλοντα ἐπὶ σφίσι ναυπηγέεσθαι νέας, λαβεῖν ἀρώμενοι Λυδούς ἐν θαλάσσῃ, ἵνα ὓπερ τῶν ἐν τῇ ἠπείρῳ οἰκημένων Ἑλλήνων τίσωνταί σε, τοὺς σὺ δουλώσας ἔχεις;",
+  "e": "“O King, the islanders are buying ten thousand horse, intending to march to Sardis [28.0167,38.475] (Perseus) Sardis against you.” Croesus, thinking that he spoke the truth, said: “Would that the gods would put this in the heads of the islanders, to come on horseback against the sons of the Lydians!” Then the other answered and said:"
+ },
+ {
+  "k": "1e883082bbbbc335",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "κάρτα τε ἡσθῆναι Κροῖσον τῷ ἐπιλόγῳ καί οἱ, προσφυέως γὰρ δόξαι λέγειν, πειθόμενον παύσασθαι τῆς ναυπηγίης. καὶ οὕτω τοῖσι τὰς νήσους οἰκημένοισι Ἴωσι ξεινίην συνεθήκατο.",
+  "e": "“O King, you appear to me earnestly to wish to catch the islanders riding horses on the mainland, a natural wish. And what else do you suppose the islanders wished, as soon as they heard that you were building ships to attack them, than to catch Lydians on the seas, so as to be revenged on you for the Greeks who dwell on the mainland, whom you enslaved?”"
+ },
+ {
+  "k": "78293542ff0fc24f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "χρόνου δὲ ἐπιγινομένου καὶ κατεστραμμένων σχεδὸν πάντων τῶν ἐντὸς Ἅλυος ποταμοῦ οἰκημένων· πλὴν γὰρ Κιλίκων καὶ Λυκίων τοὺς ἄλλους πάντας ὑπʼ ἑωυτῷ εἶχε καταστρεψάμενος ὁ Κροῖσος. εἰσὶ δὲ οἵδε, Λυδοί, Φρύγες, Μυσοί, Μαριανδυνοί, Χάλυβες, Παφλαγόνες, Θρήικες οἱ Θυνοί τε καὶ Βιθυνοί, Κᾶρες, Ἴωνες, Δωριέες, Αἰολέες, Πάμφυλοι κατεστραμμένων δὲ τούτων καὶ προσεπικτωμένου Κροίσου Λυδοῖσι,",
+  "e": "Croesus was quite pleased with this conclusion, for he thought the man spoke reasonably and, heeding him, stopped building ships. Thus he made friends with the Ionians inhabiting the islands. As time went on, Croesus subjugated almost all the nations west of the Halys River (river), Turkey, Asia Halys ; for except the Cilicians and Lycians, all the rest Croesus held subject under him. These were the Lydians, Phrygians, Mysians, Mariandynians, Chalybes, Paphlagonians, the Thracian Thynians and Bithynians, Carians, Ionians, Dorians, Aeolians, and Pamphylians;"
+ },
+ {
+  "k": "8a790b7f3e22286a",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀπικνέονται ἐς Σάρδις ἀκμαζούσας πλούτῳ ἄλλοι τε οἱ πάντες ἐκ τῆς Ἑλλάδος σοφισταί, οἳ τοῦτον τὸν χρόνον ἐτύγχανον ἐόντες, ὡς ἕκαστος αὐτῶν ἀπικνέοιτο, καὶ δὴ καὶ Σόλων ἀνὴρ Ἀθηναῖος, ὃς Ἀθηναίοισι νόμους κελεύσασι ποιήσας ἀπεδήμησε ἔτεα δέκα κατά θεωρίης πρόφασιν ἐκπλώσας,ἵνα δὴ μή τινα τῶν νόμων ἀναγκασθῇ, λῦσαι τῶν ἔθετο.",
+  "e": ""
+ },
+ {
+  "k": "e47ed336e433d6d0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "αὐτοὶ γὰρ οὐκ οἷοί τε ἦσαν αὐτὸ ποιῆσαι Ἀθηναῖοι· ὁρκίοισι γὰρ μεγάλοισι κατείχοντο δέκα ἔτεα χρήσεσθαι νόμοισι τοὺς ἄν σφι Σόλων θῆται.",
+  "e": "and after these were subdued and subject to Croesus in addition to the Lydians, all the sages from Greece [22,39] (nation), Europe Hellas who were living at that time, coming in different ways, came to Sardis [28.0167,38.475] (Perseus) Sardis , which was at the height of its property; and among them came Solon the Athenian, who, after making laws for the Athenians at their request, went abroad for ten years, sailing forth to see the world, he said. This he did so as not to be compelled to repeal any of the laws he had made,"
+ },
+ {
+  "k": "6ff5a0d7bd1f6e4c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "αὐτῶν δὴ ὦν τούτων καὶ τῆς θεωρίης ἐκδημήσας ὁ Σόλων εἵνεκεν ἐς Αἴγυπτον ἀπίκετο παρὰ Ἄμασιν καὶ δὴ καὶ ἐς Σάρδις παρὰ Κροῖσον. ἀπικόμενος δὲ ἐξεινίζετο ἐν τοῖσι βασιληίοισι ὑπὸ τοῦ Κροίσου· μετὰ δὲ ἡμέρῃ τρίτῃ ἢ τετάρτῃ κελεύσαντος Κροίσου τὸν Σόλωνα θεράποντες περιῆγον κατὰ τοὺς θησαυρούς, καὶ ἐπεδείκνυσαν πάντα ἐόντα μεγάλα τε καὶ ὄλβια.",
+  "e": "since the Athenians themselves could not do that, for they were bound by solemn oaths to abide for ten years by whatever laws Solon should make."
+ },
+ {
+  "k": "0271a8bc549e3a61",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "θεησάμενον δέ μιν τὰ πάντα καὶ σκεψάμενον ὥς οἱ κατὰ καιρὸν ἦν, εἴρετο ὁ Κροῖσος τάδε. ξεῖνε Ἀθηναῖε, παρʼ ἡμέας γὰρ περὶ σέο λόγος ἀπῖκται πολλὸς καὶ σοφίης εἵνεκεν τῆς σῆς καὶ πλάνης, ὡς φιλοσοφέων γῆν πολλὴν θεωρίης εἵνεκεν ἐπελήλυθας· νῦν ὦν ἐπειρέσθαι με ἵμερος ἐπῆλθέ σε εἴ τινα ἤδη πάντων εἶδες ὀλβιώτατον.",
+  "e": "So for that reason, and to see the world, Solon went to visit Amasis in Egypt [30,27] (nation), Africa Egypt and then to Croesus in Sardis [28.0167,38.475] (Perseus) Sardis . When he got there, Croesus entertained him in the palace, and on the third or fourth day Croesus told his attendants to show Solon around his treasures, and they pointed out all those things that were great and blest."
+ },
+ {
+  "k": "18d2d23f7d8eb89a",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ μὲν ἐλπίζων εἶναι ἀνθρώπων ὀλβιώτατος ταῦτα ἐπειρώτα· Σόλων δὲ οὐδὲν ὑποθωπεύσας ἀλλὰ τῷ ἐόντι χρησάμενος λέγει ὦ βασιλεῦ, Τέλλον Ἀθηναῖον.",
+  "e": "After Solon had seen everything and had thought about it, Croesus found the opportunity to say, “My Athenian guest, we have heard a lot about you because of your wisdom and of your wanderings, how as one who loves learning you have traveled much of the world for the sake of seeing it, so now I desire to ask you who is the most fortunate man you have seen.”"
+ },
+ {
+  "k": "3c0d0d204a47e488",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀποθωμάσας δὲ Κροῖσος τὸ λεχθὲν εἴρετο ἐπιστρεφέως· κοίῃ δὴ κρίνεις Τέλλον εἶναι ὀλβιώτατον; ὁ δὲ εἶπε Τέλλῳ τοῦτο μὲν τῆς πόλιος εὖ ἡκούσης παῖδες ἦσαν καλοί τε κἀγαθοί, καί σφι εἶδε ἅπασι τέκνα ἐκγενόμενα καὶ πάντα παραμείναντα· τοῦτο δὲ τοῦ βίου εὖ ἥκοντι, ὡς τὰ παρʼ ἡμῖν, τελευτὴ τοῦ βίου λαμπροτάτη ἐπεγένετο·",
+  "e": "Croesus asked this question believing that he was the most fortunate of men, but Solon, offering no flattery but keeping to the truth, said, “O King, it is Tellus the Athenian.”"
+ },
+ {
+  "k": "025d3e4fae006866",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "γενομένης γὰρ Ἀθηναίοισι μάχης πρὸς τοὺς ἀστυγείτονας ἐν Ἐλευσῖνι, βοηθήσας καὶ τροπὴν ποιήσας τῶν πολεμίων ἀπέθανε κάλλιστα, καί μιν Ἀθηναῖοι δημοσίῃ τε ἔθαψαν αὐτοῦ τῇ περ ἔπεσε καὶ ἐτίμησαν μεγάλως.",
+  "e": "Croesus was amazed at what he had said and replied sharply, “In what way do you judge Tellus to be the most fortunate?” Solon said, “Tellus was from a prosperous city, and his children were good and noble. He saw children born to them all, and all of these survived. His life was prosperous by our standards, and his death was most glorious:"
+ },
+ {
+  "k": "24decfddc04c6f59",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὣς δὲ τὰ κατὰ τὸν Τέλλον προετρέψατο ὁ Σόλων τὸν Κροῖσον εἴπας πολλά τε καὶ ὀλβία, ἐπειρώτα τίνα δεύτερον μετʼ ἐκεῖνον ἴδοι, δοκέων πάγχυ δευτερεῖα γῶν οἴσεσθαι. ὃ δʼ εἶπε Κλέοβίν τε καὶ Βίτωνα.",
+  "e": "when the Athenians were fighting their neighbors in Eleusis [23.5583,38.0417] (Perseus) Eleusis , he came to help, routed the enemy, and died very finely. The Athenians buried him at public expense on the spot where he fell and gave him much honor.”"
+ },
+ {
+  "k": "e3b0104a4fe8384d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τούτοισι γὰρ ἐοῦσι γένος Ἀργείοισι βίος τε ἀρκέων ὑπῆν, καὶ πρὸς τούτῳ ῥώμη σώματος τοιήδε· ἀεθλοφόροι τε ἀμφότεροι ὁμοίως ἦσαν, καὶ δὴ καὶ λέγεται ὅδε ὁ λόγος. ἐούσης ὁρτῆς τῇ Ἥρῃ τοῖσι Ἀργείοισι ἔδεε πάντως τὴν μητέρα αὐτῶν ζεύγεϊ κομισθῆναι ἐς τὸ ἱρόν, οἱ δέ σφι βόες ἐκ τοῦ ἀγροῦ οὐ παρεγίνοντο ἐν ὥρῃ· ἐκκληιόμενοι δὲ τῇ ὥρῃ οἱ νεηνίαι ὑποδύντες αὐτοὶ ὑπὸ τὴν ζεύγλην εἷλκον τὴν ἅμαξαν, ἐπὶ τῆς ἁμάξης δέ σφι ὠχέετο ἡ μήτηρ· σταδίους δὲ πέντε καὶ τεσσεράκοντα διακομίσαντες ἀπίκοντο ἐς τὸ ἱρόν.",
+  "e": "When Solon had provoked him by saying that the affairs of Tellus were so fortunate, Croesus asked who he thought was next, fully expecting to win second prize. Solon answered, “Cleobis and Biton. They were of Argive stock, had enough to live on, and on top of this had great bodily strength. Both had won prizes in the athletic contests, and this story is told about them: there was a festival of Hera in Argos [22.7333,37.6417] (Perseus) Argos , and their mother absolutely had to be conveyed to the temple by a team of oxen. But their oxen had not come back from the fields in time, so the youths took the yoke upon their own shoulders under constraint of time. They drew the wagon, with their mother riding atop it, traveling five miles until they arrived at the temple."
+ },
+ {
+  "k": "107fb577c93ec9b4",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα δέ σφι ποιήσασι καὶ ὀφθεῖσι ὑπὸ τῆς πανηγύριος τελευτὴ τοῦ βίου ἀρίστη ἐπεγένετο, διέδεξέ τε ἐν τούτοισι ὁ θεὸς ὡς ἄμεινον εἴη ἀνθρώπῳ τεθνάναι μᾶλλον ἢ ζώειν. Ἀργεῖοι μὲν γὰρ περιστάντες ἐμακάριζον τῶν νεηνιέων τὴν ῥώμην, αἱ δὲ Ἀργεῖαι τὴν μητέρα αὐτῶν, οἵων τέκνων ἐκύρησε·",
+  "e": ""
+ },
+ {
+  "k": "e919331d1ab88923",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἡ δὲ μήτηρ περιχαρής ἐοῦσα τῷ τε ἔργῳ καὶ τῇ φήμῃ, στᾶσα ἀντίον τοῦ ἀγάλματος εὔχετο Κλεόβι τε καὶ Βίτωνι τοῖσι ἑωυτῆς τέκνοισι, οἵ μιν ἐτίμησαν μεγάλως, τὴν θεὸν δοῦναι τὸ ἀνθρώπῳ τυχεῖν ἄριστον ἐστί.",
+  "e": "When they had done this and had been seen by the entire gathering, their lives came to an excellent end, and in their case the god made clear that for human beings it is a better thing to die than to live. The Argive men stood around the youths and congratulated them on their strength; the Argive women congratulated their mother for having borne such children."
+ },
+ {
+  "k": "3f8a7b842549da4b",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ ταύτην δὲ τὴν εὐχὴν ὡς ἔθυσάν τε καὶ εὐωχήθησαν, κατακοιμηθέντες ἐν αὐτῷ τῷ ἱρῷ οἱ νεηνίαι οὐκέτι ἀνέστησαν ἀλλʼ ἐν τέλεϊ τούτῳ ἔσχοντο. Ἀργεῖοι δὲ σφέων εἰκόνας ποιησάμενοι ἀνέθεσαν ἐς Δελφοὺς ὡς ἀριστῶν γενομένων.",
+  "e": "She was overjoyed at the feat and at the praise, so she stood before the image and prayed that the goddess might grant the best thing for man to her children Cleobis and Biton, who had given great honor to the goddess."
+ },
+ {
+  "k": "b390e36462471863",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Σόλων μὲν δὴ εὐδαιμονίης δευτερεῖα ἔνεμε τούτοισι, Κροῖσος δὲ σπερχθεὶς εἶπε ὦ ξεῖνε Ἀθηναῖε, ἡ δʼ ἡμετέρη εὐδαιμονίη οὕτω τοι ἀπέρριπται ἐς τὸ μηδὲν ὥστε οὐδὲ ἰδιωτέων ἀνδρῶν ἀξίους ἡμέας ἐποίησας; ὁ δὲ εἶπε ὦ Κροῖσε, ἐπιστάμενόν με τὸ θεῖον πᾶν ἐὸν φθονερόν τε καὶ ταραχῶδες ἐπειρωτᾷς ἀνθρωπηίων πρηγμάτων πέρι.",
+  "e": "After this prayer they sacrificed and feasted. The youths then lay down in the temple and went to sleep and never rose again; death held them there. The Argives made and dedicated at Delphi [22.5167,38.4917] (Perseus) Delphi statues of them as being the best of men.” Thus Solon granted second place in happiness to these men. Croesus was vexed and said, “My Athenian guest, do you so much despise our happiness that you do not even make us worth as much as common men?” Solon replied, “Croesus, you ask me about human affairs, and I know that the divine is entirely grudging and troublesome to us."
+ },
+ {
+  "k": "6724ba541b73d23e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐν γὰρ τῷ μακρῷ χρόνῳ πολλὰ μὲν ἐστὶ ἰδεῖν τὰ μή τις ἐθέλει, πολλὰ δὲ καὶ παθεῖν. ἐς γὰρ ἑβδομήκοντα ἔτεα οὖρον τῆς ζόης ἀνθρώπῳ προτίθημι.",
+  "e": ""
+ },
+ {
+  "k": "54ed90ab77af0952",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὗτοι ἐόντες ἐνιαυτοὶ ἑβδομήκοντα παρέχονται ἡμέρας διηκοσίας καὶ πεντακισχιλίας καὶ δισμυρίας, ἐμβολίμου μηνὸς μὴ γινομένου· εἰ δὲ δὴ ἐθελήσει τοὔτερον τῶν ἐτέων μηνὶ μακρότερον γίνεσθαι, ἵνα δὴ αἱ ὧραι συμβαίνωσι παραγινόμεναι ἐς τὸ δέον, μῆνες μὲν παρὰ τὰ ἑβδομήκοντα ἔτεα οἱ ἐμβόλιμοι γίνονται τριήκοντα πέντε, ἡμέραι δὲ ἐκ τῶν μηνῶν τούτων χίλιαι πεντήκοντα.",
+  "e": "In a long span of time it is possible to see many things that you do not want to, and to suffer them, too. I set the limit of a man's life at seventy years; these seventy years have twenty-five thousand, two hundred days, leaving out the intercalary month. But if you make every other year longer by one month, so that the seasons agree opportunely, then there are thirty-five intercalary months during the seventy years, and from these months there are one thousand fifty days."
+ },
+ {
+  "k": "951a1a47542f278b",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τουτέων τῶν ἁπασέων ἡμερέων τῶν ἐς τὰ ἑβδομήκοντα ἔτεα, ἐουσέων πεντήκοντα καὶ διηκοσιέων καὶ ἑξακισχιλιέων καὶ δισμυριέων, ἡ ἑτέρη αὐτέων τῇ ἑτέρῃ ἡμέρῃ τὸ παράπαν οὐδὲν ὅμοιον προσάγει πρῆγμα. οὕτω ὦν Κροῖσε πᾶν ἐστὶ ἄνθρωπος συμφορή.",
+  "e": "Out of all these days in the seventy years, all twenty-six thousand, two hundred and fifty of them, not one brings anything at all like another. So, Croesus, man is entirely chance."
+ },
+ {
+  "k": "2a732aa7f17623cf",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐμοὶ δὲ σὺ καὶ πλουτέειν μέγα φαίνεαι καὶ βασιλεὺς πολλῶν εἶναι ἀνθρώπων· ἐκεῖνο δὲ τὸ εἴρεό με, οὔκω σε ἐγὼ λέγω, πρὶν τελευτήσαντα καλῶς τὸν αἰῶνα πύθωμαι. οὐ γάρ τι ὁ μέγα πλούσιος μᾶλλον τοῦ ἐπʼ ἡμέρην ἔχοντος ὀλβιώτερος ἐστί, εἰ μή οἱ τύχη ἐπίσποιτο πάντα καλὰ ἔχοντα εὖ τελευτῆσαὶ τὸν βίον. πολλοὶ μὲν γὰρ ζάπλουτοι ἀνθρώπων ἀνόλβιοι εἰσί, πολλοὶ δὲ μετρίως ἔχοντες βίου εὐτυχέες.",
+  "e": "To me you seem to be very rich and to be king of many people, but I cannot answer your question before I learn that you ended your life well. The very rich man is not more fortunate than the man who has only his daily needs, unless he chances to end his life with all well. Many very rich men are unfortunate, many of moderate means are lucky."
+ },
+ {
+  "k": "3d28ed5d736e2bd1",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὁ μὲν δὴ μέγα πλούσιος ἀνόλβιος δὲ δυοῖσι προέχει τοῦ εὐτυχέος μοῦνον, οὗτος δὲ τοῦ πλουσίου καὶ ἀνόλβου πολλοῖσι· ὃ μὲν ἐπιθυμίην ἐκτελέσαι καί ἄτην μεγάλην προσπεσοῦσαν ἐνεῖκαι δυνατώτερος, ὁ δὲ τοῖσιδε προέχει ἐκείνου· ἄτην μὲν καὶ ἐπιθυμίην οὐκ ὁμοίως δυνατὸς ἐκείνῳ ἐνεῖκαι, ταῦτα δὲ ἡ εὐτυχίη οἱ ἀπερύκει, ἄπηρος δὲ ἐστί, ἄνουσος, ἀπαθὴς κακῶν, εὔπαις, εὐειδής.",
+  "e": "The man who is very rich but unfortunate surpasses the lucky man in only two ways, while the lucky surpasses the rich but unfortunate in many. The rich man is more capable of fulfilling his appetites and of bearing a great disaster that falls upon him, and it is in these ways that he surpasses the other. The lucky man is not so able to support disaster or appetite as is the rich man, but his luck keeps these things away from him, and he is free from deformity and disease, has no experience of evils, and has fine children and good looks. If besides all this he ends his life well, then he is the one whom you seek, the one worthy to be called fortunate. But refrain from calling him fortunate before he dies; call him lucky."
+ },
+ {
+  "k": "eae843d7d0c7d722",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "εἰ δὲ πρὸς τούτοισι ἔτι τελευτήσῃ τὸν βίον εὖ, οὗτος ἐκεῖνος τὸν σὺ ζητέεις, ὁ ὄλβιος κεκλῆσθαι ἄξιος ἐστί· πρὶν δʼ ἂν τελευτήσῃ, ἐπισχεῖν, μηδὲ καλέειν κω ὄλβιον ἀλλʼ εὐτυχέα.",
+  "e": ""
+ },
+ {
+  "k": "4b921d6112ca0aba",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὰ πάντα μέν νυν ταῦτα συλλαβεῖν ἄνθρωπον ἐόντα ἀδύνατον ἐστί, ὥσπερ χωρῇ οὐδεμία καταρκέει πάντα ἑωυτῇ παρέχουσα, ἀλλὰ ἄλλο μὲν ἔχει ἑτέρου δὲ ἐπιδέεται· ἣ δὲ ἂν τὰ πλεῖστα ἔχῃ, αὕτη ἀρίστη. ὣς δὲ καὶ ἀνθρώπου σῶμα ἓν οὐδὲν αὔταρκες ἐστί· τὸ μὲν γὰρ ἔχει, ἄλλου δὲ ἐνδεές ἐστι·",
+  "e": "It is impossible for one who is only human to obtain all these things at the same time, just as no land is self-sufficient in what it produces. Each country has one thing but lacks another; whichever has the most is the best. Just so no human being is self-sufficient; each person has one thing but lacks another. Whoever passes through life with the most and then dies agreeably is the one who, in my opinion, O King, deserves to bear this name. It is necessary to see how the end of every affair turns out, for the god promises fortune to many people and then utterly ruins them.”"
+ },
+ {
+  "k": "12a167257c544491",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃς δʼ ἂν αὐτῶν πλεῖστα ἔχων διατελέῃ καὶ ἔπειτα τελευτήσῃ εὐχαρίστως τὸν βίον, οὗτος παρʼ ἐμοὶ τὸ οὔνομα τοῦτο ὦ βασιλεῦ δίκαιος ἐστὶ φέρεσθαι. σκοπέειν δὲ χρὴ παντὸς χρήματος τὴν τελευτήν, κῇ ἀποβήσεται· πολλοῖσι γὰρ δὴ ὑποδέξας ὄλβον ὁ θεὸς προρρίζους ἀνέτρεψε.",
+  "e": "By saying this, Solon did not at all please Croesus, who sent him away without regard for him, but thinking him a great fool, because he ignored the present good and told him to look to the end of every affair."
+ },
+ {
+  "k": "c7a0a79227fd0acf",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα λέγων τῷ Κροίσῳ οὔ κως οὔτε ἐχαρίζετο, οὔτε λόγου μιν ποιησάμενος οὐδενὸς ἀποπέμπεται, κάρτα δόξας ἀμαθέα εἶναι, ὃς τὰ παρεόντα ἀγαθὰ μετεὶς τὴν τελευτὴν παντὸς χρήματος ὁρᾶν ἐκέλευε.",
+  "e": "But after Solon's departure divine retribution fell heavily on Croesus; as I guess, because he supposed himself to be blessed beyond all other men. Directly, as he slept, he had a dream, which showed him the truth of the evil things which were going to happen concerning his son."
+ },
+ {
+  "k": "d61b58e452ee51b7",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ δὲ Σόλωνα οἰχόμενον ἔλαβέ ἐκ θεοῦ νέμεσις μεγάλη Κροῖσον, ὡς εἰκάσαι, ὅτι ἐνόμισε ἑωυτὸν εἶναι ἀνθρώπων ἁπάντων ὀλβιώτατον. αὐτίκα δέ οἱ εὕδοντι ἐπέστη ὄνειρος, ὅς οἱ τὴν ἀληθείην ἔφαινε τῶν μελλόντων γενέσθαι κακῶν κατὰ τὸν παῖδα.",
+  "e": "He had two sons, one of whom was ruined, for he was mute, but the other, whose name was Atys, was by far the best in every way of all of his peers. The dream showed this Atys to Croesus, how he would lose him struck and killed by a spear of iron."
+ },
+ {
+  "k": "6b2f4584a8a00cbd",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἦσαν δὲ τῷ Κροίσῳ δύο παῖδες, τῶν οὕτερος μὲν διέφθαρτο, ἦν γὰρ δὴ κωφός, ὁ δὲ ἕτερος τῶν ἡλίκων μακρῷ τὰ πάντα πρῶτος· οὔνομα δέ οἱ ἦν Ἄτυς. τοῦτον δὴ ὦν τὸν Ἄτυν σημαίνει τῷ Κροίσῳ ὁ ὄνειρος, ὡς ἀπολέει μιν αἰχμῇ σιδηρέῃ βληθέντα.",
+  "e": "So Croesus, after he awoke and considered, being frightened by the dream, brought in a wife for his son, and although Atys was accustomed to command the Lydian armies, Croesus now would not send him out on any such enterprise, while he took the javelins and spears and all such things that men use for war from the men's apartments and piled them in his store room, lest one should fall on his son from where it hung."
+ },
+ {
+  "k": "c23554e9300d6abb",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ δʼ ἐπείτε ἐξηγέρθη καὶ ἑωυτῷ λόγον ἔδωκε, καταρρωδήσας τὸν ὄνειρον ἄγεται μὲν τῷ παιδὶ γυναῖκα, ἐωθότα δὲ στρατηγέειν μιν τῶν Λυδῶν οὐδαμῇ ἔτι ἐπὶ τοιοῦτο πρῆγμα ἐξέπεμπε· ἀκόντια δὲ καὶ δοράτια καὶ τά τοιαῦτα πάντα τοῖσι χρέωνται ἐς πόλεμον ἄνθρωποι, ἐκ τῶν ἀνδρεώνων ἐκκομίσας ἐς τοὺς θαλάμους συνένησε, μή τί οἱ κρεμάμενον τῷ παιδὶ ἐμπέσῃ.",
+  "e": "Now while Croesus was occupied with the marriage of his son, a Phrygian of the royal house came to Sardis [28.0167,38.475] (Perseus) Sardis , in great distress and with unclean hands. This man came to Croesus' house, and asked to be purified according to the custom of the country; so Croesus purified him ("
+ },
+ {
+  "k": "ade627d0e7c81e4f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔχοντι δέ οἱ ἐν χερσὶ τοῦ παιδὸς τὸν γάμον, ἀπικνέεται ἐς τὰς Σάρδις ἀνὴρ συμφορῇ ἐχόμενος καὶ οὐ καθαρὸς χεῖρας, ἐὼν Φρὺξ μὲν γενεῇ, γένεος δὲ τοῦ βασιληίου. παρελθὼν δὲ οὗτος ἐς τὰ Κροίσου οἰκία κατὰ νόμους τοὺς ἐπιχωρίους καθαρσίου ἐδέετο κυρῆσαι, Κροῖσος δέ μιν ἐκάθηρε.",
+  "e": "the Lydians have the same manner of purification as the Greeks), and when he had done everything customary, he asked the Phrygian where he came from and who he was:"
+ },
+ {
+  "k": "66355cc20e6e3a9e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔστι δὲ παραπλησίη ἡ κάθαρσις τοῖσι Λυδοῖσι καὶ τοῖσι Ἕλλησι. ἐπείτε δὲ τὰ νομιζόμενα ἐποίησε ὁ Κροῖσος, ἐπυνθάνετο ὁκόθεν τε καὶ τίς εἴη, λέγων τάδε·",
+  "e": "“Friend,” he said, “who are you, and from what place in Phrygia (region (general)), Turkey, Asia Phrygia do you come as my suppliant? And what man or woman have you killed?” “O King,” the man answered, “I am the son of Gordias the son of Midas, and my name is Adrastus; I killed my brother accidentally, and I come here banished by my father and deprived of all.”"
+ },
+ {
+  "k": "d2776d84f8193c91",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὤνθρωπε, τίς τε ἐὼν καὶ κόθεν τῆς Φρυγίης ἥκων ἐπίστιός μοι ἐγένεο; τίνα τε ἀνδρῶν ἢ γυναικῶν ἐφόνευσας; ὁ δὲ ἀμείβετο ὦ βασιλεῦ, Γορδίεω μὲν τοῦ Μίδεω εἰμὶ παῖς, ὀνομάζομαι δὲ Ἄδρηστος, φονεύσας δὲ ἀδελφεὸν ἐμεωυτοῦ ἀέκων πάρειμι ἐξεληλαμένος τε ὑπὸ τοῦ πατρὸς καὶ ἐστερημένος πάντων.",
+  "e": "Croesus answered, “All of your family are my friends, and you have come to friends, where you shall lack nothing, staying in my house. As for your misfortune, bear it as lightly as possible and you will gain most.”"
+ },
+ {
+  "k": "b34a2bad683e3c61",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Κροῖσος δέ μιν ἀμείβετο τοῖσιδε· ἀνδρῶν τε φίλων τυγχάνεις ἔκγονος ἐὼν καὶ ἐλήλυθας ἐς φίλους, ἔνθα ἀμηχανήσεις χρήματος οὐδενὸς μένων ἐν ἡμετέρου, συμφορήν τε ταύτην ὡς κουφότατα φέρων κερδανέεις πλεῖστον.",
+  "e": "So Adrastus lived in Croesus' house. About this same time a great monster of a boar appeared on the Mysian Olympus, who would come off that mountain and ravage the fields of the Mysians. The Mysians had gone up against him often; but they never did him any harm but were hurt by him themselves."
+ },
+ {
+  "k": "11152820e391c453",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ μὲν δὴ δίαιταν εἶχε ἐν Κροίσου. ἐν δὲ τῷ αὐτῷ χρόνῳ τούτῳ ἐν τῷ Μυσίῳ Ὀλύμπῳ ὑὸς χρῆμα γίνεται μέγα· ὁρμώμενος δὲ οὗτος ἐκ τοῦ ὄρεος τούτου τὰ τῶν Μυσῶν ἔργα διαφθείρεσκε. πολλάκις δὲ οἱ Μυσοὶ ἐπʼ αὐτὸν ἐξελθόντες ποιέεσκον μὲν κακὸν οὐδέν, ἔπασχον δὲ πρὸς αὐτοῦ.",
+  "e": "At last they sent messengers to Croesus, with this message: “O King, a great monster of a boar has appeared in the land, who is destroying our fields; for all our attempts, we cannot kill him; so now we ask you to send your son and chosen young men and dogs with us, so that we may drive him out of the country.”"
+ },
+ {
+  "k": "0ec850604b1470b6",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τέλος δὲ ἀπικόμενοι παρὰ τὸν Κροῖσον τῶν Μυσῶν ἄγγελοι ἔλεγον τάδε. ὦ βασιλεῦ, ὑὸς χρῆμα μέγιστον ἀνεφάνη ἡμῖν ἐν τῇ χώρῃ, ὃς τὰ ἔργα διαφθείρει. τοῦτον προθυμεόμενοι ἑλεῖν οὐ δυνάμεθα. νῦν ὦν προσδεόμεθά σευ τὸν παῖδα καὶ λογάδας νεηνίας καὶ κύνας συμπέμψαι ἡμῖν, ὡς ἄν μιν ἐξέλωμεν ἐκ τῆς χώρης.",
+  "e": "Such was their request, but Croesus remembered the prophecy of his dream and answered them thus: “Do not mention my son again: I will not send him with you. He is newly married, and that is his present concern. But I will send chosen Lydians, and all the huntsmen, and I will tell those who go to be as eager as possible to help you to drive the beast out of the country.”"
+ },
+ {
+  "k": "40f0267eced5374f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οἳ μὲν δὴ τούτων ἐδέοντο, Κροῖσος δὲ μνημονεύων τοῦ ὀνείρου τὰ ἔπεα ἔλεγέ σφι τάδε. παιδὸς μὲν πέρι τοῦ ἐμοῦ μὴ μνησθῆτε ἔτι· οὐ γὰρ ἂν ὑμῖν συμπέμψαιμι· νεόγαμός τε γὰρ ἐστὶ καὶ ταῦτά οἱ νῦν μέλει. Λυδῶν μέντοι λογάδας καὶ τὸ κυνηγέσιον πᾶν συμπέμψω, καὶ διακελεύσομαι τοῖσι ἰοῦσι εἶναι ὡς προθυμοτάτοισι συνεξελεῖν ὑμῖν τὸ θηρίον ἐκ τῆς χώρης.",
+  "e": "This was his answer, and the Mysians were satisfied with it. But the son of Croesus now entered, having heard what the Mysians had asked for; and when Croesus refused to send his son with them, the young man said, “Father, it was once thought very fine and noble for us to go to war and the chase and win renown; but now you have barred me from both of these, although you have seen neither cowardice nor lack of spirit in me. With what face can I now show myself whenever I go to and from the market-place?"
+ },
+ {
+  "k": "5d91e8a970e1b978",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα ἀμείψατο· ἀποχρεωμένων δὲ τούτοισι τῶν Μυσῶν, ἐπεσέρχεται ὁ τοῦ Κροίσου παῖς ἀκηκοὼς τῶν ἐδέοντο οἱ Μυσοί. οὐ φαμένου δὲ τοῦ Κροίσου τόν γε παῖδά σφι συμπέμψειν, λέγει πρὸς αὐτὸν ὁ νεηνίης τάδε.",
+  "e": "What will the men of the city think of me, and what my newly wedded wife? With what kind of man will she think that she lives? So either let me go to the hunt, or show me by reasoning that what you are doing is best for me.”"
+ },
+ {
+  "k": "299e6185c529e8d2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὦ πάτερ, τὰ κάλλιστα πρότερον κοτὲ καὶ γενναιότατα ἡμῖν ἦν ἔς τε πολέμους καὶ ἐς ἄγρας φοιτέοντας εὐδοκιμέειν· νῦν δὲ ἀμφοτέρων με τούτων ἀποκληίσας ἔχεις, οὔτε τινὰ δειλίην μοι παριδὼν οὔτε ἀθυμίην νῦν τε τέοισί με χρὴ ὄμμασι ἔς τε ἀγορὴν καὶ ἐξ ἀγορῆς φοιτέοντα φαίνεσθαι;",
+  "e": "“My son,” answered Croesus, “I do this not because I have seen cowardice or anything unseemly in you, but the vision of a dream stood over me in my sleep, and told me that you would be short-lived, for you would be killed by a spear of iron."
+ },
+ {
+  "k": "09fa918080fca7cb",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "κοῖος μέν τις τοῖσι πολιήτῃσι δόξω εἶναι, κοῖος δέ τις τῇ νεογάμῳ γυναικί; κοίῳ δὲ ἐκείνη δόξει ἀνδρὶ συνοικέειν; ἐμὲ ὦν σὺ ἢ μέτες ἰέναι ἐπὶ τὴν θήρην, ἢ λόγῳ ἀνάπεισον ὅκως μοι ἀμείνω ἐστὶ ταῦτα οὕτω ποιεόμενα.",
+  "e": "It is because of that vision that I hurried your marriage and do not send you on any enterprise that I have in hand, but keep guard over you, so that perhaps I may rob death of you during my lifetime. You are my only son: for that other, since he is ruined, he doesn't exist for me.”"
+ },
+ {
+  "k": "9f6e4dd2ff6cc874",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀμείβεται Κροῖσος τοῖσιδε. ὦ παῖ, οὔτε δειλίην οὔτε ἄλλο οὐδὲν ἄχαρι παριδών, τοι ποιέω ταῦτα, ἀλλά μοι ὄψις ὀνείρου ἐν τῷ ὕπνῳ ἐπιστᾶσα ἔφη σε ὀλιγοχρόνιον ἔσεσθαι· ὑπὸ γὰρ αἰχμῆς σιδηρέης ἀπολέεσθαι.",
+  "e": "“Father,” the youth replied, “no one can blame you for keeping guard over me, when you have seen such a vision; but it is my right to show you what you do not perceive, and why you mistake the meaning of the dream."
+ },
+ {
+  "k": "f656bc20dec92e2e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πρὸς ὧν τὴν ὄψιν ταύτην τόν τε γάμον τοι τοῦτον ἔσπευσα καὶ ἐπὶ τὰ παραλαμβανόμενα οὐκ ἀποπέμπω, φυλακὴν ἔχων, εἴ κως δυναίμην ἐπὶ τῆς ἐμῆς σε ζόης διακλέψαι. εἷς γὰρ μοι μοῦνος τυγχάνεις ἐὼν παῖς· τὸν γὰρ δὴ ἕτερον διεφθαρμένον τὴν ἀκοὴν οὐκ εἶναί μοι λογίζομαι.",
+  "e": "You say that the dream told you that I should be killed by a spear of iron? But has a boar hands? Has it that iron spear which you dread? Had the dream said I should be killed by a tusk or some other thing proper to a boar, you would be right in acting as you act; but no, it was to be by a spear. Therefore, since it is not against men that we are to fight, let me go.”"
+ },
+ {
+  "k": "e6babe2b528baf1e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀμείβεται ὁ νεηνίης τοῖσιδε. συγγνώμη μὲν ὦ πάτερ τοι, ἰδόντι γε ὄψιν τοιαύτην, περὶ ἐμὲ φυλακὴν ἔχειν· τὸ δὲ οὐ μανθάνεις ἀλλὰ λέληθέ σε τὸ ὄνειρον, ἐμέ τοί δίκαιον ἐστί φράζειν.",
+  "e": "Croesus answered, “My son, your judgment concerning the dream has somewhat reassured me; and being reassured by you, I change my thinking and permit you to go to the chase.”"
+ },
+ {
+  "k": "bd3330c33f57b50d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "φής τοι τὸ ὄνειρον ὑπὸ αἰχμῆς σιδηρέης φάναι ἐμὲ τελευτήσειν. ὑὸς δὲ κοῖαι μὲν εἰσὶ χεῖρες, κοίη δὲ αἰχμὴ σιδηρέη τὴν σὺ φοβέαι; εἰ μὲν γὰρ ὑπὸ ὀδόντος τοι εἶπε τελευτήσειν με, ἢ ἄλλου τευ ὅ τι τούτῳ ἔοικε, χρῆν δή σε ποιέειν τὰ ποιέεις· νῦν δὲ ὑπὸ αἰχμῆς. ἐπείτε ὦν οὐ πρὸς ἄνδρας ἡμῖν γίνεται ἡ μάχη, μέτες με.",
+  "e": "Having said this, Croesus sent for Adrastus the Phrygian and when he came addressed him thus: “Adrastus, when you were struck by ugly misfortune, for which I do not blame you, it was I who cleansed you, and received and still keep you in my house, defraying all your keep. Now then, as you owe me a return of good service for the good which I have done you, I ask that you watch over my son as he goes out to the chase. See that no thieving criminals meet you on the way, to do you harm."
+ },
+ {
+  "k": "00541f092cb54154",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀμείβεται Κροῖσος ὦ παῖ, ἔστι τῇ με νικᾷς γνώμην ἀποφαίνων περὶ τοῦ ἐνυπνίου. ὡς ὦν νενικημένος ὑπὸ σέο μεταγινώσκω, μετίημί τε σὲ ἰέναι ἐπὶ τὴν ἄγρην.",
+  "e": "Besides, it is only right that you too should go where you can win renown by your deeds. That is fitting for your father's son; and you are strong enough besides.”"
+ },
+ {
+  "k": "3f1f8b859a5e2676",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "εἴπας δὲ ταῦτα ὁ Κροῖσος μεταπέμπεται τὸν Φρύγα Ἄδρηστον, ἀπικομένῳ δέ οἱ λέγει τάδε. Ἄδρηστε, ἐγώ σε συμφορῇ, πεπληγμένον ἀχάρι, τήν τοι οὐκ ὀνειδίζω, ἐκάθηρα καὶ οἰκίοισι ὑποδεξάμενος ἔχω, παρέχων πᾶσαν δαπάνην.",
+  "e": "“O King,” Adrastus answered, “I would not otherwise have gone into such an arena. One so unfortunate as I should not associate with the prosperous among his peers; nor have I the wish so to do, and for many reasons I would have held back."
+ },
+ {
+  "k": "34725da86b45c102",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "νῦν ὦν (ὀφείλεις γὰρ ἐμοῦ προποιήσαντος χρηστὰ ἐς σὲ χρηστοῖσί με ἀμείβεσθαι) φύλακα παιδός σε τοῦ ἐμοῦ χρηίζω γενέσθαι ἐς ἄγρην ὁρμωμένου, μή τινες κατʼ ὁδὸν κλῶπες κακοῦργοι ἐπὶ δηλήσι φανέωσι ὑμῖν.",
+  "e": "But now, since you urge it and I must please you (since I owe you a return of good service), I am ready to do this; and as for your son, in so far as I can protect him, look for him to come back unharmed.”"
+ },
+ {
+  "k": "a9495cdcde9067d5",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πρὸς δὲ τούτῳ καὶ σέ τοι χρεόν ἐστι ἰέναι ἔνθα ἀπολαμπρυνέαι τοῖσι ἔργοισι· πατρώιόν τε γάρ τοι ἐστὶ καὶ προσέτι ῥώμη ὑπάρχει.",
+  "e": "So when Adrastus had answered Croesus thus, they went out provided with chosen young men and dogs. When they came to Olympus (mountain), Nomos Larisis, Thessaly, Greece, Europe Mount Olympus , they hunted for the beast and, finding him, formed a circle and threw their spears at him:"
+ },
+ {
+  "k": "10fb0bf87ba695f0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀμείβεται ὁ Ἄδρηστος ὦ βασιλεῦ, ἄλλως μὲν ἔγωγε ἂν οὐκ ἤια ἐς ἄεθλον τοιόνδε· οὔτε γὰρ συμφορῇ τοιῇδε κεχρημένον οἰκός ἐστι ἐς ὁμήλικας εὖ πρήσσοντας ἰέναι, οὔτε τὸ βούλεσθαι πάρα, πολλαχῇ τε ἂν ἶσχον ἐμεωυτόν.",
+  "e": "then the guest called Adrastus, the man who had been cleansed of the deed of blood, missed the boar with his spear and hit the son of Croesus."
+ },
+ {
+  "k": "a55390f5f0e04c09",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "νῦν δέ, ἐπείτε σὺ σπεύδεις καὶ δεῖ τοί χαρίζεσθαι, ὀφείλω γάρ σε ἀμείβεσθαι χρηστοῖσἰ, ποιέειν εἰμὶ ἕτοιμος ταῦτα, παῖδα τε σόν, τὸν διακελεύεαι φυλάσσειν, ἀπήμονα τοῦ φυλάσσοντος εἵνεκεν προσδόκα τοι ἀπονοστήσειν.",
+  "e": "So Atys was struck by the spear and fulfilled the prophecy of the dream. One ran to tell Croesus what had happened, and coming to Sardis [28.0167,38.475] (Perseus) Sardis told the king of the fight and the fate of his son."
+ },
+ {
+  "k": "0653c480ca4122e8",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τοιούτοισι ἐπείτε οὗτος ἀμείψατο Κροῖσον, ἤισαν μετὰ ταῦτα ἐξηρτυμένοι λογάσι τε νεηνίῃσι καὶ κυσί. ἀπικόμενοι δὲ ἐς τὸν Ὄλυμπον τὸ ὄρος ἐζήτεον τὸ θηρίον, εὑρόντες δὲ καὶ περιστάντες αὐτὸ κύκλῳ ἐσηκόντιζον.",
+  "e": "Distraught by the death of his son, Croesus cried out the more vehemently because the killer was one whom he himself had cleansed of blood,"
+ },
+ {
+  "k": "e55e2d340ea76197",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔνθα δὴ ὁ ξεῖνος, οὗτος δὴ ὁ καθαρθεὶς τὸν φόνον, καλεόμενος δὲ Ἄδρηστος, ἀκοντίζων τὸν ὗν τοῦ μὲν ἁμαρτάνει, τυγχάνει δὲ τοῦ Κροίσου παιδός.",
+  "e": "and in his great and terrible grief at this mischance he called on Zeus by three names—Zeus the Purifier, Zeus of the Hearth, Zeus of Comrades: the first, because he wanted the god to know what evil his guest had done him; the second, because he had received the guest into his house and thus unwittingly entertained the murderer of his son; and the third, because he had found his worst enemy in the man whom he had sent as a protector."
+ },
+ {
+  "k": "2bb661c713033e8d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ μὲν δὴ βληθεὶς τῇ αἰχμῇ ἐξέπλησε τοῦ ὀνείρου τὴν φήμην, ἔθεε δέ τις ἀγγελέων τῷ Κροίσῳ τὸ γεγονός, ἀπικόμενος δὲ ἐς τὰς Σάρδις τὴν τε μάχην καὶ τὸν τοῦ παιδὸς μόρον ἐσήμηνέ οἱ.",
+  "e": ""
+ },
+ {
+  "k": "944cbe6137af2003",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὁ δὲ Κροῖσος τῳ θανάτῳ τοῦ παιδὸς συντεταραγμένος μᾶλλον τι ἐδεινολογέετο ὅτι μιν ἀπέκτεινε τὸν αὐτὸς φόνου ἐκάθηρε·",
+  "e": "Soon the Lydians came, bearing the corpse, with the murderer following after. He then came and stood before the body and gave himself up to Croesus, holding out his hands and telling him to kill him over the corpse, mentioning his former misfortune, and that on top of that he had destroyed the one who purified him, and that he was not fit to live."
+ },
+ {
+  "k": "866eba31bf9ca3f0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "περιημεκτέων δὲ τῇ συμφορῇ δεινῶς ἐκάλεε μὲν Δία καθάρσιον μαρτυρόμενος τὰ ὑπὸ τοῦ ξείνου πεπονθὼς εἴη ἐκάλεε δὲ ἐπίστιόν τε καὶ ἑταιρήιον, τὸν αὐτὸν τοῦτον ὀνομάζων θεόν, τὸν μὲν ἐπίστιον καλέων, διότι δὴ οἰκίοισι ὑποδεξάμενος τὸν ξεῖνον φονέα τοῦ παιδὸς ἐλάνθανε βόσκων, τὸν δὲ ἑταιρήιον, ὡς φύλακα συμπέμψας αὐτὸν εὑρήκοι πολεμιώτατον.",
+  "e": "On hearing this, Croesus took pity on Adrastus, though his own sorrow was so great, and said to him, “Friend, I have from you the entire penalty, since you sentence yourself to death. But it is not you that I hold the cause of this evil, except in so far as you were the unwilling doer of it, but one of the gods, the same one who told me long ago what was to be.”"
+ },
+ {
+  "k": "5a5ac700fa5c04c4",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "παρῆσαν δὲ μετὰ τοῦτο οἱ Λυδοὶ φέροντες τὸν νεκρόν, ὄπισθε δὲ εἵπετό οἱ ὁ φονεύς. στὰς δὲ οὗτος πρὸ τοῦ νεκροῦ παρεδίδου ἑωυτὸν Κροίσῳ προτείνων τὰς χεῖρας, ἐπικατασφάξαι μιν κελεύων τῷ νεκρῷ, λέγων τήν τε προτέρην ἑωυτοῦ συμφορήν, καὶ ὡς ἐπʼ ἐκείνῃ τὸν καθήραντα ἀπολωλεκὼς εἴη, οὐδέ οἱ εἴη βιώσιμον.",
+  "e": "So Croesus buried his own son in such manner as was fitting. But Adrastus, son of Gordias who was son of Midas, this Adrastus, the destroyer of his own brother and of the man who purified him, when the tomb was undisturbed by the presence of men, killed himself there by the sepulcher, seeing clearly now that he was the most heavily afflicted of all whom he knew."
+ },
+ {
+  "k": "4ea365d30e00678a",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Κροῖσος δὲ τούτων ἀκούσας τόν τε Ἄδρηστον κατοικτείρει, καίπερ ἐὼν ἐν κακῷ οἰκηίῳ τοσούτῳ καὶ λέγει πρὸς αὐτόν ἔχω ὦ ξεῖνε παρὰ σεῦ πᾶσαν τὴν δίκην, ἐπειδὴ σεωυτοῦ καταδικάζεις θάνατον. εἶς δὲ οὐ σύ μοι τοῦδε τοῦ κακοῦ αἴτιος, εἰ μὴ ὅσον ἀέκων ἐξεργάσαο, ἀλλὰ θεῶν κού τις, ὅς μοι καὶ πάλαι προεσήμαινε τὰ μέλλοντα ἔσεσθαι.",
+  "e": "After the loss of his son, Croesus remained in deep sorrow for two years. After this time, the destruction by Cyrus son of Cambyses of the sovereignty of Astyages son of Cyaxares, and the growth of the power of the Persians, distracted Croesus from his mourning; and he determined, if he could, to forestall the increase of the Persian power before they became great."
+ },
+ {
+  "k": "c2ad029dabbb763f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Κροῖσος μέν νυν ἔθαψε ὡς οἰκὸς ἦν τὸν ἑωυτοῦ παῖδα· Ἄδρηστος δὲ ὁ Γορδίεω τοῦ Μίδεω, οὗτος δὴ ὁ φονεὺς μὲν τοῦ ἑωυτοῦ ἀδελφεοῦ γενόμενος φονεὺς δὲ τοῦ καθήραντος, ἐπείτε ἡσυχίη τῶν ἀνθρώπων ἐγένετο περὶ τὸ σῆμα, συγγινωσκόμενος ἀνθρώπων εἶναι τῶν αὐτὸς ᾔδεε βαρυσυμφορώτατος, ἐπικατασφάζει τῷ τύμβῳ ἑωυτόν.",
+  "e": "Having thus determined, he at once made inquiries of the Greek and Libyan oracles, sending messengers separately to Delphi [22.5167,38.4917] (Perseus) Delphi , to Abai [22.9583,38.5917] (Perseus) Abae in Phocia, and to Dodona [20.8,39.55] (Perseus) Dodona , while others were despatched to Amphiaraus and Trophonius, and others to Didyma [27.233,37.35] (historic site), Aydin Ili, Ege kiyilari, Turkey, Asia Branchidae in the Milesian country."
+ },
+ {
+  "k": "f0abf2c7b2adc782",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Κροῖσος δὲ ἐπὶ δύο ἔτεα ἐν πένθεϊ μεγάλῳ κατῆστο τοῦ παιδὸς ἐστερημένος. μετὰ δὲ ἡ Ἀστυάγεος τοῦ Κυαξάρεω ἡγεμονίη καταιρεθεῖσα ὑπὸ Κύρου τοῦ Καμβύσεω καὶ τὰ τῶν Περσέων πρήγματα αὐξανόμενα πένθεος μὲν Κροῖσον ἀπέπαυσε, ἐνέβησε δὲ ἐς φροντίδα, εἴ κως δύναιτο, πρὶν μεγάλους γενέσθαι τοὺς Πέρσας, καταλαβεῖν αὐτῶν αὐξανομένην τὴν δύναμιν.",
+  "e": "These are the Greek oracles to which Croesus sent for divination: and he told others to go inquire of Ammon in Libya [17,25] (nation), Africa Libya . His intent in sending was to test the knowledge of the oracles, so that, if they were found to know the truth, he might send again and ask if he should undertake an expedition against the Persians."
+ },
+ {
+  "k": "63ace4608f70a9a4",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ ὦν τὴν διάνοιαν ταύτην αὐτίκα ἀπεπειρᾶτο τῶν μαντείων τῶν τε ἐν Ἕλλησι καὶ τοῦ ἐν Λιβύῃ, διαπέμψας ἄλλους ἄλλῃ, τοὺς μὲν ἐς Δελφοὺς ἰέναι, τοὺς δὲ ἐς Ἄβας τὰς Φωκέων, τοὺς δὲ ἐς Δωδώνην· οἳ δὲ τινὲς ἐπέμποντο παρὰ τε Ἀμφιάρεων καὶ παρὰ Τροφώνιον, οἳ δὲ τῆς Μιλησίης ἐς Βραγχίδας.",
+  "e": "And when he sent to test these shrines he gave the Lydians these instructions: they were to keep track of the time from the day they left Sardis [28.0167,38.475] (Perseus) Sardis , and on the hundredth day inquire of the oracles what Croesus, king of Lydia [27.516,38.683] (region (general)), Turkey, Asia Lydia , son of Alyattes, was doing then; then they were to write down whatever the oracles answered and bring the reports back to him."
+ },
+ {
+  "k": "aa236df36d8728c2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα μέν νυν τὰ Ἑλληνικὰ μαντήια ἐς τὰ ἀπέπεμψε μαντευσόμενος Κροῖσος· Λιβύης δὲ παρὰ Ἄμμωνα ἀπέστελλε ἄλλους χρησομένους. διέπεμπε δὲ πειρώμενος τῶν μαντηίων ὅ τι φρονέοιεν, ὡς εἰ φρονέοντα τὴν ἀληθείην εὑρεθείη, ἐπείρηται σφέα δεύτερα πέμπων εἰ ἐπιχειρέοι ἐπὶ Πέρσας στρατεύεσθαι.",
+  "e": ""
+ },
+ {
+  "k": "1266f20975a4a5ff",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐντειλάμενος δὲ τοῖσι Λυδοῖσι τάδε ἀπέπεμπε ἐς τὴν διάπειραν τῶν χρηστηρίων, ἀπʼ ἧς ἂν ἡμέρης ὁρμηθέωσι ἐκ Σαρδίων, ἀπὸ ταύτης ἡμερολογέοντας τὸν λοιπὸν χρόνον ἑκατοστῇ ἡμέρῃ χρᾶσθαι τοῖσι χρηστηρίοισι, ἐπειρωτῶντας ὅ τι ποιέων τυγχάνοι ὁ Λυδῶν βασιλεὺς Κροῖσος ὁ Ἀλυάττεω· ἅσσα δʼ ἂν ἕκαστα τῶν χρηστηρίων θεσπίσῃ, συγγραψαμένους ἀναφέρειν παρʼ ἑωυτόν.",
+  "e": "Now none relate what answer was given by the rest of the oracles. But at Delphi [22.5167,38.4917] (Perseus) Delphi , no sooner had the Lydians entered the hall to inquire of the god and asked the question with which they were entrusted, than the Pythian priestess uttered the following hexameter verses: “I know the number of the grains of sand and the extent of the sea, And understand the mute and hear the voiceless. The smell has come to my senses of a strong-shelled tortoise Boiling in a cauldron together with a lamb's flesh, Under which is bronze and over which is bronze.”"
+ },
+ {
+  "k": "6cfa6453cae24a37",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὅ τι μέν νυν τὰ λοιπὰ τῶν χρηστηρίων ἐθέσπισε, οὐ λέγεται πρὸς οὐδαμῶν· ἐν δὲ Δελφοῖσι ὡς ἐσῆλθον τάχιστα ἐς τὸ μέγαρον οἱ Λυδοὶ χρησόμενοι τῷ θεῷ καὶ ἐπειρώτων τὸ ἐντεταλμένον, ἡ Πυθίη ἐν ἑξαμέτρῳ τόνῳ λέγει τάδε.",
+  "e": ""
+ },
+ {
+  "k": "6d5dfa7f3db91ed5",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οἶδα δʼ ἐγὼ ψάμμου τʼ ἀριθμὸν καὶ μέτρα θαλάσσης, καὶ κωφοῦ συνίημι, καὶ οὐ φωνεῦντος ἀκούω. ὀδμή μʼ ἐς φρένας ἦλθε κραταιρίνοιο χελώνης ἑψομένης ἐν χαλκῷ ἅμʼ ἀρνείοισι κρέεσσιν, ᾗ χαλκὸς μὲν ὑπέστρωται, χαλκὸν δʼ ἐπιέσται.",
+  "e": "Having written down this inspired utterance of the Pythian priestess, the Lydians went back to Sardis [28.0167,38.475] (Perseus) Sardis . When the others as well who had been sent to various places came bringing their oracles, Croesus then unfolded and examined all the writings. Some of them in no way satisfied him. But when he read the Delphian message, he acknowledged it with worship and welcome, considering Delphi [22.5167,38.4917] (Perseus) Delphi as the only true place of divination, because it had discovered what he himself had done."
+ },
+ {
+  "k": "4c250a0de1c522b0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα οἱ Λυδοὶ θεσπισάσης τῆς Πυθίης συγγραψάμενοι οἴχοντο ἀπιόντες ἐς τὰς Σάρδις. ὡς δὲ καὶ ὧλλοι οἱ περιπεμφθέντες παρῆσαν φέροντες τοὺς χρησμούς, ἐνθαῦτα ὁ Κροῖσος ἕκαστα ἀναπτύσσων ἐπώρα τῶν συγγραμμάτων, τῶν μὲν δὴ οὐδὲν προσίετό μιν· ὁ δὲ ὡς τὸ ἐκ Δελφῶν ἤκουσε, αὐτίκα προσεύχετό τε καὶ προσεδέξατο, νομίσας μοῦνον εἶναι μαντήιον τὸ ἐν Δελφοῖσι, ὅτι οἱ ἐξευρήκεε τὰ αὐτὸς ἐποίησε.",
+  "e": "For after sending his envoys to the oracles, he had thought up something which no conjecture could discover, and carried it out on the appointed day: namely, he had cut up a tortoise and a lamb, and then boiled them in a cauldron of bronze covered with a lid of the same."
+ },
+ {
+  "k": "ecd0f90508a69f35",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπείτε γὰρ δὴ διέπεμψε παρὰ τὰ χρηστήρια τοὺς θεοπρόπους, φυλάξας τὴν κυρίην τῶν ἡμερέων ἐμηχανᾶτο τοιάδε· ἐπινοήσας τὰ ἦν ἀμήχανον ἐξευρεῖν τε καὶ ἐπιφράσασθαι, χελώνην καὶ ἄρνα κατακόψας ὁμοῦ ἧψε αὐτὸς ἐν λέβητι χαλκέῳ, χάλκεον ἐπίθημα ἐπιθείς.",
+  "e": "Such, then, was the answer from Delphi [22.5167,38.4917] (Perseus) Delphi delivered to Croesus. As to the reply which the Lydians received from the oracle of Amphiaraus when they had followed the due custom of the temple, I cannot say what it was, for nothing is recorded of it, except that Croesus believed that from this oracle too he had obtained a true answer."
+ },
+ {
+  "k": "1d43bd6fe7df7879",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὰ μὲν δὴ ἐκ Δελφῶν οὕτω τῷ, Κροίσῳ ἐχρήσθη· κατὰ δὲ τὴν Ἀμφιάρεω τοῦ μαντηίου ὑπόκρισιν, οὐκ ἔχω εἰπεῖν ὅ τι τοῖσι Λυδοῖσι ἔχρησε ποιήσασι περὶ τὸ ἱρὸν τὰ νομιζόμενα (οὐ γὰρ ὦν οὐδὲ τοῦτο λέγεται), ἄλλο γε ἢ ὅτι καὶ τοῦτο ἐνόμισε μαντήιον ἀψευδὲς ἐκτῆσθαι.",
+  "e": "After this, he tried to win the favor of the Delphian god with great sacrifices. He offered up three thousand beasts from all the kinds fit for sacrifice, and on a great pyre burnt couches covered with gold and silver, golden goblets, and purple cloaks and tunics; by these means he hoped the better to win the aid of the god, to whom he also commanded that every Lydian sacrifice what he could."
+ },
+ {
+  "k": "4884ebb6bd9caddd",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ δὲ ταῦτα θυσίῃσι μεγάλῃσι τὸν ἐν Δελφοῖσι θεὸν ἱλάσκετο· κτήνεά τε γὰρ τὰ θύσιμα πάντα τρισχίλια ἔθυσε, κλίνας τε ἐπιχρύσους καὶ ἐπαργύρους καὶ φιάλας χρυσέας καὶ εἵματα πορφύρεα καὶ κιθῶνας, νήσας πυρὴν μεγάλην, κατέκαιε, ἐλπίζων τὸν θεὸν μᾶλλον τι τούτοισι ἀνακτήσεσθαι· Λυδοῖσι τε πᾶσι προεῖπε θύειν πάντα τινὰ αὐτῶν τούτῳ ὅ τι ἔχοι ἕκαστος.",
+  "e": "When the sacrifice was over, he melted down a vast store of gold and made ingots of it, the longer sides of which were of six and the shorter of three palms' length, and the height was one palm. There were a hundred and seventeen of these. Four of them were of refined gold, each weighing two talents and a half; the rest were of gold with silver alloy, each of two talents' weight."
+ },
+ {
+  "k": "7aebd3090946abb2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ἐκ τῆς θυσίης ἐγένετο, καταχεάμενος χρυσὸν ἄπλετον ἡμιπλίνθια ἐξ αὐτοῦ ἐξήλαυνε, ἐπὶ μὰν τὰ μακρότερα ποιέων ἑξαπάλαιστα, ἐπὶ δὲ τὰ βραχύτερα τριπάλαιστα, ὕψος δὲ παλαιστιαῖα. ἀριθμὸν δὲ ἑπτακαίδεκα καὶ ἑκατόν, καὶ τούτων ἀπέφθου χρυσοῦ τέσσερα, τρίτον ἡμιτάλαντον ἕκαστον ἕλκοντα, τὰ δὲ ἄλλα ἡμιπλίνθια λευκοῦ χρυσοῦ, σταθμὸν διτάλαντα.",
+  "e": "He also had a figure of a lion made of refined gold, weighing ten talents. When the temple of Delphi [22.5167,38.4917] (Perseus) Delphi was burnt, this lion fell from the ingots which were the base on which it stood; and now it is in the treasury of the Corinthians, but weighs only six talents and a half, for the fire melted away three and a half talents."
+ },
+ {
+  "k": "6cf97fa6253b7e72",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐποιέετο δὲ καὶ λέοντος εἰκόνα χρυσοῦ ἀπέφθου ἕλκουσαν σταθμὸν τάλαντα δέκα. οὗτος ὁ λέων, ἐπείτε κατεκαίετο ὁ ἐν Δελφοῖσι νηός, κατέπεσε ἀπὸ τῶν ἡμιπλινθίων (ἐπὶ γὰρ τούτοισι ἵδρυτο), καὶ νῦν κεῖται ἐν τῷ Κορινθίων θησαυρῷ, ἕλκων σταθμὸν ἕβδομον ἡμιτάλαντον· ἀπετάκη γὰρ αὐτοῦ τέταρτον ἡμιτάλαντον.",
+  "e": "When these offerings were ready, Croesus sent them to Delphi [22.5167,38.4917] (Perseus) Delphi , with other gifts besides: namely, two very large bowls, one of gold and one of silver. The golden bowl stood to the right, the silver to the left of the temple entrance. These too were removed about the time of the temple's burning, and now the golden bowl, which weighs eight and a half talents and twelve minae, is in the treasury of the Clazomenians, and the silver bowl at the corner of the forecourt of the temple. This bowl holds six hundred nine-gallon measures: for the Delphians use it for a mixing-bowl at the feast of the Divine Appearance."
+ },
+ {
+  "k": "168afbce8bb70c83",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπιτελέσας δὲ ὁ Κροῖσος ταῦτα ἀπέπεμπε ἐς Δελφούς, καὶ τάδε ἄλλα ἅμα τοῖσι, κρητῆρας δύο μεγάθεϊ μεγάλους, χρύσεον καὶ ἀργύρεον, τῶν ὁ μὲν χρύσεος ἔκειτο ἐπὶ δεξιὰ ἐσιόντι ἐς τὸν νηόν, ὁ δὲ ἀργύρεος ἐπʼ ἀριστερά.",
+  "e": ""
+ },
+ {
+  "k": "0288335eab6576c8",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετεκινήθησαν δὲ καὶ οὗτοι ὑπὸ τὸν νηὸν κατακαέντα καὶ ὁ μὲν χρύσεος κεῖται ἐν τῷ Κλαζομενίων θησαυρῷ, ἕλκων σταθμὸν εἴνατον ἡμιτάλαντον καὶ ἔτι δυώδεκα μνέας, ὁ δὲ ἀργύρεος ἐπὶ τοῦ προνηίου τῆς γωνίης, χωρέων ἀμφορέας ἑξακοσίους· ἐπικίρναται γὰρ ὑπὸ Δελφῶν Θεοφανίοισι.",
+  "e": "It is said by the Delphians to be the work of Theodorus of Nisos Samos [26.8,37.75] (island), Samos, Aegean Islands, Greece, Europe Samos , and I agree with them, for it seems to me to be of no common workmanship. Moreover, Croesus sent four silver casks, which stand in the treasury of the Corinthians, and dedicated two sprinkling-vessels, one of gold, one of silver. The golden vessel bears the inscription “Given by the Lacedaemonians,” who claim it as their offering. But they are wrong,"
+ },
+ {
+  "k": "acee250e3f80cfa8",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "φασὶ δὲ μιν Δελφοὶ Θεοδώρου τοῦ Σαμίου ἔργον εἶναι, καὶ ἐγὼ δοκέω· οὐ γὰρ τὸ συντυχὸν φαίνεταί μοι ἔργον εἶναι. καὶ πίθους τε ἀργυρέους τέσσερας ἀπέπεμψε, οἳ ἐν τῷ Κορινθίων θησαυρῷ ἑστᾶσι, καὶ περιρραντήρια δύο ἀνέθηκε, χρύσεόν τε καὶ ἀργύρεον, τῶν τῷ χρυσέῳ ἐπιγέγραπται Λακεδαιμονίων φαμένων εἶναι ἀνάθημα, οὐκ ὀρθῶς λέγοντες·",
+  "e": "for this, too, is Croesus' gift. The inscription was made by a certain Delphian, whose name I know but do not mention, out of his desire to please the Lacedaemonians. The figure of a boy, through whose hand the water runs, is indeed a Lacedaemonian gift; but they did not give either of the sprinkling-vessels."
+ },
+ {
+  "k": "4e2db87a05dc1450",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔστι γὰρ καὶ τοῦτο Κροίσου, ἐπέγραψε δὲ τῶν τις Δελφῶν Λακεδαιμονίοισι βουλόμενος χαρίζεσθαι, τοῦ ἐπιστάμενος τὸ οὔνομα οὐκ ἐπιμνήσομαι. ἀλλʼ ὁ μὲν παῖς, διʼ οὗ τῆς χειρὸς ῥέει τὸ ὕδωρ, Λακεδαιμονίων ἐστί, οὐ μέντοι τῶν γε περιρραντηρίων οὐδέτερον.",
+  "e": "Along with these Croesus sent, besides many other offerings of no great distinction, certain round basins of silver, and a female figure five feet high, which the Delphians assert to be the statue of the woman who was Croesus' baker. Moreover, he dedicated his own wife's necklaces and girdles."
+ },
+ {
+  "k": "09591495f4f3d50c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἄλλα τε ἀναθήματα οὐκ ἐπίσημα πολλὰ ἀπέπεμψε ἅμα τούτοισι ὁ Κροῖσος, καὶ χεύματα ἀργύρεα κυκλοτερέα, καὶ δὴ καὶ γυναικὸς εἴδωλον χρύσεον τρίπηχυ, τὸ Δελφοὶ τῆς ἀρτοκόπου τῆς Κροίσου εἰκόνα λέγουσι εἶναι. πρὸς δὲ καὶ τῆς ἑωυτοῦ γυναικὸς τὰ ἀπὸ τῆς δειρῆς ἀνέθηκε ὁ Κροῖσος καὶ τὰς ζώνας.",
+  "e": "Such were the gifts which he sent to Delphi [22.5167,38.4917] (Perseus) Delphi . To Amphiaraus, of whose courage and fate he had heard, he dedicated a shield made entirely of gold and a spear all of solid gold, point and shaft alike. Both of these were until my time at Thebes [23.3333,38.325] (Perseus) Thebes , in the Theban temple of Ismenian Apollo."
+ },
+ {
+  "k": "738a2b96aa328746",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα μὲν ἐς Δελφοὺς ἀπέπεμψε, τῷ δὲ Ἀμφιάρεῳ, πυθόμενος αὐτοῦ τήν τε ἀρετὴν καὶ τὴν πάθην, ἀνέθηκε σάκος τε χρύσεον πᾶν ὁμοίως καὶ αἰχμὴν στερεὴν πᾶσαν χρυσέην, τὸ ξυστὸν τῇσι λόγχῃσι ἐὸν ὁμοίως χρύσεον· τὰ ἔτι καὶ ἀμφότερα ἐς ἐμὲ ἦν κείμενα ἐν Θήβῃσι καὶ Θηβέων ἐν τῳ νηῷ τοῦ Ἰσμηνίου Ἀπόλλωνος.",
+  "e": "The Lydians who were to bring these gifts to the temples were instructed by Croesus to inquire of the oracles whether he was to send an army against the Persians and whether he was to add an army of allies."
+ },
+ {
+  "k": "93598b757f00f10c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τοῖσι δὲ ἄγειν μέλλουσι τῶν Λυδῶν ταῦτα τὰ δῶρα ἐς τὰ ἱρὰ ἐνετέλλετο ὁ Κροῖσος ἐπειρωτᾶν τὰ χρηστήρια εἰ στρατεύηται ἐπὶ Πέρσας Κροῖσος καὶ εἴ τινα στρατὸν ἀνδρῶν προσθέοιτο φίλον,",
+  "e": "When the Lydians came to the places where they were sent, they presented the offerings, and inquired of the oracles, in these words: “Croesus, king of Lydia [27.516,38.683] (region (general)), Turkey, Asia Lydia and other nations, believing that here are the only true places of divination among men, endows you with such gifts as your wisdom deserves. And now he asks you whether he is to send an army against the Persians, and whether he is to add an army of allies.”"
+ },
+ {
+  "k": "21fbbfe7104d73c7",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ἀπικόμενοι ἐς τὰ ἀπεπέμφθησαν, οἱ Λυδοὶ ἀνέθεσαν τὰ ἀναθήματα, ἐχρέωντο τοῖσι χρηστηρίοισι λέγοντες Κροῖσος ὁ Λυδῶν τε καὶ ἄλλων ἐθνέων βασιλεύς, νομίσας τάδε μαντήια εἶναι μοῦνα ἐν ἀνθρώποισι, ὑμῖν τε ἄξια δῶρα ἔδωκε τῶν ἐξευρημάτων, καὶ νῦν ὑμέας ἐπειρωτᾷ εἰ στρατεύηται ἐπὶ Πέρσας καὶ εἴ τινα στρατὸν ἀνδρῶν προσθέοιτο σύμμαχον.",
+  "e": "Such was their inquiry; and the judgment given to Croesus by each of the two oracles was the same: namely, that if he should send an army against the Persians he would destroy a great empire. And they advised him to discover the mightiest of the Greeks and make them his friends."
+ },
+ {
+  "k": "6a9e00afafca77ee",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οἳ μὲν ταῦτα ἐπειρώτων, τῶν δὲ μαντηίων ἀμφοτέρων ἐς τὠυτὸ αἱ γνῶμαι συνέδραμον, προλέγουσαι Κροίσῳ, ἢν στρατεύηται ἐπὶ Πέρσας, μεγάλην ἀρχὴν μιν καταλύσειν· τοὺς δὲ Ἑλλήνων δυνατωτάτους συνεβούλευόν οἱ ἐξευρόντα φίλους προσθέσθαι.",
+  "e": "When the divine answers had been brought back and Croesus learned of them, he was very pleased with the oracles. So, altogether expecting that he would destroy the kingdom of Cyrus, he sent once again to Delphi [22.5,38.483] (inhabited place), Phocis, Central Greece and Euboea, Greece, Europe Pytho and endowed the Delphians, whose number he had learned, with two gold staters apiece."
+ },
+ {
+  "k": "7cc523a416c24077",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπείτε δὲ ἀνενειχθέντα τὰ θεοπρόπια ἐπύθετο ὁ Κροῖσος, ὑπερήσθη τε τοῖσι χρηστηρίοισι, πάγχυ τε ἐλπίσας καταλύσειν τὴν Κύρου βασιληίην, πέμψας αὖτις ἐς Πυθὼ Δελφοὺς δωρέεται, πυθόμενος αὐτῶν τὸ πλῆθος, κατʼ ἄνδρα δύο στατῆρσι ἕκαστον χρυσοῦ.",
+  "e": "The Delphians, in return, gave Croesus and all Lydians the right of first consulting the oracle, exemption from all charges, the chief seats at festivals, and perpetual right of Delphian citizenship to whoever should wish it."
+ },
+ {
+  "k": "7d7d9b9c8fdfb148",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Δελφοὶ δὲ ἀντὶ τούτων ἔδοσαν Κροίσῳ καὶ Λυδοῖσι προμαντηίην καὶ ἀτελείην καὶ προεδρίην, καὶ ἐξεῖναι τῷ βουλομένῳ αὐτῶν γίνεσθαι Δελφὸν ἐς τὸν αἰεὶ χρόνον.",
+  "e": "After his gifts to the Delphians, Croesus made a third inquiry of the oracle, for he wanted to use it to the full, having received true answers from it; and the question which he asked was whether his sovereignty would be of long duration. To this the Pythian priestess answered as follows:"
+ },
+ {
+  "k": "602d16d3ce142afe",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "δωρησάμενος δὲ τοὺς Δελφοὺς ὁ Κροῖσος ἐχρηστηριάζετο τὸ τρίτον· ἐπείτε γὰρ δὴ παρέλαβε τοῦ μαντείου ἀληθείην, ἐνεφορέετο αὐτοῦ. ἐπειρώτα δὲ τάδε χρηστηριαζόμενος, εἴ οἱ πολυχρόνιος ἔσται ἡ μουναρχίη.",
+  "e": "“When the Medes have a mule as king, Just then, tender-footed Lydian, by the stone-strewn Hermus Flee and do not stay, and do not be ashamed to be a coward.”"
+ },
+ {
+  "k": "0a83ade782a835f4",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἡ δὲ Πυθίη οἱ χρᾷ τάδε. ἀλλʼ ὅταν ἡμίονος βασιλεὺς Μήδοισι γένηται, καὶ τότε, Λυδὲ ποδαβρέ, πολυψήφιδα παρʼ Ἕρμον φεύγειν μηδὲ μένειν μηδʼ αἰδεῖσθαι κακός εἶναι.",
+  "e": ""
+ },
+ {
+  "k": "af3b6cc1c4fee545",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τούτοισι ἐλθοῦσι τοῖσι ἔπεσι ὁ Κροῖσος πολλόν τι μάλιστα πάντων ἥσθη, ἐλπίζων ἡμίονον οὐδαμὰ ἀντʼ ἀνδρὸς βασιλεύσειν Μήδων, οὐδʼ ὦν αὐτὸς οὐδὲ οἱ ἐξ αὐτοῦ παύσεσθαι κοτὲ τῆς ἀρχῆς. μετὰ δὲ ταῦτα ἐφρόντιζε ἱστορέων τοὺς ἂν Ἑλλήνων δυνατωτάτους ἐόντας προσκτήσαιτο φίλους,",
+  "e": "When he heard these verses, Croesus was pleased with them above all, for he thought that a mule would never be king of the Medes instead of a man, and therefore that he and his posterity would never lose his empire. Then he sought very carefully to discover who the mightiest of the Greeks were, whom he should make his friends."
+ },
+ {
+  "k": "509fbf815eb615cf",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἱστορέων δὲ εὕρισκε Λακεδαιμονίους καὶ Ἀθηναίους προέχοντας τοὺς μὲν τοῦ Δωρικοῦ γένεος τοὺς δὲ τοῦ Ἰωνικοῦ. ταῦτα γὰρ ἦν τὰ προκεκριμένα, ἐόντα τὸ ἀρχαῖον τὸ μὲν Πελασγικὸν τὸ δὲ Ἑλληνικὸν ἔθνος. καὶ τὸ μὲν οὐδαμῇ κω ἐξεχώρησε, τὸ δὲ πολυπλάνητον κάρτα.",
+  "e": "He found by inquiry that the chief peoples were the Lacedaemonians among those of Doric, and the Athenians among those of Ionic stock. These races, Ionian and Dorian, were the foremost in ancient time, the first a Pelasgian and the second a Hellenic people. The Pelasgian race has never yet left its home; the Hellenic has wandered often and far."
+ },
+ {
+  "k": "11cfc29f289c9b11",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπὶ μὲν γὰρ Δευκαλίωνος βασιλέος οἴκεε γῆν τὴν Φθιῶτιν, ἐπὶ δὲ Δώρου τοῦ Ἕλληνος τὴν ὑπὸ τὴν Ὄσσαν τε καὶ τὸν Ὄλυμπον χώρην, καλεομένην δὲ Ἱστιαιῶτιν· ἐκ δὲ τῆς Ἱστιαιώτιδος ὡς ἐξανέστη ὑπὸ Καδμείων, οἴκεε ἐν Πίνδῳ Μακεδνὸν καλεόμενον· ἐνθεῦτεν δὲ αὖτις ἐς τὴν Δρυοπίδα μετέβη καὶ ἐκ τῆς Δρυοπίδος οὕτω ἐς Πελοπόννησον ἐλθὸν Δωρικὸν ἐκλήθη.",
+  "e": "For in the days of king Deucalion it inhabited the land of Phthia [22.75,36.2667] (Perseus) Phthia , then the country called Histiaean, under Ossa and Olympus (mountain), Nomos Larisis, Thessaly, Greece, Europe Olympus , in the time of Dorus son of Hellen; driven from this Histiaean country by the Cadmeans, it settled about Pindus in the territory called Macedonian; from there again it migrated to Dryopia, and at last came from Dryopia into the Peloponnese [22,37.5] (region), Greece, Europe Peloponnese , where it took the name of Dorian."
+ },
+ {
+  "k": "41afa2f88d61a9fd",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἥντινα δὲ γλῶσσαν ἵεσαν οἱ Πελασγοί, οὐκ ἔχω ἀτρεκέως εἰπεῖν. εἰ δὲ χρεόν ἐστι τεκμαιρόμενον λέγειν τοῖσι νῦν ἔτι ἐοῦσι Πελασγῶν τῶν ὑπὲρ Τυρσηνῶν Κρηστῶνα πόλιν οἰκεόντων, οἳ ὅμουροι κοτὲ ἦσαν τοῖσι νῦν Δωριεῦσι καλεομένοισι (οἴκεον δὲ τηνικαῦτα γῆν τὴν νῦν Θεσσαλιῶτιν καλεομένην),",
+  "e": "What language the Pelasgians spoke I cannot say definitely. But if one may judge by those that still remain of the Pelasgians who live above the Tyrrheni in the city of Creston —who were once neighbors of the people now called Dorians, and at that time inhabited the country which now is called Thessalian—"
+ },
+ {
+  "k": "79387bc8b2abea42",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ τῶν Πλακίην τε καὶ Σκυλάκην Πελασγῶν οἰκησάντων ἐν Ἑλλησπόντῳ, οἳ σύνοικοι ἐγένοντο Ἀθηναίοισι, καὶ ὅσα ἄλλα Πελασγικὰ ἐόντα πολίσματα τὸ οὔνομα μετέβαλε· εἰ τούτοισι τεκμαιρόμενον δεῖ λέγειν, ἦσαν οἱ Πελασγοὶ βάρβαρον γλῶσσαν ἱέντες.",
+  "e": "and of the Pelasgians who inhabited Placia and Scylace on the Canakkale Bogazi (strait), Canakkale, Marmara, Turkey, Asia Hellespont , who came to live among the Athenians, and by other towns too which were once Pelasgian and afterwards took a different name: if, as I said, one may judge by these, the Pelasgians spoke a language which was not Greek."
+ },
+ {
+  "k": "7588e97911754886",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "εἰ τοίνυν ἦν καὶ πᾶν τοιοῦτο τὸ Πελασγικόν, τὸ Ἀττικὸν ἔθνος ἐὸν Πελασγικὸν ἅμα τῇ μεταβολῇ τῇ ἐς Ἕλληνας καὶ τὴν γλῶσσαν μετέμαθε. καὶ γὰρ δὴ οὔτε οἱ Κρηστωνιῆται οὐδαμοῖσι τῶν νῦν σφέας περιοικεόντων εἰσὶ ὁμόγλωσσοι οὔτε οἱ Πλακιηνοί, σφίσι δὲ ὁμόγλωσσοι· δηλοῦσί τε ὅτι τὸν ἠνείκαντο γλώσσης χαρακτῆρα μεταβαίνοντες ἐς ταῦτα τὰ χωρία, τοῦτον ἔχουσι ἐν φυλακῇ.",
+  "e": "If, then, all the Pelasgian stock spoke so, then the Attic nation, being of Pelasgian blood, must have changed its language too at the time when it became part of the Hellenes. For the people of Creston and Placia have a language of their own in common, which is not the language of their neighbors; and it is plain that they still preserve the manner of speech which they brought with them in their migration into the places where they live."
+ },
+ {
+  "k": "8e23ba0f3386f5af",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὸ δὲ Ἑλληνικὸν γλώσσῃ μὲν ἐπείτε ἐγένετο αἰεί κοτε τῇ αὐτῇ διαχρᾶται, ὡς ἐμοὶ καταφαίνεται εἶναι· ἀποσχισθὲν μέντοι ἀπὸ τοῦ Πελασγικοῦ ἐόν ἀσθενές, ἀπό σμικροῦ τεο τὴν ἀρχὴν ὁρμώμενον αὔξηται ἐς πλῆθος τῶν ἐθνέων, Πελασγῶν μάλιστα προσκεχωρηκότων αὐτῷ καὶ ἄλλων ἐθνέων βαρβάρων συχνῶν. πρόσθε δὲ ὦν ἔμοιγε δοκέει οὐδὲ τὸ Πελασγικὸν ἔθνος, ἐὸν βάρβαρον, οὐδαμὰ μεγάλως αὐξηθῆναι.",
+  "e": "But the Hellenic stock, it seems clear to me, has always had the same language since its beginning; yet being, when separated from the Pelasgians, few in number, they have grown from a small beginning to comprise a multitude of nations, chiefly because the Pelasgians and many other foreign peoples united themselves with them. Before that, I think, the Pelasgic stock nowhere increased much in number while it was of foreign speech."
+ },
+ {
+  "k": "32b56482b3694850",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τούτων δὴ ὦν τῶν ἐθνέων τὸ μὲν Ἀττικὸν κατεχόμενόν τε καὶ διεσπασμένον ἐπυνθάνετο ὁ Κροῖσος ὑπὸ Πεισιστράτου τοῦ Ἱπποκράτεος τοῦτον τὸν χρόνον τυραννεύοντος Ἀθηναίων. Ἱπποκράτεϊ γὰρ ἐόντι ἰδιώτῃ καὶ θεωρέοντι τὰ Ὀλύμπια τέρας ἐγένετο μέγα· θύσαντος γὰρ αὐτοῦ τὰ ἱρὰ οἱ λέβητες ἐπεστεῶτες καὶ κρεῶν τε ἐόντες ἔμπλεοι καὶ ὕδατος ἄνευ πυρὸς ἔζεσαν καὶ ὑπερέβαλον.",
+  "e": "Now of these two peoples, Croesus learned that the Attic was held in subjection and divided into factions by Pisistratus, son of Hippocrates, who at that time was sovereign over the Athenians. This Hippocrates was still a private man when a great marvel happened to him when he was at Olympia [21.6333,37.65] (Perseus) Olympia to see the games: when he had offered the sacrifice, the vessels, standing there full of meat and water, boiled without fire until they boiled over."
+ },
+ {
+  "k": "a7c31b58be44f19b",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Χίλων δὲ ὁ Λακεδαιμόνιος παρατυχὼν καὶ θεησάμενος τὸ τέρας συνεβούλευε Ἱπποκράτεϊ πρῶτα μὲν γυναῖκα μὴ ἄγεσθαι τεκνοποιὸν ἐς τὰ οἰκία, εἰ δὲ τυγχάνει ἔχων, δευτέρα τὴν γυναῖκα ἐκπέμπειν, καὶ εἴ τίς οἱ τυγχάνει ἐὼν παῖς, τοῦτον ἀπείπασθαι.",
+  "e": "Chilon the Lacedaemonian, who happened to be there and who saw this marvel, advised Hippocrates not to take to his house a wife who could bear children, but if he had one already, then to send her away, and if he had a son, to disown him."
+ },
+ {
+  "k": "ea8996593dd9271c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὔκων ταῦτα παραινέσαντος Χίλωνος πείθεσθαι θέλειν τὸν Ἱπποκράτεα· γενέσθαι οἱ μετὰ ταῦτα τὸν Πεισίστρατον τοῦτον, ὃς στασιαζόντων τῶν παράλων καὶ τῶν ἐκ τοῦ πεδίου Ἀθηναίων, καὶ τῶν μὲν προεστεῶτος Μεγακλέος τοῦ Ἀλκμέωνος, τῶν δὲ ἐκ τοῦ πεδίου Λυκούργου Ἀριστολαΐδεω, καταφρονήσας τὴν τυραννίδα ἤγειρε τρίτην στάσιν· συλλέξας δὲ στασιώτας καὶ τῷ λόγῳ τῶν ὑπερακρίων προστὰς μηχανᾶται τοιάδε.",
+  "e": "Hippocrates refused to follow the advice of Chilon; and afterward there was born to him this Pisistratus, who, when there was a feud between the Athenians of the coast under Megacles son of Alcmeon and the Athenians of the plain under Lycurgus son of Aristolaides, raised up a third faction, as he coveted the sovereign power. He collected partisans and pretended to champion the uplanders, and the following was his plan."
+ },
+ {
+  "k": "61c3a715f148fb69",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τρωματίσας ἑωυτόν τε καὶ ἡμιόνους ἤλασε ἐς τὴν ἀγορὴν τὸ ζεῦγος ὡς ἐκπεφευγὼς τοὺς ἐχθρούς, οἵ μιν ἐλαύνοντα ἐς ἀγρὸν ἠθέλησαν ἀπολέσαι δῆθεν, ἐδέετό τε τοῦ δήμου φυλακῆς τινος πρὸς αὐτοῦ κυρῆσαι, πρότερον εὐδοκιμήσας ἐν τῇ πρὸς Μεγαρέας γενομένῃ στρατηγίῃ, Νίσαιάν τε ἑλὼν καὶ ἄλλα ἀποδεξάμενος μεγάλα ἔργα.",
+  "e": "Wounding himself and his mules, he drove his wagon into the marketplace, with a story that he had escaped from his enemies, who would have killed him (so he said) as he was driving into the country. So he implored the people to give him a guard: and indeed he had won a reputation in his command of the army against the Megarians, when he had taken Nisaea and performed other great exploits."
+ },
+ {
+  "k": "029a23c99828ed1e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὁ δὲ δῆμος ὁ τῶν Ἀθηναίων ἐξαπατηθεὶς ἔδωκέ οἱ τῶν ἀστῶν καταλέξας ἄνδρας τούτους οἳ δορυφόροι μὲν οὐκ ἐγένοντο Πεισιστράτου, κορυνηφόροι δέ· ξύλων γὰρ κορύνας ἔχοντες εἵποντό οἱ ὄπισθε.",
+  "e": "Taken in, the Athenian people gave him a guard of chosen citizens, whom Pisistratus made clubmen instead of spearmen: for the retinue that followed him carried wooden clubs."
+ },
+ {
+  "k": "180f548fd3785e60",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "συνεπαναστάντες δὲ οὗτοι ἅμα Πεισιστράτῳ ἔσχον τὴν ἀκρόπολιν. ἔνθα δὴ ὁ Πεισίστρατος ἦρχε Ἀθηναίων, οὔτε τιμὰς τὰς ἐούσας συνταράξας οὔτε θέσμια μεταλλάξας, ἐπί τε τοῖσι κατεστεῶσι ἔνεμε τὴν πόλιν κοσμέων καλῶς τε καὶ εὖ.",
+  "e": "These rose with Pisistratus and took the Acropolis; and Pisistratus ruled the Athenians, disturbing in no way the order of offices nor changing the laws, but governing the city according to its established constitution and arranging all things fairly and well."
+ },
+ {
+  "k": "e10195f6c9319226",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ δὲ οὐ πολλὸν χρόνον τὠυτὸ φρονήσαντες οἵ τε τοῦ Μεγακλέος στασιῶται καὶ οἱ τοῦ Λυκούργου ἐξελαύνουσί μιν. οὕτω μὲν Πεισίστρατος ἔσχε τὸ πρῶτον Ἀθήνας, καὶ τὴν τυραννίδα οὔκω κάρτα ἐρριζωμένην ἔχων ἀπέβαλε. οἳ δὲ ἐξελάσαντες Πεισίστρατον αὖτις ἐκ νέης ἐπʼ ἀλλήλοισι ἐστασίασαν.",
+  "e": "But after a short time the partisans of Megacles and of Lycurgus made common cause and drove him out. In this way Pisistratus first got Athens [23.7333,37.9667] (Perseus) Athens and, as he had a sovereignty that was not yet firmly rooted, lost it. Presently his enemies who together had driven him out began to feud once more."
+ },
+ {
+  "k": "b5fe83a3b0fe0577",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "περιελαυνόμενος δὲ τῇ στάσι ὁ Μεγακλέης ἐπεκηρυκεύετο Πεισιστράτῳ, εἰ βούλοιτό οἱ τὴν θυγατέρα ἔχειν γυναῖκα ἐπὶ τῇ τυραννίδι.",
+  "e": "Then Megacles, harassed by factional strife, sent a message to Pisistratus offering him his daughter to marry and the sovereign power besides."
+ },
+ {
+  "k": "7c833ec2b4aa57a5",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐνδεξαμένου δὲ τὸν λόγον καὶ ὁμολογήσαντος ἐπὶ τούτοισι Πεισιστράτου, μηχανῶνται δὴ ἐπὶ τῇ κατόδῳ πρῆγμα εὐηθέστατον, ὡς ἐγὼ εὑρίσκω, μακρῷ, ἐπεί γε ἀπεκρίθη ἐκ παλαιτέρου τοῦ βαρβάρου ἔθνεος τὸ Ἑλληνικὸν ἐὸν καὶ δεξιώτερον καὶ εὐηθείης ἠλιθίου ἀπηλλαγμένον μᾶλλον, εἰ καὶ τότε γε οὗτοι ἐν Ἀθηναίοισι τοῖσι πρώτοισι λεγομένοισι εἶναι Ἑλλήνων σοφίην μηχανῶνται τοιάδε.",
+  "e": "When this offer was accepted by Pisistratus, who agreed on these terms with Megacles, they devised a plan to bring Pisistratus back which, to my mind, was so exceptionally foolish that it is strange (since from old times the Hellenic stock has always been distinguished from foreign by its greater cleverness and its freedom from silly foolishness) that these men should devise such a plan to deceive Athenians, said to be the subtlest of the Greeks."
+ },
+ {
+  "k": "eeb728160c869ee6",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐν τῷ δήμῳ τῷ Παιανιέι ἦν γυνὴ τῇ οὔνομα ἦν Φύη, μέγαθος ἀπὸ τεσσέρων πηχέων ἀπολείπουσα τρεῖς δακτύλους καὶ ἄλλως εὐειδής· ταύτην τὴν γυναῖκα σκευάσαντες πανοπλίῃ, ἐς ἅρμα ἐσβιβάσαντες καὶ προδέξαντες σχῆμα οἷόν τι ἔμελλε εὐπρεπέστατον φανέεσθαι ἔχουσα, ἤλαυνον ἐς τὸ ἄστυ, προδρόμους κήρυκας προπέμψαντες· οἳ τὰ ἐντεταλμένα ἠγόρευον ἀπικόμενοι ἐς τὸ ἄστυ, λέγοντες τοιάδε·",
+  "e": "There was in the Paeanian deme a woman called Phya, three fingers short of six feet, four inches in height, and otherwise, too, well-formed. This woman they equipped in full armor and put in a chariot, giving her all the paraphernalia to make the most impressive spectacle, and so drove into the city; heralds ran before them, and when they came into town proclaimed as they were instructed:"
+ },
+ {
+  "k": "d90779b54350f0fc",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὦ Ἀθηναῖοι, δέκεσθε ἀγαθῷ νόῳ Πεισίστρατον, τὸν αὐτὴ ἡ Ἀηθναίη τιμήσασα ἀνθρώπων μάλιστα κατάγει ἐς τὴν ἑωυτῆς ἀκρόπολιν. οἳ μὲν δὴ ταῦτα διαφοιτέοντες ἔλεγον· αὐτίκα δὲ ἔς τε τοὺς δήμους φάτις ἀπίκετο ὡς Ἀθηναίη Πεισίστρατον κατάγει, καὶ οἱ ἐν τῷ ἄστεϊ πειθόμενοι τὴν γυναῖκα εἶναι αὐτὴν τὴν θεὸν προσεύχοντό τε τὴν ἄνθρωπον καὶ ἐδέκοντο Πεισίστρατον.",
+  "e": "“Athenians, give a hearty welcome to Pisistratus, whom Athena herself honors above all men and is bringing back to her own acropolis.” So the heralds went about proclaiming this; and immediately the report spread in the demes that Athena was bringing Pisistratus back, and the townsfolk, believing that the woman was the goddess herself, worshipped this human creature and welcomed Pisistratus."
+ },
+ {
+  "k": "baeff9a0ce907d9f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀπολαβὼν δὲ τὴν τυραννίδα τρόπῳ τῷ εἰρημένῳ ὁ Πεισίστρατος κατὰ τὴν ὁμολογίην τὴν πρὸς Μεγακλέα γενομένην γαμέει τοῦ Μεγακλέος τὴν θυγατέρα. οἷα δὲ παίδων τέ οἱ ὑπαρχόντων νεηνιέων καὶ λεγομένων ἐναγέων εἶναι τῶν Ἀλκμεωνιδέων, οὐ βουλόμενός οἱ γενέσθαι ἐκ τῆς νεογάμου γυναικὸς τέκνα ἐμίσγετό οἱ οὐ κατὰ νόμον.",
+  "e": "Having got back his sovereignty in the manner which I have described, Pisistratus married Megacles' daughter according to his agreement with Megacles. But as he already had young sons, and as the Alcmeonid family were said to be under a curse, he had no wish that his newly-wedded wife bear him children, and therefore had unusual intercourse with her."
+ },
+ {
+  "k": "f6879681081a5991",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὰ μέν νυν πρῶτα ἔκρυπτε ταῦτα ἡ γυνή, μετὰ δὲ εἴτε ἱστορεύσῃ εἴτε καὶ οὒ φράζει τῇ ἑωυτῆς μητρί, ἣ δὲ τῷ ἀνδρί. ὀργῇ δὲ ὡς εἶχε καταλλάσσετο τὴν ἔχθρην τοῖσι στασιώτῃσι. μαθὼν δὲ ὁ Πεισίστρατος τὰ ποιεύμενα ἐπʼ ἑωυτῷ ἀπαλλάσσετο ἐκ τῆς χώρης τὸ παράπαν, ἀπικόμενος δὲ ἐς Ἐρέτριαν ἐβουλεύετο ἅμα τοῖσι παισί.",
+  "e": "At first the woman hid the fact: presently she told her mother (whether interrogated or not, I do not know) and the mother told her husband. Megacles was very angry to be dishonored by Pisistratus; and in his anger he patched up his quarrel with the other faction. Pisistratus, learning what was going on, went alone away from the country altogether, and came to Eretria [23.8083,38.3917] (Perseus) Eretria where he deliberated with his sons."
+ },
+ {
+  "k": "3966c385cdc4d89a",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Ἱππίεω δὲ γνώμῃ νικήσαντος ἀνακτᾶσθαι ὀπίσω τὴν τυραννίδα, ἐνθαῦτα ἤγειρον δωτίνας ἐκ τῶν πολίων αἵτινές σφι προαιδέοντό κού τι. πολλῶν δὲ μεγάλα παρασχόντων χρήματα, Θηβαῖοι ὑπερεβάλοντο τῇ δόσι τῶν χρημάτων.",
+  "e": "The opinion of Hippias prevailing, that they should recover the sovereignty, they set out collecting contributions from all the cities that owed them anything. Many of these gave great amounts, the Thebans more than any,"
+ },
+ {
+  "k": "938b15c830c183a8",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ δέ, οὐ πολλῷ λόγῳ εἰπεῖν, χρόνος διέφυ καὶ πάντα σφι ἐξήρτυτο ἐς τὴν κάτοδον· καὶ γὰρ Ἀργεῖοι μισθωτοὶ ἀπίκοντο ἐκ Πελοποννήσου, καὶ Νάξιός σφι ἀνὴρ ἀπιγμένος ἐθελοντής, τῷ οὔνομα ἦν Λύγδαμις, προθυμίην πλείστην παρείχετο, κομίσας καὶ χρήματα καὶ ἄνδρας.",
+  "e": "and in course of time, not to make a long story, everything was ready for their return: for they brought Argive mercenaries from the Peloponnese [22,37.5] (region), Greece, Europe Peloponnese , and there joined them on his own initiative a man of Nisos Naxos [25.583,32.33] (island), Cyclades, Aegean Islands, Greece, Europe Naxos called Lygdamis, who was most keen in their cause and brought them money and men."
+ },
+ {
+  "k": "cabd1b22f64c03df",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐξ Ἐρετρίης δὲ ὁρμηθέντες διὰ ἑνδεκάτου ἔτεος ἀπίκοντο ὀπίσω, καὶ πρῶτον τῆς Ἀττικῆς ἴσχουσι Μαραθῶνα. ἐν δὲ τούτῳ τῷ χώρῳ σφι στρατοπεδευομένοισι οἵ τε ἐκ τοῦ ἄστεος στασιῶται ἀπίκοντο ἄλλοι τε ἐκ τῶν δήμων προσέρρεον, τοῖσι ἡ τυραννὶς πρὸ ἐλευθερίης ἦν ἀσπαστότερον.",
+  "e": "So after ten years they set out from Eretria [23.8083,38.3917] (Perseus) Eretria and returned home. The first place in Attica [23.5,38.83] (department), Central Greece and Euboea, Greece, Europe Attica which they took and held was Marathon: and while encamped there they were joined by their partisans from the city, and by others who flocked to them from the country—demesmen who loved the rule of one more than freedom. These, then, assembled;"
+ },
+ {
+  "k": "961706882cbdf6c5",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὗτοι μὲν δὴ συνηλίζοντο, Ἀθηναίων δὲ οἱ ἐκ τοῦ ἄστεος, ἕως μὲν Πεισίστρατος τὰ χρήματα ἤγειρε, καὶ μεταῦτις ὡς ἔσχε Μαραθῶνα, λόγον οὐδένα εἶχον· ἐπείτε δὲ ἐπύθοντο ἐκ τοῦ Μαραθῶνος αὐτὸν πορεύεσθαι ἐπὶ τὸ ἄστυ, οὕτω δὴ βοηθέουσι ἐπʼ αὐτόν.",
+  "e": "but the Athenians in the city, who while Pisistratus was collecting money and afterwards when he had taken Marathon took no notice of it, did now, and when they learned that he was marching from Marathon against Athens [23.7333,37.9667] (Perseus) Athens , they set out to attack him."
+ },
+ {
+  "k": "b1c959008f4b4eef",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ οὗτοί τε πανστρατιῇ ἤισαν ἐπὶ τοὺς κατιόντας καὶ οἱ ἀμφὶ Πεισίστρατον, ὡς ὁρμηθέντες ἐκ Μαραθῶνος ἤισαν ἐπὶ τὸ ἄστυ, ἐς τὠυτὸ συνιόντες ἀπικνέονται ἐπὶ Παλληνίδος Ἀθηναίης ἱρόν, καὶ ἀντία ἔθεντο τὰ ὅπλα.",
+  "e": "They came out with all their force to meet the returning exiles. Pisistratus' men encountered the enemy when they had reached the temple of Pallenian Athena in their march from Marathon towards the city, and encamped face to face with them."
+ },
+ {
+  "k": "17fee269166e30d7",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐνθαῦτα θείῃ πομπῇ χρεώμενος παρίσταται Πεισιστράτῳ Ἀμφίλυτος ὁ Ἀκαρνὰν χρησμολόγος ἀνήρ, ὅς οἱ προσιὼν χρᾷ ἐν ἑξαμέτρῳ τόνῳ τάδε λέγων· ἔρριπται δʼ ὁ βόλος, τὸ δὲ δίκτυον ἐκπεπέτασται, θύννοι δʼ οἰμήσουσι σεληναίης διὰ νυκτός.",
+  "e": "There (by the providence of heaven) Pisistratus met Amphilytus the Acarnanian, a diviner, who came to him and prophesied as follows in hexameter verses: “The cast is made, the net spread, The tunny-fish shall flash in the moonlit night.”"
+ },
+ {
+  "k": "5a26256733e8383a",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ μὲν δή οἱ ἐνθεάζων χρᾷ τάδε, Πεισίστρατος δὲ συλλαβὼν τὸ χρηστήριον καὶ φὰς δέκεσθαι τὸ χρησθὲν ἐπῆγε τὴν στρατιήν. Ἀθηναῖοι δὲ οἱ ἐκ τοῦ ἄστεος πρὸς ἄριστον τετραμμένοι ἦσαν δὴ τηνικαῦτα, καὶ μετὰ τὸ ἄριστον μετεξέτεροι αὐτῶν οἳ μὲν πρὸς κύβους οἳ δὲ πρὸς ὕπνον. οἱ δὲ ἀμφὶ Πεισίστρατον ἐσπεσόντες τοὺς Ἀθηναίους τρέπουσι.",
+  "e": "So Amphilytus spoke, being inspired; Pisistratus understood him and, saying that he accepted the prophecy, led his army against the enemy. The Athenians of the city had by this time had breakfast, and after breakfast some were dicing and some were sleeping: they were attacked by Pisistratus' men and put to flight."
+ },
+ {
+  "k": "877ca771f70e0761",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "φευγόντων δὲ τούτων βουλὴν ἐνθαῦτα σοφωτάτην Πεισίστρατος ἐπιτεχνᾶται, ὅκως μήτε ἁλισθεῖεν ἔτι οἱ Ἀθηναῖοι διεσκεδασμένοι τε εἶεν· ἀναβιβάσας τοὺς παῖδας ἐπὶ ἵππους προέπεμπε, οἳ δὲ καταλαμβάνοντες τοὺς φεύγοντας ἔλεγον τὰ ἐντεταλμένα ὑπὸ Πεισιστράτου, θαρσέειν τε κελεύοντες καὶ ἀπιέναι ἕκαστον ἐπὶ τὰ ἑωυτοῦ.",
+  "e": "So they fled, and Pisistratus devised a very subtle plan to keep them scattered and prevent them assembling again: he had his sons mount and ride forward: they overtook the fugitives and spoke to them as they were instructed by Pisistratus, telling them to take heart and each to depart to his home."
+ },
+ {
+  "k": "87ededaf472e4516",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πειθομένων δὲ τῶν Ἀθηναίων, οὕτω δὴ Πεισίστρατος τὸ τρίτον σχὼν Ἀθήνας ἐρρίζωσε τὴν τυραννίδα ἐπικούροισί τε πολλοῖσι καὶ χρημάτων συνόδοισι, τῶν μὲν αὐτόθεν τῶν δὲ ἀπὸ Στρυμόνος ποταμοῦ συνιόντων, ὁμήρους τε τῶν παραμεινάντων Ἀθηναίων καὶ μὴ αὐτίκα φυγόντων παῖδας λαβὼν καὶ καταστήσας ἐς Νάξον",
+  "e": "The Athenians did, and by this means Pisistratus gained Athens [23.7333,37.9667] (Perseus) Athens for the third time, rooting his sovereignty in a strong guard and revenue collected both from Athens [23.7333,37.9667] (Perseus) Athens and from the district of the river Strymon, and he took hostage the sons of the Athenians who remained and did not leave the city at once, and placed these in Nisos Naxos [25.583,32.33] (island), Cyclades, Aegean Islands, Greece, Europe Naxos ."
+ },
+ {
+  "k": "2496aba81fde426d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "(καὶ γὰρ ταύτην ὁ Πεισίστρατος κατεστρέψατο πολέμῳ καὶ ἐπέτρεψε Λυγδάμι) πρὸς τε ἔτι τούτοισι τὴν νῆσον Δῆλον καθήρας ἐκ τῶν λογίων καθήρας δὲ ὧδε· ἐπʼ ὅσον ἔποψις τοῦ ἱροῦ εἶχε, ἐκ τούτου τοῦ χώρου παντὸς ἐξορύξας τοὺς νεκροὺς μετεφόρεε ἐς ἄλλον χῶρον τῆς Δήλου.",
+  "e": "(He had conquered Nisos Naxos [25.583,32.33] (island), Cyclades, Aegean Islands, Greece, Europe Naxos too and put Lygdamis in charge.) And besides this, he purified the island of Delos [25.2833,37.4] (Perseus) Delos as a result of oracles, and this is how he did it: he removed all the dead that were buried in ground within sight of the temple and conveyed them to another part of Delos [25.2833,37.4] (Perseus) Delos ."
+ },
+ {
+  "k": "c69b6638e2767ff2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ Πεισίστρατος μὲν ἐτυράννευε Ἀθηνέων, Ἀθηναίων δὲ οἳ μὲν ἐν τῇ μάχη ἐπεπτώκεσαν, οἳ δὲ αὐτῶν μετʼ Ἀλκμεωνιδέων ἔφευγον ἐκ τῆς οἰκηίης.",
+  "e": ""
+ },
+ {
+  "k": "9e0d0ce53d0403a3",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τοὺς μέν νυν Ἀθηναίους τοιαῦτα τὸν χρόνον τοῦτον ἐπυνθάνετο ὁ Κροῖσος κατέχοντα, τοὺς δὲ Λακεδαιμονίους ἐκ κακῶν τε μεγάλων πεφευγότας καὶ ἐόντας ἤδη τῷ πολέμῳ κατυπερτέρους Τεγεητέων. ἐπὶ γὰρ Λέοντος βασιλεύοντος καὶ Ἡγησικλέος ἐν Σπάρτῃ τοὺς ἄλλους πολέμους εὐτυχέοντες οἱ Λακεδαιμόνιοι πρὸς Τεγεήτας μούνους προσέπταιον.",
+  "e": "So Pisistratus was sovereign of Athens [23.7333,37.9667] (Perseus) Athens : and as for the Athenians, some had fallen in the battle, and some, with the Alcmeonids, were exiles from their native land. So Croesus learned that at that time such problems were oppressing the Athenians, but that the Lacedaemonians had escaped from the great evils and had mastered the Tegeans in war. In the kingship of Leon and Hegesicles at Sparta [22.4417,37.0667] (Perseus) Sparta , the Lacedaemonians were successful in all their other wars but met disaster only against the Tegeans."
+ },
+ {
+  "k": "5ef9d27b5e54ab20",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὸ δὲ ἔτι πρότερον τούτων καί κακονομώτατοι ἦσαν σχεδὸν πάντων Ἑλλήνων κατά τε σφέας αὐτοὺς καὶ ξείνοισι ἀπρόσμικτοι· μετέβαλον δὲ ὧδε ἐς εὐνομίην. Λυκούργου τῶν Σπαρτιητέων δοκίμου ἀνδρὸς ἐλθόντος ἐς Δελφοὺς ἐπὶ τὸ χρηστήριον, ὡς ἐσήιε ἐς τὸ μέγαρον, εὐθὺς ἡ Πυθίη λέγει τάδε.",
+  "e": "Before this they had been the worst-governed of nearly all the Hellenes and had had no dealings with strangers, but they changed to good government in this way: Lycurgus, a man of reputation among the Spartans, went to the oracle at Delphi [22.5167,38.4917] (Perseus) Delphi . As soon as he entered the hall, the priestess said in hexameter:"
+ },
+ {
+  "k": "a559c5144a50ec44",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἥκεις ὦ Λυκόοργε ἐμὸν ποτὶ πίονα νηόν Ζηνὶ φίλος καὶ πᾶσιν Ὀλύμπια δώματʼ ἔχουσι. δίζω ἤ σε θεὸν μαντεύσομαι ἢ ἄνθρωπον. ἀλλʼ ἔτι καὶ μᾶλλον θεὸν ἔλπομαι, ὦ Λυκόοργε.",
+  "e": ""
+ },
+ {
+  "k": "6f463fe16b001644",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οἳ μὲν δή τινες πρὸς τούτοισι λέγουσι καὶ φράσαι αὐτῷ τὴν Πυθίην τὸν νῦν κατεστεῶτα κόσμον Σπαρτιήτῃσι. ὡς δʼ αὐτοὶ Λακεδαιμόνιοι λέγουσι, Λυκοῦργον ἐπιτροπεύσαντα Λεωβώτεω, ἀδελφιδέου μὲν ἑωυτοῦ βασιλεύοντος δὲ Σπαρτιητέων, ἐκ Κρήτης ἀγαγέσθαι ταῦτα.",
+  "e": "You have come to my rich temple, Lycurgus, A man dear to Zeus and to all who have Olympian homes. I am in doubt whether to pronounce you man or god, But I think rather you are a god, Lycurgus. Some say that the Pythia also declared to him the constitution that now exists at Sparta [22.4417,37.0667] (Perseus) Sparta , but the Lacedaemonians themselves say that Lycurgus brought it from Crete [25,35.166] (region), Greece, Europe Crete when he was guardian of his nephew Leobetes, the Spartan king."
+ },
+ {
+  "k": "6358922c33425e75",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς γὰρ ἐπετρόπευσε τάχιστα, μετέστησε τὰ νόμιμα πάντα, καὶ ἐφύλαξε ταῦτα μὴ παραβαίνειν· μετὰ δὲ τὰ ἐς πόλεμον ἔχοντα, ἐνωμοτίας καὶ τριηκάδας καὶ συσσίτια, πρός τε τούτοισι τοὺς ἐφόρους καὶ γέροντας ἔστησε Λυκοῦργος.",
+  "e": "Once he became guardian, he changed all the laws and took care that no one transgressed the new ones. Lycurgus afterwards established their affairs of war: the sworn divisions, the bands of thirty, the common meals; also the ephors and the council of elders."
+ },
+ {
+  "k": "9cc13a7091e44747",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὕτω μὲν μεταβαλόντες εὐνομήθησαν, τῷ δὲ Λυκούργῳ τελευτήσαντι ἱρὸν εἱσάμενοι σέβονται μεγάλως. οἷα δὲ ἐν τε χώρῃ ἀγαθῇ καὶ πλήθεϊ οὐκ ὀλίγων ἀνδρῶν, ἀνά τε ἔδραμον αὐτίκα καὶ εὐθηνήθησαν, καὶ δή σφι οὐκέτι ἀπέχρα ἡσυχίην ἄγειν, ἀλλὰ καταφρονήσαντες Ἀρκάδων κρέσσονες εἶναι ἐχρηστηριάζοντο ἐν Δελφοῖσι ἐπὶ πάσῃ τῇ Ἀρκάδων χωρῇ.",
+  "e": "Thus they changed their bad laws to good ones, and when Lycurgus died they built him a temple and now worship him greatly. Since they had good land and many men, they immediately flourished and prospered. They were not content to live in peace, but, confident that they were stronger than the Arcadians, asked the oracle at Delphi [22.5167,38.4917] (Perseus) Delphi about gaining all the Arcadian land."
+ },
+ {
+  "k": "99113aa772ad1be1",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἡ δὲ Πυθίη σφι χρᾷ τάδε. Ἀρκαδίην μʼ αἰτεῖς· μέγα μʼ αἰτεῖς· οὐ τοι δώσω. πολλοὶ ἐν Ἀρκαδίῃ βαλανηφάγοι ἄνδρες ἔασιν, οἵ σʼ ἀποκωλύσουσιν. ἐγὼ δὲ τοι οὔτι μεγαίρω· δώσω τοί Τεγέην ποσσίκροτον ὀρχήσασθαι καὶ καλὸν πεδίον σχοίνῳ διαμετρήσασθαι.",
+  "e": ""
+ },
+ {
+  "k": "0075a0f3d68a10ba",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα ὡς ἀπενειχθέντα ἤκουσαν οἱ Λακεδαιμόνιοι,Ἀρκάδων μὲν τῶν ἄλλων ἀπείχοντο, οἳ δὲ πέδας φερόμενοι ἐπὶ Τεγεήτας ἐστρατεύοντο, χρησμῷ κιβδήλῳ πίσυνοι, ὡς δὴ ἐξανδραποδιούμενοι τοὺς Τεγεήτας.",
+  "e": "She replied in hexameter: You ask me for Arcadia [22.25,37.583] (department), Peloponnese, Greece, Europe Arcadia ? You ask too much; I grant it not. There are many men in Arcadia [22.25,37.583] (department), Peloponnese, Greece, Europe Arcadia , eaters of acorns, Who will hinder you. But I grudge you not. I will give you Tegea [22.4,37.5] (Perseus) Tegea to beat with your feet in dancing, And its fair plain to measure with a rope."
+ },
+ {
+  "k": "e37107a24b578eeb",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἑσσωθέντες δὲ τῇ συμβολῇ, ὅσοι αὐτῶν ἐζωγρήθησαν, πέδας τε ἔχοντες τὰς ἐφέροντο αὐτοὶ καὶ σχοίνῳ διαμετρησάμενοι τὸ πεδίον τὸ Τεγεητέων ἐργάζοντο. αἱ δὲ πέδαι αὗται ἐν τῇσι ἐδεδέατο ἔτι καὶ ἐς ἐμὲ ἦσαν σόαι ἐν Τεγέῃ περὶ τὸν νηὸν τῆς Ἀλέης Ἀθηναίης κρεμάμεναι.",
+  "e": "When the Lacedaemonians heard the oracle reported, they left the other Arcadians alone and marched on Tegea [22.4,37.5] (Perseus) Tegea carrying chains, relying on the deceptive oracle. They were confident they would enslave the Tegeans, but they were defeated in battle."
+ },
+ {
+  "k": "729f93d7224d07a5",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "κατὰ μὲν δὴ τὸν πρότερον πόλεμον συνεχέως αἰεὶ κακῶς ἀέθλεον πρὸς τοὺς Τεγεήτας, κατὰ δὲ τὸν κατὰ Κροῖσον χρόνον καὶ τὴν Ἀναξανδρίδεώ τε καὶ Ἀρίστωνος βασιληίην ἐν Λακεδαίμονι ἤδη οἱ Σπαρτιῆται κατυπέρτεροι τῷ πολέμῳ ἐγεγόνεσαν, τρόπῳ τοιῷδε γενόμενοι.",
+  "e": "Those taken alive were bound in the very chains they had brought with them, and they measured the Tegean plain with a rope by working the fields. The chains in which they were bound were still preserved in my day, hanging up at the temple of Athena Alea."
+ },
+ {
+  "k": "cb57d6593975deb7",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπειδὴ αἰεὶ τῷ πολέμῳ ἑσσοῦντο ὑπὸ Τεγεητέων, πέμψαντες θεοπρόπους ἐς Δελφοὺς ἐπειρώτων τίνα ἂν θεῶν ἱλασάμενοι κατύπερθε τῷ πολέμῳ Τεγεητέων γενοίατο. ἡ δὲ Πυθίη σφι ἔχρησε τὰ Ὀρέστεω τοῦ Ἀγαμέμνονος ὀστέα ἐπαγαγομένους.",
+  "e": "In the previous war the Lacedaemonians continually fought unsuccessfully against the Tegeans, but in the time of Croesus and the kingship of Anaxandrides and Ariston in Sparta [22.416,37.83] (inhabited place), Laconia, Peloponnese, Greece, Europe Lacedaemon the Spartans had gained the upper hand. This is how:"
+ },
+ {
+  "k": "be3c79690b5a7099",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ἀνευρεῖν οὐκ οἷοί τε ἐγίνοντο τὴν θήκην τοῦ Ὀρέστεω ἔπεμπον αὖτις τὴν ἐς θεὸν ἐπειρησομένους τὸν χῶρον ἐν τῷ κέοιτο Ὀρέστης. εἰρωτῶσι δὲ ταῦτα τοῖσι θεοπρόποισι λέγει ἡ Πυθίη τάδε.",
+  "e": "when they kept being defeated by the Tegeans, they sent ambassadors to Delphi [22.5167,38.4917] (Perseus) Delphi to ask which god they should propitiate to prevail against the Tegeans in war. The Pythia responded that they should bring back the bones of Orestes, son of Agamemnon."
+ },
+ {
+  "k": "e4a655af822f827d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔστι τις Ἀρκαδίης Τεγέη λευρῷ ἐνὶ χώρῳ, ἔνθʼ ἄνεμοι πνείουσι δύω κρατερῆς ὑπʼ ἀνάγκης, καὶ τύπος ἀντίτυπος, καὶ πῆμʼ ἐπὶ πήματι κεῖται. ἔνθʼ Ἀγαμεμνονίδην κατέχει φυσίζοος αἶα, τὸν σὺ κομισσάμενος Τεγέης ἐπιτάρροθος ἔσσῃ.",
+  "e": "When they were unable to discover Orestes' tomb, they sent once more to the god to ask where he was buried. The Pythia responded in hexameter to the messengers:"
+ }
+]

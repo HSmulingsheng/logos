@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react'
-import { Icon, Section } from '../../../components/ui'
+import { Icon, Section, Sheet } from '../../../components/ui'
+import { ClickableGreek } from '../../../components/ClickableGreek'
 import { SpeakSentence } from '../../../components/SpeakSentence'
+import { SpeakButton, WordDetail } from '../../../components/WordDetail'
+import { useWordLookup } from '../../../lib/wordLookup'
+import { useStore } from '../../../store/useStore'
+import { playAudio } from '../../../lib/audio'
 
 /**
  * 古典文本阅读（哲学 / 文学 / 历史）。
@@ -29,7 +34,8 @@ export interface WorkMeta {
   license?: string
 }
 
-interface Chapter { n: string; label: string; paras: { g: string; e: string }[] }
+interface Para { g: string; e: string; zh?: string }
+interface Chapter { n: string; label: string; paras: Para[] }
 
 let indexCache: WorkMeta[] | null = null
 export async function loadReadingIndex(): Promise<WorkMeta[]> {
@@ -84,6 +90,11 @@ export function GenreWorks({ genre, onOpen }: { genre: ReadingGenre; onOpen: (w:
 export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => void }) {
   const [chapters, setChapters] = useState<Chapter[] | null>(null)
   const [at, setAt] = useState<number | null>(null)
+  /** 译文语言：中 / 英 */
+  const [lang, setLang] = useState<'zh' | 'en'>('zh')
+  const [showTr, setShowTr] = useState(true)
+  const { lookup, detail, setDetail, missing, clearMissing } = useWordLookup()
+  const { cards, toggleFav } = useStore()
 
   useEffect(() => { setAt(null); void loadWork(work.id).then(setChapters) }, [work.id])
 
@@ -108,12 +119,36 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
   }
 
   const c = chapters[at]
+  const hasZh = c.paras.some((p) => (p.zh || '').trim())
   return (
     <div>
       <WorkHeader work={work} onBack={() => setAt(null)} backLabel="返回章节" />
-      <div className="mb-3 flex items-center justify-between">
+
+      {/* 章节导航 + 译文语言开关，与宗教版式一致 */}
+      <div className="mb-3 flex items-center justify-between gap-2">
         <span className="text-sm font-medium">{c.label}</span>
-        <span className="flex gap-2">
+        <span className="flex items-center gap-2">
+          <button
+            className={`btn-ghost !px-2.5 !py-1.5 ${showTr && lang === 'zh' ? '!bg-aegean-50 !text-aegean-700' : ''}`}
+            disabled={!hasZh}
+            title={hasZh ? '显示中文译文' : '这部作品尚无中文译文'}
+            onClick={() => { setLang('zh'); setShowTr(true) }}
+          >
+            中
+          </button>
+          <button
+            className={`btn-ghost !px-2.5 !py-1.5 ${showTr && lang === 'en' ? '!bg-aegean-50 !text-aegean-700' : ''}`}
+            onClick={() => { setLang('en'); setShowTr(true) }}
+          >
+            英
+          </button>
+          <button
+            className={`btn-ghost !px-2.5 !py-1.5 ${!showTr ? '!bg-ink-100 dark:!bg-white/10' : ''}`}
+            onClick={() => setShowTr((v) => !v)}
+            title="隐藏译文，只看原文"
+          >
+            {showTr ? '隐藏' : '译文'}
+          </button>
           <button disabled={at === 0} onClick={() => setAt(at - 1)}
             className="rounded-lg px-2.5 py-1 text-xs text-aegean-600 disabled:opacity-30 hover:underline">上一章</button>
           <button disabled={at >= chapters.length - 1} onClick={() => setAt(at + 1)}
@@ -121,22 +156,63 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
         </span>
       </div>
 
+      {!hasZh && (
+        <p className="mb-3 text-[11px] text-ink-400">
+          这部作品的中文译文正在陆续补齐；点「英」可先看英译。
+        </p>
+      )}
+
       <div className="space-y-4">
         {c.paras.map((p, i) => (
           <div key={i} className="card-surface p-4">
-            <div className="mb-1.5 flex items-start gap-2">
-              <span className="mt-0.5 shrink-0 text-[10px] tabular-nums text-ink-300">{i + 1}</span>
-              <p className="greek flex-1 text-[15px] leading-[1.9] text-ink-800 dark:text-ink-100">{p.g}</p>
-              <SpeakSentence text={p.g} className="!h-7 !w-7" />
+            <div className="mb-1.5 flex items-center gap-2">
+              <span className="text-[10px] tabular-nums text-ink-300">{i + 1}</span>
+              <SpeakSentence text={p.g} className="ml-auto !h-6 !w-6" />
             </div>
-            {p.e && (
-              <p className="mt-2 border-l-2 border-ink-100 pl-3 text-[13px] leading-relaxed text-ink-500 dark:border-white/10 dark:text-ink-400">
-                {p.e}
-              </p>
+            {/* 与宗教同一套组件：19px、逐词可点 */}
+            <ClickableGreek text={p.g} onWord={lookup} className="text-[19px] leading-loose" />
+            {showTr && lang === 'zh' && (p.zh || '').trim() && (
+              <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{p.zh}</p>
+            )}
+            {showTr && lang === 'en' && p.e && (
+              <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{p.e}</p>
             )}
           </div>
         ))}
       </div>
+
+      {/* 查词面板：与宗教完全一致 */}
+      <Sheet open={!!detail} onClose={() => setDetail(null)}
+        onReplay={() => detail && playAudio(detail.au, detail.w)}>
+        {detail ? (
+          <div>
+            <div className="mb-3 flex items-center gap-3">
+              <h2 className="greek text-3xl">{detail.e || detail.w}</h2>
+              <SpeakButton word={detail} />
+              <button className="btn-ghost ml-auto !px-2 !py-1.5" onClick={() => void toggleFav(detail.i)}>
+                {cards.get(detail.i)?.fav
+                  ? <Icon.StarFill className="h-4 w-4 text-amber-400" />
+                  : <Icon.Star className="h-4 w-4" />}
+              </button>
+            </div>
+            <WordDetail word={detail} compact />
+          </div>
+        ) : null}
+      </Sheet>
+
+      {missing && (
+        <div className="mt-3 card-surface p-3 text-xs text-ink-500">
+          <div className="flex items-center gap-2">
+            <span className="greek text-base text-ink-700 dark:text-ink-200">{missing}</span>
+            <span>词表未收录（以新约词汇为主）</span>
+            <button className="btn-ghost ml-auto !px-2 !py-1" onClick={clearMissing}>知道了</button>
+          </div>
+          {/* 词表外的词形给个出口，比"查不到"就结束有用 */}
+          <a className="btn-ghost mt-2 inline-flex"
+            href={`https://logeion.uchicago.edu/${encodeURIComponent(missing)}`}
+            target="_blank" rel="noreferrer">到 Logeion 查这个词 →</a>
+        </div>
+      )}
 
       <div className="mt-4 flex justify-between">
         <button disabled={at === 0} onClick={() => { setAt(at - 1); window.scrollTo(0, 0) }}

@@ -1,5 +1,6 @@
 import { prepareSpeech } from '../lib/tts'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { loadLsj, lsjOf } from '../lib/lsj'
 import type { Example, Word } from '../types'
 import { Icon } from './ui'
 import { playAudio } from '../lib/audio'
@@ -66,6 +67,15 @@ export function ExampleBlock({ ex, warm }: { ex: Example; warm?: boolean }) {
 
 /** 「不背单词」式的词条详情面板：释义 / 例句 / 词形变化 / 词根词缀 */
 export function WordDetail({ word, compact = false }: { word: Word; compact?: boolean }) {
+  // LSJ 释义按需加载（整表 2.7MB，只在真的看词条时才拉），加载完触发一次重渲染
+  const [, setLsjReady] = useState(false)
+  useEffect(() => {
+    if (lsjOf(word.i)) return
+    let alive = true
+    void loadLsj().then(() => { if (alive) setLsjReady(true) })
+    return () => { alive = false }
+  }, [word.i])
+  const lsj = lsjOf(word.i)
   const sensesZh = word.z ?? []
   const sensesEn = word.s ?? []
   const parts = sensesZh.length ? sensesZh : sensesEn
@@ -101,10 +111,21 @@ export function WordDetail({ word, compact = false }: { word: Word; compact?: bo
             ))}
           </ol>
         </div>
-        {sensesEn.length > 0 && (
+        {(lsj || sensesEn.length > 0) && (
           <div>
-            <div className="mb-1 text-xs font-semibold text-ink-400">英文释义</div>
-            <p className="text-sm leading-relaxed text-ink-500 dark:text-ink-300">{sensesEn.join('；')}</p>
+            <div className="mb-1 flex flex-wrap items-baseline gap-x-2">
+              <span className="text-xs font-semibold text-ink-400">
+                {lsj ? '英文释义 · LSJ' : '英文释义'}
+              </span>
+              {lsj && (
+                <span className="text-[10px] text-ink-300">
+                  Liddell-Scott-Jones《希腊语英语词典》· Perseus · CC BY-SA 4.0
+                </span>
+              )}
+            </div>
+            <p className="text-sm leading-relaxed text-ink-500 dark:text-ink-300">
+              {lsj || sensesEn.join('；')}
+            </p>
           </div>
         )}
       </div>
@@ -146,20 +167,36 @@ export function WordDetail({ word, compact = false }: { word: Word; compact?: bo
         </div>
       )}
 
-      {/* 词形变化 */}
+      {/* 词形变化：以表格呈现。数据来自语料统计，词形 + 语法标签 + 出现次数 */}
       {word.fm && word.fm.length > 1 && (
         <div>
           <div className="mb-1.5 flex items-center justify-between">
-            <span className="text-xs font-semibold text-ink-400">语料中的词形变化</span>
-            <span className="text-[11px] text-ink-400">新约中出现 {word.fm.reduce((a, f) => a + f[1], 0)} 次</span>
+            <span className="text-xs font-semibold text-ink-400">词形变化</span>
+            <span className="text-[11px] text-ink-400">
+              共 {word.fm.length} 种形式 · 语料中出现 {word.fm.reduce((a, f) => a + f[1], 0)} 次
+            </span>
           </div>
-          <div className="flex flex-wrap gap-1.5">
-            {word.fm.slice(0, 18).map(([form, count, gram]) => (
-              <span key={form} className="chip !gap-1.5" title={gram}>
-                <b className="greek font-medium">{form}</b>
-                <span className="text-[10px] text-ink-400">{gram || `×${count}`}</span>
-              </span>
-            ))}
+          <div className="overflow-hidden rounded-xl border border-ink-100 dark:border-white/10">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="bg-ink-50 text-[11px] font-medium text-ink-500 dark:bg-white/5 dark:text-ink-400">
+                  <th className="px-3 py-2 text-left">词形</th>
+                  <th className="px-3 py-2 text-left">语法</th>
+                  <th className="px-3 py-2 text-right">出现</th>
+                </tr>
+              </thead>
+              <tbody>
+                {word.fm.map(([form, count, gram]) => (
+                  <tr key={form} className="border-t border-ink-100 dark:border-white/10">
+                    <td className="greek px-3 py-1.5 align-top whitespace-nowrap">{form}</td>
+                    <td className="px-3 py-1.5 align-top text-xs leading-relaxed text-ink-500 dark:text-ink-400">
+                      {gram || '—'}
+                    </td>
+                    <td className="px-3 py-1.5 align-top text-right text-xs tabular-nums text-ink-400">{count}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       )}

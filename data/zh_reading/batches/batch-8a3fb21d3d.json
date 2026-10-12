@@ -1,0 +1,728 @@
+[
+ {
+  "k": "2a7eed2fa1f45723",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "μετὰ δὲ τοῦτο οἱ Ἀθηναῖοι τροπαῖον ἔστησαν καὶ τοὺς νεκροὺς ὑποσπόνδους ἀπέδοσαν τοῖς Συρακοσίοις καὶ τοὺς μετὰ Λαμάχου καὶ αὐτὸν ἐκομίσαντο· καὶ παρόντος ἤδη σφίσι παντὸς τοῦ στρατεύματος καὶ τοῦ ναυτικοῦ καὶ τοῦ πεζοῦ, ἀπὸ τῶν Ἐπιπολῶν καὶ τοῦ κρημνώδους ἀρξάμενοι ἀπετείχιζον μέχρι τῆς θαλάσσης τείχει διπλῷ τοὺς Συρακοσίους.",
+  "e": "After this the Athenians set up a trophy and restored their dead to the Syracusans under truce, themselves getting back the bodies of Lamachus and his men. The whole of their armament being now present, both fleet and land-force, starting from the bluff of Epipolae they proceeded to cut off the Syracusans by a double wall down to the sea."
+ },
+ {
+  "k": "20de4b85d2a19456",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "τὰ δ’ ἐπιτήδεια τῇ στρατιᾷ ἐσήγετο ἐκ τῆς Ἰταλίας πανταχόθεν. ἦλθον δὲ καὶ τῶν Σικελῶν πολλοὶ ξύμμαχοι τοῖς Ἀθηναίοις, οἳ πρότερον περιεωρῶντο, καὶ ἐκ τῆς Τυρσηνίας νῆες πεντηκόντοροι τρεῖς. καὶ τἆλλα προυχώρει αὐτοῖς ἐς ἐλπίδας.",
+  "e": "Provisions were coming in for the army from all quarters of Italy. And there came also as allies to the Athenians many of the Sicels, who before had been hesitating, and from Tyrrhenia three fifty-oared galleys. And other matters were progressing according to their hopes."
+ },
+ {
+  "k": "7688f56ab3529e5d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "καὶ γὰρ οἱ Συρακόσιοι πολέμῳ μὲν οὐκέτι ἐνόμιζον ἂν περιγενέσθαι, ὡς αὐτοῖς οὐδὲ ἀπὸ τῆς Πελοποννήσου ὠφελία οὐδεμία ἧκε, τοὺς δὲ λόγους ἔν τε σφίσιν αὐτοῖς ἐποιοῦντο ξυμβατικοὺς καὶ πρὸς τὸν Νικίαν· οὗτος γὰρ δὴ μόνος εἶχε Λαμάχου τεθνεῶτος τὴν ἀρχήν.",
+  "e": "For the Syracusans no longer thought they could win at war, as no aid had come to them even from the Peloponnesus; and indeed they were discussing terms of agreement, not only among themselves, but even with Nicias, who now since the death of Lamachus had sole command."
+ },
+ {
+  "k": "10aa165836a0fdc4",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "καὶ κύρωσις μὲν οὐδεμία ἐγίγνετο, οἷα δὲ εἰκὸς ἀνθρώπων ἀπορούντων καὶ μᾶλλον ἢ πρὶν πολιορκουμένων, πολλὰ ἐλέγετο πρός τε ἐκεῖνον καὶ πλείω ἔτι κατὰ τὴν πόλιν. καὶ γάρ τινα καὶ ὑποψίαν ὑπὸ τῶν παρόντων κακῶν ἐς ἀλλήλους εἶχον, καὶ τοὺς στρατηγούς τε ἐφ᾽ ὧν αὐτοῖς ταῦτα ξυνέβη ἔπαυσαν, ὡς ἢ δυστυχίᾳ ἢ προδοσίᾳ τῇ ἐκείνων βλαπτόμενοι, καὶ ἄλλους ἀνθείλοντο, Ἡρακλείδην καὶ Εὐκλέα καὶ Τελλίαν.",
+  "e": "No decision was reached; but, as is natural when men are in perplexity and more straitly besieged than before, many proposals were made to him, and still more were discussed in the city. For under their present evils they had some suspicion even of one another; and the generals under whose lead these things had happened were deposed, on the ground that their disasters were due to their ill-luck or treachery, and in their stead were chosen Heracleides, Eucles, and Tellias."
+ },
+ {
+  "k": "8b27aab126aed1e8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "ἐν δὲ τούτῳ Γύλιππος ὁ Λακεδαιμόνιος καὶ αἱ ἀπὸ τῆς Κορίνθου νῆες περὶ Λευκάδα ἤδη ἦσαν, βουλόμενοι ἐς τὴν Σικελίαν διὰ τάχους βοηθῆσαι. καὶ ὡς αὐτοῖς αἱ ἀγγελίαι ἐφοίτων δειναὶ καὶ πᾶσαι ἐπὶ τὸ αὐτὸ ἐψευσμέναι ὡς ἤδη παντελῶς ἀποτετειχισμέναι αἱ Συράκουσαί εἰσι, τῆς μὲν Σικελίας οὐκέτι ἐλπίδα οὐδεμίαν εἶχεν ὁ Γύλιππος, τὴν δὲ Ἰταλίαν βουλόμενος περιποιῆσαι αὐτὸς μὲν καὶ Πυθὴν ὁ Κορίνθιος ναυσὶ δυοῖν μὲν Λακωνικαῖν, δυοῖν δὲ Κορινθίαιν ὅτι τάχιστα ἐπεραιώθησαν τὸν Ἰόνιον ἐς Τάραντα, οἱ δὲ Κορίνθιοι πρὸς ταῖς σφετέραις δέκα Λευκαδίας δύο καὶ Ἀμπρακιώτιδας τρεῖς προσπληρώσαντες ὕστερον ἔμελλον πλεύσεσθαι.",
+  "e": "Meanwhile Gylippus the Lacedaemonian and the ships from Corinth were already at Leucas, proposing to bring aid to Sicily in all haste. As the reports that were coming to them were alarming and all to the same false purport, that Syracuse had already been completely walled off, Gylippus no longer had any hope of Sicily, but wishing to save Italy, he himself and Pythen the Corinthian, with two Laconian vessels and two Corinthian, crossed the Ionian gulf to Tarentum as quickly as possible; while the Corinthians, after manning, in addition to their own ten, two Leucadian and three Ambracian ships, were to sail later."
+ },
+ {
+  "k": "2a4e8f53b78d45b3",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "καὶ ὁ μὲν Γύλιππος ἐκ τοῦ Τάραντος ἐς τὴν Θουρίαν πρῶτον πρεσβευσάμενος καὶ τὴν τοῦ πατρὸς ἀνανεωσάμενος πολιτείαν καὶ οὐ δυνάμενος αὐτοὺς προσαγαγέσθαι, ἄρας παρέπλει τὴν Ἰταλίαν, καὶ ἁρπασθεὶς ὑπ’ ἀνέμου κατὰ τὸν Τεριναῖον κόλπον, ὃς ἐκπνεῖ ταύτῃ μέγας κατὰ βορέαν ἑστηκώς, ἀποφέρεται ἐς τὸ πέλαγος, καὶ πάλιν χειμασθεὶς ἐς τὰ μάλιστα τῷ Τάραντι προσμίσγει· καὶ τὰς ναῦς, ὅσαι μάλιστα ἐπόνησαν ὑπὸ τοῦ χειμῶνος, ἀνελκύσας ἐπεσκεύαζεν.",
+  "e": "From Tarentum, Gylippus, after first going on a mission to Thuria, on account of his father having been once a citizen there, and failing to win them over, weighed anchor and sailed along the coast of Italy. Caught by a wind, which settling in the north blows violently in that region, he was carried out to sea, and then after a most violent storm again reached Tarentum; and there hauling ashore all of his ships that had suffered from the storm he set to repairing them."
+ },
+ {
+  "k": "18c08bd13a0a00dc",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "ὁ δὲ Νικίας πυθόμενος αὐτὸν προσπλέοντα ὑπερεῖδε τὸ πλῆθος τῶν νεῶν, ὅπερ καὶ οἱ Θούριοι ἔπαθον, καὶ λῃστικώτερον ἔδοξε παρεσκευασμένους πλεῖν, καὶ οὐδεμίαν φυλακήν πω ἐποιεῖτο.",
+  "e": "But Nicias, although he heard that he was sailing up, despised the small number of his ships, just as the Thurians had done, and thinking they were coming equipped rather as privateers than as men-of-war, he took as yet no precautions."
+ },
+ {
+  "k": "49911ecab07a6769",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "κατὰ δὲ τοὺς αὐτοὺς χρόνους τούτου τοῦ θέρους καὶ Λακεδαιμόνιοι ἐς τὸ Ἄργος ἐσέβαλον αὐτοί τε καὶ οἱ ξύμμαχοι καὶ τῆς γῆς τὴν πολλὴν ἐδῄωσαν, καὶ Ἀθηναῖοι Ἀργείοις τριάκοντα ναυσὶν ἐβοήθησαν· αἵπερ τὰς σπονδὰς φανερώτατα τὰς πρὸς τοὺς Λακεδαιμονίους αὐτοῖς ἔλυσαν.",
+  "e": "About the same time in this summer, the Lacedaemonians and their allies invaded Argos and ravaged most of the country. And the Athenians brought succour to the Argives with thirty ships, an act which violated their treaty with the Lacedaemonians in the most overt manner."
+ },
+ {
+  "k": "582d484437824704",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "πρότερον μὲν γὰρ λῃστείαις ἐκ Πύλου καὶ περὶ τὴν ἄλλην Πελοπόννησον μᾶλλον ἢ ἐς τὴν Λακωνικὴν ἀποβαίνοντες μετά τε Ἀργείων καὶ Μαντινέων ξυνεπολέμουν, καὶ πολλάκις Ἀργείων κελευόντων ὅσον σχόντας μόνον ξὺν ὅπλοις ἐς τὴν Λακωνικὴν καὶ τὸ ἐλάχιστον μετὰ σφῶν δῃώσαντας ἀπελθεῖν οὐκ ἤθελον· τότε δὲ Πυθοδώρου καὶ Λαισποδίου καὶ Δημαράτου ἀρχόντων ἀποβάντες ἐς Ἐπίδαυρον τὴν Λιμηρὰν καὶ Πρασιὰς καὶ ὅσα ἄλλα ἐδῄωσαν τῆς γῆς, καὶ τοῖς Λακεδαιμονίοις ἤδη εὐπροφάσιστον μᾶλλον τὴν αἰτίαν ἐς τοὺς Ἀθηναίους τοῦ ἀμύνεσθαι ἐποίησαν.",
+  "e": "For before this they waged the war, in cooperation with the Argives and Mantineans, by predatory excursions from Pylos and by making landings round the rest of the Peloponnesus rather than in Laconia; and although the Argives frequently urged them only to make a landing with arms on Laconian territory, devastate in concert with them even the least part, and then go away, they refused. But at this time, under the command of Pythodorus, Laespodias, and Demaratus, they landed at Epidaurus Limera, Prasiae, and other places, and laid waste some of their territory, and so gave the Lacedaemonians from now on a more plausible excuse for defending themselves against the Athenians."
+ },
+ {
+  "k": "2f5de2d04b67873c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 6",
+  "g": "ἀναχωρησάντων δὲ τῶν Ἀθηναίων ἐκ τοῦ Ἄργους ταῖς ναυσὶ καὶ τῶν Λακεδαιμονίων οἱ Ἀργεῖοι ἐσβαλόντες ἐς τὴν Φλειασίαν τῆς τε γῆς αὐτῶν ἔτεμον καὶ ἀπέκτεινάν τινας, καὶ ἀπῆλθον ἐπ’ οἴκου.",
+  "e": "After the Athenians had withdrawn from Argos with their ships, and the Lacedaemonians also had retired, the Argives made an incursion into Phliasia, ravaging part of their land and killing some of the inhabitants, and then returned home."
+ },
+ {
+  "k": "b3b27089c2321a7f",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Γύλιππος καὶ ὁ Πυθὴν ἐκ τοῦ Τάραντος, ἐπεὶ ἐπεσκεύασαν τὰς ναῦς, παρέπλευσαν ἐς Λοκροὺς τοὺς Ἐπιζεφυρίους· καὶ πυνθανόμενοι σαφέστερον ἤδη ὅτι οὐ παντελῶς πω ἀποτετειχισμέναι αἱ Συράκουσαί εἰσιν, ἀλλ’ ἔτι οἷόν τε κατὰ τὰς Ἐπιπολὰς στρατιᾷ ἀφικομένους ἐσελθεῖν, ἐβουλεύοντο εἴτ’ ἐν δεξιᾷ λαβόντες τὴν Σικελίαν διακινδυνεύσωσιν ἐσπλεῦσαι, εἴτ’ ἐν ἀριστερᾷ ἐς Ἱμέραν πρῶτον πλεύσαντες καὶ αὐτούς τε ἐκείνους καὶ στρατιὰν ἄλλην προσλαβόντες, οὓς ἂν πείθωσι, κατὰ γῆν ἔλθωσιν.",
+  "e": "Gylippus and Pythen, after refitting their ships, sailed from Tarentum along the coast to Epizephyrian Locri; and receiving now more positive information that Syracuse was not yet completely invested, but that it was still possible to come with an army and enter it by way of Epipolae, they deliberated whether they should risk sailing into the harbour, keeping Sicily on the right, or, keeping it on the left, should first sail to Himera and then, after having added to their forces the Himeraeans themselves and such others as they might persuade, should proceed overland."
+ },
+ {
+  "k": "8cf9b8983adafd4d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ἔδοξεν αὐτοῖς ἐπὶ τῆς Ἱμέρας πλεῖν, ἄλλως τε καὶ τῶν Ἀττικῶν τεσσάρων νεῶν οὔπω παρουσῶν ἐν τῷ Ῥηγίῳ, ἃς ὁ Νικίας ὅμως πυνθανόμενος αὐτοὺς ἐν Λοκροῖς εἶναι ἀπέστειλεν. φθάσαντες δὲ τὴν φυλακὴν ταύτην περαιοῦνται διὰ τοῦ πορθμοῦ, καὶ σχόντες Ῥηγίῳ καὶ Μεσσήνῃ ἀφικνοῦνται ἐς Ἱμέραν.",
+  "e": "They decided to sail to Himera, especially since the four Athenian ships—which Nicias did after all despatch when he learned that the enemy's ships were at Locri—had not yet arrived at Rhegium. They succeeded in crossing the strait before the arrival of this watch-squadron, and after touching at Rhegium and Messene, arrived at Himera."
+ },
+ {
+  "k": "238a85c5851cb16e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐκεῖ δὲ ὄντες τούς τε Ἱμεραίους ἔπεισαν ξυμπολεμεῖν καὶ αὐτούς τε ἕπεσθαι καὶ τοῖς ἐκ τῶν νεῶν τῶν σφετέρων ναύταις ὅσοι μὴ εἶχον ὅπλα παρασχεῖν (τὰς γὰρ ναῦς ἀνείλκυσαν ἐν Ἱμέρᾳ), καὶ τοὺς Σελινουντίους πέμψαντες ἐκέλευον ἀπαντᾶν πανστρατιᾷ ἔς τι χωρίον.",
+  "e": "While there they persuaded the Himeraeans to help them in the war, not only by going on the expedition themselves, but also by furnishing arms for such of the crews of their ships as had none (for their ships they had beached at Himera), and also sent a request to the Selinuntians to meet them at a certain place with all their forces."
+ },
+ {
+  "k": "ff9faa8180adeeee",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "πέμψειν δέ τινα αὐτοῖς ὑπέσχοντο στρατιὰν οὐ πολλὴν καὶ οἱ Γελῷοι καὶ τῶν Σικελῶν τινές, οἳ πολὺ προθυμότερον προσχωρεῖν ἑτοῖμοι ἦσαν τοῦ τε Ἀρχωνίδου νεωστὶ τεθνηκότος, ὃς τῶν ταύτῃ Σικελῶν βασιλεύων τινῶν καὶ ὢν οὐκ ἀδύνατος τοῖς Ἀθηναίοις φίλος ἦν,καὶ τοῦ Γυλίππου ἐκ Λακεδαίμονος προθύμως δοκοῦντος ἥκειν.",
+  "e": "A small body of troops was also promised them by the Geloans and some of the Sicels, who were now ready to join them with far greater alacrity, both because of the recent death of Archonidas, who, being king of certain Sicel tribes of that region and a man of influence, had been a friend of the Athenians, and also because Gylippus had apparently come from Lacedaemon full of zeal."
+ },
+ {
+  "k": "97798b4e5fc54254",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ὁ μὲν Γύλιππος ἀναλαβὼν τῶν τε σφετέρων ναυτῶν καὶ ἐπιβατῶν τοὺς ὡπλισμένους ἑπτακοσίους μάλιστα, Ἱμεραίους δὲ ὁπλίτας καὶ ψιλοὺς ξυναμφοτέρους χιλίους καὶ ἱππέας ἑκατὸν καὶ Σελινουντίων τέ τινας ψιλοὺς καὶ ἱππέας καὶ Γελῴων ὀλίγους, Σικελῶν τε ἐς χιλίους τοὺς πάντας, ἐχώρει πρὸς τὰς Συρακούσας·",
+  "e": "So Gylippus, taking of his own seamen and of the marines those that were equipped with arms, about seven hundred, of Himeraean hoplites and light-armed troops together one thousand and one hundred cavalry, of the Selinuntians some light-armed troops and cavalry, a few Geloans, and of the Sicels about one thousand in all, advanced against Syracuse."
+ },
+ {
+  "k": "ec4ce3aa03d90cd5",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δ’ ἐκ τῆς Λευκάδος Κορίνθιοι ταῖς τε ἄλλαις ναυσὶν ὡς εἶχον τάχους ἐβοήθουν καὶ Γογγύλος, εἷς τῶν Κορινθίων ἀρχόντων, μιᾷ νηὶ τελευταῖος ὁρμηθεὶς πρῶτος μὲν ἀφικνεῖται ἐς τὰς Συρακούσας, ὀλίγον δὲ πρὸ Γυλίππου, καὶ καταλαβὼν αὐτοὺς περὶ ἀπαλλαγῆς τοῦ πολέμου μέλλοντας ἐκκλησιάσειν διεκώλυσέ τε καὶ παρεθάρσυνε, λέγων ὅτι νῆές τε ἄλλαι ἔτι προσπλέουσι καὶ Γύλιππος ὁ Κλεανδρίδου Λακεδαιμονίων ἀποστειλάντων ἄρχων.",
+  "e": "Meanwhile the Corinthians had put to sea from Leucas with the rest of their ships and were bringing aid as fast as they could; indeed, Gongylus, one of the Corinthian commanders, though he had set out last with a single ship, was the first to arrive at Syracuse, being a little ahead of Gylippus. Finding the Syracusans on the point of holding an assembly to discuss the abandonment of the war, he prevented the meeting and encouraged them, saying that not only were still other ships about to arrive, but also Gylippus son of Cleandridas, who had been sent by the Lacedaemonians to assume the command."
+ },
+ {
+  "k": "67daa9ea6d0e2c9a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ οἱ μὲν Συρακόσιοι ἐπερρώσθησάν τε καὶ τῷ Γυλίππῳ εὐθὺς πανστρατιᾷ ὡς ἀπαντησόμενοι ἐξῆλθον· ἤδη γὰρ καὶ ἐγγὺς ὄντα ᾐσθάνοντο αὐτόν.",
+  "e": "The Syracusans were encouraged, and at once went out with their whole army to meet Gylippus;"
+ },
+ {
+  "k": "38a5660d9c90b53e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Ἰέτας τότε τι τεῖχος ἐν τῇ παρόδῳ τῶν Σικελῶν ἑλὼν καὶ ξυνταξάμενος ὡς ἐς μάχην ἀφικνεῖται ἐς τὰς Ἐπιπολάς· καὶ ἀναβὰς κατὰ τὸν Εὐρύηλον, ᾗπερ καὶ οἱ Ἀθηναῖοι τὸ πρῶτον, ἐχώρει μετὰ τῶν Συρακοσίων ἐπὶ τὸ τείχισμα τῶν Ἀθηναίων.",
+  "e": "for they were informed that he was already near. He, after taking on his way the Sicel fort of Ietae and marshalling his men in readiness for battle, reached Epipolae; and ascending it by way of Euryelus, where the Athenians also had made their ascent at first, he formed a junction with the Syracusans and advanced against the wall of the Athenians."
+ },
+ {
+  "k": "5f86c689e894be9d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἔτυχε δὲ κατὰ τοῦτο τοῦ καιροῦ ἐλθὼν ἐν ᾧ ἑπτὰ μὲν ἢ ὀκτὼ σταδίων ἤδη ἀπετετέλεστο τοῖς Ἀθηναίοις ἐς τὸν μέγαν λιμένα διπλοῦν τεῖχος, πλὴν κατὰ βραχύ τι τὸ πρὸς τὴν θάλασσαν (τοῦτο δ’ ἔτι ᾠκοδόμουν), τῷ δὲ ἄλλῳ τοῦ κύκλου πρὸς τὸν Τρωγίλον ἐπὶ τὴν ἑτέραν θάλασσαν λίθοι τε παραβεβλημένοι τῷ πλέονι ἤδη ἦσαν, καὶ ἔστιν ἃ καὶ ἡμίεργα, τὰ δὲ καὶ ἐξειργασμένα κατελέλειπτο. παρὰ τοσοῦτον μὲν αἱ Συράκουσαι ἦλθον κινδύνου.",
+  "e": "And he happened to have come at the critical moment when the double wall of seven or eight stadia in extent had already been completed by the Athenians down to the Great Harbour, except for a short stretch next to the sea, where they were still building. As for the rest of the encircling line, stones had already been dumped along the greater part of the stretch which ran to Trogilus and the outer sea, and it was left so, some parts half finished, other parts quite finished. So close had Syracuse come to destruction."
+ },
+ {
+  "k": "d9429a251a901256",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δὲ Ἀθηναῖοι αἰφνιδίως τοῦ τε Γυλίππου καὶ τῶν Συρακοσίων σφίσιν ἐπιόντων ἐθορυβήθησαν μὲν τὸ πρῶτον, παρετάξαντο δέ. ὁ δὲ θέμενος τὰ ὅπλα ἐγγὺς κήρυκα προσπέμπει αὐτοῖς λέγοντα, εἰ βούλονται ἐξιέναι ἐκ τῆς Σικελίας πέντε ἡμερῶν λαβόντες τὰ σφέτερα αὐτῶν, ἑτοῖμος εἶναι σπένδεσθαι.",
+  "e": "The Athenians were at first thrown into a tumult by the sudden attack of Gylippus and the Syracusans, but drew up to meet them. But Gylippus halted near them under arms and sent forward a herald to say that if they were willing to quit Sicily within five days, taking what belonged to them, he was ready to make a truce."
+ },
+ {
+  "k": "c97ddad1a52a6600",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δ’ ἐν ὀλιγωρίᾳ τε ἐποιοῦντο καὶ οὐδὲν ἀποκρινάμενοι ἀπέπεμψαν. καὶ μετὰ τοῦτο ἀντιπαρεσκευάζοντο ἀλλήλοις ὡς ἐς μάχην.",
+  "e": "They, however, treated the messenger with contempt and sent him back without any answer. After this they prepared for battle against one another."
+ },
+ {
+  "k": "6cbfbc7065fad0b2",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ὁ Γύλιππος ὁρῶν τοὺς Συρακοσίους ταρασσομένους καὶ οὐ ῥᾳδίως ξυντασσομένους, ἐπανῆγε τὸ στρατόπεδον ἐς τὴν εὐρυχωρίαν μᾶλλον. καὶ ὁ Νικίας οὐκ ἐπῆγε τοὺς Ἀθηναίους, ἀλλ’ ἡσύχαζε πρὸς τῷ ἑαυτῶν τείχει. ὡς δ’ ἔγνω ὁ Γύλιππος οὐ προσιόντας αὐτούς, ἀπήγαγε τὴν στρατιὰν ἐπὶ τὴν ἄκραν τὴν Τεμενῖτιν καλουμένην, καὶ αὐτοῦ ηὐλίσαντο.",
+  "e": "But Gylippus, seeing that the Syracusans were in a state of confusion and could not readily get into line, led his troops back into the more open ground. And Nicias did not lead the Athenians against him, but kept quiet near his own wall. When Gylippus saw that they were not coming up, he led his army off the field to the height called Temenites, and they bivouacked there."
+ },
+ {
+  "k": "b9a1de1f21b1fbeb",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τῇ δ’ ὑστεραίᾳ ἄγων τὴν μὲν πλείστην τῆς στρατιᾶς παρέταξε πρὸς τὰ τείχη τῶν Ἀθηναίων, ὅπως μὴ ἐπιβοηθοῖεν ἄλλοσε, μέρος δέ τι πέμψας πρὸς τὸ φρούριον τὸ Λάβδαλον αἱρεῖ, καὶ ὅσους ἔλαβεν ἐν αὐτῷ πάντας ἀπέκτεινεν· ἦν δὲ οὐκ ἐπιφανὲς τοῖς Ἀθηναίοις τὸ χωρίον.",
+  "e": "But on the next day he led out the main body of his army and stationed it opposite the walls of the Athenians, in order to prevent their sending reinforcements to any other point; then, sending a detachment against the fort at Labdalum, he captured it and put to death all whom he took in it; for the place (it should be explained) was not within sight of the Athenians."
+ },
+ {
+  "k": "16ba3dd772dfe243",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ τριήρης τῇ αὐτῇ ἡμέρᾳ ἁλίσκεται τῶν Ἀθηναίων ὑπὸ τῶν Συρακοσίων ἐφορμοῦσα τῷ λιμένι.",
+  "e": "On the same day, too, an Athenian trireme that was keeping watch at the mouth of the Great Harbour was captured by the Syracusans."
+ },
+ {
+  "k": "c46a2808c0645f19",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ μετὰ ταῦτα ἐτείχιζον οἱ Συρακόσιοι καὶ οἱ ξύμμαχοι διὰ τῶν Ἐπιπολῶν ἀπὸ τῆς πόλεως ἀρξάμενοι ἄνω πρὸς τὸ ἐγκάρσιον τεῖχος ἁπλοῦν, ὅπως οἱ Ἀθηναῖοι, εἰ μὴ δύναιντο κωλῦσαι, μηκέτι οἷοί τε ὦσιν ἀποτειχίσαι.",
+  "e": "After this the Syracusans and their allies proceeded to build a single wall running upwards from the city across Epipolae at an angle with the Athenian wall, in order that the Athenians, if they could not prevent its completion, might no longer be able to wall them off."
+ },
+ {
+  "k": "b542cb835bf2816f",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ οἵ τε Ἀθηναῖοι ἀνεβεβήκεσαν ἤδη ἄνω, τὸ ἐπὶ θαλάσσῃ τεῖχος ἐπιτελέσαντες, καὶ ὁ Γύλιππος (ἦν γάρ τι τοῖς Ἀθηναίοις τοῦ τείχους ἀσθενές) νυκτὸς ἀναλαβὼν τὴν στρατιὰν ἐπῄει πρὸς αὐτό.",
+  "e": "By this time the Athenians had finished their wall next to the sea and had come up to the high ground; and Gylippus, since a certain part of the Athenian wall was weak, took his army by night and advanced against this."
+ },
+ {
+  "k": "257bbf00a2da3b55",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δ’ Ἀθηναῖοι (ἔτυχον γὰρ ἔξω αὐλιζόμενοι) ὡς ᾔσθοντο, ἀντεπῇσαν· ὁ δὲ γνοὺς κατὰ τάχος ἀπήγαγε τοὺς σφετέρους πάλιν. ἐποικοδομήσαντες δὲ αὐτὸ οἱ Ἀθηναῖοι ὑψηλότερον αὐτοὶ μὲν ταύτῃ ἐφύλασσον, τοὺς δὲ ἄλλους ξυμμάχους κατὰ τὸ ἄλλο τείχισμα ἤδη διέταξαν, ᾗπερ ἔμελλον ἕκαστοι φρουρεῖν.",
+  "e": "But the Athenians, who happened to be bivouacking outside the walls, perceived this movement and advanced against him; and he, on observing this, quickly led his men back again. The Athenians accordingly built this part of the wall higher and kept guard there themselves;"
+ },
+ {
+  "k": "55effdc27b0c9d4f",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τῷ δὲ Νικίᾳ ἐδόκει τὸ Πλημμύριον καλούμενον τειχίσαι· ἔστι δὲ ἄκρα ἀντιπέρας τῆς πόλεως, ἥπερ προύχουσα τοῦ μεγάλου λιμένος τὸ στόμα στενὸν ποιεῖ, καὶ εἰ τειχισθείη, ῥᾴων αὐτῷ ἐφαίνετο ἡ ἐσκομιδὴ τῶν ἐπιτηδείων ἔσεσθαι· δι’ ἐλάσσονος γὰρ πρὸς τῷ λιμένι τῷ τῶν Συρακοσίων ἐφορμήσειν σφᾶς, καὶ οὐχ ὥσπερ νῦν ἐκ μυχοῦ τοῦ λιμένος τὰς ἐπαναγωγὰς ποιήσεσθαι, ἤν τι ναυτικῷ κινῶνται. προσεῖχέ τε ἤδη μᾶλλον τῷ κατὰ θάλασσαν πολέμῳ, ὁρῶν τὰ ἐκ τῆς γῆς σφίσιν ἤδη, ἐπειδὴ Γύλιππος ἧκεν, ἀνελπιστότερα ὄντα.",
+  "e": "but their allies they now disposed along the rest of the wall, at the points where they were each to keep guard. Nicias determined also to fortify the place called Plemmyrium, a headland opposite the city, which juts out in front of the Great Harbour and makes its entrance narrow. If this were fortified, it seemed to him that the bringing in of supplies would be an easier matter; for the Athenians could keep watch upon the harbour of the Syracusans at nearer range, and would not, as now, be obliged to put out against the enemy from the inner bay of the Great Harbour, should they show any activity with their fleet. And in general from now on he gave his attention more to naval warfare, seeing that matters on land were less hopeful for themselves, now that Gylippus had come."
+ },
+ {
+  "k": "e6dbe6e7a5070958",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "διακομίσας οὖν στρατιὰν καὶ τὰς ναῦς ἐξετείχισε τρία φρούρια· καὶ ἐν αὐτοῖς τά τε σκεύη τὰ πλεῖστα ἔκειτο καὶ τὰ πλοῖα ἤδη ἐκεῖ τὰ μεγάλα ὥρμει καὶ αἱ ταχεῖαι νῆες.",
+  "e": "Accordingly, taking over his ships and some troops he built three forts, in which most of the stores were deposited; and the large boats and the ships of war were now moored there."
+ },
+ {
+  "k": "fe16e1fcbd376487",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὥστε καὶ τῶν πληρωμάτων οὐχ ἥκιστα τότε πρῶτον κάκωσις ἐγένετο· τῷ τε γὰρ ὕδατι σπανίῳ χρώμενοι καὶ οὐκ ἐγγύθεν, καὶ ἐπὶ φρυγανισμὸν ἅμα ὁπότε ἐξέλθοιεν οἱ ναῦται, ὑπὸ τῶν ἱππέων τῶν Συρακοσίων κρατούντων τῆς γῆς διεφθείροντο· τρίτον γὰρ μέρος τῶν ἱππέων τοῖς Συρακοσίοις διὰ τοὺς ἐν τῷ Πλημμυρίῳ, ἵνα μὴ κακουργήσοντες ἐξίοιεν, ἐπὶ τῇ ἐν τῷ Ὀλυμπιείῳ πολίχνῃ ἐτετάχατο.",
+  "e": "And it was especially in consequence of this that the condition of the crews then first began to decline. For their water supply was scanty and not near at hand, and at the same time, whenever the sailors went out to fetch firewood they suffered heavily at the hands of the Syracusan horsemen, who overran the country. For the Syracusans had posted a third part of their cavalry at the hamlet near the Olympieum on account of the troops at Plemmyrium, that these might not go out and commit depredations."
+ },
+ {
+  "k": "51a71d647e840afa",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐπυνθάνετο δὲ καὶ τὰς λοιπὰς τῶν Κορινθίων ναῦς προσπλεούσας ὁ Νικίας· καὶ πέμπει ἐς φυλακὴν αὐτῶν εἴκοσι ναῦς, αἷς εἴρητο περί τε Λοκροὺς καὶ Ῥήγιον καὶ τὴν προσβολὴν τῆς Σικελίας ναυλοχεῖν αὐτάς.",
+  "e": "Meanwhile Nicias, learning that the rest of the Corinthian ships were sailing up, sent twenty vessels to watch for them, with orders to waylay them in the neighbourhood of Locri, Rhegium, or the approach to Sicily."
+ },
+ {
+  "k": "05a26d2d7d02b6a4",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Γύλιππος ἅμα μὲν ἐτείχιζε τὸ διὰ τῶν Ἐπιπολῶν τεῖχος, τοῖς λίθοις χρώμενος οὓς οἱ Ἀθηναῖοι προπαρεβάλοντο σφίσιν, ἅμα δὲ παρέτασσεν ἐξάγων αἰεὶ πρὸ τοῦ τειχίσματος τοὺς Συρακοσίους καὶ τοὺς ξυμμάχους· καὶ οἱ Ἀθηναῖοι ἀντιπαρετάσσοντο.",
+  "e": "Gylippus, on the other hand, continued to build the wall across Epipolae, using the stones which the Athenians had previously dumped along the line for their own use, and at the same time he continually led out the Syracusans and their allies and drew them up before the wall; and the Athenians would always draw up to meet them."
+ },
+ {
+  "k": "2f4a7a9433a44a6b",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐπειδὴ δὲ ἔδοξε τῷ Γυλίππῳ καιρὸς εἶναι, ἦρχε τῆς ἐφόδου· καὶ ἐν χερσὶ γενόμενοι ἐμάχοντο μεταξὺ τῶν τειχισμάτων, ᾗ τῆς ἵππου τῶν Συρακοσίων οὐδεμία χρῆσις ἦν.",
+  "e": "But when it seemed to Gylippus that the right moment had come, he commenced the onset; and coming to close quarters they fought between the walls, where the cavalry of the Syracusans was of no use."
+ },
+ {
+  "k": "5e12714770da7548",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ νικηθέντων τῶν Συρακοσίων καὶ τῶν ξυμμάχων καὶ νεκροὺς ὑποσπόνδους ἀνελομένων καὶ τῶν Ἀθηναίων τροπαῖον στησάντων, ὁ Γύλιππος ξυγκαλέσας τὸ στράτευμα οὐκ ἔφη τὸ ἁμάρτημα ἐκείνων, ἀλλ’ ἑαυτοῦ γενέσθαι· τῆς γὰρ ἵππου καὶ τῶν ἀκοντιστῶν τὴν ὠφελίαν τῇ τάξει ἐντὸς λίαν τῶν τειχῶν ποιήσας ἀφελέσθαι· νῦν οὖν αὖθις ἐπάξειν.",
+  "e": "And when the Syracusans and their allies had been defeated and had taken up their dead under a truce, and the Athenians had set up a trophy, Gylippus called his troops together and said that the mistake was not theirs but his own, for by arranging his line of battle too much between the walls he had deprived them of the benefit of their cavalry and javelin-men. He would therefore now lead them on again, and he urged them to make up their minds to this—that in point of men and equipment they would not be inferior;"
+ },
+ {
+  "k": "74e1eab9e5297ca5",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ διανοεῖσθαι οὕτως ἐκέλευεν αὐτοὺς ὡς τῇ μὲν παρασκευῇ οὐκ ἔλασσον ἕξοντας, τῇ δὲ γνώμῃ οὐκ ἀνεκτὸν ἐσόμενον εἰ μὴ ἀξιώσουσι Πελοποννήσιοί τε ὄντες καὶ Δωριῆς Ἰώνων καὶ νησιωτῶν καὶ ξυγκλύδων ἀνθρώπων κρατήσαντες ἐξελάσασθαι ἐκ τῆς χώρας.",
+  "e": "and as for their spirit, it was not to be endured if they, being Peloponnesians and Dorians, confronting Ionians and islanders and a mixed rabble, were not going to make it a point of honour to conquer them and drive them out of the country."
+ },
+ {
+  "k": "a6c0f3af2e05daf6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ μετὰ ταῦτα, ἐπειδὴ καιρὸς ἦν, αὖθις ἐπῆγεν αὐτούς. ὁ δὲ Νικίας καὶ οἱ Ἀθηναῖοι νομίζοντες, καὶ εἰ ἐκεῖνοι μὴ ἐθέλοιεν μάχης ἄρχειν, ἀναγκαῖον εἶναι σφίσι μὴ περιορᾶν παροικοδομούμενον τὸ τεῖχος (ἤδη γὰρ καὶ ὅσον οὐ παρεληλύθει τὴν τῶν Ἀθηναίων τοῦ τείχους τελευτὴν ἡ ἐκείνων τείχισις, καί, εἰ προέλθοι, ταὐτὸν ἤδη ἐποίει αὐτοῖς νικᾶν τε μαχομένοις διὰ παντὸς καὶ μηδὲ μάχεσθαι), ἀντεπῇσαν οὖν τοῖς Συρακοσίοις.",
+  "e": "After this, when there was a favourable opportunity, he led them on again. Now Nicias and the Athenians thought that, even if the Syracusans were unwilling to begin fighting, they themselves could not possibly look idly on while the wall was being built past their own—for already the enemy's wall had all but passed the end of the Athenians' wall, and if it once got by, from then on it would be all one to them whether they fought and conquered in every battle or did not fight at all— accordingly they advanced against the Syracusans."
+ },
+ {
+  "k": "faf7b41e797ace15",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ὁ Γύλιππος τοὺς μὲν ὁπλίτας ἔξω τῶν τειχῶν μᾶλλον ἢ πρότερον προαγαγὼν ξυνέμισγεν αὐτοῖς, τοὺς δ’ ἱππέας καὶ τοὺς ἀκοντιστὰς ἐκ πλαγίου τάξας τῶν Ἀθηναίων κατὰ τὴν εὐρυχωρίαν, ᾗ τῶν τειχῶν ἀμφοτέρων αἱ ἐργασίαι ἔληγον.",
+  "e": "And Gylippus, leading forth his hoplites more outside the walls than before, closed with the enemy, having his cavalry and javelin-men posted on the flank of the Athenians, in the open space where the work on both walls ended."
+ },
+ {
+  "k": "22e09dcca58cbf66",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ προσβαλόντες οἱ ἱππῆς ἐν τῇ μάχῃ τῷ εὐωνύμῳ κέρᾳ τῶν Ἀθηναίων, ὅπερ κατ’ αὐτοὺς ἦν, ἔτρεψαν· καὶ δι’ αὐτὸ καὶ τὸ ἄλλο στράτευμα νικηθὲν ὑπὸ τῶν Συρακοσίων κατηράχθη ἐς τὰ τειχίσματα.",
+  "e": "And in the battle his cavalry attacked the left wing of the Athenians, which was opposed to them, and routed it; and in consequence of this the rest of the army also was beaten by the Syracusans and driven headlong within the fortifications."
+ },
+ {
+  "k": "c5d9d7d49aba7fad",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ τῇ ἐπιούσῃ νυκτὶ ἔφθασαν παροικοδομήσαντες καὶ παρελθόντες τὴν τῶν Ἀθηναίων οἰκοδομίαν, ὥστε μηκέτι μήτε αὐτοὶ κωλύεσθαι ὑπ’ αὐτῶν, ἐκείνους τε καὶ παντάπασιν ἀπεστερηκέναι, εἰ καὶ κρατοῖεν, μὴ ἂν ἔτι σφᾶς ἀποτειχίσαι.",
+  "e": "And the following night they succeeded in building their wall beyond the works of the Athenians and in getting past, so that they themselves were no longer hampered by them, and had altogether deprived the Athenians, even if they should be victorious, of the possibility of ever investing them."
+ },
+ {
+  "k": "2b8c0aadae317013",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "μετὰ δὲ τοῦτο αἵ τε τῶν Κορινθίων νῆες καὶ Ἀμπρακιωτῶν καὶ Λευκαδίων ἐσέπλευσαν αἱ ὑπόλοιποι δώδεκα, λαθοῦσαι τὴν τῶν Ἀθηναίων φυλακήν (ἦρχε δ’ αὐτῶν Ἐρασινίδης Κορίνθιος), καὶ ξυνετείχισαν τὸ λοιπὸν τοῖς Συρακοσίοις μέχρι τοῦ ἐγκαρσίου τείχους.",
+  "e": "After this the remaining twelve ships of the Corinthians, Ambraciots, and Leucadians, which were under the command of Erasinides, a Corinthian, sailed into the harbour, eluding the watch kept by the Athenians, and helped the Syracusans to build the rest of their cross-wall."
+ },
+ {
+  "k": "1361fd8899ece205",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ὁ Γύλιππος ἐς τὴν ἄλλην Σικελίαν ἐπὶ στρατιάν τε ᾤχετο, καὶ ναυτικὴν καὶ πεζὴν ξυλλέξων, καὶ τῶν πόλεων ἅμα προσαξόμενος εἴ τις ἢ μὴ πρόθυμος ἦν ἢ παντάπασιν ἔτι ἀφειστήκει τοῦ πολέμου.",
+  "e": "And Gylippus went into the other districts of Sicily to collect reinforcements for both his army and his navy, and at the same time to win over any of the cities that were either not zealously supporting the war or still held altogether aloof from it."
+ },
+ {
+  "k": "256943041fd4e646",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "πρέσβεις τε ἄλλοι τῶν Συρακοσίων καὶ Κορινθίων ἐς Λακεδαίμονα καὶ Κόρινθον ἀπεστάλησαν, ὅπως στρατιὰ ἔτι περαιωθῇ τρόπῳ ᾧ ἂν ἐν ὁλκάσιν ἢ πλοίοις ἢ ἄλλως ὅπως ἂν προχωρῇ, ὡς καὶ τῶν Ἀθηναίων ἐπιμεταπεμπομένων.",
+  "e": "And another set of envoys representing the Syracusans and the Corinthians were despatched to Lacedaemon and Corinth, in order that further troops might be sent across the sea in whatever way might be available—in merchant-ships, small craft, or in any other way whatever—in view of the fact that the Athenians also were sending home for fresh troops."
+ },
+ {
+  "k": "2f238c575ce2081c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἵ τε Συρακόσιοι ναυτικὸν ἐπλήρουν καὶ ἀνεπειρῶντο ὡς καὶ τούτῳ ἐπιχειρήσοντες, καὶ ἐς τἆλλα πολὺ ἐπέρρωντο.",
+  "e": "Moreover, the Syracusans were manning a fleet and practising with a view to trying their hand at sea also; and in general they were much encouraged."
+ },
+ {
+  "k": "aabd85060b497b74",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Νικίας αἰσθόμενος τοῦτο καὶ ὁρῶν καθ’ ἡμέραν ἐπιδιδοῦσαν τήν τε τῶν πολεμίων ἰσχὺν καὶ τὴν σφετέραν ἀπορίαν, ἔπεμπε καὶ αὐτὸς ἐς τὰς Ἀθήνας ἀγγέλλων πολλάκις μὲν καὶ ἄλλοτε καθ’ ἕκαστα τῶν γιγνομένων, μάλιστα δὲ καὶ τότε, νομίζων ἐν δεινοῖς τε εἶναι καί, εἰ μὴ ὡς τάχιστα ἢ σφᾶς μεταπέμψουσιν ἢ ἄλλους μὴ ὀλίγους ἀποστελοῦσιν, οὐδεμίαν εἶναι σωτηρίαν.",
+  "e": "Nicias, perceiving this and seeing the enemy's strength and his own perplexities increasing day by day, on his part also sent word to Athens on many occasions, giving detailed reports of what was happening, and especially now, because he thought that they were in a critical situation and that there was no hope of safety unless the Athenians, with all possible speed, should either recall them or send out reinforcements in no small numbers."
+ },
+ {
+  "k": "08da1732ac71e3d7",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "φοβούμενος δὲ μὴ οἱ πεμπόμενοι ἢ κατὰ τὴν τοῦ λέγειν ἀδυνασίαν ἢ καὶ μνήμης ἐλλιπεῖς γιγνόμενοι ἢ τῷ ὄχλῳ πρὸς χάριν τι λέγοντες οὐ τὰ ὄντα ἀπαγγέλλωσιν, ἔγραψεν ἐπιστολήν, νομίζων οὕτως ἂν μάλιστα τὴν αὑτοῦ γνώμην μηδὲν ἐν τῷ ἀγγέλῳ ἀφανισθεῖσαν μαθόντας τοὺς Ἀθηναίους βουλεύσασθαι περὶ τῆς ἀληθείας.",
+  "e": "But fearing that his messengers might not report the actual facts, either through inability to speak or from lapse of memory, or because they wanted to please the crowd, wrote a letter, thinking that in this way the Athenians would best learn his own view, obscured in no way by any fault on the part of the messenger, and could thus deliberate about the true situation."
+ },
+ {
+  "k": "75cfe6475c1fb8f8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ οἱ μὲν ᾤχοντο φέροντες, οὓς ἀπέστειλε, τὰ γράμματα καὶ ὅσα ἔδει αὐτοὺς εἰπεῖν· ὁ δὲ τὰ κατὰ τὸ στρατόπεδον διὰ φυλακῆς μᾶλλον ἤδη ἔχων ἢ δι’ ἑκουσίων κινδύνων ἐπεμέλετο.",
+  "e": "So the messengers whom he sent departed, bearing the letter and the verbal reports which they were to deliver; but as regards the camp, the object of his care was now rather to keep on the defensive than to run voluntary risks."
+ },
+ {
+  "k": "2b9350927a11b156",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐν δὲ τῷ αὐτῷ θέρει τελευτῶντι καὶ Εὐετίων στρατηγὸς Ἀθηναίων μετὰ Περδίκκου στρατεύσας ἐπ’ Ἀμφίπολιν Θρᾳξὶ πολλοῖς τὴν μὲν πόλιν οὐχ εἷλεν, ἐς δὲ τὸν Στρυμόνα περικομίσας τριήρεις ἐκ τοῦ ποταμοῦ ἐπολιόρκει ὁρμώμενος ἐξ Ἱμεραίου. καὶ τὸ θέρος ἐτελεύτα.",
+  "e": "At the end of the same summer Euetion, an Athenian general, made in concert with Perdiccas an expedition against Amphipolis with a large force of Thracians, and though he failed to take the city, brought some triremes round into the Strymon and blockaded it from the river, using Himeraeum as his base. So the summer ended."
+ },
+ {
+  "k": "468c14fb3da17e43",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τοῦ δ’ ἐπιγιγνομένου χειμῶνος ἥκοντες ἐς τὰς Ἀθήνας οἱ παρὰ τοῦ Νικίου ὅσα τε ἀπὸ γλώσσης εἴρητο αὐτοῖς εἶπον, καὶ εἴ τίς τι ἐπηρώτα ἀπεκρίνοντο, καὶ τὴν ἐπιστολὴν ἀπέδοσαν. ὁ δὲ γραμματεὺς ὁ τῆς πόλεως παρελθὼν ἀνέγνω τοῖς Ἀθηναίοις δηλοῦσαν τοιάδε.",
+  "e": "The following winter the messengers of Nicias, on reaching Athens, gave the messages which they had been ordered to give by word of mouth, answering any questions that were asked, and delivered the letter. And the clerk of the city came before the Athenians and read them the letter, which ran as follows:"
+ },
+ {
+  "k": "a469f2e7947ffb06",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "‘τὰ μὲν πρότερον πραχθέντα, ὦ Ἀθηναῖοι, ἐν ἄλλαις πολλαῖς ἐπιστολαῖς ἴστε· νῦν δὲ καιρὸς οὐχ ἧσσον μαθόντας ὑμᾶς ἐν ᾧ ἐσμὲν βουλεύσασθαι.",
+  "e": "\"What has been done before this, Athenians, you have been informed in many earlier letters; but now it is more than ever the time for you to learn in what condition we are and then to take counsel."
+ },
+ {
+  "k": "7cff0155af1cf5eb",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "κρατησάντων γὰρ ἡμῶν μάχαις ταῖς πλέοσι Συρακοσίους ἐφ’ οὓς ἐπέμφθημεν καὶ τὰ τείχη οἰκοδομησαμένων ἐν οἷσπερ νῦν ἐσμέν, ἦλθε Γύλιππος Λακεδαιμόνιος στρατιὰν ἔχων ἔκ τε Πελοποννήσου καὶ ἀπὸ τῶν ἐν Σικελίᾳ πόλεων ἔστιν ὧν. καὶ μάχῃ τῇ μὲν πρώτῃ νικᾶται ὑφ᾽ ἡμῶν, τῇ δ’ ὑστεραίᾳ ἱππεῦσί τε πολλοῖς καὶ ἀκοντισταῖς βιασθέντες ἀνεχωρήσαμεν ἐς τὰ τείχη.",
+  "e": "When in most of our battles we had beaten the Syracusans, against whom we were sent, and had built the fortifications in which we now are, there came Gylippus, a Lacedaemonian, with an army collected from the Peloponnesus and from some of the cities in Sicily. In the first battle he was defeated by us, but on the next day, under pressure from their numerous cavalry and javelin-men, we drew back within our walls."
+ },
+ {
+  "k": "fc9d7b1d6773fb86",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "νῦν οὖν ἡμεῖς μὲν παυσάμενοι τοῦ περιτειχισμοῦ διὰ τὸ πλῆθος τῶν ἐναντίων ἡσυχάζομεν (οὐδὲ γὰρ ξυμπάσῃ τῇ στρατιᾷ δυναίμεθ’ ἂν χρήσασθαι ἀπανηλωκυίας τῆς φυλακῆς τῶν τειχῶν μέρος τι τοῦ ὁπλιτικοῦ)· οἱ δὲ παρῳκοδομήκασιν ἡμῖν τεῖχος ἁπλοῦν, ὥστε μὴ εἶναι ἔτι περιτειχίσαι αὐτούς, ἢν μή τις τὸ παρατείχισμα τοῦτο πολλῇ στρατιᾷ ἐπελθὼν ἕλῃ.",
+  "e": "At the present time, then, we have discontinued our work of circumvallation on account of the superior numbers of the enemy and are keeping quiet; for we cannot use our whole army because the guarding of the walls has absorbed a part of our heavy-armed force. The enemy meanwhile have built a single wall past ours, so that it is no longer possible to invest them, unless one should assault this counter-wall with a large force and take it."
+ },
+ {
+  "k": "bc3d4d8595108ecb",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ξυμβέβηκέ τε πολιορκεῖν δοκοῦντας ἡμᾶς ἄλλους αὐτοὺς μᾶλλον, ὅσα γε κατὰ γῆν, τοῦτο πάσχειν· οὐδὲ γὰρ τῆς χώρας ἐπὶ πολὺ διὰ τοὺς ἱππέας ἐξερχόμεθα.",
+  "e": "So it has turned out that we, who are supposed to be besieging others, are rather ourselves under siege, at least by land; for we cannot even go far into the country because of their cavalry."
+ },
+ {
+  "k": "ffb26febe80ab98a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "‘πεπόμφασι δὲ καὶ ἐς Πελοπόννησον πρέσβεις ἐπ’ ἄλλην στρατιάν, καὶ ἐς τὰς ἐν Σικελίᾳ πόλεις Γύλιππος οἴχεται, τὰς μὲν καὶ πείσων ξυμπολεμεῖν ὅσαι νῦν ἡσυχάζουσιν, ἀπὸ δὲ τῶν καὶ στρατιὰν ἔτι πεζὴν καὶ ναυτικοῦ παρασκευήν, ἢν δύνηται, ἄξων.",
+  "e": "\"And they have also sent envoys to the Peloponnesus for another army, and Gylippus has gone to the cities of Sicily, to persuade such of them as are now neutral to join them in the war, and to bring from other cities, if he can, still further reinforcements for his army and navy."
+ },
+ {
+  "k": "c8e8c023510aaf41",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "διανοοῦνται γάρ, ὡς ἐγὼ πυνθάνομαι, τῷ τε πεζῷ ἅμα τῶν τειχῶν ἡμῶν πειρᾶν καὶ ταῖς ναυσὶ κατὰ θάλασσαν.",
+  "e": "For they plan, as I hear, to make an attempt upon our walls with their land-force and at the same time to try their luck at sea also with their fleet."
+ },
+ {
+  "k": "a8e669d75e659dd9",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ δεινὸν μηδενὶ ὑμῶν δόξῃ εἶναι ὅτι καὶ κατὰ θάλασσαν. τὸ γὰρ ναυτικὸν ἡμῶν, ὅπερ κἀκεῖνοι πυνθάνονται, τὸ μὲν πρῶτον ἤκμαζε καὶ τῶν νεῶν τῇ ξηρότητι καὶ τῶν πληρωμάτων τῇ σωτηρίᾳ· νῦν δὲ αἵ τε νῆες διάβροχοι τοσοῦτον χρόνον ἤδη θαλασσεύουσαι, καὶ τὰ πληρώματα ἔφθαρται.",
+  "e": "And let it not seem incredible to any of you that they will try also by sea. For our fleet, as the enemy also have learned, though at first it was in prime condition as regards both the soundness of the ships and the unimpaired condition of the crews, is not so now; the ships are water-logged, from having been at sea for so long a time already, and the crews have wasted away."
+ },
+ {
+  "k": "a518e48e2ad83e85",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τὰς μὲν γὰρ ναῦς οὐκ ἔστιν ἀνελκύσαντας διαψύξαι διὰ τὸ ἀντιπάλους τῷ πλήθει καὶ ἔτι πλείους τὰς τῶν πολεμίων οὔσας αἰεὶ προσδοκίαν παρέχειν ὡς ἐπιπλεύσονται.",
+  "e": "For it is not possible to draw the ships up on shore and dry them out, because the fleet of the enemy, which is quite a match for us and in number is even superior, keeps us in continual expectation that it will sail against us."
+ },
+ {
+  "k": "dbad80ab60a2ef66",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "φανεραὶ δ’ εἰσὶν ἀναπειρώμεναι, καὶ αἱ ἐπιχειρήσεις ἐπ’ ἐκείνοις καὶ ἀποξηρᾶναι τὰς σφετέρας μᾶλλον ἐξουσία· οὐ γὰρ ἐφορμοῦσιν ἄλλοις.",
+  "e": "They keep practising in plain view; the initiative to make attack lies with them; and they have a better opportunity to dry their ships than we, for they are not blockading others."
+ },
+ {
+  "k": "d5dc68c9f330ff2b",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἡμῖν δ’ ἐκ πολλῆς ἂν περιουσίας νεῶν μόλις τοῦτο ὑπῆρχε καὶ μὴ ἀναγκαζομένοις ὥσπερ νῦν πάσαις φυλάσσειν· εἰ γὰρ ἀφαιρήσομέν τι καὶ βραχὺ τῆς τηρήσεως, τὰ ἐπιτήδεια οὐχ ἕξομεν, παρὰ τὴν ἐκείνων πόλιν χαλεπῶς καὶ νῦν ἐσκομιζόμενοι.",
+  "e": "\"We, on the contrary, could hardly enjoy this advantage even if we had a great superiority in the number of our ships, and were not compelled, as now, to use them all for guard-duty. For if we relax our vigilance ever so little, we shall not have our supplies, which are even now with difficulty brought past their city and into our camp."
+ },
+ {
+  "k": "e8351a29c1935912",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τὰ δὲ πληρώματα διὰ τόδε ἐφθάρη τε ἡμῖν καὶ ἔτι νῦν φθείρεται, τῶν ναυτῶν [τῶν] μὲν διὰ φρυγανισμὸν καὶ ἁρπαγὴν καὶ ὑδρείαν μακρὰν ὑπὸ τῶν ἱππέων ἀπολλυμένων· οἱ δὲ θεράποντες, ἐπειδὴ ἐς ἀντίπαλα καθεστήκαμεν, αὐτομολοῦσι, καὶ οἱ ξένοι οἱ μὲν ἀναγκαστοὶ ἐσβάντες εὐθὺς κατὰ τὰς πόλεις ἀποχωροῦσιν,οἱ δὲ ὑπὸ μεγάλου μισθοῦ τὸ πρῶτον ἐπαρθέντες καὶ οἰόμενοι χρηματιεῖσθαι μᾶλλον ἢ μαχεῖσθαι, ἐπειδὴ παρὰ γνώμην ναυτικόν τε δὴ καὶ τἆλλα ἀπὸ τῶν πολεμίων ἀνθεστῶτα ὁρῶσιν, οἱ μὲν ἐπ’ αὐτομολίας προφάσει ἀπέρχονται, οἱ δὲ ὡς ἕκαστοι δύνανται (πολλὴ δ’ ἡ Σικελία), εἰσὶ δ’ οἳ καὶ αὐτοὶ ἐμπορευόμενοι ἀνδράποδα Ὑκκαρικὰ ἀντεμβιβάσαι ὑπὲρ σφῶν πείσαντες τοὺς τριηράρχους τὴν ἀκρίβειαν τοῦ ναυτικοῦ ἀφῄρηνται.",
+  "e": "And our crews have been and are still being wasted, for the reason that our sailors, forced to go out to a distance for wood and forage and water, are constantly being killed by the cavalry. And now that we have been reduced to equal terms with the enemy, our servants are deserting. Of the mercenaries also, some, who embarked on our ships under compulsion, go home to their cities on the first opportunity; others, who were in the first place stirred by the prospects of high pay and thought they were going to make money rather than to fight, now that, contrary to their expectation, they see on the enemy's side the fleet and everything else offering resistance, either go over as professed deserters, or get away as best they can—for Sicily is large—and there are also some who, being themselves engaged in traffic, have persuaded the trierarchs to take Hyccarian slaves on board in their stead, and thus have robbed our navy of its perfection of discipline."
+ },
+ {
+  "k": "adbff046d18d5df5",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐπισταμένοις δ’ ὑμῖν γράφω ὅτι βραχεῖα ἀκμὴ πληρώματος καὶ ὀλίγοι τῶν ναυτῶν οἱ ἐξορμῶντές τε ναῦν καὶ ξυνέχοντες τὴν εἰρεσίαν.",
+  "e": "\"You to whom I write understand that a crew only keeps at its prime for a short space, and that it is only a few of the sailors who can both set a ship in motion and keep the oar-strokes in time."
+ },
+ {
+  "k": "639b80ec9b392f65",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τούτων δὲ πάντων ἀπορώτατον τό τε μὴ οἷόν τε εἶναι ταῦτα ἐμοὶ κωλῦσαι τῷ στρατηγῷ (χαλεπαὶ γὰρ αἱ ὑμέτεραι φύσεις ἄρξαι) καὶ ὅτι οὐδ’ ὁπόθεν ἐπιπληρωσόμεθα τὰς ναῦς ἔχομεν, ὃ τοῖς πολεμίοις πολλαχόθεν ὑπάρχει, ἀλλ’ ἀνάγκη ἀφ’ ὧν ἔχοντες ἤλθομεν τά τε ὄντα καὶ ἀπαναλισκόμενα γίγνεσθαι· αἱ γὰρ νῦν οὖσαι πόλεις ξύμμαχοι ἀδύνατοι Νάξος καὶ Κατάνη.",
+  "e": "But of all these difficulties, that which causes me most distress is that I, the general, cannot prevent these abuses—for the temper of you Athenians is hard to control—and that we have no source from which to get recruits for manning our ships, while the enemy has many sources of supply; on the contrary, the resources that we brought with us must suffice for our present needs as well as make up for our constant losses; for the only cities that are now in alliance with us, Naxos and Catana, cannot help us in this."
+ },
+ {
+  "k": "aafe139eceb25c01",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "εἰ δὲ προσγενήσεται ἓν ἔτι τοῖς πολεμίοις, ὥστε τὰ τρέφοντα ἡμᾶς χωρία τῆς Ἰταλίας, ὁρῶντα ἐν ᾧ τ’ ἐσμὲν καὶ ὑμῶν μὴ ἐπιβοηθούντων, πρὸς ἐκείνους χωρῆσαι, διαπεπολεμήσεται αὐτοῖς ἀμαχεὶ ἐκπολιορκηθέντων ἡμῶν [ὁ πόλεμος ].",
+  "e": "And if but one advantage more shall be gained by the enemy—that the regions of Italy which supply us with food, seeing in what plight we are and that you are not sending reinforcements, should go over to the enemy—the war will be all over for them without a battle, for we shall be besieged into surrender. \"I could have written you things more pleasant than these, but certainly not more useful, if you are to have full knowledge of the situation here before deciding upon your course;"
+ },
+ {
+  "k": "87970aa37d3cdb1e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "‘τούτων ἐγὼ ἡδίω μὲν ἂν εἶχον ὑμῖν ἕτερα ἐπιστέλλειν, οὐ μέντοι χρησιμώτερά γε, εἰ δεῖ σαφῶς εἰδότας τὰ ἐνθάδε βουλεύσασθαι. καὶ ἅμα τὰς φύσεις ἐπιστάμενος ὑμῶν, βουλομένων μὲν τὰ ἥδιστα ἀκούειν, αἰτιωμένων δὲ ὕστερον, ἤν τι ὑμῖν ἀπ’ αὐτῶν μὴ ὁμοῖον ἐκβῇ, ἀσφαλέστερον ἡγησάμην τὸ ἀληθὲς δηλῶσαι.",
+  "e": "and, besides, knowing as I do your tempers—that you do indeed prefer to hear what is most pleasant, but afterwards find fault if the results are in any respect disappointing—I have thought it safer to reveal the truth."
+ },
+ {
+  "k": "744e19cb841dcda5",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ νῦν ὡς ἐφ’ ἃ μὲν ἤλθομεν τὸ πρῶτον καὶ τῶν στρατιωτῶν καὶ τῶν ἡγεμόνων ὑμῖν μὴ μεμπτῶν γεγενημένων, οὕτω τὴν γνώμην ἔχετε· ἐπειδὴ δὲ Σικελία τε ἅπασα ξυνίσταται καὶ ἐκ Πελοποννήσου ἄλλη στρατιὰ προσδόκιμος αὐτοῖς, βουλεύεσθε ἤδη ὡς τῶν γ’ ἐνθάδε μηδὲ τοῖς παροῦσιν ἀνταρκούντων, ἀλλ’ ἢ τούτους μεταπέμπειν δέον ἢ ἄλλην στρατιὰν μὴ ἐλάσσω ἐπιπέμπειν καὶ πεζὴν καὶ ναυτικὴν καὶ χρήματα μὴ ὀλίγα, ἐμοὶ δὲ διάδοχόν τινα, ὡς ἀδύνατός εἰμι διὰ νόσον νεφρῖτιν παραμένειν.",
+  "e": "“And now I beg you to believe that neither your soldiers nor your generals have been blameworthy so far as concerns the original objects of our expedition; but since all Sicily is united and the enemy expects another army from the Peloponnesus, decide at once upon a course of action, knowing that the troops which are now here are not a match even for the enemy which at present confronts us, but that you must either recall these or send to reinforce it another armament equally large, both army and fleet, and no small amount of money; and you must send a general to relieve me, since I am unable to remain because of a disease of the kidneys."
+ },
+ {
+  "k": "eb456ac8801c685c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἀξιῶ δ’ ὑμῶν ξυγγνώμης τυγχάνειν· καὶ γὰρ ὅτ’ ἐρρώμην πολλὰ ἐν ἡγεμονίαις ὑμᾶς εὖ ἐποίησα. ὅτι δὲ μέλλετε, ἅμα τῷ ἦρι εὐθὺς καὶ μὴ ἐς ἀναβολὰς πράσσετε, ὡς τῶν πολεμίων τὰ μὲν ἐν Σικελίᾳ δι’ ὀλίγου ποριουμένων, τὰ δ’ ἐκ Πελοποννήσου σχολαίτερον μέν, ὅμως δ᾽, ἢν μὴ προσέχητε τὴν γνώμην, τὰ μὲν λήσουσιν ὑμᾶς, ὥσπερ καὶ πρότερον, τὰ δὲ φθήσονται.’",
+  "e": "And I submit that I have a claim upon your indulgence, for when I was strong I served you well in many a position of command. But whatever you intend to do, do it promptly at the opening of spring and without postponements, knowing that the enemy will procure fresh resources, some near at hand in Sicily, and others from the Peloponnesus, and that these last, though they will arrive less promptly, nevertheless, if you do not take care, will either elude you as they did before, or else outstrip you.”"
+ },
+ {
+  "k": "50a6e0e6332b0b47",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἡ μὲν τοῦ Νικίου ἐπιστολὴ τοσαῦτα ἐδήλου, οἱ δὲ Ἀθηναῖοι ἀκούσαντες αὐτῆς τὸν μὲν Νικίαν οὐ παρέλυσαν τῆς ἀρχῆς, ἀλλ’ αὐτῷ, ἕως ἂν ἕτεροι ξυνάρχοντες αἱρεθέντες ἀφίκωνται, τῶν αὐτοῦ ἐκεῖ δύο προσείλοντο Μένανδρον καὶ Εὐθύδημον, ὅπως μὴ μόνος ἐν ἀσθενείᾳ ταλαιπωροίη, στρατιὰν δὲ ἄλλην ἐψηφίσαντο πέμπειν καὶ ναυτικὴν καὶ πεζὴν Ἀθηναίων τε ἐκ καταλόγου καὶ τῶν ξυμμάχων.",
+  "e": "Such were the disclosures made by the letter of Nicias. But when the Athenians heard it read, they did not relieve Nicias of his command, but in order that he might not to have to face his difficulties alone while in ill-health, they chose two men who were on the spot, Menander and Euthydemus, to assist him until the arrival of the other two who should be chosen as his colleagues. And they voted to send another armament, both land-force and fleet, to be recruited from the Athenians on the muster-roll and from the allies."
+ },
+ {
+  "k": "71a01351601730ce",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ξυνάρχοντας αὐτῷ εἵλοντο Δημοσθένη τε τὸν Ἀλκισθένους καὶ Εὐρυμέδοντα τὸν Θουκλέους. καὶ τὸν μὲν Εὐρυμέδοντα εὐθὺς περὶ ἡλίου τροπὰς τὰς χειμερινὰς ἀποπέμπουσιν ἐς τὴν Σικελίαν μετὰ δέκα νεῶν, ἄγοντα εἴκοσι 〈καὶ ἑκατὸν〉 τάλαντα ἀργυρίου, καὶ ἅμα ἀγγελοῦντα τοῖς ἐκεῖ ὅτι ἥξει βοήθεια καὶ ἐπιμέλεια αὐτῶν ἔσται·",
+  "e": "And as colleagues for Nicias they elected Demosthenes son of Alcisthenes, and Eurymedon son of Thucles. Eurymedon was despatched to Sicily immediately, about the time of the winter solstice, with ten ships; and he took with him one hundred and twenty talents of silver, and at the same time bore a message to the army in Sicily that reinforcements would come and that care would be taken of them."
+ },
+ {
+  "k": "7487ad588a382f58",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Δημοσθένης ὑπομένων παρεσκευάζετο τὸν ἔκπλουν ὡς ἅμα τῷ ἦρι ποιησόμενος, στρατιάν τε ἐπαγγέλλων ἐς τοὺς ξυμμάχους καὶ χρήματα αὐτόθεν καὶ ναῦς καὶ ὁπλίτας ἑτοιμάζων.",
+  "e": "But Demosthenes remained behind and busied himself with preparations for his departure, which he planned to make at the opening of spring, sending to the allies requisitions for troops and getting ready at home money and ships and hoplites."
+ },
+ {
+  "k": "8ea75e99bd0b60a6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "πέμπουσι δὲ καὶ περὶ τὴν Πελοπόννησον οἱ Ἀθηναῖοι εἴκοσι ναῦς, ὅπως φυλάσσοιεν μηδένα ἀπὸ Κορίνθου καὶ τῆς Πελοποννήσου ἐς τὴν Σικελίαν περαιοῦσθαι.",
+  "e": "And the Athenians also sent twenty ships round the Peloponnesus, to see that no one should cross over from Corinth and the Peloponnesus to Sicily."
+ },
+ {
+  "k": "a7ef09d5e60fd250",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ γὰρ Κορίνθιοι, ὡς αὐτοῖς οἱ πρέσβεις ἧκον καὶ τὰ ἐν τῇ Σικελίᾳ βελτίω ἤγγελλον, νομίσαντες οὐκ ἄκαιρον καὶ τὴν προτέραν πέμψιν τῶν νεῶν ποιήσασθαι, πολλῷ μᾶλλον ἐπέρρωντο, καὶ ἐν ὁλκάσι παρεσκευάζοντο αὐτοί τε ἀποστελοῦντες ὁπλίτας ἐς τὴν Σικελίαν καὶ ἐκ τῆς ἄλλης Πελοποννήσου οἱ Λακεδαιμόνιοι τῷ αὐτῷ τρόπῳ πέμψοντες·",
+  "e": "For the Corinthians, when the Syracusan envoys arrived and reported that the situation in Sicily was more favourable, felt much greater confidence than before, thinking that their former despatch of the fleet had been well timed, and accordingly not only were they themselves preparing to send hoplites to Sicily in merchant-ships, but also the Lacedaemonians were intending in the same manner to despatch troops from the rest of the Peloponnesus."
+ },
+ {
+  "k": "cae49a754ec4e483",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ναῦς τε οἱ Κορίνθιοι πέντε καὶ εἴκοσιν ἐπλήρουν, ὅπως ναυμαχίας τε ἀποπειράσωσι πρὸς τὴν ἐν τῇ Ναυπάκτῳ φυλακήν, καὶ τὰς ὁλκάδας αὐτῶν ἧσσον οἱ ἐν τῇ Ναυπάκτῳ Ἀθηναῖοι κωλύοιεν ἀπαίρειν, πρὸς τὴν σφετέραν ἀντίταξιν τῶν τριήρων τὴν φυλακὴν ποιούμενοι.",
+  "e": "The Corinthians were also manning twenty-five ships, in order that they might try an engagement with the squadron on watch at Naupactus and that the Athenians at Naupactus might not find it so easy to prevent their merchant-vessels from putting to sea, since they would be busy keeping watch upon the triremes arrayed against them."
+ },
+ {
+  "k": "a29244d0257b872c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "παρεσκευάζοντο δὲ καὶ τὴν ἐς τὴν Ἀττικὴν ἐσβολὴν οἱ Λακεδαιμόνιοι, ὥσπερ τε προυδέδοκτο αὐτοῖς καὶ τῶν Συρακοσίων καὶ Κορινθίων ἐναγόντων, ἐπειδὴ ἐπυνθάνοντο τὴν ἀπὸ τῶν Ἀθηναίων βοήθειαν ἐς τὴν Σικελίαν, ὅπως δὴ ἐσβολῆς γενομένης διακωλυθῇ. καὶ ὁ Ἀλκιβιάδης προσκείμενος ἐδίδασκε τὴν Δεκέλειαν τειχίζειν καὶ μὴ ἀνιέναι τὸν πόλεμον.",
+  "e": "The Lacedaemonians were also making ready for their invasion of Attica, both in accordance with their previous resolution and because the Syracusans and Corinthians urged it, when they heard of the reinforcements to be sent from the Athenians to Sicily, so that, as they said, these might be wholly prevented by the invasion. And Alcibiades was likewise insistently telling them that they should fortify Deceleia and not relax their efforts in the war."
+ },
+ {
+  "k": "cae6bd9c1a14fa47",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "μάλιστα δὲ τοῖς Λακεδαιμονίοις ἐγεγένητό τις ῥώμη, διότι τοὺς Ἀθηναίους ἐνόμιζον διπλοῦν τὸν πόλεμον ἔχοντας, πρός τε σφᾶς καὶ Σικελιώτας, εὐκαθαιρετωτέρους ἔσεσθαι, καὶ ὅτι τὰς σπονδὰς προτέρους λελυκέναι ἡγοῦντο αὐτούς· ἐν γὰρ τῷ προτέρῳ πολέμῳ σφέτερον τὸ παρανόμημα μᾶλλον γενέσθαι, ὅτι τε ἐς Πλάταιαν ἦλθον Θηβαῖοι ἐν σπονδαῖς, καὶ εἰρημένον ἐν ταῖς πρότερον ξυνθήκαις ὅπλα μὴ ἐπιφέρειν, ἢν δίκας ἐθέλωσι διδόναι, αὐτοὶ οὐχ ὑπήκουον ἐς δίκας προκαλουμένων τῶν Ἀθηναίων. καὶ διὰ τοῦτο εἰκότως δυστυχεῖν τε ἐνόμιζον, καὶ ἐνεθυμοῦντο τήν τε περὶ Πύλον ξυμφορὰν καὶ εἴ τις ἄλλη αὐτοῖς ἐγένετο.",
+  "e": "But most important of all was the fact that a degree of confidence had come to the Lacedaemonians, because they believed that the Athenians, once they had on their hands a twofold war—with themselves and with the Siceliots—would be more easily overthrown, and because they regarded the Athenians as having been the first to break the treaty. In the former war they felt that the transgression had been rather on their own part; for the Thebans had entered Plataea in time of truce, and, although it had been stipulated in the former agreements that neither party was to resort to arms if the other were willing to submit the question to arbitration, yet they themselves refused to respond to the summons when the Athenians invited them to arbitrate. On this account they considered that they deserved their misfortune, having in mind both the disaster at Pylos and any other that had befallen them."
+ },
+ {
+  "k": "de7de51057881284",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐπειδὴ δὲ οἱ Ἀθηναῖοι ταῖς τριάκοντα ναυσὶν ἐξ Ἄργους ὁρμώμενοι Ἐπιδαύρου τέ τι καὶ Πρασιῶν καὶ ἄλλα ἐδῄωσαν καὶ ἐκ Πύλου ἅμα ἐλῃστεύοντο, καὶ ὁσάκις περί του διαφοραὶ γένοιντο τῶν κατὰ τὰς σπονδὰς ἀμφισβητουμένων, ἐς δίκας προκαλουμένων τῶν Λακεδαιμονίων οὐκ ἤθελον ἐπιτρέπειν, τότε δὴ οἱ Λακεδαιμόνιοι νομίσαντες τὸ παρανόμημα, ὅπερ καὶ σφίσι πρότερον ἡμάρτητο, αὖθις ἐς τοὺς Ἀθηναίους τὸ αὐτὸ περιεστάναι, πρόθυμοι ἦσαν ἐς τὸν πόλεμον.",
+  "e": "But now the Athenians, setting out from Argos with thirty ships, had ravaged a part of Epidaurus and Prasiae and other places, and at the same time were making predatory excursions from Pylos; and as often as differences arose about any of the points of dispute in the treaty and the Lacedaemonians proposed arbitration, they were unwilling to resort to it; at this time, therefore, the Lacedaemonians, considering that the unlawful conduct, of which they had themselves formerly been guilty, had shifted round and now rested upon the Athenians, were zealous for the war."
+ },
+ {
+  "k": "5ec7c30aa724d119",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ἐν τῷ χειμῶνι τούτῳ σίδηρόν τε περιήγγελλον κατὰ τοὺς ξυμμάχους καὶ τἆλλα ἐργαλεῖα ἡτοίμαζον ἐς τὸν ἐπιτειχισμόν, καὶ τοῖς ἐν τῇ Σικελίᾳ ἅμα ὡς ἀποπέμψοντες ἐν ταῖς ὁλκάσιν ἐπικουρίαν αὐτοί τε ἐπόριζον καὶ τοὺς ἄλλους Πελοποννησίους προσηνάγκαζον. καὶ ὁ χειμὼν ἐτελεύτα, καὶ ὄγδοον καὶ δέκατον ἔτος τῷ πολέμῳ ἐτελεύτα τῷδε ὃν Θουκυδίδης ξυνέγραψεν.",
+  "e": "And during this winter they sent out requisitions for iron to their allies, and in general were making ready the tools needed in the fortification of Deceleia. And at the same time they were not only devising on their own part ways and means for sending reinforcements in merchant-ships to the army in Sicily, but were also compelling the rest of the Peloponnesians to do likewise. So the winter ended, and with it the eighteenth year of this war of which Thucydides wrote the history."
+ },
+ {
+  "k": "fa83d536af68c6ba",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου πρωίτατα δὴ οἱ Λακεδαιμόνιοι καὶ οἱ ξύμμαχοι ἐς τὴν Ἀττικὴν ἐσέβαλον· ἡγεῖτο δὲ Ἆγις ὁ Ἀρχιδάμου Λακεδαιμονίων βασιλεύς. καὶ πρῶτον μὲν τῆς χώρας τὰ περὶ τὸ πεδίον ἐδῄωσαν, ἔπειτα Δεκέλειαν ἐτείχιζον, κατὰ πόλεις διελόμενοι τὸ ἔργον.",
+  "e": "At the very beginning of the next spring, earlier than ever before, the Lacedaemonians and their allies invaded Attica, under the command of Agis son of Archidamus, king of the Lacedaemonians. And at first they ravaged the plain of Attica and then proceeded to fortify Deceleia, apportioning the work to the several allied states."
+ },
+ {
+  "k": "f862099c419dca8e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἀπέχει δὲ ἡ Δεκέλεια σταδίους μάλιστα τῆς τῶν Ἀθηναίων πόλεως εἴκοσι καὶ ἑκατόν, παραπλήσιον δὲ καὶ οὐ πολλῷ πλέον καὶ ἀπὸ τῆς Βοιωτίας. ἐπὶ δὲ τῷ πεδίῳ καὶ τῆς χώρας τοῖς κρατίστοις ἐς τὸ κακουργεῖν ᾠκοδομεῖτο τὸ τεῖχος, ἐπιφανὲς μέχρι τῆς τῶν Ἀθηναίων πόλεως.",
+  "e": "Deceleia is distant from the city of Athens about one hundred and twenty stadia, and about the same distance, or not much more, from Boeotia. The purpose of the fort they were building was to dominate the plain and the most fertile parts of the country, with a view to devastating them, and it was visible as far as the city of Athens."
+ },
+ {
+  "k": "2e6c4e15e3645556",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ οἱ μὲν ἐν τῇ Ἀττικῇ Πελοποννήσιοι καὶ οἱ ξύμμαχοι ἐτείχιζον, οἱ δ’ ἐν τῇ Πελοποννήσῳ ἀπέστελλον περὶ τὸν αὐτὸν χρόνον ταῖς ὁλκάσι τοὺς ὁπλίτας ἐς τὴν Σικελίαν, Λακεδαιμόνιοι μὲν τῶν τε Εἱλώτων ἐπιλεξάμενοι τοὺς βελτίστους καὶ τῶν νεοδαμωδῶν, ξυναμφοτέρων ἐς ἑξακοσίους ὁπλίτας,καὶ Ἔκκριτον Σπαρτιάτην ἄρχοντα, Βοιωτοὶ δὲ τριακοσίους ὁπλίτας, ὧν ἦρχον Ξένων τε καὶ Νίκων Θηβαῖοι καὶ Ἡγήσανδρος Θεσπιεύς.",
+  "e": "And while the Peloponnesians in Attica and their allies were building this fort, those in the Peloponnesus were at the same time despatching the hoplites in merchant-ships to Sicily, the Lacedaemonians having picked out the best of the Helots and Neodamodes, of both together about six hundred hoplites, with Eccritus the Spartan as commander, and the Boeotians having selected three hundred hoplites, in command of whom were Xenon and Nicon, both Thebans, and Hegesander, a Thespian."
+ },
+ {
+  "k": "e3a8b7de64c7a280",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οὗτοι μὲν οὖν ἐν τοῖς πρῶτοι ὁρμήσαντες ἀπὸ τοῦ Ταινάρου τῆς Λακωνικῆς ἐς τὸ πέλαγος ἀφῆκαν· μετὰ δὲ τούτους Κορίνθιοι οὐ πολλῷ ὕστερον πεντακοσίους ὁπλίτας, τοὺς μὲν ἐξ αὐτῆς Κορίνθου, τοὺς δὲ προσμισθωσάμενοι Ἀρκάδων, καὶ ἄρχοντα Ἀλέξαρχον Κορίνθιον προστάξαντες ἀπέπεμψαν. ἀπέστειλαν δὲ καὶ Σικυώνιοι διακοσίους ὁπλίτας ὁμοῦ τοῖς Κορινθίοις, ὧν ἦρχε Σαργεὺς Σικυώνιος.",
+  "e": "Now these set out in the first contingent from Taenarus in Laconia and made for the open sea; and following them, but not long afterwards, the Corinthians sent out five hundred hoplites, some from Corinth itself, others being Arcadians whom they had taken on for hire, appointing in command of them Alexarchus, a Corinthian. The Sicyonians also despatched at the same time as the Corinthians two hundred hoplites under the command of Sargeus, a Sicyonian."
+ },
+ {
+  "k": "840669a820e872d1",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "αἱ δὲ πέντε καὶ εἴκοσι νῆες τῶν Κορινθίων αἱ τοῦ χειμῶνος πληρωθεῖσαι ἀνθώρμουν ταῖς ἐν τῇ Ναυπάκτῳ εἴκοσιν Ἀττικαῖς, ἕωσπερ αὐτοῖς οὗτοι οἱ ὁπλῖται ταῖς ὁλκάσιν ἀπὸ τῆς Πελοποννήσου ἀπῆραν· οὗπερ ἕνεκα καὶ τὸ πρῶτον ἐπληρώθησαν, ὅπως μὴ οἱ Ἀθηναῖοι πρὸς τὰς ὁλκάδας μᾶλλον ἢ πρὸς τὰς τριήρεις τὸν νοῦν ἔχωσιν.",
+  "e": "Meanwhile the twenty-five Corinthian ships, which had been manned during the winter, lay opposite the twenty Athenian ships at Naupactus, until their hoplites in the merchant-ships had got well on their voyage from the Peloponnesus; it was for this purpose, indeed, that they had been manned in the first place—that the Athenians might not give their attention so much to the merchant-ships as to the triremes."
+ },
+ {
+  "k": "8ff62c25bf9245a7",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐν δὲ τούτῳ καὶ οἱ Ἀθηναῖοι ἅμα τῆς Δεκελείας τῷ τειχισμῷ καὶ τοῦ ἦρος εὐθὺς ἀρχομένου περί τε Πελοπόννησον ναῦς τριάκοντα ἔστειλαν καὶ Χαρικλέα τὸν Ἀπολλοδώρου ἄρχοντα, ᾧ εἴρητο καὶ ἐς Ἄργος ἀφικομένῳ κατὰ τὸ ξυμμαχικὸν παρακαλεῖν Ἀργείων [τε] ὁπλίτας ἐπὶ τὰς ναῦς,",
+  "e": "Meanwhile the Athenians, simultaneously with the fortification of Deceleia and at the very beginning of spring, sent thirty ships round the Peloponnesus under the command of Charicles son of Apollodorus, whose orders were on reaching Argos to summon to the ships Argive hoplites, in accordance with the terms of their alliance."
+ },
+ {
+  "k": "ac7845ce5dedc2f8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ τὸν Δημοσθένη ἐς τὴν Σικελίαν, ὥσπερ ἔμελλον, ἀπέστελλον ἑξήκοντα μὲν ναυσὶν Ἀθηναίων καὶ πέντε Χίαις, ὁπλίταις δὲ ἐκ καταλόγου Ἀθηναίων διακοσίοις καὶ χιλίοις, καὶ νησιωτῶν ὅσοις ἑκασταχόθεν οἷόν τ’ ἦν πλείστοις χρήσασθαι, καὶ ἐκ τῶν ἄλλων ξυμμάχων τῶν ὑπηκόων, εἴ ποθέν τι εἶχον ἐπιτήδειον ἐς τὸν πόλεμον, ξυμπορίσαντες. εἴρητο δ’ αὐτῷ πρῶτον μετὰ τοῦ Χαρικλέους ἅμα περιπλέοντα ξυστρατεύεσθαι περὶ τὴν Λακωνικήν.",
+  "e": "And they also were setting Demosthenes on his way to Sicily, as they had planned to do, with fifty Athenian ships and five Chian, twelve hundred Athenian hoplites from the muster-roll, and as many islanders as it was possible to get into their service from each place; and from their other allies who were subjects they collected whatever these had anywhere that was serviceable for the war. But Demosthenes had received instructions first of all, as he was sailing round, to co-operate with Charicles in his operations on the coast of Laconia."
+ },
+ {
+  "k": "a5865188d64bed6e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ὁ μὲν Δημοσθένης ἐς τὴν Αἴγιναν προσπλεύσας τοῦ στρατεύματός τε εἴ τι ὑπελέλειπτο περιέμενε καὶ τὸν Χαρικλέα τοὺς Ἀργείους παραλαβεῖν.",
+  "e": "So he sailed to Aegina and waited there for any part of the armament that had been left behind, and also until Charicles should take on board the Argive hoplites."
+ },
+ {
+  "k": "54f0fda4c9420cf6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐν δὲ τῇ Σικελίᾳ ὑπὸ τοὺς αὐτοὺς χρόνους τούτου τοῦ ἦρος καὶ ὁ Γύλιππος ἧκεν ἐς τὰς Συρακούσας, ἄγων ἀπὸ τῶν πόλεων ὧν ἔπεισε στρατιὰν ὅσην ἑκασταχόθεν πλείστην ἐδύνατο.",
+  "e": "In Sicily, during the same spring and at about the same time, Gylippus returned to Syracuse, bringing from each of the cities which he had prevailed upon as large a body of troops as he could secure."
+ },
+ {
+  "k": "d22a1cf4aaea8f68",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ξυγκαλέσας τοὺς Συρακοσίους ἔφη χρῆναι πληροῦν ναῦς ὡς δύνανται πλείστας καὶ ναυμαχίας ἀπόπειραν λαμβάνειν· ἐλπίζειν γὰρ ἀπ’ αὐτοῦ τι ἔργον ἄξιον τοῦ κινδύνου ἐς τὸν πόλεμον κατεργάσεσθαι.",
+  "e": "And calling together the Syracusans, he told them that they should man as many ships as possible and try their luck in fighting at sea; for he hoped thereby to accomplish something for the furtherance of the war that would be worth the risk."
+ },
+ {
+  "k": "491173f1803a3823",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ξυνανέπειθε δὲ καὶ ὁ Ἑρμοκράτης οὐχ ἥκιστα, τοῦ ταῖς ναυσὶ μὴ ἀθυμεῖν ἐπιχειρῆσαι πρὸς τοὺς Ἀθηναίους, λέγων οὐδ’ ἐκείνους πάτριον τὴν ἐμπειρίαν οὐδ’ ἀίδιον τῆς θαλάσσης ἔχειν, ἀλλ’ ἠπειρώτας μᾶλλον τῶν Συρακοσίων ὄντας καὶ ἀναγκασθέντας ὑπὸ Μήδων ναυτικοὺς γενέσθαι. καὶ πρὸς ἄνδρας τολμηρούς, οἵους καὶ Ἀθηναίους, τοὺς ἀντιτολμῶντας χαλεπωτάτους ἂν [αὐτοῖς ] φαίνεσθαι· ᾧ γὰρ ἐκεῖνοι τοὺς πέλας, οὐ δυνάμει ἔστιν ὅτε προύχοντες, τῷ δὲ θράσει ἐπιχειροῦντες καταφοβοῦσι, καὶ σφᾶς ἂν τὸ αὐτὸ ὁμοίως τοῖς ἐναντίοις ὑποσχεῖν.",
+  "e": "And Hermocrates most of all joined in urging them not to be faint-hearted about attacking the Athenians with their ships, saying that with the Athenians also their maritime skill was not a legacy from their fathers or a possession for all time, but that on the contrary they were originally more landsmen than the Syracusans, and had only taken to the sea when forced to do so by the Persians. He added that those who with daring confront daring men like the Athenians appear most formidable to them; for that quality which enables the Athenians to terrorize their neighbours, to whom they are sometimes not superior in power, though they always attack them with confidence—this very quality the Syracusans would likewise exhibit to their opponents."
+ },
+ {
+  "k": "6c9dbe3acdcb8006",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ Συρακοσίους εὖ εἰδέναι ἔφη τῷ τολμῆσαι ἀπροσδοκήτως πρὸς τὸ Ἀθηναίων ναυτικὸν ἀντιστῆναι πλέον τι διὰ τὸ τοιοῦτον ἐκπλαγέντων αὐτῶν περιγενησομένους ἢ Ἀθηναίους τῇ ἐπιστήμῃ τὴν Συρακοσίων ἀπειρίαν βλάψοντας. ἰέναι οὖν ἐκέλευεν ἐς τὴν πεῖραν τοῦ ναυτικοῦ καὶ μὴ ἀποκνεῖν.",
+  "e": "And lie said that he was well aware that the Syracusans, by daring unexpectedly to make a stand against the Athenian fleet, would have an advantage over them, dismayed as they would be on that account, which would more than outweigh the damage which the Athenians might inflict by their skill on the inexperience of the Syracusans."
+ },
+ {
+  "k": "72348ff65bd0664d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ οἱ μὲν Συρακόσιοι, τοῦ τε Γυλίππου καὶ Ἑρμοκράτους καὶ εἴ του ἄλλου πειθόντων, ὥρμηντό τε ἐς τὴν ναυμαχίαν καὶ τὰς ναῦς ἐπλήρουν·",
+  "e": "He urged them, therefore, to proceed to the trial of their fleet and not to shrink from it. So the Syracusans, under the persuasions of Gylippus, Hermocrates, and perhaps others, were eager for the sea-fight and began to man the slips."
+ },
+ {
+  "k": "572836f904d6c2dd",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Γύλιππος ἐπειδὴ παρεσκευάσατο τὸ ναυτικόν, ἀγαγὼν ὑπὸ νύκτα πᾶσαν τὴν στρατιὰν τὴν πεζὴν αὐτὸς μὲν τοῖς ἐν τῷ Πλημμυρίῳ τείχεσι κατὰ γῆν ἔμελλε προσβαλεῖν, αἱ δὲ τριήρεις τῶν Συρακοσίων ἅμα καὶ ἀπὸ ξυνθήματος πέντε μὲν καὶ τριάκοντα ἐκ τοῦ μεγάλου λιμένος ἐπέπλεον, αἱ δὲ πέντε καὶ τεσσαράκοντα ἐκ τοῦ ἐλάσσονος, οὗ ἦν καὶ τὸ νεώριον αὐτοῖς, [καὶ] περιέπλεον βουλόμενοι πρὸς τὰς ἐντὸς προσμεῖξαι καὶ ἅμα ἐπιπλεῖν τῷ Πλημμυρίῳ, ὅπως οἱ Ἀθηναῖοι ἀμφοτέρωθεν θορυβῶνται.",
+  "e": "When the fleet was ready, Gylippus led out his whole land-force under cover of night, intending in person to make an assault by land upon the forts of Plemmyrium, and at the same time, on a preconcerted signal, thirty-five Syracusan triremes sailed to the attack from the Great Harbour, while forty-five sailed round from the lesser harbour, where their ship-yard was, purposing to form a junction with those inside the harbour and simultaneously attack Plemmyrium, so that the Athenians, thus assailed from both directions, might be thrown into confusion."
+ },
+ {
+  "k": "f25e23262e00164e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δ’ Ἀθηναῖοι διὰ τάχους ἀντιπληρώσαντες ἑξήκοντα ναῦς ταῖς μὲν πέντε καὶ εἴκοσι πρὸς τὰς πέντε καὶ τριάκοντα τῶν Συρακοσίων τὰς ἐν τῷ μεγάλῳ λιμένι ἐναυμάχουν, ταῖς δ’ ἐπιλοίποις ἀπήντων ἐπὶ τὰς ἐκ τοῦ νεωρίου περιπλεούσας. καὶ εὐθὺς πρὸ τοῦ στόματος τοῦ μεγάλου λιμένος ἐναυμάχουν, καὶ ἀντεῖχον ἀλλήλοις ἐπὶ πολύ, οἱ μὲν βιάσασθαι βουλόμενοι τὸν ἔσπλουν, οἱ δὲ κωλύειν.",
+  "e": "But the Athenians, hastily manning sixty ships to oppose them, with twenty-five engaged the thirty-five Syracusan ships that were in the Great Harbour, and with the rest went to meet the squadron that was sailing round from the ship-yard. And so they at once engaged in battle in front of the mouth of the Great Harbour, and for a long time held out against one another, one side wishing to force the entrance, the other to prevent this."
+ },
+ {
+  "k": "fed13d65babb7f38",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐν τούτῳ δ’ ὁ Γύλιππος τῶν ἐν τῷ Πλημμυρίῳ Ἀθηναίων πρὸς τὴν θάλασσαν ἐπικαταβάντων καὶ τῇ ναυμαχίᾳ τὴν γνώμην προσεχόντων φθάνει προσπεσὼν ἅμα τῇ ἕῳ αἰφνιδίως τοῖς τείχεσι, καὶ αἱρεῖ τὸ μέγιστον πρῶτον, ἔπειτα δὲ καὶ τὰ ἐλάσσω δύο, οὐχ ὑπομεινάντων τῶν φυλάκων, ὡς εἶδον τὸ μέγιστον ῥᾳδίως ληφθέν.",
+  "e": "Meanwhile Gylippus, noticing that the Athenians on Plemmyrium had gone down to the sea and were giving their attention to the sea-fight, surprised them by making a sudden attack at daybreak upon the forts; and first he captured the largest, and afterwards the two smaller ones also, their garrisons not awaiting the attack when they saw the largest so easily taken."
+ },
+ {
+  "k": "9596f8b9cfd6f320",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ἐκ μὲν τοῦ πρώτου ἁλόντος χαλεπῶς οἱ ἄνθρωποι, ὅσοι καὶ ἐς τὰ πλοῖα καὶ ὁλκάδα τινὰ κατέφυγον, ἐς τὸ στρατόπεδον ἐξεκομίζοντο· τῶν γὰρ Συρακοσίων ταῖς ἐν τῷ μεγάλῳ λιμένι ναυσὶ κρατούντων τῇ ναυμαχίᾳ ὑπὸ τριήρους μιᾶς καὶ εὖ πλεούσης ἐπεδιώκοντο· ἐπειδὴ δὲ τὰ δύο τειχίσματα ἡλίσκετο, ἐν τούτῳ καὶ οἱ Συρακόσιοι ἐτύγχανον ἤδη νικώμενοι καὶ οἱ ἐξ αὐτῶν φεύγοντες ῥᾷον παρέπλευσαν.",
+  "e": "Of the garrison of the fort that was taken first, all that succeeded in escaping to the boats and to a certain merchant ship were rescued and brought to camp, but it was with difficulty; for the Syracusans were at the time having the best of the fight with their ships in the Great Harbour, and a trireme, and that a fast sailer, was sent in pursuit. But when the other two forts were taken, the Syracusans, as it chanced, were by this time losing the fight, and those who fled from these forts had less difficulty in sailing past them."
+ },
+ {
+  "k": "5171b783e47bff8c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "αἱ γὰρ τῶν Συρακοσίων αἱ πρὸ τοῦ στόματος νῆες ναυμαχοῦσαι βιασάμεναι τὰς τῶν Ἀθηναίων ναῦς οὐδενὶ κόσμῳ ἐσέπλεον, καὶ ταραχθεῖσαι περὶ ἀλλήλας παρέδοσαν τὴν νίκην τοῖς Ἀθηναίοις· ταύτας τε γὰρ ἔτρεψαν καὶ ὑφ’ ὧν τὸ πρῶτον ἐνικῶντο ἐν τῷ λιμένι.",
+  "e": "For the Syracusan ships that were fighting in front of the entrance, after they had forced back the Athenian ships, sailed into the harbour in disorder, and falling foul of one another made a present of their victory to the Athenians, who routed not only this squadron but also the ships by which they were at first being beaten inside the harbour."
+ },
+ {
+  "k": "554971254f83b489",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ἕνδεκα μὲν ναῦς τῶν Συρακοσίων κατέδυσαν, καὶ τοὺς πολλοὺς τῶν ἀνθρώπων ἀπέκτειναν, πλὴν ὅσον ἐκ τριῶν νεῶν οὓς ἐζώγρησαν· τῶν δὲ σφετέρων τρεῖς νῆες διεφθάρησαν. τὰ δὲ ναυάγια ἀνελκύσαντες τῶν Συρακοσίων καὶ τροπαῖον ἐν τῷ νησιδίῳ στήσαντες τῷ πρὸ τοῦ Πλημμυρίου, ἀνεχώρησαν ἐς τὸ ἑαυτῶν στρατόπεδον.",
+  "e": "And they sank eleven of the Syracusan ships, slaying most of the men, except only the crews of three ships, whom they took alive; but of their own ships three were destroyed. And drawing up on shore the wrecks of the Syracusan ships and setting up a trophy on the little island that faces Plemmyrium, they withdrew to their own camp."
+ },
+ {
+  "k": "28bea5d18f4915f1",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δὲ Συρακόσιοι κατὰ μὲν τὴν ναυμαχίαν οὕτως ἐπεπράγεσαν, τὰ δ’ ἐν τῷ Πλημμυρίῳ τείχη εἶχον, καὶ τροπαῖα ἔστησαν αὐτῶν τρία. καὶ τὸ μὲν ἕτερον τοῖν δυοῖν τειχοῖν τοῖν ὕστερον ληφθέντοιν κατέβαλον, τὰ δὲ δύο ἐπισκευάσαντες ἐφρούρουν.",
+  "e": "The Syracusans had fared thus in the sea-fight, but they held possession of the forts on Plemmyrium and set up three trophies for these. One of the two forts last taken they demolished, but the other two they repaired and garrisoned."
+ },
+ {
+  "k": "33c2943993978c79",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἄνθρωποι δ’ ἐν τῶν τειχῶν τῇ ἁλώσει ἀπέθανον καὶ ἐζωγρήθησαν πολλοί, καὶ χρήματα πολλὰ τὰ ξύμπαντα ἑάλω· ὥσπερ γὰρ ταμιείῳ χρωμένων τῶν Ἀθηναίων τοῖς τείχεσι πολλὰ μὲν ἐμπόρων χρήματα καὶ σῖτος ἐνῆν, πολλὰ δὲ καὶ τῶν τριηράρχων, ἐπεὶ καὶ ἱστία τεσσαράκοντα τριήρων καὶ τἆλλα σκεύη ἐγκατελήφθη καὶ τριήρεις ἀνειλκυσμέναι τρεῖς.",
+  "e": "In the capture of the forts many men were killed or made prisoners, and much property in all was taken; for since the Athenians used the forts as a warehouse, there were in them many wares belonging to merchants as well as food, and also much property belonging to the trierarchs—in fact the sails and other tackle of forty triremes were taken there, as well as three triremes that had been drawn up on shore."
+ },
+ {
+  "k": "28c71e7cd1488c6a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "μέγιστόν τε καὶ ἐν τοῖς πρῶτον ἐκάκωσε τὸ στράτευμα τὸ τῶν Ἀθηναίων ἡ τοῦ Πλημμυρίου λῆψις· οὐ γὰρ ἔτι οὐδ’ οἱ ἔσπλοι ἀσφαλεῖς ἦσαν τῆς ἐπαγωγῆς τῶν ἐπιτηδείων (οἱ γὰρ Συρακόσιοι ναυσὶν αὐτόθι ἐφορμοῦντες ἐκώλυον, καὶ διὰ μάχης ἤδη ἐγίγνοντο αἱ ἐσκομιδαί), ἔς τε τἆλλα κατάπληξιν παρέσχε καὶ ἀθυμίαν τῷ στρατεύματι.",
+  "e": "But the greatest and most serious blow suffered by the Athenian army was the taking of Plemmyrium; for the work of bringing in provisions through the entrance to the harbour could no longer be carried on with safety (since the Syracusans lying in wait there with ships hindered this, and from now on the convoys could only make their entrance by fighting), and in general this event brought consternation and discouragement to the army."
+ },
+ {
+  "k": "366b62072252ccc7",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "μετὰ δὲ τοῦτο ναῦς τε ἐκπέμπουσι δώδεκα οἱ Συρακόσιοι καὶ Ἀγάθαρχον ἐπ’ αὐτῶν Συρακόσιον ἄρχοντα. καὶ αὐτῶν μία μὲν ἐς Πελοπόννησον ᾤχετο, πρέσβεις ἄγουσα οἵπερ τά τε σφέτερα φράσουσιν ὅτι ἐν ἐλπίσιν εἰσὶ καὶ τὸν ἐκεῖ πόλεμον ἔτι μᾶλλον ἐποτρυνοῦσι γίγνεσθαι· αἱ δ’ ἕνδεκα νῆες πρὸς τὴν Ἰταλίαν ἔπλευσαν, πυνθανόμεναι πλοῖα τοῖς Ἀθηναίοις γέμοντα χρημάτων προσπλεῖν.",
+  "e": "After this the Syracusans sent out twelve ships under the command of Agatharchus, a Syracusan. One of these headed for the Peloponnesus, having on board some envoys who were to explain the situation in Sicily, that they were full of hope, and to urge the still more vigorous prosecution of the war on the continent of Greece. The other eleven ships sailed to Italy, since they heard that boats laden with supplies for the Athenians were approaching. And falling in with these boats, they destroyed most of them;"
+ },
+ {
+  "k": "bc4e06f1d2fbf1a0",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ τῶν τε πλοίων ἐπιτυχοῦσαι τὰ πολλὰ διέφθειραν καὶ ξύλα ναυπηγήσιμα ἐν τῇ Καυλωνιάτιδι κατέκαυσαν, ἃ τοῖς Ἀθηναίοις ἑτοῖμα ἦν.",
+  "e": "and they also burned some timber in the territory of Caulonia, which was lying there ready for the Athenians to use in ship-building."
+ },
+ {
+  "k": "0051a131bd31a2ee",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἔς τε Λοκροὺς μετὰ ταῦτα ἦλθον, καὶ ὁρμουσῶν αὐτῶν κατέπλευσε μία τῶν ὁλκάδων τῶν ἀπὸ Πελοποννήσου ἄγουσα Θεσπιῶν ὁπλίτας·",
+  "e": "After this they went to Locri, and while they were lying there at anchor, one of the merchant-ships that had sailed from the Peloponnesus arrived in port, bringing some Thespian hoplites."
+ },
+ {
+  "k": "5fcadcd77932e148",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ἀναλαβόντες αὐτοὺς οἱ Συρακόσιοι ἐπὶ τὰς ναῦς παρέπλεον ἐπ’ οἴκου. φυλάξαντες δ᾽ αὐτοὺς οἱ Ἀθηναῖοι εἴκοσι ναυσὶ πρὸς τοῖς Μεγάροις μίαν μὲν ναῦν λαμβάνουσιν αὐτοῖς ἀνδράσι, τὰς δ’ ἄλλας οὐκ ἐδυνήθησαν, ἀλλ’ ἀποφεύγουσιν ἐς τὰς Συρακούσας.",
+  "e": "Taking these on board their ships, the Syracusans sailed along the coast toward home. But the Athenians, who were watching for them at Megara with twenty ships, captured one ship together with its crew, but they could not take the rest, which escaped to Syracuse. Skirmishing also occurred in the harbour about the piles which the Syracusans drove down in the sea in front of their old dockyards with the object that the ships might lie moored inside the piles and the Athenians might not sail up and ram their ships."
+ },
+ {
+  "k": "f92042a2d7686ec8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐγένετο δὲ καὶ περὶ τῶν σταυρῶν ἀκροβολισμὸς ἐν τῷ λιμένι, οὓς οἱ Συρακόσιοι πρὸ τῶν παλαιῶν νεωσοίκων κατέπηξαν ἐν τῇ θαλάσσῃ, ὅπως αὐτοῖς αἱ νῆες ἐντὸς ὁρμοῖεν καὶ οἱ Ἀθηναῖοι ἐπιπλέοντες μὴ βλάπτοιεν ἐμβάλλοντες.",
+  "e": "The Athenians brought up against the piles a ship of ten thousand talents burden on whose deck were wooden towers and bulwarks;"
+ },
+ {
+  "k": "c59c8969315ad176",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "προσαγαγόντες γὰρ ναῦν μυριοφόρον αὐτοῖς οἱ Ἀθηναῖοι, πύργους τε ξυλίνους ἔχουσαν καὶ παραφράγματα, ἔκ τε τῶν ἀκάτων ὤνευον ἀναδούμενοι τοὺς σταυροὺς καὶ ἀνέκλων καὶ κατακολυμβῶντες ἐξέπριον. οἱ δὲ Συρακόσιοι ἀπὸ τῶν νεωσοίκων ἔβαλλον· οἱ δ’ ἐκ τῆς ὁλκάδος ἀντέβαλλον, καὶ τέλος τοὺς πολλοὺς τῶν σταυρῶν ἀνεῖλον οἱ Ἀθηναῖοι.",
+  "e": "then from small boats they attached ropes to the piles and pulled them up with windlasses or broke them off, or else they dived down and sawed them off. Meanwhile the Syracusans kept hurling missiles at them from the dockyards, and they returned the fire from the merchant-ship; and finally the Athenians destroyed most of the piles. But the most troublesome part of the stockade was that which was out of sight;"
+ },
+ {
+  "k": "1e01ec412fbff731",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "χαλεπωτάτη δ’ ἦν τῆς σταυρώσεως ἡ κρύφιος· ἦσαν γὰρ τῶν σταυρῶν οὓς οὐχ ὑπερέχοντας τῆς θαλάσσης κατέπηξαν, ὥστε δεινὸν ἦν προσπλεῦσαι, μὴ οὐ προϊδών τις ὥσπερ περὶ ἕρμα περιβάλῃ τὴν ναῦν. ἀλλὰ καὶ τούτους κολυμβηταὶ δυόμενοι ἐξέπριον μισθοῦ. ὅμως δ’ αὖθις οἱ Συρακόσιοι ἐσταύρωσαν.",
+  "e": "for there were some of the piles which they had driven down so that they did not project above the surface of the water, and consequently it was dangerous to approach the stockade, for any one if he did not look out might impale his ship as on a sunken rock. But these also were disposed of by divers, who dived down and sawed them off for pay. But nevertheless the Syracusans drove their piles down again."
+ },
+ {
+  "k": "224b2b4a3c20e08c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "πολλὰ δὲ καὶ ἄλλα πρὸς ἀλλήλους οἷον εἰκὸς τῶν στρατοπέδων ἐγγὺς ὄντων καὶ ἀντιτεταγμένων ἐμηχανῶντο καὶ ἀκροβολισμοῖς καὶ πείραις παντοίαις ἐχρῶντο.",
+  "e": "And they contrived many other devices against one another, as might be expected when the two armies were in hostile array so near to each other;"
+ },
+ {
+  "k": "7251c242170ed18c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἔπεμψαν δὲ καὶ ἐς τὰς πόλεις πρέσβεις οἱ Συρακόσιοι Κορινθίων καὶ Ἀμπρακιωτῶν καὶ Λακεδαιμονίων, ἀγγέλλοντας τήν τε τοῦ Πλημμυρίου λῆψιν καὶ τῆς ναυμαχίας πέρι ὡς οὐ τῇ τῶν πολεμίων ἰσχύι μᾶλλον ἢ τῇ σφετέρᾳ ταραχῇ ἡσσηθεῖεν, τά τε ἄλλα [αὖ] δηλώσοντας ὅτι ἐν ἐλπίσιν εἰσὶ καὶ ἀξιώσοντας ξυμβοηθεῖν ἐπ’ αὐτοὺς καὶ ναυσὶ καὶ πεζῷ, ὡς καὶ τῶν Ἀθηναίων προσδοκίμων ὄντων ἄλλῃ στρατιᾷ καί, ἢν φθάσωσιν αὐτοὶ πρότερον διαφθείραντες τὸ παρὸν στράτευμα αὐτῶν, διαπεπολεμησόμενον. καὶ οἱ μὲν ἐν τῇ Σικελίᾳ ταῦτα ἔπρασσον.",
+  "e": "and they resorted to skirmishing and to stratagems of every sort. The Syracusans also sent to the Sicilian cities Corinthian, Ambraciot and Lacedaemonian envoys, to report the capture of Plemmyrium and to explain in regard to the sea-fight that they had been defeated, not so much by the strength of the enemy, as by their own confusion; and in general they were to declare that they were full of hope and to beg the cities to give them aid against the enemy with both ships and land-forces, seeing that the Athenians on their part were expecting another army, and, if the Syracusans could forestall them by destroying the present army before the new one came, the war would be at an end. The forces in Sicily were thus occupied."
+ },
+ {
+  "k": "b4e264f57e5fad15",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ Δημοσθένης, ἐπεὶ ξυνελέγη αὐτῷ τὸ στράτευμα ὃ ἔδει ἔχοντα ἐς τὴν Σικελίαν βοηθεῖν, ἄρας ἐκ τῆς Αἰγίνης καὶ πλεύσας πρὸς τὴν Πελοπόννησον τῷ τε Χαρικλεῖ καὶ ταῖς τριάκοντα ναυσὶ τῶν Ἀθηναίων ξυμμίσγει, καὶ παραλαβόντες τῶν Ἀργείων ὁπλίτας ἐπὶ τὰς ναῦς ἔπλεον ἐς τὴν Λακωνικήν·",
+  "e": "But as for Demosthenes, when the army was collected with which he was to bring aid to Sicily, he set out from Aegina, and sailing to the Peloponnesus effected a junction with Charicles and the Athenian fleet of thirty ships. Then taking on board some Argive hoplites, they sailed against Laconia, ravaging first a part of Epidaurus Limera;"
+ },
+ {
+  "k": "6b260765c329f55a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ πρῶτον μὲν τῆς Ἐπιδαύρου τι τῆς Λιμηρᾶς ἐδῄωσαν, ἔπειτα σχόντες ἐς τὰ καταντικρὺ Κυθήρων τῆς Λακωνικῆς, ἔνθα τὸ ἱερὸν τοῦ Ἀπόλλωνός ἐστι, τῆς τε γῆς ἔστιν ἃ ἐδῄωσαν καὶ ἐτείχισαν ἰσθμῶδές τι χωρίον, ἵνα δὴ οἵ τε Εἵλωτες τῶν Λακεδαιμονίων αὐτόσε αὐτομολῶσι καὶ ἅμα λῃσταὶ ἐξ αὐτοῦ, ὥσπερ ἐκ τῆς Πύλου, ἁρπαγὴν ποιῶνται.",
+  "e": "then landing on the coast of Laconia opposite Cythera, where the sanctuary of Apollo is, they ravaged portions of the land and fortified a place shaped like an isthmus, in order that the Helots of the Lacedaemonians might desert thither and that at the same time marauders might make it, as they had made Pylos, a base for their operations."
+ },
+ {
+  "k": "5a3c8bda767db04a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ ὁ μὲν Δημοσθένης εὐθὺς ἐπειδὴ ξυγκατέλαβε τὸ χωρίον παρέπλει ἐπὶ τῆς Κερκύρας, ὅπως καὶ τῶν ἐκεῖθεν ξυμμάχων παραλαβὼν τὸν ἐς τὴν Σικελίαν πλοῦν ὅτι τάχιστα ποιῆται· ὁ δὲ Χαρικλῆς περιμείνας ἕως τὸ χωρίον ἐξετείχισε καὶ καταλιπὼν φυλακὴν αὐτοῦ ἀπεκομίζετο καὶ αὐτὸς ὕστερον ταῖς τριάκοντα ναυσὶν ἐπ’ οἴκου καὶ οἱ Ἀργεῖοι ἅμα.",
+  "e": "Immediately afterwards, when he had taken part in occupying this place, Demosthenes sailed on toward Corcyra, in order that he might first take aboard some allied troops there, and then make the voyage to Sicily as quickly as possible. As for Charicles, he waited until he had completed the fortification of the place, and then, leaving a garrison there, sailed back home with his thirty ships, as did the Argives also at the same time."
+ },
+ {
+  "k": "736f61d5b4088988",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἀφίκοντο δὲ καὶ Θρᾳκῶν τῶν μαχαιροφόρων τοῦ Διακοῦ γένους ἐς τὰς Ἀθήνας πελτασταὶ ἐν τῷ αὐτῷ θέρει τούτῳ τριακόσιοι καὶ χίλιοι, οὓς ἔδει τῷ Δημοσθένει ἐς τὴν Σικελίαν ξυμπλεῖν.",
+  "e": "During this same summer there arrived at Athens thirteen hundred peltasts of the dirk-bearing Thracians of the tribe of Dii, who were to have sailed to Sicily with Demosthenes. But since they came too late, the Athenians were disposed to send them back to Thrace whence they had come."
+ },
+ {
+  "k": "d5f436674f6b7278",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "οἱ δ’ Ἀθηναῖοι, ὡς ὕστεροι ἧκον, διενοοῦντο αὐτοὺς πάλιν ὅθεν ἦλθον ἐς Θρᾴκην ἀποπέμπειν. τὸ γὰρ ἔχειν πρὸς τὸν ἐκ τῆς Δεκελείας πόλεμον αὐτοὺς πολυτελὲς ἐφαίνετο· δραχμὴν γὰρ τῆς ἡμέρας ἕκαστος ἐλάμβανεν.",
+  "e": "To keep them for the war that was being carried on from Deceleia seemed too expensive, since each received as pay a drachma a day."
+ },
+ {
+  "k": "3fa0fa1194a01e71",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἐπειδὴ γὰρ ἡ Δεκέλεια τὸ μὲν πρῶτον ὑπὸ πάσης τῆς στρατιᾶς ἐν τῷ θέρει τούτῳ τειχισθεῖσα, ὕστερον δὲ φρουραῖς ἀπὸ τῶν πόλεων κατὰ διαδοχὴν χρόνου ἐπιούσαις τῇ χώρᾳ ἐπῳκεῖτο, πολλὰ ἔβλαπτε τοὺς Ἀθηναίους, καὶ ἐν τοῖς πρῶτον χρημάτων τ’ ὀλέθρῳ καὶ ἀνθρώπων φθορᾷ ἐκάκωσε τὰ πράγματα.",
+  "e": "It should be explained regarding Deceleia that, from the time when it was first fortified during this summer by the entire army and was then regularly occupied for the annoyance of the country by garrisons furnished by the several allied states and succeeding each other at fixed intervals of time, its occupation did much harm to the Athenians, and by destruction of property and wastage of men was one of the chief causes that brought ruin to their cause."
+ },
+ {
+  "k": "b48f11bf72ef4226",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "πρότερον μὲν γὰρ βραχεῖαι γιγνόμεναι αἱ ἐσβολαὶ τὸν ἄλλον χρόνον τῆς γῆς ἀπολαύειν οὐκ ἐκώλυον· τότε δὲ ξυνεχῶς ἐπικαθημένων, καὶ ὁτὲ μὲν καὶ πλεόνων ἐπιόντων, ὁτὲ δ’ ἐξ ἀνάγκης τῆς ἴσης φρουρᾶς καταθεούσης τε τὴν χώραν καὶ λῃστείας ποιουμένης, βασιλέως τε παρόντος τοῦ τῶν Λακεδαιμονίων Ἄγιδος, ὃς οὐκ ἐκ παρέργου τὸν πόλεμον ἐποιεῖτο, μεγάλα οἱ Ἀθηναῖοι ἐβλάπτοντο.",
+  "e": "For before this summer the enemy's invasions, being of short duration, did not prevent the Athenians from making full use of the land during the rest of the year; but at this time, the occupation being continuous, the enemy sometimes invading the country with a larger force and at others the regular garrison overrunning the country, as it was compelled to do, and carrying off booty, while Agis, the king of the Lacedaemonians, who was present in person, carried on the war in no desultory fashion, the Athenians were suffering great damage."
+ },
+ {
+  "k": "daca813ba7233ef9",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τῆς τε γὰρ χώρας ἁπάσης ἐστέρηντο, καὶ ἀνδραπόδων πλέον ἢ δύο μυριάδες ηὐτομολήκεσαν, καὶ τούτων τὸ πολὺ μέρος χειροτέχναι, πρόβατά τε πάντα ἀπωλώλει καὶ ὑποζύγια· ἵπποι τε, ὁσημέραι ἐξελαυνόντων τῶν ἱππέων πρός τε τὴν Δεκέλειαν καταδρομὰς ποιουμένων καὶ κατὰ τὴν χώραν φυλασσόντων, οἱ μὲν ἀπεχωλοῦντο ἐν γῇ ἀποκρότῳ τε καὶ ξυνεχῶς ταλαιπωροῦντες, οἱ δ’ ἐτιτρώσκοντο.",
+  "e": "For they were deprived of their whole territory, more than twenty thousand slaves had already deserted, a large proportion of these being artisans, and all their small cattle and beasts of burden were lost; and now that the cavalry were sallying forth every day, making demonstrations against Deceleia and keeping guard throughout the country, some horses were constantly going lame because of the rocky ground and the incessant hardships they had to endure, and some were continually being wounded."
+ },
+ {
+  "k": "1153b8e5229c3fa1",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ἥ τε τῶν ἐπιτηδείων παρακομιδὴ ἐκ τῆς Εὐβοίας, πρότερον ἐκ τοῦ Ὠρωποῦ κατὰ γῆν διὰ τῆς Δεκελείας θάσσων οὖσα, περὶ Σούνιον κατὰ θάλασσαν πολυτελὴς ἐγίγνετο· τῶν τε πάντων ὁμοίως ἐπακτῶν ἐδεῖτο ἡ πόλις, καὶ ἀντὶ τοῦ πόλις εἶναι φρούριον κατέστη.",
+  "e": "There was this further disadvantage: the bringing in of provisions from Euboea, which had formerly been managed more expeditiously by way of Oropus overland through Deceleia, now became expensive, the route being by sea round Sunium. Everything alike which the city needed had to be imported, and Athens ceased to be a city and became a garrisoned fortress."
+ },
+ {
+  "k": "06696ae24e516de1",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "πρὸς γὰρ τῇ ἐπάλξει τὴν μὲν ἡμέραν κατὰ διαδοχὴν οἱ Ἀθηναῖοι φυλάσσοντες, τὴν δὲ νύκτα καὶ ξύμπαντες πλὴν τῶν ἱππέων, οἱ μὲν ἐφ’ ὅπλοις † ποιούμενοι †, οἱ δ’ ἐπὶ τοῦ τείχους, καὶ θέρους καὶ χειμῶνος ἐταλαιπωροῦντο.",
+  "e": "For the Athenians had to keep guard at the battlements, during the day by relays, but at night everybody except the cavalry, some doing duty at the watch-posts, others upon the wall, both summer and winter, and so suffered great hardships. But what weighed most heavily upon them was that they had two wars on their hands at the same time;"
+ },
+ {
+  "k": "386e6eeda464f157",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "μάλιστα δ’ αὐτοὺς ἐπίεζεν ὅτι δύο πολέμους ἅμα εἶχον, καὶ ἐς φιλονικίαν καθέστασαν τοιαύτην ἣν πρὶν γενέσθαι ἠπίστησεν ἄν τις ἀκούσας. τὸ γὰρ αὐτοὺς πολιορκουμένους ἐπιτειχισμῷ ὑπὸ Πελοποννησίων μηδ’ ὣς ἀποστῆναι ἐκ Σικελίας, ἀλλ’ ἐκεῖ Συρακούσας τῷ αὐτῷ τρόπῳ ἀντιπολιορκεῖν, πόλιν οὐδὲν ἐλάσσω αὐτήν γε καθ’ αὑτὴν τῆς τῶν Ἀθηναίων, καὶ τὸν παράλογον τοσοῦτον ποιῆσαι τοῖς Ἕλλησι τῆς δυνάμεως καὶ τόλμης, ὅσον κατ᾽ ἀρχὰς τοῦ πολέμου οἱ μὲν ἐνιαυτόν, οἱ δὲ δύο, οἱ δὲ τριῶν γε ἐτῶν οὐδεὶς πλείω χρόνον ἐνόμιζον περιοίσειν αὐτούς, εἰ οἱ Πελοποννήσιοι ἐσβάλοιεν ἐς τὴν χώραν, ὥστε ἔτει ἑπτακαιδεκάτῳ μετὰ τὴν πρώτην ἐσβολὴν ἦλθον ἐς Σικελίαν ἤδη τῷ πολέμῳ κατὰ πάντα τετρυχωμένοι, καὶ πόλεμον οὐδὲν ἐλάσσω προσανείλοντο τοῦ πρότερον ὑπάρχοντος ἐκ Πελοποννήσου.",
+  "e": "and yet they had been brought to such a pitch of determination as no one would have credited before it happened, if he had heard of it. That they, who were themselves being besieged by the Peloponnesians by means of a fortress in their country, should not even thus abandon Sicily, but should in turn be there besieging Syracuse in the same manner, a city which taken by itself is not smaller than the city of Athens; and that they should have caused the Hellenic world to make so amazing a miscalculation of their power and daring —inasmuch as at the beginning of the war some thought that they could hold out one year, others two years, others longer but never more than three years, if the Peloponnesians should invade their country—that in the seventeenth year after the first invasion of Attica they should have gone to Sicily, when already war-worn in all respects, and should have undertaken another war no whit less serious than that which was already being waged with the Peloponnesus—this, I say, was incredible."
+ },
+ {
+  "k": "14f9a339d655031c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "δι’ ἃ καὶ τότε ὑπό τε τῆς Δεκελείας πολλὰ βλαπτούσης καὶ τῶν ἄλλων ἀναλωμάτων μεγάλων προσπιπτόντων ἀδύνατοι ἐγένοντο τοῖς χρήμασιν. καὶ τὴν εἰκοστὴν ὑπὸ τοῦτον τὸν χρόνον τῶν κατὰ θάλασσαν ἀντὶ τοῦ φόρου τοῖς ὑπηκόοις ἐποίησαν, πλείω νομίζοντες ἂν σφίσι χρήματα οὕτω προσιέναι. αἱ μὲν γὰρ δαπάναι οὐχ ὁμοίως καὶ πρίν, ἀλλὰ πολλῷ μείζους καθέστασαν, ὅσῳ καὶ μείζων ὁ πόλεμος ἦν· αἱ δὲ πρόσοδοι ἀπώλλυντο.",
+  "e": "For all these reasons, and because at that time Deceleia was doing them much injury and the general expenses which were accruing were very great, they became crippled in the matter of money; and it was at this time that they imposed upon their subjects, instead of a tribute, a duty of five per cent. on all commodities imported or exported by sea, thinking that in this way they should derive more revenue. For their expenses were not on the same scale as before, but had become far heavier, in proportion as the war had become greater, and their revenues were steadily failing."
+ },
+ {
+  "k": "0b54fa87b36890ee",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "τοὺς οὖν Θρᾷκας τοὺς τῷ Δημοσθένει ὑστερήσαντας διὰ τὴν παροῦσαν ἀπορίαν τῶν χρημάτων οὐ βουλόμενοι δαπανᾶν εὐθὺς ἀπέπεμπον, προστάξαντες κομίσαι αὐτοὺς Διειτρέφει, καὶ εἰπόντες ἅμα ἐν τῷ παράπλῳ (ἐπορεύοντο γὰρ δι’ Εὐρίπου) καὶ τοὺς πολεμίους, ἤν τι δύνηται, ἀπ’ αὐτῶν βλάψαι.",
+  "e": "As for the Thracians, then, who had come too late for Demosthenes, the Athenians immediately sent them back, being unwilling on account of the present shortage of money to incur expense; and they commissioned Dieitrephes to conduct them, giving him instructions to use them, as he sailed along the coast (for they would go by way of the Euripus), in doing whatever damage he could to the enemy."
+ },
+ {
+  "k": "16ad650e71ef0e9c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "ὁ δὲ ἔς τε τὴν Τάναγραν ἀπεβίβασεν αὐτοὺς καὶ ἁρπαγήν τινα ἐποιήσατο διὰ τάχους καὶ ἐκ Χαλκίδος τῆς Εὐβοίας ἀφ’ ἑσπέρας διέπλευσε τὸν Εὔριπον καὶ ἀποβιβάσας ἐς τὴν Βοιωτίαν ἦγεν αὐτοὺς ἐπὶ Μυκαλησσόν.",
+  "e": "So he disembarked them in the territory of Tanagra and made a hasty raid; then he sailed immediately after nightfall from Chalcis in Euboea across the Euripus and landing the Thracians in Boeotian territory led them against Mycalessus."
+ },
+ {
+  "k": "bca42b4a3d4a9078",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 7",
+  "g": "καὶ τὴν μὲν νύκτα λαθὼν πρὸς τῷ Ἑρμαίῳ ηὐλίσατο (ἀπέχει δὲ τῆς Μυκαλησσοῦ ἑκκαίδεκα μάλιστα σταδίους), ἅμα δὲ τῇ ἡμέρᾳ τῇ πόλει προσέκειτο οὔσῃ οὐ μεγάλῃ, καὶ αἱρεῖ ἀφυλάκτοις τε ἐπιπεσὼν καὶ ἀπροσδοκήτοις μὴ ἄν ποτέ τινας σφίσιν ἀπὸ θαλάσσης τοσοῦτον ἐπαναβάντας ἐπιθέσθαι, τοῦ τείχους ἀσθενοῦς ὄντος καὶ ἔστιν ᾗ καὶ πεπτωκότος, τοῦ δὲ βραχέος ᾠκοδομημένου, καὶ πυλῶν ἅμα διὰ τὴν ἄδειαν ἀνεῳγμένων.",
+  "e": "During the night he bivouacked unobserved near the sanctuary of Hermes, about sixteen stadia distant from Mycalessus, but at daybreak assaulted the town, which was not large, and took it; for he fell upon the people off their guard and not expecting that anybody would ever march so far inland from the sea and attack them; furthermore, their wall was weak, and at some points had even fallen down, while elsewhere it had been built low, and at the same time the gates were open because of their feeling of security."
+ }
+]

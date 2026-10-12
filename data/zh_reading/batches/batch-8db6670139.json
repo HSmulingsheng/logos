@@ -1,0 +1,806 @@
+[
+ {
+  "k": "b6687744c568b3cd",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἦν δὲ πρὸς τὸν ὄχλον ἡ παράκλησις ὡς χρή, ὅστις τοὺς πεντακισχιλίους βούλεται ἄρχειν ἀντὶ τῶν τετρακοσίων, ἰέναι ἐπὶ τὸ ἔργον. ἐπεκρύπτοντο γὰρ ὅμως ἔτι τῶν πεντακισχιλίων τῷ ὀνόματι, μὴ ἄντικρυς δῆμον ὅστις βούλεται ἄρχειν ὀνομάζειν, φοβούμενοι μὴ τῷ ὄντι ὦσι καὶ πρός τινα εἰπών τίς τι ἀγνοίᾳ σφαλῇ. καὶ οἱ τετρακόσιοι διὰ τοῦτο οὐκ ἤθελον τοὺς πεντακισχιλίους οὔτε εἶναι οὔτε μὴ ὄντας δήλους εἶναι, τὸ μὲν καταστῆσαι μετόχους τοσούτους ἄντικρυς ἂν δῆμον ἡγούμενοι, τὸ δ’ αὖ ἀφανὲς φόβον ἐς ἀλλήλους παρέξειν.",
+  "e": "And the exhortation addressed to the crowd was, “Whoever wants the Five Thousand to rule in place of the Four Hundred, let him set to work.” For in spite of everything they were still concealing their purpose under the name of the “Five Thousand,” so as not to say outright, “Whoever wants the people to rule”; for they were afraid that the Five Thousand did in reality exist and that one man in speaking to another might without knowing it get into trouble. And in fact this was the reason why the Four Hundred did not wish either that the Five Thousand should actually exist or that it should become known that they did not exist— because they thought, on the one hand, that to make so many men partners in the government was outright democracy, and, on the other hand, that the uncertainty would inspire fear in each against his neighbour."
+ },
+ {
+  "k": "a02bb1fdb05aea8e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "τῇ δ’ ὑστεραίᾳ οἱ μὲν τετρακόσιοι ἐς τὸ βουλευτήριον ὅμως καὶ τεθορυβημένοι ξυνελέγοντο· οἱ δ’ ἐν τῷ Πειραιεῖ ὁπλῖται τόν τε Ἀλεξικλέα ὃν ξυνέλαβον ἀφέντες καὶ τὸ τείχισμα καθελόντες ἐς τὸ πρὸς τῇ Μουνιχίᾳ Διονυσιακὸν θέατρον ἐλθόντες καὶ θέμενοι τὰ ὅπλα ἐξεκλησίασαν, καὶ δόξαν αὐτοῖς εὐθὺς ἐχώρουν ἐς τὸ ἄστυ καὶ ἔθεντο αὖ ἐν τῷ Ἀνακείῳ τὰ ὅπλα.",
+  "e": "On the next day the Four Hundred, though much disturbed, assembled nevertheless in the senate-chamber. But the hoplites in the Peiraeus, after they had released Alexicles, whom they had arrested, and demolished the fortification, went to the theatre of Dionysus in Munichia, and grounding arms held a meeting of the assembly; then, a vote to that effect having been passed, they proceeded straightway to the city and again halted in the Anacium."
+ },
+ {
+  "k": "81b2f839bdded6b6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐλθόντες δὲ ἀπὸ τῶν τετρακοσίων τινὲς ᾑρημένοι πρὸς αὐτοὺς ἀνὴρ ἀνδρὶ διελέγοντό τε καὶ ἔπειθον οὓς ἴδοιεν ἀνθρώπους ἐπιεικεῖς αὐτούς τε ἡσυχάζειν καὶ τοὺς ἄλλους παρακατέχειν, λέγοντες τούς τε πεντακισχιλίους ἀποφανεῖν, καὶ ἐκ τούτων ἐν μέρει ᾗ ἂν τοῖς πεντακισχιλίοις δοκῇ τοὺς τετρακοσίους ἔσεσθαι, τέως δὲ τὴν πόλιν μηδενὶ τρόπῳ διαφθείρειν μηδ’ ἐς τοὺς πολεμίους ἀνῶσαι.",
+  "e": "But certain men came to them from the Four Hundred, who had been chosen as their delegates, and talked with them, man with man, and tried to persuade any that they saw were reasonable both to keep quiet themselves and to help to keep the rest in restraint, saying that they would publish the names of the Five Thousand, and that from these should be constituted in turn the Four Hundred in whatever way should seem best to the Five Thousand; meanwhile, they urged, they should by all means not ruin the city or drive it into the arms of the enemy."
+ },
+ {
+  "k": "f65e248d564f0a24",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "τὸ δὲ πᾶν πλῆθος τῶν ὁπλιτῶν ἀπὸ πολλῶν καὶ πρὸς πολλοὺς λόγων γιγνομένων ἠπιώτερον ἦν ἢ πρότερον καὶ ἐφοβεῖτο μάλιστα περὶ τοῦ παντὸς πολιτικοῦ· ξυνεχώρησάν τε ὥστε ἐς ἡμέραν ῥητὴν ἐκκλησίαν ποιῆσαι ἐν τῷ Διονυσίῳ περὶ ὁμονοίας.",
+  "e": "Finally, the whole body of hoplites, as speeches were made by many and to many, was more calm than before, and was now alarmed chiefly about the general safety of the state. So they came to an agreement to hold, on an appointed day, a meeting of the assembly in the precinct of Dionysus and consider the question of concord."
+ },
+ {
+  "k": "f67957888a6c038f",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐπειδὴ δὲ ἐπῆλθεν ἡ [ἐν Διονύσου] ἐκκλησία καὶ ὅσον οὐ ξυνειλεγμένοι ἦσαν, ἀγγέλλονται αἱ δύο καὶ τεσσαράκοντα νῆες καὶ ὁ Ἀγησανδρίδας ἀπὸ τῶν Μεγάρων τὴν Σαλαμῖνα παραπλεῖν· καὶ πᾶς τις [τῶν πολλῶν ὁπλιτῶν] αὐτὸ τοῦτο ἐνόμιζεν εἶναι τὸ πάλαι λεγόμενον ὑπὸ Θηραμένους καὶ τῶν μετ’ αὐτοῦ, ὡς ἐς τὸ τείχισμα ἔπλεον αἱ νῆες, καὶ χρησίμως ἐδόκει καταπεπτωκέναι.",
+  "e": "When the time had come for the meeting of the assembly in the precinct of Dionysus and they had all but gathered there, it was announced that Hegesandridas with his forty-two ships had left Megara and was sailing along the coast of Salamis; and the hoplites to a man believed that this was precisely the move that had long since been predicted by Theramenes and his party and that the ships were coming in to occupy the fort; and they felt that its demolition had served a useful purpose."
+ },
+ {
+  "k": "48540be8b219b6a2",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὁ δὲ Ἀγησανδρίδας τάχα μέν τι καὶ ἀπὸ ξυγκειμένου λόγου περί τε τὴν Ἐπίδαυρον καὶ ταύτῃ ἀνεστρέφετο, εἰκὸς δ’ αὐτὸν καὶ πρὸς τὸν παρόντα στασιασμὸν τῶν Ἀθηναίων, δι’ ἐλπίδος ὡς κἂν ἐς δέον παραγένοιτο, ταύτῃ ἀνέχειν.",
+  "e": "Now it may well be that Hegesandridas was acting in accordance with some prearranged understanding when he hovered about Epidaurus and that neighbourhood, but it is probable that in tarrying there he also had regard to the dissension prevailing among the Athenians, and was hopeful that possibly he might arrive in the very nick of time."
+ },
+ {
+  "k": "3f4b0216fdfa325a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "οἱ δ’ αὖ Ἀθηναῖοι, ὡς ἠγγέλθη αὐτοῖς, εὐθὺς δρόμῳ ἐς τὸν Πειραιᾶ πανδημεὶ ἐχώρουν, ὡς τοῦ ἰδίου πολέμου μείζονος [ἢ] ἀπὸ τῶν πολεμίων οὐχ ἑκάς, ἀλλὰ πρὸς τῷ λιμένι ὄντος. καὶ οἱ μὲν ἐς τὰς παρούσας ναῦς ἐσέβαινον, οἱ δὲ ἄλλας καθεῖλκον, οἱ δέ τινες ἐπὶ τὰ τείχη καὶ τὸ στόμα τοῦ λιμένος παρεβοήθουν.",
+  "e": "However this may be, when his movements were reported to the Athenians they immediately advanced at a run with all their forces to the Peiraeus, thinking that a new war, launched by the enemy and more serious than their own domestic feud, was not far away, nay, was actually at their port. Some went aboard the ships that were lying ready, others began launching additional ships, while others still hastened to the defence of the walls and the entrance of the harbour."
+ },
+ {
+  "k": "ff1fdc92db4cf8f6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "αἱ δὲ τῶν Πελοποννησίων νῆες παραπλεύσασαι καὶ περιβαλοῦσαι Σούνιον ὁρμίζονται μεταξὺ Θορικοῦ τε καὶ Πρασιῶν, ὕστερον δὲ ἀφικνοῦνται ἐς Ὠρωπόν.",
+  "e": "But the Peloponnesians' ships, after sailing along the coast and doubling Sunium, came to anchor between Thoricus and Prasiae, but afterwards went on to Oropus."
+ },
+ {
+  "k": "917a3c29ffd27b74",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "Ἀθηναῖοι δὲ κατὰ τάχος καὶ ἀξυγκροτήτοις πληρώμασιν ἀναγκασθέντες χρήσασθαι, οἷα πόλεώς τε στασιαζούσης καὶ περὶ τοῦ μεγίστου ἐν τάχει βουλόμενοι βοηθῆσαι (Εὔβοια γὰρ αὐτοῖς ἀποκεκλῃμένης τῆς Ἀττικῆς πάντα ἦν), πέμπουσι Θυμοχάρη στρατηγὸν καὶ ναῦς ἐς Ἐρετρίαν,",
+  "e": "And the Athenians, in all haste and making use of unpractised crews under stress of necessity, inasmuch as the city was in a state of sedition and they were eager with the least delay to rally to the defence of their chief possession—for Euboea now meant everything to them, since they were debarred from Attica—sent Thymochares and some ships to Eretria."
+ },
+ {
+  "k": "2124850f54bcde6f",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὧν ἀφικομένων ξὺν ταῖς πρότερον ἐν Εὐβοίᾳ οὔσαις ἓξ καὶ τριάκοντα ἐγένοντο. καὶ εὐθὺς ναυμαχεῖν ἠναγκάζοντο· ὁ γὰρ Ἀγησανδρίδας ἀριστοποιησάμενος ἐκ τοῦ Ὠρωποῦ ἀνήγαγε τὰς ναῦς· ἀπέχει δὲ μάλιστα ὁ Ὠρωπὸς τῆς τῶν Ἐρετριῶν πόλεως θαλάσσης μέτρον ἑξήκοντα σταδίους.",
+  "e": "When they arrived and were joined by those already at Euboea the fleet numbered thirty-six ships. And they were forced to fight immediately; for Hegesander had no sooner breakfasted than he led out his ships from Oropus, and Oropus is only about sixty stadia distant from the city of Eretria by sea."
+ },
+ {
+  "k": "68e8ab3bdb5085c9",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὡς οὖν ἐπέπλει, εὐθὺς ἐπλήρουν καὶ οἱ Ἀθηναῖοι τὰς ναῦς, οἰόμενοι σφίσι παρὰ ταῖς ναυσὶ τοὺς στρατιώτας εἶναι· οἱ δὲ ἔτυχον οὐκ ἐκ τῆς ἀγορᾶς ἄριστον ἐπισιτιζόμενοι (οὐδὲν γὰρ ἐπωλεῖτο ἀπὸ προνοίας τῶν Ἐρετριῶν), ἀλλ’ ἐκ τῶν ἐπ’ ἔσχατα τοῦ ἄστεως οἰκιῶν, ὅπως σχολῇ πληρουμένων φθάσειαν οἱ πολέμιοι προσπεσόντες καὶ ἐξαναγκάσειαν τοὺς Ἀθηναίους οὕτως ὅπως τύχοιεν ἀνάγεσθαι. σημεῖον δὲ αὐτοῖς ἐς τὸν Ὠρωπὸν ἐκ τῆς Ἐρετρίας, ὁπότε χρὴ ἀνάγεσθαι, ἤρθη.",
+  "e": "When, therefore, he began his advance, the Athenians on their part began at once to man their ships, supposing that the crews were beside their vessels. But they chanced to be providing themselves with food for their breakfast, not in the market-place—for by design on the part of the Eretrians nothing was being offered for sale there —but from the houses in the furthest parts of the town; and this had been so arranged in order that while they were manning at their leisure the enemy might surprise them by their attack and force them to put to sea in haphazard fashion."
+ },
+ {
+  "k": "103031f9a32be018",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "διὰ τοιαύτης δὴ παρασκευῆς οἱ Ἀθηναῖοι ἀναγαγόμενοι καὶ ναυμαχήσαντες ὑπὲρ τοῦ λιμένος τῶν Ἐρετριῶν ὀλίγον μέν τινα χρόνον ὅμως καὶ ἀντέσχον, ἔπειτα ἐς φυγὴν τραπόμενοι καταδιώκονται ἐς τὴν γῆν.",
+  "e": "Besides, a signal had been hoisted at Eretria to apprise the Peloponnesian fleet at Oropus when to put to sea. So the Athenians put to sea under such disadvantage as regards preparation and engaged in battle off the harbour of Eretria;"
+ },
+ {
+  "k": "5035279a2051117c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ ὅσοι μὲν αὐτῶν πρὸς τὴν πόλιν τῶν Ἐρετριῶν ὡς φιλίαν καταφεύγουσι, χαλεπώτατα ἔπραξαν φονευόμενοι ὑπ’ αὐτῶν· οἳ δὲ ἐς τὸ τείχισμα τὸ ἐν τῇ Ἐρετρίᾳ, ὃ εἶχον αὐτοί, περιγίγνονται καὶ ὅσαι ἐς Χαλκίδα ἀφικνοῦνται τῶν νεῶν.",
+  "e": "for some little time, however, they nevertheless did hold their own, but afterwards turned to flight and were pursued to shore. And such of them as took refuge in the city of Eretria, assuming that it was friendly, suffered a most cruel fate, being butchered by the inhabitants; but those who escaped to the fort in Eretrian territory which the Athenians themselves held were saved, as also all the ships that reached Chalcis."
+ },
+ {
+  "k": "65591415680f145a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "λαβόντες δὲ οἱ Πελοποννήσιοι δύο καὶ εἴκοσι ναῦς τῶν Ἀθηναίων καὶ ἄνδρας τοὺς μὲν ἀποκτείναντες, τοὺς δὲ ζωγρήσαντες τροπαῖον ἔστησαν. καὶ ὕστερον οὐ πολλῷ Εὔβοιάν [τε] ἅπασαν ἀποστήσαντες πλὴν Ὠρεοῦ (ταύτην δὲ αὐτοὶ Ἀθηναῖοι εἶχον) καὶ τἆλλα τὰ περὶ αὐτὴν καθίσταντο.",
+  "e": "The Peloponnesians, having captured twenty-two Athenian ships and having either slain or taken prisoner their crews, set up a trophy. And not long afterwards they succeeded in persuading all Euboea to revolt except Oreus, which the Athenians themselves held, and proceeded to set in order the general affairs of the island."
+ },
+ {
+  "k": "a444c9853c2d1a9e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "τοῖς δὲ Ἀθηναίοις ὡς ἦλθε τὰ περὶ τὴν Εὔβοιαν γεγενημένα, ἔκπληξις μεγίστη δὴ τῶν πρὶν παρέστη. οὔτε γὰρ ἡ ἐν τῇ Σικελίᾳ ξυμφορά, καίπερ μεγάλη τότε δόξασα εἶναι, οὔτε ἄλλο οὐδέν πω οὕτως ἐφόβησεν.",
+  "e": "When the report of what had happened in Euboea reached Athens, there was greater consternation than ever before. For neither the disaster in Sicily, great though it seemed at the time, nor any other event had ever yet so frightened them."
+ },
+ {
+  "k": "c7d2743511e19f3a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὅπου γὰρ στρατοπέδου τε τοῦ ἐν Σάμῳ ἀφεστηκότος ἄλλων τε νεῶν οὐκ οὐσῶν οὐδὲ τῶν ἐσβησομένων αὐτῶν τε στασιαζόντων καὶ ἄδηλον ὂν ὁπότε σφίσιν αὐτοῖς ξυρράξουσι, τοσαύτη ἡ ξυμφορὰ ἐπεγεγένητο, ἐν ᾗ ναῦς τε καὶ τὸ μέγιστον Εὔβοιαν ἀπωλωλέκεσαν, ἐξ ἧς πλείω ἢ τῆς Ἀττικῆς ὠφελοῦντο, πῶς οὐκ εἰκότως ἠθύμουν;",
+  "e": "At a time when their army at Samos was in revolt, when there were no more ships to be had nor men to man them, when they were in a state of sedition at home and there was no telling when a conflict might break out among themselves, when, to crown all, a disaster had now come upon them of this magnitude, in which they had lost both their fleet and, worst of all, Euboea, from which they derived more benefit than from Attica—had they not every reason to be despondent?"
+ },
+ {
+  "k": "f90f46035db393c9",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "μάλιστα δ’ αὐτοὺς καὶ δι’ ἐγγυτάτου ἐθορύβει, εἰ οἱ πολέμιοι τολμήσουσι νενικηκότες εὐθὺ σφῶν ἐπὶ τὸν Πειραιᾶ ἐρῆμον ὄντα νεῶν πλεῖν· καὶ ὅσον οὐκ ἤδη ἐνόμιζον αὐτοὺς παρεῖναι.",
+  "e": "But what alarmed them most and touched them most nearly was the possibility that the enemy, now victorious, might dare to make straight for Athens and attack the Peiraeus, which was now without ships to defend it; and they believed that they were all but there already."
+ },
+ {
+  "k": "e26abe8f884acfc6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὅπερ ἄν, εἰ τολμηρότεροι ἦσαν, ῥᾳδίως ἂν ἐποίησαν, καὶ ἢ διέστησαν ἂν ἔτι μᾶλλον τὴν πόλιν ἐφορμοῦντες ἤ, εἰ ἐπολιόρκουν μένοντες, καὶ τὰς ἀπ’ Ἰωνίας ναῦς ἠνάγκασαν ἂν καίπερ πολεμίας οὔσας τῇ ὀλιγαρχίᾳ τοῖς σφετέροις οἰκείοις καὶ τῇ ξυμπάσῃ πόλει βοηθῆσαι· καὶ ἐν τούτῳ Ἑλλήσποντός τε ἂν ἦν αὐτοῖς καὶ Ἰωνία καὶ αἱ νῆσοι καὶ τὰ μέχρι Εὐβοίας καὶ ὡς εἰπεῖν ἡ Ἀθηναίων ἀρχὴ πᾶσα.",
+  "e": "And indeed, if they had been more bold, the enemy could readily have done this very thing, and they would either, by setting up a blockade, have caused the city to be still more torn by factions, or else, if they had remained and laid siege to it, would have compelled the fleet in Ionia, though hostile to the oligarchy, to come to the rescue of their own relatives and of the city as a whole; and thereby the Hellespont would have been theirs, and Ionia, and the islands, and everything as far as Euboea— indeed almost the whole empire of the Athenians."
+ },
+ {
+  "k": "f4c63b839142d7a8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἀλλ’ οὐκ ἐν τούτῳ μόνῳ Λακεδαιμόνιοι Ἀθηναίοις πάντων δὴ ξυμφορώτατοι προσπολεμῆσαι ἐγένοντο, ἀλλὰ καὶ ἐν ἄλλοις πολλοῖς· διάφοροι γὰρ πλεῖστον ὄντες τὸν τρόπον, οἱ μὲν ὀξεῖς, οἱ δὲ βραδεῖς, καὶ οἱ μὲν ἐπιχειρηταί, οἱ δὲ ἄτολμοι, ἄλλως τε καὶ ἐν ἀρχῇ ναυτικῇ πλεῖστα ὠφέλουν. ἔδειξαν δὲ οἱ Συρακόσιοι· μάλιστα γὰρ ὁμοιότροποι γενόμενοι ἄριστα καὶ προσεπολέμησαν.",
+  "e": "But it was not on this occasion only that the Lacedaemonians proved the most convenient people in the world for the Athenians to make war upon, but on many others also. For being widely different in character—the one people being quick, the other slow; the one adventurous, the other timorous—it was especially in the case of a naval power that they were most helpful. And the Syracusans proved this; for it was because they were most similar in character to the Athenians that they made war upon them most successfully."
+ },
+ {
+  "k": "d1eafa107275befb",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐπὶ δ’ οὖν τοῖς ἠγγελμένοις οἱ Ἀθηναῖοι ναῦς τε εἴκοσιν ὅμως ἐπλήρουν καὶ ἐκκλησίαν ξυνέλεγον, μίαν μὲν εὐθὺς τότε πρῶτον ἐς τὴν Πύκνα καλουμένην, οὗπερ καὶ ἄλλοτε εἰώθεσαν, ἐν ᾗπερ καὶ τοὺς τετρακοσίους καταπαύσαντες τοῖς πεντακισχιλίοις ἐψηφίσαντο τὰ πράγματα παραδοῦναι (εἶναι δὲ αὐτῶν ὁπόσοι καὶ ὅπλα παρέχονται) καὶ μισθὸν μηδένα φέρειν μηδεμιᾷ ἀρχῇ· εἰ δὲ μή, ἐπάρατον ἐποιήσαντο.",
+  "e": "However this may be, after the announcement of their defeat the Athenians, in spite of their difficulties, manned twenty ships, and also called meetings of the assembly—one immediately, which was called to meet on that occasion for the first time in the place called Pnyx, where at other times also they had been wont to meet. At this meeting they deposed the Four Hundred, voted to deliver the management of affairs to the Five Thousand (and all who could furnish themselves with a hoplite's outfit were to belong to this number), and decided that no one was to receive pay for any office, the offender to be accounted accursed."
+ },
+ {
+  "k": "e5ae71ac560a7f9d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐγίγνοντο δὲ καὶ ἄλλαι ὕστερον πυκναὶ ἐκκλησίαι, ἀφ’ ὧν καὶ νομοθέτας καὶ τἆλλα ἐψηφίσαντο ἐς τὴν πολιτείαν. καὶ οὐχ ἥκιστα δὴ τὸν πρῶτον χρόνον ἐπί γε ἐμοῦ Ἀθηναῖοι φαίνονται εὖ πολιτεύσαντες· μετρία γὰρ ἥ τε ἐς τοὺς ὀλίγους καὶ τοὺς πολλοὺς ξύγκρασις ἐγένετο καὶ ἐκ πονηρῶν τῶν πραγμάτων γενομένων τοῦτο πρῶτον ἀνήνεγκε τὴν πόλιν.",
+  "e": "Other meetings also were held later, at frequent intervals, as a result of which they appointed supervisors of the laws and voted the other measures pertaining to their form of government. And during the first period the Athenians appear to have enjoyed the best government they ever had, at least in my time; for there was a moderate blending of the few and the many, and this it was that first caused the state to recover from the wretched plight into which it had fallen."
+ },
+ {
+  "k": "80ecc7c7ac2997cb",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐψηφίσαντο δὲ καὶ Ἀλκιβιάδην καὶ ἄλλους μετ’ αὐτοῦ κατιέναι καὶ παρά τε ἐκεῖνον καὶ παρὰ τὸ ἐν Σάμῳ στρατόπεδον πέμψαντες διεκελεύοντο ἀνθάπτεσθαι τῶν πραγμάτων.",
+  "e": "And they also voted to recall Alcibiades and others with him; and sending envoys both to him and to the army at Samos, they urged them to take a hand in their affairs."
+ },
+ {
+  "k": "26ecb542e1af083c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐν δὲ τῇ μεταβολῇ ταύτῃ εὐθὺς οἱ μὲν περὶ τὸν Πείσανδρον καὶ Ἀλεξικλέα καὶ ὅσοι ἦσαν τῆς ὀλιγαρχίας μάλιστα ὑπεξέρχονται ἐς τὴν Δεκέλειαν· Ἀρίσταρχος δὲ αὐτῶν μόνος (ἔτυχε γὰρ καὶ στρατηγῶν) λαβὼν κατὰ τάχος τοξότας τινὰς τοὺς βαρβαρωτάτους ἐχώρει πρὸς τὴν Οἰνόην.",
+  "e": "At this change the party of Peisander and Alexicles and all the leading supporters of the oligarchy at once secretly left the city and went to Deceleia; but Aristarchus, alone of these, since he chanced to be a general, hastily took some bowmen of the most barbarous sort and proceeded to Oenoe."
+ },
+ {
+  "k": "12ed136fccf1dd56",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἦν δὲ Ἀθηναίων ἐν μεθορίοις τῆς Βοιωτίας τεῖχος, ἐπολιόρκουν δ’ αὐτὸ διὰ ξυμφορὰν σφίσιν ἐκ τῆς Οἰνόης γενομένην ἀνδρῶν ἐκ Δεκελείας ἀναχωρούντων διαφθορᾶς οἱ Κορίνθιοι ἐθελοντηδόν, προσπαρακαλέσαντες τοὺς Βοιωτούς.",
+  "e": "It was an Athenian fortress on the borders of Boeotia, and the Corinthians, having called to their aid the Boeotians, were besieging it on their own account, because of a misfortune they had suffered at the hands of the garrison at Oenoe when they lost some men as they were returning from Deceleia."
+ },
+ {
+  "k": "7dd40d8eec3d9e8e",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "κοινολογησάμενος οὖν αὐτοῖς ὁ Ἀρίσταρχος ἀπατᾷ τοὺς ἐν τῇ Οἰνόῃ, λέγων ὡς καὶ οἱ ἐν τῇ πόλει τἆλλα ξυμβεβήκασι Λακεδαιμονίοις, κἀκείνους δεῖ Βοιωτοῖς τὸ χωρίον παραδοῦναι· ἐπὶ τούτοις γὰρ ξυμβεβάσθαι. οἱ δὲ πιστεύσαντες ὡς ἀνδρὶ στρατηγῷ καὶ οὐκ εἰδότες οὐδὲν διὰ τὸ πολιορκεῖσθαι ὑπόσπονδοι ἐξέρχονται.",
+  "e": "So Aristarchus, after first making his plans known to the besiegers, deceived the garrison at Oenoe by telling them that their partisans in the city had made terms with the Lacedaemonians, and that, among other things, this garrison must surrender the place to the Boeotians; for the agreement had been made on these conditions. The garrison trusted him because he was a general, being in complete ignorance because they were in a state of siege, and evacuated the fort under a truce."
+ },
+ {
+  "k": "7d29d0b9184c954d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "τούτῳ μὲν τῷ τρόπῳ Οἰνόην τε ληφθεῖσαν Βοιωτοὶ κατέλαβον καὶ ἡ ἐν ταῖς Ἀθήναις ὀλιγαρχία καὶ στάσις ἐπαύσατο.",
+  "e": "In this manner Oenoe was taken and occupied by the Boeotians, and thus the oligarchy at Athens and the struggle between the factions came to an end."
+ },
+ {
+  "k": "c71f16efd8f3ebe8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὑπὸ δὲ τοὺς αὐτοὺς χρόνους τοῦ θέρους τούτου καὶ οἱ ἐν τῇ Μιλήτῳ Πελοποννήσιοι, ὡς τροφήν τε οὐδεὶς ἐδίδου τῶν ὑπὸ Τισσαφέρνους τότε [ὅτε ἐπὶ τὴν Ἄσπενδον παρῄει] προσταχθέντων, καὶ αἱ Φοίνισσαι νῆες οὐδὲ ὁ Τισσαφέρνης τέως που ἧκον, ὅ τε Φίλιππος ὁ ξυμπεμφθεὶς αὐτῷ ἐπεστάλκει Μινδάρῳ τῷ ναυάρχῳ καὶ ἄλλος Ἱπποκράτης, ἀνὴρ Σπαρτιάτης καὶ ὢν ἐν Φασήλιδι, ὅτι οὔτε αἱ νῆες παρέσοιντο πάντα τε ἀδικοῖντο ὑπὸ Τισσαφέρνους, Φαρνάβαζός τε ἐπεκαλεῖτο αὐτοὺς καὶ ἦν πρόθυμος κομίσας τὰς ναῦς καὶ αὐτὸς τὰς λοιπὰς ἔτι πόλεις τῆς ἑαυτοῦ ἀρχῆς ἀποστῆσαι τῶν Ἀθηναίων, ὥσπερ καὶ ὁ Τισσαφέρνης, ἐλπίζων πλέον τι σχήσειν ἀπ’ αὐτοῦ, οὕτω δὴ ὁ Μίνδαρος πολλῷ κόσμῳ καὶ ἀπὸ παραγγέλματος αἰφνιδίου, ὅπως λάθοι τοὺς ἐν Σάμῳ, ἄρας ἀπὸ τῆς Μιλήτου ναυσὶ τρισὶ καὶ ἑβδομήκοντα ἔπλει ἐπὶ τὸν Ἑλλήσποντον (πρότερον δὲ ἐν τῷ αὐτῷ θέρει τῷδε ἑκκαίδεκα ἐς αὐτὸν νῆες ἐσέπλευσαν, αἳ καὶ τῆς Χερσονήσου τι μέρος κατέδραμον)· χειμασθεὶς δὲ ἀνέμῳ καὶ ἀναγκασθεὶς καταίρει ἐς τὴν Ἴκαρον, καὶ μείνας ἐν αὐτῇ ὑπὸ ἀπλοίας πέντε ἢ ἓξ ἡμέρας ἀφικνεῖται ἐς τὴν Χίον.",
+  "e": "During this summer, about the same time as these events, the situation of the Peloponnesians in Miletus was as follows: None of the officers appointed by Tissaphernes at the time when he went to Aspendus would give them maintenance, and neither the Phoenician ships nor Tissaphernes himself had yet come; Philippus, who had been sent with him, and also another person, a Spartan named Hippocrates who was at Phaselis, had written letters to Mindarus, the admiral, saving that the ships would never come and that they were being wronged in all things by Tissaphernes; moreover, Pharnabazus was inviting them to come and was eager, when he should have got the assistance of the Peloponnesian fleet, to do just what Tissaphernes was to have done and to cause the rest of the cities within his province to revolt from the Athenians, hoping to gain some advantage thereby. In these circumstances, then, Mindarus put off from Miletus, in good order and, giving his fleet the command without previous notice that his move might not become known to the Athenians at Samos, he sailed for the Hellespont with seventy-three ships; for earlier in this same summer sixteen ships had sailed thither and had overrun a portion of the Chersonesus. Mindarus, however, was caught by a storm and forced to make harbour at Icarus; there he remained five or six days by reason of bad weather and then went on to Chios."
+ },
+ {
+  "k": "4f9088c6380a66a6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὁ δὲ Θράσυλος ἐκ τῆς Σάμου, ἐπειδὴ ἐπύθετο αὐτὸν ἐκ τῆς Μιλήτου ἀπηρκότα, ἔπλει καὶ αὐτὸς ναυσὶν εὐθὺς πέντε καὶ πεντήκοντα, ἐπειγόμενος μὴ φθάσῃ ἐς τὸν Ἑλλήσποντον ἐσπλεύσας.",
+  "e": "When Thrasyllus heard that Mindarus had put to sea from Miletus, he also sailed at once from Samos with fifty-five ships, making all haste that the enemy might not enter the Hellespont before him."
+ },
+ {
+  "k": "666a6b8513f1fd21",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "αἰσθόμενος δὲ ὅτι ἐν τῇ Χίῳ εἴη καὶ νομίσας αὐτὸν καθέξειν αὐτοῦ, σκοποὺς μὲν κατεστήσατο καὶ ἐν τῇ Λέσβῳ καὶ ἐν τῇ ἀντιπέρας ἠπείρῳ, εἰ ἄρα ποι κινοῖντο αἱ νῆες, ὅπως μὴ λάθοιεν, αὐτὸς δὲ ἐς τὴν Μήθυμναν παραπλεύσας ἄλφιτά τε καὶ τἆλλα ἐπιτήδεια παρασκευάζειν ἐκέλευεν ὡς, ἢν πλείων χρόνος γίγνηται, ἐκ τῆς Λέσβου τοὺς ἐπίπλους τῇ Χίῳ ποιησόμενος.",
+  "e": "But learning that Mindarus was at Chios and believing that he could keep him there, he posted scouts both at Lesbos and on the mainland opposite, in order that, if the enemy's ships should make a move in any direction, he should have knowledge of it; as for himself, he sailed along the coast to Methymna, and gave orders to prepare barley-meal and general provisions, with the idea that, if a considerable time elapsed, he would use Lesbos as a base for attacks upon Chios. At the same time, since Eresus in Lesbos had revolted, he wished to sail against it and take it if possible."
+ },
+ {
+  "k": "2b5d23eb35154808",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἅμα δὲ (Ἔρεσος γὰρ τῆς Λέσβου ἀφειστήκει) ἐβούλετο ἐπ’ αὐτὴν πλεύσας, εἰ δύναιτο, ἐξελεῖν. Μηθυμναίων γὰρ οὐχ οἱ ἀδυνατώτατοι φυγάδες διακομίσαντες ἔκ τε τῆς Κύμης προσεταιριστοὺς ὁπλίτας ὡς πεντήκοντα καὶ τῶν ἐκ τῆς ἠπείρου μισθωσάμενοι, ξύμπασιν ὡς τριακοσίοις, Ἀναξάνδρου Θηβαίου κατὰ τὸ ξυγγενὲς ἡγουμένου, προσέβαλον πρῶτον Μηθύμνῃ, καὶ ἀποκρουσθέντες τῆς πείρας διὰ τοὺς ἐκ τῆς Μυτιλήνης Ἀθηναίων φρουροὺς προελθόντας αὖθις ἔξω μάχῃ ἀπωσθέντες καὶ διὰ τοῦ ὄρους κομισθέντες ἀφιστᾶσι τὴν Ἔρεσον.",
+  "e": "For some exiles who had been driven out of Methymna, and those the most influential citizens, had brought over from Cyme about fifty hoplites that had been taken into their clubs, had hired still others from the mainland, and now with these troops, about three hundred in all, commanded by Anaxarchus a Theban on the strength of kinship, had made an attack upon Methymna first; and when they had been foiled in this attempt by the timely arrival of the Athenian garrison in Mytilene, and had been again repulsed in a battle fought outside the walls, they had made their way over the mountain and had brought about the revolt of Eresus."
+ },
+ {
+  "k": "1f3ed4ca34b96f09",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "πλεύσας οὖν ὁ Θράσυλος ἐπ’ αὐτὴν πάσαις ταῖς ναυσὶ διενοεῖτο προσβολὴν ποιεῖσθαι· προαφιγμένος δὲ αὐτόσε ἦν καὶ ὁ Θρασύβουλος πέντε ναυσὶν ἐκ τῆς Σάμου, ὡς ἠγγέλθη αὐτοῖς ἡ τῶν φυγάδων αὕτη διάβασις· ὑστερήσας δ’ ἐπὶ τὴν Ἔρεσον ἐφώρμει ἐλθών.",
+  "e": "Thrasyllus therefore now sailed thither with all his fleet, intending to assault the town. Thrasybulus also had already arrived there from Samos with five ships, after word had been brought to him of the crossing of the exiles; but being too late to save Eresus, he had merely anchored there on his arrival."
+ },
+ {
+  "k": "13ee6933f4639f53",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "προσεγένοντο δὲ καὶ ἐκ τοῦ Ἑλλησπόντου τινὲς δύο νῆες ἐπ’ οἴκου ἀνακομιζόμεναι καὶ Μηθυμναῖαι 〈πέντε〉· καὶ αἱ πᾶσαι νῆες παρῆσαν ἑπτὰ καὶ ἑξήκοντα, ἀφ’ ὧν τῷ στρατεύματι παρεσκευάζοντο ὡς κατὰ κράτος μηχαναῖς τε καὶ παντὶ τρόπῳ, ἢν δύνωνται, αἱρήσοντες τὴν Ἔρεσον.",
+  "e": "The Athenian fleet was likewise reinforced by two vessels that were returning home from the Hellespont and by five Methymnaean ships, so that there were present in all sixty-five ships. It was with the troops from these ships that they were preparing to take Eresus by assault, with the aid of engines or in any way they could."
+ },
+ {
+  "k": "b70af81001206325",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὁ δὲ Μίνδαρος ἐν τούτῳ καὶ ἐκ τῆς Χίου τῶν Πελοποννησίων αἱ νῆες ἐπισιτισάμεναι δυοῖν ἡμέραιν καὶ λαβόντες παρὰ τῶν Χίων τρεῖς τεσσαρακοστὰς ἕκαστος Χίας τῇ τρίτῃ διὰ ταχέων ἀπαίρουσιν ἐκ τῆς Χίου 〈οὐ〉 πελάγιαι, ἵνα μὴ περιτύχωσι ταῖς ἐν τῇ Ἐρέσῳ ναυσίν, ἀλλὰ ἐν ἀριστερᾷ τὴν Λέσβον ἔχοντες ἔπλεον ἐπὶ τὴν ἤπειρον.",
+  "e": "Meanwhile Mindarus and the Peloponnesian ships at Chios, having spent only two days in provisioning and having received from the Chians three Chian tessaracosts for each man, on the third day set sail in all haste from Chios, avoiding the open sea that they might not fall in with the Athenian fleet at Eresus, but keeping Lesbos on their left, and making for the mainland."
+ },
+ {
+  "k": "e5453406864d1eeb",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ προσβαλόντες τῆς Φωκαΐδος ἐς τὸν ἐν Καρτερίοις λιμένα καὶ ἀριστοποιησάμενοι, παραπλεύσαντες τὴν Κυμαίαν δειπνοποιοῦνται ἐν Ἀργινούσαις τῆς ἠπείρου, ἐν τῷ ἀντιπέρας τῆς Μυτιλήνης.",
+  "e": "They first touched at the harbour of Cartereia in the territory of Phocaea, where they dined, and then, sailing along the Cymaean coast, supped at Arginussae on the mainland opposite Mytilene."
+ },
+ {
+  "k": "22203010d983e819",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐντεῦθεν δὲ ἔτι πολλῆς νυκτὸς παραπλεύσαντες καὶ ἀφικόμενοι τῆς ἠπείρου ἐς Ἁρματοῦντα καταντικρὺ Μηθύμνης, ἀριστοποιησάμενοι διὰ ταχέων παραπλεύσαντες Λεκτὸν καὶ Λάρισαν καὶ Ἁμαξιτὸν καὶ τὰ ταύτῃ χωρία ἀφικνοῦνται ἐς Ῥοίτειον ἤδη τοῦ Ἑλλησπόντου πρωίτερον μέσων νυκτῶν. εἰσὶ δ’ αἳ τῶν νεῶν καὶ ἐς Σίγειον κατῆραν καὶ ἄλλοσε τῶν ταύτῃ χωρίων.",
+  "e": "Thence they proceeded long before dawn along the coast until they came to Harmatus, on the mainland opposite Methymna; there they breakfasted in haste and then sailed along the coast past Lectum, Larisa, Hamaxitus and the other places in that region, arriving at Rhoeteum before midnight. Some of the ships even made harbour at Sigeium and other places in that neighbourhood."
+ },
+ {
+  "k": "a4646bec99d34d4b",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "οἱ δὲ Ἀθηναῖοι ἐν τῇ Σηστῷ δυοῖν δεούσαις εἴκοσι ναυσὶν ὄντες, ὡς αὐτοῖς οἵ τε φρυκτωροὶ ἐσήμαινον καὶ ᾐσθάνοντο τὰ πυρὰ ἐξαίφνης πολλὰ ἐν τῇ πολεμίᾳ φανέντα, ἔγνωσαν ὅτι ἐσπλέουσιν οἱ Πελοποννήσιοι. καὶ τῆς αὐτῆς ταύτης νυκτὸς ὡς εἶχον τάχους ὑπομείξαντες τῇ Χερσονήσῳ παρέπλεον ἐπ’ Ἐλαιοῦντος, βουλόμενοι ἐκπλεῦσαι ἐς τὴν εὐρυχωρίαν τὰς τῶν πολεμίων ναῦς.",
+  "e": "But the Athenians who were at Sestus with eighteen ships, when their signallers gave them notice and they observed the sudden blaze of numerous fires on the hostile shore, realized that the Peloponnesians were entering the straits. So that same night, making what speed they could and keeping close to the shore of the Chersonesus, they sailed toward Elaeus, wishing to get by the enemy's ships and out into the open water."
+ },
+ {
+  "k": "ca6a5a51519ead8a",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ τὰς μὲν ἐν Ἀβύδῳ ἑκκαίδεκα ναῦς ἔλαθον, προειρημένης φυλακῆς τῷ φιλίῳ ἐπίπλῳ, ὅπως αὐτῶν ἀνακῶς ἕξουσιν, ἢν ἐκπλέωσιν· τὰς δὲ μετὰ τοῦ Μινδάρου ἅμα τῇ ἕῳ κατιδόντες, τὴν δίωξιν εὐθὺς ποιουμένων οὐ φθάνουσι πάσαις, ἀλλ’ αἱ μὲν πλείους ἐπὶ τῆς Ἴμβρου καὶ Λήμνου διέφυγον, τέσσαρες δὲ τῶν νεῶν αἱ ὕσταται πλέουσαι καταλαμβάνονται παρὰ τὸν Ἐλαιοῦντα.",
+  "e": "And they did elude the sixteen ships at Abydos, although these had been cautioned by a friendly boat that sailed up to be on the alert in case the Athenians should try to leave the straits; but the ships commanded by Mindarus, which they descried at dawn—and these immediately gave chase—they could not outstrip with their entire fleet, but though most of their ships made good their escape to Imbros and Lemnos, four of them that brought up the rear were overtaken near Elaeus."
+ },
+ {
+  "k": "6db82e5625736aa1",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ μίαν μὲν ἐποκείλασαν κατὰ τὸ ἱερὸν τοῦ Πρωτεσιλάου αὐτοῖς ἀνδράσι λαμβάνουσι, δύο δὲ ἑτέρας ἄνευ τῶν ἀνδρῶν· τὴν δὲ μίαν πρὸς τῇ Ἴμβρῳ κενὴν κατακαίουσιν.",
+  "e": "One of these, which was stranded at the sanctuary of Protesilaus, was captured with all on board, and two others without their crews; the fourth, which had been deserted by its crew, the enemy burned close to Imbros."
+ },
+ {
+  "k": "6d9748d6f2e041d8",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "μετὰ δὲ τοῦτο ταῖς τε ἐξ Ἀβύδου ξυμμιγείσαις καὶ ταῖς ἄλλαις ξυμπάσαις ἓξ καὶ ὀγδοήκοντα πολιορκήσαντες Ἐλαιοῦντα ταύτην τὴν ἡμέραν, ὡς οὐ προσεχώρει, ἀπέπλευσαν ἐς Ἄβυδον.",
+  "e": "After this Mindarus took all his ships, including those which had been at Abydus and were now united with his fleet, eighty-six vessels in all, and for that day invested Elaeus;"
+ },
+ {
+  "k": "0fae032ec7a02236",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "οἱ δ’ Ἀθηναῖοι ψευσθέντες τῶν σκοπῶν καὶ οὐκ ἂν οἰόμενοι σφᾶς λαθεῖν τὸν παράπλουν τῶν πολεμίων νεῶν, ἀλλὰ καθ’ ἡσυχίαν τειχομαχοῦντες, ὡς ᾔσθοντο, εὐθὺς ἀπολιπόντες τὴν Ἔρεσον κατὰ τάχος ἐβοήθουν ἐς τὸν Ἑλλήσποντον·",
+  "e": "but when it would not yield they all sailed back to Abydus. The Athenians at Eresus, on the other hand, misled by their scouts and never imagining that the enemy could sail past them unobserved, were assaulting the walls at their leisure; but when they learned the truth they abandoned Eresus at once and hastened with all speed to the defence of the Hellespont."
+ },
+ {
+  "k": "b02ccb9121b23467",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ δύο τε ναῦς τῶν Πελοποννησίων αἱροῦσιν, αἳ πρὸς τὸ πέλαγος τότε θρασύτερον ἐν τῇ διώξει ἀπάρασαι περιέπεσον αὐτοῖς, καὶ ἡμέρᾳ ὕστερον ἀφικόμενοι ὁρμίζονται ἐς τὸν Ἐλαιοῦντα καὶ τὰς ἐκ τῆς Ἴμβρου ὅσαι κατέφυγον κομίζονται καὶ ἐς τὴν ναυμαχίαν πέντε ἡμέρας παρεσκευάζοντο.",
+  "e": "And they captured two of the Peloponnesian ships, which fell in with them at that moment, having put out into the open sea too boldly in their pursuit. A day later they reached Elaeus and cast anchor; then they brought thither the ships at Imbros that had taken refuge there and spent the next five days preparing for the battle."
+ },
+ {
+  "k": "9c067fa60e6f8181",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "μετὰ δὲ τοῦτο ἐναυμάχουν τρόπῳ τοιῷδε. οἱ Ἀθηναῖοι παρέπλεον ἐπὶ κέρως ταξάμενοι παρ’ αὐτὴν τὴν γῆν ἐπὶ τῆς Σηστοῦ, οἱ δὲ Πελοποννήσιοι αἰσθόμενοι ἐκ τῆς Ἀβύδου ἀντανῆγον καὶ αὐτοί.",
+  "e": "When that time had elapsed they began the battle in the following manner. The Athenians, arrayed in single column, were sailing close in to sore in the direction of Sestus, when the Peloponnesians, observing their movements from Abydus, went out to meet them."
+ },
+ {
+  "k": "ab0fb784e2866b8d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ ὡς ἔγνωσαν ναυμαχήσοντες, παρέτειναν τὸ κέρας οἱ μὲν Ἀθηναῖοι παρὰ τὴν Χερσόνησον, ἀρξάμενοι ἀπὸ Ἰδάκου μέχρι Ἀρριανῶν, νῆες ἓξ καὶ ἑβδομήκοντα, οἱ δ’ αὖ Πελοποννήσιοι ἀπὸ Ἀβύδου μέχρι Δαρδάνου, νῆες ἓξ καὶ ὀγδοήκοντα.",
+  "e": "When they both realised that a battle was imminent, the Athenians, with seventy-six ships, extended their line parallel with the shore of the Chersonesus, from Idacus to Arrhiana, while the Peloponnesians, with eighty-six ships, extended theirs from Abydus to Dardanus."
+ },
+ {
+  "k": "cb8b5010d91dc77b",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "κέρας δὲ τοῖς μὲν Πελοποννησίοις εἶχον τὸ μὲν δεξιὸν Συρακόσιοι, τὸ δ’ ἕτερον αὐτὸς Μίνδαρος καὶ τῶν νεῶν αἱ ἄριστα πλέουσαι, Ἀθηναίοις δὲ τὸ μὲν ἀριστερὸν Θράσυλος, ὁ δὲ Θρασύβουλος τὸ δεξιόν· οἱ δὲ ἄλλοι στρατηγοὶ ὡς ἕκαστοι διετάξαντο.",
+  "e": "The right wing of the Peloponnesians was held by the Syracusans, the other by Mindarus himself, who had there his fastest ships; on the Athenian side, Thrasyllus had the left wing and Thrasybulus the right, the other generals being stationed at intervals throughout the line."
+ },
+ {
+  "k": "af39c16c9fccb24d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἐπειγομένων δὲ τῶν Πελοποννησίων πρότερόν τε ξυμμεῖξαι, καὶ κατὰ μὲν τὸ δεξιὸν τῶν Ἀθηναίων ὑπερσχόντες αὐτοὶ τῷ εὐωνύμῳ ἀποκλῇσαι τοῦ ἔξω αὐτοὺς ἔκπλου, εἰ δύναιντο, κατὰ δὲ τὸ μέσον ἐξῶσαι πρὸς τὴν γῆν οὐχ ἑκὰς οὖσαν, οἱ Ἀθηναῖοι γνόντες, ᾗ μὲν ἐβούλοντο ἀποφάρξασθαι αὐτοὺς οἱ ἐναντίοι, ἀντεπεξῆγον καὶ περιεγίγνοντο τῷ πλῷ,",
+  "e": "The Peloponnesians were eager to strike the first blow, and by outflanking the Athenian right with their own left wing to cut them off from the exit to the straits, if possible, meanwhile in the centre driving them to the shore, which was not far distant. The Athenians perceived their intention, and at the point where their opponents wished to bar their way they proceeded to extend their line to prevent it, and were succeeding in this manoeuvre; indeed, their left had already passed the headland called Cynossema."
+ },
+ {
+  "k": "571dbc7ba3ce9c18",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "τὸ δ’ εὐώνυμον αὐτοῖς ὑπερεβεβλήκει ἤδη τὴν ἄκραν ἣ Κυνὸς σῆμα καλεῖται. τῷ δὲ μέσῳ, τοιούτου ξυμβαίνοντος, ἀσθενέσι καὶ διεσπασμέναις ταῖς ναυσὶ καθίσταντο, ἄλλως τε καὶ ἐλάσσοσι χρώμενοι τὸ πλῆθος καὶ τοῦ χωρίου τοῦ περὶ τὸ Κυνὸς σῆμα ὀξεῖαν καὶ γωνιώδη τὴν περιβολὴν ἔχοντος, ὥστε τὰ ἐν τῷ ἐπέκεινα αὐτοῦ γιγνόμενα μὴ κάτοπτα εἶναι.",
+  "e": "But in the centre, as the result of this movement, their line of ships became weak and straggling; and especially since the number of their ships was smaller and the turn of the coast at Cynossema is sharp and angular, so that what was happening on the other side of it was not visible."
+ },
+ {
+  "k": "cb38b13a3cc2ec45",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "προσπεσόντες οὖν οἱ Πελοποννήσιοι κατὰ τὸ μέσον ἐξέωσάν τε ἐς τὸ ξηρὸν τὰς ναῦς τῶν Ἀθηναίων καὶ ἐς τὴν γῆν ἐπεξέβησαν, τῷ ἔργῳ πολὺ περισχόντες.",
+  "e": "Accordingly the Peloponnesians, falling upon their centre, drove the Athenian ships ashore and landed to follow up their victory, having had a decided advantage in the action."
+ },
+ {
+  "k": "87f0a85a2e1bed9b",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἀμῦναι δὲ τῷ μέσῳ οὔθ’ οἱ περὶ τὸν Θρασύβουλον ἀπὸ τοῦ δεξιοῦ ὑπὸ πλήθους τῶν ἐπικειμένων νεῶν ἐδύναντο οὔθ’ οἱ περὶ τὸν Θράσυλον ἀπὸ τοῦ εὐωνύμου (ἀφανές τε γὰρ ἦν διὰ τὴν ἄκραν τὸ Κυνὸς σῆμα, καὶ ἅμα οἱ Συρακόσιοι καὶ οἱ ἄλλοι οὐκ ἐλάσσους ἐπιτεταγμένοι εἶργον αὐτούς), πρὶν οἱ Πελοποννήσιοι διὰ τὸ κρατήσαντες ἀδεῶς ἄλλοι ἄλλην ναῦν διώκειν ἤρξαντο μέρει τινὶ σφῶν ἀτακτότεροι γενέσθαι.",
+  "e": "To assist their centre was in the power neither of Thrasybulus and his men on the right, by reason of the multitude of the ships that were pressing hard upon them, nor of the followers of Thrasyllus on the left; for that part of the field was concealed from him by the headland of Cynossema, and at the same time the Syracusans and the rest who were arrayed against him, being not inferior in number, hemmed him in. But finally the Peloponnesians, pursuing fearlessly in the flush of victory, some chasing one vessel, some another, began to fall into disorder in a part of their own line."
+ },
+ {
+  "k": "2d9df3712fa33da6",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "γνόντες δὲ οἱ περὶ τὸν Θρασύβουλον τὰς ἐπὶ σφίσι ναῦς ἐπεχούσας παυσάμενοι τῆς ἐπεξαγωγῆς ἤδη τοῦ κέρως καὶ ἐπαναστρέψαντες εὐθὺς ἠμύναντό τε καὶ τρέπουσι, καὶ τὰς κατὰ τὸ νικῆσαν τῶν Πελοποννησίων μέρος ὑπολαβόντες πεπλανημένας ἔκοπτόν τε καὶ ἐς φόβον τὰς πλείους ἀμαχεὶ καθίστασαν. οἵ τε Συρακόσιοι ἐτύγχανον καὶ αὐτοὶ ἤδη τοῖς περὶ τὸν Θράσυλον ἐνδεδωκότες καὶ μᾶλλον ἐς φυγὴν ὁρμήσαντες, ἐπειδὴ καὶ τοὺς ἄλλους ἑώρων.",
+  "e": "The Athenians under Thrasybulus, realizing this, now ceased extending their flank, and immediately facing about began to fight the ships that were bearing down upon them, and put them to rout; then intercepting the ships in the victorious part of the Peloponnesian line that had strayed out of line, they smote them and drove most of them into headlong flight without resistance. It so chanced that the Syracusans on their part had already given ground to Thrasyllus and his division, and they took to flight still more when they saw the rest fleeing."
+ },
+ {
+  "k": "ed5f5f6c964c34ce",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "γεγενημένης δὲ τῆς τροπῆς καὶ καταφυγόντων τῶν Πελοποννησίων πρὸς τὸν Μείδιον μάλιστα ποταμὸν τὸ πρῶτον, ὕστερον δὲ ἐς Ἄβυδον, ναῦς μὲν ὀλίγας ἔλαβον οἱ Ἀθηναῖοι (στενὸς γὰρ ὢν ὁ Ἑλλήσποντος βραχείας τὰς ἀποφυγὰς τοῖς ἐναντίοις παρεῖχε), τὴν μέντοι νίκην ταύτην τῆς ναυμαχίας ἐπικαιροτάτην δὴ ἔσχον.",
+  "e": "After the rout was thus effected, the Peloponnesians fled for refuge for the most part to the river Pydius at first, but afterwards to Abydus. The Athenians took only a few ships—for the Hellespont is narrow and afforded their opponents places of refuge near at hand—yet the victory which they won in this battle was indeed most opportune."
+ },
+ {
+  "k": "d132635932bf1ba5",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "φοβούμενοι γὰρ τέως τὸ τῶν Πελοποννησίων ναυτικὸν διά τε τὰ κατὰ βραχὺ σφάλματα καὶ διὰ τὴν ἐν τῇ Σικελίᾳ ξυμφοράν, ἀπηλλάγησαν τοῦ σφᾶς τε αὐτοὺς καταμέμφεσθαι καὶ τοὺς πολεμίους ἔτι ἀξίους του ἐς τὰ ναυτικὰ νομίζειν.",
+  "e": "Hitherto they had been afraid of the Peloponnesian feet, on account not only of the gradual losses they had suffered, but especially of their disaster in Sicily; but now they ceased either to reproach themselves or to consider their enemy any longer of any account in naval matters."
+ },
+ {
+  "k": "a1b78b19f3aacb89",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ναῦς μέντοι τῶν ἐναντίων λαμβάνουσι Χίας μὲν ὀκτώ, Κορινθίας δὲ πέντε, Ἀμπρακιώτιδας δὲ δύο καὶ Βοιωτίας δύο, Λευκαδίων δὲ καὶ Λακεδαιμονίων καὶ Συρακοσίων καὶ Πελληνέων μίαν ἑκάστων· αὐτοὶ δὲ πέντε καὶ δέκα ναῦς ἀπολλύασιν.",
+  "e": "However, they did capture of the enemy's fleet eight Chian ships, five Corinthian, two Ambracian, two Boeotian, and one each belonging to the Leucadians, Lacedaemonians, Syracusans, and Pellenians; and they lost fifteen themselves."
+ },
+ {
+  "k": "69f62ef51cca9119",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "στήσαντες δὲ τροπαῖον ἐπὶ τῇ ἄκρᾳ οὗ τὸ Κυνὸς σῆμα καὶ τὰ ναυάγια προσαγαγόμενοι καὶ νεκροὺς τοῖς ἐναντίοις ὑποσπόνδους ἀποδόντες ἀπέστειλαν καὶ ἐς τὰς Ἀθήνας τριήρη ἄγγελον τῆς νίκης.",
+  "e": "So they set up a trophy on the headland where the Cynossema stands, brought in the wreckage, restored to the enemy their dead under a truce, and sent a trireme to Athens to announce their victory."
+ },
+ {
+  "k": "ba1818abdc644170",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "οἱ δὲ ἀφικομένης τῆς νεὼς καὶ ἀνέλπιστον τὴν εὐτυχίαν ἀκούσαντες ἐπί τε ταῖς περὶ τὴν Εὔβοιαν ἄρτι ξυμφοραῖς καὶ κατὰ τὴν στάσιν γεγενημέναις πολὺ ἐπερρώσθησαν καὶ ἐνόμισαν σφίσιν ἔτι δυνατὰ εἶναι τὰ πράγματα, ἢν προθύμως ἀντιλαμβάνωνται, περιγενέσθαι.",
+  "e": "When the ship arrived and the Athenians heard the news of the good fortune that was beyond their hopes, coming as it did on the heels of the disasters that had recently befallen them in Euboea and in the course of their factional dissensions, they were greatly encouraged, and believed that their cause might still prevail if they should zealously lay their hands to the work."
+ },
+ {
+  "k": "84e4a74fb7b8392c",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "μετὰ δὲ τὴν ναυμαχίαν ἡμέρᾳ τετάρτῃ ὑπὸ σπουδῆς ἐπισκευάσαντες τὰς ναῦς οἱ ἐν τῇ Σηστῷ Ἀθηναῖοι ἔπλεον ἐπὶ Κύζικον ἀφεστηκυῖαν· καὶ κατιδόντες κατὰ Ἁρπάγιον καὶ Πρίαπον τὰς ἀπὸ τοῦ Βυζαντίου ὀκτὼ ναῦς ὁρμούσας, ἐπιπλεύσαντες καὶ μάχῃ κρατήσαντες τοὺς ἐν τῇ γῇ ἔλαβον τὰς ναῦς. ἀφικόμενοι δὲ καὶ ἐπὶ τὴν Κύζικον ἀτείχιστον οὖσαν προσηγάγοντο πάλιν καὶ χρήματα ἀνέπραξαν.",
+  "e": "On the fourth day after the battle, after they had hastily refitted their ships, the Athenians at Sestos sailed against Cyzicus, which had revolted; and descrying the eight ships from Byzantium lying at anchor off Harpagium and Priapus, they sailed against them, defeated in battle the forces which on shore aided them, and captured the ships. Then going on to Cyzicus, they brought it back into the Athenian alliance, since it had no walls, and levied upon it a fine of money."
+ },
+ {
+  "k": "305e2d6f88647046",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ἔπλευσαν δὲ ἐν τούτῳ καὶ οἱ Πελοποννήσιοι ἐκ τῆς Ἀβύδου ἐπὶ τὸν Ἐλαιοῦντα καὶ τῶν σφετέρων νεῶν τῶν αἰχμαλώτων ὅσαι ἦσαν ὑγιεῖς ἐκομίσαντο (τὰς δὲ ἄλλας Ἐλαιούσιοι κατέκαυσαν), καὶ ἐς τὴν Εὔβοιαν ἀπέπεμψαν Ἱπποκράτη καὶ Ἐπικλέα κομιοῦντας τὰς ἐκεῖθεν ναῦς.",
+  "e": "Meanwhile the Peloponnesians on their part left Abydus and sailed to Slaeus, where they recovered such of their captured ships as were sound—the Elaeusians had burned the rest—and sent Hippocrates and Epicles to Euboea to fetch the ships that were there."
+ },
+ {
+  "k": "774a1489651b763d",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "κατέπλευσε δὲ ὑπὸ τοὺς αὐτοὺς χρόνους τούτους καὶ ὁ Ἀλκιβιάδης ταῖς τρισὶ καὶ δέκα ναυσὶν ἀπὸ τῆς Καύνου καὶ Φασήλιδος ἐς τὴν Σάμον, ἀγγέλλων ὅτι τάς τε Φοινίσσας ναῦς ἀποστρέψειε Πελοποννησίοις ὥστε μὴ ἐλθεῖν καὶ τὸν Τισσαφέρνην ὅτι φίλον πεποιήκοι μᾶλλον Ἀθηναίοις ἢ πρότερον.",
+  "e": "At about this same time Alcibiades sailed back to Samos with the thirteen ships from Caunus and Phaselis, reporting that he had prevented the coming of the Phoenician ships to join the Peloponnesians and that he had made Tissaphernes more friendly to the Athenians than before. He then manned nine ships in addition to those he had, and exacted much money of the Halicarnassians, and also fortified Cos."
+ },
+ {
+  "k": "94c1032aa5c6ad60",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ πληρώσας ναῦς ἐννέα πρὸς αἷς εἶχεν Ἁλικαρνασσέας τε πολλὰ χρήματα ἐξέπραξε καὶ Κῶν ἐτείχισεν. ταῦτα δὲ πράξας καὶ ἄρχοντα ἐν τῇ Κῷ καταστήσας πρὸς τὸ μετόπωρον ἤδη ἐς τὴν Σάμον κατέπλευσεν.",
+  "e": "Having done these things and appointed a governor at Cos, when it was already nearing autumn he returned to Samos. As for Tissaphernes, on hearing that the Peloponnesian fleet had sailed from Miletus to the Hellespont, he broke up his camp at Aspendus and set out for Ionia."
+ },
+ {
+  "k": "703550c0724c6b13",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "καὶ ὁ Τισσαφέρνης ἀπὸ τῆς Ἀσπένδου, ὡς ἐπύθετο τὰς τῶν Πελοποννησίων ναῦς ἐκ τῆς Μιλήτου ἐς τὸν Ἑλλήσποντον πεπλευκυίας, ἀναζεύξας ἤλαυνεν ἐπὶ τῆς Ἰωνίας.",
+  "e": "For while the Peloponnesians were in the Hellespont, the Antandrians, who are Aeolians, had brought some hoplites from Abydus overland by way of Mount Ida and introduced them into their city, since they were being unjustly treated by Arsaces the Persian, lieutenant of Tissaphernes."
+ },
+ {
+  "k": "c48a5b829791cf45",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὄντων δὲ τῶν Πελοποννησίων ἐν τῷ Ἑλλησπόντῳ, Ἀντάνδριοι (εἰσὶ δὲ Αἰολῆς) παρακομισάμενοι ἐκ τῆς Ἀβύδου πεζῇ διὰ τῆς Ἴδης τοῦ ὄρους ὁπλίτας ἐσηγάγοντο ἐς τὴν πόλιν, ὑπὸ Ἀρσάκου τοῦ Πέρσου Τισσαφέρνους ὑπάρχου ἀδικούμενοι, ὅσπερ καὶ Δηλίους τοὺς Ἀτραμύττιον κατοικήσαντας ὅτε ὑπ’ Ἀθηναίων Δήλου καθάρσεως ἕνεκα ἀνέστησαν, ἔχθραν προσποιησάμενος ἄδηλον καὶ ἐπαγγείλας στρατιὰν αὐτῶν τοῖς βελτίστοις, ἐξαγαγὼν ὡς ἐπὶ φιλίᾳ καὶ ξυμμαχίᾳ, τηρήσας ἀριστοποιουμένους καὶ περιστήσας τοὺς ἑαυτοῦ κατηκόντισεν.",
+  "e": "Now this was the man who, when the Delians settled at Atramytteium, at the time when they were removed from Delos by the Athenians for the purpose of purifying that island, professing a quarrel which he did not openly declare and proffering opportunity of military service to their leading men, had led them out on an expedition on a pretence of friendship and alliance, and then, waiting until they were at their midday meal, had surrounded them with his own troops and shot them down."
+ },
+ {
+  "k": "03c72de6476d51db",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "φοβούμενοι οὖν αὐτὸν διὰ τοῦτο τὸ ἔργον μήποτε καὶ περὶ σφᾶς τι παρανομήσῃ, καὶ ἄλλα ἐπιβάλλοντος αὐτοῦ ἃ φέρειν οὐκ ἐδύναντο, ἐκβάλλουσι τοὺς φρουροὺς αὐτοῦ ἐκ τῆς ἀκροπόλεως.",
+  "e": "The Antandrians, therefore, fearing that on account of this act of his he might some day commit some outrage upon them also, and because, furthermore, he was imposing upon them burdens which they were not able to bear, had driven his garrison out of their acropolis."
+ },
+ {
+  "k": "aa4970ddf4135332",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "ὁ δὲ Τισσαφέρνης αἰσθόμενος καὶ τοῦτο τῶν Πελοποννησίων τὸ ἔργον καὶ οὐ μόνον τὸ ἐν τῇ Μιλήτῳ καὶ Κνίδῳ (καὶ ἐνταῦθα γὰρ αὐτοῦ ἐξεπεπτώκεσαν οἱ φρουροί), διαβεβλῆσθαί τε νομίσας αὐτοῖς σφόδρα καὶ δείσας μὴ καὶ ἄλλο τι ἔτι βλάπτωσι, καὶ ἅμα ἀχθόμενος εἰ Φαρνάβαζος ἐξ ἐλάσσονος χρόνου καὶ δαπάνης δεξάμενος αὐτοὺς κατορθώσει τι μᾶλλον τῶν πρὸς τοὺς Ἀθηναίους, πορεύεσθαι διενοεῖτο πρὸς αὐτοὺς ἐπὶ τοῦ Ἑλλησπόντου, ὅπως μέμψηταί τε τῶν περὶ τὴν Ἄντανδρον γεγενημένων καὶ τὰς διαβολὰς καὶ περὶ τῶν Φοινισσῶν νεῶν καὶ τῶν ἄλλων ὡς εὐπρεπέστατα ἀπολογήσηται. καὶ ἀφικόμενος πρῶτον ἐς Ἔφεσον θυσίαν ἐποιήσατο τῇ Ἀρτέμιδι.",
+  "e": "When Tissaphernes heard of this further act on the part of the Peloponnesians, in addition to what they had done at Miletus and Cnidos,—for there also his garrisons had been expelled-thinking that he had got into exceeding disrepute with them and fearing that they might do him some further mischief still, and at the same time because he was vexed that Pharnabazus should accept their services, and in less time and at less expense than himself be more successful in coping with the Athenians—for all these reasons he determined to go to the Hellespont and see the Peloponnesians, that he might complain of what had been done at Antandros and might also defend himself as plausibly as he could against the slanderous charges they made against him in connection with the Phoenician ships and other matters."
+ },
+ {
+  "k": "be7a4a7e6d011e73",
+  "ctx": "修昔底德《伯罗奔尼撒战争史》· 卷 8",
+  "g": "[ὅταν ὁ μετὰ τοῦτο τὸ θέρος χειμὼν τελευτήσῃ, ἓν καὶ εἰκοστὸν ἔτος πληροῦται.]",
+  "e": "And so he came first to Ephesus and offered sacrifice to Artemis."
+ },
+ {
+  "k": "aadc58104cbb20d2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Ἡροδότου Ἁλικαρνησσέος ἱστορίης ἀπόδεξις ἥδε, ὡς μήτε τὰ γενόμενα ἐξ ἀνθρώπων τῷ χρόνῳ ἐξίτηλα γένηται, μήτε ἔργα μεγάλα τε καὶ θωμαστά, τὰ μὲν Ἕλλησι τὰ δὲ βαρβάροισι ἀποδεχθέντα, ἀκλεᾶ γένηται, τά τε ἄλλα καὶ διʼ ἣν αἰτίην ἐπολέμησαν ἀλλήλοισι.",
+  "e": "This is the display of the inquiry of Herodotus of Bodrum [27.466,37.5] (inhabited place), Mugla Ili, Ege kiyilari, Turkey, Asia Halicarnassus , so that things done by man not be forgotten in time, and that great and marvelous deeds, some displayed by the Hellenes, some by the barbarians, not lose their glory, including among others what was the cause of their waging war on each other."
+ },
+ {
+  "k": "722febd2c2c7e33c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Περσέων μέν νυν οἱ λόγιοι Φοίνικας αἰτίους φασὶ γενέσθαι τῆς διαφορῆς. τούτους γὰρ ἀπὸ τῆς Ἐρυθρῆς καλεομένης θαλάσσης ἀπικομένους ἐπὶ τήνδε τὴν θάλασσαν, καὶ οἰκήσαντας τοῦτον τὸν χῶρον τὸν καὶ νῦν οἰκέουσι, αὐτίκα ναυτιλίῃσι μακρῇσι ἐπιθέσθαι, ἀπαγινέοντας δὲ φορτία Αἰγύπτιά τε καὶ Ἀσσύρια τῇ τε ἄλλῃ ἐσαπικνέεσθαι καὶ δὴ καὶ ἐς Ἄργος.",
+  "e": "The Persian learned men say that the Phoenicians were the cause of the dispute. These (they say) came to our seas from the sea which is called Red, and having settled in the country which they still occupy, at once began to make long voyages. Among other places to which they carried Egyptian and Assyrian merchandise, they came to Argos [22.7333,37.6417] (Perseus) Argos ,"
+ },
+ {
+  "k": "efbd40409942b20c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὸ δὲ Ἄργος τοῦτον τὸν χρόνον προεῖχε ἅπασι τῶν ἐν τῇ νῦν Ἑλλάδι καλεομένῃ χωρῇ. ἀπικομένους δὲ τούς Φοίνικας ἐς δὴ τὸ Ἄργος τοῦτο διατίθεσθαι τὸν φόρτον.",
+  "e": "which was at that time preeminent in every way among the people of what is now called Greece [22,39] (nation), Europe Hellas . The Phoenicians came to Argos [22.7333,37.6417] (Perseus) Argos , and set out their cargo."
+ },
+ {
+  "k": "00e866970c0df5ff",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πέμπτῃ δὲ ἢ ἕκτῃ ἡμέρῃ ἀπʼ ἧς ἀπίκοντο, ἐξεμπολημένων σφι σχεδόν πάντων, ἐλθεῖν ἐπὶ τὴν θάλασσαν γυναῖκας ἄλλας τε πολλάς καὶ δὴ καὶ τοῦ βασιλέος θυγατέρα· τὸ δέ οἱ οὔνομα εἶναι, κατὰ τὠυτὸ τὸ καὶ Ἕλληνές λέγουσι, Ἰοῦν τὴν Ἰνάχου·",
+  "e": "On the fifth or sixth day after their arrival, when their wares were almost all sold, many women came to the shore and among them especially the daughter of the king, whose name was Io (according to Persians and Greeks alike), the daughter of Inachus."
+ },
+ {
+  "k": "df9637e1942df108",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταύτας στάσας κατά πρύμνην τῆς νεὸς ὠνέεσθαι τῶν φορτίων τῶν σφι ἦν θυμός μάλιστα· καὶ τοὺς Φοίνικας διακελευσαμένους ὁρμῆσαι ἐπʼ αὐτάς. τὰς μὲν δὴ πλεῦνας τῶν γυναικῶν ἀποφυγεῖν, τὴν δὲ Ἰοῦν σὺν ἄλλῃσι ἁρπασθῆναι. ἐσβαλομένους δὲ ἐς τὴν νέα οἴχεσθαι ἀποπλέοντας ἐπʼ Αἰγύπτου.",
+  "e": "As these stood about the stern of the ship bargaining for the wares they liked, the Phoenicians incited one another to set upon them. Most of the women escaped: Io and others were seized and thrown into the ship, which then sailed away for Egypt [30,27] (nation), Africa Egypt ."
+ },
+ {
+  "k": "207f3ba33925e085",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὕτω μὲν Ἰοῦν ἐς Αἴγυπτον ἀπικέσθαι λέγουσι Πέρσαι, οὐκ ὡς Ἕλληνές, καὶ τῶν ἀδικημάτων πρῶτον τοῦτο ἄρξαι. μετὰ δὲ ταῦτα Ἑλλήνων τινάς (οὐ γὰρ ἔχουσι τοὔνομα ἀπηγήσασθαι) φασὶ τῆς Φοινίκης ἐς Τύρον προσσχόντας ἁρπάσαι τοῦ βασιλέος τὴν θυγατέρα Εὐρώπην. εἴησαν δʼ ἄν οὗτοι Κρῆτες. ταῦτα μὲν δὴ ἴσα πρὸς ἴσα σφι γενέσθαι, μετὰ δὲ ταῦτα Ἕλληνας αἰτίους τῆς δευτέρης ἀδικίης γενέσθαι·",
+  "e": "In this way, the Persians say (and not as the Greeks), was how Io came to Egypt [30,27] (nation), Africa Egypt , and this, according to them, was the first wrong that was done. Next, according to their story, some Greeks (they cannot say who) landed at Tyre [35.183,33.266] (inhabited place), Al-Janub, Lebanon, Asia Tyre in Phoenicia (region (general)), Asia Phoenicia and carried off the king's daughter Europa. These Greeks must, I suppose, have been Cretans. So far, then, the account between them was balanced. But after this (they say), it was the Greeks who were guilty of the second wrong."
+ },
+ {
+  "k": "8584b48d8086ebcd",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καταπλώσαντας γὰρ μακρῇ νηί ἐς Αἶαν τε τὴν Κολχίδα καὶ ἐπὶ Φᾶσιν ποταμόν, ἐνθεῦτεν, διαπρηξαμένους καὶ τἄλλα τῶν εἵνεκεν ἀπίκατο, ἁρπάσαι τοῦ βασιλέος τὴν θυγατέρα Μηδείην.",
+  "e": ""
+ },
+ {
+  "k": "b2e3bfef28185b34",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πέμψαντά δὲ τὸν Κόλχων βασιλέα ἐς τὴν Ἑλλάδα κήρυκα αἰτέειν τε δίκας τῆς ἁρπαγῆς καὶ ἀπαιτέειν τὴν θυγατέρα. τοὺς δὲ ὑποκρίνασθαι ὡς οὐδὲ ἐκεῖνοι Ἰοῦς τῆς Ἀργείης ἔδοσάν σφι δίκας τῆς ἁρπαγῆς· οὐδὲ ὦν αὐτοὶ δώσειν ἐκείνοισι.",
+  "e": "They sailed in a long ship to Aea, a city of the Colchians, and to the river Poti [41.683,42.183] (inhabited place), regions under republican jurisdiction, Georgia, Asia Phasis : and when they had done the business for which they came, they carried off the king's daughter Medea."
+ },
+ {
+  "k": "a5e7bb03c2675777",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "δευτέρῃ δὲ λέγουσι γενεῇ μετὰ ταῦτα Ἀλέξανδρον τὸν Πριάμου, ἀκηκοότα ταῦτα, ἐθελῆσαί οἱ ἐκ τῆς Ἑλλάδος διʼ ἁρπαγῆς γενέσθαι γυναῖκα, ἐπιστάμενον πάντως ὅτι οὐ δώσει δίκας. οὐδὲ γὰρ ἐκείνους διδόναι.",
+  "e": "When the Colchian king sent a herald to demand reparation for the robbery and restitution of his daughter, the Greeks replied that, as they had been refused reparation for the abduction of the Argive Io, they would not make any to the Colchians."
+ },
+ {
+  "k": "e4803286197a9890",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὕτω δὴ ἁρπάσαντος αὐτοῦ Ἑλένην, τοῖσι Ἕλλησι δόξαι πρῶτὸν πέμψαντας ἀγγέλους ἀπαιτέειν τε Ἑλένην καὶ δίκας τῆς ἁρπαγῆς αἰτέειν. τοὺς δέ, προϊσχομένων ταῦτα, προφέρειν σφι Μηδείης τὴν ἁρπαγήν, ὡς οὐ δόντες αὐτοὶ δίκας οὐδὲ ἐκδόντες ἀπαιτεόντων βουλοίατό σφι παρʼ ἄλλων δίκας γίνεσθαι.",
+  "e": "Then (they say), in the second generation after this, Alexandrus, son of Priam, who had heard this tale, decided to get himself a wife from Greece [22,39] (nation), Europe Hellas by capture; for he was confident that he would not suffer punishment."
+ },
+ {
+  "k": "f009c3f7ee581947",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μέχρι μὲν ὦν τούτου ἁρπαγάς μούνας εἶναι παρʼ ἀλλήλων, τὸ δὲ ἀπὸ τούτου Ἕλληνας δὴ μεγάλως αἰτίους γενέσθαι· προτέρους γὰρ ἄρξαι στρατεύεσθαι ἐς τὴν Ἀσίην ἢ σφέας ἐς τὴν Εὐρώπην.",
+  "e": "So he carried off Helen. The Greeks first resolved to send messengers demanding that Helen be restored and atonement made for the seizure; but when this proposal was made, the Trojans pleaded the seizure of Medea, and reminded the Greeks that they asked reparation from others, yet made none themselves, nor gave up the booty when asked."
+ },
+ {
+  "k": "74901ca159c1f144",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὸ μέν νυν ἁρπάζειν γυναῖκας ἀνδρῶν ἀδίκων νομίζειν ἔργον εἶναι, τὸ δὲ ἁρπασθεισέων σπουδήν ποιήσασθαι τιμωρέειν ἀνοήτων, τὸ δὲ μηδεμίαν ὤρην ἔχειν ἁρπασθεισέων σωφρόνων· δῆλα γὰρ δὴ ὅτι, εἰ μὴ αὐταὶ ἐβούλοντο, οὐκ ἂν ἡρπάζοντο.",
+  "e": "So far it was a matter of mere seizure on both sides. But after this (the Persians say), the Greeks were very much to blame; for they invaded Asia (continent) Asia before the Persians attacked Europe (continent) Europe ."
+ },
+ {
+  "k": "d91b809aa98760c0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "σφέας μὲν δὴ τοὺς ἐκ τῆς Ἀσίης λέγουσι Πέρσαι ἁρπαζομενέων τῶν γυναικῶν λόγον οὐδένα ποιήσασθαι, Ἕλληνας δὲ Λακεδαιμονίης εἵνεκεν γυναικὸς στόλον μέγαν συναγεῖραι καὶ ἔπειτα ἐλθόντας ἐς τὴν Ἀσίην τὴν Πριάμου δύναμιν κατελεῖν.",
+  "e": "“We think,” they say, “that it is unjust to carry women off. But to be anxious to avenge rape is foolish: wise men take no notice of such things. For plainly the women would never have been carried away, had they not wanted it themselves."
+ },
+ {
+  "k": "d7181ec5e0adac79",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀπὸ τούτου αἰεὶ ἡγήσασθαι τὸ Ἑλληνικὸν σφίσι εἶναι πολέμιον. τὴν γὰρ Ἀσίην καὶ τὰ ἐνοικέοντα ἔθνεα βάρβαρα οἰκηιεῦνται οἱ Πέρσαι, τὴν δὲ Εὐρώπην καὶ τὸ Ἑλληνικόν ἥγηνται κεχωρίσθαι.",
+  "e": "We of Asia (continent) Asia did not deign to notice the seizure of our women; but the Greeks, for the sake of a Lacedaemonian woman, recruited a great armada, came to Asia (continent) Asia , and destroyed the power of Priam."
+ },
+ {
+  "k": "9d9433a630de621a",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὕτω μὲν Πέρσαι λέγουσι γενέσθαι, καὶ διὰ τὴν Ἰλίου ἅλωσιν εὑρίσκουσι σφίσι ἐοῦσαν τὴν ἀρχήν τῆς ἔχθρης τῆς ἐς τοὺς Ἕλληνας.",
+  "e": "Ever since then we have regarded Greeks as our enemies.” For the Persians claim Asia (continent) Asia for their own, and the foreign peoples that inhabit it; Europe (continent) Europe and the Greek people they consider to be separate from them."
+ },
+ {
+  "k": "a48ac494477df0f0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "περὶ δὲ τῆς Ἰοῦς οὐκ ὁμολογέουσι Πέρσῃσι οὕτω Φοίνικες· οὐ γὰρ ἁρπαγῇ σφέας χρησαμένους λέγουσι ἀγαγεῖν αὐτήν ἐς Αἴγυπτον, ἀλλʼ ὡς ἐν τῷ Ἄργεϊ ἐμίσγετο τῷ ναυκλήρῳ τῆς νέος· ἐπεὶ δʼ ἔμαθε ἔγκυος ἐοῦσα, αἰδεομένη τοὺς τοκέας οὕτω δὴ ἐθελοντήν αὐτήν τοῖσι Φοίνιξι συνεκπλῶσαι, ὡς ἂν μὴ κατάδηλος γένηται.",
+  "e": "Such is the Persian account; in their opinion, it was the taking of Troy [26.2833,39.9167] (Perseus) Troy which began their hatred of the Greeks. But the Phoenicians do not tell the same story about Io as the Persians. They say that they did not carry her off to Egypt [30,27] (nation), Africa Egypt by force. She had intercourse in Argos [22.7333,37.6417] (Perseus) Argos with the captain of the ship. Then, finding herself pregnant, she was ashamed to have her parents know it, and so, lest they discover her condition, she sailed away with the Phoenicians of her own accord."
+ },
+ {
+  "k": "58e6f678416991d2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα μέν νυν Πέρσαι τε καὶ Φοίνικες λέγουσι· ἐγὼ δὲ περὶ μὲν τούτων οὐκ ἔρχομαι ἐρέων ὡς οὕτω ἢ ἄλλως κως ταῦτα ἐγένετο, τὸν δὲ οἶδα αὐτὸς πρῶτον ὑπάρξαντα ἀδίκων ἔργων ἐς τοὺς Ἕλληνας, τοῦτον σημήνας προβήσομαι ἐς τὸ πρόσω τοῦ λόγου, ὁμοίως σμικρὰ καὶ μεγάλα ἄστεα ἀνθρώπων ἐπεξιών.",
+  "e": ""
+ },
+ {
+  "k": "60c74b125883a611",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὰ γὰρ τὸ πάλαι μεγάλα ἦν, τὰ πολλὰ σμικρὰ αὐτῶν γέγονε· τὰ δὲ ἐπʼ ἐμεῦ ἦν μεγάλα, πρότερον ἦν σμικρά. τὴν ἀνθρωπηίην ὦν ἐπιστάμενος εὐδαιμονίην οὐδαμὰ ἐν τὠυτῷ μένουσαν, ἐπιμνήσομαι ἀμφοτέρων ὁμοίως.",
+  "e": "These are the stories of the Persians and the Phoenicians. For my part, I shall not say that this or that story is true, but I shall identify the one who I myself know did the Greeks unjust deeds, and thus proceed with my history, and speak of small and great cities of men alike."
+ },
+ {
+  "k": "37ea77db7879b81b",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Κροῖσος ἦν Λυδὸς μὲν γένος, παῖς δὲ Ἀλυάττεω, τύραννος δὲ ἐθνέων τῶν ἐντός Ἅλυος ποταμοῦ, ὃς ῥέων ἀπὸ μεσαμβρίης μεταξὺ Συρίων τε καὶ Παφλαγόνων ἐξιεῖ πρὸς βορέην ἄνεμον ἐς τὸν Εὔξεινον καλεόμενον πόντον.",
+  "e": "For many states that were once great have now become small; and those that were great in my time were small before. Knowing therefore that human prosperity never continues in the same place, I shall mention both alike."
+ },
+ {
+  "k": "7a5855c889c45eee",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὗτος ὁ Κροῖσος βαρβάρων πρῶτος τῶν ἡμεῖς ἴδμεν τοὺς μὲν κατεστρέψατο Ἑλλήνων ἐς φόρου ἀπαγωγήν, τοὺς δὲ φίλους προσεποιήσατο. κατεστρέψατο μὲν Ἴωνάς τε καὶ Αἰολέας καὶ Δωριέας τοὺς ἐν τῇ Ἀσίῃ, φίλους δὲ προσεποιήσατο Λακεδαιμονίους.",
+  "e": "Croesus was a Lydian by birth, son of Alyattes, and sovereign of all the nations west of the river Halys River (river), Turkey, Asia Halys , which flows from the south between Syria [38,35] (nation), Asia Syria and Paphlagonia (region (general)), Turkey, Asia Paphlagonia and empties into the sea called Black Sea [38,42] (sea) Euxine ."
+ },
+ {
+  "k": "02581af4c665bf2d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πρὸ δὲ τῆς Κροίσου ἀρχῆς πάντες Ἕλληνες ἦσαν ἐλεύθεροι· τὸ γὰρ Κιμμερίων στράτευμα τὸ ἐπὶ τὴν Ἰωνίην ἀπικόμενον Κροίσου ἐὸν πρεσβύτερον οὐ καταστροφὴ ἐγένετο τῶν πολίων ἀλλʼ ἐξ ἐπιδρομῆς ἁρπαγή.",
+  "e": "This Croesus was the first foreigner whom we know who subjugated some Greeks and took tribute from them, and won the friendship of others: the former being the Ionians, the Aeolians, and the Dorians of Asia (continent) Asia , and the latter the Lacedaemonians."
+ },
+ {
+  "k": "763dc4e2d15fc84b",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἡ δὲ ἡγεμονίη οὕτω περιῆλθε, ἐοῦσα Ἡρακλειδέων ἐς τὸ γένος τὸ Κροίσου, καλεομένους δὲ Μερμνάδας.",
+  "e": "Before the reign of Croesus, all Greeks were free: for the Cimmerian host which invaded Ionia (region (general)), Europe Ionia before his time did not subjugate the cities, but raided and robbed them."
+ },
+ {
+  "k": "954aebda554838d1",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἦν Κανδαύλης, τὸν οἱ Ἕλληνές Μυρσίλον ὀνομάζουσι, τύραννος Σαρδίων, ἀπόγονος δὲ Ἀλκαίου τοῦ Ἡρακλέος. Ἄγρων μὲν γὰρ ὁ Νίνου τοῦ Βήλου τοῦ Ἀλκαίου πρῶτος Ἡρακλειδέων βασιλεὺς ἐγένετο Σαρδίων, Κανδαύλης δὲ ὁ Μύρσου ὕστατος.",
+  "e": "Now the sovereign power that belonged to the descendants of Heracles fell to the family of Croesus, called the Mermnadae, in the following way."
+ },
+ {
+  "k": "0d63d7615efba61e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οἱ δὲ πρότερον Ἄγρωνος βασιλεύσαντες ταύτης τῆς χώρης ἦσαν ἀπόγονοὶ Λυδοῦ τοῦ Ἄτυος, ἀπʼ ὅτευ ὁ δῆμος Λύδιος ἐκλήθη ὁ πᾶς οὗτος, πρότερον Μηίων καλεόμενος.",
+  "e": "Candaules, whom the Greeks call Myrsilus, was the ruler of Sardis [28.0167,38.475] (Perseus) Sardis ; he was descended from Alcaeus, son of Heracles; Agron son of Ninus, son of Belus, son of Alcaeus, was the first Heraclid king of Sardis [28.0167,38.475] (Perseus) Sardis and Candaules son of Myrsus was the last."
+ },
+ {
+  "k": "955d8ca6f3d1011d",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "παρὰ τούτων Ἡρακλεῖδαι ἐπιτραφθέντες ἔσχον τὴν ἀρχήν ἐκ θεοπροπίου, ἐκ δούλης τε τῆς Ἰαρδάνου γεγονότες καὶ Ἡρακλέος, ἄρξαντες μὲν ἐπὶ δύο τε καὶ εἴκοσι γενεᾶς ἀνδρῶν ἔτεα πέντε τε καὶ πεντακόσια, παῖς παρὰ πατρὸς ἐκδεκόμενος τὴν ἀρχήν, μέχρι Κανδαύλεω τοῦ Μύρσου.",
+  "e": "The kings of this country before Agron were descendants of Lydus, son of Atys, from whom this whole Lydian district got its name; before that it was called the land of the Meii."
+ },
+ {
+  "k": "aa2466e78eb0d4b2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὗτος δὴ ὦν ὁ Κανδαύλης ἠράσθη τῆς ἑωυτοῦ γυναικός, ἐρασθεὶς δὲ ἐνόμιζέ οἱ εἶναι γυναῖκα πολλὸν πασέων καλλίστην. ὥστε δὲ ταῦτα νομίζων, ἦν γάρ οἱ τῶν αἰχμοφόρων Γύγης ὁ Δασκύλου ἀρεσκόμενος μάλιστα, τούτῳ τῷ Γύγῃ καὶ τὰ σπουδαιέστερα τῶν πρηγμάτων ὑπερετίθετο ὁ Κανδαύλης καὶ δὴ καὶ τὸ εἶδος τῆς γυναικὸς ὑπερεπαινέων.",
+  "e": "The Heraclidae, descendants of Heracles and a female slave of Iardanus, received the sovereignty from these and held it, because of an oracle; and they ruled for twenty-two generations, or five hundred and five years, son succeeding father, down to Candaules son of Myrsus. This Candaules, then, fell in love with his own wife, so much so that he believed her to be by far the most beautiful woman in the world; and believing this, he praised her beauty beyond measure to Gyges son of Dascylus, who was his favorite among his bodyguard; for it was to Gyges that he entrusted all his most important secrets."
+ },
+ {
+  "k": "82bf1972a3210af2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "χρόνου δὲ οὐ πολλοῦ διελθόντος (χρῆν γὰρ Κανδαύλῃ γενέσθαι κακῶς) ἔλεγε πρὸς τὸν Γύγην τοιάδε. Γύγη, οὐ γὰρ σε δοκέω πείθεσθαι μοι λέγοντι περὶ τοῦ εἴδεος τῆς γυναικός (ὦτα γὰρ τυγχάνει ἀνθρώποισι ἐόντα ἀπιστότερα ὀφθαλμῶν), ποίεε ὅκως ἐκείνην θεήσεαι γυμνήν.",
+  "e": "After a little while, Candaules, doomed to misfortune, spoke to Gyges thus: “Gyges, I do not think that you believe what I say about the beauty of my wife; men trust their ears less than their eyes: so you must see her naked.” Gyges protested loudly at this."
+ },
+ {
+  "k": "3089fad2f3cb7474",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ δʼ ἀμβώσας εἶπε δέσποτα, τίνα λέγεις λόγον οὐκ ὑγιέα, κελεύων με δέσποιναν τὴν ἐμὴν θεήσασθαι γυμνήν; ἅμα δὲ κιθῶνι ἐκδυομένῳ συνεκδύεται καὶ τὴν αἰδῶ γυνή.",
+  "e": "“Master,” he said, “what an unsound suggestion, that I should see my mistress naked! When a woman's clothes come off, she dispenses with her modesty, too."
+ },
+ {
+  "k": "7c1ee20cb5212c55",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "πάλαι δὲ τὰ καλὰ ἀνθρώποισι ἐξεύρηται, ἐκ τῶν μανθάνειν δεῖ· ἐν τοῖσι ἓν τόδε ἐστί, σκοπέειν τινὰ τὰ ἑωυτοῦ. ἐγὼ δὲ πείθομαι ἐκείνην εἶναι πασέων γυναικῶν καλλίστην, καὶ σέο δέομαι μὴ δέεσθαι ἀνόμων.",
+  "e": "Men have long ago made wise rules from which one ought to learn; one of these is that one should mind one's own business. As for me, I believe that your queen is the most beautiful of all women, and I ask you not to ask of me what is lawless.”"
+ },
+ {
+  "k": "b21f9170f33f2f0e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ μὲν δὴ λέγων τοιαῦτα ἀπεμάχετο, ἀρρωδέων μὴ τί οἱ ἐξ αὐτῶν γένηται κακόν, ὃ δʼ ἀμείβετο τοῖσιδε. θάρσεε, Γύγη, καὶ μὴ φοβεῦ μήτε ἐμέ, ὡς σέο πειρώμενος λέγω λόγον τόνδε, μήτε γυναῖκα τὴν ἐμήν, μὴ τὶ τοι ἐξ αὐτῆς γένηται βλάβος. ἀρχήν γὰρ ἐγὼ μηχανήσομαι οὕτω ὥστε μηδέ μαθεῖν μιν ὀφθεῖσαν ὑπὸ σεῦ.",
+  "e": "Speaking thus, Gyges resisted: for he was afraid that some evil would come of it for him. But this was Candaules' answer: “Courage, Gyges! Do not be afraid of me, that I say this to test you, or of my wife, that you will have any harm from her. I will arrange it so that she shall never know that you have seen her."
+ },
+ {
+  "k": "15d7ced3fa583ca0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐγὼ γάρ σε ἐς τὸ οἴκημα ἐν τῷ κοιμώμεθα ὄπισθε τῆς ἀνοιγομένης θύρης στήσω. μετὰ δʼ ἐμὲ ἐσελθόντα παρέσται καὶ ἡ γυνὴ ἡ ἐμὴ ἐς κοῖτον. κεῖται δὲ ἀγχοῦ τῆς ἐσόδου θρόνος· ἐπὶ τοῦτον τῶν ἱματίων κατὰ ἕν ἕκαστον ἐκδύνουσα θήσει, καὶ κατʼ ἡσυχίην πολλὴν παρέξει τοι θεήσασθαι.",
+  "e": "I will bring you into the chamber where she and I lie and conceal you behind the open door; and after I have entered, my wife too will come to bed. There is a chair standing near the entrance of the room: on this she will lay each article of her clothing as she takes it off, and you will be able to look upon her at your leisure."
+ },
+ {
+  "k": "d5216b20d0814b21",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπεὰν δέ ἀπὸ τοῦ θρόνου στείχῃ ἐπὶ τὴν εὐνήν κατὰ νώτου τε αὐτῆς γένῃ, σοὶ μελέτω τὸ ἐνθεῦτεν ὅκως μὴ σε ὄψεται ἰόντα διὰ θυρέων.",
+  "e": "Then, when she moves from the chair to the bed, turning her back on you, be careful she does not see you going out through the doorway.”"
+ },
+ {
+  "k": "f00d243865aae1a5",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὃ μὲν δὴ ὡς οὐκ ἐδύνατο διαφυγεῖν, ἦν ἕτοιμος· ὁ δὲ Κανδαύλης, ἐπεὶ ἐδόκεε ὥρη τῆς κοίτης εἶναι, ἤγαγε τὸν Γύγεα ἐς τὸ οἴκημα. καὶ μετὰ ταῦτα αὐτίκα παρῆν καὶ ἡ γυνή. ἐσελθοῦσαν δὲ καὶ τιθεῖσαν τὰ εἵματα ἐθηεῖτο ὁ Γύγης.",
+  "e": "As Gyges could not escape, he consented. Candaules, when he judged it to be time for bed, brought Gyges into the chamber; his wife followed presently, and when she had come in and was laying aside her garments, Gyges saw her;"
+ },
+ {
+  "k": "b770566e40cb722f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ κατὰ νώτου ἐγένετο ἰούσης τῆς γυναικός ἐς τὴν κοίτην, ὑπεκδὺς ἐχώρεε ἔξω, καὶ ἡ γυνὴ ἐπορᾷ μιν ἐξιόντα. μαθοῦσὰ δὲ τὸ ποιηθέν ἐκ τοῦ ἀνδρὸς οὔτε ἀνέβωσε αἰσχυνθεῖσα οὔτε ἔδοξε μαθεῖν, ἐν νοῶ ἔχουσα τίσεσθαι τὸν Κανδαύλεα.",
+  "e": "when she turned her back upon him to go to bed, he slipped from the room. The woman glimpsed him as he went out, and perceived what her husband had done. But though shamed, she did not cry out or let it be seen that she had perceived anything, for she meant to punish Candaules;"
+ },
+ {
+  "k": "34e3308c5af74c6c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "παρὰ γὰρ τοῖσι Λυδοῖσι, σχεδὸν δὲ καὶ παρὰ τοῖσι ἄλλοισι βαρβάροισι καὶ ἄνδρα ὀφθῆναι γυμνόν ἐς αἰσχύνην μεγάλην φέρει.",
+  "e": "since among the Lydians and most of the foreign peoples it is felt as a great shame that even a man be seen naked."
+ },
+ {
+  "k": "6699cb32c6f2c9da",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τότε μὲν δὴ οὕτω οὐδέν δηλώσασα ἡσυχίην εἶχε. ὡς δὲ ἡμέρη τάχιστα ἐγεγόνεε, τῶν οἰκετέων τοὺς μάλιστα ὥρα πιστοὺς ἐόντας ἑωυτῇ, ἑτοίμους ποιησαμένη ἐκάλεε τὸν Γύγεα. ὁ δὲ οὐδὲν δοκέων αὐτήν τῶν πρηχθέντων ἐπίστασθαι ἦλθε καλεόμενος· ἐώθεε γὰρ καὶ πρόσθε, ὅκως ἡ βασίλεια καλέοι, φοιτᾶν.",
+  "e": "For the present she made no sign and kept quiet. But as soon as it was day, she prepared those of her household whom she saw were most faithful to her, and called Gyges. He, supposing that she knew nothing of what had been done, answered the summons; for he was used to attending the queen whenever she summoned him."
+ },
+ {
+  "k": "bb1d468caa57d2ab",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ὁ Γύγης ἀπίκετο, ἔλεγε ἡ γυνὴ τάδε. νῦν τοί δυῶν ὁδῶν παρεουσέων Γύγη δίδωμί αἵρεσιν, ὁκοτέρην βούλεαι τραπέσθαι. ἢ γὰρ Κανδαύλεα ἀποκτείνας ἐμέ τε καὶ τὴν βασιληίην ἔχε τὴν Λυδῶν, ἢ αὐτόν σε αὐτίκα οὕτω ἀποθνήσκειν δεῖ, ὡς ἂν μὴ πάντα πειθόμενος Κανδαύλῃ τοῦ λοιποῦ ἴδῃς τὰ μὴ σε δεῖ.",
+  "e": "When Gyges came, the lady addressed him thus: “Now, Gyges, you have two ways before you; decide which you will follow. You must either kill Candaules and take me and the throne of Lydia [27.516,38.683] (region (general)), Turkey, Asia Lydia for your own, or be killed yourself now without more ado; that will prevent you from obeying all Candaules' commands in the future and seeing what you should not see."
+ },
+ {
+  "k": "f489d314f1e5e6bb",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀλλʼ ἤτοι κεῖνόν γε τὸν ταῦτα βουλεύσαντα δεῖ ἀπόλλυσθαι, ἢ σε τὸν ἐμὲ γυμνήν θεησάμενον καὶ ποιήσαντα οὐ νομιζόμενα. ὁ δὲ Γύγης τέως μὲν ἀπεθώμαζε τὰ λεγόμενα, μετὰ δὲ ἱκέτευε μὴ μιν ἀναγκαίῃ ἐνδέειν διακρῖναι τοιαύτην αἵρεσιν.",
+  "e": "One of you must die: either he, the contriver of this plot, or you, who have outraged all custom by looking on me uncovered.” Gyges stood awhile astonished at this; presently, he begged her not to compel him to such a choice."
+ },
+ {
+  "k": "cfd6a65427a363f4",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὔκων δὴ ἔπειθε, ἀλλʼ ὥρα ἀναγκαίην ἀληθέως προκειμένην ἢ τὸν δεσπότεα ἀπολλύναι ἢ αὐτὸν ὑπʼ ἄλλων ἀπόλλυσθαι· αἱρέεται αὐτὸς περιεῖναι. ἐπειρώτα δὴ λέγων τάδε. ἐπεί με ἀναγκάζεις δεσπότεα τὸν ἐμὸν κτείνειν οὐκ ἐθέλοντα, φέρε ἀκούσω τέῳ καὶ τρόπῳ ἐπιχειρήσομεν αὐτῷ.",
+  "e": "But when he could not deter her, and saw that dire necessity was truly upon him either to kill his master or himself be killed by others, he chose his own life. Then he asked: “Since you force me against my will to kill my master, I would like to know how we are to lay our hands on him.” She replied, “You shall come at him from the same place where he made you view me naked: attack him in his sleep.”"
+ },
+ {
+  "k": "de351a7df7779e2e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἣ δὲ ὑπολαβοῦσα ἔφη ἐκ τοῦ αὐτοῦ μὲν χωρίου ἡ ὁρμή ἔσται ὅθεν περ καὶ ἐκεῖνος ἐμέ ἐπεδέξατο γυμνήν, ὑπνωμένῳ δὲ ἡ ἐπιχείρησις ἔσται.",
+  "e": "When they had prepared this plot, and night had fallen, Gyges followed the woman into the chamber (for Gyges was not released, nor was there any means of deliverance, but either he or Candaules must die). She gave him a dagger and hid him behind the same door;"
+ },
+ {
+  "k": "7aadbd0b8580ac1f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ἤρτυσαν τὴν ἐπιβουλήν, νυκτὸς γενομένης (οὐ γὰρ ἐμετίετο ὁ Γύγης, οὐδέ οἱ ἦν ἀπαλλαγὴ οὐδεμία, ἀλλʼ ἔδεε ἤ αὐτὸν ἀπολωλέναι ἢ Κανδαύλεα) εἵπετο ἐς τὸν θάλαμον τῇ γυναικί, καί μιν ἐκείνη, ἐγχειρίδιον δοῦσα, κατακρύπτει ὑπὸ τὴν αὐτὴν θύρην.",
+  "e": "and presently he stole out and killed Candaules as he slept. Thus he made himself master of the king's wife and sovereignty. He is mentioned in the iambic verses of Archilochus of Parus who lived about the same time."
+ },
+ {
+  "k": "1036cfba62d4cbfe",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ μετὰ ταῦτα ἀναπαυομένου Κανδαύλεω ὑπεκδύς τε καὶ ἀποκτείνας αὐτὸν ἔσχε καὶ τὴν γυναῖκα καὶ τὴν βασιληίην Γύγης τοῦ καὶ Ἀρχίλοχος ὁ Πάριος κατὰ τὸν αὐτὸν χρόνον γενόμενος ἐν ἰάμβῳ τριμέτρῳ ἐπεμνήσθη.",
+  "e": "So he took possession of the sovereign power and was confirmed in it by the Delphic oracle. For when the Lydians took exception to what was done to Candaules, and took up arms, the faction of Gyges came to an agreement with the rest of the people that if the oracle should ordain him king of the Lydians, then he would reign; but if not, then he would return the kingship to the Heraclidae."
+ },
+ {
+  "k": "d30822c0bd5bd6de",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἔσχε δὲ τὴν βασιληίην καὶ ἐκρατύνθη ἐκ τοῦ ἐν Δελφοῖσι χρηστηρίου. ὡς γὰρ δὴ οἱ Λυδοὶ δεινόν ἐποιεῦντο τὸ Κανδαύλεω πάθος καὶ ἐν ὅπλοισι ἦσαν, συνέβησαν ἐς τὠυτὸ οἳ τε τοῦ Γύγεω στασιῶται καί οἱ λοιποὶ Λυδοί, ἤν μὲν τὸ χρηστήριον ἀνέλῃ μιν βασιλέα εἶναι Λυδῶν, τόν δὲ βασιλεύειν, ἤν δὲ μή, ἀποδοῦναι ὀπίσω ἐς Ἡρακλείδας τὴν ἀρχήν.",
+  "e": "The oracle did so ordain, and Gyges thus became king. However, the Pythian priestess declared that the Heraclidae would have vengeance on Gyges' posterity in the fifth generation; an utterance to which the Lydians and their kings paid no regard until it was fulfilled."
+ },
+ {
+  "k": "0efc214f0ae25634",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀνεῖλέ τε δὴ τὸ χρηστήριον καὶ ἐβασίλευσε οὕτω Γύγης. τοσόνδε μέντοι εἶπε ἡ Πυθίη, ὡς Ἡρακλείδῃσι τίσις ἥξει ἐς τὸν πέμπτον ἀπόγονον Γύγεω. τούτου τοῦ ἔπεος Λυδοί τε καί οἱ βασιλέες αὐτῶν λόγον οὐδένα ἐποιεῦντο, πρὶν δὴ ἐπετελέσθη.",
+  "e": "Thus the Mermnadae robbed the Heraclidae of the sovereignty and took it for themselves. Having gotten it, Gyges sent many offerings to Delphi [22.5167,38.4917] (Perseus) Delphi : there are very many silver offerings of his there; and besides the silver, he dedicated a hoard of gold, among which six golden bowls are the offerings especially worthy of mention."
+ },
+ {
+  "k": "09768c5c46ebb822",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὴν μὲν δὴ τυραννίδα οὕτω ἔσχον οἱ Μερμνάδαι τοὺς Ἡρακλείδας ἀπελόμενοι, Γύγης δὲ τυραννεύσας ἀπέπεμψε ἀναθήματα ἐς Δελφοὺς οὐκ ὀλίγα, ἀλλʼ ὅσα μὲν ἀργύρου ἀναθήματα, ἔστι οἱ πλεῖστα ἐν Δελφοῖσι, πάρεξ δὲ τοῦ ἀργύρου χρυσὸν ἄπλετον ἀνέθηκε ἄλλον τε καὶ τοῦ μάλιστα μνήμην ἄξιον ἔχειν ἐστί, κρητῆρες οἱ ἀριθμὸν ἓξ χρύσεοι ἀνακέαται.",
+  "e": "These weigh thirty talents and stand in the treasury of the Corinthians; although in truth it is not the treasury of the Corinthian people but of Cypselus son of Eetion. This Gyges then was the first foreigner whom we know who placed offerings at Delphi [22.5167,38.4917] (Perseus) Delphi after the king of Phrygia (region (general)), Turkey, Asia Phrygia , Midas son of Gordias."
+ },
+ {
+  "k": "74d223ce0a7bdc07",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἑστᾶσι δὲ οὗτοι ἐν τῷ Κορινθίων θησαυρῷ, σταθμὸν ἔχοντες τριήκοντα τάλαντα· ἀληθέι δὲ λόγῳ χρεωμένῳ οὐ Κορινθίων τοῦ δημοσίου ἐστὶ ὁ θησαυρός, ἀλλὰ Κυψέλου τοῦ Ἠετίωνος. οὗτος δὲ ὁ Γύγης πρῶτος βαρβάρων τῶν ἡμεῖς ἴδμεν ἐς Δελφοὺς ἀνέθηκε ἀναθήματα μετὰ Μίδην τὸν Γορδίεω Φρυγίης βασιλέα.",
+  "e": "For Midas too made an offering: namely, the royal seat on which he sat to give judgment, and a marvellous seat it is. It is set in the same place as the bowls of Gyges. This gold and the silver offered by Gyges is called by the Delphians “Gygian” after its dedicator."
+ },
+ {
+  "k": "193b1371d4a268af",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀνέθηκε γὰρ δὴ καὶ Μίδης τὸν βασιλήιον θρόνον ἐς τὸν προκατίζων ἐδίκαζε, ἐόντα ἀξιοθέητον· κεῖται δὲ ὁ θρόνος οὗτος ἔνθα περ οἱ τοῦ Γύγεω κρητῆρες. ὁ δὲ χρυσός οὗτος καὶ ὁ ἄργυρος τὸν ὁ Γύγης ἀνέθηκε, ὑπὸ Δελφῶν καλέεται Γυγάδας ἐπὶ τοῦ ἀναθέντος ἐπωνυμίην.",
+  "e": ""
+ },
+ {
+  "k": "114c25da8c6d3d65",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐσέβαλε μέν νυν στρατιὴν καὶ οὗτος ἐπείτε ἦρξε ἔς τε Μίλητον καὶ ἐς Σμύρνην, καὶ Κολοφῶνος τὸ ἄστυ εἷλε· ἀλλʼ οὐδὲν γὰρ μέγα ἀπʼ αὐτοῦ ἄλλο ἔργον ἐγένετο βασιλεύσαντος δυῶν δέοντα τεσσεράκοντα ἔτεα, τοῦτον μὲν παρήσομεν τοσαῦτα ἐπιμνησθέντες, Ἄρδυος δὲ τοῦ Γύγεω μετὰ Γύγην βασιλεύσαντος μνήμην ποιήσομαι. οὗτος δὲ Πριηνέας τε εἷλε ἐς Μίλητόν τε ἐσέβαλε, ἐπὶ τούτου τε τυραννεύοντος Σαρδίων Κιμμέριοι ἐξ ἠθέων ὑπὸ Σκυθέων τῶν νομάδων ἐξαναστάντες ἀπίκοντο ἐς τὴν Ἀσίην καὶ Σάρδις πλὴν τῆς ἀκροπόλιος εἷλον.",
+  "e": "As soon as Gyges came to the throne, he too, like others, led an army into the lands of Miletus [27.3,37.5] (Perseus) Miletus and Smyrna [27.1667,38.4167] (Perseus) Smyrna ; and he took the city of Colophon [27.1333,38.1167] (Perseus) Colophon . But as he did nothing else great in his reign of thirty-eight years, I shall say no more of him, and shall speak instead of Ardys son of Gyges, who succeeded him. He took Priene [27.2833,37.6333] (Perseus) Priene and invaded the country of Miletus [27.3,37.5] (Perseus) Miletus ; and it was while he was monarch of Sardis [28.0167,38.475] (Perseus) Sardis that the Cimmerians, driven from their homes by the nomad Scythians, came into Asia (continent) Asia , and took Sardis [28.0167,38.475] (Perseus) Sardis , all but the acropolis. Ardys reigned for forty-nine years and was succeeded by his son Sadyattes, who reigned for twelve years; and after Sadyattes came Alyattes,"
+ },
+ {
+  "k": "7b14e2f29afad876",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Ἄρδυος δὲ βασιλεύσαντος ἑνὸς δέοντα πεντήκοντα ἔτεα ἐξεδέξατο Σαδυάττης ὁ Ἄρδυος, καὶ ἐβασίλευσε ἔτεα δυώδεκα, Σαδυάττεω δὲ Ἀλυάττης.",
+  "e": ""
+ },
+ {
+  "k": "50dc55fce40556eb",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὗτος δὲ Κυαξάρῃ τε τῷ Δηιόκεω ἀπογόνῳ ἐπολέμησε καὶ Μήδοισι, Κιμμερίους τε ἐκ τῆς Ἀσίης ἐξήλασε, Σμύρνην τε τὴν ἀπὸ Κολοφῶνος κτισθεῖσαν εἷλε, ἐς Κλαζομενάς τε ἐσέβαλε. ἀπὸ μέν νυν τούτων οὐκ ὡς ἤθελε ἀπήλλαξε, ἀλλὰ προσπταίσας μεγάλως· ἄλλα δὲ ἔργα ἀπεδέξατο ἐὼν ἐν τῇ ἀρχῇ ἀξιαπηγητότατα τάδε.",
+  "e": "who waged war against Deioces' descendant Cyaxares and the Medes, drove the Cimmerians out of Asia (continent) Asia , took Smyrna [27.1667,38.4167] (Perseus) Smyrna (which was a colony from Colophon [27.1333,38.1167] (Perseus) Colophon ), and invaded the lands of Klazomenai [26.7833,38.3167] (Perseus) Clazomenae . But he did not return from these as he wished, but with great disaster. Of other deeds done by him in his reign, these were the most notable:"
+ },
+ {
+  "k": "0dbfdff7ea2d1a0c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐπολέμησε Μιλησίοισι, παραδεξάμενος τὸν πόλεμον παρὰ τοῦ πατρός. ἐπελαύνων γὰρ ἐπολιόρκεε τὴν Μίλητον τρόπῳ τοιῷδε· ὅκως μὲν εἴη ἐν τῇ γῇ καρπὸς ἁδρός, τηνικαῦτα ἐσέβαλλε τὴν στρατιήν· ἐστρατεύετο δὲ ὑπὸ συρίγγων τε καὶ πηκτίδων καὶ αὐλοῦ γυναικηίου τε καὶ ἀνδρηίου.",
+  "e": "He continued the war against the Milesians which his father had begun. This was how he attacked and besieged Miletus [27.3,37.5] (Perseus) Miletus : he sent his army, marching to the sound of pipes and harps and bass and treble flutes, to invade when the crops in the land were ripe;"
+ },
+ {
+  "k": "e9ce63de36a1fb2f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὡς δὲ ἐς τὴν Μιλησίην ἀπίκοιτο, οἰκήματα μὲν τὰ ἐπὶ τῶν ἀγρῶν οὔτε κατέβαλλε οὔτε ἐνεπίμπρη οὔτε θύρας ἀπέσπα, ἔα δὲ κατὰ χώρην ἑστάναι· ὁ δὲ τὰ τε δένδρεα καὶ τὸν καρπὸν τὸν ἐν τῇ γῇ ὅκως διαφθείρειε, ἀπαλλάσσετο ὀπίσω.",
+  "e": "and whenever he came to the Milesian territory, he neither demolished nor burnt nor tore the doors off the country dwellings, but let them stand unharmed; but he destroyed the trees and the crops of the land, and so returned to where he came from;"
+ },
+ {
+  "k": "f796be74a46e9cc1",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τῆς γὰρ θαλάσσης οἱ Μιλήσιοι ἐπεκράτεον, ὥστε ἐπέδρης μὴ εἶναι ἔργον τῇ στρατιῇ. τὰς δὲ οἰκίας οὐ κατέβαλλε ὁ Λυδὸς τῶνδε εἵνεκα, ὅκως ἔχοιεν ἐνθεῦτεν ὁρμώμενοι τὴν γῆν σπείρειν τε καὶ ἐργάζεσθαι οἱ Μιλήσιοι, αὐτὸς δὲ ἐκείνων ἐργαζομένων ἔχοι τι καὶ σίνεσθαι ἐσβάλλων.",
+  "e": "for as the Milesians had command of the sea, it was of no use for his army to besiege their city. The reason that the Lydian did not destroy the houses was this: that the Milesians might have homes from which to plant and cultivate their land, and that there might be the fruit of their toil for his invading army to lay waste."
+ },
+ {
+  "k": "53a35699dfa53559",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα ποιέων ἐπολέμεε ἔτεα ἕνδεκα, ἐν τοῖσι τρώματα μεγάλα διφάσια Μιλησίων ἐγένετο, ἔν τε Λιμενηίῳ χώρης τῆς σφετέρης μαχεσαμένων καὶ ἐν Μαιάνδρου πεδίῳ.",
+  "e": "He waged war in this way for eleven years, and in these years two great disasters overtook the Milesians, one at the battle of Limeneion in their own territory, and the other in the valley of the Buyukmenderes Nehri [27.183,37.466] (river), Turkey, Asia Maeander ."
+ },
+ {
+  "k": "6ca5779dac129826",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὰ μέν νυν ἓξ ἔτεα τῶν ἕνδεκα Σαδυάττης ὁ Ἄρδυος ἔτι Λυδῶν ἦρχε, ὁ καὶ ἐσβάλλων τηνικαῦτα ἐς τὴν Μιλησίην τὴν στρατιήν· Σαδυάττης οὗτος γὰρ καὶ ὁ τὸν πόλεμον ἦν συνάψας· τὰ δὲ πέντε τῶν ἐτέων τὰ ἑπόμενα τοῖσι ἓξ Ἀλυάττης ὁ Σαδυάττεω ἐπολέμεε, ὃς παραδεξάμενος, ὡς καὶ πρότερον μοι δεδήλωται, παρὰ τοῦ πατρὸς τὸν πόλεμον προσεῖχε ἐντεταμένως.",
+  "e": "For six of these eleven years Sadyattes son of Ardys was still ruler of Lydia [27.516,38.683] (region (general)), Turkey, Asia Lydia , and it was he who invaded the lands of Miletus [27.3,37.5] (Perseus) Miletus , for it was he who had begun the war; for the following five the war was waged by Sadyattes' son Alyattes, who, as I have indicated before, inherited the war from his father and carried it on vigorously."
+ },
+ {
+  "k": "358728a0f3528d53",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τοῖσι δὲ Μιλησίοισι οὐδαμοὶ Ἰώνων τὸν πόλεμον τοῦτον συνεπελάφρυνον ὅτι μὴ Χῖοι μοῦνοι. οὗτοι δὲ τὸ ὅμοιον ἀνταποδιδόντες ἐτιμώρεον· καὶ γὰρ δὴ πρότερον οἱ Μιλήσιοι τοῖσι Χίοισι τὸν πρὸς Ἐρυθραίους πόλεμον συνδιήνεικαν.",
+  "e": "None of the Ionians helped to lighten this war for the Milesians, except the Chians: these lent their aid in return for a similar service done for them; for the Milesians had previously helped the Chians in their war against the Erythraeans."
+ },
+ {
+  "k": "0fb6571f29b641d0",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τῷ δὲ δυωδεκάτῳ ἔτεϊ ληίου ἐμπιπραμένου ὑπὸ τῆς στρατιῆς συνηνείχθη τι τοιόνδε γενέσθαι πρῆγμα· ὡς ἅφθη τάχιστα τὸ λήιον, ἀνέμῳ βιώμενον ἅψατο νηοῦ Ἀθηναίης ἐπίκλησιν Ἀσσησίης, ἁφθεὶς δὲ ὁ νηὸς κατεκαύθη.",
+  "e": "In the twelfth year, when the Lydian army was burning the crops, the fire set in the crops, blown by a strong wind, caught the temple of Athena called Athena of Assesos, and the temple burned to the ground."
+ },
+ {
+  "k": "2e5552156acdebba",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "καὶ τὸ παραυτίκα μὲν λόγος οὐδεὶς ἐγένετο, μετὰ δὲ τῆς στρατιῆς ἀπικομένης ἐς Σάρδις ἐνόσησε ὁ Ἀλυάττης. μακροτέρης δέ οἱ γινομένης τῆς νούσου πέμπει ἐς Δελφοὺς θεοπρόπους, εἴτε δὴ συμβουλεύσαντός τευ, εἴτε καὶ αὐτῷ ἔδοξε πέμψαντα τὸν θεὸν ἐπειρέσθαι περὶ τῆς νούσου.",
+  "e": "For the present no notice was taken of this. But after the army had returned to Sardis [28.0167,38.475] (Perseus) Sardis , Alyattes fell ill; and, as his sickness lasted longer than it should, he sent to Delphi [22.5167,38.4917] (Perseus) Delphi to inquire of the oracle, either at someone's urging or by his own wish to question the god about his sickness."
+ },
+ {
+  "k": "85008748708f86d8",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τοῖσι δὲ ἡ Πυθίη ἀπικομένοισι ἐς Δελφοὺς οὐκ ἔφη χρήσειν πρὶν ἢ τὸν νηὸν τῆς Ἀθηναίης ἀνορθώσωσι, τὸν ἐνέπρησαν χώρης τῆς Μιλησίης ἐν Ἀσσησῷ.",
+  "e": "But when the messengers came to Delphi [22.5167,38.4917] (Perseus) Delphi , the Pythian priestess would not answer them before they restored the temple of Athena at Assesos in the Milesian territory, which they had burnt."
+ },
+ {
+  "k": "8f2cd1a8f138f4be",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Δελφῶν οἶδα ἐγὼ οὕτω ἀκούσας γενέσθαι· Μιλήσιοι δὲ τάδε προστιθεῖσι τούτοισι, Περίανδρον τὸν Κυψέλου ἐόντα Θρασυβούλῳ τῷ τότε Μιλήτου τυραννεύοντι ξεῖνον ἐς τὰ μάλιστα, πυθόμενον τὸ χρηστήριον τὸ τῷ Ἀλυάττῃ γενόμενον, πέμψαντα ἄγγελον κατειπεῖν, ὅκως ἄν τι προειδὼς πρὸς τὸ παρεὸν βουλεύηται.",
+  "e": "I know this much to be so because the Delphians told me. The Milesians add that Periander son of Cypselus, a close friend of the Thrasybulus who then was sovereign of Miletus [27.3,37.5] (Perseus) Miletus , learned what reply the oracle had given to Alyattes, and sent a messenger to tell Thrasybulus so that his friend, forewarned, could make his plans accordingly."
+ },
+ {
+  "k": "e32e583ba48a19ed",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Μιλήσιοι μέν νυν οὕτω λέγουσι γενέσθαι. Ἀλυάττης δέ, ὡς οἱ ταῦτα ἐξαγγέλθη, αὐτίκα ἔπεμπε κήρυκα ἐς Μίλητον βουλόμενος σπονδὰς ποιήσασθαι Θρασυβούλῳ τε καὶ Μιλησίοισι χρόνον ὅσον ἂν τὸν νηὸν οἰκοδομέῃ. ὃ μὲν δὴ ἀπόστολος ἐς τὴν Μίλητον ἦν, Θρασύβουλος δὲ σαφέως προπεπυσμένος πάντα λόγον, καὶ εἰδὼς τὰ Ἀλυάττης μέλλοι ποιήσειν, μηχανᾶται τοιάδε·",
+  "e": "The Milesians say it happened so. Then, when the Delphic reply was brought to Alyattes, he promptly sent a herald to Miletus [27.3,37.5] (Perseus) Miletus , offering to make a truce with Thrasybulus and the Milesians during his rebuilding of the temple. So the envoy went to Miletus [27.3,37.5] (Perseus) Miletus . But Thrasybulus, forewarned of the whole matter, and knowing what Alyattes meant to do, devised the following plan:"
+ },
+ {
+  "k": "7019002ac35c74f4",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὅσος ἦν ἐν τῷ ἄστεϊ σῖτος καὶ ἑωυτοῦ καὶ ἰδιωτικός, τοῦτον πάντα συγκομίσας ἐς τὴν ἀγορὴν προεῖπε Μιλησίοισι, ἐπεὰν αὐτὸς σημήνῃ, τότε πίνειν τε πάντας καὶ κώμῳ χρᾶσθαι ἐς ἀλλήλους.",
+  "e": "he brought together into the marketplace all the food in the city, from private stores and his own, and told the men of Miletus [27.3,37.5] (Perseus) Miletus all to drink and celebrate together when he gave the word."
+ },
+ {
+  "k": "04757a8dac2c01c2",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ταῦτα δὲ ἐποίεέ τε καὶ προηγόρευε Θρασύβουλος τῶνδε εἵνεκεν, ὅκως ἂν δὴ ὁ κῆρυξ ὁ Σαρδιηνὸς ἰδών τε σωρὸν μέγαν σίτου κεχυμένον καὶ τοὺς ἀνθρώπους ἐν εὐπαθείῃσι ἐόντας ἀγγείλῃ Ἀλυάττῃ·",
+  "e": "Thrasybulus did this so that when the herald from Sardis [28.0167,38.475] (Perseus) Sardis saw a great heap of food piled up, and the citizens celebrating, he would bring word of it to Alyattes:"
+ },
+ {
+  "k": "fba96b46ba6afce9",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τὰ δὴ καὶ ἐγένετο. ὡς γὰρ δὴ ἰδών τε ἐκεῖνα ὁ κῆρυξ καὶ εἶπας πρὸς Θρασύβουλον τοῦ Λυδοῦ τὰς ἐντολὰς ἀπῆλθε ἐς τὰς Σάρδις, ὡς ἐγὼ πυνθάνομαι, διʼ οὐδὲν ἄλλο ἐγένετο ἡ διαλλαγή.",
+  "e": "and so it happened. The herald saw all this, gave Thrasybulus the message he had been instructed by the Lydian to deliver, and returned to Sardis [28.0167,38.475] (Perseus) Sardis ; and this, as I learn, was the sole reason for the reconciliation."
+ },
+ {
+  "k": "d76fe37dd6f75f6e",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἐλπίζων γὰρ ὁ Ἀλυάττης σιτοδείην τε εἶναι ἰσχυρὴν ἐν τῇ Μιλήτῳ καὶ τὸν λεὼν τετρῦσθαι ἐς τὸ ἔσχατον κακοῦ, ἤκουε τοῦ κήρυκος νοστήσαντος ἐκ τῆς Μιλήτου τοὺς ἐναντίους λόγους ἢ ὡς αὐτὸς κατεδόκεε.",
+  "e": "For Alyattes had supposed that there was great scarcity in Miletus [27.3,37.5] (Perseus) Miletus and that the people were reduced to the last extremity of misery; but now on his herald's return from the town he heard an account contrary to his expectations;"
+ },
+ {
+  "k": "82239a1fa119aaed",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "μετὰ δὲ ἥ τε διαλλαγή σφι ἐγένετο ἐπʼ ᾧ τε ξείνους ἀλλήλοισι εἶναι καὶ συμμάχους, καὶ δύο τε ἀντὶ ἑνὸς νηοὺς τῇ Ἀθηναίῃ οἰκοδόμησε ὁ Ἀλυάττης ἐν τῇ Ἀσσησῷ, αὐτός τε ἐκ τῆς νούσου ἀνέστη. κατὰ μέν τὸν πρὸς Μιλησίους τε καὶ Θρασύβουλον πόλεμον Ἀλυάττῃ ὧδε ἔσχε.",
+  "e": "so presently the Lydians and Milesians ended the war and agreed to be friends and allies, and Alyattes built not one but two temples of Athena at Assesos, and recovered from his illness. That is the story of Alyattes' war against Thrasybulus and the Milesians."
+ },
+ {
+  "k": "f418350777c5e11c",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "Περίανδρος δὲ ἦν Κυψέλου παῖς οὗτος ὁ τῷ Θρασυβούλῳ τὸ χρηστήριον μηνύσας· ἐτυράννευε δὲ ὁ Περίανδρος Κορίνθου· τῷ δὴ λέγουσι Κορίνθιοι (ὁμολογέουσι δέ σφι Λέσβιοι) ἐν τῷ βίῳ θῶμα μέγιστον παραστῆναι, Ἀρίονα τὸν Μηθυμναῖον ἐπὶ δελφῖνος ἐξενειχθέντα ἐπὶ Ταίναρον, ἐόντα κιθαρῳδὸν τῶν τότε ἐόντων οὐδενὸς δεύτερον, καὶ διθύραμβον πρῶτον ἀνθρώπων τῶν ἡμεῖς ἴδμεν ποιήσαντά τε καὶ ὀνομάσαντα καὶ διδάξαντα ἐν Κορίνθῳ.",
+  "e": "Periander, who disclosed the oracle's answer to Thrasybulus, was the son of Cypselus, and sovereign of Corinth [22.9083,37.9083] (Perseus) Corinth . The Corinthians say (and the Lesbians agree) that the most marvellous thing that happened to him in his life was the landing on Taenarus of Arion of Methymna [26.2,39.3333] (Perseus) Methymna , brought there by a dolphin. This Arion was a lyre-player second to none in that age; he was the first man whom we know to compose and name the dithyramb which he afterwards taught at Corinth [22.9083,37.9083] (Perseus) Corinth ."
+ },
+ {
+  "k": "c7d468890ba896bd",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "τοῦτον τὸν Ἀρίονα λέγουσι, τὸν πολλὸν τοῦ χρόνου διατρίβοντα παρὰ Περιάνδρῳ ἐπιθυμῆσαι πλῶσαι ἐς Ἰταλίην τε καὶ Σικελίην, ἐργασάμενον δὲ χρήματα μεγάλα θελῆσαι ὀπίσω ἐς Κόρινθον ἀπικέσθαι.",
+  "e": ""
+ },
+ {
+  "k": "3543da1b9311abca",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ὁρμᾶσθαι μέν νυν ἐκ Τάραντος, πιστεύοντα δὲ οὐδαμοῖσι μᾶλλον ἢ Κορινθίοισι μισθώσασθαι πλοῖον ἀνδρῶν Κορινθίων. τοὺς δὲ ἐν τῷ πελάγεϊ ἐπιβουλεύειν τὸν Ἀρίονα ἐκβαλόντας ἔχειν τὰ χρήματα. τὸν δὲ συνέντα τοῦτο λίσσεσθαι, χρήματα μὲν σφι προϊέντα, ψυχὴν δὲ παραιτεόμενον.",
+  "e": "They say that this Arion, who spent most of his time with Periander, wished to sail to Italy [12.833,42.833] (nation), Europe Italy and Sicily [14,37.5] (region), Italy, Europe Sicily , and that after he had made a lot of money there he wanted to come back to Corinth [22.9083,37.9083] (Perseus) Corinth ."
+ },
+ {
+  "k": "1cb77cf97575103f",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "οὔκων δὴ πείθειν αὐτὸν τούτοισι, ἀλλὰ κελεύειν τοὺς πορθμέας ἢ αὐτὸν διαχρᾶσθαί μιν, ὡς ἂν ταφῆς ἐν γῇ τύχῃ, ἢ ἐκπηδᾶν ἐς τὴν θάλασσαν τὴν ταχίστην·",
+  "e": "Trusting none more than the Corinthians, he hired a Corinthian vessel to carry him from Taranto [17.216,40.466] (inhabited place), Taranto, Apulia, Italy, Europe Tarentum . But when they were out at sea, the crew plotted to take Arion's money and cast him overboard. Discovering this, he earnestly entreated them, asking for his life and offering them his money."
+ },
+ {
+  "k": "c733fbefc802ecee",
+  "ctx": "希罗多德《历史》· 卷 1",
+  "g": "ἀπειληθέντα δὴ τὸν Ἀρίονα ἐς ἀπορίην παραιτήσασθαι, ἐπειδή σφι οὕτω δοκέοι, περιιδεῖν αὐτὸν ἐν τῇ σκευῇ πάσῃ στάντα ἐν τοῖσι ἑδωλίοισι ἀεῖσαι· ἀείσας δὲ ὑπεδέκετο ἑωυτὸν κατεργάσασθαι.",
+  "e": "But the crew would not listen to him, and told him either to kill himself and so receive burial on land or else to jump into the sea at once."
+ }
+]

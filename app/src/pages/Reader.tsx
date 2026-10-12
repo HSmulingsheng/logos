@@ -1,15 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { NtBook, NtVerse, Word } from '../types'
 import { useStore } from '../store/useStore'
-import { getWord, loadBook, loadManifest } from '../lib/data'
-import { foldGreek } from '../lib/greek'
+import { loadBook, loadManifest } from '../lib/data'
 import { playAudio } from '../lib/audio'
+import { ClickableGreek } from '../components/ClickableGreek'
 import { SpeakSentence } from '../components/SpeakSentence'
+import { useWordLookup } from '../lib/wordLookup'
 import { loadPos, savePos } from '../lib/readerPos'
 import { Icon, Sheet, LevelTag } from '../components/ui'
 import { SpeakButton, WordDetail } from '../components/WordDetail'
-
-interface LookupHit { wordId: number; lesson: number; word: string }
 
 export function Reader({
   onExit, initialBookIdx, initialChapter,
@@ -24,25 +23,15 @@ export function Reader({
   const [chapter, setChapter] = useState(initialChapter ?? start.chapter)
   const [book, setBook] = useState<NtBook | null>(null)
   const [showZh, setShowZh] = useState(true)
-  const [detail, setDetail] = useState<Word | null>(null)
   const [loading, setLoading] = useState(false)
-  const [formIndex, setFormIndex] = useState<Record<string, [number, number]>>({})
   const [manifestLocal, setManifestLocal] = useState(manifest)
-  const [cursorWord, setCursorWord] = useState<string | null>(null)
+  // 点词查义与哲学/文学/历史共用同一套实现（见 lib/wordLookup.ts）
+  const { lookup, detail, setDetail } = useWordLookup()
+  const cursorWord = detail?.w ?? null
 
   useEffect(() => {
     if (!manifestLocal) void loadManifest().then(setManifestLocal)
   }, [manifestLocal])
-
-  // 词形 -> 词条 反查索引（由 data/formindex.json 提供）
-  useEffect(() => {
-    void (async () => {
-      try {
-        const res = await fetch(`${import.meta.env.BASE_URL || './'}data/formindex.json`)
-        if (res.ok) setFormIndex(await res.json())
-      } catch { /* 忽略：没有索引时退化为整词匹配 */ }
-    })()
-  }, [])
 
   const books = manifestLocal?.books ?? []
 
@@ -69,28 +58,6 @@ export function Reader({
   )
 
   useEffect(() => { savePos({ bookIdx, chapter }) }, [bookIdx, chapter])
-
-  const lookup = async (token: string) => {
-    const clean = token.replace(/[^\p{Script=Greek}]/gu, '')
-    if (!clean) return
-    setCursorWord(clean)
-    const key = foldGreek(clean)
-    const hit = formIndex[key]
-    if (hit) {
-      const [id, lesson] = hit
-      const w = await getWord(id, lesson)
-      if (w) { setDetail(w); playAudio(w.au, w.w); return }   // 打开即朗读，之后按 R 重放
-    }
-    // 退化为「首几个字母相同」的候选（取前 4 个字母）
-    const stem = key.slice(0, Math.max(3, Math.floor(key.length * 0.6)))
-    const cand = Object.entries(formIndex).find(([k]) => k.startsWith(stem))
-    if (cand) {
-      const [id, lesson] = cand[1]
-      const w = await getWord(id, lesson)
-      if (w) { setDetail(w); playAudio(w.au, w.w); return }   // 打开即朗读，之后按 R 重放
-    }
-    setDetail(null)
-  }
 
   return (
     <div className="fixed inset-0 z-40 flex flex-col bg-ink-50/95 backdrop-blur-xl dark:bg-ink-950/95">
@@ -175,7 +142,6 @@ export function Reader({
 }
 
 function VerseBlock({ verse, showZh, onWord }: { verse: NtVerse; showZh: boolean; onWord: (w: string) => void }) {
-  const toks = verse.g.split(/\s+/)
   return (
     <div className="mb-4 border-b border-ink-100 pb-4 last:border-0 dark:border-white/10">
       <div className="mb-1 flex items-center gap-2">
@@ -184,19 +150,7 @@ function VerseBlock({ verse, showZh, onWord }: { verse: NtVerse; showZh: boolean
         </span>
         <SpeakSentence text={verse.g} className="ml-auto !h-6 !w-6" />
       </div>
-      <p className="greek text-[19px] leading-loose">
-        {toks.map((t, i) => (
-          <span key={i}>
-            <button
-              className="rounded px-0.5 transition hover:bg-aegean-100 hover:text-aegean-900 dark:hover:bg-aegean-900/50"
-              onClick={() => void onWord(t)}
-            >
-              {t}
-            </button>
-            {i < toks.length - 1 ? ' ' : ''}
-          </span>
-        ))}
-      </p>
+      <ClickableGreek text={verse.g} onWord={onWord} className="text-[19px] leading-loose" />
       {showZh && <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{verse.z}</p>}
     </div>
   )

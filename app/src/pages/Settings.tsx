@@ -296,6 +296,7 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
         <div className="card-surface space-y-2 p-4 text-xs leading-relaxed text-ink-500">
           <p><b className="text-ink-700 dark:text-ink-200">词表</b>：你自己的 Anki 牌组「Ancient Greek Vocab」，15,686 个 Koine / 古典希腊语词条。</p>
           <p><b className="text-ink-700 dark:text-ink-200">例句</b>：SBLGNT（MorphGNT 词法标注，CC BY-SA 3.0）；中文为和合本（公有领域）；古典语料来自 GLAUx v2.1。</p>
+          <p><b className="text-ink-700 dark:text-ink-200">词典释义</b>：Liddell-Scott-Jones《A Greek-English Lexicon》（9th ed.），数字版来自 Perseus Digital Library（<b>CC BY-SA 4.0</b>，署名 + 相同方式共享）。覆盖 15,288 个词条中的 14,781 个，其余回退到牌组原释义。</p>
           <p><b className="text-ink-700 dark:text-ink-200">语法与教材例句</b>：Smyth, <i>A Greek Grammar for Colleges</i>（1920，<b>公有领域</b>）；希腊字母与读音按重构音系。</p>
           <p><b className="text-ink-700 dark:text-ink-200">发音</b>：词条音频由 eSpeak-NG 生成。例句发音有两种引擎——「轻量」用 eSpeak（内置 24MB），「高清」用 Meta MMS-TTS 神经语音（首次需下载 128MB，音质接近真人），都在浏览器里实时合成，不预存音频。</p>
           <p><b className="text-ink-700 dark:text-ink-200">授权提示</b>：高清语音模型为 <b>CC-BY-NC 4.0（非商用）</b>，本项目整体为 GPL-3.0；商用请把引擎切回「轻量」。</p>
