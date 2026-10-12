@@ -261,7 +261,14 @@ def build(work_id: str, info: dict) -> dict | None:
 
     verse = any(has_verse(c) for c in grc_top[:3])
     chapters = []
+    epi_n = 0
+    choral_n = 0
     for i, c in enumerate(grc_top):
+        sub_i = (c.get("subtype") or "").lower()
+        if sub_i == "episode":
+            epi_n += 1
+        elif sub_i in ("choral", "kommos", "parodos", "exodos"):
+            choral_n += 1
         n = c.get("n") or ""
         eng = eng_by_n.get(n) if n else None
         if eng is None and len(eng_top) == len(grc_top):
@@ -297,8 +304,29 @@ def build(work_id: str, info: dict) -> dict | None:
         gtext = " ".join(p["g"] for p in paras)
         if len(gtext) < 20:
             continue
-        label = f"卷 {n}" if c.get("subtype", "").lower() in ("book",) else (f"第 {n} 节" if n else "全文")
-        chapters.append({"n": n, "label": label, "paras": paras})
+        # 章节标签。古典作品的层级含义差别很大：史书/史诗是「卷」，柏拉图是
+        # 「节」，而悲剧用的是 episode / strophe / antistrophe / choral 这套戏剧结构，
+        # 且这些 div 的 n 常为空——曾经一律兜底成「全文」，于是《俄狄浦斯王》的
+        # 章节列表出现 15 个一模一样的「全文」按钮。
+        sub = (c.get("subtype") or "").lower()
+        if sub == "book":
+            label = f"卷 {n}" if n else f"卷 {len(chapters) + 1}"
+        elif sub == "episode":
+            label = f"第 {epi_n} 场"
+        elif sub in ("strophe", "antistrophe"):
+            side = "正" if sub == "strophe" else "反"
+            label = f"第 {n} 曲（{side}）" if n else f"合唱歌（{side}）"
+        elif sub in ("choral", "kommos", "parodos", "exodos"):
+            base = {"choral": "合唱歌", "kommos": "哀歌", "parodos": "进场歌", "exodos": "退场"}[sub]
+            # 悲剧里合唱歌有好几段，不编号就会出现一串相同的「合唱歌」按钮
+            label = f"第 {choral_n} {base}" if choral_n else base
+        elif sub == "close":
+            label = "收场"
+        elif n:
+            label = f"第 {n} 节"
+        else:
+            label = f"第 {len(chapters) + 1} 部分"
+        chapters.append({"n": n, "label": label, "paras": paras, "subtype": sub})
 
     if not chapters:
         return None
