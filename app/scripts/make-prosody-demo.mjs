@@ -14,7 +14,7 @@
  */
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { planAccent } from '../src/lib/prosody'
+import { planAccent, restoreAncientPhonetics } from '../src/lib/prosody'
 import { pitchMarks, pitchTrack, tdPsola } from '../src/lib/psola'
 
 const OUT = process.argv[2] || '研究/ts-prosody'
@@ -65,9 +65,11 @@ const medF0 = (x) => {
   return v.length ? v[v.length >> 1] : 0
 }
 
-/** 三列处理：原始 / 恒等 / 改造后 */
-function processTriple(text, amp = 1) {
-  const { x, events } = synth(text)
+/** 四列处理：原始 / 恒等 / 音高重音 / 音高重音＋古音还原 */
+function processQuad(text, amp = 1) {
+  const restored = restoreAncientPhonetics(text)
+  const { x, events } = synth(text)           // 原始（未还原）
+  const { x: xr, events: evr } = synth(restored)  // 还原古音后的合成
   const dur = x.length / SR
   const { f0 } = pitchTrack(x, SR)
   const voiced = f0.filter((v) => v > 0).sort((a, b) => a - b)
@@ -83,11 +85,20 @@ function processTriple(text, amp = 1) {
   idPts.sort((a, b) => a[0] - b[0])
   const yId = tdPsola(x, SR, idPts, { marks })
 
-  // ③ 改造后：用真实的重音调型
+  // ③ 只加音高重音
   const plan = planAccent(events, text, dur, base, amp)
   const yFix = tdPsola(x, SR, plan.points, { marks })
 
-  return { x, yId, yFix, base, roles: plan.roles, dur }
+  // ④ 音高重音 + 古音还原（送气塞音 φθχ、ζ=[zd]）
+  const durR = xr.length / SR
+  const tr2 = pitchTrack(xr, SR)
+  const v2 = tr2.f0.filter((v) => v > 0).sort((a, b) => a - b)
+  const base2 = v2.length ? v2[v2.length >> 1] : 110
+  const mk2 = pitchMarks(xr, SR, 70, 400, tr2).marks
+  const plan2 = planAccent(evr, restored, durR, base2, amp)
+  const yRest = tdPsola(xr, SR, plan2.points, { marks: mk2, durAnchors: plan2.durAnchors })
+
+  return { x, yId, yFix, yRest, xr, base, roles: plan.roles, dur, restored }
 }
 
 const CASES = [
@@ -108,14 +119,15 @@ const CASES = [
 const rows = []
 console.log('生成对比音频…')
 for (const [id, text, note] of CASES) {
-  const r = processTriple(text)
+  const r = processQuad(text)
   writeFileSync(join(OUT, `${id}_1orig.wav`), wav(r.x, SR))
   writeFileSync(join(OUT, `${id}_2ident.wav`), wav(r.yId, SR))
   writeFileSync(join(OUT, `${id}_3fixed.wav`), wav(r.yFix, SR))
-  const f0o = medF0(r.x), f0i = medF0(r.yId), f0f = medF0(r.yFix)
+  writeFileSync(join(OUT, `${id}_4restored.wav`), wav(r.yRest, SR))
+  const f0o = medF0(r.x), f0i = medF0(r.yId), f0f = medF0(r.yFix), f0r = medF0(r.yRest)
   const accents = r.roles.map((x) => `${x.ipa}:${x.accent}`).join(' ')
-  rows.push({ id, text, note, f0o, f0i, f0f, dur: r.dur, base: r.base, accents })
-  console.log(`  ${text.slice(0, 24).padEnd(26)} F0 ${f0o.toFixed(0)} / ${f0i.toFixed(0)} / ${f0f.toFixed(0)} Hz`)
+  rows.push({ id, text, restored: r.restored, note, f0o, f0i, f0f, f0r, dur: r.dur, base: r.base, accents })
+  console.log(`  ${text.slice(0, 22).padEnd(24)} F0 ${f0o.toFixed(0)} / ${f0i.toFixed(0)} / ${f0f.toFixed(0)} / ${f0r.toFixed(0)} Hz`)
 }
 
 // ---------------------------------------------------------------- 试听页
@@ -139,11 +151,15 @@ const html = `<!doctype html>
 </style></head><body>
 <h1>音高重音改造 · A/B 试听</h1>
 <p class="lead">eSpeak 的 grc 语音<strong>完全没有实现古希腊语的音高重音</strong>：<span class="g">φῶς</span> 与 <span class="g">φώς</span> 的输出逐字符相同，整词 F0 差 0.1 Hz。这里用 TD-PSOLA 在波形上补出阿提卡调型。</p>
+<div class="warn" style="background:#eff9ff;border-left-color:#06a3f0">
+<b>④ 是「还原古音」</b>：eSpeak 的希腊语音素表继承自现代希腊语，把 φ θ χ 读成擦音 [f θ x]、ζ 读成 [z]，
+而阿提卡重建是送气塞音 [pʰ tʰ kʰ] 与 [zd]。④ 用纯文本替换（φ→πɦ 等）触发正确的音素，无需重编译 WASM。
+请重点对比 ③ 与 ④ 里的 <span class="greek">φῶς</span> <span class="greek">θεός</span> <span class="greek">Ζεύς</span>。</div>
 <div class="warn"><b>请按这个顺序听：</b>先比 <b>①原始</b> 与 <b>②恒等</b>（两者应当几乎听不出差别，说明 PSOLA 本身没引入明显损失）；
 <b>再比 ②恒等 与 ③改造后</b>——这一对的差别才是重音改造带来的。<br>
 直接比 ① 与 ③ 会把「重新合成的固有损失」误当成改进。</div>
 <table>
-<thead><tr><th style="width:26%">词／句</th><th style="width:25%">① 原始 eSpeak</th><th style="width:25%">② 恒等 PSOLA</th><th style="width:24%">③ 音高重音改造后</th></tr></thead>
+<thead><tr><th style="width:20%">词／句</th><th style="width:20%">① 原始 eSpeak</th><th style="width:19%">② 恒等 PSOLA</th><th style="width:20%">③ 音高重音</th><th style="width:21%">④ 音高重音＋<b>古音还原</b></th></tr></thead>
 <tbody>
 ${rows.map((r) => `<tr>
   <td><div class="g">${r.text}</div><div class="note">${r.note}</div>
@@ -151,6 +167,9 @@ ${rows.map((r) => `<tr>
   <td><audio controls preload="none" src="${r.id}_1orig.wav"></audio><div class="hz">F0 中位 ${r.f0o.toFixed(0)} Hz</div></td>
   <td><audio controls preload="none" src="${r.id}_2ident.wav"></audio><div class="hz">F0 中位 ${r.f0i.toFixed(0)} Hz</div></td>
   <td><audio controls preload="none" src="${r.id}_3fixed.wav"></audio><div class="hz">F0 中位 ${r.f0f.toFixed(0)} Hz</div></td>
+  <td><audio controls preload="none" src="${r.id}_4restored.wav"></audio>
+      <div class="hz">F0 中位 ${r.f0r.toFixed(0)} Hz</div>
+      ${r.restored !== r.text ? `<div class="note" style="color:#0082cd">φθχ→送气 · ζ→[zd]</div>` : ''}</td>
 </tr>`).join('\n')}
 </tbody></table>
 <p class="lead" style="margin-top:22px">幅度可在 App 的「我的 → 例句朗读 → 重音幅度」里调。
@@ -158,4 +177,4 @@ ${rows.map((r) => `<tr>
 </body></html>`
 writeFileSync(join(OUT, '试听对比.html'), html)
 console.log(`\n  试听页: ${join(OUT, '试听对比.html')}`)
-console.log(`  共 ${rows.length} 组 × 3 列 = ${rows.length * 3} 个音频`)
+console.log(`  共 ${rows.length} 组 × 4 列 = ${rows.length * 4} 个音频`)

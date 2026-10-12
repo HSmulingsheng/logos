@@ -41,35 +41,52 @@ export function pitchTrack(
   x: Float32Array, sr: number, floor = 70, ceiling = 400,
   hopSec = 0.01, winSec = 0.04,
 ): { times: number[]; f0: number[] } {
-  const hop = Math.max(1, Math.round(hopSec * sr))
-  const win = Math.max(8, Math.round(winSec * sr))
-  const lagMin = Math.max(2, Math.floor(sr / ceiling))
-  const lagMax = Math.min(win - 2, Math.ceil(sr / floor))
+  // ⚠️ 这里**不能降采样**。曾经为了提速把自相关放到降 4 倍的信号上（快 16 倍），
+  //    结果基音标记定位失准：标记数量变多但位置是错的，恒等重建从 1.0000
+  //    掉到 0.11（ἄνθρωπος 甚至从 46 个标记涨到 75 个）。
+  //    提速改用「粗到细的滞后搜索」，精度不受影响（见下）。
+  const y = x
+  const sr2 = sr
+
+  const hop = Math.max(1, Math.round(hopSec * sr2))
+  const win = Math.max(8, Math.round(winSec * sr2))
+  const lagMin = Math.max(2, Math.floor(sr2 / ceiling))
+  const lagMax = Math.min(win - 2, Math.ceil(sr2 / floor))
   const times: number[] = []
   const f0: number[] = []
   const half = win >> 1
 
-  for (let c = 0; c + half < x.length; c += hop) {
+  for (let c = 0; c + half < y.length; c += hop) {
     const a = Math.max(0, c - half)
-    const b = Math.min(x.length, c + half)
+    const b = Math.min(y.length, c + half)
     const n = b - a
-    if (n < lagMax + 2) { times.push(c / sr); f0.push(0); continue }
+    if (n < lagMax + 2) { times.push(c / sr2); f0.push(0); continue }
 
     // 均方根能量太低就判为无声，省掉自相关
     let e = 0
-    for (let i = a; i < b; i++) e += x[i] * x[i]
-    if (Math.sqrt(e / n) < 1e-4) { times.push(c / sr); f0.push(0); continue }
+    for (let i = a; i < b; i++) e += y[i] * y[i]
+    if (Math.sqrt(e / n) < 1e-4) { times.push(c / sr2); f0.push(0); continue }
 
-    let bestLag = 0, bestR = 0
-    for (let lag = lagMin; lag <= lagMax; lag++) {
+    /** 单个滞后上的归一化自相关 */
+    const rAt = (lag: number): number => {
       let num = 0, d1 = 0, d2 = 0
       const m = n - lag
       for (let i = 0; i < m; i++) {
-        const u = x[a + i], v = x[a + i + lag]
+        const u = y[a + i], v = y[a + i + lag]
         num += u * v; d1 += u * u; d2 += v * v
       }
       const den = Math.sqrt(d1 * d2)
-      const r = den > 1e-12 ? num / den : 0
+      return den > 1e-12 ? num / den : 0
+    }
+    // 粗搜（步长 3）定位峰的大致位置，再在 ±3 内逐点细化。
+    // 与逐点全搜的精度相同，但求值次数降到约 1/3。
+    let bestLag = lagMin, bestR = -1
+    for (let lag = lagMin; lag <= lagMax; lag += 3) {
+      const r = rAt(lag)
+      if (r > bestR) { bestR = r; bestLag = lag }
+    }
+    for (let lag = Math.max(lagMin, bestLag - 3); lag <= Math.min(lagMax, bestLag + 3); lag++) {
+      const r = rAt(lag)
       if (r > bestR) { bestR = r; bestLag = lag }
     }
     // 0.42 是「够周期」的门槛；太低会把清音当有声
@@ -88,10 +105,10 @@ export function pitchTrack(
         const dd = r0 - 2 * r1 + r2
         if (Math.abs(dd) > 1e-12) lag = lag + 0.5 * (r0 - r2) / dd
       }
-      times.push(c / sr)
-      f0.push(sr / lag)
+      times.push(c / sr2)
+      f0.push(sr2 / lag)
     } else {
-      times.push(c / sr)
+      times.push(c / sr2)
       f0.push(0)
     }
   }
@@ -111,8 +128,10 @@ export function pitchTrack(
  */
 export function pitchMarks(
   x: Float32Array, sr: number, floor = 70, ceiling = 400,
+  /** 已有的基频轨迹；给了就不重复估计（调用方通常已经算过一次） */
+  precomputed?: { times: number[]; f0: number[] },
 ): PitchAnalysis {
-  const { times, f0 } = pitchTrack(x, sr, floor, ceiling)
+  const { times, f0 } = precomputed ?? pitchTrack(x, sr, floor, ceiling)
 
   // 切出连续有声段。段与段之间是清音/静音，PSOLA 不在那里铺点。
   const segs: [number, number][] = []

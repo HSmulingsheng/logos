@@ -25,8 +25,8 @@ export default function App() {
   useEffect(() => { setSpeechEngine(settings.speechEngine) }, [settings.speechEngine])
   useEffect(() => { setNeuralRate(settings.neuralRate) }, [settings.neuralRate])
   useEffect(() => {
-    setProsody(settings.prosodyAccent, settings.prosodyAmp)
-  }, [settings.prosodyAccent, settings.prosodyAmp])
+    setProsody(settings.prosodyAccent, settings.prosodyAmp, settings.restoreAncient)
+  }, [settings.prosodyAccent, settings.prosodyAmp, settings.restoreAncient])
 
   // 选高清引擎时提前把模型加载好：会话创建要 ~1 秒，
   // 放在用户点击之前做完，点击时就能直接推理

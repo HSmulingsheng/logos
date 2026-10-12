@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Icon, Section, Sheet } from '../../../components/ui'
 import { ClickableGreek } from '../../../components/ClickableGreek'
-import { SpeakSentence } from '../../../components/SpeakSentence'
+import { READ_MODE_HINT, READ_MODE_LABEL, SentenceReader, type ReadMode } from '../../../components/SentencePlayer'
 import { SpeakButton, WordDetail } from '../../../components/WordDetail'
 import { useWordLookup } from '../../../lib/wordLookup'
 import { useStore } from '../../../store/useStore'
@@ -95,7 +95,8 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
   const [lang, setLang] = useState<'zh' | 'en'>('zh')
   const [showTr, setShowTr] = useState(true)
   const { lookup, detail, setDetail, missing, clearMissing } = useWordLookup()
-  const { cards, toggleFav, settings } = useStore()
+  const { cards, toggleFav, settings, saveSettings } = useStore()
+  const set = (patch: Partial<typeof settings>) => void saveSettings(patch)
   /** 本机 AI 翻出来的译文（按段落下标），与内置译文合并显示 */
   const [aiZh, setAiZh] = useState<Record<number, string>>({})
   const [busy, setBusy] = useState<{ done: number; total: number } | null>(null)
@@ -173,6 +174,18 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
       <div className="mb-3 flex items-center justify-between gap-2">
         <span className="text-sm font-medium">{c.label}</span>
         <span className="flex items-center gap-2">
+          <span className="flex gap-0.5 rounded-lg bg-ink-100 p-0.5 dark:bg-white/10" title="朗读方式">
+            {(['sentence', 'continuous', 'paragraph'] as ReadMode[]).map((m) => (
+              <button
+                key={m}
+                className={`rounded-md px-2 py-1 text-[11px] transition ${settings.readMode === m ? 'bg-white font-medium shadow-sm dark:bg-white/15' : 'text-ink-500'}`}
+                title={READ_MODE_HINT[m]}
+                onClick={() => set({ readMode: m })}
+              >
+                {READ_MODE_LABEL[m]}
+              </button>
+            ))}
+          </span>
           <button
             className={`btn-ghost !px-2.5 !py-1.5 ${showTr && lang === 'zh' ? '!bg-aegean-50 !text-aegean-700' : ''}`}
             disabled={!hasZh}
@@ -227,10 +240,14 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
           <div key={i} className="card-surface p-4">
             <div className="mb-1.5 flex items-center gap-2">
               <span className="text-[10px] tabular-nums text-ink-300">{i + 1}</span>
-              <SpeakSentence text={p.g} className="ml-auto !h-6 !w-6" />
             </div>
-            {/* 与宗教同一套组件：19px、逐词可点 */}
-            <ClickableGreek text={p.g} onWord={lookup} className="text-[19px] leading-loose" />
+            {/* 按句切分后逐句朗读：整段一次读完会有「莫名停顿」，也没法精听 */}
+            <SentenceReader
+              text={p.g}
+              mode={settings.readMode as ReadMode}
+              onWord={lookup}
+              className="text-[19px] leading-loose"
+            />
             {showTr && lang === 'zh' && zhAt(i) && (
               <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">
                 {zhAt(i)}

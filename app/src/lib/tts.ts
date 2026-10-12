@@ -8,7 +8,7 @@
  * 授权：eSpeak-NG 是 GPL-3.0，随应用分发会把整体置于 GPL-3.0（见项目根 LICENSE）。
  */
 import { USE_TTS } from './flags'
-import { planAccent, type EspeakEvent } from './prosody'
+import { planAccent, restoreAncientPhonetics, type EspeakEvent } from './prosody'
 import { pitchMarks, pitchTrack, tdPsola } from './psola'
 import { synthNeural, neuralStatus, neuralProgress, onNeuralStatus, getNeuralRate, warmupNeural } from './neuralTts'
 
@@ -209,17 +209,20 @@ function applyProsody(
     const dur = pcm.length / sr
 
     // 基准基频取该句 F0 的中位数（eSpeak 的 pitch=50 大致落在 86~110Hz）
-    const { f0 } = pitchTrack(x, sr)
-    const voiced = f0.filter((v) => v > 0).sort((a, b) => a - b)
+    const track = pitchTrack(x, sr)
+    const voiced = track.f0.filter((v) => v > 0).sort((a, b) => a - b)
     if (!voiced.length) return pcm
     const base = voiced[voiced.length >> 1]
 
     const plan = planAccent(events, text, dur, base, amp)
     if (plan.points.length < 3) return pcm
-    const { marks } = pitchMarks(x, sr)
+    // 复用上面已经算好的轨迹：pitchMarks 内部本来会再估一次，
+    // 在 28s 的段落上那是白白多花 ~800ms
+    const { marks } = pitchMarks(x, sr, 70, 400, track)
     if (marks.length < 3) return pcm
 
-    const y = tdPsola(x, sr, plan.points, { marks })
+    // durAnchors 补足 eSpeak 漏掉的长音（ᾱ/ῑ/ῡ 带 circumflex 时它完全不延长）
+    const y = tdPsola(x, sr, plan.points, { marks, durAnchors: plan.durAnchors })
     const out = new Int16Array(y.length)
     for (let i = 0; i < y.length; i++) {
       out[i] = Math.max(-32768, Math.min(32767, Math.round(y[i] * 32768)))
@@ -234,7 +237,10 @@ function applyProsody(
 export async function synthesize(text: string): Promise<string | null> {
   const t = normalizeForSpeech(text)
   if (!t) return null
-  const key = `${voice}|${rate}|${prosodyOn ? prosodyAmp : 'off'}|${t}`
+  // 还原古音的文本替换（φθχ→送气塞音、ζ→[zd]）：
+  // 必须**同时**用于 eSpeak 合成与韵律设计，否则事件里的 text_position 对不上
+  const speak = restoreOn ? restoreAncientPhonetics(t) : t
+  const key = `${voice}|${rate}|${prosodyOn ? prosodyAmp : 'off'}|${restoreOn ? 'r' : '-'}|${speak}`
   const hit = cache.get(key)
   if (hit) return hit
 
@@ -246,7 +252,7 @@ export async function synthesize(text: string): Promise<string | null> {
     // 注意：回调必须返回 false，返回 true 会让 eSpeak 只吐 100ms 就中止。
     // 第二个参数是**事件数组**，带每个音素的起止毫秒与词的文本位置——
     // 这是能做韵律改造的前提。
-    worker.synthesize(t, (data, ev) => {
+    worker.synthesize(speak, (data, ev) => {
       if (data && data.length) parts.push(data)
       if (ev) {
         if (Array.isArray(ev)) events.push(...(ev as EspeakEvent[]))
@@ -262,7 +268,9 @@ export async function synthesize(text: string): Promise<string | null> {
     let off = 0
     for (const p of parts) { merged.set(p, off); off += p.length }
 
-    const shaped = prosodyOn ? applyProsody(merged, samplerate, events, t, prosodyAmp) : merged
+    const shaped = prosodyOn
+      ? applyProsody(merged, samplerate, events, speak, prosodyAmp)
+      : merged
     const url = URL.createObjectURL(pcmToWav(shaped, samplerate))
     if (cache.size >= CACHE_MAX) {
       const first = cache.keys().next().value
@@ -291,9 +299,12 @@ let engine: 'espeak' | 'neural' = 'espeak'
 // 放在模块顶层：synthesize() 里要用，不能藏在函数作用域里
 let prosodyOn = true
 let prosodyAmp = 1
-export function setProsody(on: boolean, amp: number) {
+/** 还原古音（送气塞音 φθχ、ζ=[zd]）。见 prosody.ts 的 restoreAncientPhonetics */
+let restoreOn = true
+export function setProsody(on: boolean, amp: number, restore = true) {
   prosodyOn = on
   prosodyAmp = Math.max(0, Math.min(2, amp))
+  restoreOn = restore
 }
 
 export function setSpeechEngine(e: string) { engine = e === 'neural' ? 'neural' : 'espeak' }
@@ -307,7 +318,18 @@ let current: HTMLAudioElement | null = null
 /**
  * 朗读一句话。成功返回 true；引擎不可用时返回 false，调用方可以回退到系统语音。
  */
-export async function speakText(text: string): Promise<boolean> {
+/**
+ * 朗读一段文本。
+ *
+ * `onEnd` 在**播放结束**时触发（被下一次朗读或 stopSpeaking 打断则不触发）——
+ * 逐句连播靠它推进。`seq` 是打断令牌：换了内容或主动停止后，
+ * 旧音频的 ended 回调不会再误触发。
+ */
+let speakSeq = 0
+
+export async function speakText(
+  text: string, onEnd?: () => void,
+): Promise<boolean> {
   const t = normalizeForSpeech(text)
   if (!t) return false
 
@@ -328,6 +350,9 @@ export async function speakText(text: string): Promise<boolean> {
     a.playbackRate = getNeuralRate()
   }
   current = a
+  const mine = ++speakSeq
+  // 播完才推进：逐句连播靠它；被下一次朗读或 stopSpeaking 打断则不再触发
+  if (onEnd) a.addEventListener('ended', () => { if (mine === speakSeq) onEnd() })
   try {
     await a.play()
     return true
@@ -337,5 +362,6 @@ export async function speakText(text: string): Promise<boolean> {
 }
 
 export function stopSpeaking(): void {
+  speakSeq++   // 让在途的 ended 回调失效，避免「停止后自己又接着读」
   if (current) { current.pause(); current = null }
 }

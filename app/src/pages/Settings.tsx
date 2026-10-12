@@ -180,6 +180,12 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
             </select>
           </Row>
           <Row
+            label="还原古音"
+            hint="把 φ θ χ 读成送气塞音 [pʰ tʰ kʰ]、ζ 读成 [zd]。eSpeak 的希腊语音素表继承自现代希腊语，默认读成擦音 [f θ x] 与 [z]，与界面标注的阿提卡 IPA 不符——送气一项就涉及 28.2% 的词"
+          >
+            <Toggle on={settings.restoreAncient} onChange={(v) => set({ restoreAncient: v })} />
+          </Row>
+          <Row
             label="音高重音"
             hint="eSpeak 只标重音位置、不产生调型（acute 与 circumflex 的输出逐字符相同）。开启后用 TD-PSOLA 在波形上补出阿提卡调型——界面标了重音符号，发音才真的体现出来"
           >

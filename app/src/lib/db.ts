@@ -117,6 +117,8 @@ export const DEFAULT_SETTINGS: Settings = {
   activeLessons: [1],
   prosodyAccent: true,
   prosodyAmp: 1,
+  restoreAncient: true,
+  readMode: 'sentence',
   aiProvider: 'deepseek',
   aiBaseUrl: '',
   aiModel: '',

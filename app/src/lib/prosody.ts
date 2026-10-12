@@ -295,9 +295,20 @@ export function parseEvents(events: EspeakEvent[], text: string, totalSec: numbe
 export interface AccentPlan {
   /** 目标 F0 曲线 [[时刻秒, Hz], ...] */
   points: Point[]
+  /** 时长映射锚点 [[t_in, t_out], ...]，用于补足 eSpeak 漏掉的长音 */
+  durAnchors: [number, number][]
   /** 每个音素的重音归属，便于验收与调试 */
   roles: { ipa: string; t0: number; t1: number; accent: AccentType; morae: number }[]
 }
+
+/**
+ * 隐藏长音的延长倍数。
+ *
+ * eSpeak 只在 η→ɛː / ω→ɔː 上标长音，**带 circumflex 的 ᾱ/ῑ/ῡ 完全没加长**
+ * （实测 μῦθος 的 ῡ = 72ms，与 λύω 的 ῠ = 71ms 几乎相同）。
+ * 1.55 取自 eSpeak 自己对 ω:ο 的时长比（136ms/86ms），即「用它自己的长音比例补它漏掉的」。
+ */
+export const MORA_GAIN = 1.55
 
 /**
  * 设计整句的目标 F0 曲线。
@@ -315,6 +326,8 @@ export function planAccent(
 
   const points: Point[] = [[0, decl(0)]]
   const roles: AccentPlan['roles'] = []
+  /** 需要延长的时间区间（隐藏长音） */
+  const stretch: [number, number][] = []
 
   for (const p of phones) {
     const bare = p.ipa.replace(/^[ˈˌ]/, '')
@@ -343,9 +356,112 @@ export function planAccent(
 
     points.push(...targetContour(decl(p.t0), p.t0, p.t1, accent, morae, isDiphthongIpa(bare), amp))
     roles.push({ ipa: p.ipa, t0: p.t0, t1: p.t1, accent, morae })
+
+    // 隐藏长音：正字法上应为长（circumflex 落在 α/ι/υ 上，或 η/ω），
+    // 但 eSpeak 没标 ː、也没拼成二合元音 → 靠时长映射补足
+    if (info?.hiddenLong && !bare.includes('ː') && !isDiphthongIpa(bare)) {
+      stretch.push([p.t0, p.t1])
+    }
   }
 
   points.push([totalSec, decl(totalSec)])
   points.sort((a, b) => a[0] - b[0])
-  return { points: smoothContour(points), roles }
+
+  // 把「要延长的区间」转成分段线性时长映射
+  const anchors: [number, number][] = [[0, 0]]
+  let shift = 0
+  for (const [a, b] of stretch.sort((x, y) => x[0] - y[0])) {
+    anchors.push([a, a + shift], [b, a + shift + (b - a) * MORA_GAIN])
+    shift += (b - a) * (MORA_GAIN - 1)
+  }
+  anchors.push([totalSec, totalSec + shift])
+  // 去重并保证严格单调
+  const ded: [number, number][] = []
+  for (const [a, b] of anchors) {
+    if (!ded.length || (a > ded[ded.length - 1][0] + 1e-9 && b > ded[ded.length - 1][1] + 1e-9)) ded.push([a, b])
+    else ded[ded.length - 1] = [a, b]
+  }
+
+  return { points: smoothContour(points), durAnchors: ded, roles }
+}
+
+// ---------------------------------------------------------------- 音值还原
+/**
+ * eSpeak 的古希腊语音素表是**从现代希腊语继承**的，有几处系统性偏离阿提卡重建。
+ * 这些偏离可以用**纯文本替换**修掉——因为 `dictsource/grc_rules` 里的字母→音素
+ * 映射是固定的，只要把字母换成「能触发正确音素」的写法即可，无需重编译 WASM。
+ *
+ * 实测（`convert_to_phonemes` 的输出）：
+ *
+ *   写法        改动前              改动后
+ *   φ  → πɦ     f_                  p_h_        ← 送气清塞音 [pʰ]
+ *   θ  → τɦ     θ_（擦音）           t_h_        ← [tʰ]
+ *   χ  → κɦ     x_（擦音）           k_h_        ← [kʰ]
+ *   ζ  → ζδ     z_                  z_d_        ← [zd]（阿提卡 ζ 是双辅音）
+ *   ου → o:     uː_                 oː_         ← 见下，走音素记法
+ *
+ * `ɦ`（U+0266）是 eSpeak 内部表示「粗气号」的字符，规则里 `ɦ → h`，
+ * 而 `π/τ/κ → p/t/k`，两者相邻就得到「塞音 + 送气」，正是送气塞音的声学构成。
+ * 测试确认**重音位置不受影响**（Θουκυδίδης 仍是 ˌuː … ˈi）。
+ *
+ * 影响面：`data/ipa.json` 里 28.2% 的词含送气符号 ʰ。
+ */
+const ROUGH = '\u0266'   // ɦ
+
+export function restoreAncientPhonetics(text: string): string {
+  return text
+    // 送气塞音 φ θ χ
+    .replace(/φ/g, 'π' + ROUGH).replace(/Φ/g, 'Π' + ROUGH)
+    .replace(/θ/g, 'τ' + ROUGH).replace(/Θ/g, 'Τ' + ROUGH)
+    .replace(/χ/g, 'κ' + ROUGH).replace(/Χ/g, 'Κ' + ROUGH)
+    // ζ = [zd]
+    .replace(/ζ/g, 'ζδ').replace(/Ζ/g, 'ΖΔ')
+}
+
+// ---------------------------------------------------------------- 句子切分
+/**
+ * 把一段古希腊语切成句子。
+ *
+ * 为什么需要：界面上的朗读按钮原本把**整段**交给 eSpeak，于是一段里多个句子
+ * 之间的停顿听起来像「奇怪的停顿」，用户也没法一句一句听。
+ * 按句切分后，每次合成的音频短（延迟低）、句子之间由界面控制（停顿可控）。
+ *
+ * 古希腊语的句末标点：
+ *   `.`  句号
+ *   `;`  问号（不是分号！希腊语用 `;` 表示问号）
+ *   `·`  ano teleia（上点，相当于分号/冒号，也是强断句）
+ *   `!`  叹号
+ * 引号后紧跟的句末标点要连带保留，否则下一句会以引号开头。
+ */
+export function splitSentences(text: string): string[] {
+  const s = text.replace(/\s+/g, ' ').trim()
+  if (!s) return []
+  const out: string[] = []
+  let start = 0
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i]
+    if (c !== '.' && c !== ';' && c !== '·' && c !== '!') continue
+    // 吞掉紧跟的收尾符号：引号、括号、上点等
+    let j = i + 1
+    while (j < s.length && /["'”’）)\]·]/.test(s[j])) {
+      // 上点若后面还有内容，说明它是句中标点，不吞
+      if (s[j] === '·' && j + 1 < s.length && /\S/.test(s[j + 1])) break
+      j++
+    }
+    const piece = s.slice(start, j).trim()
+    if (piece) out.push(piece)
+    // 跳过句末后的空白
+    while (j < s.length && /\s/.test(s[j])) j++
+    start = j
+    i = j - 1
+  }
+  const rest = s.slice(start).trim()
+  if (rest) out.push(rest)
+  // 过短的碎片并回上一句（例如只剩一个引号或编辑符号）
+  const merged: string[] = []
+  for (const p of out) {
+    if (merged.length && p.replace(/[^\p{L}]/gu, '').length < 3) merged[merged.length - 1] += ' ' + p
+    else merged.push(p)
+  }
+  return merged
 }

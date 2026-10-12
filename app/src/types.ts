@@ -223,6 +223,14 @@ export interface Settings {
   prosodyAccent: boolean
   /** 音高重音的幅度倍率（1.0 为默认）。用耳朵定，介意机械感就调小 */
   prosodyAmp: number
+  /**
+   * 还原古音：把 φ θ χ 读成送气塞音 [pʰ tʰ kʰ]、ζ 读成 [zd]。
+   * eSpeak 的希腊语音素表继承自现代希腊语，默认把这些读成擦音 [f θ x] 与 [z]，
+   * 与界面标注的阿提卡 IPA 不符（送气一项就涉及 28.2% 的词）。
+   */
+  restoreAncient: boolean
+  /** 文本朗读模式：'sentence' 逐句（默认）| 'continuous' 连播 | 'paragraph' 整段 */
+  readMode: 'sentence' | 'continuous' | 'paragraph'
 
   // ---- AI 翻译（自带 Key）----
   // 只存在本机 IndexedDB，**从不上传**；浏览器直连服务商，
