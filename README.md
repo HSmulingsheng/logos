@@ -193,6 +193,36 @@ tools/merge_reading_zh.py          汇总 → merged.json，注入阅读数据
 会话引擎的 `startSession({ mode })` 支持 `'all' | 'new' | 'review'`，
 `buildQueue` 据此只铺对应那一段队列。
 
+### 单词发音与句子走同一条管线
+
+**曾经不一致，是个真实的坑。** 单词音频是离线批量生成的，当时只有
+「eSpeak 出 WAV → afconvert 转 m4a」，**没有**应用里后来加的韵律与音值修正，
+于是同一个词的单词发音明显比句子差：
+
+| 词 | 旧的单词音频 | 句子（新管线） |
+|---|---|---|
+| φωνή | `f`ɔːnˈɛː | **`p_h`**ɔːnˈɛː |
+| θυμιάω | `θ`ˌymiˈaɔː | **`t_h`**ˌymiˈaɔː |
+| χείρ | `x`ˈeːr | **`k_h`**ˈeːr |
+
+三处缺失：① 送气塞音没还原（28.2% 的词受影响）② 完全没有音高重音
+③ ᾱ/ῑ/ῡ 长音没补。另外编码只有 ~29 kbps（句子是未压缩 WAV）。
+
+**现在单词改用 `tools/gen_word_audio_prosody.ts` 生成，它直接 import
+`app/src/lib/prosody.ts` 与 `psola.ts`——与句子是同一份代码**，不会再各自演化：
+
+```bash
+# 打包（脚本 import 了 .ts，必须先 bundle）
+cd 逻各斯 && app/node_modules/.pnpm/node_modules/.bin/esbuild \
+  tools/gen_word_audio_prosody.ts --bundle --platform=node --format=esm \
+  --outfile=/tmp/genwords.mjs \
+  --external:../app/public/espeak/espeak-ng.js
+node /tmp/genwords.mjs --limit=20     # 试跑
+node /tmp/genwords.mjs                # 全量（约 15,710 个，30 分钟）
+```
+
+编码码率同时从 29 kbps 提到 **48 kbps**（实测落点 36–44 kbps）。
+
 ### 还原古音：送气塞音与 [zd]
 
 eSpeak 的希腊语音素表**继承自现代希腊语**（`espeak-ng-data/lang/grk/grc` 只有 4 行，
