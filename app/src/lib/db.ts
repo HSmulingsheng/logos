@@ -115,6 +115,10 @@ export const DEFAULT_SETTINGS: Settings = {
   theme: 'light',
   activeLesson: 1,
   activeLessons: [1],
+  aiProvider: 'deepseek',
+  aiBaseUrl: '',
+  aiModel: '',
+  aiKey: '',
 }
 
 export async function loadSettings(): Promise<Settings> {

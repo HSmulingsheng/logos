@@ -83,7 +83,7 @@ if (before === 0) {
 const htmlPath = join(DIST, 'index.html')
 let html = readFileSync(htmlPath, 'utf8')
 
-// 全部资源都是同源的；外链词典在系统浏览器里打开，因此 connect-src 保持 'self'
+  // 全部资源都是同源的；外链词典在系统浏览器里打开。
 const CSP = [
   "default-src 'self'",
   // 'wasm-unsafe-eval' 是 WebAssembly 编译所必需的：只写 'self' 会把
@@ -94,7 +94,15 @@ const CSP = [
   "font-src 'self' data:",
   "img-src 'self' data: blob:",
   "media-src 'self' data: blob:",
-  "connect-src 'self'",
+    // 「AI 翻译（自带 Key）」要让浏览器**直接**访问服务商接口——
+    // 这是纯静态站，没有后端能中转。所以这里放行外部 https。
+    //
+    // 权衡：比 'self' 宽松，但脚本仍受 script-src 'self' 约束、
+    // 表单被 form-action 'none' 锁死，XSS 面很小；而 connect-src 服务于
+    // **用户自己**指定的端点，写成白名单会让「自定义服务商」直接不可用。
+    // 实测支持浏览器直连（CORS）：api.deepseek.com / open.bigmodel.cn /
+    // dashscope.aliyuncs.com。
+    "connect-src 'self' https:",
   "worker-src 'self'",
   "manifest-src 'self'",
   "object-src 'none'",

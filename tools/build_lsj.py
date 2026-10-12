@@ -44,7 +44,35 @@ LSJ_DIR = ROOT / "语料调研/lsj-tar/lexica-master/CTS_XML_TEI/perseus/pdllex/
 OUT = ROOT / "data/lsj.json"
 GREEK = ROOT / "data/greek.json"
 
-MAX_LEN = 320          # 每条释义截断长度：够看主要义项，又不至于让文件爆掉
+MAX_LEN = 210          # 单条义项截断长度
+MAX_SENSES = 5         # 每词保留的义项数（按语料相关度取前几名）
+MAX_WORD_LEN = 780     # 每词释义总长上限，控制 data/lsj.json 的体积
+
+# ---------------------------------------------------------------- 义项排序
+#
+# 为什么不照抄 LSJ 的顺序
+# ----------------------
+# LSJ 按「词义的历史/逻辑顺序」排列，首位常是词源义或本义。
+# 例如 λόγος 的 I 是 "computation, reckoning"（算账、计算），
+# 而读者在新约与古典文本里真正遇到的是 "verbal expression or utterance"（话、言语）。
+# 对一个**阅读工具**来说，把读者最可能用到的义项排在前面才合理。
+#
+# 排序依据：每个义项下的**作者引用**，按「应用语料里会读到的作者」加权。
+# LSJ 的引用是用来举例的，不是频次统计，但「哪个义项被 Hdt./Th./Pl. 反复引来举例」
+# 本身就是很强的相关度信号。
+#
+# `Id.` 是「同上作者」的缩写，要继承前一个作者的权重。
+CORPUS_WEIGHT = {
+    # 宗教板块：新约与七十士译本
+    'NT': 6, 'LXX': 6, 'Ev.': 6, 'Ep.': 5, 'Act': 5, 'Apoc': 5,
+    # 文学板块：荷马、赫西俄德、三大悲剧家、阿里斯托芬、品达
+    'Hom.': 5, 'Il.': 5, 'Od.': 5, 'Hes.': 4, 'S.': 5, 'E.': 5, 'A.': 5, 'Ar.': 4, 'Pi.': 4,
+    # 哲学板块：柏拉图、亚里士多德
+    'Pl.': 5, 'Arist.': 5,
+    # 历史板块：希罗多德、修昔底德、色诺芬、波利比乌斯
+    'Hdt.': 5, 'Th.': 5, 'X.': 5, 'Plb.': 3,
+}
+OTHER_WEIGHT = 1       # 其余作者（辞书 Hsch.、医学 Gal. 等）给基础分
 
 # 剔除的整段内容：
 #   bibl  = 引文出处（Hdt. 7.32 之类）
@@ -192,6 +220,64 @@ def variants(folded: str) -> list[str]:
     return uniq
 
 
+def top_level_senses(body: str) -> list[tuple[str, str]]:
+    """
+    切出**顶层**义项。层级属性并不统一——λόγος 的顶层是 level=2，
+    ἄνθρωπος 是 level=1——所以取该词条内出现的最小 level 作为顶层。
+    子义项留在父项内一起呈现，保住层次。
+    """
+    levels = [int(x) for x in re.findall(r'<sense\b[^>]*level="(\d+)"', body)]
+    if not levels:
+        return []
+    top = min(levels)
+    idx = [m.start() for m in re.finditer(rf'<sense\b[^>]*level="{top}"', body)]
+    out = []
+    for i, st in enumerate(idx):
+        en = idx[i + 1] if i + 1 < len(idx) else len(body)
+        seg = body[st:en]
+        nm = re.search(r'<sense\b[^>]*\bn="([^"]*)"', seg)
+        out.append((nm.group(1) if nm else '', seg))
+    return out
+
+
+def sense_score(seg: str) -> int:
+    """按语料作者加权统计引文数；`Id.` 继承上一个作者的权重。"""
+    sc = 0
+    last = None
+    for m in re.finditer(r"<author[^>]*>(.*?)</author>", seg, re.S):
+        a = m.group(1).strip()
+        if a == "Id." and last:
+            w = CORPUS_WEIGHT.get(last, OTHER_WEIGHT)
+        else:
+            w = CORPUS_WEIGHT.get(a, OTHER_WEIGHT)
+        if a != "Id.":
+            last = a
+        sc += w
+    return sc
+
+
+def rank_senses(body: str) -> list[dict]:
+    """
+    把词条拆成若干义项，按语料相关度排序后返回前 MAX_SENSES 条。
+    输出 [{n: 编号, t: 释义, s: 相关度分}]。
+    """
+    rows = []
+    for n, seg in top_level_senses(body):
+        text = truncate(strip_tags(convert_greek(drop_greek_examples(seg))), MAX_LEN)
+        if len(text) < 4:
+            continue
+        rows.append({"n": n, "t": text, "s": sense_score(seg)})
+    rows.sort(key=lambda r: -r["s"])
+    # 截到每词的总长上限，避免体积失控
+    out, total = [], 0
+    for r in rows[:MAX_SENSES]:
+        if total + len(r["t"]) > MAX_WORD_LEN and out:
+            break
+        out.append(r)
+        total += len(r["t"])
+    return out
+
+
 def cleanup_deck_word(raw: str) -> str:
     """去掉方括号语法标注、首尾标点。牌组里大量词条带尾点（`ὑμεῖς.`）。"""
     w = re.sub(r"\[[^\]]*\]", "", raw)
@@ -221,7 +307,7 @@ def main() -> int:
     files = sorted(LSJ_DIR.glob("grc.lsj.perseus-eng*.xml"))
     print(f"LSJ 文件 {len(files)} 个")
 
-    index: dict[str, str] = {}
+    index: dict[str, tuple[int, list[dict]]] = {}
     total = 0
     for f in files:
         text = f.read_text(encoding="utf-8", errors="ignore")
@@ -240,11 +326,18 @@ def main() -> int:
             k = fold(head)
             if not k:
                 continue
-            definition = truncate(strip_tags(convert_greek(drop_greek_examples(body))))
-            if len(definition) < 3:
-                continue
-            if k not in index or len(definition) > len(index[k]):
-                index[k] = definition
+            # 先按「义项排序后的总长」挑更完整的那条同形词条
+            ranked = rank_senses(body)
+            if not ranked:
+                # 少数词条（短语、只给变格表或只有词头的）没有 <sense> 层级，
+                # 退回整段抽取，避免白白丢掉 200 多个词条
+                flat = truncate(strip_tags(convert_greek(drop_greek_examples(body))), MAX_WORD_LEN)
+                if len(flat) < 3:
+                    continue
+                ranked = [{"n": "", "t": flat, "s": 0}]
+            size = sum(len(r["t"]) for r in ranked)
+            if k not in index or size > index[k][0]:
+                index[k] = (size, ranked)
         print(f"  {f.name:<34} 词条 {total:>7,} · 索引 {len(index):>7,}")
 
     if args.sample:
@@ -252,7 +345,9 @@ def main() -> int:
         print(f"\n=== {args.sample} ===")
         for v in variants(k):
             if v in index:
-                print(f"  [{v}]\n  {index[v]}")
+                print(f"  [{v}] 相关度排序，共 {len(index[v][1])} 条：")
+                for r in index[v][1]:
+                    print(f"    [{r['n']:<4} 分{r['s']:<5}] {r['t'][:120]}")
                 break
         else:
             print("  未找到")
@@ -288,14 +383,16 @@ def main() -> int:
 
     # 按牌组词条 id 输出，前端可直接取
     greek = json.load(open(GREEK, encoding="utf-8"))
-    out: dict[str, str] = {}
+    out: dict[str, list[dict]] = {}
     for r in greek:
         w = cleanup_deck_word((r.get("_raw") or {}).get("Greek", ""))
         if not w:
             continue
         k = fold(w)
-        if k in matched:
-            out[str(r["id"])] = matched[k]
+        if k not in matched:
+            continue
+        # 同形词条可能对应多个 id，各自取自己那份
+        out[str(r["id"])] = matched[k][1]
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"\n✅ {OUT.relative_to(ROOT)} · {len(out):,} 条 · {OUT.stat().st_size/1048576:.1f} MB")
     return 0

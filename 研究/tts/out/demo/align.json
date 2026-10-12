@@ -1,0 +1,3370 @@
+{
+ "samplerate": 22050,
+ "rate": 168,
+ "pitch": 50,
+ "range": 60,
+ "voice": "grc",
+ "items": [
+  {
+   "key": "min01_phos_circ",
+   "text": "φῶς",
+   "gloss": "光（circumflex）",
+   "trace": "f_ˈɔː_s_",
+   "phonemes_ipa_raw": "f_ˈɔː_s_",
+   "sr": 22050,
+   "durMs": 502.6303854875284,
+   "phonemes": [
+    {
+     "ipa": "f",
+     "t0": 48,
+     "t1": 124
+    },
+    {
+     "ipa": "ˈɔː",
+     "t0": 124,
+     "t1": 338
+    },
+    {
+     "ipa": "s",
+     "t0": 338,
+     "t1": 440
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 502.6303854875284
+    }
+   ],
+   "events": [
+    {
+     "type": "samplerate",
+     "text_position": 0,
+     "word_length": 0,
+     "audio_position": 0
+    },
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "f"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 124,
+     "id": "ˈɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 338,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 440,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 495,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 502,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 502
+    }
+   ]
+  },
+  {
+   "key": "min02_phos_acute",
+   "text": "φώς",
+   "gloss": "男子（acute）",
+   "trace": "f_ˈɔː_s_",
+   "phonemes_ipa_raw": "f_ˈɔː_s_",
+   "sr": 22050,
+   "durMs": 503.17460317460313,
+   "phonemes": [
+    {
+     "ipa": "f",
+     "t0": 48,
+     "t1": 124
+    },
+    {
+     "ipa": "ˈɔː",
+     "t0": 124,
+     "t1": 339
+    },
+    {
+     "ipa": "s",
+     "t0": 339,
+     "t1": 441
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 503.17460317460313
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "f"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 124,
+     "id": "ˈɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 339,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 441,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 496,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 503,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 503
+    }
+   ]
+  },
+  {
+   "key": "min03_pos_circ",
+   "text": "πῶς",
+   "gloss": "怎么？（circumflex）",
+   "trace": "p_ˈɔː_s_",
+   "phonemes_ipa_raw": "p_ˈɔː_s_",
+   "sr": 22050,
+   "durMs": 458.7755102040816,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "t0": 48,
+     "t1": 79
+    },
+    {
+     "ipa": "ˈɔː",
+     "t0": 79,
+     "t1": 294
+    },
+    {
+     "ipa": "s",
+     "t0": 294,
+     "t1": 396
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 458.7755102040816
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 79,
+     "id": "ˈɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 294,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 396,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 451,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 458,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 458
+    }
+   ]
+  },
+  {
+   "key": "min04_pos_acute",
+   "text": "πώς",
+   "gloss": "不知怎的（acute）",
+   "trace": "p_ˈɔː_s_",
+   "phonemes_ipa_raw": "p_ˈɔː_s_",
+   "sr": 22050,
+   "durMs": 458.7755102040816,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "t0": 48,
+     "t1": 79
+    },
+    {
+     "ipa": "ˈɔː",
+     "t0": 79,
+     "t1": 294
+    },
+    {
+     "ipa": "s",
+     "t0": 294,
+     "t1": 396
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 458.7755102040816
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 79,
+     "id": "ˈɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 294,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 396,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 451,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 458,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 458
+    }
+   ]
+  },
+  {
+   "key": "min05_pote_acute1",
+   "text": "πότε",
+   "gloss": "何时（acute 在前）",
+   "trace": "p_ˈo_t_e_",
+   "phonemes_ipa_raw": "p_ˈo_t_e_",
+   "sr": 22050,
+   "durMs": 375.28344671201813,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "t0": 48,
+     "t1": 79
+    },
+    {
+     "ipa": "ˈo",
+     "t0": 79,
+     "t1": 216
+    },
+    {
+     "ipa": "t",
+     "t0": 216,
+     "t1": 238
+    },
+    {
+     "ipa": "e",
+     "t0": 238,
+     "t1": 313
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 4,
+     "t0": 0,
+     "t1": 375.28344671201813
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 4,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 79,
+     "id": "ˈo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 216,
+     "id": "t"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 238,
+     "id": "e"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 313,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 368,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 375,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 375
+    }
+   ]
+  },
+  {
+   "key": "min06_pote_acute2",
+   "text": "ποτέ",
+   "gloss": "曾经（acute 在后）",
+   "trace": "p_o_t_ˈe_",
+   "phonemes_ipa_raw": "p_o_t_ˈe_",
+   "sr": 22050,
+   "durMs": 377.59637188208615,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "t0": 38,
+     "t1": 69
+    },
+    {
+     "ipa": "o",
+     "t0": 69,
+     "t1": 169
+    },
+    {
+     "ipa": "t",
+     "t0": 169,
+     "t1": 192
+    },
+    {
+     "ipa": "ˈe",
+     "t0": 192,
+     "t1": 315
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 4,
+     "t0": 0,
+     "t1": 377.59637188208615
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 4,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 38,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 69,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 169,
+     "id": "t"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 192,
+     "id": "ˈe"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 315,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 370,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 377,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 377
+    }
+   ]
+  },
+  {
+   "key": "min07_tis_acute",
+   "text": "τίς",
+   "gloss": "谁？（acute）",
+   "trace": "t_ˈi_s_",
+   "phonemes_ipa_raw": "t_ˈi_s_",
+   "sr": 22050,
+   "durMs": 370.06802721088434,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "t0": 48,
+     "t1": 71
+    },
+    {
+     "ipa": "ˈi",
+     "t0": 71,
+     "t1": 205
+    },
+    {
+     "ipa": "s",
+     "t0": 205,
+     "t1": 308
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 370.06802721088434
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "t"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 71,
+     "id": "ˈi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 205,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 308,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 363,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 370,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 370
+    }
+   ]
+  },
+  {
+   "key": "min08_tis_none",
+   "text": "τις",
+   "gloss": "某人（无重音）",
+   "trace": "t_ˈi_s_",
+   "phonemes_ipa_raw": "t_ˈi_s_",
+   "sr": 22050,
+   "durMs": 370.1587301587301,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "t0": 48,
+     "t1": 71
+    },
+    {
+     "ipa": "ˈi",
+     "t0": 71,
+     "t1": 206
+    },
+    {
+     "ipa": "s",
+     "t0": 206,
+     "t1": 308
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 370.1587301587301
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 48,
+     "id": "t"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 71,
+     "id": "ˈi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 206,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 308,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 363,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 370,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 370
+    }
+   ]
+  },
+  {
+   "key": "min09_eimi_acute",
+   "text": "εἰμί",
+   "gloss": "我是（acute 末）",
+   "trace": "eː_m_ˈi_",
+   "phonemes_ipa_raw": "eː_m_ˈi_",
+   "sr": 22050,
+   "durMs": 357.32426303854874,
+   "phonemes": [
+    {
+     "ipa": "eː",
+     "t0": 0,
+     "t1": 89
+    },
+    {
+     "ipa": "m",
+     "t0": 89,
+     "t1": 185
+    },
+    {
+     "ipa": "ˈi",
+     "t0": 185,
+     "t1": 295
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 4,
+     "t0": 0,
+     "t1": 357.32426303854874
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 4,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "e"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 89,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 185,
+     "id": "ˈi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 295,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 11,
+     "word_length": 0,
+     "audio_position": 350,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 11,
+     "word_length": 0,
+     "audio_position": 357,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 357
+    }
+   ]
+  },
+  {
+   "key": "min10_eimi_circ",
+   "text": "εἶμι",
+   "gloss": "我将去（circumflex 首）",
+   "trace": "ˈeː_m_i_",
+   "phonemes_ipa_raw": "ˈeː_m_i_",
+   "sr": 22050,
+   "durMs": 348.29931972789115,
+   "phonemes": [
+    {
+     "ipa": "ˈeː",
+     "t0": 0,
+     "t1": 153
+    },
+    {
+     "ipa": "m",
+     "t0": 153,
+     "t1": 223
+    },
+    {
+     "ipa": "i",
+     "t0": 223,
+     "t1": 286
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 4,
+     "t0": 0,
+     "t1": 348.29931972789115
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 4,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "ˈe"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 153,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 223,
+     "id": "i"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 286,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 11,
+     "word_length": 0,
+     "audio_position": 341,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 11,
+     "word_length": 0,
+     "audio_position": 348,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 348
+    }
+   ]
+  },
+  {
+   "key": "min11_demos_circ",
+   "text": "δῆμος",
+   "gloss": "人民（circumflex penult）",
+   "trace": "d_ˈɛː_m_o_s_",
+   "phonemes_ipa_raw": "d_ˈɛː_m_o_s_",
+   "sr": 22050,
+   "durMs": 471.5646258503401,
+   "phonemes": [
+    {
+     "ipa": "d",
+     "t0": 12,
+     "t1": 33
+    },
+    {
+     "ipa": "ˈɛː",
+     "t0": 33,
+     "t1": 184
+    },
+    {
+     "ipa": "m",
+     "t0": 184,
+     "t1": 259
+    },
+    {
+     "ipa": "o",
+     "t0": 259,
+     "t1": 307
+    },
+    {
+     "ipa": "s",
+     "t0": 307,
+     "t1": 409
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 5,
+     "t0": 0,
+     "t1": 471.5646258503401
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 5,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 12,
+     "id": "d"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 33,
+     "id": "ˈɛ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 184,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 259,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 307,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 409,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 13,
+     "word_length": 0,
+     "audio_position": 464,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 13,
+     "word_length": 0,
+     "audio_position": 471,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 5,
+     "word_length": 0,
+     "audio_position": 471
+    }
+   ]
+  },
+  {
+   "key": "min12_demos_acute",
+   "text": "δημός",
+   "gloss": "脂肪（acute 末）",
+   "trace": "d_ɛː_m_ˈo_s_",
+   "phonemes_ipa_raw": "d_ɛː_m_ˈo_s_",
+   "sr": 22050,
+   "durMs": 462.9024943310658,
+   "phonemes": [
+    {
+     "ipa": "d",
+     "t0": 12,
+     "t1": 27
+    },
+    {
+     "ipa": "ɛː",
+     "t0": 27,
+     "t1": 117
+    },
+    {
+     "ipa": "m",
+     "t0": 117,
+     "t1": 210
+    },
+    {
+     "ipa": "ˈo",
+     "t0": 210,
+     "t1": 298
+    },
+    {
+     "ipa": "s",
+     "t0": 298,
+     "t1": 400
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 5,
+     "t0": 0,
+     "t1": 462.9024943310658
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 5,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 12,
+     "id": "d"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 27,
+     "id": "ɛ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 117,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 210,
+     "id": "ˈo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 298,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 400,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 455,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 462,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 5,
+     "word_length": 0,
+     "audio_position": 462
+    }
+   ]
+  },
+  {
+   "key": "min13_anthropos",
+   "text": "ἄνθρωπος",
+   "gloss": "人（acute antepenult）",
+   "trace": "ˈa_n_θ_r_ɔː_p_ˌo_s_",
+   "phonemes_ipa_raw": "ˈa_n_θ_r_ɔː_p_ˌo_s_",
+   "sr": 22050,
+   "durMs": 744.1269841269841,
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "t0": 0,
+     "t1": 116
+    },
+    {
+     "ipa": "n",
+     "t0": 116,
+     "t1": 193
+    },
+    {
+     "ipa": "θ",
+     "t0": 193,
+     "t1": 275
+    },
+    {
+     "ipa": "r",
+     "t0": 275,
+     "t1": 362
+    },
+    {
+     "ipa": "ɔː",
+     "t0": 362,
+     "t1": 473
+    },
+    {
+     "ipa": "p",
+     "t0": 473,
+     "t1": 503
+    },
+    {
+     "ipa": "ˌo",
+     "t0": 503,
+     "t1": 580
+    },
+    {
+     "ipa": "s",
+     "t0": 580,
+     "t1": 682
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 8,
+     "t0": 0,
+     "t1": 744.1269841269841
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 8,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "ˈa"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 116,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 193,
+     "id": "θ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 275,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 362,
+     "id": "ɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 473,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 503,
+     "id": "ˌo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 580,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 682,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 19,
+     "word_length": 0,
+     "audio_position": 737,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 19,
+     "word_length": 0,
+     "audio_position": 744,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 744
+    }
+   ]
+  },
+  {
+   "key": "min14_anthropou",
+   "text": "ἀνθρώπου",
+   "gloss": "人的（acute penult）",
+   "trace": "a_n_θ_r_ˈɔː_p_uː_",
+   "phonemes_ipa_raw": "a_n_θ_r_ˈɔː_p_uː_",
+   "sr": 22050,
+   "durMs": 735.4195011337869,
+   "phonemes": [
+    {
+     "ipa": "a",
+     "t0": 0,
+     "t1": 69
+    },
+    {
+     "ipa": "n",
+     "t0": 69,
+     "t1": 134
+    },
+    {
+     "ipa": "θ",
+     "t0": 134,
+     "t1": 216
+    },
+    {
+     "ipa": "r",
+     "t0": 216,
+     "t1": 323
+    },
+    {
+     "ipa": "ˈɔː",
+     "t0": 323,
+     "t1": 493
+    },
+    {
+     "ipa": "p",
+     "t0": 493,
+     "t1": 523
+    },
+    {
+     "ipa": "uː",
+     "t0": 523,
+     "t1": 673
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 8,
+     "t0": 0,
+     "t1": 735.4195011337869
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 8,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 69,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 134,
+     "id": "θ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 216,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 323,
+     "id": "ˈɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 493,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 523,
+     "id": "u"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 673,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 19,
+     "word_length": 0,
+     "audio_position": 728,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 19,
+     "word_length": 0,
+     "audio_position": 735,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 735
+    }
+   ]
+  },
+  {
+   "key": "len01_mythos",
+   "text": "μῦθος",
+   "gloss": "神话（ῡ 长）",
+   "trace": "m_ˈy_θ_o_s_",
+   "phonemes_ipa_raw": "m_ˈy_θ_o_s_",
+   "sr": 22050,
+   "durMs": 485.98639455782313,
+   "phonemes": [
+    {
+     "ipa": "m",
+     "t0": 0,
+     "t1": 92
+    },
+    {
+     "ipa": "ˈy",
+     "t0": 92,
+     "t1": 164
+    },
+    {
+     "ipa": "θ",
+     "t0": 164,
+     "t1": 246
+    },
+    {
+     "ipa": "o",
+     "t0": 246,
+     "t1": 321
+    },
+    {
+     "ipa": "s",
+     "t0": 321,
+     "t1": 424
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 5,
+     "t0": 0,
+     "t1": 485.98639455782313
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 5,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 92,
+     "id": "ˈy"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 164,
+     "id": "θ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 246,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 321,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 424,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 13,
+     "word_length": 0,
+     "audio_position": 479,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 13,
+     "word_length": 0,
+     "audio_position": 485,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 5,
+     "word_length": 0,
+     "audio_position": 485
+    }
+   ]
+  },
+  {
+   "key": "len02_lyo",
+   "text": "λύω",
+   "gloss": "我解开（ῠ 短）",
+   "trace": "l_ˈy_ɔː_",
+   "phonemes_ipa_raw": "l_ˈy_ɔː_",
+   "sr": 22050,
+   "durMs": 364.89795918367344,
+   "phonemes": [
+    {
+     "ipa": "l",
+     "t0": 0,
+     "t1": 89
+    },
+    {
+     "ipa": "ˈy",
+     "t0": 89,
+     "t1": 159
+    },
+    {
+     "ipa": "ɔː",
+     "t0": 159,
+     "t1": 302
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 364.89795918367344
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "l"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 89,
+     "id": "ˈy"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 159,
+     "id": "ɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 302,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 357,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 364,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 364
+    }
+   ]
+  },
+  {
+   "key": "len03_men",
+   "text": "μήν",
+   "gloss": "月份（η 长）",
+   "trace": "m_ˈɛː_n_",
+   "phonemes_ipa_raw": "m_ˈɛː_n_",
+   "sr": 22050,
+   "durMs": 453.968253968254,
+   "phonemes": [
+    {
+     "ipa": "m",
+     "t0": 0,
+     "t1": 119
+    },
+    {
+     "ipa": "ˈɛː",
+     "t0": 119,
+     "t1": 296
+    },
+    {
+     "ipa": "n",
+     "t0": 296,
+     "t1": 392
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 3,
+     "t0": 0,
+     "t1": 453.968253968254
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 3,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 119,
+     "id": "ˈɛ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 296,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 392,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 446,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 8,
+     "word_length": 0,
+     "audio_position": 453,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 3,
+     "word_length": 0,
+     "audio_position": 453
+    }
+   ]
+  },
+  {
+   "key": "len04_kakos",
+   "text": "κακός",
+   "gloss": "坏的（ᾰ 短）",
+   "trace": "k_a_k_ˈo_s_",
+   "phonemes_ipa_raw": "k_a_k_ˈo_s_",
+   "sr": 22050,
+   "durMs": 531.8367346938776,
+   "phonemes": [
+    {
+     "ipa": "k",
+     "t0": 38,
+     "t1": 84
+    },
+    {
+     "ipa": "a",
+     "t0": 84,
+     "t1": 196
+    },
+    {
+     "ipa": "k",
+     "t0": 196,
+     "t1": 242
+    },
+    {
+     "ipa": "ˈo",
+     "t0": 242,
+     "t1": 367
+    },
+    {
+     "ipa": "s",
+     "t0": 367,
+     "t1": 469
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 5,
+     "t0": 0,
+     "t1": 531.8367346938776
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 5,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 38,
+     "id": "k"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 84,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 196,
+     "id": "k"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 242,
+     "id": "ˈo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 367,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 469,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 524,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 531,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 5,
+     "word_length": 0,
+     "audio_position": 531
+    }
+   ]
+  },
+  {
+   "key": "sent01",
+   "text": "ἐν ἀρχῇ ἦν ὁ λόγος",
+   "gloss": "太初有道（约1:1）",
+   "trace": "ˈe_n_ a_r_x_ˈɛɪː_ ˈɛː_n_ h_o_ l_ˈo_ɡ_o_s_",
+   "phonemes_ipa_raw": "ˈe_n_ a_r_x_ˈɛɪː_ ˈɛː_n_ h_o_ l_ˈo_ɡ_o_s_",
+   "sr": 22050,
+   "durMs": 1673.7868480725624,
+   "phonemes": [
+    {
+     "ipa": "ˈe",
+     "t0": 0,
+     "t1": 92
+    },
+    {
+     "ipa": "n",
+     "t0": 92,
+     "t1": 174
+    },
+    {
+     "ipa": "a",
+     "t0": 229,
+     "t1": 316
+    },
+    {
+     "ipa": "r",
+     "t0": 316,
+     "t1": 375
+    },
+    {
+     "ipa": "x",
+     "t0": 375,
+     "t1": 461
+    },
+    {
+     "ipa": "ˈɛɪː",
+     "t0": 461,
+     "t1": 675
+    },
+    {
+     "ipa": "ˈɛː",
+     "t0": 730,
+     "t1": 884
+    },
+    {
+     "ipa": "n",
+     "t0": 884,
+     "t1": 960
+    },
+    {
+     "ipa": "h",
+     "t0": 1027,
+     "t1": 1091
+    },
+    {
+     "ipa": "o",
+     "t0": 1091,
+     "t1": 1166
+    },
+    {
+     "ipa": "l",
+     "t0": 1220,
+     "t1": 1319
+    },
+    {
+     "ipa": "ˈo",
+     "t0": 1319,
+     "t1": 1380
+    },
+    {
+     "ipa": "ɡ",
+     "t0": 1380,
+     "t1": 1441
+    },
+    {
+     "ipa": "o",
+     "t0": 1441,
+     "t1": 1509
+    },
+    {
+     "ipa": "s",
+     "t0": 1509,
+     "t1": 1611
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 2,
+     "t0": 0,
+     "t1": 229
+    },
+    {
+     "i": 1,
+     "text_position": 4,
+     "length": 4,
+     "t0": 229,
+     "t1": 730
+    },
+    {
+     "i": 2,
+     "text_position": 9,
+     "length": 2,
+     "t0": 730,
+     "t1": 1015
+    },
+    {
+     "i": 3,
+     "text_position": 12,
+     "length": 1,
+     "t0": 1015,
+     "t1": 1220
+    },
+    {
+     "i": 4,
+     "text_position": 14,
+     "length": 5,
+     "t0": 1220,
+     "t1": 1673.7868480725624
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 2,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "ˈe"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 92,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 174,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 4,
+     "word_length": 4,
+     "audio_position": 229,
+     "id": 2
+    },
+    {
+     "type": "phoneme",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 229,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 316,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 375,
+     "id": "x"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 461,
+     "id": "ˈɛɪ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 4,
+     "word_length": 0,
+     "audio_position": 675,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 9,
+     "word_length": 2,
+     "audio_position": 730,
+     "id": 3
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 730,
+     "id": "ˈɛ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 884,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 9,
+     "word_length": 0,
+     "audio_position": 960,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 12,
+     "word_length": 1,
+     "audio_position": 1015,
+     "id": 4
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1027,
+     "id": "h"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1091,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1166,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 14,
+     "word_length": 5,
+     "audio_position": 1220,
+     "id": 5
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1220,
+     "id": "l"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1319,
+     "id": "ˈo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1380,
+     "id": "ɡ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1441,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1509,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1611,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 39,
+     "word_length": 0,
+     "audio_position": 1666,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 39,
+     "word_length": 0,
+     "audio_position": 1673,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 18,
+     "word_length": 0,
+     "audio_position": 1673
+    }
+   ]
+  },
+  {
+   "key": "sent02",
+   "text": "ἄνθρωπός τις κατέβαινεν ἀπὸ Ἰερουσαλὴμ εἰς Ἰεριχώ",
+   "gloss": "好撒玛利亚人开头",
+   "trace": "ˈa_n_θ_r_ɔː_p_ˈo_s_ t_ˈi_s_ k_a_t_ˈe_b_aɪ_n_ˌe_n_ a_p_ˈo_ ˌi__e_r_ˌuː_s_a_l_ˈɛː_m_ ˈeː_s_ ˌi__e_r_i_x_ˈɔː_",
+   "phonemes_ipa_raw": "ˈa_n_θ_r_ɔː_p_ˈo_s_ t_ˈi_s_ k_a_t_ˈe_b_aɪ_n_ˌe_n_ a_p_ˈo_ ˌi__e_r_ˌuː_s_a_l_ˈɛː_m_ ˈeː_s_ ˌi__e_r_i_x_ˈɔː_",
+   "sr": 22050,
+   "durMs": 3772.1995464852607,
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "t0": 0,
+     "t1": 87
+    },
+    {
+     "ipa": "n",
+     "t0": 87,
+     "t1": 156
+    },
+    {
+     "ipa": "θ",
+     "t0": 156,
+     "t1": 238
+    },
+    {
+     "ipa": "r",
+     "t0": 238,
+     "t1": 325
+    },
+    {
+     "ipa": "ɔː",
+     "t0": 325,
+     "t1": 431
+    },
+    {
+     "ipa": "p",
+     "t0": 431,
+     "t1": 461
+    },
+    {
+     "ipa": "ˈo",
+     "t0": 461,
+     "t1": 543
+    },
+    {
+     "ipa": "s",
+     "t0": 543,
+     "t1": 645
+    },
+    {
+     "ipa": "t",
+     "t0": 749,
+     "t1": 771
+    },
+    {
+     "ipa": "ˈi",
+     "t0": 771,
+     "t1": 866
+    },
+    {
+     "ipa": "s",
+     "t0": 866,
+     "t1": 968
+    },
+    {
+     "ipa": "k",
+     "t0": 1062,
+     "t1": 1108
+    },
+    {
+     "ipa": "a",
+     "t0": 1108,
+     "t1": 1218
+    },
+    {
+     "ipa": "t",
+     "t0": 1218,
+     "t1": 1240
+    },
+    {
+     "ipa": "ˈe",
+     "t0": 1240,
+     "t1": 1313
+    },
+    {
+     "ipa": "b",
+     "t0": 1313,
+     "t1": 1368
+    },
+    {
+     "ipa": "aɪ",
+     "t0": 1368,
+     "t1": 1464
+    },
+    {
+     "ipa": "n",
+     "t0": 1464,
+     "t1": 1536
+    },
+    {
+     "ipa": "ˌe",
+     "t0": 1536,
+     "t1": 1583
+    },
+    {
+     "ipa": "n",
+     "t0": 1583,
+     "t1": 1658
+    },
+    {
+     "ipa": "a",
+     "t0": 1713,
+     "t1": 1837
+    },
+    {
+     "ipa": "p",
+     "t0": 1837,
+     "t1": 1868
+    },
+    {
+     "ipa": "ˈo",
+     "t0": 1868,
+     "t1": 1957
+    },
+    {
+     "ipa": "ˌi",
+     "t0": 2012,
+     "t1": 2076
+    },
+    {
+     "ipa": "e",
+     "t0": 2120,
+     "t1": 2152
+    },
+    {
+     "ipa": "r",
+     "t0": 2152,
+     "t1": 2245
+    },
+    {
+     "ipa": "ˌuː",
+     "t0": 2245,
+     "t1": 2337
+    },
+    {
+     "ipa": "s",
+     "t0": 2337,
+     "t1": 2409
+    },
+    {
+     "ipa": "a",
+     "t0": 2409,
+     "t1": 2488
+    },
+    {
+     "ipa": "l",
+     "t0": 2488,
+     "t1": 2560
+    },
+    {
+     "ipa": "ˈɛː",
+     "t0": 2560,
+     "t1": 2676
+    },
+    {
+     "ipa": "m",
+     "t0": 2676,
+     "t1": 2769
+    },
+    {
+     "ipa": "ˈeː",
+     "t0": 2824,
+     "t1": 2966
+    },
+    {
+     "ipa": "s",
+     "t0": 2966,
+     "t1": 3068
+    },
+    {
+     "ipa": "ˌi",
+     "t0": 3123,
+     "t1": 3187
+    },
+    {
+     "ipa": "e",
+     "t0": 3231,
+     "t1": 3263
+    },
+    {
+     "ipa": "r",
+     "t0": 3263,
+     "t1": 3355
+    },
+    {
+     "ipa": "i",
+     "t0": 3355,
+     "t1": 3398
+    },
+    {
+     "ipa": "x",
+     "t0": 3398,
+     "t1": 3485
+    },
+    {
+     "ipa": "ˈɔː",
+     "t0": 3485,
+     "t1": 3710
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 8,
+     "t0": 0,
+     "t1": 700
+    },
+    {
+     "i": 1,
+     "text_position": 10,
+     "length": 3,
+     "t0": 700,
+     "t1": 1023
+    },
+    {
+     "i": 2,
+     "text_position": 14,
+     "length": 10,
+     "t0": 1023,
+     "t1": 1713
+    },
+    {
+     "i": 3,
+     "text_position": 25,
+     "length": 3,
+     "t0": 1713,
+     "t1": 2012
+    },
+    {
+     "i": 4,
+     "text_position": 29,
+     "length": 10,
+     "t0": 2012,
+     "t1": 2824
+    },
+    {
+     "i": 5,
+     "text_position": 40,
+     "length": 3,
+     "t0": 2824,
+     "t1": 3123
+    },
+    {
+     "i": 6,
+     "text_position": 44,
+     "length": 6,
+     "t0": 3123,
+     "t1": 3772.1995464852607
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 8,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": "ˈa"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 87,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 156,
+     "id": "θ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 238,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 325,
+     "id": "ɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 431,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 461,
+     "id": "ˈo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 543,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 645,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 10,
+     "word_length": 3,
+     "audio_position": 700,
+     "id": 2
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 749,
+     "id": "t"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 771,
+     "id": "ˈi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 866,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 10,
+     "word_length": 0,
+     "audio_position": 968,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 14,
+     "word_length": 10,
+     "audio_position": 1023,
+     "id": 3
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1062,
+     "id": "k"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1108,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1218,
+     "id": "t"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1240,
+     "id": "ˈe"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1313,
+     "id": "b"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1368,
+     "id": "aɪ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1464,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1536,
+     "id": "ˌe"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1583,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 14,
+     "word_length": 0,
+     "audio_position": 1658,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 25,
+     "word_length": 3,
+     "audio_position": 1713,
+     "id": 4
+    },
+    {
+     "type": "phoneme",
+     "text_position": 25,
+     "word_length": 0,
+     "audio_position": 1713,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 25,
+     "word_length": 0,
+     "audio_position": 1837,
+     "id": "p"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 25,
+     "word_length": 0,
+     "audio_position": 1868,
+     "id": "ˈo"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 25,
+     "word_length": 0,
+     "audio_position": 1957,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 29,
+     "word_length": 10,
+     "audio_position": 2012,
+     "id": 5
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2012,
+     "id": "ˌi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2076,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2120,
+     "id": "e"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2152,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2245,
+     "id": "ˌu"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2337,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2409,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2488,
+     "id": "l"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2560,
+     "id": "ˈɛ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2676,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 29,
+     "word_length": 0,
+     "audio_position": 2769,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 40,
+     "word_length": 3,
+     "audio_position": 2824,
+     "id": 6
+    },
+    {
+     "type": "phoneme",
+     "text_position": 40,
+     "word_length": 0,
+     "audio_position": 2824,
+     "id": "ˈe"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 40,
+     "word_length": 0,
+     "audio_position": 2966,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 40,
+     "word_length": 0,
+     "audio_position": 3068,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 44,
+     "word_length": 6,
+     "audio_position": 3123,
+     "id": 7
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3123,
+     "id": "ˌi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3187,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3231,
+     "id": "e"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3263,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3355,
+     "id": "i"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3398,
+     "id": "x"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3485,
+     "id": "ˈɔ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 44,
+     "word_length": 0,
+     "audio_position": 3710,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 101,
+     "word_length": 0,
+     "audio_position": 3765,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 101,
+     "word_length": 0,
+     "audio_position": 3772,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 49,
+     "word_length": 0,
+     "audio_position": 3772
+    }
+   ]
+  },
+  {
+   "key": "sent03",
+   "text": "σοφία ἀρχὴ εὐδαιμονίας",
+   "gloss": "智慧是幸福之始",
+   "trace": "s_o_f_ˈi__a_ a_r_x_ˈɛː_ ˌeʊ_d_aɪ_m_o_n_ˈi__a_s_",
+   "phonemes_ipa_raw": "s_o_f_ˈi__a_ a_r_x_ˈɛː_ ˌeʊ_d_aɪ_m_o_n_ˈi__a_s_",
+   "sr": 22050,
+   "durMs": 1720.3174603174602,
+   "phonemes": [
+    {
+     "ipa": "s",
+     "t0": 11,
+     "t1": 84
+    },
+    {
+     "ipa": "o",
+     "t0": 84,
+     "t1": 185
+    },
+    {
+     "ipa": "f",
+     "t0": 185,
+     "t1": 261
+    },
+    {
+     "ipa": "ˈi",
+     "t0": 261,
+     "t1": 339
+    },
+    {
+     "ipa": "a",
+     "t0": 382,
+     "t1": 448
+    },
+    {
+     "ipa": "a",
+     "t0": 503,
+     "t1": 590
+    },
+    {
+     "ipa": "r",
+     "t0": 590,
+     "t1": 657
+    },
+    {
+     "ipa": "x",
+     "t0": 657,
+     "t1": 743
+    },
+    {
+     "ipa": "ˈɛː",
+     "t0": 743,
+     "t1": 904
+    },
+    {
+     "ipa": "ˌeʊ",
+     "t0": 959,
+     "t1": 1072
+    },
+    {
+     "ipa": "d",
+     "t0": 1072,
+     "t1": 1121
+    },
+    {
+     "ipa": "aɪ",
+     "t0": 1121,
+     "t1": 1205
+    },
+    {
+     "ipa": "m",
+     "t0": 1205,
+     "t1": 1281
+    },
+    {
+     "ipa": "o",
+     "t0": 1281,
+     "t1": 1307
+    },
+    {
+     "ipa": "n",
+     "t0": 1307,
+     "t1": 1382
+    },
+    {
+     "ipa": "ˈi",
+     "t0": 1382,
+     "t1": 1443
+    },
+    {
+     "ipa": "a",
+     "t0": 1487,
+     "t1": 1556
+    },
+    {
+     "ipa": "s",
+     "t0": 1556,
+     "t1": 1658
+    }
+   ],
+   "words": [
+    {
+     "i": 0,
+     "text_position": 1,
+     "length": 5,
+     "t0": 0,
+     "t1": 503
+    },
+    {
+     "i": 1,
+     "text_position": 7,
+     "length": 4,
+     "t0": 503,
+     "t1": 959
+    },
+    {
+     "i": 2,
+     "text_position": 12,
+     "length": 11,
+     "t0": 959,
+     "t1": 1720.3174603174602
+    }
+   ],
+   "events": [
+    {
+     "type": "sentence",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "word",
+     "text_position": 1,
+     "word_length": 5,
+     "audio_position": 0,
+     "id": 1
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 11,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 84,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 185,
+     "id": "f"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 261,
+     "id": "ˈi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 339,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 382,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 1,
+     "word_length": 0,
+     "audio_position": 448,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 7,
+     "word_length": 4,
+     "audio_position": 503,
+     "id": 2
+    },
+    {
+     "type": "phoneme",
+     "text_position": 7,
+     "word_length": 0,
+     "audio_position": 503,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 7,
+     "word_length": 0,
+     "audio_position": 590,
+     "id": "r"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 7,
+     "word_length": 0,
+     "audio_position": 657,
+     "id": "x"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 7,
+     "word_length": 0,
+     "audio_position": 743,
+     "id": "ˈɛ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 7,
+     "word_length": 0,
+     "audio_position": 904,
+     "id": ""
+    },
+    {
+     "type": "word",
+     "text_position": 12,
+     "word_length": 11,
+     "audio_position": 959,
+     "id": 3
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 959,
+     "id": "ˌeʊ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1072,
+     "id": "d"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1121,
+     "id": "aɪ"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1205,
+     "id": "m"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1281,
+     "id": "o"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1307,
+     "id": "n"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1382,
+     "id": "ˈi"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1443,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1487,
+     "id": "a"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1556,
+     "id": "s"
+    },
+    {
+     "type": "phoneme",
+     "text_position": 12,
+     "word_length": 0,
+     "audio_position": 1658,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 47,
+     "word_length": 0,
+     "audio_position": 1713,
+     "id": ""
+    },
+    {
+     "type": "phoneme",
+     "text_position": 47,
+     "word_length": 0,
+     "audio_position": 1720,
+     "id": ""
+    },
+    {
+     "type": "end",
+     "text_position": 22,
+     "word_length": 0,
+     "audio_position": 1720
+    }
+   ]
+  }
+ ]
+}

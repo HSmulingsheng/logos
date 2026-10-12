@@ -1,0 +1,148 @@
+{
+ "stat": {
+  "tot": 5985,
+  "rel_match": 5985,
+  "rel_mismatch": 0,
+  "noStress": 3,
+  "sylCountDiff": 26
+ },
+ "byType": {
+  "none": 13,
+  "acute": 5588,
+  "circumflex": 398,
+  "grave": 1
+ },
+ "byTypeMatch": {
+  "acute": 5588,
+  "circumflex": 396,
+  "grave": 1
+ },
+ "mismatch": [],
+ "pairs_compared": 15,
+ "pairs_identical": 14,
+ "pairs": [
+  {
+   "acute": "εἰμί",
+   "circumflex": "εἶμι",
+   "ipa_acute": "eː_m_ˈi_",
+   "ipa_circumflex": "ˈeː_m_i_",
+   "identical_segments": true
+  },
+  {
+   "acute": "ἤ",
+   "circumflex": "ᾗ",
+   "ipa_acute": "ˈɛː_",
+   "ipa_circumflex": "h_ˈɛɪː_",
+   "identical_segments": false
+  },
+  {
+   "acute": "πρωτός",
+   "circumflex": "πρῶτος",
+   "ipa_acute": "p_r_ɔː_t_ˈo_s_",
+   "ipa_circumflex": "p_r_ˈɔː_t_o_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "πώς",
+   "circumflex": "πῶς",
+   "ipa_acute": "p_ˈɔː_s_",
+   "ipa_circumflex": "p_ˈɔː_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "καιρός",
+   "circumflex": "καῖρος",
+   "ipa_acute": "k_aɪ_r_ˈo_s_",
+   "ipa_circumflex": "k_ˈaɪ_r_o_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "ἔρημος",
+   "circumflex": "ἐρῆμος",
+   "ipa_acute": "ˈe_r_ɛː_m_ˌo_s_",
+   "ipa_circumflex": "e_r_ˈɛː_m_o_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "πού",
+   "circumflex": "ποῦ",
+   "ipa_acute": "p_ˈuː_",
+   "ipa_circumflex": "p_ˈuː_",
+   "identical_segments": true
+  },
+  {
+   "acute": "ὅμοιος",
+   "circumflex": "ὁμοῖος",
+   "ipa_acute": "h_ˈo_m_oɪ_ˌo_s_",
+   "ipa_circumflex": "h_o_m_ˈoɪ_o_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "κάλως",
+   "circumflex": "καλῶς",
+   "ipa_acute": "k_ˈa_l_ɔː_s_",
+   "ipa_circumflex": "k_a_l_ˈɔː_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "ποιός",
+   "circumflex": "ποῖος",
+   "ipa_acute": "p_oɪ_ˈo_s_",
+   "ipa_circumflex": "p_ˈoɪ_o_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "δημός",
+   "circumflex": "δῆμος",
+   "ipa_acute": "d_ɛː_m_ˈo_s_",
+   "ipa_circumflex": "d_ˈɛː_m_o_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "ὅμως",
+   "circumflex": "ὁμῶς",
+   "ipa_acute": "h_ˈo_m_ɔː_s_",
+   "ipa_circumflex": "h_o_m_ˈɔː_s_",
+   "identical_segments": true
+  },
+  {
+   "acute": "οὔκουν",
+   "circumflex": "οὐκοῦν",
+   "ipa_acute": "ˈuː_k_uː_n_",
+   "ipa_circumflex": "uː_k_ˈuː_n_",
+   "identical_segments": true
+  },
+  {
+   "acute": "χρή",
+   "circumflex": "χρῆ",
+   "ipa_acute": "x_r_ˈɛː_",
+   "ipa_circumflex": "x_r_ˈɛː_",
+   "identical_segments": true
+  },
+  {
+   "acute": "δεινός",
+   "circumflex": "δεῖνος",
+   "ipa_acute": "d_eː_n_ˈo_s_",
+   "ipa_circumflex": "d_ˈeː_n_o_s_",
+   "identical_segments": true
+  }
+ ],
+ "no_accent_forced": {
+  "n": 13,
+  "forced": 12,
+  "samples": [
+   "ἐν → ˈe_n_",
+   "εἰς → ˈeː_s_",
+   "οὐ → ˈuː_",
+   "ἐκ → ˈe_k_",
+   "ὡς → h_ˈɔː_s_",
+   "εἰ → ˈeː_",
+   "λεμα → l_ˈe_m_a_",
+   "μιν → m_ˈi_n_",
+   "τοι → t_ˈoɪ_",
+   "Ἀπις → ˈa_p_i_s_",
+   "νιν → n_ˈi_n_",
+   "πη → p_ˈɛː_"
+  ]
+ }
+}

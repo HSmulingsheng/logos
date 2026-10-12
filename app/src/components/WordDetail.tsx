@@ -111,21 +111,38 @@ export function WordDetail({ word, compact = false }: { word: Word; compact?: bo
             ))}
           </ol>
         </div>
-        {(lsj || sensesEn.length > 0) && (
+        {(lsj?.length || sensesEn.length > 0) && (
           <div>
             <div className="mb-1 flex flex-wrap items-baseline gap-x-2">
               <span className="text-xs font-semibold text-ink-400">
-                {lsj ? '英文释义 · LSJ' : '英文释义'}
+                {lsj?.length ? '英文释义 · LSJ' : '英文释义'}
               </span>
-              {lsj && (
+              {lsj?.length ? (
                 <span className="text-[10px] text-ink-300">
-                  Liddell-Scott-Jones《希腊语英语词典》· Perseus · CC BY-SA 4.0
+                  Liddell-Scott-Jones《希腊语英语词典》· Perseus · CC BY-SA 4.0 · 按语料常用度排序
                 </span>
-              )}
+              ) : null}
             </div>
-            <p className="text-sm leading-relaxed text-ink-500 dark:text-ink-300">
-              {lsj || sensesEn.join('；')}
-            </p>
+            {lsj?.length ? (
+              /* 义项已按「应用语料里会读到的作者」加权排序，
+                 最可能在读的文本里用到的排在最前，不照抄 LSJ 的历史顺序 */
+              <ol className="space-y-1.5">
+                {lsj.map((sn, i) => (
+                  <li key={`${sn.n}-${i}`} className="flex gap-2 text-sm leading-relaxed">
+                    <span className="mt-[3px] shrink-0 text-[10px] font-medium text-aegean-500 dark:text-aegean-400">
+                      {sn.n || i + 1}
+                    </span>
+                    <span className={i === 0 ? 'text-ink-700 dark:text-ink-200' : 'text-ink-500 dark:text-ink-400'}>
+                      {sn.t}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              <p className="text-sm leading-relaxed text-ink-500 dark:text-ink-300">
+                {sensesEn.join('；')}
+              </p>
+            )}
           </div>
         )}
       </div>

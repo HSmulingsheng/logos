@@ -1,0 +1,1444 @@
+{
+ "caps": {
+  "samplerate": 22050,
+  "has_convert_to_phonemes": true,
+  "has_synthesize_and_get_phonemes": true,
+  "has_synthesize_ipa": true,
+  "worker_methods": [
+   "constructor",
+   "__class__",
+   "synth_",
+   "synth_ipa_",
+   "synth_with_phoneme_trace_",
+   "text_to_phonemes",
+   "set_voice",
+   "getSizeOfEventStruct_",
+   "getStringIDFromEventStruct_",
+   "getNumericIDFromEventStruct_",
+   "get_voices",
+   "set_voices",
+   "voices",
+   "get_samplerate",
+   "samplerate",
+   "get_rate",
+   "set_rate",
+   "rate",
+   "get_volume",
+   "set_volume",
+   "volume",
+   "get_pitch",
+   "set_pitch",
+   "pitch",
+   "get_range",
+   "set_range",
+   "range",
+   "__destroy__",
+   "list_voices",
+   "synthesize",
+   "synthesize_ipa",
+   "convert_to_phonemes",
+   "synthesize_and_get_phonemes"
+  ],
+  "module_exports_heap": [
+   "HEAP8",
+   "HEAPU8",
+   "HEAP16",
+   "HEAP32",
+   "HEAPF32",
+   "HEAPF64"
+  ],
+  "module_has_UTF8ToString": false,
+  "voices": [
+   "grk/grc"
+  ]
+ },
+ "align": {
+  "text": "ἄνθρωπος",
+  "trace": "ˈa_n_θ_r_ɔː_p_ˌo_s_",
+  "phonemes_ipa_raw": "ˈa_n_θ_r_ɔː_p_ˌo_s_",
+  "phonemes_espeak_raw": "'a_n_T_R_O:_p_,o_s__:",
+  "phonemes": [
+   {
+    "ipa": "ˈa",
+    "id": "ˈa",
+    "t0": 0,
+    "t1": 116
+   },
+   {
+    "ipa": "n",
+    "id": "n",
+    "t0": 116,
+    "t1": 193
+   },
+   {
+    "ipa": "θ",
+    "id": "θ",
+    "t0": 193,
+    "t1": 275
+   },
+   {
+    "ipa": "r",
+    "id": "r",
+    "t0": 275,
+    "t1": 362
+   },
+   {
+    "ipa": "ɔː",
+    "id": "ɔ",
+    "t0": 362,
+    "t1": 473
+   },
+   {
+    "ipa": "p",
+    "id": "p",
+    "t0": 473,
+    "t1": 503
+   },
+   {
+    "ipa": "ˌo",
+    "id": "ˌo",
+    "t0": 503,
+    "t1": 579
+   },
+   {
+    "ipa": "s",
+    "id": "s",
+    "t0": 579,
+    "t1": 681
+   }
+  ],
+  "total_ms": 743.5827664399093
+ },
+ "pairs": [
+  {
+   "group": "circ_vs_acute_1",
+   "side": "a",
+   "text": "φῶς",
+   "note": "circumflex vs acute，音段相同",
+   "trace": "f_ˈɔː_s_",
+   "phonemes_ipa": "f_ˈɔː_s_",
+   "durMs": 503.0385487528345,
+   "phonemes": [
+    {
+     "ipa": "f",
+     "id": "f",
+     "t0": 48,
+     "t1": 124
+    },
+    {
+     "ipa": "ˈɔː",
+     "id": "ˈɔ",
+     "t0": 124,
+     "t1": 338
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 338,
+     "t1": 441
+    }
+   ],
+   "wav": "_probe/circ_vs_acute_1_a.wav"
+  },
+  {
+   "group": "circ_vs_acute_1",
+   "side": "b",
+   "text": "φώς",
+   "note": "circumflex vs acute，音段相同",
+   "trace": "f_ˈɔː_s_",
+   "phonemes_ipa": "f_ˈɔː_s_",
+   "durMs": 502.9478458049886,
+   "phonemes": [
+    {
+     "ipa": "f",
+     "id": "f",
+     "t0": 48,
+     "t1": 124
+    },
+    {
+     "ipa": "ˈɔː",
+     "id": "ˈɔ",
+     "t0": 124,
+     "t1": 338
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 338,
+     "t1": 440
+    }
+   ],
+   "wav": "_probe/circ_vs_acute_1_b.wav"
+  },
+  {
+   "group": "circ_vs_acute_2",
+   "side": "a",
+   "text": "πῶς",
+   "note": "circumflex vs acute",
+   "trace": "p_ˈɔː_s_",
+   "phonemes_ipa": "p_ˈɔː_s_",
+   "durMs": 459.31972789115645,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 48,
+     "t1": 79
+    },
+    {
+     "ipa": "ˈɔː",
+     "id": "ˈɔ",
+     "t0": 79,
+     "t1": 295
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 295,
+     "t1": 397
+    }
+   ],
+   "wav": "_probe/circ_vs_acute_2_a.wav"
+  },
+  {
+   "group": "circ_vs_acute_2",
+   "side": "b",
+   "text": "πώς",
+   "note": "circumflex vs acute",
+   "trace": "p_ˈɔː_s_",
+   "phonemes_ipa": "p_ˈɔː_s_",
+   "durMs": 458.41269841269843,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 48,
+     "t1": 79
+    },
+    {
+     "ipa": "ˈɔː",
+     "id": "ˈɔ",
+     "t0": 79,
+     "t1": 294
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 294,
+     "t1": 396
+    }
+   ],
+   "wav": "_probe/circ_vs_acute_2_b.wav"
+  },
+  {
+   "group": "pos_1",
+   "side": "a",
+   "text": "πότε",
+   "note": "acute 在前 vs 在后",
+   "trace": "p_ˈo_t_e_",
+   "phonemes_ipa": "p_ˈo_t_e_",
+   "durMs": 374.82993197278915,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 48,
+     "t1": 79
+    },
+    {
+     "ipa": "ˈo",
+     "id": "ˈo",
+     "t0": 79,
+     "t1": 216
+    },
+    {
+     "ipa": "t",
+     "id": "t",
+     "t0": 216,
+     "t1": 238
+    },
+    {
+     "ipa": "e",
+     "id": "e",
+     "t0": 238,
+     "t1": 312
+    }
+   ],
+   "wav": "_probe/pos_1_a.wav"
+  },
+  {
+   "group": "pos_1",
+   "side": "b",
+   "text": "ποτέ",
+   "note": "acute 在前 vs 在后",
+   "trace": "p_o_t_ˈe_",
+   "phonemes_ipa": "p_o_t_ˈe_",
+   "durMs": 377.8231292517007,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 38,
+     "t1": 69
+    },
+    {
+     "ipa": "o",
+     "id": "o",
+     "t0": 69,
+     "t1": 170
+    },
+    {
+     "ipa": "t",
+     "id": "t",
+     "t0": 170,
+     "t1": 192
+    },
+    {
+     "ipa": "ˈe",
+     "id": "ˈe",
+     "t0": 192,
+     "t1": 315
+    }
+   ],
+   "wav": "_probe/pos_1_b.wav"
+  },
+  {
+   "group": "pos_2",
+   "side": "a",
+   "text": "τίς",
+   "note": "疑问词(acute) vs 不定代词(无重音)",
+   "trace": "t_ˈi_s_",
+   "phonemes_ipa": "t_ˈi_s_",
+   "durMs": 370.1133786848073,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "id": "t",
+     "t0": 48,
+     "t1": 71
+    },
+    {
+     "ipa": "ˈi",
+     "id": "ˈi",
+     "t0": 71,
+     "t1": 206
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 206,
+     "t1": 308
+    }
+   ],
+   "wav": "_probe/pos_2_a.wav"
+  },
+  {
+   "group": "pos_2",
+   "side": "b",
+   "text": "τις",
+   "note": "疑问词(acute) vs 不定代词(无重音)",
+   "trace": "t_ˈi_s_",
+   "phonemes_ipa": "t_ˈi_s_",
+   "durMs": 370.02267573696145,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "id": "t",
+     "t0": 48,
+     "t1": 71
+    },
+    {
+     "ipa": "ˈi",
+     "id": "ˈi",
+     "t0": 71,
+     "t1": 205
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 205,
+     "t1": 308
+    }
+   ],
+   "wav": "_probe/pos_2_b.wav"
+  },
+  {
+   "group": "pos_3",
+   "side": "a",
+   "text": "τόμος",
+   "note": "acute 首音节 vs 末音节",
+   "trace": "t_ˈo_m_o_s_",
+   "phonemes_ipa": "t_ˈo_m_o_s_",
+   "durMs": 444.9433106575963,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "id": "t",
+     "t0": 48,
+     "t1": 71
+    },
+    {
+     "ipa": "ˈo",
+     "id": "ˈo",
+     "t0": 71,
+     "t1": 158
+    },
+    {
+     "ipa": "m",
+     "id": "m",
+     "t0": 158,
+     "t1": 233
+    },
+    {
+     "ipa": "o",
+     "id": "o",
+     "t0": 233,
+     "t1": 280
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 280,
+     "t1": 382
+    }
+   ],
+   "wav": "_probe/pos_3_a.wav"
+  },
+  {
+   "group": "pos_3",
+   "side": "b",
+   "text": "τομός",
+   "note": "acute 首音节 vs 末音节",
+   "trace": "t_o_m_ˈo_s_",
+   "phonemes_ipa": "t_o_m_ˈo_s_",
+   "durMs": 457.00680272108843,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "id": "t",
+     "t0": 38,
+     "t1": 61
+    },
+    {
+     "ipa": "o",
+     "id": "o",
+     "t0": 61,
+     "t1": 116
+    },
+    {
+     "ipa": "m",
+     "id": "m",
+     "t0": 116,
+     "t1": 209
+    },
+    {
+     "ipa": "ˈo",
+     "id": "ˈo",
+     "t0": 209,
+     "t1": 292
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 292,
+     "t1": 395
+    }
+   ],
+   "wav": "_probe/pos_3_b.wav"
+  },
+  {
+   "group": "pos_4",
+   "side": "a",
+   "text": "εἶμι",
+   "note": "circumflex 首 vs acute 末",
+   "trace": "ˈeː_m_i_",
+   "phonemes_ipa": "ˈeː_m_i_",
+   "durMs": 348.52607709750566,
+   "phonemes": [
+    {
+     "ipa": "ˈeː",
+     "id": "ˈe",
+     "t0": 0,
+     "t1": 153
+    },
+    {
+     "ipa": "m",
+     "id": "m",
+     "t0": 153,
+     "t1": 223
+    },
+    {
+     "ipa": "i",
+     "id": "i",
+     "t0": 223,
+     "t1": 286
+    }
+   ],
+   "wav": "_probe/pos_4_a.wav"
+  },
+  {
+   "group": "pos_4",
+   "side": "b",
+   "text": "εἰμί",
+   "note": "circumflex 首 vs acute 末",
+   "trace": "eː_m_ˈi_",
+   "phonemes_ipa": "eː_m_ˈi_",
+   "durMs": 357.6417233560091,
+   "phonemes": [
+    {
+     "ipa": "eː",
+     "id": "e",
+     "t0": 0,
+     "t1": 89
+    },
+    {
+     "ipa": "m",
+     "id": "m",
+     "t0": 89,
+     "t1": 185
+    },
+    {
+     "ipa": "ˈi",
+     "id": "ˈi",
+     "t0": 185,
+     "t1": 295
+    }
+   ],
+   "wav": "_probe/pos_4_b.wav"
+  },
+  {
+   "group": "pos_5",
+   "side": "a",
+   "text": "ἄνθρωπος",
+   "note": "acute  antepenult vs penult",
+   "trace": "ˈa_n_θ_r_ɔː_p_ˌo_s_",
+   "phonemes_ipa": "ˈa_n_θ_r_ɔː_p_ˌo_s_",
+   "durMs": 743.6734693877552,
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "id": "ˈa",
+     "t0": 0,
+     "t1": 116
+    },
+    {
+     "ipa": "n",
+     "id": "n",
+     "t0": 116,
+     "t1": 193
+    },
+    {
+     "ipa": "θ",
+     "id": "θ",
+     "t0": 193,
+     "t1": 275
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 275,
+     "t1": 362
+    },
+    {
+     "ipa": "ɔː",
+     "id": "ɔ",
+     "t0": 362,
+     "t1": 473
+    },
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 473,
+     "t1": 503
+    },
+    {
+     "ipa": "ˌo",
+     "id": "ˌo",
+     "t0": 503,
+     "t1": 579
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 579,
+     "t1": 681
+    }
+   ],
+   "wav": "_probe/pos_5_a.wav"
+  },
+  {
+   "group": "pos_5",
+   "side": "b",
+   "text": "ἀνθρώπου",
+   "note": "acute  antepenult vs penult",
+   "trace": "a_n_θ_r_ˈɔː_p_uː_",
+   "phonemes_ipa": "a_n_θ_r_ˈɔː_p_uː_",
+   "durMs": 735.9183673469388,
+   "phonemes": [
+    {
+     "ipa": "a",
+     "id": "a",
+     "t0": 0,
+     "t1": 69
+    },
+    {
+     "ipa": "n",
+     "id": "n",
+     "t0": 69,
+     "t1": 134
+    },
+    {
+     "ipa": "θ",
+     "id": "θ",
+     "t0": 134,
+     "t1": 216
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 216,
+     "t1": 323
+    },
+    {
+     "ipa": "ˈɔː",
+     "id": "ˈɔ",
+     "t0": 323,
+     "t1": 493
+    },
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 493,
+     "t1": 523
+    },
+    {
+     "ipa": "uː",
+     "id": "u",
+     "t0": 523,
+     "t1": 673
+    }
+   ],
+   "wav": "_probe/pos_5_b.wav"
+  },
+  {
+   "group": "pos_6",
+   "side": "a",
+   "text": "δῆμος",
+   "note": "circ penult vs acute final",
+   "trace": "d_ˈɛː_m_o_s_",
+   "phonemes_ipa": "d_ˈɛː_m_o_s_",
+   "durMs": 471.83673469387753,
+   "phonemes": [
+    {
+     "ipa": "d",
+     "id": "d",
+     "t0": 12,
+     "t1": 33
+    },
+    {
+     "ipa": "ˈɛː",
+     "id": "ˈɛ",
+     "t0": 33,
+     "t1": 184
+    },
+    {
+     "ipa": "m",
+     "id": "m",
+     "t0": 184,
+     "t1": 259
+    },
+    {
+     "ipa": "o",
+     "id": "o",
+     "t0": 259,
+     "t1": 307
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 307,
+     "t1": 409
+    }
+   ],
+   "wav": "_probe/pos_6_a.wav"
+  },
+  {
+   "group": "pos_6",
+   "side": "b",
+   "text": "δημός",
+   "note": "circ penult vs acute final",
+   "trace": "d_ɛː_m_ˈo_s_",
+   "phonemes_ipa": "d_ɛː_m_ˈo_s_",
+   "durMs": 462.67573696145126,
+   "phonemes": [
+    {
+     "ipa": "d",
+     "id": "d",
+     "t0": 12,
+     "t1": 27
+    },
+    {
+     "ipa": "ɛː",
+     "id": "ɛ",
+     "t0": 27,
+     "t1": 117
+    },
+    {
+     "ipa": "m",
+     "id": "m",
+     "t0": 117,
+     "t1": 210
+    },
+    {
+     "ipa": "ˈo",
+     "id": "ˈo",
+     "t0": 210,
+     "t1": 298
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 298,
+     "t1": 400
+    }
+   ],
+   "wav": "_probe/pos_6_b.wav"
+  },
+  {
+   "group": "pos_7",
+   "side": "a",
+   "text": "ὄρος",
+   "note": "acute first vs acute final",
+   "trace": "ˈo_r_o_s_",
+   "phonemes_ipa": "ˈo_r_o_s_",
+   "durMs": 409.0249433106576,
+   "phonemes": [
+    {
+     "ipa": "ˈo",
+     "id": "ˈo",
+     "t0": 0,
+     "t1": 98
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 98,
+     "t1": 194
+    },
+    {
+     "ipa": "o",
+     "id": "o",
+     "t0": 194,
+     "t1": 244
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 244,
+     "t1": 347
+    }
+   ],
+   "wav": "_probe/pos_7_a.wav"
+  },
+  {
+   "group": "pos_7",
+   "side": "b",
+   "text": "ὁρός",
+   "note": "acute first vs acute final",
+   "trace": "h_o_r_ˈo_s_",
+   "phonemes_ipa": "h_o_r_ˈo_s_",
+   "durMs": 513.015873015873,
+   "phonemes": [
+    {
+     "ipa": "h",
+     "id": "h",
+     "t0": 11,
+     "t1": 76
+    },
+    {
+     "ipa": "o",
+     "id": "o",
+     "t0": 76,
+     "t1": 140
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 140,
+     "t1": 261
+    },
+    {
+     "ipa": "ˈo",
+     "id": "ˈo",
+     "t0": 261,
+     "t1": 348
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 348,
+     "t1": 451
+    }
+   ],
+   "wav": "_probe/pos_7_b.wav"
+  }
+ ],
+ "pitchScan": [
+  {
+   "pitch": 30,
+   "durMs": 749.8412698412699,
+   "wav": "_probe/pitch30.wav",
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "id": "ˈa",
+     "t0": 0,
+     "t1": 116
+    },
+    {
+     "ipa": "n",
+     "id": "n",
+     "t0": 116,
+     "t1": 198
+    },
+    {
+     "ipa": "θ",
+     "id": "θ",
+     "t0": 198,
+     "t1": 280
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 280,
+     "t1": 367
+    },
+    {
+     "ipa": "ɔː",
+     "id": "ɔ",
+     "t0": 367,
+     "t1": 475
+    },
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 475,
+     "t1": 505
+    },
+    {
+     "ipa": "ˌo",
+     "id": "ˌo",
+     "t0": 505,
+     "t1": 585
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 585,
+     "t1": 687
+    }
+   ]
+  },
+  {
+   "pitch": 50,
+   "durMs": 744.1269841269841,
+   "wav": "_probe/pitch50.wav",
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "id": "ˈa",
+     "t0": 0,
+     "t1": 116
+    },
+    {
+     "ipa": "n",
+     "id": "n",
+     "t0": 116,
+     "t1": 193
+    },
+    {
+     "ipa": "θ",
+     "id": "θ",
+     "t0": 193,
+     "t1": 275
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 275,
+     "t1": 362
+    },
+    {
+     "ipa": "ɔː",
+     "id": "ɔ",
+     "t0": 362,
+     "t1": 474
+    },
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 474,
+     "t1": 504
+    },
+    {
+     "ipa": "ˌo",
+     "id": "ˌo",
+     "t0": 504,
+     "t1": 580
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 580,
+     "t1": 682
+    }
+   ]
+  },
+  {
+   "pitch": 70,
+   "durMs": 756.4625850340136,
+   "wav": "_probe/pitch70.wav",
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "id": "ˈa",
+     "t0": 0,
+     "t1": 116
+    },
+    {
+     "ipa": "n",
+     "id": "n",
+     "t0": 116,
+     "t1": 199
+    },
+    {
+     "ipa": "θ",
+     "id": "θ",
+     "t0": 199,
+     "t1": 281
+    },
+    {
+     "ipa": "r",
+     "id": "r",
+     "t0": 281,
+     "t1": 368
+    },
+    {
+     "ipa": "ɔː",
+     "id": "ɔ",
+     "t0": 368,
+     "t1": 483
+    },
+    {
+     "ipa": "p",
+     "id": "p",
+     "t0": 483,
+     "t1": 513
+    },
+    {
+     "ipa": "ˌo",
+     "id": "ˌo",
+     "t0": 513,
+     "t1": 592
+    },
+    {
+     "ipa": "s",
+     "id": "s",
+     "t0": 592,
+     "t1": 694
+    }
+   ]
+  }
+ ],
+ "length": [
+  {
+   "group": "ω vs ο（不稳妥，仅观察）",
+   "side": "long",
+   "text": "ὥρα",
+   "trace": "h_ˈɔː_r_a_",
+   "phonemes_ipa": "h_ˈɔː_r_a_",
+   "durMs": 483.6734693877551,
+   "phonemes": [
+    {
+     "ipa": "h",
+     "ms": 65
+    },
+    {
+     "ipa": "ˈɔː",
+     "ms": 168
+    },
+    {
+     "ipa": "r",
+     "ms": 99
+    },
+    {
+     "ipa": "a",
+     "ms": 78
+    }
+   ]
+  },
+  {
+   "group": "ω vs ο（不稳妥，仅观察）",
+   "side": "short",
+   "text": "ὅρα",
+   "trace": "h_ˈo_r_a_",
+   "phonemes_ipa": "h_ˈo_r_a_",
+   "durMs": 407.93650793650795,
+   "phonemes": [
+    {
+     "ipa": "h",
+     "ms": 65
+    },
+    {
+     "ipa": "ˈo",
+     "ms": 98
+    },
+    {
+     "ipa": "r",
+     "ms": 99
+    },
+    {
+     "ipa": "a",
+     "ms": 72
+    }
+   ]
+  },
+  {
+   "group": "ω vs ο",
+   "side": "long",
+   "text": "λόγῳ",
+   "trace": "l_ˈo_ɡ_ɔɪː_",
+   "phonemes_ipa": "l_ˈo_ɡ_ɔɪː_",
+   "durMs": 450.65759637188205,
+   "phonemes": [
+    {
+     "ipa": "l",
+     "ms": 98
+    },
+    {
+     "ipa": "ˈo",
+     "ms": 61
+    },
+    {
+     "ipa": "ɡ",
+     "ms": 61
+    },
+    {
+     "ipa": "ɔɪː",
+     "ms": 168
+    }
+   ]
+  },
+  {
+   "group": "ω vs ο",
+   "side": "short",
+   "text": "λόγο",
+   "trace": "l_ˈo_ɡ_o_",
+   "phonemes_ipa": "l_ˈo_ɡ_o_",
+   "durMs": 363.2199546485261,
+   "phonemes": [
+    {
+     "ipa": "l",
+     "ms": 98
+    },
+    {
+     "ipa": "ˈo",
+     "ms": 61
+    },
+    {
+     "ipa": "ɡ",
+     "ms": 61
+    },
+    {
+     "ipa": "o",
+     "ms": 81
+    }
+   ]
+  },
+  {
+   "group": "η vs ε",
+   "side": "long",
+   "text": "τιμή",
+   "trace": "t_i_m_ˈɛː_",
+   "phonemes_ipa": "t_i_m_ˈɛː_",
+   "durMs": 465.66893424036283,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "ms": 23
+    },
+    {
+     "ipa": "i",
+     "ms": 63
+    },
+    {
+     "ipa": "m",
+     "ms": 99
+    },
+    {
+     "ipa": "ˈɛː",
+     "ms": 180
+    }
+   ]
+  },
+  {
+   "group": "η vs ε",
+   "side": "short",
+   "text": "τιμε",
+   "trace": "t_ˈi_m_e_",
+   "phonemes_ipa": "t_ˈi_m_e_",
+   "durMs": 352.4263038548753,
+   "phonemes": [
+    {
+     "ipa": "t",
+     "ms": 23
+    },
+    {
+     "ipa": "ˈi",
+     "ms": 104
+    },
+    {
+     "ipa": "m",
+     "ms": 70
+    },
+    {
+     "ipa": "e",
+     "ms": 45
+    }
+   ]
+  },
+  {
+   "group": "η vs ε",
+   "side": "long",
+   "text": "δῆμος",
+   "trace": "d_ˈɛː_m_o_s_",
+   "phonemes_ipa": "d_ˈɛː_m_o_s_",
+   "durMs": 471.609977324263,
+   "phonemes": [
+    {
+     "ipa": "d",
+     "ms": 21
+    },
+    {
+     "ipa": "ˈɛː",
+     "ms": 151
+    },
+    {
+     "ipa": "m",
+     "ms": 75
+    },
+    {
+     "ipa": "o",
+     "ms": 48
+    },
+    {
+     "ipa": "s",
+     "ms": 102
+    }
+   ]
+  },
+  {
+   "group": "η vs ε",
+   "side": "short",
+   "text": "δεμος",
+   "trace": "d_ˈe_m_o_s_",
+   "phonemes_ipa": "d_ˈe_m_o_s_",
+   "durMs": 406.48526077097506,
+   "phonemes": [
+    {
+     "ipa": "d",
+     "ms": 21
+    },
+    {
+     "ipa": "ˈe",
+     "ms": 87
+    },
+    {
+     "ipa": "m",
+     "ms": 75
+    },
+    {
+     "ipa": "o",
+     "ms": 47
+    },
+    {
+     "ipa": "s",
+     "ms": 102
+    }
+   ]
+  },
+  {
+   "group": "η vs ε",
+   "side": "long",
+   "text": "ποίησις",
+   "trace": "p_ˈoɪ_ɛː_s_ˌi_s_",
+   "phonemes_ipa": "p_ˈoɪ_ɛː_s_ˌi_s_",
+   "durMs": 677.8684807256236,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "ms": 31
+    },
+    {
+     "ipa": "ˈoɪ",
+     "ms": 153
+    },
+    {
+     "ipa": "ɛː",
+     "ms": 108
+    },
+    {
+     "ipa": "s",
+     "ms": 72
+    },
+    {
+     "ipa": "ˌi",
+     "ms": 101
+    },
+    {
+     "ipa": "s",
+     "ms": 102
+    }
+   ]
+  },
+  {
+   "group": "η vs ε",
+   "side": "short",
+   "text": "ποιεσις",
+   "trace": "p_oɪ_ˈe_s_i_s_",
+   "phonemes_ipa": "p_oɪ_ˈe_s_i_s_",
+   "durMs": 584.5351473922902,
+   "phonemes": [
+    {
+     "ipa": "p",
+     "ms": 31
+    },
+    {
+     "ipa": "oɪ",
+     "ms": 90
+    },
+    {
+     "ipa": "ˈe",
+     "ms": 101
+    },
+    {
+     "ipa": "s",
+     "ms": 73
+    },
+    {
+     "ipa": "i",
+     "ms": 87
+    },
+    {
+     "ipa": "s",
+     "ms": 102
+    }
+   ]
+  },
+  {
+   "group": "υ vs υ",
+   "side": "long",
+   "text": "μῦθος",
+   "trace": "m_ˈy_θ_o_s_",
+   "phonemes_ipa": "m_ˈy_θ_o_s_",
+   "durMs": 485.2154195011338,
+   "phonemes": [
+    {
+     "ipa": "m",
+     "ms": 92
+    },
+    {
+     "ipa": "ˈy",
+     "ms": 72
+    },
+    {
+     "ipa": "θ",
+     "ms": 82
+    },
+    {
+     "ipa": "o",
+     "ms": 75
+    },
+    {
+     "ipa": "s",
+     "ms": 102
+    }
+   ]
+  },
+  {
+   "group": "υ vs υ",
+   "side": "short",
+   "text": "μυθος",
+   "trace": "m_ˈy_θ_o_s_",
+   "phonemes_ipa": "m_ˈy_θ_o_s_",
+   "durMs": 485.3061224489796,
+   "phonemes": [
+    {
+     "ipa": "m",
+     "ms": 92
+    },
+    {
+     "ipa": "ˈy",
+     "ms": 71
+    },
+    {
+     "ipa": "θ",
+     "ms": 83
+    },
+    {
+     "ipa": "o",
+     "ms": 75
+    },
+    {
+     "ipa": "s",
+     "ms": 102
+    }
+   ]
+  },
+  {
+   "group": "ι vs α",
+   "side": "long",
+   "text": "σοφία",
+   "trace": "s_o_f_ˈi__a_",
+   "phonemes_ipa": "s_o_f_ˈi__a_",
+   "durMs": 543.764172335601,
+   "phonemes": [
+    {
+     "ipa": "s",
+     "ms": 73
+    },
+    {
+     "ipa": "o",
+     "ms": 101
+    },
+    {
+     "ipa": "f",
+     "ms": 76
+    },
+    {
+     "ipa": "ˈi",
+     "ms": 98
+    },
+    {
+     "ipa": "a",
+     "ms": 44
+    },
+    {
+     "ipa": "a",
+     "ms": 78
+    }
+   ]
+  },
+  {
+   "group": "ι vs α",
+   "side": "short",
+   "text": "σοφιᾱ",
+   "trace": "s_ ˈo_ f_ ˈi_ l_ˈe_t_ə___f__b___",
+   "phonemes_ipa": "s_ ˈo_ f_ ˈi_ l_ˈe_t_ə___f__b___",
+   "durMs": 1236.1451247165533,
+   "phonemes": [
+    {
+     "ipa": "s",
+     "ms": 103
+    },
+    {
+     "ipa": " ˈo",
+     "ms": 55
+    },
+    {
+     "ipa": " f",
+     "ms": 95
+    },
+    {
+     "ipa": " ˈi",
+     "ms": 104
+    },
+    {
+     "ipa": " l",
+     "ms": 76
+    },
+    {
+     "ipa": "ˈe",
+     "ms": 55
+    },
+    {
+     "ipa": "t",
+     "ms": 121
+    },
+    {
+     "ipa": "ə",
+     "ms": 55
+    },
+    {
+     "ipa": "f",
+     "ms": 90
+    },
+    {
+     "ipa": "b",
+     "ms": 103
+    },
+    {
+     "ipa": "t",
+     "ms": 22
+    },
+    {
+     "ipa": "ə",
+     "ms": 75
+    },
+    {
+     "ipa": "f",
+     "ms": 76
+    },
+    {
+     "ipa": "b",
+     "ms": 39
+    }
+   ]
+  },
+  {
+   "group": "ω vs ο",
+   "side": "long",
+   "text": "ἄγω",
+   "trace": "ˈa_ɡ_ɔː_",
+   "phonemes_ipa": "ˈa_ɡ_ɔː_",
+   "durMs": 389.7959183673469,
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "ms": 130
+    },
+    {
+     "ipa": "ɡ",
+     "ms": 61
+    },
+    {
+     "ipa": "ɔː",
+     "ms": 136
+    }
+   ]
+  },
+  {
+   "group": "ω vs ο",
+   "side": "short",
+   "text": "ἀγο",
+   "trace": "ˈa_ɡ_o_",
+   "phonemes_ipa": "ˈa_ɡ_o_",
+   "durMs": 339.8185941043084,
+   "phonemes": [
+    {
+     "ipa": "ˈa",
+     "ms": 130
+    },
+    {
+     "ipa": "ɡ",
+     "ms": 61
+    },
+    {
+     "ipa": "o",
+     "ms": 86
+    }
+   ]
+  }
+ ],
+ "batch": []
+}

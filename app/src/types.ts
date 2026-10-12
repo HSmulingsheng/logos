@@ -214,6 +214,18 @@ export interface Settings {
   activeLesson: number | null
   /** 已激活的多本词书（课号） */
   activeLessons: number[]
+
+  // ---- AI 翻译（自带 Key）----
+  // 只存在本机 IndexedDB，**从不上传**；浏览器直连服务商，
+  // 所以必须选支持 CORS 的服务商（见 lib/aiTranslate.ts 的说明）。
+  /** 服务商 id，见 aiTranslate.ts 的 PROVIDERS */
+  aiProvider: string
+  /** 自定义服务商的 OpenAI 兼容地址（provider='custom' 时使用） */
+  aiBaseUrl: string
+  /** 模型名 */
+  aiModel: string
+  /** 用户自己的 API Key */
+  aiKey: string
 }
 
 export type SessionStepKind =

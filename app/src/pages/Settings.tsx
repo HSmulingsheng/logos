@@ -3,6 +3,9 @@ import { useStore } from '../store/useStore'
 import { VOICE_OPTIONS, neuralStatus, neuralProgress, onNeuralStatus } from '../lib/tts'
 import { DIGIT_LEGEND, SCHEME_HINT, SCHEME_LABEL, type InputScheme } from '../lib/greekInput'
 import { ensureNeural } from '../lib/neuralTts'
+import {
+  AiError, PROVIDERS, aiReady, cachedCount, clearCache, endpointOf, providerOf, translateGreek,
+} from '../lib/aiTranslate'
 import { Bar, Icon, Section } from '../components/ui'
 import { clearProgress, exportAll, importAll } from '../lib/db'
 import {
@@ -50,6 +53,11 @@ function Slider({ value, min, max, step = 1, onChange, suffix }: {
 
 export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) {
   const { settings, saveSettings, cards, days } = useStore()
+  /** AI 翻译的 JSON 输出对模型要求较高，这里挑一句荷马做连通性测试 */
+  const [testing, setTesting] = useState(false)
+  const [zhCount, setZhCount] = useState<number | null>(null)
+  const [showKey, setShowKey] = useState(false)
+  useEffect(() => { void cachedCount().then(setZhCount) }, [])
   const fileRef = useRef<HTMLInputElement>(null)
   const [msg, setMsg] = useState<string | null>(null)
   const [progress, setProgress] = useState<OfflineProgress>({
@@ -246,6 +254,97 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
             }}>清除</button>
           </Row>
         </div>
+      </Section>
+
+      <Section title="AI 翻译" hint="古典文本还没有中文译文时，用你自己的 API Key 现场翻译">
+        <div className="card-surface divide-y divide-ink-100 px-4 dark:divide-white/10">
+          <Row label="服务商" hint="只列出实测允许浏览器直连（CORS）的服务商">
+            <select
+              className="rounded-lg border border-ink-200 bg-white px-2 py-1.5 text-xs dark:border-white/15 dark:bg-ink-800"
+              value={settings.aiProvider}
+              onChange={(e) => set({ aiProvider: e.target.value, aiModel: '', aiBaseUrl: '' })}
+            >
+              {PROVIDERS.map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}
+            </select>
+          </Row>
+          <Row label="接口地址"
+            hint={settings.aiProvider === 'custom'
+              ? '自建代理或其它 OpenAI 兼容服务；需自行确认允许浏览器跨源请求'
+              : '留空即用官方地址'}>
+            <input
+              className="w-56 rounded-lg border border-ink-200 bg-white px-2 py-1.5 text-xs dark:border-white/15 dark:bg-ink-800"
+              placeholder={providerOf(settings.aiProvider).base || 'https://…/v1'}
+              value={settings.aiBaseUrl}
+              onChange={(e) => set({ aiBaseUrl: e.target.value })}
+            />
+          </Row>
+          <Row label="模型" hint={`留空用默认（当前默认：${providerOf(settings.aiProvider).model || '—'}）`}>
+            <input
+              className="w-56 rounded-lg border border-ink-200 bg-white px-2 py-1.5 text-xs dark:border-white/15 dark:bg-ink-800"
+              placeholder={providerOf(settings.aiProvider).model}
+              value={settings.aiModel}
+              onChange={(e) => set({ aiModel: e.target.value })}
+            />
+          </Row>
+          <Row label="API Key" hint="只保存在本机，从不上传；请求由浏览器直接发往服务商">
+            <div className="flex items-center gap-1">
+              <input
+                type={showKey ? 'text' : 'password'}
+                className="w-44 rounded-lg border border-ink-200 bg-white px-2 py-1.5 text-xs dark:border-white/15 dark:bg-ink-800"
+                placeholder="sk-…"
+                value={settings.aiKey}
+                onChange={(e) => set({ aiKey: e.target.value })}
+              />
+              <button className="btn-ghost !px-2 !py-1 text-[11px]" onClick={() => setShowKey((v) => !v)}>
+                {showKey ? '隐藏' : '显示'}
+              </button>
+            </div>
+          </Row>
+          {providerOf(settings.aiProvider).keyUrl && (
+            <Row label="还没有 Key？">
+              <a className="text-xs text-aegean-600 hover:underline dark:text-aegean-300"
+                href={providerOf(settings.aiProvider).keyUrl} target="_blank" rel="noreferrer">
+                到 {providerOf(settings.aiProvider).name} 申请 →
+              </a>
+            </Row>
+          )}
+          <Row label="连通性测试" hint="发一句话（荷马《伊利亚特》首行）实际翻一次，验证 Key 是否可用">
+            <button className="btn-ghost" disabled={testing || !aiReady(settings)}
+              onClick={async () => {
+                setTesting(true); setMsg(null)
+                try {
+                  const r = await translateGreek(settings, ['μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος'])
+                  if (r.error) throw r.error
+                  setMsg(`✅ 可用 · 译文：${r.zh[0]}`)
+                } catch (e) {
+                  const err = e as AiError
+                  setMsg(`❌ ${err.message}${err.hint ? '（' + err.hint + '）' : ''}`)
+                } finally { setTesting(false) }
+              }}>
+              {testing ? '测试中…' : aiReady(settings) ? '测试' : '请先填 Key'}
+            </button>
+          </Row>
+          <Row label="已缓存译文" hint="翻译过的段落会缓存在本机，重复阅读不再消耗额度">
+            <span className="flex items-center gap-2 text-xs text-ink-500">
+              {zhCount === null ? '…' : `${zhCount} 段`}
+              {!!zhCount && (
+                <button className="btn-ghost !px-2 !py-1 text-[11px]"
+                  onClick={async () => { await clearCache(); setZhCount(0); setMsg('已重置缓存计数') }}>
+                  重置
+                </button>
+              )}
+            </span>
+          </Row>
+        </div>
+        {!aiReady(settings) && (
+          <p className="mt-2 text-[11px] leading-relaxed text-ink-400">
+            不填 Key 也能正常使用其它功能；只是古典文本在缺少内置译文时无法现场翻译。
+          </p>
+        )}
+        <p className="mt-2 text-[11px] leading-relaxed text-ink-400">
+          OpenAI 与 Anthropic 的接口不允许浏览器跨源请求（实测无 CORS 头），
+          这个纯静态站没有后端，所以接不了它们，除非你自建代理再用「自定义」。
+        </p>
       </Section>
 
       <Section title="数据">

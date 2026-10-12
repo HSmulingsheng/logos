@@ -6,6 +6,7 @@ import { SpeakButton, WordDetail } from '../../../components/WordDetail'
 import { useWordLookup } from '../../../lib/wordLookup'
 import { useStore } from '../../../store/useStore'
 import { playAudio } from '../../../lib/audio'
+import { AiError, aiReady, cachedTranslation, translateGreek } from '../../../lib/aiTranslate'
 
 /**
  * 古典文本阅读（哲学 / 文学 / 历史）。
@@ -94,9 +95,32 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
   const [lang, setLang] = useState<'zh' | 'en'>('zh')
   const [showTr, setShowTr] = useState(true)
   const { lookup, detail, setDetail, missing, clearMissing } = useWordLookup()
-  const { cards, toggleFav } = useStore()
+  const { cards, toggleFav, settings } = useStore()
+  /** 本机 AI 翻出来的译文（按段落下标），与内置译文合并显示 */
+  const [aiZh, setAiZh] = useState<Record<number, string>>({})
+  const [busy, setBusy] = useState<{ done: number; total: number } | null>(null)
+  const [aiErr, setAiErr] = useState<string | null>(null)
 
   useEffect(() => { setAt(null); void loadWork(work.id).then(setChapters) }, [work.id])
+
+  // 换章时把本机已缓存的 AI 译文读回来，避免重复花额度
+  useEffect(() => {
+    setAiZh({}); setAiErr(null)
+    if (at === null || !chapters) return
+    const c = chapters[at]
+    if (!c) return
+    let alive = true
+    void (async () => {
+      const found: Record<number, string> = {}
+      for (let i = 0; i < c.paras.length; i++) {
+        if ((c.paras[i].zh || '').trim()) continue
+        const hit = await cachedTranslation(settings, c.paras[i].g)
+        if (hit) found[i] = hit
+      }
+      if (alive && Object.keys(found).length) setAiZh(found)
+    })()
+    return () => { alive = false }
+  }, [at, chapters, settings])
 
   if (!chapters) return <div className="skeleton h-40" />
 
@@ -119,7 +143,28 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
   }
 
   const c = chapters[at]
-  const hasZh = c.paras.some((p) => (p.zh || '').trim())
+  const zhAt = (i: number) => (c.paras[i].zh || '').trim() || aiZh[i] || ''
+  const hasZh = c.paras.some((_, i) => zhAt(i))
+  /** 还没有任何译文的段落下标 */
+  const pending = c.paras.map((_, i) => i).filter((i) => !zhAt(i))
+
+  /** 用用户的 Key 把本章缺译文的段落翻出来 */
+  const runTranslate = async () => {
+    const idx = pending
+    if (!idx.length) return
+    setAiErr(null); setBusy({ done: 0, total: idx.length })
+    try {
+      const r = await translateGreek(settings, idx.map((i) => c.paras[i].g), undefined,
+        (done, total) => setBusy({ done, total }))
+      const got: Record<number, string> = {}
+      r.zh.forEach((v, k) => { if (v) got[idx[k]] = v })
+      setAiZh((prev) => ({ ...prev, ...got }))
+      if (r.error) setAiErr(`${r.error.message}${r.error.hint ? '（' + r.error.hint + '）' : ''}`)
+    } catch (e) {
+      const err = e as AiError
+      setAiErr(`${err.message}${err.hint ? '（' + err.hint + '）' : ''}`)
+    } finally { setBusy(null) }
+  }
   return (
     <div>
       <WorkHeader work={work} onBack={() => setAt(null)} backLabel="返回章节" />
@@ -156,9 +201,24 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
         </span>
       </div>
 
-      {!hasZh && (
+      {!hasZh && !aiReady(settings) && (
         <p className="mb-3 text-[11px] text-ink-400">
           这部作品的中文译文正在陆续补齐；点「英」可先看英译。
+        </p>
+      )}
+
+      {/* AI 翻译入口：只在还有段落缺译文、且用户已配好 Key 时出现 */}
+      {!!pending.length && aiReady(settings) && (
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          <button className="btn-ghost !px-3 !py-1.5 text-xs" disabled={!!busy} onClick={() => void runTranslate()}>
+            {busy ? `翻译中… ${busy.done}/${busy.total}` : `AI 翻译本章（${pending.length} 段）`}
+          </button>
+          <span className="text-[11px] text-ink-400">用你自己的 Key，译文缓存在本机</span>
+        </div>
+      )}
+      {aiErr && (
+        <p className="mb-3 rounded-xl bg-wine-50 px-3 py-2 text-[11px] leading-relaxed text-wine-700 dark:bg-wine-900/25 dark:text-wine-300">
+          {aiErr}
         </p>
       )}
 
@@ -171,8 +231,13 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
             </div>
             {/* 与宗教同一套组件：19px、逐词可点 */}
             <ClickableGreek text={p.g} onWord={lookup} className="text-[19px] leading-loose" />
-            {showTr && lang === 'zh' && (p.zh || '').trim() && (
-              <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{p.zh}</p>
+            {showTr && lang === 'zh' && zhAt(i) && (
+              <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">
+                {zhAt(i)}
+                {!(c.paras[i].zh || '').trim() && (
+                  <span className="ml-1.5 align-middle text-[10px] text-aegean-500">AI</span>
+                )}
+              </p>
             )}
             {showTr && lang === 'en' && p.e && (
               <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{p.e}</p>
