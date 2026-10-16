@@ -6,7 +6,7 @@
  * 构建脚本 build-sw.mjs 会把下面的 BUILD 常量替换成构建时间戳，从而使本文件内容变化、
  * 触发浏览器安装新的 SW 并重建缓存。
  */
-const BUILD = '20261012144448'
+const BUILD = '20261016093244'
 const CACHE = `greek-vocab-${BUILD}`
 const CORE = [
   './',
