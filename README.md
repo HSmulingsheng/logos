@@ -193,6 +193,57 @@ tools/merge_reading_zh.py          汇总 → merged.json，注入阅读数据
 会话引擎的 `startSession({ mode })` 支持 `'all' | 'new' | 'review'`，
 `buildQueue` 据此只铺对应那一段队列。
 
+### 首屏加载：两道优化把 2.2 MB 压到 0.7 MB
+
+实测（本地、未压缩；线上有 gzip 会更小）：
+
+| | 优化前 | 优化后 |
+|---|---|---|
+| 字体 Regular | 949 KB | **104 KB** |
+| `lesson-01.json` | 761 KB | **141 KB** |
+| JS 包 | 436 KB | 436 KB |
+| **首屏合计** | **约 2260 KB** | **约 738 KB（省 67%）** |
+
+**① 字体子集化**（`tools/subset_fonts.py`）
+
+Gentium Plus 是 SIL 为语言学研究设计的字体，收录上千字形，单个 TTF 就有 949 KB，
+而本项目实际只用到约 270 个字符。子集化 + 转 **woff2** 后：
+
+| 档位 | 原 TTF | woff2 |
+|---|---|---|
+| Regular | 949 KB | 104 KB |
+| Bold | 954 KB | 111 KB |
+| Italic | 1005 KB | 114 KB |
+| **合计** | **2907 KB** | **329 KB（省 89%）** |
+
+字符集**从真实数据采集**（IPA / 词表 / 新约 / 古典文本 / 界面文案），不凭猜。
+源 TTF 放在 `tools/fonts-src/`（**不在 `public/`**，否则 Vite 会把 2.9 MB 原字体也打进部署包）。
+
+```bash
+tools/venvs/font/bin/python tools/subset_fonts.py            # 生成
+tools/venvs/font/bin/python tools/subset_fonts.py --report   # 只报告
+```
+
+**⚠️ 改动数据后必须重新生成**，否则新增字符会变成豆腐块。
+`app/scripts/font-test.mjs`（10 项）就是守这个的：它不看文件大小，而是
+用 canvas 量渲染宽度、逐个字符查缺字、并检查组合变音能否叠加。
+
+**② lesson 数据拆分**
+
+实测整课 JSON 里 `ex`（例句）与 `fm`（词形变化）**占 70%**，
+而它们**只在词条详情里用**——首页与学习卡正面都不需要。
+
+所以生成时拆成两个文件：
+
+```
+lesson-01.json      141 KB   核心（词形/释义/音标/音频路径…）—— 首屏关键路径
+lesson-01.ex.json   627 KB   例句与词形变化 —— 打开详情时才拉
+```
+
+`WordDetail` 用一个 `useWordExtras` 钩子按需取，**拉不到就安静地不显示**，
+不影响任何主流程。SW 预缓存与离线缓存都加了伴随文件（前 6 课）。
+`detail-test` 里专门加了断言守这个拆分——拆出后详情页必须仍能渲染例句。
+
 ### 单词发音与句子走同一条管线
 
 **曾经不一致，是个真实的坑。** 单词音频是离线批量生成的，当时只有

@@ -5,21 +5,21 @@
 /* ---- 古希腊语字体：Gentium Plus（SIL OFL）本地内置，缺失时回退系统衬线 ---- */
 @font-face {
   font-family: 'Gentium Plus';
-  src: url('/fonts/GentiumPlus-Regular.ttf') format('truetype');
+  src: url('/fonts/GentiumPlus-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gentium Plus';
-  src: url('/fonts/GentiumPlus-Bold.ttf') format('truetype');
+  src: url('/fonts/GentiumPlus-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gentium Plus';
-  src: url('/fonts/GentiumPlus-Italic.ttf') format('truetype');
+  src: url('/fonts/GentiumPlus-Italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;

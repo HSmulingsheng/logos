@@ -81,6 +81,20 @@ before = await plays()
 await page.keyboard.press('R')
 await page.waitForTimeout(700)
 const r2 = (await plays()) - before
+// 例句与词形变化是**按需加载**的（生成时拆到 lesson-NN.ex.json，
+// 占整课 70%，不进首屏关键路径）。这条断言就是守这个拆分的：
+// 拆出后详情页必须仍能拿到并渲染它们，否则用户会「例句凭空消失」。
+{
+  const t = await sheetText()
+  const hasEx = /真实语料例句/.test(t)
+  const hasFm = /词形变化/.test(t)
+  // 例句正文应当是一句希腊语（而不是只有标题）
+  const greekLine = /[\u0370-\u03ff\u1f00-\u1fff]{6,}/.test(t)
+  check('详情页按需加载并渲染了例句', hasEx && greekLine,
+    hasEx ? (greekLine ? '有标题且含希腊语句子' : '有标题但没有例句正文') : '没有例句区块')
+  check('详情页按需加载并渲染了词形变化', hasFm, hasFm ? '有词形变化表' : '没有词形变化区块')
+}
+
 check('详情页按 R 重放发音', r1 > 0 && r2 > 0, `r=${r1} R=${r2}`)
 
 // 3) Esc 关闭后 R 不应再触发

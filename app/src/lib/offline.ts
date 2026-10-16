@@ -30,7 +30,11 @@ async function collectUrls(): Promise<{ data: string[]; audio: string[] }> {
   const res = await fetch(`${BASE}data/manifest.json`)
   const manifest = await res.json()
   data.push('data/manifest.json', 'data/index.json', 'data/formindex.json', 'data/affix.json')
-  for (const l of manifest.lessons) data.push(`data/${l.file}`)
+  for (const l of manifest.lessons) {
+    data.push(`data/${l.file}`)
+    // 例句/词形变化在同课的伴随文件里（生成时拆出）
+    data.push(`data/${l.file.replace(/\.json$/, '.ex.json')}`)
+  }
   for (const b of manifest.books) data.push(`data/corpus/${b.file}`)
 
   let audio: string[] = []

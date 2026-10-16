@@ -5,6 +5,7 @@ import type { Example, Word } from '../types'
 import { Icon } from './ui'
 import { playAudio } from '../lib/audio'
 import { SpeakSentence } from './SpeakSentence'
+import { loadLessonExtras } from '../lib/data'
 
 /** 把希腊语句子按命中词渲染成带高亮的片段 */
 export function GreekSentence({ text, hits }: { text: string; hits: number[] }) {
@@ -20,6 +21,25 @@ export function GreekSentence({ text, hits }: { text: string; hits: number[] }) 
       ))}
     </p>
   )
+}
+
+/**
+ * 例句与词形变化是**按需加载**的（生成时拆到 lesson-NN.ex.json）。
+ * 词条本身带的话优先用自带的（例如从别处构造的词条），否则拉一次。
+ * 拉不到就安静地不显示——不阻塞、不报错。
+ */
+function useWordExtras(word: Word): { ex?: Word['ex']; fm?: Word['fm'] } {
+  const [extra, setExtra] = useState<{ ex?: Word['ex']; fm?: Word['fm'] } | undefined>()
+  const hasOwn = Boolean(word.ex?.length || word.fm?.length)
+  useEffect(() => {
+    if (hasOwn) { setExtra(undefined); return }
+    let alive = true
+    void loadLessonExtras(word.ls ?? 1).then((d) => {
+      if (alive) setExtra(d[String(word.i)])
+    })
+    return () => { alive = false }
+  }, [word.i, word.ls, hasOwn])
+  return hasOwn ? { ex: word.ex, fm: word.fm } : (extra ?? {})
 }
 
 export function ExampleBlock({ ex, warm }: { ex: Example; warm?: boolean }) {
@@ -67,6 +87,7 @@ export function ExampleBlock({ ex, warm }: { ex: Example; warm?: boolean }) {
 
 /** 「不背单词」式的词条详情面板：释义 / 例句 / 词形变化 / 词根词缀 */
 export function WordDetail({ word, compact = false }: { word: Word; compact?: boolean }) {
+  const { ex: wdEx, fm: wdFm } = useWordExtras(word)
   // LSJ 释义按需加载（整表 2.7MB，只在真的看词条时才拉），加载完触发一次重渲染
   const [, setLsjReady] = useState(false)
   useEffect(() => {
@@ -172,25 +193,25 @@ export function WordDetail({ word, compact = false }: { word: Word; compact?: bo
       )}
 
       {/* 例句 */}
-      {word.ex && word.ex.length > 0 && (
+      {wdEx && wdEx.length > 0 && (
         <div>
           <div className="mb-1.5 flex items-center justify-between">
             <span className="text-xs font-semibold text-ink-400">真实语料例句</span>
             <span className="text-[11px] text-ink-400">SBLGNT · 和合本 · GLAUx</span>
           </div>
           <div className="space-y-2">
-            {word.ex.slice(0, compact ? 1 : 3).map((e, i) => <ExampleBlock key={i} ex={e} warm={i === 0 && !compact} />)}
+            {wdEx.slice(0, compact ? 1 : 3).map((e, i) => <ExampleBlock key={i} ex={e} warm={i === 0 && !compact} />)}
           </div>
         </div>
       )}
 
       {/* 词形变化：以表格呈现。数据来自语料统计，词形 + 语法标签 + 出现次数 */}
-      {word.fm && word.fm.length > 1 && (
+      {wdFm && wdFm.length > 1 && (
         <div>
           <div className="mb-1.5 flex items-center justify-between">
             <span className="text-xs font-semibold text-ink-400">词形变化</span>
             <span className="text-[11px] text-ink-400">
-              共 {word.fm.length} 种形式 · 语料中出现 {word.fm.reduce((a, f) => a + f[1], 0)} 次
+              共 {wdFm.length} 种形式 · 语料中出现 {wdFm.reduce((a, f) => a + f[1], 0)} 次
             </span>
           </div>
           <div className="overflow-hidden rounded-xl border border-ink-100 dark:border-white/10">
@@ -203,7 +224,7 @@ export function WordDetail({ word, compact = false }: { word: Word; compact?: bo
                 </tr>
               </thead>
               <tbody>
-                {word.fm.map(([form, count, gram]) => (
+                {wdFm.map(([form, count, gram]) => (
                   <tr key={form} className="border-t border-ink-100 dark:border-white/10">
                     <td className="greek px-3 py-1.5 align-top whitespace-nowrap">{form}</td>
                     <td className="px-3 py-1.5 align-top text-xs leading-relaxed text-ink-500 dark:text-ink-400">

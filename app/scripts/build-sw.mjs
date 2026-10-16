@@ -34,10 +34,14 @@ for (const f of list(join(DIST, 'fonts'))) files.push('./fonts/' + f.split('/').
 for (const name of ['data/manifest.json', 'data/index.json', 'data/formindex.json', 'data/affix.json', 'data/grammar.json', 'data/smyth.json']) {
   if (existsSync(join(DIST, name))) files.push('./' + name)
 }
-// 前 6 课词表（A2/B1 起步阶段，离线即可学）
+// 前 6 课词表（A2/B1 起步阶段，离线即可学）。
+// 例句与词形变化在同课的 .ex.json 里（占整课 70%，已在生成时拆出），
+// 离线学习也要能看例句，所以一并预缓存。
 for (let i = 1; i <= 6; i++) {
-  const name = `data/lesson-${String(i).padStart(2, '0')}.json`
-  if (existsSync(join(DIST, name))) files.push('./' + name)
+  for (const suffix of ['.json', '.ex.json']) {
+    const name = `data/lesson-${String(i).padStart(2, '0')}${suffix}`
+    if (existsSync(join(DIST, name))) files.push('./' + name)
+  }
 }
 // 新约第一卷，方便离线开始阅读
 if (existsSync(join(DIST, 'data/corpus/nt-01.json'))) files.push('./data/corpus/nt-01.json')

@@ -27,6 +27,26 @@ export function loadLesson(order: number): Promise<LessonData> {
   return p
 }
 
+/**
+ * 例句与词形变化按课按需加载。
+ *
+ * 这两项占整课 JSON 的 70%（实测 lesson-01 去掉后 474KB → 134KB），
+ * 而它们**只在词条详情里用**——首页与学习卡正面都不需要。
+ * 所以生成时拆成了 `lesson-NN.ex.json`，打开详情时才拉，且拉不到也不影响主流程。
+ */
+type LessonExtras = Record<string, { ex?: Word['ex']; fm?: Word['fm'] }>
+const extraCache = new Map<number, Promise<LessonExtras>>()
+
+export function loadLessonExtras(order: number): Promise<LessonExtras> {
+  let p = extraCache.get(order)
+  if (!p) {
+    p = getJson<LessonExtras>(`lesson-${String(order).padStart(2, '0')}.ex.json`)
+      .catch(() => ({} as LessonExtras))   // 缺失只是少显示例句，不报错
+    extraCache.set(order, p)
+  }
+  return p
+}
+
 const wordCache = new Map<number, Word>()
 /** 已加载课程 -> 词表 */
 const lessonWords = new Map<number, Map<number, Word>>()

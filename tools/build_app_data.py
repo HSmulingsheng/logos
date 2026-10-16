@@ -203,13 +203,35 @@ def main() -> int:
         if not ws:
             continue
         name = f"lesson-{o:02d}.json"
+        ex_name = f"lesson-{o:02d}.ex.json"
+
+        # ── 把「例句」与「词形变化」拆到伴随文件里
+        #
+        # 这两项占整课的 70%（实测 lesson-01：去掉后 474KB → 134KB）。
+        # 而它们**只在词条详情里用**（WordDetail），首页和学习卡正面都不需要，
+        # 所以没必要挤进首屏的关键路径。
+        # 详情面板打开时再按课拉这个伴随文件，并且是可选的——
+        # 文件缺失只会少显示例句，不影响任何主流程。
+        core_ws = []
+        extras = {}
+        for w in ws:
+            extra = {}
+            for k in ("ex", "fm"):
+                if w.get(k):
+                    extra[k] = w[k]
+            if extra:
+                extras[str(w["i"])] = extra
+            core_ws.append({k: v for k, v in w.items() if k not in ("ex", "fm")})
+
         payload = {
             "order": o, "level": L["level"], "title": L["title"],
             "titleZh": lesson_zh.get(str(o), L["title"]),
-            "words": ws,
+            "words": core_ws,
         }
         (out / name).write_text(
             json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        (out / ex_name).write_text(
+            json.dumps(extras, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         manifest_lessons.append({
             "order": o, "seq": _seq, "level": L["level"], "title": L["title"],
             "titleZh": lesson_zh.get(str(o), L["title"]),
