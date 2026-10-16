@@ -27,6 +27,8 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
   const [q, setQ] = useState('')
   const [filter, setFilter] = useState<Filter>('all')
   const [detail, setDetail] = useState<Word | null>(null)
+  /** 正在打开的词条 id（其它课的要现拉数据，需要给用户反馈） */
+  const [opening, setOpening] = useState<number | null>(null)
 
   useEffect(() => {
     void loadIndex().then((raw) => {
@@ -67,9 +69,23 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
     return out
   }, [index, q, filter, cards])
 
+  /**
+   * 打开一个词条。
+   *
+   * ⚠️ 列表默认只加载当前词书（第 1 课）。点其它课的词要先 fetch lesson-XX.json，
+   * 慢网络上这可能要好几秒 —— 之前这段时间界面毫无反应，用户会以为「点了没动静」。
+   * 所以用 `opening` 记下正在打开的词，在那一行上显示转圈。
+   */
   const open = async (id: number, lesson: number) => {
-    const w = (await getWord(id, lesson)) ?? (await (async () => { await ensureLesson(lesson); return (await getWord(id, lesson)) })())
-    if (w) { setDetail(w); playAudio(w.au, w.w) }   // 打开即朗读一次，之后按 R 可重放
+    if (opening !== null) return
+    setOpening(id)
+    try {
+      let w = await getWord(id, lesson)
+      if (!w) { await ensureLesson(lesson); w = await getWord(id, lesson) }
+      if (w) { setDetail(w); playAudio(w.au, w.w) }   // 打开即朗读一次，之后按 R 可重放
+    } finally {
+      setOpening(null)
+    }
   }
 
   const levelOf = (order: number) => lessons.find((l) => l.order === order)?.level ?? ''
@@ -125,7 +141,10 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
                   {r.ipa && <div className="ipa truncate text-[11px] text-aegean-600 dark:text-aegean-400">[{r.ipa}]</div>}
                   <p className="truncate text-xs text-ink-500">{r.gloss}</p>
                 </div>
-                {c?.fav ? <Icon.StarFill className="h-4 w-4 text-amber-400" /> : null}
+                {/* 正在拉这一课的数据时给个转圈，否则慢网络上「点了没动静」 */}
+                {opening === r.id
+                  ? <span className="h-3.5 w-3.5 shrink-0 animate-spin rounded-full border-2 border-aegean-400 border-t-transparent" />
+                  : c?.fav ? <Icon.StarFill className="h-4 w-4 text-amber-400" /> : null}
                 {c && c.state !== 0 && (
                   <span className="text-[10px] text-ink-400">
                     {c.state === 2 && c.stability >= 30 ? '已掌握' : `S=${c.stability.toFixed(1)}`}

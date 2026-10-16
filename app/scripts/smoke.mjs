@@ -50,7 +50,7 @@ page.on('console', (m) => {
 })
 page.on('pageerror', (e) => errors.push(`[pageerror] ${e.message}`))
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 })
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 })
 await page.waitForTimeout(2000)
 
 // 首次访问会弹「游客模式」说明，先关掉再操作

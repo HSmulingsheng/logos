@@ -54,6 +54,9 @@ async function setMode(mode) {
 }
 
 async function openChapter() {
+// 线上首访要装 Service Worker 并拉词表索引，导航栏可能还没渲染出来。
+// 固定等待不够稳，这里等它真正出现再点。
+await page.locator('nav').first().waitFor({ state: 'visible', timeout: 60000 })
   await page.locator('nav button:has-text("学习")').first().click(); await page.waitForTimeout(900)
   await page.locator('main button:has-text("阅读")').first().click(); await page.waitForTimeout(1200)
   await page.locator('main button:has-text("历史")').first().click(); await page.waitForTimeout(1200)

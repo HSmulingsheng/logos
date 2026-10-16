@@ -47,7 +47,22 @@ async function seedDue(page, n = 3) {
   }, n)
 }
 
-const buttons = (page) => page.evaluate(() => [...document.querySelectorAll('button')]
+/**
+ * 读首页那两个按钮。
+ *
+ * ⚠️ 线上加载慢（词表索引 1.4MB + Service Worker 安装），固定等待经常不够——
+ * 之前线上跑出「两个按钮都在」失败，但同一轮的弹窗断言全过，说明按钮其实是有的，
+ * 只是读得太早。所以这里**轮询到出现为止**。
+ */
+const buttons = async (page) => {
+  for (let i = 0; i < 40; i++) {
+    const r = await rawButtons(page)
+    if (r.length >= 2) return r
+    await page.waitForTimeout(400)
+  }
+  return rawButtons(page)
+}
+const rawButtons = (page) => page.evaluate(() => [...document.querySelectorAll('button')]
   .filter((b) => /^(开始学习|开始复习)$/.test((b.textContent || '').trim()))
   .map((b) => ({
     t: (b.textContent || '').trim(),
@@ -65,7 +80,10 @@ console.log('▶ 场景 A：有 3 个词待复习')
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
   await page.addInitScript(() => localStorage.setItem('greek-welcomed-v2', '1'))
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 120000 })
-  await page.waitForTimeout(2200)
+  // 场景 A 是第一个跑的：线上首访要装 Service Worker 并拉 1.4MB 词表索引，
+  // 比后面几个场景慢得多。先等应用真正就绪，再种数据、再重载。
+  await page.waitForTimeout(2500)
+  await buttons(page)
   await seedDue(page, 3)
   await page.reload({ waitUntil: 'domcontentloaded' })
   await page.waitForTimeout(2600)

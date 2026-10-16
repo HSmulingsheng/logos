@@ -88,6 +88,9 @@ await page.addInitScript(() => localStorage.setItem('greek-welcomed-v2', '1'))
 
 await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 120000 })
 await page.waitForTimeout(2500)
+// 线上首访要装 Service Worker 并拉词表索引，导航栏可能还没渲染出来。
+// 固定等待不够稳，这里等它真正出现再点。
+await page.locator('nav').first().waitFor({ state: 'visible', timeout: 60000 })
 await page.locator('nav >> text="学习"').click()
 await page.waitForTimeout(600)
 await page.locator('main button:has-text("词典")').first().click()
@@ -96,8 +99,13 @@ await page.waitForTimeout(2500)
 const box = page.locator('input[placeholder^="搜索希腊语"]')
 await box.click()
 for (const ch of 'logos') { await box.type(ch, { delay: 60 }); await page.waitForTimeout(140) }
-await page.waitForTimeout(1600)
-const listText = await page.locator('main').innerText()
+// 线上要加载 1.4MB 的词典索引，固定等待会不够——改成轮询到出结果为止
+let listText = ''
+for (let i = 0; i < 40; i++) {
+  await page.waitForTimeout(400)
+  listText = await page.locator('main').innerText()
+  if (/\[[^\]]*[ɑɛɔʰŋy][^\]]*\]/.test(listText)) break
+}
 const shown = listText.match(/\[[^\]]*[ɑɛɔʰŋy][^\]]*\]/g) || []
 check('词典列表渲染出音标', shown.length >= 3, `${shown.length} 处，如 ${shown.slice(0, 2).join(' ')}`)
 await page.screenshot({ path: join(outDir, 'ipa-list.png') })

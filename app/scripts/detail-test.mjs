@@ -36,16 +36,25 @@ const check = (name, ok, detail = '') => {
   console.log(`${ok ? '✅' : '❌'} ${name}${detail ? '  — ' + detail : ''}`)
 }
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 })
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 })
 await page.waitForTimeout(2200)
 
 // 「词典」已并入「学习 → 单词」，不再是底部独立菜单
+// 线上首访要装 Service Worker 并拉词表索引，导航栏可能还没渲染出来。
+// 固定等待不够稳，这里等它真正出现再点。
+await page.locator('nav').first().waitFor({ state: 'visible', timeout: 60000 })
 await page.locator('nav >> text="学习"').click()
 await page.waitForTimeout(700)
 await page.locator('main button:has-text("词典")').first().click()
 await page.waitForTimeout(1800)
 
+// 词典要加载 1.4MB 的索引；线上（到 GitHub 只有几十 KB/s）固定等待不够，
+// 统一轮询到列表出现再继续。
 const rows = page.locator('main button.card-surface')
+for (let i = 0; i < 120; i++) {
+  await page.waitForTimeout(500)
+  if (await rows.count() > 0) break
+}
 
 // 1) 默认列表第一个词：打开 + 自动发音 + 内容齐全
 let before = await plays()
@@ -89,13 +98,26 @@ let crossOk = 0
 const probes = ['ἀρνίον', 'βασιλεία', 'πιστεύω', 'ἀγάπη']
 for (const w of probes) {
   await input.fill(w)
-  await page.waitForTimeout(1100)
-  const n = await rows.count()
+  // 搜索要过滤 1.4MB 的索引；线上慢，固定等待不够（第一个探针尤其慢）
+  let n = 0
+  for (let i = 0; i < 30; i++) {
+    await page.waitForTimeout(400)
+    n = await rows.count()
+    if (n > 0) break
+  }
   if (n === 0) { console.log(`   ⚠️ 搜索「${w}」没有结果`); continue }
   const b0 = await plays()
   await rows.first().click()
-  await page.waitForTimeout(1800)
-  const opened = (await sheetCount()) > 0
+  // ⚠️ 这些词来自后期课程，而列表默认只加载了第 1 课：
+  //    open() 里要先 fetch lesson-XX.json 才能拿到词条。
+  //    线上到 GitHub 只有几十 KB/s，一个 lesson 文件要十几秒——
+  //    所以这里的等待必须**按「下载一个课程文件」的量级给足**，不能按毫秒算。
+  let opened = false
+  for (let i = 0; i < 90; i++) {
+    await page.waitForTimeout(500)
+    opened = (await sheetCount()) > 0
+    if (opened && (await plays()) - b0 > 0) break
+  }
   const played = (await plays()) - b0 > 0
   const body = await sheetText()
   if (opened && played && /中文释义/.test(body)) crossOk++

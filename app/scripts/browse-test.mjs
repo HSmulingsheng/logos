@@ -29,7 +29,10 @@ const check = (name, ok, detail = '') => {
   console.log(`${ok ? '✅' : '❌'} ${name}${detail ? '  — ' + detail : ''}`)
 }
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 })
+// 直接标记「已看过欢迎弹窗」：线上弹窗出现得比固定等待晚，
+// 原来靠点「开始使用」关闭，4 秒超时经常扑空，弹窗会盖住页面拦截后续点击。
+await page.addInitScript(() => localStorage.setItem('greek-welcomed-v2', '1'))
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 })
 await page.waitForTimeout(2000)
 
 // 首次访问会弹「游客模式」说明，先关掉再操作
@@ -39,12 +42,18 @@ await page.waitForTimeout(500)
 
 // 1) 切到「词书」标签，再切到「词典」分栏
 // 「词典」已并入「学习 → 单词」，不再是底部独立菜单
+// 线上首访要装 Service Worker 并拉词表索引，导航栏可能还没渲染出来。
+// 固定等待不够稳，这里等它真正出现再点。
+await page.locator('nav').first().waitFor({ state: 'visible', timeout: 60000 })
 await page.locator('nav >> text="学习"').click()
 await page.waitForTimeout(600)
 await page.locator('main button:has-text("词典")').first().click()
-await page.waitForTimeout(1500)
-
+// 词典要加载 1.4MB 的索引，线上（到 GitHub 只有几十 KB/s）固定等待远远不够
 const cards = page.locator('main button.card-surface')
+for (let i = 0; i < 60; i++) {
+  await page.waitForTimeout(500)
+  if (await cards.count() > 0) break
+}
 const n = await cards.count()
 check('词库列表已渲染', n > 0, `${n} 条`)
 

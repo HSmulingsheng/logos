@@ -49,7 +49,7 @@ const check = (name, ok, detail = '') => {
 }
 const plays = () => page.evaluate(() => window.__plays.length)
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 90000 })
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 })
 await page.waitForTimeout(2200)
 
 // 本脚本专门验证「轻量」eSpeak 引擎，所以先把引擎切过去
@@ -62,6 +62,9 @@ await page.locator('button:has-text("轻量")').first().click()
 await page.waitForTimeout(800)
 
 // 「词典」已并入「学习 → 单词」，不再是底部独立菜单
+// 线上首访要装 Service Worker 并拉词表索引，导航栏可能还没渲染出来。
+// 固定等待不够稳，这里等它真正出现再点。
+await page.locator('nav').first().waitFor({ state: 'visible', timeout: 60000 })
 await page.locator('nav >> text="学习"').click()
 await page.waitForTimeout(600)
 await page.locator('main button:has-text("词典")').first().click()

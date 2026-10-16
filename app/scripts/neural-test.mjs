@@ -45,7 +45,7 @@ const check = (name, ok, detail = '') => {
 const plays = () => page.evaluate(() => window.__plays.length)
 const playInfo = () => page.evaluate(() => window.__plays[window.__plays.length - 1])
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 120000 })
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 120000 })
 await page.waitForTimeout(2500)
 
 // 1) 设置里切到高清引擎
@@ -78,6 +78,9 @@ await page.screenshot({ path: `${outDir}/neural-setting.png` })
 
 // 2) 朗读例句
 // 「词典」已并入「学习 → 单词」，不再是底部独立菜单
+// 线上首访要装 Service Worker 并拉词表索引，导航栏可能还没渲染出来。
+// 固定等待不够稳，这里等它真正出现再点。
+await page.locator('nav').first().waitFor({ state: 'visible', timeout: 60000 })
 await page.locator('nav >> text="学习"').click()
 await page.waitForTimeout(700)
 await page.locator('main button:has-text("词典")').first().click()

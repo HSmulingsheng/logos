@@ -28,7 +28,7 @@ page.on('console', (m) => { if (m.type() === 'error') errors.push(`[console] ${m
 page.on('pageerror', (e) => errors.push(`[pageerror] ${e.message}`))
 page.on('requestfailed', (r) => errors.push(`[404?] ${r.url()} ${r.failure()?.errorText}`))
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 })
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 })
 
 if (opts.wait) {
   try { await page.waitForSelector(opts.wait, { timeout: 20000 }) }

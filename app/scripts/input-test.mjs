@@ -26,7 +26,7 @@ const check = (name, ok, detail = '') => {
   console.log(`${ok ? '✅' : '❌'} ${name}${detail ? '  — ' + detail : ''}`)
 }
 
-await page.goto(url, { waitUntil: 'networkidle', timeout: 120000 })
+await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 120000 })
 await page.waitForTimeout(2200)
 
 // 走到拼写步骤：用键盘把辨识循环走完（每个词要连对 4 次）
@@ -48,7 +48,7 @@ await page.evaluate(async () => {
   await new Promise((res) => { tx.oncomplete = () => res() })
   db.close()
 })
-await page.reload({ waitUntil: 'networkidle' })
+await page.reload({ waitUntil: 'domcontentloaded' })
 await page.waitForTimeout(2200)
 
 await page.locator('main button:has-text("开始学习")').first().click()
