@@ -134,6 +134,9 @@ export function buildQueue(ctx: QueueContext): QueueResult {
 
   const steps: SessionStep[] = []
   const lessonOf = (w: Word) => w.ls ?? activeLessons[0]
+  /** 复习卡只存 id 与 lesson，听音题要拿 au，得回词表反查 */
+  const wordOf = (id: number, lesson: number): Word | undefined =>
+    lessonWords.get(lesson)?.find((w) => w.i === id)
 
   // 1) 新词首次曝光：给词选义
   for (const w of newWords) {
@@ -143,6 +146,22 @@ export function buildQueue(ctx: QueueContext): QueueResult {
   for (const c of reviewCards) {
     steps.push({ kind: 'review', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
   }
+  // 2b) 听音辨词：播放发音、从四个词形里选。
+  //
+  // ⚠️ 这个题型的渲染代码一直在 Study.tsx（`kind === 'audio'` 分支），
+  // 但 buildQueue 从不产出 `audio` 步骤 —— 于是设置页那个「听音辨词」开关
+  // 拨来拨去对行为零影响，是典型的"骗人的开关"。这里补上。
+  // 没有音频的词（`au` 为空）跳过，与开关的 hint「无录音的词会跳过」一致。
+  if (settings.quizAudio) {
+    for (const w of newWords) {
+      if (w.au) steps.push({ kind: 'audio', wordId: w.i, lesson: lessonOf(w), phase: 'new', groupId: w.i })
+    }
+    for (const c of reviewCards) {
+      const w = wordOf(c.id, c.lesson)
+      if (w?.au) steps.push({ kind: 'audio', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
+    }
+  }
+
   // 3) 拼写收尾：只有全部辨识通过（队列走到这里）才会轮到
   if (settings.quizSpell) {
     for (const w of newWords) {

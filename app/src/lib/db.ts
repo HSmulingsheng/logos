@@ -103,7 +103,6 @@ export const DEFAULT_SETTINGS: Settings = {
   autoPlay: true,
   showForms: true,
 
-  quizChoice: true,
   quizSpell: true,
   speechRate: 168,
   speechVoice: 'grc',

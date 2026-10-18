@@ -108,11 +108,8 @@ export function SettingsPage({ embedded = false }: { embedded?: boolean } = {}) 
         </div>
       </Section>
 
-      <Section title="练习模式" hint="新词学完后会随机进入其中一种测试">
+      <Section title="练习模式" hint="新词一律先做选义题；下面控制是否再加拼写与听音">
         <div className="card-surface divide-y divide-ink-100 px-4 dark:divide-white/10">
-          <Row label="选义题" hint="给出希腊语词，选出正确释义">
-            <Toggle on={settings.quizChoice} onChange={(v) => set({ quizChoice: v })} />
-          </Row>
           <Row label="拼写题" hint="给出释义与发音，拼出希腊语单词（忽略变音符号也算对）">
             <Toggle on={settings.quizSpell} onChange={(v) => set({ quizSpell: v })} />
           </Row>

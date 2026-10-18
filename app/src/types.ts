@@ -191,8 +191,6 @@ export interface Settings {
   learningSteps: string[]
   autoPlay: boolean
   showForms: boolean
-  /** 练习模式开关 */
-  quizChoice: boolean
   quizSpell: boolean
   /** 例句朗读语速（eSpeak rate）：120 偏慢，168 接近自然 */
   speechRate: number
