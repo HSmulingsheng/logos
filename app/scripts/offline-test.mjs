@@ -155,16 +155,35 @@ try {
   check('离线可读到中英释义与例句', detail.zh && detail.en && detail.ex, JSON.stringify(detail))
   await page.screenshot({ path: `${outDir}/offline-study.png` })
 
-  const audioOk = await page.evaluate(async () => {
-    for (const id of ['3588g.mp3', '2532g.mp3']) {
+  // ⚠️ 不要写死音频路径。
+  //
+  // 音频有两种构建模式：混合模式是 `audio/3588g.mp3`（原牌组录音），
+  // 纯合成模式是 `audio-tts/<id>.m4a`。原来这里硬编码了前者，
+  // 于是本地 dist（混合）通过、部署包（合成）失败——看起来像「离线读不到音频」，
+  // 实际是测试自己写错了路径。现在从词表的 `au` 字段取真实路径。
+  const audioProbe = await page.evaluate(async () => {
+    const paths = []
+    try {
+      const r = await fetch('./data/lesson-01.json')
+      const d = await r.json()
+      for (const w of d.words ?? []) {
+        if (!w.au) continue
+        // 与 data.ts 的 audioUrl() 同一条规则：含 '/' 就原样用，否则补 audio/
+        paths.push('./' + (w.au.includes('/') ? w.au : 'audio/' + w.au))
+        if (paths.length >= 3) break
+      }
+    } catch { /* 拿不到词表就退化为下面的兜底 */ }
+    paths.push('./audio/3588g.mp3', './audio-tts/3588g.m4a')
+    const tried = []
+    for (const p of paths) {
       try {
-        const r = await fetch('./audio/' + id)
-        if (r.ok && (await r.arrayBuffer()).byteLength > 1000) return true
-      } catch { /* 试下一个 */ }
+        const r = await fetch(p)
+        if (r.ok && (await r.arrayBuffer()).byteLength > 1000) return { ok: true, used: p, tried }
+      } catch { tried.push(p) }
     }
-    return false
+    return { ok: false, used: null, tried }
   })
-  check('离线可读取音频', audioOk)
+  check('离线可读取音频', audioProbe.ok, audioProbe.used ? `读到 ${audioProbe.used}` : `都失败: ${audioProbe.tried.slice(0, 3).join(', ')}`)
 
   const indexOk = await page.evaluate(async () => {
     try {
