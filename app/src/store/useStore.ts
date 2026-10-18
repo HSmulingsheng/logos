@@ -150,7 +150,8 @@ export const useStore = create<State>((set, get) => ({
     if (step.kind === 'learn') {
       day.newCount += 1
       day.words += 1
-    } else if (step.phase === 'review') {
+    } else if (step.phase === 'review' && step.first) {
+      // 只数首次曝光：重排回来的同一张卡不再吃额度（见 SessionStep.first 的注释）
       day.reviewCount += 1
     }
     if (grade === 1) day.again += 1

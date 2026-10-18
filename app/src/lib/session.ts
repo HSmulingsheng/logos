@@ -76,7 +76,8 @@ export function planRequeue(
   // 间隔逐次拉长：连对越多，下次出现得越晚
   const gap = Math.max(1, (streak + 1) * 3)
   return {
-    step: { ...step, kind: requeueKind(streak) },
+    // 重排出来的不是首次曝光 —— 不该再吃一次每日复习额度
+    step: { ...step, kind: requeueKind(streak), first: false },
     offset: Math.min(limit, gap),
   }
 }
@@ -140,11 +141,11 @@ export function buildQueue(ctx: QueueContext): QueueResult {
 
   // 1) 新词首次曝光：给词选义
   for (const w of newWords) {
-    steps.push({ kind: 'learn', wordId: w.i, lesson: lessonOf(w), phase: 'new', groupId: w.i })
+    steps.push({ kind: 'learn', wordId: w.i, lesson: lessonOf(w), phase: 'new', first: true, groupId: w.i })
   }
   // 2) 复习首次曝光：翻卡自评
   for (const c of reviewCards) {
-    steps.push({ kind: 'review', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
+    steps.push({ kind: 'review', wordId: c.id, lesson: c.lesson, phase: 'review', first: true, groupId: c.id })
   }
   // 2b) 听音辨词：播放发音、从四个词形里选。
   //
@@ -154,21 +155,21 @@ export function buildQueue(ctx: QueueContext): QueueResult {
   // 没有音频的词（`au` 为空）跳过，与开关的 hint「无录音的词会跳过」一致。
   if (settings.quizAudio) {
     for (const w of newWords) {
-      if (w.au) steps.push({ kind: 'audio', wordId: w.i, lesson: lessonOf(w), phase: 'new', groupId: w.i })
+      if (w.au) steps.push({ kind: 'audio', wordId: w.i, lesson: lessonOf(w), phase: 'new', first: true, groupId: w.i })
     }
     for (const c of reviewCards) {
       const w = wordOf(c.id, c.lesson)
-      if (w?.au) steps.push({ kind: 'audio', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
+      if (w?.au) steps.push({ kind: 'audio', wordId: c.id, lesson: c.lesson, phase: 'review', first: true, groupId: c.id })
     }
   }
 
   // 3) 拼写收尾：只有全部辨识通过（队列走到这里）才会轮到
   if (settings.quizSpell) {
     for (const w of newWords) {
-      steps.push({ kind: 'spell', wordId: w.i, lesson: lessonOf(w), phase: 'new', groupId: w.i })
+      steps.push({ kind: 'spell', wordId: w.i, lesson: lessonOf(w), phase: 'new', first: true, groupId: w.i })
     }
     for (const c of reviewCards) {
-      steps.push({ kind: 'spell', wordId: c.id, lesson: c.lesson, phase: 'review', groupId: c.id })
+      steps.push({ kind: 'spell', wordId: c.id, lesson: c.lesson, phase: 'review', first: true, groupId: c.id })
     }
   }
 

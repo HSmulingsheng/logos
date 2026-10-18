@@ -255,4 +255,12 @@ export interface SessionStep {
   phase: 'new' | 'review'
   /** 名词性：同一词的多步（学习 + 测试） */
   groupId: number
+  /**
+   * 是不是这张卡的**首次**曝光。
+   *
+   * 用来区分「本来就在队列里的一题」与「答错后重新排进来的那一题」。
+   * 每日复习额度只应该被首次曝光消耗 —— 否则一张卡在一轮里被重排 3 次，
+   * `day.reviewCount` 就涨 3，把当天的复习预算提前吃光。
+   */
+  first: boolean
 }
