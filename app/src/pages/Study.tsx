@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { SessionStep, Word } from '../types'
 import { useStore } from '../store/useStore'
-import { cachedWord, loadLessonWords, getWord } from '../lib/data'
+
 import { Rating, previewIntervals, type Grade } from '../lib/srs'
 import { makeChoices } from '../lib/session'
 import { checkSpelling, hintOf } from '../lib/greek'
@@ -9,6 +9,9 @@ import { playAudio } from '../lib/audio'
 import { Icon, LevelTag } from '../components/ui'
 import { GreekInput, GreekInputHint } from '../components/GreekInput'
 import { ChoiceList } from '../components/ChoiceList'
+import { Kbd } from '../components/Kbd'
+import { ResultBanner } from '../components/ResultBanner'
+import { useWord } from '../lib/useWord'
 import type { InputScheme } from '../lib/greekInput'
 import { SpeakButton, WordDetail } from '../components/WordDetail'
 
@@ -17,21 +20,6 @@ import { SpeakButton, WordDetail } from '../components/WordDetail'
  * 注意：useState 的初始值只算一次，换词时必须主动清空/替换，
  * 否则会短暂停留在上一个词 —— 自动发音正是因此被「用旧词排的定时器」坑掉。
  */
-function useWord(id: number, lesson: number): Word | undefined {
-  const [w, setW] = useState<Word | undefined>(() => cachedWord(id))
-  useEffect(() => {
-    let alive = true
-    const cached = cachedWord(id)
-    if (cached) { setW(cached); return }
-    setW(undefined)
-    void (async () => {
-      const got = (await getWord(id, lesson)) ?? (await loadLessonWords(lesson)).get(id)
-      if (alive) setW(got)
-    })()
-    return () => { alive = false }
-  }, [id, lesson])
-  return w
-}
 
 const KIND_LABEL: Record<SessionStep['kind'], string> = {
   learn: '新词学习',
@@ -57,14 +45,6 @@ function dbg(tag: string, msg: string) {
   }
 }
 
-/** 键位提示 */
-function Kbd({ children }: { children: React.ReactNode }) {
-  return (
-    <kbd className="rounded border border-ink-200 bg-white/70 px-1 text-[10px] text-ink-500 dark:border-white/15 dark:bg-white/10">
-      {children}
-    </kbd>
-  )
-}
 
 export function Study({ onExit }: { onExit: () => void }) {
   const { queue, cursor, startSession, submit, advance, settings, lessonWords, ensureLesson, suspend } = useStore()
@@ -503,12 +483,12 @@ export function Study({ onExit }: { onExit: () => void }) {
 
         {/* 键盘提示 */}
         <div className="mt-2.5 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] text-ink-400">
-          {isChoiceStep && !answered && <span><Key>1</Key>–<Key>4</Key> 选择</span>}
-          {isFlipStep && revealed && <span><Key>1</Key>–<Key>4</Key> 评分</span>}
-          <span><Key>R</Key> 重放发音</span>
-          <span><Key>Esc</Key> 退出</span>
-          {step.kind !== 'review' && (answered || spellResult) && <span><Key>Enter</Key> 继续</span>}
-          {step.kind === 'review' && !revealed && <span><Key>空格</Key> 显示答案</span>}
+          {isChoiceStep && !answered && <span><Kbd>1</Kbd>–<Kbd>4</Kbd> 选择</span>}
+          {isFlipStep && revealed && <span><Kbd>1</Kbd>–<Kbd>4</Kbd> 评分</span>}
+          <span><Kbd>R</Kbd> 重放发音</span>
+          <span><Kbd>Esc</Kbd> 退出</span>
+          {step.kind !== 'review' && (answered || spellResult) && <span><Kbd>Enter</Kbd> 继续</span>}
+          {step.kind === 'review' && !revealed && <span><Kbd>空格</Kbd> 显示答案</span>}
         </div>
 
         {step.kind === 'review' && revealed && (
@@ -539,19 +519,5 @@ export function Study({ onExit }: { onExit: () => void }) {
 
 /* ------------------------------------------------------------------ 子组件 */
 
-function Key({ children }: { children: React.ReactNode }) {
-  return <kbd className="rounded border border-ink-200 bg-white/70 px-1 text-[10px] text-ink-500 dark:border-white/15 dark:bg-white/10">{children}</kbd>
-}
 
-function ResultBanner({ ok, text }: { ok: boolean; text: string }) {
-  return (
-    <div className={`rounded-xl px-3 py-2 text-sm font-medium ${
-      ok
-        ? 'bg-laurel-50 text-laurel-700 dark:bg-laurel-950/40 dark:text-laurel-300'
-        : 'bg-wine-50 text-wine-700 dark:bg-wine-950/40 dark:text-wine-300'
-    }`}>
-      {ok ? '✓ ' : '✗ '}{text}
-    </div>
-  )
-}
 
