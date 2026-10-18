@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactElement } from 'react'
 import { useStore } from './store/useStore'
 import { Icon, Ring } from './components/ui'
 import { Welcome } from './components/Welcome'
-import { setProsody, setSpeechRate, setSpeechVoice, setSpeechEngine, warmupNeural } from './lib/tts'
+import { setProsody, setSpeechRate, setSpeechVoice, setSpeechEngine, warmupNeural, warmupTts } from './lib/tts'
 import { setNeuralRate } from './lib/neuralTts'
 import { Learn, type LearnView } from './pages/Learn'
 import { Mine, type MineView } from './pages/Mine'
@@ -27,6 +27,39 @@ export default function App() {
   useEffect(() => {
     setProsody(settings.prosodyAccent, settings.prosodyAmp, settings.restoreAncient)
   }, [settings.prosodyAccent, settings.prosodyAmp, settings.restoreAncient])
+
+  // 提前把语音引擎加载好。
+  //
+  // ⚠️ 原来只给「高清引擎」（神经语音）做了预热，而**默认的 eSpeak 引擎没有**：
+  // `warmupTts()` 只在鼠标悬停到喇叭上、或点开阅读器时才被调用。
+  // 于是首次启动后点第一张学习卡，要等 24MB 的 eSpeak 数据下载完才出声
+  // —— 这正是「点了之后要等一会儿才发音」的来源。
+  //
+  // 现在默认引擎也在空闲时预热。但**尊重用户的数据意愿**：
+  // Save-Data 打开、或有效连接类型是 2g/3g 时不预热，等用户真正点播放再说。
+  useEffect(() => {
+    if (!ready) return
+    if (settings.speechEngine !== 'espeak') return
+
+    type NetInfo = { saveData?: boolean; effectiveType?: string }
+    const nav = navigator as Navigator & { connection?: NetInfo }
+    const conn = nav.connection
+    if (conn?.saveData) return
+    if (conn?.effectiveType && /(^|-)2g$|(^|-)3g$/.test(conn.effectiveType)) return
+
+    const ric = (window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+    const cic = (window as unknown as { cancelIdleCallback?: (h: number) => void }).cancelIdleCallback
+    let cancel: () => void
+    // 用较长 timeout：引擎加载是 24MB，不必跟首屏渲染抢，但要保证一定会跑
+    if (ric) {
+      const h = ric(() => warmupTts(), { timeout: 4000 })
+      cancel = () => { if (cic) cic(h) }
+    } else {
+      const t = window.setTimeout(() => warmupTts(), 2500)
+      cancel = () => clearTimeout(t)
+    }
+    return cancel
+  }, [ready, settings.speechEngine])
 
   // 选高清引擎时提前把模型加载好：会话创建要 ~1 秒，
   // 放在用户点击之前做完，点击时就能直接推理
