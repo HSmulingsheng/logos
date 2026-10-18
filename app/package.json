@@ -27,7 +27,8 @@
     "neural:sync": "node scripts/sync-neural.mjs",
     "test:neural": "node scripts/neural-test.mjs",
     "test:translit": "esbuild scripts/translit-test.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/translit.mjs --log-level=error && node node_modules/.cache/translit.mjs",
-    "test:input": "node scripts/input-test.mjs"
+    "test:input": "node scripts/input-test.mjs",
+    "desktop:verify": "node desktop/verify-app.mjs"
   },
   "dependencies": {
     "@huggingface/transformers": "^4.3.0",
