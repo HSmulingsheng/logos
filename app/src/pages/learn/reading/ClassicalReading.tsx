@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Icon, Section } from '../../../components/ui'
 import { WordSheet } from '../../../components/WordSheet'
-import { ClickableGreek } from '../../../components/ClickableGreek'
 import { READ_MODE_HINT, READ_MODE_LABEL, SentenceReader, type ReadMode } from '../../../components/SentencePlayer'
 
 import { useWordLookup } from '../../../lib/wordLookup'

@@ -2,11 +2,10 @@ import { useEffect, useMemo, useState } from 'react'
 import type { NtBook, NtVerse, Word } from '../types'
 import { useStore } from '../store/useStore'
 import { loadBook, loadManifest } from '../lib/data'
-import { ClickableGreek } from '../components/ClickableGreek'
-import { SpeakSentence } from '../components/SpeakSentence'
 import { useWordLookup } from '../lib/wordLookup'
 import { loadPos, savePos } from '../lib/readerPos'
 import { Icon, LevelTag } from '../components/ui'
+import { SentenceReader, type ReadMode } from '../components/SentencePlayer'
 import { WordSheet } from '../components/WordSheet'
 
 
@@ -135,16 +134,27 @@ export function Reader({
   )
 }
 
+/**
+ * 一节经文。
+ *
+ * 原来这里是 `<ClickableGreek>` + 一个独立的 `<SpeakSentence>`，于是新约阅读
+ * **没有**逐句精听、没有连播、没有当前句高亮 —— 而古典阅读（ClassicalReading）
+ * 早就有了。两个阅读器的正文实现就这样分叉成能力不对等的两套。
+ *
+ * 现在与古典阅读共用 `SentenceReader`，上面三项能力立刻都有了。
+ * 顺带去掉那处 `className="ml-auto !h-6 !w-6"` —— 它是用 `!important`
+ * 去覆盖 `SpeakSentence` 自己的尺寸类，属于自己打自己。
+ */
 function VerseBlock({ verse, showZh, onWord }: { verse: NtVerse; showZh: boolean; onWord: (w: string) => void }) {
+  const readMode = useStore((st) => st.settings.readMode) as ReadMode
   return (
     <div className="mb-4 border-b border-ink-100 pb-4 last:border-0 dark:border-white/10">
       <div className="mb-1 flex items-center gap-2">
         <span className="text-[11px] font-medium text-aegean-600 dark:text-aegean-400">
           {verse.b} {verse.c}:{verse.v}
         </span>
-        <SpeakSentence text={verse.g} className="ml-auto !h-6 !w-6" />
       </div>
-      <ClickableGreek text={verse.g} onWord={onWord} className="text-[19px] leading-loose" />
+      <SentenceReader text={verse.g} mode={readMode} onWord={onWord} className="text-[19px] leading-loose" />
       {showZh && <p className="mt-1.5 text-sm leading-relaxed text-ink-500 dark:text-ink-400">{verse.z}</p>}
     </div>
   )
