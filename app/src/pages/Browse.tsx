@@ -38,6 +38,24 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
     })
   }, [])
 
+  /**
+   * id → 索引项。原来在筛选分支里对**每张卡**做一次 `index.find(...)`：
+   * 15,686 条 × 最多 300 张卡 ≈ 470 万次比较，而且 `results` 依赖 `cards`，
+   * 每答一题（cards 换新 Map）就整轮重算。建成 Map 后是 O(1)。
+   */
+  const indexById = useMemo(() => {
+    const m = new Map<number, IndexEntry>()
+    for (const e of index ?? []) m.set(e[0], e)
+    return m
+  }, [index])
+
+  /**
+   * 两个角标计数。原来是 render 里现算 `[...cards.values()].filter(...)`，
+   * 每次 render 都跑两遍全表。cards 只在作答后变，memo 住即可。
+   */
+  const favCount = useMemo(() => [...cards.values()].filter((c) => c.fav).length, [cards])
+  const leechCount = useMemo(() => [...cards.values()].filter((c) => (c.lapses ?? 0) >= 4).length, [cards])
+
   const results = useMemo(() => {
     if (filter !== 'all') {
       const now = Date.now()
@@ -49,7 +67,7 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
         else if (filter === 'due') hit = c.state !== 0 && c.due <= now && !c.suspended
         else if (filter === 'new') hit = c.state === 0
         if (!hit) continue
-        const found = index?.find((e) => e[0] === c.id)
+        const found = indexById.get(c.id)
         out.push({ id: c.id, word: found?.[1] ?? `#${c.id}`, lesson: c.lesson, gloss: found?.[4] ?? '', ipa: found?.[5] ?? '' })
         if (out.length > 300) break
       }
@@ -68,7 +86,7 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
       }
     }
     return out
-  }, [index, q, filter, cards])
+  }, [index, indexById, q, filter, cards])
 
   /**
    * 打开一个词条。
@@ -116,8 +134,8 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
             className={`chip whitespace-nowrap ${filter === k ? '!border-aegean-300 !bg-aegean-50 !text-aegean-700' : ''}`}
             onClick={() => setFilter(k)}>
             {label}
-            {k === 'fav' && ` ${[...cards.values()].filter((c) => c.fav).length}`}
-            {k === 'leech' && ` ${[...cards.values()].filter((c) => (c.lapses ?? 0) >= 4).length}`}
+            {k === 'fav' && ` ${favCount}`}
+            {k === 'leech' && ` ${leechCount}`}
           </button>
         ))}
       </div>
