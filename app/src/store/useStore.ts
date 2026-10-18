@@ -14,6 +14,8 @@ import type { SessionStep } from '../types'
 interface State {
   ready: boolean
   error: string | null
+  /** 进度写库失败。与 `error`（初始化失败→整页错误）分开：这个只提示、不阻断 */
+  persistError: string | null
   manifest: Manifest | null
   settings: Settings
   cards: Map<number, CardRecord>
@@ -51,6 +53,7 @@ function mapOf(cards: CardRecord[]): Map<number, CardRecord> {
 export const useStore = create<State>((set, get) => ({
   ready: false,
   error: null,
+  persistError: null,
   manifest: null,
   settings: db.DEFAULT_SETTINGS,
   cards: new Map(),
@@ -202,7 +205,23 @@ export const useStore = create<State>((set, get) => ({
       }
     }
     void isNewIntro
-    await Promise.all([db.putCard(out.card), db.addLog(log), db.putDay(day)])
+
+    // ⚠️ 写库失败必须接住。
+    //
+    // 原来是裸 `await Promise.all([...])`：IndexedDB 写失败（配额满、Safari 隐私模式、
+    // 磁盘异常）时这个 Promise 直接拒绝，而上面的 `set(...)` 已经把内存状态改好了
+    // ——界面看起来完全正常、能继续答下一题，但进度**一条都没落盘**，
+    // 刷新后就全没了。这是最坏的一类失败：看起来成功。
+    //
+    // 现在失败只提示、不阻断：内存态继续推进（用户至少能学完这一轮），
+    // 同时立一个 `persistError` 让界面明确告诉他「进度没能保存」。
+    try {
+      await Promise.all([db.putCard(out.card), db.addLog(log), db.putDay(day)])
+      if (get().persistError) set({ persistError: null })
+    } catch (e) {
+      console.error('[store] 进度写入失败', e)
+      set({ persistError: e instanceof Error ? e.message : String(e) })
+    }
   },
 
   async toggleFav(id) {

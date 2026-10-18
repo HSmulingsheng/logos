@@ -47,7 +47,7 @@ function dbg(tag: string, msg: string) {
 
 
 export function Study({ onExit }: { onExit: () => void }) {
-  const { queue, cursor, startSession, submit, advance, settings, lessonWords, ensureLesson, suspend } = useStore()
+  const { queue, cursor, startSession, submit, advance, settings, lessonWords, ensureLesson, suspend, persistError } = useStore()
   const [revealed, setRevealed] = useState(false)
   const [answered, setAnswered] = useState<null | { picked: number | null; ok: boolean }>(null)
   const [typed, setTyped] = useState('')
@@ -300,6 +300,16 @@ export function Study({ onExit }: { onExit: () => void }) {
 
       {/* 主体 */}
       <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col overflow-y-auto px-4 pb-3">
+        {/* 进度没能写进本机数据库时，必须明确告诉用户 —— 否则界面照常前进、
+            刷一下全没了，用户根本不会知道发生过什么。 */}
+        {persistError && (
+          <div className="mt-3 rounded-xl bg-wine-50 px-3 py-2 text-xs leading-relaxed text-wine-700 dark:bg-wine-950/40 dark:text-wine-300">
+            <span className="font-medium">进度未能保存</span>
+            <span className="ml-1 text-wine-600/80 dark:text-wine-400/80">
+              （本机存储可能已满或处于隐私模式）本次学习记录只在这个页面里有效。
+            </span>
+          </div>
+        )}
         {/* ---------------- 新词：四选一 ---------------- */}
         {step.kind === 'learn' && (
           <div className="flex flex-1 flex-col justify-center">
