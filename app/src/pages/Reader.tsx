@@ -26,8 +26,7 @@ export function Reader({
   const [loading, setLoading] = useState(false)
   const [manifestLocal, setManifestLocal] = useState(manifest)
   // 点词查义与哲学/文学/历史共用同一套实现（见 lib/wordLookup.ts）
-  const { lookup, detail, setDetail } = useWordLookup()
-  const cursorWord = detail?.w ?? null
+  const { lookup, detail, setDetail, missing, clearMissing } = useWordLookup()
 
   useEffect(() => {
     if (!manifestLocal) void loadManifest().then(setManifestLocal)
@@ -125,18 +124,26 @@ export function Reader({
             </div>
             <WordDetail word={detail} compact />
           </div>
-        ) : (
-          <div className="py-6 text-center text-sm text-ink-400">
-            词典中没有「{cursorWord}」这个词形
-            <p className="mt-1 text-xs">可能是不规则形式，或尚未收录；可到 Logeion 查询。</p>
-            {cursorWord && (
-              <a className="btn-ghost mt-3 inline-flex"
-                href={`https://logeion.uchicago.edu/${encodeURIComponent(cursorWord)}`}
-                target="_blank" rel="noreferrer">到 Logeion 查</a>
-            )}
-          </div>
-        )}
+        ) : null}
       </Sheet>
+
+      {/* ⚠️ 查不到词时必须有反馈。
+          原来这个提示写在 Sheet 的 else 分支里，而 Sheet 是 `open={!!detail}` ——
+          查不到时 detail 为空、Sheet 根本不打开，那段提示代码**永远执行不到**，
+          用户点了一个生词就像什么都没发生。现在移到 Sheet 外面。
+          提示文案与古典阅读（ClassicalReading）保持一致，两处行为统一。 */}
+      {missing && (
+        <div className="mx-auto mt-3 max-w-3xl card-surface p-3 text-xs text-ink-500">
+          <div className="flex items-center gap-2">
+            <span className="greek text-base text-ink-700 dark:text-ink-200">{missing}</span>
+            <span>词表未收录（以新约词汇为主）</span>
+            <button className="btn-ghost ml-auto !px-2 !py-1" onClick={clearMissing}>知道了</button>
+          </div>
+          <a className="btn-ghost mt-2 inline-flex"
+            href={`https://logeion.uchicago.edu/${encodeURIComponent(missing)}`}
+            target="_blank" rel="noreferrer">到 Logeion 查这个词 →</a>
+        </div>
+      )}
     </div>
   )
 }

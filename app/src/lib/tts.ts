@@ -10,6 +10,7 @@
 import { USE_TTS } from './flags'
 import { planAccent, restoreAncientPhonetics, type EspeakEvent } from './prosody'
 import { pitchMarks, pitchTrack, tdPsola } from './psola'
+import { applyProsody as applyProsodyPipeline } from './prosodyPipeline'
 import { synthNeural, neuralStatus, neuralProgress, onNeuralStatus, getNeuralRate, warmupNeural } from './neuralTts'
 
 type Worker = {
@@ -199,40 +200,6 @@ export function normalizeForSpeech(input: string): string {
  *
  * 任何一步失败都**原样返回**，绝不因为韵律改造而让朗读不出声。
  */
-function applyProsody(
-  pcm: Int16Array, sr: number, events: EspeakEvent[], text: string, amp: number,
-): Int16Array {
-  try {
-    if (!events.length) return pcm
-    const x = new Float32Array(pcm.length)
-    for (let i = 0; i < pcm.length; i++) x[i] = pcm[i] / 32768
-    const dur = pcm.length / sr
-
-    // 基准基频取该句 F0 的中位数（eSpeak 的 pitch=50 大致落在 86~110Hz）
-    const track = pitchTrack(x, sr)
-    const voiced = track.f0.filter((v) => v > 0).sort((a, b) => a - b)
-    if (!voiced.length) return pcm
-    const base = voiced[voiced.length >> 1]
-
-    const plan = planAccent(events, text, dur, base, amp)
-    if (plan.points.length < 3) return pcm
-    // 复用上面已经算好的轨迹：pitchMarks 内部本来会再估一次，
-    // 在 28s 的段落上那是白白多花 ~800ms
-    const { marks } = pitchMarks(x, sr, 70, 400, track)
-    if (marks.length < 3) return pcm
-
-    // durAnchors 补足 eSpeak 漏掉的长音（ᾱ/ῑ/ῡ 带 circumflex 时它完全不延长）
-    const y = tdPsola(x, sr, plan.points, { marks, durAnchors: plan.durAnchors })
-    const out = new Int16Array(y.length)
-    for (let i = 0; i < y.length; i++) {
-      out[i] = Math.max(-32768, Math.min(32767, Math.round(y[i] * 32768)))
-    }
-    return out
-  } catch (e) {
-    console.warn('[tts] 韵律改造失败，回退原始音频', e)
-    return pcm
-  }
-}
 
 export async function synthesize(text: string): Promise<string | null> {
   const t = normalizeForSpeech(text)
@@ -269,7 +236,7 @@ export async function synthesize(text: string): Promise<string | null> {
     for (const p of parts) { merged.set(p, off); off += p.length }
 
     const shaped = prosodyOn
-      ? applyProsody(merged, samplerate, events, speak, prosodyAmp)
+      ? applyProsodyPipeline(merged, samplerate, events, speak, { amp: prosodyAmp })
       : merged
     const url = URL.createObjectURL(pcmToWav(shaped, samplerate))
     if (cache.size >= CACHE_MAX) {

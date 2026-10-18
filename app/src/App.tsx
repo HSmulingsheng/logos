@@ -35,12 +35,20 @@ export default function App() {
     // 尽早预热：会话创建 + 首次推理合计约 1.8 秒，越早做完越好。
     // 用 requestIdleCallback 避免和首屏渲染抢主线程。
     const ric = (window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+    const cic = (window as unknown as { cancelIdleCallback?: (h: number) => void }).cancelIdleCallback
     const schedule = () => warmupNeural()
-    const t = ric
-      ? (ric(schedule, { timeout: 800 }), 0)
-      : window.setTimeout(schedule, 200)
-    return () => { if (t) clearTimeout(t) }
-    return () => clearTimeout(t)
+    // ⚠️ 这里原来有两条 return：第二条不可达，而且 requestIdleCallback 那条路径
+    // 返回的是 0，导致 `if (t) clearTimeout(t)` 什么也没取消 ——
+    // 组件卸载或引擎切换后，idle 回调仍会跑一次。现在两条路径都能取消。
+    let cancel: () => void
+    if (ric) {
+      const h = ric(schedule, { timeout: 800 })
+      cancel = () => { if (cic) cic(h) }
+    } else {
+      const t = window.setTimeout(schedule, 200)
+      cancel = () => clearTimeout(t)
+    }
+    return cancel
   }, [ready, settings.speechEngine])
 
   const [tab, setTab] = useState<Tab>('learn')

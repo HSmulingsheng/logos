@@ -309,8 +309,18 @@ export function tdPsola(
       if (!(Pa > 0)) continue
       const fAnal = 1 / Pa
       // 目标 F0 取自**分析时刻**（曲线的坐标系是原信号时间轴）
-      let fTar = interpPts(f0Pts, marks[j])
-      fTar = Math.min(Math.max(fTar, floor), ceiling)
+      const fTar = interpPts(f0Pts, marks[j])
+
+      // ⚠️ 这里夹的是**比值**，不是绝对频率。
+      //
+      // 曾经写成 `fTar = clamp(fTar, floor, ceiling)`，看起来无害，实际是灾难：
+      // 一旦某个基音标记的间隔越界（例如 2ms → 500Hz，或 94ms → 10Hz），
+      // clamp 之后 `fAnal / fTar ≠ 1`，而输出位置是按这个比值**累积**的，
+      // 于是整段偏移越滚越大。实测 ἄνθρωπος 漂了 **130ms**，
+      // 恒等重建的 SNR 只有 0.7 dB（波形完全对不上）。
+      //
+      // 夹比值的意义一样（防止目标荒谬），但恒等时比值恒为 1，位置绝不漂移。
+      const ratio = fTar > 0 ? Math.min(Math.max(fTar / fAnal, 0.25), 4) : 1
       const L = Math.max(Math.round(2 * Pa * sr), 8)
       const c = Math.round(marks[j] * sr)
       const a0 = c - (L >> 1)
@@ -325,8 +335,8 @@ export function tdPsola(
         out[i] += seg[k] * w[k]
         wsum[i] += w[k]
       }
-      // 输出周期 = 分析周期 × (分析F0 / 目标F0) × 时长局部斜率
-      u += Pa * (fAnal / fTar) * slopeAt(marks[j])
+      // 输出周期 = 分析周期 ÷ 音高比 × 时长局部斜率
+      u += (Pa / ratio) * slopeAt(marks[j])
     }
   }
 

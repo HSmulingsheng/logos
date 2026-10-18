@@ -32,6 +32,7 @@ import { fileURLToPath } from 'node:url'
 
 import { planAccent, restoreAncientPhonetics } from '../app/src/lib/prosody'
 import { pitchMarks, pitchTrack, tdPsola } from '../app/src/lib/psola'
+import { applyProsody as applyProsodyShared } from '../app/src/lib/prosodyPipeline'
 
 // 打包后 import.meta.url 指向打包产物所在的目录（可能在 /tmp），
 // 所以不能只靠它推根目录：优先认「当前目录下有没有 data/greek.json」。
@@ -98,30 +99,6 @@ function writeWav(pcm, path) {
 }
 
 /** 与 tts.ts 的 applyProsody 同一套逻辑（保持一致，勿各自演化） */
-function applyProsody(pcm, events, text) {
-  try {
-    if (!events.length) return pcm
-    const x = new Float32Array(pcm.length)
-    for (let i = 0; i < pcm.length; i++) x[i] = pcm[i] / 32768
-    const dur = pcm.length / SR
-    const track = pitchTrack(x, SR)
-    const voiced = track.f0.filter((v) => v > 0).sort((a, b) => a - b)
-    if (!voiced.length) return pcm
-    const base = voiced[voiced.length >> 1]
-    const plan = planAccent(events, text, dur, base, 1)
-    if (plan.points.length < 3) return pcm
-    const { marks } = pitchMarks(x, SR, 70, 400, track)
-    if (marks.length < 3) return pcm
-    const y = tdPsola(x, SR, plan.points, { marks, durAnchors: plan.durAnchors })
-    const out = new Int16Array(y.length)
-    for (let i = 0; i < y.length; i++) {
-      out[i] = Math.max(-32768, Math.min(32767, Math.round(y[i] * 32768)))
-    }
-    return out
-  } catch {
-    return pcm   // 任何一步失败都原样返回，绝不因为韵律而让词没声音
-  }
-}
 
 // ---------------------------------------------------------------- 主循环
 let targets = Object.entries(index).filter(([id]) => {
@@ -146,7 +123,7 @@ for (let n = 0; n < targets.length; n++) {
   try {
     const { pcm, events } = synth(speak)
     if (pcm.length < SR * 0.05) { skipped++; continue }
-    const shaped = applyProsody(pcm, events, speak)
+    const shaped = applyProsodyShared(pcm, SR, events, speak, { amp: 1 })
     durations.push(shaped.length / SR)
     if (!REPORT) {
       const wav = join(TMP, 'a.wav')

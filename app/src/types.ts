@@ -189,11 +189,8 @@ export interface Settings {
   requestRetention: number
   /** 学习步骤（分钟） */
   learningSteps: string[]
-  /** 发音音轨偏好 */
-  audioTone: 'greek' | 'reconstructed'
   autoPlay: boolean
   showForms: boolean
-  showExamples: boolean
   /** 练习模式开关 */
   quizChoice: boolean
   quizSpell: boolean
@@ -211,7 +208,6 @@ export interface Settings {
   /** 学习顺序：按课次 / 按词频 */
   orderMode: 'lesson' | 'frequency'
   theme: 'light' | 'dark'
-  activeLesson: number | null
   /** 已激活的多本词书（课号） */
   activeLessons: number[]
 

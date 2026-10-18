@@ -99,10 +99,10 @@ export const DEFAULT_SETTINGS: Settings = {
   dailyReviewLimit: 200,
   requestRetention: 0.9,
   learningSteps: ['1m', '10m'],
-  audioTone: 'greek',
+
   autoPlay: true,
   showForms: true,
-  showExamples: true,
+
   quizChoice: true,
   quizSpell: true,
   speechRate: 168,
@@ -113,7 +113,7 @@ export const DEFAULT_SETTINGS: Settings = {
   quizAudio: true,
   orderMode: 'lesson',
   theme: 'light',
-  activeLesson: 1,
+
   activeLessons: [1],
   prosodyAccent: true,
   prosodyAmp: 1,

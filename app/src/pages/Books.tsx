@@ -35,7 +35,7 @@ export function Books({ onStudy, embedded = false }: { onStudy: () => void; embe
   const toggle = async (order: number) => {
     const cur = settings.activeLessons
     const next = cur.includes(order) ? cur.filter((x) => x !== order) : [...cur, order].sort((a, b) => a - b)
-    await saveSettings({ activeLessons: next.length ? next : [order], activeLesson: next[0] ?? order })
+    await saveSettings({ activeLessons: next.length ? next : [order] })
     if (!cur.includes(order)) await ensureLesson(order)
   }
 
