@@ -100,7 +100,3 @@ export function applyProsody(
   }
 }
 
-/** 词条级封装：给离线批量生成用。实时合成路径直接用上面的 applyProsody */
-export function applyProsodyToWord(pcm: Int16Array, sr: number, events: EspeakEvent[], word: Word): Int16Array {
-  return applyProsody(pcm, sr, events, word.w, { amp: 1 })
-}

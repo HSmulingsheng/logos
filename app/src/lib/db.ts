@@ -1,6 +1,8 @@
 /** IndexedDB 持久化（idb 封装） */
 import { openDB, type DBSchema, type IDBPDatabase } from 'idb'
 import type { CardRecord, DayStat, ReviewLogRecord, Settings } from '../types'
+import { resetProgress } from './grammar/progress'
+import { clearPos } from './readerPos'
 
 interface GreekVocabDB extends DBSchema {
   cards: { key: number; value: CardRecord; indexes: { by_lesson: number; by_due: number } }
@@ -58,39 +60,22 @@ export async function allCards(): Promise<CardRecord[]> {
   return (await db()).getAll('cards')
 }
 
-export async function cardsByLesson(lesson: number): Promise<CardRecord[]> {
-  return (await db()).getAllFromIndex('cards', 'by_lesson', lesson)
-}
 
-export async function putCards(cards: CardRecord[]): Promise<void> {
-  const d = await db()
-  const tx = d.transaction('cards', 'readwrite')
-  await Promise.all([...cards.map((c) => tx.store.put(c)), tx.done])
-}
 
 export async function putCard(card: CardRecord): Promise<void> {
   await (await db()).put('cards', card)
 }
 
-export async function cardCount(): Promise<number> {
-  return (await db()).count('cards')
-}
 
 export async function addLog(log: ReviewLogRecord): Promise<void> {
   await (await db()).add('logs', log)
 }
 
-export async function logsByDay(day: string): Promise<ReviewLogRecord[]> {
-  return (await db()).getAllFromIndex('logs', 'by_day', day)
-}
 
 export async function allLogs(): Promise<ReviewLogRecord[]> {
   return (await db()).getAll('logs')
 }
 
-export async function getDay(day: string): Promise<DayStat | undefined> {
-  return (await db()).get('days', day)
-}
 
 export async function putDay(stat: DayStat): Promise<void> {
   await (await db()).put('days', stat)
@@ -100,6 +85,15 @@ export async function allDays(): Promise<DayStat[]> {
   return (await db()).getAll('days')
 }
 
+/**
+ * 清空学习进度。
+ *
+ * ⚠️ 原来只清了 IndexedDB 的三张表，**漏掉了存在 localStorage 里的两处进度**：
+ *   · 语法闯关进度（`grammar/progress.ts`，有现成的 `resetProgress()` 却从没被调用过）
+ *   · 阅读位置（`readerPos.ts`）
+ * 于是用户点「清空学习进度」、确认「不可撤销」之后，语法关卡星星和上次读到的
+ * 章节还在——这与按钮的承诺不符。
+ */
 export async function clearProgress(): Promise<void> {
   const d = await db()
   const tx = d.transaction(['cards', 'logs', 'days'], 'readwrite')
@@ -109,6 +103,9 @@ export async function clearProgress(): Promise<void> {
     tx.objectStore('days').clear(),
     tx.done,
   ])
+  // localStorage 里的两处进度。放在 IndexedDB 事务之后，避免半途抛错时只清了一半。
+  resetProgress()
+  clearPos()
 }
 
 export const DEFAULT_SETTINGS: Settings = {

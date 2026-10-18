@@ -15,20 +15,6 @@ import type { CardRecord, Settings } from '../types'
 export { Rating, State }
 export type { Grade }
 
-export const RATING_LABEL: Record<number, string> = {
-  1: '忘记了',
-  2: '有点难',
-  3: '记得',
-  4: '很简单',
-}
-
-export const RATING_COLOR: Record<number, string> = {
-  1: 'bg-wine-500 hover:bg-wine-600',
-  2: 'bg-amber-500 hover:bg-amber-600',
-  3: 'bg-laurel-500 hover:bg-laurel-600',
-  4: 'bg-aegean-500 hover:bg-aegean-600',
-}
-
 export function makeParams(s: Settings): FSRSParameters {
   return generatorParameters({
     request_retention: s.requestRetention,
@@ -144,21 +130,6 @@ export function humanInterval(due: Date, now: Date): string {
   return `${(d / 365).toFixed(1)} 年`
 }
 
-export function isDue(rec: CardRecord, now = new Date()): boolean {
-  return rec.state !== State.New && rec.due <= now.getTime()
-}
 
-export function isNew(rec: CardRecord | undefined): boolean {
-  return !rec || rec.state === State.New
-}
 
-/** 记忆强度分级，用于「熟练度」可视化 */
-export function masteryOf(rec: CardRecord | undefined): 0 | 1 | 2 | 3 | 4 {
-  if (!rec || rec.state === State.New) return 0
-  if (rec.state === State.Learning || rec.state === State.Relearning) return 1
-  if (rec.stability < 7) return 2
-  if (rec.stability < 30) return 3
-  return 4
-}
 
-export const MASTERY_LABEL = ['未学', '初学', '认识', '熟悉', '掌握']

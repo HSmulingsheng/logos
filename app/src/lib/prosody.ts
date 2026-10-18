@@ -229,21 +229,6 @@ export function smoothContour(pts: Point[], win = SMOOTH_WIN): Point[] {
   return out
 }
 
-/** 线性插值取值；端点外取最近值 */
-export function interp(pts: Point[], t: number): number {
-  if (!pts.length) return 0
-  if (t <= pts[0][0]) return pts[0][1]
-  const last = pts[pts.length - 1]
-  if (t >= last[0]) return last[1]
-  let lo = 0, hi = pts.length - 1
-  while (hi - lo > 1) {
-    const mid = (lo + hi) >> 1
-    if (pts[mid][0] <= t) lo = mid; else hi = mid
-  }
-  const [t0, v0] = pts[lo], [t1, v1] = pts[hi]
-  const d = t1 - t0
-  return d <= 0 ? v1 : v0 + (v1 - v0) * (t - t0) / d
-}
 
 // ---------------------------------------------------------------- 与 eSpeak 对接
 /** eSpeak `synthesize()` 回调第二参数里的事件 */

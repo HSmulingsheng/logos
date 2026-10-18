@@ -42,6 +42,3 @@ export function lsjOf(id: number): LsjSense[] | undefined {
   return cache?.[String(id)]
 }
 
-export function lsjLoaded(): boolean {
-  return cache !== null
-}

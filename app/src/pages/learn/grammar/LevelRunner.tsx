@@ -5,7 +5,7 @@ import { useStore } from '../../../store/useStore'
 import type { InputScheme } from '../../../lib/greekInput'
 import { SpeakSentence } from '../../../components/SpeakSentence'
 import { foldGreek } from '../../../lib/greek'
-import { buildLevel } from '../../../lib/grammar/exercises'
+import { buildLevel, isCorrect } from '../../../lib/grammar/exercises'
 import type { GenContext } from '../../../lib/grammar/exercises'
 import type { Exercise } from '../../../lib/grammar/types'
 import type { LevelSpec, UnitSpec } from '../../../lib/grammar/course'
@@ -68,18 +68,21 @@ export function LevelRunner({ unit, spec, ctx, onExit, onFinish }: Props) {
     if (!ex || result) return
     setWrong(false)
     let ok = false
+    // 判题统一走 `isCorrect`：这四种题型的比较逻辑原来在这里又写了一遍，
+    // 与 exercises.ts 里的版本逐字相同。完整性检查（没答完就 return）留在本地，
+    // 因为那是 UI 关注点，不是对错判断。
     if (ex.mode === 'choice') {
       if (!picked) return
-      ok = picked === ex.answerId
+      ok = isCorrect(ex, picked)
     } else if (ex.mode === 'type') {
       if (!typed.trim()) return
-      ok = foldGreek(typed.trim()) === foldGreek(ex.answer)
+      ok = isCorrect(ex, typed)
     } else if (ex.mode === 'order') {
       if (placed.length !== ex.correct.length) return
-      ok = JSON.stringify(placed) === JSON.stringify(ex.correct)
+      ok = isCorrect(ex, placed)
     } else if (ex.mode === 'match') {
       if (Object.keys(assign).length !== ex.pairs.length) return
-      ok = ex.pairs.every((p) => assign[p.left] === p.right)
+      ok = isCorrect(ex, assign)
     }
     if (!ok) {
       // 答错：只给提示，不进下一题、不记分，改一下再点「判定」即可重答。

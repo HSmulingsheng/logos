@@ -113,10 +113,6 @@ export function audioUrl(file?: string): string | undefined {
   return BASE + path.split('/').map(encodeURIComponent).join('/')
 }
 
-/** 预加载某课音频清单（用 <link rel=prefetch> 意义不大，这里只做存在性登记） */
-export function primeLesson(order: number): void {
-  void loadLessonWords(order)
-}
 
 export interface SearchHit {
   word: Word

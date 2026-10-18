@@ -30,14 +30,6 @@ if (typeof speechSynthesis !== 'undefined') {
   speechSynthesis.onvoiceschanged = loadVoices
 }
 
-/**
- * 朗读任意古希腊语文本。
- * 优先用内置的 eSpeak（音质与词条音频一致），引擎不可用时退回系统语音。
- */
-export function playText(text?: string): void {
-  if (!text) return
-  void speakText(text).then((ok) => { if (!ok) speak(text) })
-}
 
 /** 兜底 TTS：浏览器对古希腊语的发音支持有限，仅作提示 */
 export function speak(text?: string): void {
@@ -51,6 +43,3 @@ export function speak(text?: string): void {
   speechSynthesis.speak(u)
 }
 
-export function hasAudio(file?: string): boolean {
-  return Boolean(file)
-}

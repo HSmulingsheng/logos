@@ -26,7 +26,3 @@ export function loadSmyth(): Promise<SmythData | null> {
   return smythPromise
 }
 
-/** 取某个课程单元的范例词 */
-export function paradigmsOfUnit(data: GrammarData, unit: string): import('./types').Paradigm[] {
-  return data.paradigms.filter((p) => p.unit === unit)
-}

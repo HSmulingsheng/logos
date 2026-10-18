@@ -21,3 +21,8 @@ export function loadPos(): ReaderPos {
 export function savePos(p: ReaderPos): void {
   try { localStorage.setItem(KEY, JSON.stringify(p)) } catch { /* 忽略配额错误 */ }
 }
+
+/** 清空阅读进度（「清空学习进度」时要一起清，否则会跳回上次读的那章） */
+export function clearPos(): void {
+  try { localStorage.removeItem(KEY) } catch { /* 忽略 */ }
+}

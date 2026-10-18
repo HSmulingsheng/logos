@@ -570,7 +570,3 @@ export function isCorrect(ex: Exercise, answer: unknown): boolean {
   return false
 }
 
-/** 选择题：返回某个选项文本是否是正确答案（渲染对错用） */
-export function optionIsRight(ex: ChoiceExercise, text: string): boolean {
-  return ex.options.find((o) => o.id === ex.answerId)?.text === text
-}

@@ -33,7 +33,6 @@ let worker: Worker | null = null
 /** 朗读语速：eSpeak 的 rate。120 太慢（有效语速仅 12.9 字符/秒），168 接近自然 */
 let rate = 168
 export function setSpeechRate(r: number) { rate = Math.max(80, Math.min(260, Math.round(r))) }
-export function getSpeechRate() { return rate }
 
 /**
  * 音色变体。eSpeak 的 grc 声音支持 +f1..+f3 / +m1..+m7 等变体，
@@ -53,7 +52,6 @@ export function setSpeechVoice(v: string) {
   voice = v || 'grc'
   if (worker) worker.set_voice(voice)
 }
-export function getSpeechVoice() { return voice }
 let samplerate = 22050
 let initPromise: Promise<boolean> | null = null
 let status: TtsStatus = 'idle'

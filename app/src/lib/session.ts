@@ -175,33 +175,7 @@ export function buildQueue(ctx: QueueContext): QueueResult {
   return { steps, newCount: newWords.length, reviewCount: reviewCards.length }
 }
 
-/** 计算某课的到期/新词统计（首页与词书页用） */
-export interface LessonProgress {
-  order: number
-  total: number
-  introduced: number
-  due: number
-  mastered: number
-  learning: number
-}
 
-export function lessonProgress(
-  lesson: Lesson,
-  words: Word[],
-  cards: Map<number, CardRecord>,
-  now = new Date(),
-): LessonProgress {
-  let introduced = 0, due = 0, mastered = 0, learning = 0
-  for (const w of words) {
-    const c = cards.get(w.i)
-    if (!c || c.state === State.New) continue
-    introduced++
-    if (c.due <= now.getTime()) due++
-    if (c.state === State.Review && c.stability >= 30) mastered++
-    else learning++
-  }
-  return { order: lesson.order, total: words.length, introduced, due, mastered, learning }
-}
 
 /** 生成选项（默认用释义；听音题传入 render 以显示希腊语词形） */
 export function makeChoices(

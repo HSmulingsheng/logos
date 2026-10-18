@@ -372,7 +372,3 @@ export function warmupNeural(): void {
   void ensureNeural().then((ok) => { if (ok) void synthNeural('λόγος').catch(() => {}) })
 }
 
-/** 是否已经可以立刻合成（不需要等待下载） */
-export function neuralReady(): boolean {
-  return status === 'ready' && !!session
-}

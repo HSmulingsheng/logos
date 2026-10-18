@@ -15,10 +15,6 @@ export function lettersOnly(s: string): string {
   return s.replace(/[^\p{Script=Greek}]/gu, '')
 }
 
-/** 更宽松的归一化：处理常见拼写变体（ου/ω、η/ι 等不合并，只处理尾声与重复） */
-export function looseKey(s: string): string {
-  return lettersOnly(foldGreek(s)).replace(/[·.,;:!?()«»"']/g, '')
-}
 
 export interface SpellCheck {
   ok: boolean
@@ -48,10 +44,6 @@ export function hintOf(word: string): string {
   return chars.map((c, i) => (i === 0 || i === chars.length - 1 || c === ' ' ? c : '·')).join('')
 }
 
-/** 希腊文按词切分（保留标点） */
-export function tokenizeGreek(text: string): string[] {
-  return text.split(/\s+/).filter(Boolean)
-}
 
 const CASE_ZH: Record<string, string> = { N: '主格', G: '属格', D: '与格', A: '宾格', V: '呼格' }
 
