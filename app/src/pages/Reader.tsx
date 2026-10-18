@@ -2,13 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import type { NtBook, NtVerse, Word } from '../types'
 import { useStore } from '../store/useStore'
 import { loadBook, loadManifest } from '../lib/data'
-import { playAudio } from '../lib/audio'
 import { ClickableGreek } from '../components/ClickableGreek'
 import { SpeakSentence } from '../components/SpeakSentence'
 import { useWordLookup } from '../lib/wordLookup'
 import { loadPos, savePos } from '../lib/readerPos'
-import { Icon, Sheet, LevelTag } from '../components/ui'
-import { SpeakButton, WordDetail } from '../components/WordDetail'
+import { Icon, LevelTag } from '../components/ui'
+import { WordSheet } from '../components/WordSheet'
+
 
 export function Reader({
   onExit, initialBookIdx, initialChapter,
@@ -17,7 +17,7 @@ export function Reader({
   initialBookIdx?: number
   initialChapter?: number
 }) {
-  const { manifest, cards, toggleFav } = useStore()
+  const { manifest } = useStore()
   const start = loadPos()
   const [bookIdx, setBookIdx] = useState(initialBookIdx ?? start.bookIdx)
   const [chapter, setChapter] = useState(initialChapter ?? start.chapter)
@@ -112,20 +112,7 @@ export function Reader({
         )}
       </main>
 
-      <Sheet open={!!detail} onClose={() => setDetail(null)} onReplay={() => detail && playAudio(detail.au, detail.w)}>
-        {detail ? (
-          <div>
-            <div className="mb-3 flex items-center gap-3">
-              <h2 className="greek text-3xl">{detail.e || detail.w}</h2>
-              <SpeakButton word={detail} />
-              <button className="btn-ghost ml-auto !px-2 !py-1.5" onClick={() => void toggleFav(detail.i)}>
-                {cards.get(detail.i)?.fav ? <Icon.StarFill className="h-4 w-4 text-amber-400" /> : <Icon.Star className="h-4 w-4" />}
-              </button>
-            </div>
-            <WordDetail word={detail} compact />
-          </div>
-        ) : null}
-      </Sheet>
+      <WordSheet word={detail} onClose={() => setDetail(null)} compact />
 
       {/* ⚠️ 查不到词时必须有反馈。
           原来这个提示写在 Sheet 的 else 分支里，而 Sheet 是 `open={!!detail}` ——

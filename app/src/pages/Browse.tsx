@@ -4,8 +4,9 @@ import { useStore } from '../store/useStore'
 import { getWord, loadIndex, type IndexEntry } from '../lib/data'
 import { GreekInput } from '../components/GreekInput'
 import type { InputScheme } from '../lib/greekInput'
-import { Icon, Sheet, LevelTag, Empty } from '../components/ui'
-import { SpeakButton, WordDetail } from '../components/WordDetail'
+import { Icon, LevelTag, Empty } from '../components/ui'
+import { WordSheet } from '../components/WordSheet'
+
 import { playAudio } from '../lib/audio'
 
 type Filter = 'all' | 'fav' | 'leech' | 'due' | 'new'
@@ -157,25 +158,7 @@ export function Browse({ embedded = false }: { embedded?: boolean } = {}) {
         </div>
       )}
 
-      <Sheet open={!!detail} onClose={() => setDetail(null)} onReplay={() => detail && playAudio(detail.au, detail.w)}>
-        {detail && (
-          <div>
-            <div className="mb-3 flex items-center gap-3">
-              <h2 className="greek text-3xl">{detail.e || detail.w}</h2>
-              <SpeakButton word={detail} />
-              <div className="ml-auto flex gap-1.5">
-                <button className="btn-ghost !px-2 !py-1.5" onClick={() => void toggleFav(detail.i)}>
-                  {cards.get(detail.i)?.fav ? <Icon.StarFill className="h-4 w-4 text-amber-400" /> : <Icon.Star className="h-4 w-4" />}
-                </button>
-                <button className="btn-ghost !px-2 !py-1.5" onClick={() => playAudio(detail.au, detail.w)}>
-                  <Icon.Volume className="h-4 w-4" />
-                </button>
-              </div>
-            </div>
-            <WordDetail word={detail} />
-          </div>
-        )}
-      </Sheet>
+      <WordSheet word={detail} onClose={() => setDetail(null)} compact={false} showReplay />
     </div>
   )
 }

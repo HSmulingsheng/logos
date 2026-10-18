@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
-import { Icon, Section, Sheet } from '../../../components/ui'
+import { Icon, Section } from '../../../components/ui'
+import { WordSheet } from '../../../components/WordSheet'
 import { ClickableGreek } from '../../../components/ClickableGreek'
 import { READ_MODE_HINT, READ_MODE_LABEL, SentenceReader, type ReadMode } from '../../../components/SentencePlayer'
-import { SpeakButton, WordDetail } from '../../../components/WordDetail'
+
 import { useWordLookup } from '../../../lib/wordLookup'
 import { useStore } from '../../../store/useStore'
-import { playAudio } from '../../../lib/audio'
 import type { Settings } from '../../../types'
 import { AiError, aiReady, cachedTranslations, translateGreek } from '../../../lib/aiTranslate'
 
@@ -96,7 +96,7 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
   const [lang, setLang] = useState<'zh' | 'en'>('zh')
   const [showTr, setShowTr] = useState(true)
   const { lookup, detail, setDetail, missing, clearMissing } = useWordLookup()
-  const { cards, toggleFav, settings, saveSettings } = useStore()
+  const { settings, saveSettings } = useStore()
   const set = (patch: Partial<typeof settings>) => void saveSettings(patch)
   /** 本机 AI 翻出来的译文（按段落下标），与内置译文合并显示 */
   /** 已渲染的段落数（分段渲染，见下方 PAGE 的说明） */
@@ -302,23 +302,7 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
       )}
 
       {/* 查词面板：与宗教完全一致 */}
-      <Sheet open={!!detail} onClose={() => setDetail(null)}
-        onReplay={() => detail && playAudio(detail.au, detail.w)}>
-        {detail ? (
-          <div>
-            <div className="mb-3 flex items-center gap-3">
-              <h2 className="greek text-3xl">{detail.e || detail.w}</h2>
-              <SpeakButton word={detail} />
-              <button className="btn-ghost ml-auto !px-2 !py-1.5" onClick={() => void toggleFav(detail.i)}>
-                {cards.get(detail.i)?.fav
-                  ? <Icon.StarFill className="h-4 w-4 text-amber-400" />
-                  : <Icon.Star className="h-4 w-4" />}
-              </button>
-            </div>
-            <WordDetail word={detail} compact />
-          </div>
-        ) : null}
-      </Sheet>
+      <WordSheet word={detail} onClose={() => setDetail(null)} compact />
 
       {missing && (
         <div className="mt-3 card-surface p-3 text-xs text-ink-500">
