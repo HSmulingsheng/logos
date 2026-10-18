@@ -6,6 +6,7 @@ import { checkSpelling } from '../../lib/greek'
 import { playAudio } from '../../lib/audio'
 import { loadAudioIndex } from '../../lib/data'
 import { Icon, Section } from '../../components/ui'
+import { ChoiceList } from '../../components/ChoiceList'
 import { State } from '../../lib/srs'
 
 type Mode = 'audio' | 'spell'
@@ -259,30 +260,9 @@ export function Listening() {
         </button>
 
         {mode === 'audio' ? (
-          <div className="mt-5 grid gap-2">
-            {options.map((o, i) => {
-              const isPicked = picked === o.id
-              const show = picked !== null
-              const cls = !show
-                ? 'border-ink-200 bg-white/70 hover:border-aegean-300 hover:bg-aegean-50/60 dark:border-white/10 dark:bg-white/5'
-                : o.correct
-                  ? 'border-laurel-400 bg-laurel-50 dark:border-laurel-700 dark:bg-laurel-950/40'
-                  : isPicked
-                    ? 'border-wine-400 bg-wine-50 dark:border-wine-800 dark:bg-wine-950/40'
-                    : 'border-ink-200 bg-white/50 opacity-50 dark:border-white/10 dark:bg-white/5'
-              return (
-                <button key={o.id} disabled={show} onClick={() => answerChoice(o.id, o.correct)}
-                  className={`flex items-center gap-3 rounded-xl border px-3.5 py-3 text-left transition ${cls}`}>
-                  <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-xs font-semibold ${
-                    show && o.correct ? 'bg-laurel-500 text-white'
-                      : show && isPicked ? 'bg-wine-500 text-white'
-                        : 'bg-ink-100 text-ink-500 dark:bg-white/10 dark:text-ink-300'}`}>{i + 1}</span>
-                  <span className="greek text-xl">{o.text}</span>
-                  {show && o.correct && <Icon.Check className="ml-auto h-4 w-4 text-laurel-600" />}
-                  {show && isPicked && !o.correct && <Icon.Close className="ml-auto h-4 w-4 text-wine-500" />}
-                </button>
-              )
-            })}
+          <div className="mt-5">
+            <ChoiceList options={options} picked={picked} greek
+              onPick={(id, ok) => answerChoice(id, ok)} />
           </div>
         ) : (
           <div className="mt-5 space-y-3">
