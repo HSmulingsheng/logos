@@ -193,6 +193,23 @@ tools/merge_reading_zh.py          汇总 → merged.json，注入阅读数据
 会话引擎的 `startSession({ mode })` 支持 `'all' | 'new' | 'review'`，
 `buildQueue` 据此只铺对应那一段队列。
 
+### 测试：统一入口 `scripts/test-all.mjs`
+
+项目里有 16 个测试文件，但原来**没有统一入口**。后果是每次只跑自己记得的那几个——
+复盘时发现有 6 个（`input` / `reading` / `sentence-audio` / `offline` / `neural` / `smoke`）
+已经很久没人跑过。它们本身是好的，只是没人记得。
+
+```bash
+node scripts/serve.mjs 4178 --local &      # 先起静态服务
+node scripts/test-all.mjs                  # 跑全部 16 个套件，共 158 项断言
+node scripts/test-all.mjs http://127.0.0.1:4179/        # 打部署包
+node scripts/test-all.mjs --only detail,browse          # 只跑指定的
+```
+
+⚠️ **不要用 `timeout` 包这些命令**：macOS 不自带 coreutils 的 `timeout`，
+会静默失败成"命令找不到"，看起来像"测试没输出"。这个坑真的踩过——
+一度以为那 6 个套件坏了，实际上是 `timeout: command not found` 被吞掉了。
+
 ### 首屏加载：两道优化把 2.2 MB 压到 0.7 MB
 
 实测（本地、未压缩；线上有 gzip 会更小）：
