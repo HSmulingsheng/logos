@@ -232,10 +232,10 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
           >
             {showTr ? '隐藏' : '译文'}
           </button>
-          <button disabled={at === 0} onClick={() => setAt(at - 1)}
-            className="rounded-lg px-2.5 py-1 text-xs text-aegean-600 disabled:opacity-30 hover:underline">上一章</button>
-          <button disabled={at >= chapters.length - 1} onClick={() => setAt(at + 1)}
-            className="rounded-lg px-2.5 py-1 text-xs text-aegean-600 disabled:opacity-30 hover:underline">下一章</button>
+          {/* 这里原来还有一组「上一章 / 下一章」文字按钮，与页面底部的按钮重复。
+              而且它只 setAt()、**没有 window.scrollTo(0, 0)** ——
+              切章后会停在新章的中间位置，看起来像「点错了」。
+              底部那组是对的（切章 + 回到顶部），所以删掉这组。 */}
         </span>
       </div>
 
