@@ -6,7 +6,8 @@ import { SpeakButton, WordDetail } from '../../../components/WordDetail'
 import { useWordLookup } from '../../../lib/wordLookup'
 import { useStore } from '../../../store/useStore'
 import { playAudio } from '../../../lib/audio'
-import { AiError, aiReady, cachedTranslation, translateGreek } from '../../../lib/aiTranslate'
+import type { Settings } from '../../../types'
+import { AiError, aiReady, cachedTranslations, translateGreek } from '../../../lib/aiTranslate'
 
 /**
  * 古典文本阅读（哲学 / 文学 / 历史）。
@@ -98,13 +99,25 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
   const { cards, toggleFav, settings, saveSettings } = useStore()
   const set = (patch: Partial<typeof settings>) => void saveSettings(patch)
   /** 本机 AI 翻出来的译文（按段落下标），与内置译文合并显示 */
+  /** 已渲染的段落数（分段渲染，见下方 PAGE 的说明） */
+  const [shown, setShown] = useState(25)
   const [aiZh, setAiZh] = useState<Record<number, string>>({})
   const [busy, setBusy] = useState<{ done: number; total: number } | null>(null)
   const [aiErr, setAiErr] = useState<string | null>(null)
 
   useEffect(() => { setAt(null); void loadWork(work.id).then(setChapters) }, [work.id])
+  // 换章、换翻译语言都要从头开始分段
+  useEffect(() => { setShown(25) }, [at, work.id, lang])
 
-  // 换章时把本机已缓存的 AI 译文读回来，避免重复花额度
+  // 换章时把本机已缓存的 AI 译文读回来，避免重复花额度。
+  //
+  // ⚠️ 这里修过两个性能问题：
+  //   1. 原来是**逐段 await** `cachedTranslation` —— 一章最多 714 段就是 714 次
+  //      IndexedDB 往返，换章会卡住一两秒。现在用 `cachedTranslations` 一次事务读完。
+  //   2. 依赖原来是整个 `settings` **对象引用**，而 `saveSettings` 每次都会换新引用，
+  //      所以切朗读模式、改重音幅度、填 AI Key 都会让这个循环整套重跑。
+  //      而缓存 key 只受 aiModel 影响，依赖收窄到它。
+  const aiModel = settings.aiModel
   useEffect(() => {
     setAiZh({}); setAiErr(null)
     if (at === null || !chapters) return
@@ -112,16 +125,29 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
     if (!c) return
     let alive = true
     void (async () => {
-      const found: Record<number, string> = {}
+      const idx: number[] = []
+      const texts: string[] = []
       for (let i = 0; i < c.paras.length; i++) {
         if ((c.paras[i].zh || '').trim()) continue
-        const hit = await cachedTranslation(settings, c.paras[i].g)
-        if (hit) found[i] = hit
+        idx.push(i); texts.push(c.paras[i].g)
       }
+      if (!texts.length) return
+      const hits = await cachedTranslations({ aiModel } as Settings, texts)
+      const found: Record<number, string> = {}
+      hits.forEach((h, k) => { if (h) found[idx[k]] = h })
       if (alive && Object.keys(found).length) setAiZh(found)
     })()
     return () => { alive = false }
-  }, [at, chapters, settings])
+  }, [at, chapters, aiModel])
+
+  // ── 分段渲染
+  //
+  // 之前是 `c.paras.map` 把整卷一次挂上去：希罗多德卷 1 有 714 段 / 29,066 词，
+  // 每个词是 span>button，**约 6 万个 DOM 节点**，首屏必卡、滚动掉帧。
+  // 现在先渲染 25 段，底部「继续加载」每次再加 25 段。
+  // 刻意没用虚拟列表：段落高度不定、还要支持全文选中与 Ctrl+F 查找，
+  // 虚拟化在这里收益抵不过复杂度（审查报告 E1 的结论）。
+  const PAGE = 25
 
   if (!chapters) return <div className="skeleton h-40" />
 
@@ -236,7 +262,7 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
       )}
 
       <div className="space-y-4">
-        {c.paras.map((p, i) => (
+        {c.paras.slice(0, shown).map((p, i) => (
           <div key={i} className="card-surface p-4">
             <div className="mb-1.5 flex items-center gap-2">
               <span className="text-[10px] tabular-nums text-ink-300">{i + 1}</span>
@@ -262,6 +288,18 @@ export function WorkReader({ work, onBack }: { work: WorkMeta; onBack: () => voi
           </div>
         ))}
       </div>
+
+      {/* 分段加载：长卷（希罗多德卷 1 = 714 段 / 2.9 万词）一次全挂会卡死 */}
+      {shown < c.paras.length && (
+        <div className="mt-4 flex flex-col items-center gap-2">
+          <button className="btn-ghost" onClick={() => setShown((n) => n + PAGE)}>
+            继续加载（还有 {c.paras.length - shown} 段）
+          </button>
+          <button className="text-[11px] text-ink-400 underline" onClick={() => setShown(c.paras.length)}>
+            一次显示全部 {c.paras.length} 段
+          </button>
+        </div>
+      )}
 
       {/* 查词面板：与宗教完全一致 */}
       <Sheet open={!!detail} onClose={() => setDetail(null)}

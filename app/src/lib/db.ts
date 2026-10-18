@@ -33,6 +33,23 @@ export async function getKV<T>(key: string): Promise<T | undefined> {
   return (await (await db()).get('kv', key)) as T | undefined
 }
 
+/**
+ * 批量读。**一个事务里发 N 个请求**，而不是 N 次独立事务。
+ *
+ * 为什么需要：古典阅读器换章时要把本机已缓存的 AI 译文读回来，
+ * 一章最多 714 段 —— 用 `getKV` 逐段 await 就是 714 次 IndexedDB 往返，
+ * 实测会让换章卡住一两秒。一个事务里并发 714 个 get 则只付一次往返开销。
+ */
+export async function getKVMany<T>(keys: string[]): Promise<(T | undefined)[]> {
+  if (!keys.length) return []
+  const d = await db()
+  const tx = d.transaction('kv')
+  const store = tx.objectStore('kv')
+  const out = await Promise.all(keys.map((k) => store.get(k) as Promise<T | undefined>))
+  await tx.done
+  return out
+}
+
 export async function setKV(key: string, value: unknown): Promise<void> {
   await (await db()).put('kv', value, key)
 }

@@ -24,7 +24,7 @@
  * 隐私：Key 与译文都只写在本机 IndexedDB。请求由浏览器直接发往服务商，
  * 不经过任何第三方服务器。
  */
-import { getKV, setKV } from './db'
+import { getKV, setKV, getKVMany } from './db'
 import type { Settings } from '../types'
 
 export interface Provider {
@@ -198,6 +198,17 @@ function hash(s: string): string {
 
 function cacheKey(model: string, text: string): string {
   return `${CACHE_PREFIX}${hash(`${model}\u0000${text}`)}`
+}
+
+/**
+ * 批量取本机缓存的译文。索引与入参一一对应，未命中的位置是 undefined。
+ *
+ * 阅读器换章时会一次要几百上千段，逐条 `cachedTranslation` 会做同样多次事务；
+ * 这里合并成一个事务（见 `db.getKVMany`）。
+ */
+export async function cachedTranslations(s: Settings, texts: string[]): Promise<(string | undefined)[]> {
+  const { model } = endpointOf(s)
+  return getKVMany<string>(texts.map((t) => cacheKey(model, t)))
 }
 
 export async function cachedTranslation(s: Settings, text: string): Promise<string | undefined> {
