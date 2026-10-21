@@ -57,6 +57,26 @@ let initPromise: Promise<boolean> | null = null
 let status: TtsStatus = 'idle'
 const listeners = new Set<(s: TtsStatus) => void>()
 
+/**
+ * 词级时间戳（毫秒，媒体时间轴）。
+ *
+ * eSpeak 的 `word` 事件**直接带 `audio_position`** —— 这是真实的词起点，
+ * 不是按字数估的。有了它，朗读时就能把「正在念的那个词」高亮出来。
+ *
+ * 注意：`word` 事件的顺序与文本按空白切分的顺序**一一对应**
+ * （实测含独立标点 `·` 的句子也是 13=13、11=11、9=9），
+ * 所以按词序映射即可，不必去算字符位置（古音还原会改字符数：φ→πʰ）。
+ */
+export interface WordTiming {
+  /** 该词的起始毫秒 */
+  startMs: number
+  /** 该词的结束毫秒（下一个词的起点，最后一个词用总时长） */
+  endMs: number
+}
+
+/** 合成文本的缓存 key → 词级时间戳。与 `cache` 同生命周期、同淘汰策略。 */
+const timingCache = new Map<string, WordTiming[]>()
+
 /** 已合成文本 → blob URL。例句会有大量重复引用，缓存能省掉重复合成。 */
 const cache = new Map<string, string>()
 const CACHE_MAX = 300
@@ -236,6 +256,25 @@ export async function synthesize(text: string): Promise<string | null> {
     const shaped = prosodyOn
       ? applyProsodyPipeline(merged, samplerate, events, speak, { amp: prosodyAmp })
       : merged
+    // 词级时间戳：把所有 `word` 事件按出现顺序取出来。
+    // 韵律改造会轻微改变时长（实测多数句子 0.0%），按整体比例缩放即可。
+    const wordEvs = events.filter((e) => e.type === 'word')
+    if (wordEvs.length) {
+      const scale = merged.length ? shaped.length / merged.length : 1
+      const totalMs = (shaped.length / samplerate) * 1000
+      const times: WordTiming[] = wordEvs.map((e, i) => {
+        const startMs = e.audio_position * scale
+        const next = wordEvs[i + 1]
+        const endMs = next ? next.audio_position * scale : totalMs
+        return { startMs, endMs: Math.max(endMs, startMs) }
+      })
+      timingCache.set(key, times)
+      if (timingCache.size > CACHE_MAX) {
+        const firstT = timingCache.keys().next().value
+        if (firstT !== undefined) timingCache.delete(firstT)
+      }
+    }
+
     const url = URL.createObjectURL(pcmToWav(shaped, samplerate))
     if (cache.size >= CACHE_MAX) {
       const first = cache.keys().next().value
@@ -292,8 +331,29 @@ let current: HTMLAudioElement | null = null
  */
 let speakSeq = 0
 
+/**
+ * 取某段文本的词级时间戳。没合成过、或用的是神经语音（不产生事件）时返回 undefined。
+ * 调用方应在 `speakText()` 之后再调——那时合成已完成、缓存已填充。
+ */
+export function wordTimingsOf(text: string): WordTiming[] | undefined {
+  const t = normalizeForSpeech(text)
+  if (!t) return undefined
+  const speak = restoreOn ? restoreAncientPhonetics(t) : t
+  const key = `${voice}|${rate}|${prosodyOn ? prosodyAmp : 'off'}|${restoreOn ? 'r' : '-'}|${speak}`
+  return timingCache.get(key)
+}
+
+/**
+ * 朗读一段文本。
+ *
+ * @param text    要读的文本
+ * @param onEnd   播放**正常结束**时触发（被打断则不触发）
+ * @param onTime  播放过程中每帧回调一次：(当前毫秒, 总毫秒)。
+ *                用于「念到哪个词就高亮哪个词」——用 `requestAnimationFrame`
+ *                读 `currentTime` 比 `timeupdate`（约 4 次/秒）平滑得多。
+ */
 export async function speakText(
-  text: string, onEnd?: () => void,
+  text: string, onEnd?: () => void, onTime?: (ms: number, totalMs: number) => void,
 ): Promise<boolean> {
   const t = normalizeForSpeech(text)
   if (!t) return false
@@ -318,6 +378,19 @@ export async function speakText(
   const mine = ++speakSeq
   // 播完才推进：逐句连播靠它；被下一次朗读或 stopSpeaking 打断则不再触发
   if (onEnd) a.addEventListener('ended', () => { if (mine === speakSeq) onEnd() })
+  if (onTime) {
+    // 用 rAF 而不是 timeupdate：后者只有约 4Hz，词级高亮会一跳一跳的。
+    // 循环条件是「还在播 + 没被下一次朗读顶掉」，停止时自然退出。
+    const tick = () => {
+      if (mine !== speakSeq || a.ended) return
+      const totalMs = Number.isFinite(a.duration) ? a.duration * 1000 : 0
+      onTime(a.currentTime * 1000, totalMs)
+      if (!a.paused) requestAnimationFrame(tick)
+    }
+    // 等元数据就绪才知道 duration；先挂一次，play 后 rAF 自然会接上
+    a.addEventListener('playing', () => requestAnimationFrame(tick), { once: true })
+    if (!a.paused) requestAnimationFrame(tick)
+  }
   try {
     await a.play()
     return true
