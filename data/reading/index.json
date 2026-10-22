@@ -10,8 +10,7 @@
   "chapters": 24,
   "paras": 798,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 798
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0012/tlg002",
@@ -24,8 +23,7 @@
   "chapters": 24,
   "paras": 616,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 616
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0011/tlg004",
@@ -38,8 +36,7 @@
   "chapters": 15,
   "paras": 81,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 81
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0011/tlg002",
@@ -52,8 +49,7 @@
   "chapters": 16,
   "paras": 69,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 69
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0006/tlg003",
@@ -66,8 +62,20 @@
   "chapters": 13,
   "paras": 77,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 77
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0020/tlg001",
+  "genre": "文学",
+  "author": "Ἡσίοδος",
+  "authorZh": "赫西俄德",
+  "title": "Theogony",
+  "titleZh": "神谱",
+  "verse": true,
+  "chapters": 11,
+  "paras": 105,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0016/tlg001",
@@ -80,8 +88,7 @@
   "chapters": 9,
   "paras": 4344,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 4344
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0003/tlg001",
@@ -94,8 +101,7 @@
   "chapters": 8,
   "paras": 3588,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 3588
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0032/tlg006",
@@ -108,8 +114,7 @@
   "chapters": 7,
   "paras": 1469,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 1469
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0032/tlg001",
@@ -122,8 +127,7 @@
   "chapters": 7,
   "paras": 1146,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 1146
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0059/tlg002",
@@ -136,8 +140,7 @@
   "chapters": 26,
   "paras": 49,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 49
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0059/tlg001",
@@ -150,8 +153,7 @@
   "chapters": 15,
   "paras": 233,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 233
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0059/tlg003",
@@ -164,8 +166,7 @@
   "chapters": 12,
   "paras": 104,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 104
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0059/tlg004",
@@ -178,8 +179,7 @@
   "chapters": 62,
   "paras": 149,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 149
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0086/tlg010",
@@ -192,8 +192,7 @@
   "chapters": 10,
   "paras": 256,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 256
+  "license": "CC BY-SA 4.0"
  },
  {
   "id": "tlg0557/tlg002",
@@ -206,7 +205,71 @@
   "chapters": 53,
   "paras": 105,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
-  "license": "CC BY-SA 4.0",
-  "zhParas": 105
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg001",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Supplices",
+  "titleZh": "乞援人",
+  "verse": true,
+  "chapters": 16,
+  "paras": 60,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg002",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Persians",
+  "titleZh": "波斯人",
+  "verse": true,
+  "chapters": 14,
+  "paras": 60,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg003",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Prometheus Bound",
+  "titleZh": "被缚的普罗米修斯",
+  "verse": true,
+  "chapters": 11,
+  "paras": 60,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg004",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Seven Against Thebes",
+  "titleZh": "七将攻忒拜",
+  "verse": true,
+  "chapters": 17,
+  "paras": 63,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg005",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Agamemnon",
+  "titleZh": "阿伽门农",
+  "verse": true,
+  "chapters": 15,
+  "paras": 89,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
  }
 ]
