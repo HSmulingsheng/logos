@@ -250,8 +250,11 @@ def main() -> int:
         if o is None:
             continue
         z = zh.get(str(r["id"])) or r["senses"][:1]
+        # 索引里的释义串要**包含全部义项**，否则搜索搜不到次要义项
+        # （曾经只取 z[0]，于是搜「账目」找不到 λόγος）。
+        # 用「；」连接，截到 60 字控制体积。
         idx.append([r["id"], r["word"], fold_key(r["word"]), o,
-                    (z[0] if z else "")[:40], IPA.get(str(r["id"]), "")])
+                    "；".join(z)[:60] if z else "", IPA.get(str(r["id"]), "")])
     (out / "index.json").write_text(
         json.dumps(idx, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
