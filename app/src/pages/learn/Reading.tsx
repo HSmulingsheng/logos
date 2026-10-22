@@ -5,20 +5,27 @@ import { loadManifest } from '../../lib/data'
 import { loadPos, savePos } from '../../lib/readerPos'
 import { GenreWorks, WorkReader, type ReadingGenre, type WorkMeta } from './reading/ClassicalReading'
 
+/**
+ * 分区顺序：文史哲在前，宗教殿后。
+ *
+ * 用户明确要求「宗教往后排，文史哲放前面」——古典文本是学古希腊语的主线，
+ * 新约属于特定语域（通用希腊语），放在最后作为延伸阅读更合理。
+ * 默认选中的分区也随之改成「文学」。
+ */
 const GENRES: { value: ReadingGenre; label: string }[] = [
-  { value: '宗教', label: '宗教' },
-  { value: '哲学', label: '哲学' },
   { value: '文学', label: '文学' },
   { value: '历史', label: '历史' },
+  { value: '哲学', label: '哲学' },
+  { value: '宗教', label: '宗教' },
 ]
 
 /**
- * 「阅读」板块：按体裁分为宗教 / 哲学 / 文学 / 历史。
- *   宗教 —— 新约 27 卷（SBLGNT 原文 + 和合本对照，可点词查义）
- *   其余 —— 古典文本（Perseus，希腊语原文 + 英译对照）
+ * 「阅读」板块：按体裁分为文学 / 历史 / 哲学 / 宗教（文史哲在前，宗教殿后）。
+ *   文史哲 —— 古典文本（Perseus，希腊语原文 + 英译对照）
+ *   宗教   —— 新约 27 卷（SBLGNT 原文 + 和合本对照，可点词查义）
  */
 export function Reading({ onOpen }: { onOpen: (bookIdx?: number, chapter?: number) => void }) {
-  const [genre, setGenre] = useState<ReadingGenre>('宗教')
+  const [genre, setGenre] = useState<ReadingGenre>('文学')
   const [work, setWork] = useState<WorkMeta | null>(null)
 
   if (work) {

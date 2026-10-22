@@ -262,8 +262,53 @@ def build(work_id: str, info: dict) -> dict | None:
     verse = any(has_verse(c) for c in grc_top[:3])
     chapters = []
     epi_n = 0
+
+    # ── 兜底：edition div 下面一个子 div 都没有的作品
+    #
+    # 赫西俄德《神谱》就是这样：1,042 个 <l> 诗行直接挂在 edition 上，
+    # `top_children()` 返回空 → chapters 为空 → build() 返回 None →
+    # **整部作品被静默跳过**（16 部源只建出 15 部，而且没有任何提示）。
+    #
+    # 这里按行数切节（每 100 行一节），节内每 10 行合一段。
+    # 既不会只剩一个巨型章节，也不至于一行一段太碎。
+    if not grc_top:
+        flat = [(l.get("n") or str(i + 1), text_of(l))
+                for i, l in enumerate(grc_body.iter(f"{NS}l"))]
+        flat = [(n, t) for n, t in flat if t.strip()]
+        if not flat:
+            return None
+        eng_flat = [(l.get("n") or str(i + 1), text_of(l))
+                    for i, l in enumerate(eng_body.iter(f"{NS}l"))] if eng_body is not None else []
+        e_by_n = {n: t for n, t in eng_flat}
+        e_by_pos = [t for _, t in eng_flat]
+        # 一行一个 <l> 的作品显然是韵文。`verse` 之前是按 grc_top[:3] 算的，
+        # 而这里 grc_top 是空的，所以会被误判成散文（《神谱》曾显示「散文」）。
+        verse = True
+        PER_CH, LINES_PER_PARA = 100, 10
+        for start in range(0, len(flat), PER_CH):
+            chunk = flat[start:start + PER_CH]
+            paras = []
+            for k in range(0, len(chunk), LINES_PER_PARA):
+                group = chunk[k:k + LINES_PER_PARA]
+                g = " ".join(t for _, t in group)
+                e = " ".join(
+                    e_by_n.get(n) or (e_by_pos[start + k + j] if start + k + j < len(e_by_pos) else "")
+                    for j, (n, _) in enumerate(group)
+                ).strip()
+                paras.append({"g": g, "e": e})
+            paras = split_long_paras([q for q in paras if q["g"].strip()])
+            if not paras:
+                continue
+            a, b = start + 1, start + len(chunk)
+            chapters.append({
+                "n": str(a), "label": f"行 {a}–{b}", "paras": paras, "subtype": "lines",
+            })
+        _flat_done = True
+    else:
+        _flat_done = False
     choral_n = 0
-    for i, c in enumerate(grc_top):
+    if not _flat_done:
+      for i, c in enumerate(grc_top):
         sub_i = (c.get("subtype") or "").lower()
         if sub_i == "episode":
             epi_n += 1
