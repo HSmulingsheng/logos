@@ -260,6 +260,31 @@ def build(work_id: str, info: dict) -> dict | None:
     # 字典里只剩一个空串键，查找会「成功」地返回最后一章，
     # 位置回退永远不会触发（《安提戈涅》就是这个坑）。
     eng_by_n = {c.get("n"): c for c in eng_top if c.get("n")}
+
+    # ── 按 subtype 顺序对齐的兜底
+    #
+    # 希腊语与英译本的 div 数量**经常不等**：埃斯库罗斯《乞援人》希腊语 95 个、
+    # 英语 92 个（少了 lyric / anapests / trochees 各一）。原来的兜底是
+    # `len(eng_top) == len(grc_top)` 才按位置对齐，数量一不等就直接放弃，
+    # 结果整部作品**英译全空**。
+    #
+    # 这里改用「顺序 + subtype 相同」的贪心匹配：能在有插入/缺失的情况下
+    # 依然把后面的段对齐上，而不会像纯按位置那样整体错位。
+    def align_by_subtype() -> dict[int, ET.Element]:
+        out: dict[int, ET.Element] = {}
+        j = 0
+        for i, g in enumerate(grc_top):
+            gs = (g.get("subtype") or "").lower()
+            gn = g.get("n")
+            for k in range(j, len(eng_top)):
+                e = eng_top[k]
+                if (e.get("subtype") or "").lower() == gs and (not gn or not e.get("n") or e.get("n") == gn):
+                    out[i] = e
+                    j = k + 1
+                    break
+        return out
+
+    eng_by_sub = align_by_subtype()
     # 有些作品的英译本章节编号与希腊语不同（如《安提戈涅》），
     # 按编号找不到时退回按位置匹配 —— 两版顺序一致，位置对齐是可靠的
     eng_by_pos = {i: c for i, c in enumerate(eng_top)}
@@ -321,12 +346,38 @@ def build(work_id: str, info: dict) -> dict | None:
             choral_n += 1
         n = c.get("n") or ""
         eng = eng_by_n.get(n) if n else None
+        if eng is None:
+            eng = eng_by_sub.get(i)
         if eng is None and len(eng_top) == len(grc_top):
             eng = eng_by_pos.get(i)
         if verse:
-            gb = verse_blocks(c)
+            # ── 块大小自适应
+            #
+            # 英译本的切分粒度常比希腊语**粗得多**：荷马每卷希腊语 654 个 <l>，
+            # 英译却只有 17 个 <p>。而 align_by_ratio 刻意规定「每个英文块只归属
+            # 一个希腊语块」（否则英译会被相邻块各取一遍，总量膨胀 4 倍）。
+            # 于是 33 个希腊语块里只有 17 个能配上英译 —— 这正是荷马/索福克勒斯/
+            # 埃斯库罗斯英译只覆盖 40~53% 的原因。
+            #
+            # 让希腊语的分组数贴合英译块数，两边一一对应，覆盖率就上去了。
+            n_glines = len(list(c.iter(f"{NS}l")))
+            # 必须与 elif 分支**实际使用的**英文块源保持一致：
+            # eb = eb_lines or [英文 <p>...]。之前这里只数 <p>，而剧作的英译
+            # 其实有 <l>（400+ 行），于是 vsize 算小了，两边块数仍对不上。
             eb_lines = verse_blocks(eng) if eng is not None else []
-            if eb_lines and sum(1 for num, _ in gb if num in dict(eb_lines)) >= len(gb) * 0.5:
+            if eb_lines:
+                n_eblocks = len(eb_lines)
+            elif eng is not None:
+                n_eblocks = len([x for x in eng.iter(f"{NS}p") if text_of(x).strip()])
+            else:
+                n_eblocks = 0
+            vsize = max(20, -(-n_glines // max(1, n_eblocks))) if (n_glines and n_eblocks) else 20
+            gb = verse_blocks(c, vsize)
+            eb_lines = verse_blocks(eng) if eng is not None else []
+            # 阈值原来是 0.5：一半行号对上就走行号对齐，剩下一半留空。
+            # 实测荷马/索福克勒斯/埃斯库罗斯只能对上 40~53%，英译一半是空的。
+            # 提到 0.9：对不齐就整章按累计长度比例对齐，保证每段都有译文（位置近似但比留空好）。
+            if eb_lines and sum(1 for num, _ in gb if num in dict(eb_lines)) >= len(gb) * 0.9:
                 # 英译也有诗行号且能对上：按行号对齐
                 e_by = dict(eb_lines)
                 paras = [{"g": g, "e": e_by.get(num, "")} for num, g in gb]
