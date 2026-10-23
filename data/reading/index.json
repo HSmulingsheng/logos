@@ -8,7 +8,7 @@
   "titleZh": "伊利亚特",
   "verse": true,
   "chapters": 24,
-  "paras": 798,
+  "paras": 484,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -21,7 +21,7 @@
   "titleZh": "奥德赛",
   "verse": true,
   "chapters": 24,
-  "paras": 616,
+  "paras": 499,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -34,7 +34,7 @@
   "titleZh": "俄狄浦斯王",
   "verse": true,
   "chapters": 15,
-  "paras": 81,
+  "paras": 44,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -47,7 +47,7 @@
   "titleZh": "安提戈涅",
   "verse": true,
   "chapters": 16,
-  "paras": 69,
+  "paras": 39,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -60,7 +60,7 @@
   "titleZh": "美狄亚",
   "verse": true,
   "chapters": 13,
-  "paras": 77,
+  "paras": 43,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -216,7 +216,7 @@
   "titleZh": "乞援人",
   "verse": true,
   "chapters": 16,
-  "paras": 60,
+  "paras": 35,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -229,7 +229,7 @@
   "titleZh": "波斯人",
   "verse": true,
   "chapters": 14,
-  "paras": 60,
+  "paras": 34,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -242,7 +242,7 @@
   "titleZh": "被缚的普罗米修斯",
   "verse": true,
   "chapters": 11,
-  "paras": 60,
+  "paras": 30,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -255,7 +255,7 @@
   "titleZh": "七将攻忒拜",
   "verse": true,
   "chapters": 17,
-  "paras": 63,
+  "paras": 34,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  },
@@ -268,7 +268,33 @@
   "titleZh": "阿伽门农",
   "verse": true,
   "chapters": 15,
-  "paras": 89,
+  "paras": 88,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg006",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Libation Bearers",
+  "titleZh": "奠酒人",
+  "verse": true,
+  "chapters": 11,
+  "paras": 26,
+  "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
+  "license": "CC BY-SA 4.0"
+ },
+ {
+  "id": "tlg0085/tlg007",
+  "genre": "文学",
+  "author": "Αἰσχύλος",
+  "authorZh": "埃斯库罗斯",
+  "title": "Eumenides",
+  "titleZh": "欧墨尼得斯",
+  "verse": true,
+  "chapters": 12,
+  "paras": 27,
   "source": "Perseus Digital Library (PerseusDL/canonical-greekLit)",
   "license": "CC BY-SA 4.0"
  }
